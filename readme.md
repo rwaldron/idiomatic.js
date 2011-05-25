@@ -1,26 +1,39 @@
 # Principals of Writing Consistent, Idiotmatic JavaScript
 
-All code in any code-base should look like a single person typed it, no matter how many people contributed. 
+### All code in any code-base should look like a single person typed it, no matter how many people contributed. 
 
-The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines. 
+### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines. 
 
-I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected. 
+### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected. 
+
+
+#### This is a living document, contributions are welcome: fork, clone, branch, commit, push, pull request.
+
 
 ## Code Quality
 
 Code should always be verifiable by means of commonly accepted, de-facto standards. Preferably, [JSHint](http://jshint.org/) ... [JSLint](http://jslint.org/) if you _must_.
 
-----
+## Build & Deployment Process
+
+Projects _must_ include some generic means by which source can be compressed in preparation for production use. Preferably, Uglify.js via Node.js. Alternatively, Google Closure Compiler or YUI Compressor via js.jar are acceptable substitutes. Choose one and support it.
+
+## Test Facility
+
+Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests".
+
+## Style Manifesto
 
 
 1. NEVER MIX WHITESPACE. Two space soft indents (fake tabs) OR tabs
 
 2. Spacing
-  A. Parens, Braces, Linebreaks
 
-        if/else/for/while/try always have spaces, braces and span multiple lines
-        this encourages readability
-  
+    A. Parens, Braces, Linebreaks
+
+        // if/else/for/while/try always have spaces, braces and span multiple lines
+        // this encourages readability
+
         //  Bad
         if(condition) doSomething();
   
@@ -45,10 +58,12 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
           // statements
         } else {
           // statements
-        }  
-  
-  
-  B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+        }
+
+
+
+
+    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
         // Variables
         var foo = "bar", 
@@ -123,7 +138,7 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
 
 
-  C. Exceptions, Slight Deviations
+    C. Exceptions, Slight Deviations
   
         // Functions with callbacks 
         foo(function() { 
@@ -166,6 +181,7 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
 4. Evaluation
 
+        
         // Bad
         array.length > 0
 
@@ -269,9 +285,8 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
   * NOTE: Comments are never at the end of the line, 
           always on the line above.
-  
-  
-  
+
+
 5. Naming
 
         `dog` is a string
@@ -285,9 +300,10 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
 6. Misc
 
-  A. Using `switch` should be avoided, modern method tracing blacklists functions with switch statements
+    A. Using `switch` should be avoided, modern method tracing blacklists functions with switch statements
 
 
+        
         // Bad:
 
         switch( foo ) {
@@ -326,10 +342,11 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
 
         // This pattern is also really good because it promotes code reusability.
-  
 
-  B. Early returns are nice clean and sometimes offer perf boosts
 
+    B. Early returns are nice clean and sometimes offer perf boosts
+
+        
         // Bad:
         function returnLate( foo )  {
           var ret;
@@ -356,13 +373,10 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
 7. Comments
 
-  JSDoc style is good
-  
-  Single line above the code that is subject
-
-  Multiline is good
-  
-  End of line comments are prohibited!
+  * JSDoc style is good (Closure Compiler type hints++)
+  * Single line above the code that is subject
+  * Multiline is good
+  * End of line comments are prohibited!
   
 
   
