@@ -10,19 +10,22 @@
 #### This is a living document, contributions are welcome: fork, clone, branch, commit, push, pull request.
 
 
-## Code Quality
+## Important, Non-Idiomatic Stuff:
+
+### Code Quality
 
 Code should always be verifiable by means of commonly accepted, de-facto standards. Preferably, [JSHint](http://jshint.org/) ... [JSLint](http://jslint.org/) if you _must_.
 
-## Build & Deployment Process
+### Build & Deployment Process
 
 Projects _must_ include some generic means by which source can be compressed in preparation for production use. Preferably, Uglify.js via Node.js. Alternatively, Google Closure Compiler or YUI Compressor via js.jar are acceptable substitutes. Choose one and support it.
 
-## Test Facility
+### Test Facility
 
 Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests".
 
-## Style Manifesto
+
+## Idiomatic Style Manifesto
 
 
 1. NEVER MIX WHITESPACE. Two space soft indents (fake tabs) OR tabs
