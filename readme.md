@@ -203,7 +203,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	D. Consistency Always Wins
 
-		In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with simpler, higher purpose: consistency. It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with simpler, higher purpose: consistency. 
+	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
 
 	```javascript
 
@@ -555,3 +556,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* Multiline is good
 	* End of line comments are prohibited!
 
+
+9. Resources
+
+	[Rebecca Murphey's JavaScript Developer Screening Exam](https://gist.github.com/576723)
