@@ -32,7 +32,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* Never mix spaces and tabs. 
 	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
-			For readablity, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
+		* For readablity, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
 	* If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
 		* Enforced consistency
 		* Eliminating end of line whitespace
@@ -44,37 +44,37 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	A. Parens, Braces, Linebreaks
 
-		```javascript
+	```javascript
 
-		// if/else/for/while/try always have spaces, braces and span multiple lines
-		// this encourages readability
+	// if/else/for/while/try always have spaces, braces and span multiple lines
+	// this encourages readability
 
-		//	Bad
-		if(condition) doSomething();
+	//	Bad
+	if(condition) doSomething();
 
-		while(condition) iterating++;
+	while(condition) iterating++;
 
-		for(var i=0;i<100;i++) someIterativeFn();
+	for(var i=0;i<100;i++) someIterativeFn();
 
-		//	Good
-		if ( condition ) {
-			// statements
-		}
+	//	Good
+	if ( condition ) {
+		// statements
+	}
 
-		while ( condition ) {
-			// statements
-		}
+	while ( condition ) {
+		// statements
+	}
 
-		for ( var i = 0; i < 100; i++ ) {
-			// statements
-		}
+	for ( var i = 0; i < 100; i++ ) {
+		// statements
+	}
 
-		if ( true ) {
-			// statements
-		} else {
-			// statements
-		}
-		```
+	if ( true ) {
+		// statements
+	} else {
+		// statements
+	}
+	```
 
 
 
