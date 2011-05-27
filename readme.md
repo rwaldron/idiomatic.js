@@ -202,7 +202,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 		* wherever possible:
 		
-		`Array.isArray(arrayObject)`  
+			`Array.isArray(arrayObject)`  
 
 	* null: 
 
@@ -213,6 +213,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		`variable == null`
 
 	* undefined:
+
 			* Global Variables: 
 
 				`typeof variable === "undefined"`
