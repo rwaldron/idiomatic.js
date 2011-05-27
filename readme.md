@@ -46,34 +46,34 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```javascript
 
-	// if/else/for/while/try always have spaces, braces and span multiple lines
-	// this encourages readability
+		// if/else/for/while/try always have spaces, braces and span multiple lines
+		// this encourages readability
 
-	//	Bad
-	if(condition) doSomething();
+		//	Bad
+		if(condition) doSomething();
 
-	while(condition) iterating++;
+		while(condition) iterating++;
 
-	for(var i=0;i<100;i++) someIterativeFn();
+		for(var i=0;i<100;i++) someIterativeFn();
 
-	//	Good
-	if ( condition ) {
-		// statements
-	}
+		//	Good
+		if ( condition ) {
+			// statements
+		}
 
-	while ( condition ) {
-		// statements
-	}
+		while ( condition ) {
+			// statements
+		}
 
-	for ( var i = 0; i < 100; i++ ) {
-		// statements
-	}
+		for ( var i = 0; i < 100; i++ ) {
+			// statements
+		}
 
-	if ( true ) {
-		// statements
-	} else {
-		// statements
-	}
+		if ( true ) {
+			// statements
+		} else {
+			// statements
+		}
 	```
 
 
