@@ -99,8 +99,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 		// 2.B.1.2
 		// Using only one `var` per scope (function) promotes readability
-		// and keeps your declaration list free of clutter and unnec. bytes 
-		
+		// and keeps your declaration list free of clutter (also saves a few bytes)
+
 		// Bad
 		var foo = "";
 		var bar = "";
