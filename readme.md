@@ -560,3 +560,4 @@ Projects _must_ include some form of unit, reference, implementation or function
 9. Resources
 
 	[Rebecca Murphey's JavaScript Developer Screening Exam](https://gist.github.com/576723)
+
