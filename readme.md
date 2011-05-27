@@ -469,19 +469,19 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// A better approach would be to use an object literal or even a module:
 
 		var switchObj = {
-				alpha: function() {
-					// statements
-					// a return
-				}, 
-				beta: function() {
-					// statements
-					// a return
-				}, 
-				default: function() {
-					// statements
-					// a return
-				}
-			};
+			alpha: function() {
+				// statements
+				// a return
+			}, 
+			beta: function() {
+				// statements
+				// a return
+			}, 
+			default: function() {
+				// statements
+				// a return
+			}
+		};
 
 		var switchModule = (function () {
 			return {
