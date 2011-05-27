@@ -80,7 +80,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
-		```javascript
+	```javascript
 
 		// Variables
 		var foo = "bar", 
@@ -157,7 +157,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	C. Exceptions, Slight Deviations
 
-		```javascript
+	```javascript
 
 		// Functions with callbacks 
 		foo(function() { 
@@ -181,7 +181,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		if ( !("foo" in obj) ) {
 					 ^					 ^ No Space
 		}
-		```
+	```
 
 3. Type Checking (Courtesy jQuery Core Style Guidelines)
 
@@ -200,7 +200,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 4. Evaluation
 
-		```javascript
+	```javascript
 
 		// Bad
 		array.length > 0
@@ -253,24 +253,24 @@ Projects _must_ include some form of unit, reference, implementation or function
 			// Using == will match null as both null and undefined
 			// but not false
 
-		
+	
 		// Notes:
 
 		Prefer `===` over `==` (unless the case requires loose type evaluation )
 
 		Booleans, Truthies & Falsies
-		
+	
 		Booleans: true, false
 
 		Truthy are: "foo", 1
 
 		Falsy are: "", 0, null, undefined, NaN, void 0
-		```
+	```
 
 	
 4. Style	
 
-		```javascript
+	```javascript
 
 		// A Practical Application:
 
@@ -304,7 +304,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 				}
 			};
 		})();
-		```
+	```
 
 	* NOTE: Comments are never at the end of the line, 
 					always on the line above.
@@ -312,7 +312,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 5. Naming
 
-		```javascript
+	```javascript
 
 		`dog` is a string
 
@@ -321,14 +321,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 		camelCase; function and var declarations
 
 		PascalCase; constructor function
-		```
-	
+	```
+
 6. Misc
 
 	A. Using `switch` should be avoided, modern method tracing blacklists functions with switch statements
 
-		```javascript
-		
+	```javascript
+
 		// Bad:
 
 		switch( foo ) {
@@ -367,14 +367,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 		// This pattern is also really good because it promotes code reusability.
-		```
+	```
 
 	B. Early returns are nice clean and sometimes offer perf boosts
 
-		```javascript
-			
+	```javascript
+		
 		// Bad:
-		function returnLate( foo )	{
+		function returnLate( foo ) {
 			var ret;
 
 			if ( foo ) {
@@ -394,7 +394,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 			}
 			return "quux";
 		}
-		```
+	```
 
 
 7. Comments
@@ -403,7 +403,4 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* Single line above the code that is subject
 	* Multiline is good
 	* End of line comments are prohibited!
-	
-
-	
 
