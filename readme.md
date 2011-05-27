@@ -184,7 +184,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* String: 
 
-		typeof object === "string"
+		`typeof object === "string"`
 		
 	* Number: typeof object === "number"
 	* Boolean: typeof object === "boolean"
