@@ -31,8 +31,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 1. Whitespace
 
   * Never mix spaces and tabs. 
-  * When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs - this is law. 
-      For readablity, I always recommend setting your editor's indent size to two characters - this means two spaces or two spaces representing a real tab.
+  * When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
+      For readablity, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
   * If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
     * Enforced consistency
     * Eliminating end of line whitespace
