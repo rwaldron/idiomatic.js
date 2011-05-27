@@ -40,7 +40,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		* Commits and diffs that are easier to read
 
 
-2. Spacing
+2. Spacing, Formatting and Syntax
 
 	A. Parens, Braces, Linebreaks
 
@@ -49,14 +49,19 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// if/else/for/while/try always have spaces, braces and span multiple lines
 		// this encourages readability
 
-		//	Bad
+		// 2.A.1.1
+		// These are examples of really cramped syntax
+
 		if(condition) doSomething();
 
 		while(condition) iterating++;
 
 		for(var i=0;i<100;i++) someIterativeFn();
 
-		//	Good
+
+		// 2.A.1.1
+		// Use whitespace to promote readability
+
 		if ( condition ) {
 			// statements
 		}
@@ -77,11 +82,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-
 	B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
 	```javascript
 
+		// 2.B.1.1
 		// Variables
 		var foo = "bar", 
 				num = 1, 
@@ -91,33 +96,42 @@ Projects _must_ include some form of unit, reference, implementation or function
 		var array = [], 
 				object = {};
 
-		// Attempt to maintain a single `var` per scope
 
-		// Bad:
+		// 2.B.1.2
+		// Using only one `var` per scope (function) promotes readability
+		// and keeps your declaration list free of clutter and unnec. bytes 
+		
+		// Bad
 		var foo = "";
 		var bar = "";
 		var qux;
 
-		// Good:
+		// Good
 		var foo = "", 
 				bar = "", 
-				qux;
+				quux;
 
 		// or.. 
 		var // Comment on these
 		foo = "", 
 		bar = "", 
-		qux;
+		quux;
+	```
 
-		// Good: Named Function + Usage
+	```javascript
+
+		// 2.B.2.1
+		// Named Function Declaration + Usage
 		function foo( arg1, argN ) {
 
 		}
 
+		// Usage
 		foo( arg1, argN );
 
 
-		// Good: Named Function + Usage with callback
+		// 2.B.2.2
+		// Named Function + Usage with callback
 		function bar( arg1, callback ) {
 
 			if ( arg1 && callback ) {
@@ -125,12 +139,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 			}
 		}
 
+		// Usage
 		bar( arg1, function() {
 			// callback statements
 		});
 
 
-		// Good: Function Expression + Usage
+		// 2.B.2.3
+		// Function Expression
 		var quux = function( arg1, callback ) {
 
 			if ( arg1 && callback ) {
@@ -141,16 +157,19 @@ Projects _must_ include some form of unit, reference, implementation or function
 			return true;
 		}
 
+		// Usage:
 		quux( arg1, function() {
 			// callback statements
 		});
 
 
-		// Good: Constructor definition
+		// 2.B.2.4
+		// Constructor definition
 		function FooBar() {
 			return this;
 		}
 
+		// Usage:
 		var fooBar = new FooBar();
 	```
 
@@ -159,6 +178,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```javascript
 
+		// 2.C.1.1
 		// Functions with callbacks 
 		foo(function() { 
 			// Note there is no extra space between the first paren
@@ -168,6 +188,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// Function accepting an array, no space
 		foo([ "alpha", "beta" ]);
 
+		// 2.C.1.2
 		// Function accepting an object, no space
 		foo({
 			a: "alpha",
@@ -214,133 +235,172 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* undefined:
 
-		* Global Variables: 
+		* Global Variables:
 
 			* `typeof variable === "undefined"`
 
-		* Local Variables: 
+		* Local Variables:
 
 			* `variable === undefined`
 
-		* Properties: 
+		* Properties:
 			* `object.prop === undefined`
 			* `object.hasOwnProperty( prop )`
 			* `"prop" in object`
 
 
-4. Evaluation
+4. Conditional Evaluation
 
 	```javascript
 
-		// Bad
-		array.length > 0
+		// 4.1.1
+		// When only evaluating that an array has length, 
+		// instead of this:
+		if ( array.length > 0 ) ...
+
+		// ...evaluate truthiness, like this:
+		if ( array.length ) ...
+
+
+		// 4.1.2
+		// When only evaluating that an array is empty, 
+		// instead of this:
+		if ( array.length === 0 ) ...
+
+		// ...evaluate truthiness, like this:
+		if ( !array.length ) ...
+
+
+		// 4.1.3
+		// When only evaluating that a string is not empty, 
+		// instead of this:
+		if ( string !== "" ) ...
+
+		// ...evaluate truthiness, like this:
+		if ( string ) ...
+
+
+		// 4.1.4
+		// When only evaluating that a string is empty, 
+		// instead of this:
+		if ( string === "" ) ...
 
 		// Good
-		array.length
+		if ( !string ) ...
 
 
-		// Bad
-		array.length === 0
-
-		// Good
-		!array.length
-
-
-		// Bad
-		string !== ""
+		// 4.1.5
+		// When only evaluating that a reference is true, 
+		// instead of this:
+		if ( foo === true ) ...
 
 		// Good
-		string
+		if ( foo ) ...
 
 
-		// Bad
-		string === ""
+		// 4.1.6
+		// When evaluating that a reference is false, 
+		// instead of this:
+		if ( foo === false ) ...
 
-		// Good
-		!string
+		// ...use negation to coerce a true evaluation
+		if ( !foo ) ...
 
-
-		// Bad
-		foo === true
-
-		// Good
-		foo
-
-
-		// Bad
-		foo === false
-
-		// Good
-		!foo
-			// Be careful, this will also match: 0, "", null, undefined, NaN
+		// Be careful, this will also match: 0, "", null, undefined, NaN
+		// If you _MUST_ test for a boolean false, then use
+		if ( foo === false ) ...
 
 
-		// Bad
-		foo === null || foo === undefined
+		// 4.1.7
+		// When only evaluating a ref that might be null or undefined, but NOT false, 
+		// instead of this:
+		if ( foo === null || foo === undefined ) ...
 
-		// Good
-		foo == null
-			// Using == will match null as both null and undefined
-			// but not false
+		// ...take advantage of == type coercion
+		if ( foo == null ) ...
 
-	
-		// Notes:
+		// Remember, using == will match a `null` to BOTH `null` and `undefined`
+		// but not `false`
+	```
 
-		Prefer `===` over `==` (unless the case requires loose type evaluation )
 
-		Booleans, Truthies & Falsies
+	```javascript
+
+		// 4.2.1
+		// Type coercion and evaluation notes
+
+		Prefer `===` over `==` (unless the case requires loose type evaluation)
+
+		=== does not coerce type, which means that:
+
+		"1" === 1;
+		// false
+
+		== does coerce type, which means that:
+
+		"1" == 1;
+		// true
+
+
+		// 4.2.2
+		// Booleans, Truthies & Falsies
 	
 		Booleans: true, false
 
 		Truthy are: "foo", 1
 
 		Falsy are: "", 0, null, undefined, NaN, void 0
+
 	```
 
-	
-4. Style	
+
+5. General Style
 
 	```javascript
 
+		// 5.1.1
 		// A Practical Application:
 
-		var Module = (function() {
-									^ No space
+		(function( global ) {
+			var Module = (function() {
 
-			// really private 
-			var private = "secret";
+				// Private to this closure
+				var secret = "secret";
 
-			return {
-				// properties
-				defaults: {
-					// comments
-					bool: true, 
-					// comments
+				return {
+					// This is some boolean property
+					bool: true,
+					// Some other important string
 					string: "a string",
-					// comments
-					array: [ 1, 2, 3, 4 ], 
-					// comments
+					// An array property
+					array: [ 1, 2, 3, 4 ],
+					// An object property
 					object: {
 							lang: "en-Us"
+					},
+					getSecret: function() {
+						// get the "private" variable from here
+						return secret;
+					},
+					setSecret: function( value ) {
+						// set the "private" variable
+						return ( secret = value );
 					}
-				}, 
-				getBool: function() {
-					// comments
-					return this.defaults.bool;
-				},
-				setBool: function( arg1 ) {
-					// comments
-					return ( this.defaults.bool = arg1 );
-				}
+				};
 			};
-		})();
+
+			// Other things might happen here
+			
+			// expose our module to the global object
+			global.Module = Module;
+			
+		})( this );
 	```
 
-	* NOTE: Comments are never at the end of the line, 
-					always on the line above.
+	* NOTE: In the above example, "secret" is _not_really_ private
 
 
-5. Naming
+6. Naming
 
 	```javascript
 
@@ -353,13 +413,16 @@ Projects _must_ include some form of unit, reference, implementation or function
 		PascalCase; constructor function
 	```
 
-6. Misc
+7. Misc
 
-	A. Using `switch` should be avoided, modern method tracing blacklists functions with switch statements
+	A. Using `switch` should be avoided, modern method tracing will blacklistsfunctions with switch statements
+
+	Also, switch sucks. http://jsperf.com/switch-vs-object-literal-vs-module
 
 	```javascript
 
-		// Bad:
+		// 7.A.1.1
+		// An example switch statement
 
 		switch( foo ) {
 			case "alpha":
@@ -373,9 +436,25 @@ Projects _must_ include some form of unit, reference, implementation or function
 				break;
 		}
 
-		// Good:
+		// 7.A.1.2
+		// A better approach would be to use an object literal or even a module:
 
-		var module = (function () {
+		var switchObj = {
+					alpha: function() {
+						// statements
+						// a return
+					}, 
+					beta: function() {
+						// statements
+						// a return
+					}, 
+					default: function() {
+						// statements
+						// a return
+					}
+				};
+
+		var switchModule = (function () {
 			return {
 				alpha: function() {
 					// statements
@@ -392,17 +471,31 @@ Projects _must_ include some form of unit, reference, implementation or function
 			};
 		})();
 
-		// If `foo` is a property of `module`, execute the method 
-		module[ foo ] && module[ foo ]();
+
+		// 7.A.1.3
+		// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+
+		switchObj[ foo ] && switchObj[ foo ]( args );
+		
+		switchModule[ foo ] && switchModule[ foo ]( args );
+
+		// If you know and trust the value of `foo`, you could even omit the right hand evaluation
+		// leaving only the execution:
+
+		switchObj[ foo ]( args );
+		
+		switchModule[ foo ]( args );
 
 
-		// This pattern is also really good because it promotes code reusability.
+		// This pattern also promotes code reusability
+		
 	```
 
-	B. Early returns are nice clean and sometimes offer perf boosts
+	B. Early returns promote code readability with negligible 
 
 	```javascript
-		
+
+		// 7.B.1.1
 		// Bad:
 		function returnLate( foo ) {
 			var ret;
@@ -427,7 +520,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-7. Comments
+8. Comments
 
 	* JSDoc style is good (Closure Compiler type hints++)
 	* Single line above the code that is subject
