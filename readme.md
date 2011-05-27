@@ -214,18 +214,18 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* undefined:
 
-			* Global Variables: 
+		* Global Variables: 
 
-				`typeof variable === "undefined"`
+			`typeof variable === "undefined"`
 
-			* Local Variables: 
+		* Local Variables: 
 
-				`variable === undefined`
+			`variable === undefined`
 
-			* Properties: 
-				`object.prop === undefined`
-				`object.hasOwnProperty( prop )`
-				`"prop" in object`
+		* Properties: 
+			`object.prop === undefined`
+			`object.hasOwnProperty( prop )`
+			`"prop" in object`
 
 
 4. Evaluation
