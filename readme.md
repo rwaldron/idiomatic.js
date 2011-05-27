@@ -28,7 +28,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 ## Idiomatic Style Manifesto
 
 
-1. NEVER MIX WHITESPACE. Two space soft indents (fake tabs) OR tabs
+1. NEVER MIX WHITESPACE. 
+
+	* When beginning a project, before you write any code, between soft indents (spaces) or real tabs. For readablity, I always recommend setting your editor's indent size to two characters - this means two spaces or two spaces representing a real tab.
 
 2. Spacing
 
