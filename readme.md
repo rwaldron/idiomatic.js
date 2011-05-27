@@ -50,7 +50,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// this encourages readability
 
 		// 2.A.1.1
-		// These are examples of really cramped syntax
+		// Examples of really cramped syntax
 
 		if(condition) doSomething();
 
@@ -199,6 +199,34 @@ Projects _must_ include some form of unit, reference, implementation or function
 		if ( !("foo" in obj) ) {
 
 		}
+	```
+
+	D. Consistency Always Wins
+
+		In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with simpler, higher purpose: consistency. It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+
+	```javascript
+
+		// 2.D.1.1
+
+		if (condition) {
+			// statements
+		}
+
+		while (condition) {
+			// statements
+		}
+
+		for (var i = 0; i < 100; i++) {
+			// statements
+		}
+
+		if (true) {
+			// statements
+		} else {
+			// statements
+		}
+
 	```
 
 3. Type Checking (Courtesy jQuery Core Style Guidelines)
