@@ -520,7 +520,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		
 	```
 
-	B. Early returns promote code readability with negligible 
+	B. Early returns promote code readability with negligible performance difference
 
 	```javascript
 
