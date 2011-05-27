@@ -161,31 +161,31 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 		// Functions with callbacks 
 		foo(function() { 
-				^ No space
-
+			// Note there is no extra space between the first paren
+			// of the executing function call and the word "function"
 		});
-		^ No space
 
+		// Function accepting an array, no space
+		foo([ "alpha", "beta" ]);
 
-		// Functions accepting arrays
-		foo([				 ]);
-				^					^ No space
+		// Function accepting an object, no space
+		foo({
+			a: "alpha",
+			b: "beta"
+		});
 
-
-		// Functions accepting object
-		foo({				 });
-				^					^ No space
-
-
-		// Inner parens:
+		// Inner grouping parens, no space
 		if ( !("foo" in obj) ) {
-					 ^					 ^ No Space
+
 		}
 	```
 
 3. Type Checking (Courtesy jQuery Core Style Guidelines)
 
-	* String: typeof object === "string"
+	* String: 
+
+		typeof object === "string"
+		
 	* Number: typeof object === "number"
 	* Boolean: typeof object === "boolean"
 	* Object: typeof object === "object"
