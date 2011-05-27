@@ -184,18 +184,47 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* String: 
 
-		`typeof object === "string"`
+		`typeof variable === "string"`
 		
-	* Number: typeof object === "number"
-	* Boolean: typeof object === "boolean"
-	* Object: typeof object === "object"
-	* Array: Array.isArray(arrayObject) wherever possible
-	* null: object === null
-	* null or undefined: object == null
+	* Number: 
+
+		`typeof variable === "number"`
+
+	* Boolean: 
+
+		`typeof variable === "boolean"`
+
+	* Object: 
+
+		`typeof variable === "object"`
+		
+	* Array: 
+
+		* wherever possible:
+		
+		`Array.isArray(arrayObject)`  
+
+	* null: 
+
+		`variable === null`
+
+	* null or undefined: 
+
+		`variable == null`
+
 	* undefined:
-			* Global Variables: typeof variable === "undefined"
-			* Local Variables: variable === undefined
-			* Properties: object.prop === undefined
+			* Global Variables: 
+
+				`typeof variable === "undefined"`
+
+			* Local Variables: 
+
+				`variable === undefined`
+
+			* Properties: 
+				`object.prop === undefined`
+				`object.hasOwnProperty( prop )`
+				`"prop" in object`
 
 
 4. Evaluation
