@@ -121,7 +121,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```javascript
 
 		// 2.B.2.1
-		// Named Function Declaration + Usage
+		// Named Function Declaration
 		function foo( arg1, argN ) {
 
 		}
@@ -131,7 +131,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 		// 2.B.2.2
-		// Named Function + Usage with callback
+		// Named Function (w/ callback argument)
 		function bar( arg1, callback ) {
 
 			if ( arg1 && callback ) {
