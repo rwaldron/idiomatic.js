@@ -89,12 +89,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// 2.B.1.1
 		// Variables
 		var foo = "bar", 
-				num = 1, 
-				undef;
+			num = 1, 
+			undef;
 
 		// Literal notations:
 		var array = [], 
-				object = {};
+			object = {};
 
 
 		// 2.B.1.2
@@ -108,8 +108,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 		// Good
 		var foo = "", 
-				bar = "", 
-				quux;
+			bar = "", 
+			quux;
 
 		// or.. 
 		var // Comment on these
