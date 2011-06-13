@@ -1,13 +1,12 @@
 # Principals of Writing Consistent, Idiomatic JavaScript
 
+## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+
 ### All code in any code-base should look like a single person typed it, no matter how many people contributed. 
 
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines. 
 
 ### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected. 
-
-
-#### This is a living document, contributions are welcome: fork, clone, branch, commit, push, pull request.
 
 
 ## Important, Non-Idiomatic Stuff:
@@ -18,7 +17,9 @@ Code should always be verifiable by means of commonly accepted, de-facto standar
 
 ### Build & Deployment Process
 
-Projects _must_ include some generic means by which source can be compressed in preparation for production use. Preferably, Uglify.js via Node.js. Alternatively, Google Closure Compiler or YUI Compressor via js.jar are acceptable substitutes. Choose one and support it.
+Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. A few popular and proven tools include: Uglify.js on Node.js, Google Closure Compiler on js.jar or YUI Compressor on js.jar. Choose one and support it.
+
+You can now find a functional, generic "build kit" in the /kit directory of this repository. Usage is easy: 1) copy the contents of /kits/ to a new working directory, 2) save your project .js file in the /src/ directory, 3) put the name of the project in "project.txt", 4) run "make" from command line. (Even easier directions: replace occurrences of "foo")
 
 ### Test Facility
 
