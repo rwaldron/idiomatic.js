@@ -505,11 +505,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// 7.A.1.3
 		// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
-		switchObj[ foo ] && switchObj[ foo ]( args );
+		( switchObj[ foo ] || switchObj.default )( args );
 		
-		switchModule[ foo ] && switchModule[ foo ]( args );
+		( switchModule[ foo ] || switchObj.default )( args );
 
-		// If you know and trust the value of `foo`, you could even omit the right hand evaluation
+		// If you know and trust the value of `foo`, you could even omit the OR check
 		// leaving only the execution:
 
 		switchObj[ foo ]( args );
@@ -517,7 +517,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		switchModule[ foo ]( args );
 
 
-		// This pattern also promotes code reusability
+		// This pattern also promotes code reusability.
 		
 	```
 
