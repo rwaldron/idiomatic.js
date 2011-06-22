@@ -505,9 +505,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// 7.A.1.3
 		// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
-		(switchObj[ foo ] || switchObj.default )( args );
+		( switchObj[ foo ] || switchObj.default )( args );
 		
-		(switchModule[ foo ] || switchObj.default )( args );
+		( switchModule[ foo ] || switchObj.default )( args );
 
 		// If you know and trust the value of `foo`, you could even omit the OR check
 		// leaving only the execution:
