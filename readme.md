@@ -550,11 +550,23 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-8. Comments
+8. Native & Host Objects
+
+	The basic principal here is: 
+
+	###Don't do stupid shit and everything will be ok.
+
+	To reinforce this concept, please watch the following presentation:
+
+	####"Everything is Permitted: Extending Built-ins" by Andrew Dupont ( JSConf2011, Portland, Oregon )
+
+	<iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
+
+	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+
+9. Comments
 
 	* JSDoc style is good (Closure Compiler type hints++)
 	* Single line above the code that is subject
 	* Multiline is good
 	* End of line comments are prohibited!
-
-
