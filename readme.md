@@ -450,7 +450,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 7. Misc
 
-	A. Using `switch` should be avoided, modern method tracing will blacklistsfunctions with switch statements
+	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
 	Also, switch sucks. http://jsperf.com/switch-vs-object-literal-vs-module
 
