@@ -483,7 +483,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 			// statements
 			// a return
 		}, 
-		default: function() {
+		_default: function() {
 			// statements
 			// a return
 		}
@@ -499,7 +499,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 				// statements
 				// a return
 			}, 
-			default: function() {
+			_default: function() {
 				// statements
 				// a return
 			}
@@ -510,9 +510,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// 7.A.1.3
 	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
-	( switchObj.hasOwnProperty( foo ) && switchObj[ foo ] || switchObj.default )( args );
+	( switchObj.hasOwnProperty( foo ) && switchObj[ foo ] || switchObj._default )( args );
 	
-	( switchModule.hasOwnProperty( foo ) && switchModule[ foo ] || switchModule.default )( args );
+	( switchModule.hasOwnProperty( foo ) && switchModule[ foo ] || switchModule._default )( args );
 
 	// If you know and trust the value of `foo`, you could even omit the OR check
 	// leaving only the execution:
