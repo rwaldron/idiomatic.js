@@ -28,8 +28,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ## Idiomatic Style Manifesto
 
+### TOC
 
-1. Whitespace
+[Whitespace][whitespace]
+
+
+1. [whitespace] Whitespace
 
 	* Never mix spaces and tabs. 
 	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
