@@ -36,7 +36,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 </ol>
 
 
-<h3><a id="whitespace">1. Whitespace</a></h3>
+<h3><a name="whitespace">1. Whitespace</a></h3>
 
 	* Never mix spaces and tabs. 
 	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
