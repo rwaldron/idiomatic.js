@@ -30,10 +30,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ### TOC
 
-[Whitespace][whitespace]
+1. [Whitespace]
+2. [Spacing, Formatting and Syntax]
 
 
-1. [whitespace] Whitespace
+### 1. Whitespace
 
 	* Never mix spaces and tabs. 
 	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
