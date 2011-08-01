@@ -32,7 +32,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 <ol>
   <li><a href="#whitespace">Whitespace</a></li>
-  <li><a href="#sfs">Spacing, Formatting and Syntax</a></li>
+  <li><a href="#sfs">Spacing, Formatting and Syntax</a>
+    <ol>
+      <li><a href="#sfs-pbl">Parens, Braces, Linebreaks</a></li>
+      <li><a href="#sfs-adf">Assignments, Declarations, Functions ( Named, Expression, Constructor )</a></li>
+    </ol>
+  </li>
 </ol>
 
 
@@ -48,9 +53,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 		* Commits and diffs that are easier to read
 
 
-### <a name="sfs">2. Spacing, Formatting and Syntax
+### <a name="sfs">2. Spacing, Formatting and Syntax</a>
 
-	A. Parens, Braces, Linebreaks
+	A. <a name="sfs-pbl">Parens, Braces, Linebreaks</a>
 
 	```javascript
 
@@ -90,7 +95,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-	B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+	B. <a name="sfs-adf">Assignments, Declarations, Functions ( Named, Expression, Constructor )</a>
 
 	```javascript
 
