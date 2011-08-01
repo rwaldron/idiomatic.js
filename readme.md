@@ -28,7 +28,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ## Idiomatic Style Manifesto
 
-### TOC
+### Table Of Contents
 
 <ol>
   <li><a href="#whitespace">Whitespace</a></li>
