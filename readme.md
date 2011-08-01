@@ -55,7 +55,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ### <a name="sfs">2. Spacing, Formatting and Syntax</a>
 
-	A. <a name="sfs-pbl">Parens, Braces, Linebreaks</a>
+#### A. <a name="sfs-pbl">Parens, Braces, Linebreaks</a>
 
 	```javascript
 
@@ -95,7 +95,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-	B. <a name="sfs-adf">Assignments, Declarations, Functions ( Named, Expression, Constructor )</a>
+#### B. <a name="sfs-adf">Assignments, Declarations, Functions ( Named, Expression, Constructor )</a>
 
 	```javascript
 
