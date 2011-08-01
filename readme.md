@@ -36,8 +36,17 @@ Projects _must_ include some form of unit, reference, implementation or function
     <ol>
       <li><a href="#sfs-pbl">Parens, Braces, Linebreaks</a></li>
       <li><a href="#sfs-adf">Assignments, Declarations, Functions ( Named, Expression, Constructor )</a></li>
+      <li><a href="#sfs-exceptions">Exceptions, Slight Deviations</a></li>
+      <li><a href="#sfs-caw">Consistency Always Wins</a></li>
     </ol>
   </li>
+  <li><a href="#tc">Type Checking (Courtesy jQuery Core Style Guidelines)</a></li>
+  <li><a href="#ce">Conditional Evaluation</a></li>
+  <li><a href="#gs">General Style</a></li>
+  <li><a href="#naming">Naming</a></li>
+  <li><a href="#misc">Misc</a></li>
+  <li><a href="#nho">Native & Host Objects</a></li>
+  <li><a href="#comments">Comments</a></li>
 </ol>
 
 
@@ -188,7 +197,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-	C. Exceptions, Slight Deviations
+#### <a name="sfs-exceptions">C. Exceptions, Slight Deviations</a>
 
 	```javascript
 
@@ -216,7 +225,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
-	D. Consistency Always Wins
+#### <a name="sfs-caw">D. Consistency Always Wins</a>
 
 	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency. 
 	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
@@ -245,7 +254,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
-3. Type Checking (Courtesy jQuery Core Style Guidelines)
+### <a name="tc">3. Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
 	* String: 
 
@@ -293,7 +302,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 			* `"prop" in object`
 
 
-4. Conditional Evaluation
+### <a name="ce">4. Conditional Evaluation</a>
 
 	```javascript
 
@@ -399,7 +408,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-5. General Style
+### <a name="gs">5. General Style</a>
 
 	```javascript
 
@@ -446,7 +455,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* NOTE: In the above example, "secret" is _not_really_ private
 
 
-6. Naming
+### <a name="naming">6. Naming</a>
 
 	```javascript
 
@@ -460,7 +469,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
-7. Misc
+### <a name="misc">7. Misc</a>
 
 	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
@@ -568,7 +577,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-8. Native & Host Objects
+### <a name="nho">8. Native & Host Objects</a>
 
 	The basic principal here is: 
 
@@ -582,7 +591,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
-9. Comments
+### <a name="comments">9. Comments</a>
 
 	* JSDoc style is good (Closure Compiler type hints++)
 	* Single line above the code that is subject
