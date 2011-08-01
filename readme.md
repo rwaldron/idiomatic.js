@@ -32,11 +32,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 <ol>
   <li><a href="#whitespace">Whitespace</a></li>
-  <li>Spacing, Formatting and Syntax</li>
+  <li><a href="#sfs">Spacing, Formatting and Syntax</a></li>
 </ol>
 
 
-<h3 name="whitespace"><a>1. Whitespace</a></h3>
+### <a name="whitespace">1. Whitespace</a>
 
 	* Never mix spaces and tabs. 
 	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
@@ -48,7 +48,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		* Commits and diffs that are easier to read
 
 
-2. Spacing, Formatting and Syntax
+### <a name="sfs">2. Spacing, Formatting and Syntax
 
 	A. Parens, Braces, Linebreaks
 
