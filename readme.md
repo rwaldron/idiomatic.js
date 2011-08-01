@@ -30,8 +30,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ### TOC
 
-1. [Whitespace]
-2. [Spacing, Formatting and Syntax]
+1. [Whitespace][]
+2. [Spacing, Formatting and Syntax][]
 
 
 ### 1. Whitespace
