@@ -1,4 +1,4 @@
-# Principals of Writing Consistent, Idiomatic JavaScript
+# Principles of Writing Consistent, Idiomatic JavaScript
 
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
@@ -11,9 +11,17 @@
 
 ## Important, Non-Idiomatic Stuff:
 
-### Code Quality
+### Code Quality: Awesome Tools, Resources & References
 
-Code should always be verifiable by means of commonly accepted, de-facto standards. Preferably, [JSHint](http://jshint.org/) ... [JSLint](http://jslint.org/) if you _must_.
+ * [jsPerf](http://jsperf.com)
+ * [jsFiddle](http://jsfiddle.net)
+ * [jsbin](http://jsbin.com)
+ * [jshint](http://jshint.com)
+ * [http://es5.github.com/](http://es5.github.com/)
+
+[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+
+
 
 ### Build & Deployment Process
 
