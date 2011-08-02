@@ -454,6 +454,10 @@ Projects _must_ include some form of unit, reference, implementation or function
 	The following code is an example of egregious naming:
 
 	```javascript
+
+	// 6.1.1
+	// Example of code with poor names
+
 	function q(s) {
 		return document.querySelectorAll(s);
 	}
@@ -466,6 +470,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 	Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
 
 	```javascript
+
+	// 6.2.1
+	// Example of code with improved names
 
 	function query( selector ) {
 		return document.querySelectorAll( selector );
@@ -482,17 +489,38 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
-	A few additional pointers...
+	A few additional naming pointers:
 
 	```javascript
 
+	// 6.3.1
+	// Naming strings
+
 	`dog` is a string
+
+
+	// 6.3.2
+	// Naming arrays
 
 	`dogs` is an array of `dog` strings
 
+
+	// 6.3.3
+	// Naming functions, objects, instances, etc
+
 	camelCase; function and var declarations
 
+
+	// 6.3.4
+	// Naming constructors, prototypes, etc.
+
 	PascalCase; constructor function
+
+
+	// 6.3.5
+	// Naming regular expressions
+
+	rDesc = //;
 
 	```
 
