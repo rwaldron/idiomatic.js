@@ -404,7 +404,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```javascript
 
 	// 5.1.1
-	// A Practical Application:
+	// A Practical Module
 
 	(function( global ) {
 		var Module = (function() {
@@ -444,6 +444,43 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 	* NOTE: In the above example, "secret" is _not_really_ private
+
+	```javascript
+
+	// 5.2.1
+	// A Practical Constructor
+
+	(function( global ) {
+
+		function Ctor( foo ) {
+
+			this.foo = foo;
+
+			return this;
+		}
+
+		Ctor.prototype.getFoo = function() {
+			return this.foo;
+		};
+
+		Ctor.prototype.setFoo = function( val ) {
+			return ( this.foo = val );
+		};
+
+
+		// To call constructor's without `new`, you might do this:
+		var ctor = function( foo ) {
+			return new Ctor( foo );
+		};
+
+
+		// expose our constructor to the global object
+		global.ctor = ctor;
+
+	})( this );
+
+	```
+
 
 
 6. <a name="naming">Naming</a>
