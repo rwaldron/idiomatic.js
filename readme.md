@@ -432,7 +432,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 					return ( secret = value );
 				}
 			};
-		};
+		})();
 
 		// Other things might happen here
 
