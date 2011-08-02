@@ -28,7 +28,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 ## Table of Contents
 
  * [Whitespace](#whitespace)
- * [Spacing, Formatting and Syntax](#spacing)
+ * [Beautiful Syntax](#spacing)
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
  * [General Style](#general)
@@ -53,7 +53,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		* Commits and diffs that are easier to read
 
 
-2. <a name="spacing">Spacing, Formatting and Syntax</a>
+2. <a name="spacing">Beautiful Syntax</a>
 
 	A. Parens, Braces, Linebreaks
 
