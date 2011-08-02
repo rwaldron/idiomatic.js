@@ -448,6 +448,42 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 6. <a name="naming">Naming</a>
 
+
+	You are not a human code compiler/compressor, so don't try to be one.
+
+	The following code is an example of egregious naming:
+
+	```javascript
+	function q(s) {
+		return document.querySelectorAll(s);
+	}
+	var i,a=[],els=q("#foo");
+	for(i=0;i<els.length;i++){a.push(els[i]);}
+	```
+
+	Without a doubt, you've written code like this - hopefully that ends today.
+
+	Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+
+	```javascript
+
+	function query( selector ) {
+		return document.querySelectorAll( selector );
+	}
+
+	var idx = 0,
+		elements = [],
+		matches = query("#foo"),
+		length = matches.length;
+
+	for( ; idx < length; idx++ ){
+		elements.push( matches[ idx ] );
+	}
+
+	```
+
+	A few additional pointers...
+
 	```javascript
 
 	`dog` is a string
