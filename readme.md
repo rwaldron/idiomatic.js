@@ -2,11 +2,11 @@
 
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
-### All code in any code-base should look like a single person typed it, no matter how many people contributed. 
+### All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines. 
+### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
-### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected. 
+### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected.
 
 
 ## Important, Non-Idiomatic Stuff:
@@ -25,14 +25,26 @@ You can now find a functional, generic "build kit" in the /kit directory of this
 
 Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests".
 
+## Table of Contents
+
+ * [Whitespace](#whitespace)
+ * [Spacing, Formatting and Syntax](#spacing)
+ * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
+ * [Conditional Evaluation](#cond)
+ * [General Style](#general)
+ * [Naming](#naming)
+ * [Misc](#misc)
+ * [Native & Host Objects](#native)
+ * [Comments](#comments)
+
 
 ## Idiomatic Style Manifesto
 
 
-1. Whitespace
+1. <a name="whitespace">Whitespace</a>
 
-	* Never mix spaces and tabs. 
-	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law. 
+	* Never mix spaces and tabs.
+	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law.
 		* For readablity, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
 	* If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
 		* Enforced consistency
@@ -41,7 +53,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 		* Commits and diffs that are easier to read
 
 
-2. Spacing, Formatting and Syntax
+2. <a name="spacing">Spacing, Formatting and Syntax</a>
 
 	A. Parens, Braces, Linebreaks
 
@@ -89,12 +101,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// 2.B.1.1
 	// Variables
-	var foo = "bar", 
-		num = 1, 
+	var foo = "bar",
+		num = 1,
 		undef;
 
 	// Literal notations:
-	var array = [], 
+	var array = [],
 		object = {};
 
 
@@ -108,14 +120,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 	var qux;
 
 	// Good
-	var foo = "", 
-		bar = "", 
+	var foo = "",
+		bar = "",
 		quux;
 
-	// or.. 
+	// or..
 	var // Comment on these
-	foo = "", 
-	bar = "", 
+	foo = "",
+	bar = "",
 	quux;
 
 	```
@@ -181,8 +193,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```javascript
 
 	// 2.C.1.1
-	// Functions with callbacks 
-	foo(function() { 
+	// Functions with callbacks
+	foo(function() {
 		// Note there is no extra space between the first paren
 		// of the executing function call and the word "function"
 	});
@@ -206,7 +218,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	D. Consistency Always Wins
 
-	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency. 
+	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
 	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
 
 	```javascript
@@ -233,35 +245,35 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
-3. Type Checking (Courtesy jQuery Core Style Guidelines)
+3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
-	* String: 
+	* String:
 
 		`typeof variable === "string"`
-		
-	* Number: 
+
+	* Number:
 
 		`typeof variable === "number"`
 
-	* Boolean: 
+	* Boolean:
 
 		`typeof variable === "boolean"`
 
-	* Object: 
+	* Object:
 
 		`typeof variable === "object"`
-		
-	* Array: 
+
+	* Array:
 
 		* wherever possible:
-		
-			`Array.isArray(arrayObject)`  
 
-	* null: 
+			`Array.isArray(arrayObject)`
+
+	* null:
 
 		`variable === null`
 
-	* null or undefined: 
+	* null or undefined:
 
 		* `variable == null`
 
@@ -281,12 +293,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 			* `"prop" in object`
 
 
-4. Conditional Evaluation
+4. <a name="cond">Conditional Evaluation</a>
 
 	```javascript
 
 	// 4.1.1
-	// When only evaluating that an array has length, 
+	// When only evaluating that an array has length,
 	// instead of this:
 	if ( array.length > 0 ) ...
 
@@ -295,7 +307,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.2
-	// When only evaluating that an array is empty, 
+	// When only evaluating that an array is empty,
 	// instead of this:
 	if ( array.length === 0 ) ...
 
@@ -304,7 +316,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.3
-	// When only evaluating that a string is not empty, 
+	// When only evaluating that a string is not empty,
 	// instead of this:
 	if ( string !== "" ) ...
 
@@ -313,7 +325,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.4
-	// When only evaluating that a string is empty, 
+	// When only evaluating that a string is empty,
 	// instead of this:
 	if ( string === "" ) ...
 
@@ -322,7 +334,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.5
-	// When only evaluating that a reference is true, 
+	// When only evaluating that a reference is true,
 	// instead of this:
 	if ( foo === true ) ...
 
@@ -331,7 +343,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.6
-	// When evaluating that a reference is false, 
+	// When evaluating that a reference is false,
 	// instead of this:
 	if ( foo === false ) ...
 
@@ -344,7 +356,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.7
-	// When only evaluating a ref that might be null or undefined, but NOT false, 
+	// When only evaluating a ref that might be null or undefined, but NOT false,
 	// instead of this:
 	if ( foo === null || foo === undefined ) ...
 
@@ -387,7 +399,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-5. General Style
+5. <a name="general">General Style</a>
 
 	```javascript
 
@@ -423,10 +435,10 @@ Projects _must_ include some form of unit, reference, implementation or function
 		};
 
 		// Other things might happen here
-		
+
 		// expose our module to the global object
 		global.Module = Module;
-		
+
 	})( this );
 
 	```
@@ -434,7 +446,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* NOTE: In the above example, "secret" is _not_really_ private
 
 
-6. Naming
+6. <a name="naming">Naming</a>
 
 	```javascript
 
@@ -448,7 +460,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
-7. Misc
+7. <a name="misc">Misc</a>
 
 	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
@@ -478,11 +490,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 		alpha: function() {
 			// statements
 			// a return
-		}, 
+		},
 		beta: function() {
 			// statements
 			// a return
-		}, 
+		},
 		_default: function() {
 			// statements
 			// a return
@@ -494,11 +506,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 			alpha: function() {
 				// statements
 				// a return
-			}, 
+			},
 			beta: function() {
 				// statements
 				// a return
-			}, 
+			},
 			_default: function() {
 				// statements
 				// a return
@@ -511,14 +523,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
 	( switchObj.hasOwnProperty( foo ) && switchObj[ foo ] || switchObj._default )( args );
-	
+
 	( switchModule.hasOwnProperty( foo ) && switchModule[ foo ] || switchModule._default )( args );
 
 	// If you know and trust the value of `foo`, you could even omit the OR check
 	// leaving only the execution:
 
 	switchObj[ foo ]( args );
-	
+
 	switchModule[ foo ]( args );
 
 
@@ -556,9 +568,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-8. Native & Host Objects
+8. <a name="native">Native & Host Objects</a>
 
-	The basic principal here is: 
+	The basic principal here is:
 
 	### Don't do stupid shit and everything will be ok.
 
@@ -570,7 +582,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
-9. Comments
+9. <a name="comments">Comments</a>
 
 	* JSDoc style is good (Closure Compiler type hints++)
 	* Single line above the code that is subject
