@@ -31,7 +31,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Beautiful Syntax](#spacing)
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
- * [General Style](#general)
+ * [Practical Style](#practical)
  * [Naming](#naming)
  * [Misc](#misc)
  * [Native & Host Objects](#native)
@@ -399,7 +399,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
-5. <a name="general">General Style</a>
+5. <a name="practical">Practical Style</a>
 
 	```javascript
 
