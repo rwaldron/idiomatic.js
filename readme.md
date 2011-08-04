@@ -17,6 +17,7 @@
  * [jsFiddle](http://jsfiddle.net)
  * [jsbin](http://jsbin.com)
  * [jshint](http://jshint.com)
+ * [jslint](http://jslint.org)
  * [http://es5.github.com/](http://es5.github.com/)
 
 [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
