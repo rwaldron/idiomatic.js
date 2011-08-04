@@ -115,6 +115,16 @@ Projects _must_ include some form of unit, reference, implementation or function
 		// statements
 	}
 
+	// Even better:
+
+	var i = 0,
+		length = 100;
+
+	for ( ; i < length; i++ ) {
+		// statements
+	}
+
+
 	if ( true ) {
 		// statements
 	} else {
