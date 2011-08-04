@@ -182,7 +182,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 		// always return 'something'
 		return true;
-	}
+	};
 
 	// Usage:
 	quux( arg1, function() {
