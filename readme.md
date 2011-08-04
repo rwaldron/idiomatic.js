@@ -258,6 +258,10 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```
 
+	E. End of Lines and Empty Lines
+
+	Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
 	* String:
@@ -338,11 +342,11 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 4.1.4
-	// When only evaluating that a string is empty,
+	// When only evaluating that a string _is_ empty,
 	// instead of this:
 	if ( string === "" ) ...
 
-	// Good
+	// ...evaluate falsy-ness, like this:
 	if ( !string ) ...
 
 
@@ -351,7 +355,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// instead of this:
 	if ( foo === true ) ...
 
-	// Good
+	// ...evaluate like you mean it, take advantage of it's primitive capabilities:
 	if ( foo ) ...
 
 
@@ -363,21 +367,23 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// ...use negation to coerce a true evaluation
 	if ( !foo ) ...
 
-	// Be careful, this will also match: 0, "", null, undefined, NaN
+	// ...Be careful, this will also match: 0, "", null, undefined, NaN
 	// If you _MUST_ test for a boolean false, then use
 	if ( foo === false ) ...
 
 
 	// 4.1.7
-	// When only evaluating a ref that might be null or undefined, but NOT false,
+	// When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
 	// instead of this:
 	if ( foo === null || foo === undefined ) ...
 
-	// ...take advantage of == type coercion
+	// ...take advantage of == type coercion, like this:
 	if ( foo == null ) ...
 
 	// Remember, using == will match a `null` to BOTH `null` and `undefined`
-	// but not `false`
+	// but not `false`, "" or 0
+	null == undefined
+
 
 	```
 
