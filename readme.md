@@ -27,9 +27,9 @@
 
 ### Build & Deployment Process
 
-Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. A few popular and proven tools include: Uglify.js on Node.js, Google Closure Compiler on js.jar or YUI Compressor on js.jar. Choose one and support it.
+Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. Some popular and proven tools include the JavaScript-based [Uglify.js](https://github.com/mishoo/UglifyJS), as well as the Java-based [Google Closure Compiler](http://code.google.com/closure/compiler/) and [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Choose one and support it.
 
-You can now find a functional, generic "build kit" in the /kit directory of this repository. Usage is easy: 1) copy the contents of a kit found in /kits/ to a new working directory, 2) save your project .js file in the /src/ directory, 3) put the name of the project in "project.txt", 4) run "make" from command line. (Even easier directions: replace occurrences of "foo")
+You can now find a functional, generic "build kit" in the `/kits` directory of this repository. Usage is easy: 1) copy the contents of a kit found in `/kits` to a new working directory, 2) save your project .js file in the `/src` directory, 3) put the name of the project in `project.txt`, 4) run `make` from command line. (Even easier directions: replace occurrences of "foo")
 
 ### Test Facility
 
@@ -60,7 +60,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* Never mix spaces and tabs.
 	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law.
-		* For readablity, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
+		* For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
 	* If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
 		* Enforced consistency
 		* Eliminating end of line whitespace
