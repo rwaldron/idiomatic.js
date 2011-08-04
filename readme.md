@@ -49,6 +49,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
  * [Vows](https://github.com/cloudhead/vows)
+ * [Hiro](http://hirojs.com/)
 
 
 ## Table of Contents
