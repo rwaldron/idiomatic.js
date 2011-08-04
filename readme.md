@@ -18,9 +18,21 @@
  * [jsbin](http://jsbin.com)
  * [jshint](http://jshint.com)
  * [jslint](http://jslint.org)
- * [http://es5.github.com/](http://es5.github.com/)
 
 [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+
+
+### Get Smart
+
+[http://es5.github.com/](http://es5.github.com/)
+
+The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+
+ * [Eloquent JavaScript](http://eloquentjavascript.net/)
+ * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
+ * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [Adventures in JavaScript Development](http://rmurphey.com/)
+ * [Perfection Kills](http://perfectionkills.com/)
+ * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
 
 
