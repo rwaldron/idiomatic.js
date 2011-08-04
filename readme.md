@@ -289,6 +289,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
+	3.A
+
 	* String:
 
 		`typeof variable === "string"`
@@ -307,9 +309,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* Array:
 
-		* wherever possible:
-
-			`Array.isArray(arrayObject)`
+		`Array.isArray(arrayObject)`
+		(wherever possible)
 
 	* null:
 
@@ -317,7 +318,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* null or undefined:
 
-		* `variable == null`
+		`variable == null`
 
 	* undefined:
 
@@ -334,6 +335,203 @@ Projects _must_ include some form of unit, reference, implementation or function
 			* `object.hasOwnProperty( prop )`
 			* `"prop" in object`
 
+
+JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
+
+Given the following HTML:
+
+```html
+
+<input type="text" id="foo-input" value="1">
+
+```
+
+Consider the implications of this logic:
+
+	```javascript
+
+	// 3.B.1.1
+
+	// `foo` has been declared with the value `0` and its type is `number`
+	var foo = 0;
+
+	// typeof foo;
+	// "number"
+	...
+
+	// Somewhere later in your code, you need to update `foo`
+	// with a new value derived from an input element
+
+	foo = document.getElementById("foo-input").value;
+
+	// If you were to test `typeof foo` now, the result would be `string`
+	// This means that if you had logic that tested `foo` like:
+
+	if ( foo === 1 ) {
+
+		importantTask();
+
+	}
+
+	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+
+
+	// 3.B.1.2
+
+	// You can preempt issues by using smart coercion with unary + or - operators:
+
+	foo = +document.getElementById("foo-input").value;
+	      ^ unary + operator will converts its right side operand to a number
+
+	// typeof foo;
+	// "number"
+
+	if ( foo === 1 ) {
+
+		importantTask();
+
+	}
+
+	// `importantTask()` will be called
+
+
+	```
+
+3.B
+
+	```javascript
+
+	// 3.B.1.1
+
+	// `foo` has been declared with the value `0` and its type is `number`
+	var foo = 0;
+
+	// typeof foo;
+	// "number"
+	...
+
+	// Somewhere later in your code, you need to update `foo`
+	// with a new value derived from an input element
+
+	foo = document.getElementById("foo-input").value;
+
+	// If you were to test `typeof foo` now, the result would be `string`
+	// This means that if you had logic that tested `foo` like:
+
+	if ( foo === 1 ) {
+
+		importantTask();
+
+	}
+
+	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+
+
+	// 3.B.1.2
+
+	// You can preempt issues by using smart coercion with unary + or - operators:
+
+	foo = +document.getElementById("foo-input").value;
+	      ^ unary + operator will converts its right side operand to a number
+
+	// typeof foo;
+	// "number"
+
+	if ( foo === 1 ) {
+
+		importantTask();
+
+	}
+
+	// `importantTask()` will be called
+
+	```
+
+	Here are some common cases along with coercions:
+
+
+	```javascript
+
+	// 3.B.2.1
+
+	var number = 1,
+	string = "1",
+	bool = false;
+
+	number;
+	// 1
+
+	number + "";
+	// "1"
+
+	string;
+  // "1"
+
+	+string;
+	// 1
+
+	+string++;
+	// 1
+
+	string;
+	// 2
+
+	bool;
+	// false
+
+	+bool;
+	// 0
+
+	bool + "";
+	// "false"
+
+	```
+
+
+	```javascript
+
+	// 3.B.2.2
+
+	var number = 1,
+	string = "1",
+	bool = true;
+
+	string === number;
+	// false
+
+	string === number + "";
+	// true
+
+	+string === number;
+	// true
+
+	bool === number;
+	// false
+
+	+bool === number;
+	// true
+
+	bool === string;
+	// false
+
+	bool === !!string;
+	// true
+
+	```
+
+	```javascript
+
+	// 3.B.2.3
+
+	var array = [ "a", "b", "c" ];
+
+	!~~array.indexOf( "d" );
+	// false
+
+	!~~array.indexOf( "a" );
+	// true
+
+	```
 
 4. <a name="cond">Conditional Evaluation</a>
 
@@ -603,6 +801,19 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	rDesc = //;
 
+
+	// 6.3.6
+	// From the Google Closure Library Style Guide
+
+	functionNamesLikeThis;
+	variableNamesLikeThis;
+	ConstructorNamesLikeThis;
+	EnumNamesLikeThis;
+	methodNamesLikeThis;
+	SYMBOLIC_CONSTANTS_LIKE_THIS;
+
+
+
 	```
 
 7. <a name="misc">Misc</a>
@@ -726,6 +937,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	<iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
 
 	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+
 
 9. <a name="comments">Comments</a>
 
