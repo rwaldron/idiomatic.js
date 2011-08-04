@@ -27,11 +27,16 @@
 
 Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. A few popular and proven tools include: Uglify.js on Node.js, Google Closure Compiler on js.jar or YUI Compressor on js.jar. Choose one and support it.
 
-You can now find a functional, generic "build kit" in the /kit directory of this repository. Usage is easy: 1) copy the contents of /kits/ to a new working directory, 2) save your project .js file in the /src/ directory, 3) put the name of the project in "project.txt", 4) run "make" from command line. (Even easier directions: replace occurrences of "foo")
+You can now find a functional, generic "build kit" in the /kit directory of this repository. Usage is easy: 1) copy the contents of a kit found in /kits/ to a new working directory, 2) save your project .js file in the /src/ directory, 3) put the name of the project in "project.txt", 4) run "make" from command line. (Even easier directions: replace occurrences of "foo")
 
 ### Test Facility
 
 Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests".
+
+ * [QUnit](http://github.com/jquery/qunit)
+ * [Jasmine](https://github.com/pivotal/jasmine)
+ * [Vows](https://github.com/cloudhead/vows)
+
 
 ## Table of Contents
 
