@@ -381,7 +381,7 @@ if ( foo === 1 ) {
 // You can preempt issues by using smart coercion with unary + or - operators:
 
 foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will converts its right side operand to a number
+      ^ unary + operator will convert its right side operand to a number
 
 // typeof foo;
 // "number"
@@ -430,7 +430,7 @@ if ( foo === 1 ) {
 // You can preempt issues by using smart coercion with unary + or - operators:
 
 foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will converts its right side operand to a number
+      ^ unary + operator will convert its right side operand to a number
 
 // typeof foo;
 // "number"
