@@ -155,7 +155,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// Bad
 	var foo = "";
 	var bar = "";
-	var qux;
+	var quux;
 
 	// Good
 	var foo = "",
