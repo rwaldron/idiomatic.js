@@ -1,2 +1,5 @@
 .DS_Store
 dist
+kits/makefile-kit/dist
+kits/jakefile-kit/dist
+kits/jakefile-kit/node_modules
