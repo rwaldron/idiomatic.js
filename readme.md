@@ -13,12 +13,12 @@
 
 ### Code Quality: Awesome Tools, Resources & References
 
- * [jsPerf](http://jsperf.com)
- * [jsFiddle](http://jsfiddle.net)
- * [jsbin](http://jsbin.com)
- * [JavaScript Lint (JSL)](http://javascriptlint.com)
- * [jshint](http://jshint.com)
- * [jslint](http://jslint.org)
+ * [jsPerf](http://jsperf.com/)
+ * [jsFiddle](http://jsfiddle.net/)
+ * [jsbin](http://jsbin.com/)
+ * [JavaScript Lint (JSL)](http://javascriptlint.com/)
+ * [jshint](http://jshint.com/)
+ * [jslint](http://jslint.org/)
 
 [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
@@ -36,12 +36,12 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
 
-
 ### Build & Deployment Process
 
 Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. Some popular and proven tools include the JavaScript-based [Uglify.js](https://github.com/mishoo/UglifyJS), as well as the Java-based [Google Closure Compiler](http://code.google.com/closure/compiler/) and [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Choose one and support it.
 
 You can now find a functional, generic "build kit" in the `/kits` directory of this repository. Usage is easy: 1) copy the contents of a kit found in `/kits` to a new working directory, 2) save your project .js file in the `/src` directory, 3) put the name of the project in `project.txt`, 4) run `make` from command line. (Even easier directions: replace occurrences of "foo")
+
 
 ### Test Facility
 
@@ -348,190 +348,183 @@ Given the following HTML:
 
 Consider the implications of this logic:
 
-	```javascript
+```js
 
-	// 3.B.1.1
+// 3.B.1.1
 
-	// `foo` has been declared with the value `0` and its type is `number`
-	var foo = 0;
+// `foo` has been declared with the value `0` and its type is `number`
+var foo = 0;
 
-	// typeof foo;
-	// "number"
-	...
+// typeof foo;
+// "number"
+...
 
-	// Somewhere later in your code, you need to update `foo`
-	// with a new value derived from an input element
+// Somewhere later in your code, you need to update `foo`
+// with a new value derived from an input element
 
-	foo = document.getElementById("foo-input").value;
+foo = document.getElementById("foo-input").value;
 
-	// If you were to test `typeof foo` now, the result would be `string`
-	// This means that if you had logic that tested `foo` like:
+// If you were to test `typeof foo` now, the result would be `string`
+// This means that if you had logic that tested `foo` like:
 
-	if ( foo === 1 ) {
+if ( foo === 1 ) {
 
-		importantTask();
+	importantTask();
 
-	}
+}
 
-	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
-
-
-	// 3.B.1.2
-
-	// You can preempt issues by using smart coercion with unary + or - operators:
-
-	foo = +document.getElementById("foo-input").value;
-	      ^ unary + operator will converts its right side operand to a number
-
-	// typeof foo;
-	// "number"
-
-	if ( foo === 1 ) {
-
-		importantTask();
-
-	}
-
-	// `importantTask()` will be called
+// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
 
 
-	```
+// 3.B.1.2
+
+// You can preempt issues by using smart coercion with unary + or - operators:
+
+foo = +document.getElementById("foo-input").value;
+      ^ unary + operator will convert its right side operand to a number
+
+// typeof foo;
+// "number"
+
+if ( foo === 1 ) {
+
+	importantTask();
+
+}
+
+// `importantTask()` will be called
+```
 
 3.B
 
-	```javascript
+```javascript
 
-	// 3.B.1.1
+// 3.B.1.1
 
-	// `foo` has been declared with the value `0` and its type is `number`
-	var foo = 0;
+// `foo` has been declared with the value `0` and its type is `number`
+var foo = 0;
 
-	// typeof foo;
-	// "number"
-	...
+// typeof foo;
+// "number"
+...
 
-	// Somewhere later in your code, you need to update `foo`
-	// with a new value derived from an input element
+// Somewhere later in your code, you need to update `foo`
+// with a new value derived from an input element
 
-	foo = document.getElementById("foo-input").value;
+foo = document.getElementById("foo-input").value;
 
-	// If you were to test `typeof foo` now, the result would be `string`
-	// This means that if you had logic that tested `foo` like:
+// If you were to test `typeof foo` now, the result would be `string`
+// This means that if you had logic that tested `foo` like:
 
-	if ( foo === 1 ) {
+if ( foo === 1 ) {
 
-		importantTask();
+	importantTask();
 
-	}
+}
 
-	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
-
-
-	// 3.B.1.2
-
-	// You can preempt issues by using smart coercion with unary + or - operators:
-
-	foo = +document.getElementById("foo-input").value;
-	      ^ unary + operator will converts its right side operand to a number
-
-	// typeof foo;
-	// "number"
-
-	if ( foo === 1 ) {
-
-		importantTask();
-
-	}
-
-	// `importantTask()` will be called
-
-	```
-
-	Here are some common cases along with coercions:
+// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
 
 
-	```javascript
+// 3.B.1.2
 
-	// 3.B.2.1
+// You can preempt issues by using smart coercion with unary + or - operators:
 
-	var number = 1,
-	string = "1",
-	bool = false;
+foo = +document.getElementById("foo-input").value;
+      ^ unary + operator will convert its right side operand to a number
 
-	number;
-	// 1
+// typeof foo;
+// "number"
 
-	number + "";
-	// "1"
+if ( foo === 1 ) {
 
-	string;
-  // "1"
+	importantTask();
 
-	+string;
-	// 1
+}
 
-	+string++;
-	// 1
+// `importantTask()` will be called
 
-	string;
-	// 2
+```
 
-	bool;
-	// false
-
-	+bool;
-	// 0
-
-	bool + "";
-	// "false"
-
-	```
+Here are some common cases along with coercions:
 
 
-	```javascript
+```javascript
 
-	// 3.B.2.2
+// 3.B.2.1
 
-	var number = 1,
-	string = "1",
-	bool = true;
+var number = 1,
+string = "1",
+bool = false;
 
-	string === number;
-	// false
+number;
+// 1
 
-	string === number + "";
-	// true
+number + "";
+// "1"
 
-	+string === number;
-	// true
+string;
+ // "1"
 
-	bool === number;
-	// false
++string;
+// 1
 
-	+bool === number;
-	// true
++string++;
+// 1
 
-	bool === string;
-	// false
+string;
+// 2
 
-	bool === !!string;
-	// true
+bool;
+// false
 
-	```
++bool;
+// 0
 
-	```javascript
+bool + "";
+// "false"
+```
 
-	// 3.B.2.3
 
-	var array = [ "a", "b", "c" ];
+```javascript
+// 3.B.2.2
 
-	!~~array.indexOf( "d" );
-	// false
+var number = 1,
+string = "1",
+bool = true;
 
-	!~~array.indexOf( "a" );
-	// true
+string === number;
+// false
 
-	```
+string === number + "";
+// true
+
++string === number;
+// true
+
+bool === number;
+// false
+
++bool === number;
+// true
+
+bool === string;
+// false
+
+bool === !!string;
+// true
+```
+
+```javascript
+// 3.B.2.3
+
+var array = [ "a", "b", "c" ];
+
+!~~array.indexOf( "d" );
+// false
+
+!~~array.indexOf( "a" );
+// true
+```
 
 4. <a name="cond">Conditional Evaluation</a>
 
