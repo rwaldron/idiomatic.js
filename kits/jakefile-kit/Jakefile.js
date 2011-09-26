@@ -174,8 +174,8 @@ task( "clean", [], function( params ) {
 
 	print( "\nCleaning...\n\n" );
 	var files = [
-		DIST + "joystick.js",
-		DIST + "joystick.min.js",
+		DIST + "core.js",
+		DIST + "core.min.js",
 		""
 	],
 	length = files.length;
