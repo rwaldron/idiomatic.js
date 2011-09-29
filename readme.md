@@ -938,3 +938,12 @@ var array = [ "a", "b", "c" ];
 	* Single line above the code that is subject
 	* Multiline is good
 	* End of line comments are prohibited!
+
+
+
+## Appendix
+
+	### Comma First.
+
+	Should be avoided at all costs. See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
+	Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
