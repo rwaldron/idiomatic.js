@@ -1,4 +1,4 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Principe d'écriture d'un code Javascript cohérent et idiomatique
 
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
@@ -71,14 +71,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 1. <a name="whitespace">Whitespace</a>
 
-	* Never mix spaces and tabs.
-	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law.
-		* For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-	* If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-		* Enforced consistency
-		* Eliminating end of line whitespace
-		* Eliminating blank line whitespace
-		* Commits and diffs that are easier to read
+	* Ne jamais mélanger les espaces et les tabulations.
+	* Avant d'écriture le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
+		* Pour la lisibilité, Je recommende de paramétrer votre éditeur à une indentation de 4 caractères. Cela signifie que quatres caractères d'espace représentent une tabulation.
+	* Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
+		* Améliore la cohérence du code
+		* Elimine les espaces de fin de ligne
+		* Elimine les espaces utilisés pour des lignes blanches
+		* Améliorer la lisibilité de vos "commit" et des "diff"
 
 
 2. <a name="spacing">Beautiful Syntax</a>
