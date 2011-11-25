@@ -346,6 +346,8 @@ Given the following HTML:
 
 ```
 
+3.B
+
 Consider the implications of this logic:
 
 ```js
@@ -393,56 +395,6 @@ if ( foo === 1 ) {
 }
 
 // `importantTask()` will be called
-```
-
-3.B
-
-```javascript
-
-// 3.B.1.1
-
-// `foo` has been declared with the value `0` and its type is `number`
-var foo = 0;
-
-// typeof foo;
-// "number"
-...
-
-// Somewhere later in your code, you need to update `foo`
-// with a new value derived from an input element
-
-foo = document.getElementById("foo-input").value;
-
-// If you were to test `typeof foo` now, the result would be `string`
-// This means that if you had logic that tested `foo` like:
-
-if ( foo === 1 ) {
-
-	importantTask();
-
-}
-
-// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
-
-
-// 3.B.1.2
-
-// You can preempt issues by using smart coercion with unary + or - operators:
-
-foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will convert its right side operand to a number
-
-// typeof foo;
-// "number"
-
-if ( foo === 1 ) {
-
-	importantTask();
-
-}
-
-// `importantTask()` will be called
-
 ```
 
 Here are some common cases along with coercions:
