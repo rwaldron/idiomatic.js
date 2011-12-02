@@ -12,7 +12,7 @@
 
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
-### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected.
+### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
 
 
 ## Important, Non-Idiomatic Stuff:
