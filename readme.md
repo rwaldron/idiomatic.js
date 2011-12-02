@@ -768,6 +768,8 @@ var array = [ "a", "b", "c" ];
 
 7. <a name="misc">Misc</a>
 
+	This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+
 	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
 	Also, switch sucks. http://jsperf.com/switch-vs-object-literal-vs-module
