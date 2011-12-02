@@ -2,14 +2,12 @@
 
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
-Contributors:
-
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge)
 
-### All code in any code-base should look like a single person typed it, no matter how many people contributed.
+## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
