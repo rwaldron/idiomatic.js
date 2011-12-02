@@ -773,8 +773,11 @@ var array = [ "a", "b", "c" ];
 
 	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
-	Switch statements are slower than object literals or modules in many javascript engines. 
-	See : http://jsperf.com/switch-vs-object-literal-vs-module
+	There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+	http://jsperf.com/switch-vs-object-literal-vs-module
+
+	Notable improvements can be witnesses here as well:
+	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
 
