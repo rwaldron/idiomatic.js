@@ -342,147 +342,147 @@ Projects _must_ include some form of unit, reference, implementation or function
 			* `"prop" in object`
 
 
-JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
+	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
 
-Given the following HTML:
+	Given the following HTML:
 
-```html
+		```html
 
-<input type="text" id="foo-input" value="1">
+		<input type="text" id="foo-input" value="1">
 
-```
+		```
 
-3.B
+	3.B
 
-Consider the implications of this logic:
+	Consider the implications of this logic:
 
-```js
+		```js
 
-// 3.B.1.1
+		// 3.B.1.1
 
-// `foo` has been declared with the value `0` and its type is `number`
-var foo = 0;
+		// `foo` has been declared with the value `0` and its type is `number`
+		var foo = 0;
 
-// typeof foo;
-// "number"
-...
+		// typeof foo;
+		// "number"
+		...
 
-// Somewhere later in your code, you need to update `foo`
-// with a new value derived from an input element
+		// Somewhere later in your code, you need to update `foo`
+		// with a new value derived from an input element
 
-foo = document.getElementById("foo-input").value;
+		foo = document.getElementById("foo-input").value;
 
-// If you were to test `typeof foo` now, the result would be `string`
-// This means that if you had logic that tested `foo` like:
+		// If you were to test `typeof foo` now, the result would be `string`
+		// This means that if you had logic that tested `foo` like:
 
-if ( foo === 1 ) {
+		if ( foo === 1 ) {
 
-	importantTask();
+			importantTask();
 
-}
+		}
 
-// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
-
-
-// 3.B.1.2
-
-// You can preempt issues by using smart coercion with unary + or - operators:
-
-foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will convert its right side operand to a number
-
-// typeof foo;
-// "number"
-
-if ( foo === 1 ) {
-
-	importantTask();
-
-}
-
-// `importantTask()` will be called
-```
-
-Here are some common cases along with coercions:
+		// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
 
 
-```javascript
+		// 3.B.1.2
 
-// 3.B.2.1
+		// You can preempt issues by using smart coercion with unary + or - operators:
 
-var number = 1,
-string = "1",
-bool = false;
+		foo = +document.getElementById("foo-input").value;
+		      ^ unary + operator will convert its right side operand to a number
 
-number;
-// 1
+		// typeof foo;
+		// "number"
 
-number + "";
-// "1"
+		if ( foo === 1 ) {
 
-string;
- // "1"
+			importantTask();
 
-+string;
-// 1
+		}
 
-+string++;
-// 1
+		// `importantTask()` will be called
+		```
 
-string;
-// 2
-
-bool;
-// false
-
-+bool;
-// 0
-
-bool + "";
-// "false"
-```
+	Here are some common cases along with coercions:
 
 
-```javascript
-// 3.B.2.2
+		```javascript
 
-var number = 1,
-string = "1",
-bool = true;
+		// 3.B.2.1
 
-string === number;
-// false
+		var number = 1,
+		string = "1",
+		bool = false;
 
-string === number + "";
-// true
+		number;
+		// 1
 
-+string === number;
-// true
+		number + "";
+		// "1"
 
-bool === number;
-// false
+		string;
+		 // "1"
 
-+bool === number;
-// true
+		+string;
+		// 1
 
-bool === string;
-// false
+		+string++;
+		// 1
 
-bool === !!string;
-// true
-```
+		string;
+		// 2
 
-```javascript
-// 3.B.2.3
+		bool;
+		// false
 
-var array = [ "a", "b", "c" ];
+		+bool;
+		// 0
 
-!~~array.indexOf( "d" );
-// false
+		bool + "";
+		// "false"
+		```
 
-!~~array.indexOf( "a" );
-// true
-```
+
+		```javascript
+		// 3.B.2.2
+
+		var number = 1,
+		string = "1",
+		bool = true;
+
+		string === number;
+		// false
+
+		string === number + "";
+		// true
+
+		+string === number;
+		// true
+
+		bool === number;
+		// false
+
+		+bool === number;
+		// true
+
+		bool === string;
+		// false
+
+		bool === !!string;
+		// true
+		```
+
+		```javascript
+		// 3.B.2.3
+
+		var array = [ "a", "b", "c" ];
+
+		!~~array.indexOf( "d" );
+		// false
+
+		!~~array.indexOf( "a" );
+		// true
+		```
 
 4. <a name="cond">Conditional Evaluation</a>
 
