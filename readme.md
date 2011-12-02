@@ -902,5 +902,7 @@ var array = [ "a", "b", "c" ];
 
 ### Comma First.
 
-Should be avoided at all costs. See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
+Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
+
+See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
 Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
