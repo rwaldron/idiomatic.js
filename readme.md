@@ -477,11 +477,27 @@ bool === !!string;
 
 var array = [ "a", "b", "c" ];
 
-!~~array.indexOf( "d" );
+!!~array.indexOf( "a" );
+// true
+
+!!~array.indexOf( "b" );
+// true
+
+!!~array.indexOf( "c" );
+// true
+
+!!~array.indexOf( "d" );
 // false
 
-!~~array.indexOf( "a" );
-// true
+
+var num = 2.5;
+
+parseInt( num, 10 );
+
+// is the same as...
+
+~~num;
+
 ```
 
 4. <a name="cond">Conditional Evaluation</a>
