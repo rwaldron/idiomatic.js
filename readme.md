@@ -342,9 +342,14 @@ Projects _must_ include some form of unit, reference, implementation or function
 			* `"prop" in object`
 
 
-JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
+	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
 
-Given the following HTML:
+
+	3.B
+
+	Consider the implications of the following...
+
+	Given this HTML:
 
 	```html
 
@@ -352,9 +357,6 @@ Given the following HTML:
 
 	```
 
-3.B
-
-Consider the implications of this logic:
 
 	```js
 
