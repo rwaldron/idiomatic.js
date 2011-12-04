@@ -411,8 +411,8 @@ Here are some common cases along with coercions:
 // 3.B.2.1
 
 var number = 1,
-string = "1",
-bool = false;
+	string = "1",
+	bool = false;
 
 number;
 // 1
@@ -447,8 +447,8 @@ bool + "";
 // 3.B.2.2
 
 var number = 1,
-string = "1",
-bool = true;
+	string = "1",
+	bool = true;
 
 string === number;
 // false
