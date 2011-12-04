@@ -14,6 +14,10 @@
 
 ### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
 
+## Translations
+
+* [French](https://github.com/jfroffice/idiomatic.js/)
+
 
 ## Important, Non-Idiomatic Stuff:
 
