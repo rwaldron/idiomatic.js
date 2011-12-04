@@ -591,9 +591,8 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// but not `false`, "" or 0
 	null == undefined
 
-
 	```
-
+	ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma
 
 	```javascript
 
