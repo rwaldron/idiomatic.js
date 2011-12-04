@@ -123,10 +123,25 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// Even better:
 
+	var i,
+		length = 100;
+
+	for ( i = 0; i < length; i++ ) {
+		// statements
+	}
+
+	// Or...
+
 	var i = 0,
 		length = 100;
 
 	for ( ; i < length; i++ ) {
+		// statements
+	}
+
+	var prop;
+
+	for ( prop in object ) {
 		// statements
 	}
 
@@ -156,7 +171,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// 2.B.1.2
 	// Using only one `var` per scope (function) promotes readability
-	// and keeps your declaration list free of clutter (also saves a few bytes)
+	// and keeps your declaration list free of clutter (also saves a few keystrokes)
 
 	// Bad
 	var foo = "";
