@@ -310,7 +310,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
-	3.A
+	3.A Actual Types
 
 	* String:
 
@@ -360,7 +360,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`, as recommended.
 
 
-	3.B
+	3.B Coerced Types
 
 	Consider the implications of the following...
 
