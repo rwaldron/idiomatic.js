@@ -189,7 +189,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 2.B.2.2
-	// Named Function (w/ callback argument)
+	// Named Function Declaration (w/ callback argument)
 	function bar( arg1, callback ) {
 
 		if ( arg1 && callback ) {
@@ -205,30 +205,30 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// 2.B.2.3
 	// Function Expression
-	var quux = function( arg1, callback ) {
+	var quux = function( arg ) {
 
-		if ( arg1 && callback ) {
-			callback();
-		}
-
-		// always return 'something'
-		return true;
+		// Do stuff with `arg`
+		// always return something relevant
+		return relevantThing;
 	};
 
-	// Usage:
-	quux( arg1, function() {
-		// callback statements
-	});
+	// Usage
+	quux( arg1 );
 
 
 	// 2.B.2.4
-	// Constructor definition
-	function FooBar() {
-		return this;
+	// Constructor declaration
+	function FooBar( options ) {
+
+		this.options = options;
 	}
 
-	// Usage:
-	var fooBar = new FooBar();
+	// Usage
+	var fooBar = new FooBar({ a: "alpha" });
+
+	fooBar.options;
+	// { a: "alpha" }
+
 	```
 
 
