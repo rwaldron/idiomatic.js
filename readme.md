@@ -73,13 +73,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* Ne jamais mélanger les espaces et les tabulations.
 	* Avant d'écriture le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-		* Pour la lisibilité, Je recommende de paramétrer votre éditeur à une indentation de 4 caractères. Cela signifie que quatres caractères d'espace représentent une tabulation.
+		* Pour la lisibilité, paramétrer votre éditeur avec une indentation de 4 caractères.
 	* Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
 		* Améliore la cohérence du code
 		* Elimine les espaces de fin de ligne
 		* Elimine les espaces utilisés pour des lignes blanches
 		* Améliorer la lisibilité de vos "commit" et des "diff"
-
 
 2. <a name="spacing">Beautiful Syntax</a>
 
