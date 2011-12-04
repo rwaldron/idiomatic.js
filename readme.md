@@ -420,7 +420,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	// `importantTask()` will be called
 	```
 
-Here are some common cases along with coercions:
+	Here are some common cases along with coercions:
 
 
 	```javascript
