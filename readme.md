@@ -592,7 +592,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 	null == undefined
 
 	```
-	ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma
+	ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
 
 	```javascript
 
