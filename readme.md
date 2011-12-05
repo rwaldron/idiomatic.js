@@ -251,6 +251,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```
 
 
+	When possible, avoid anonymous functions. Unless it's a one line function where you really know nothing can go wrong. If you use mostly named methods, not only you will have a way to identify where your code fails in stack traces, but you will also avoid high levels of nested callbacks. And understand scope and context properly so you can redefine the context of methods to avoid nesting callbacks.
+
+
 	C. Exceptions, Slight Deviations
 
 	```javascript
