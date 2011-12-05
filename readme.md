@@ -60,6 +60,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
  * [Vows](https://github.com/cloudhead/vows)
+ * [Mocha](https://github.com/visionmedia/mocha)
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
 
