@@ -638,13 +638,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 	(function( global ) {
 		var Module = (function() {
 
-			// Private to this closure
-			var secret = "secret";
+			var data = "secret";
 
 			return {
 				// This is some boolean property
 				bool: true,
-				// Some other important string
+				// Some string value
 				string: "a string",
 				// An array property
 				array: [ 1, 2, 3, 4 ],
@@ -652,13 +651,13 @@ Projects _must_ include some form of unit, reference, implementation or function
 				object: {
 					lang: "en-Us"
 				},
-				getSecret: function() {
-					// get the "private" variable from here
-					return secret;
+				getData: function() {
+					// get the current value of `data`
+					return data;
 				},
-				setSecret: function( value ) {
-					// set the "private" variable
-					return ( secret = value );
+				setData: function( value ) {
+					// set the value of `data` and return it
+					return ( data = value );
 				}
 			};
 		})();
@@ -671,8 +670,6 @@ Projects _must_ include some form of unit, reference, implementation or function
 	})( this );
 
 	```
-
-	* NOTE: In the above example, "secret" is _not_really_ private
 
 	```javascript
 
