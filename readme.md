@@ -228,11 +228,20 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// 2.B.2.3
 	// Function Expression
-	var handler = function( arg ) {
+	var square = function( number ) {
+		// Return something valuable and relevant
+		return number * number;
+	};
 
-		// Do stuff with `arg`
-		// always return something relevant
-		return relevantThing;
+	// Function Expression with Identifier
+	// This preferred form has the added value of being
+	// able to call itself and have an identity in stack traces:
+	var factorial = function factorial( number ) {
+		if ( number < 2 ) {
+			return 1;
+		}
+
+		return number * factorial( number-1 );
 	};
 
 
