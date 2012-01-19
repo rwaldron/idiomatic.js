@@ -7,6 +7,7 @@
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
+* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -17,6 +18,7 @@
 ## Translations
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
+* [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
 
 
 ## Important, Non-Idiomatic Stuff:
