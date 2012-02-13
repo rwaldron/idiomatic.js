@@ -12,13 +12,11 @@
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
-> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
-
-
-
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
 ### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
+
+> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
 ## Translations
 
