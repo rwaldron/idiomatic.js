@@ -8,8 +8,13 @@
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+
+## "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+
+
 
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
