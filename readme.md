@@ -8,7 +8,7 @@
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
