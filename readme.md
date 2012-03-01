@@ -9,6 +9,9 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/@leobetosouza), [github](https://github.com/leobetosouza)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -22,7 +25,7 @@
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
 * [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
-
+* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
 
 ## Important, Non-Idiomatic Stuff:
 
@@ -198,7 +201,27 @@ Projects _must_ include some form of unit, reference, implementation or function
 	foo = "",
 	bar = "",
 	quux;
+	
+	// 2.B.1.3
+	// var statements should always be in the beginning of their respective scope (function). 
+	// Same goes for const and let from ECMAScript 6.
 
+	// Bad
+	function foo() {
+
+		// some statements here
+
+		var bar = "",
+			qux;
+	}
+	
+	// Good
+	function foo() {
+		var bar = "",
+			qux;
+			
+		// all statements after the variables declarations.
+	}
 	```
 
 	```javascript
