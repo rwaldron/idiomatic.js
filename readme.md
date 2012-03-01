@@ -10,6 +10,8 @@
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/@leobetosouza), [github](https://github.com/leobetosouza)
 
 ## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independente de quantas pessoas tenham contribuído.
 
