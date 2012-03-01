@@ -1,4 +1,4 @@
-# Princípios para Escrever Javascript de forma Consistente e Idiomática
+# Princípios para Escrever JavaScript de forma Consistente e Idiomática
 
 ## Este é um documento vivo e novas idéias para melhorar os códigos correspondentes são sempre bem vindas. Contribua: faça fork, clone, branch, commit, push, pull request.
 
@@ -11,13 +11,13 @@
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 
-## Todo código em qualquer aplicação deve parecer como se fosse escrito por uma única pessoa, independente de quantas pessoas tenham contribuído.
+## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independente de quantas pessoas tenham contribuído.
 
 ### A lista a seguir descreve as práticas que eu uso em todo código onde sou o autor original; contribuições em projetos que eu criei devem seguir essas mesmas orientações.
 
 ### Eu não tenho a intenção de impor minhas preferências por estilos nos códigos de outras pessoas; se eles seguem um estilo em comum - isso deve ser respeitado.
 
-> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má idéia™. Se milhares de pessoas estão utilizando o seu código, então escreva o seu código com máxima clareza, não sob a sua preferência pessoal sobre como ser esperto com uma especificação." - Idan Gazit
+> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má idéia™. Se milhares de pessoas estão usando o seu código, escreva-o com máxima clareza, não sob a sua preferência pessoal de como ser esperto com a especificação." - Idan Gazit
 
 ## Traduções
 
@@ -37,14 +37,14 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools (em pt_BR: Aproveitamento de Ferramentas de Qualidade de Código) por Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+[Leveraging Code Quality Tools (em pt_BR: Tirando Proveito de Ferramentas de Qualidade de Código) por Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
 ### Fique Ligado
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Deve ser considerado o seguinte: 1) incompleto; e 2) *LEITURA OBRIGATÓRIA*. Eu não concordo sempre com os estilos escritos pelos autores abaixo, mas uma coisa é certa: Eles são consistentes. Além disso, esses são autoridades na linguagem.
+A lista a seguir deve ser considerada: 1) incompleta; e 2) *LEITURA OBRIGATÓRIA*. Eu não concordo sempre com os estilos escritos pelos autores abaixo, mas uma coisa é certa: Eles são consistentes. Além disso, esses são autoridades na linguagem.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -62,7 +62,7 @@ Você pode encontrar um "build kit" funcional e genérico no diretório `/kits` 
 
 ### Ambiente de Teste
 
-Projetos _devem_ incluir alguma forma de teste unitário, por referência, de implementaçao ou funcional. Demonstrações de casos de uso NÃO SE QUALIFICAM como "testes". A lista a seguir contém frameworks de testes, nenhuma delas é considerada melhor que as demais.
+Projetos _devem_ incluir alguma forma de teste unitário, de referência, de implementaçao ou funcional. Demonstrações de casos de uso NÃO SE QUALIFICAM como "testes". A lista a seguir contém frameworks de testes, nenhuma delas é considerada melhor que as demais.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -71,7 +71,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, por referência, de im
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
 
-## Tabela de Conteúdos
+## Índice
 
  * [Espaço em Branco](#whitespace)
  * [Sintaxe Bonita](#spacing)
@@ -94,9 +94,9 @@ Projetos _devem_ incluir alguma forma de teste unitário, por referência, de im
 		* Pela legibilidade, eu sempre recomendo que configure o tamanho de indentação de seu editor para dois caracteres - isso significa dois espaços ou dois espaços representando um tab real.
 	* Se o seu editor suportar, sempre trabalhe com a configuração de "mostrar caracteres invisíveis" ligada. Os benefícios desta prática são:
 		* Fortalecer a consistência
-		* Eliminação de espaço em branco ao final da linha
-		* Eliminação de espaços em uma linha em branco
-		* Leituras de commits e diffs ficam mais legíveis
+		* Eliminar espaço em branco ao final da linha
+		* Eliminar espaços em uma linha em branco
+		* Commits e diffs mais legíveis
 
 
 2. <a name="spacing">Sintaxe Bonita</a>
@@ -133,7 +133,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, por referência, de im
 		// instruções
 	}
 
-	// Ainda melhor:
+	// Melhor ainda:
 
 	var i,
 		length = 100;
