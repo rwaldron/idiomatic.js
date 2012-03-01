@@ -201,6 +201,28 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	bar = "",
 	quux;
 
+
+	// 2.B.1.3
+	// declarações de variáveis devem sempre estar no início de seu respectivo escopo (função)
+	// O mesmo deve acontecer para declarações de `const` e `let` do ECMAScript 6.
+
+	// Ruim
+	function foo() {
+
+		// algumas instruções aqui
+
+		var bar = "",
+			qux;
+	}
+
+	// Bom
+	function foo() {
+		var bar = "",
+			qux;
+
+		// algumas instruções depois das declarações de variáveis
+	}
+
 	```
 
 	```javascript
