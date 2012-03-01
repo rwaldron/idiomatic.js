@@ -9,6 +9,9 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/@leobetosouza), [github](https://github.com/leobetosouza)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -22,7 +25,7 @@
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
 * [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
-
+* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
 
 ## Important, Non-Idiomatic Stuff:
 
