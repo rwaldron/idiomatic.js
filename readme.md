@@ -932,7 +932,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, por referência, de im
 	```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Objetos Nativos e Hospedados</a>
 
 	O conceito principal aqui é:
 
