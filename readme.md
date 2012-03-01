@@ -269,70 +269,70 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```
 
 
-	C. Exceptions, Slight Deviations
+	C. Exceções, Pequenos Desvios
 
 	```javascript
 
 	// 2.C.1.1
-	// Functions with callbacks
+	// Funções com callbacks
 	foo(function() {
-		// Note there is no extra space between the first paren
-		// of the executing function call and the word "function"
+		// Veja que não há espaço extra entre o primeiro parentesis
+		// da chamada de função e a palavra "function"
 	});
 
-	// Function accepting an array, no space
+	// Função recebendo uma array, sem espaço
 	foo([ "alpha", "beta" ]);
 
 	// 2.C.1.2
-	// Function accepting an object, no space
+	// Função recebendo um objeto, sem espaço
 	foo({
 		a: "alpha",
 		b: "beta"
 	});
 
-	// Inner grouping parens, no space
+	// Parêntesis internos de agrupamento, sem espaço
 	if ( !("foo" in obj) ) {
 
 	}
 
 	```
 
-	D. Consistency Always Wins
+	D. Consistência Sempre Ganha
 
-	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+	Nas seções 2.A-2.C, as regras de espaço em branco são recomendadas sob um propósito simples e maior: consistência.
+	É importante notar que preferências de formatação, tais como "espaço em branco interno" deve ser considerado opcional, mas apenas um estilo deve existir por toda a fonte de seu projeto.
 
 	```javascript
 
 	// 2.D.1.1
 
 	if (condition) {
-		// statements
+		// instruções
 	}
 
 	while (condition) {
-		// statements
+		// instruções
 	}
 
 	for (var i = 0; i < 100; i++) {
-		// statements
+		// instruções
 	}
 
 	if (true) {
-		// statements
+		// instruções
 	} else {
-		// statements
+		// instruções
 	}
 
 	```
 
-	E. End of Lines and Empty Lines
+	E. Finais de Linha e Linhas Vazias
 
-	Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+	Espaços em branco podem arruinar diffs e fazer com que _changesets_ sejam impossíveis de se ler. Considere incorporar um gancho de pre-commit que remova espaços em branco ao final das linhas e espaços em branco em linhas vazias automaticamente.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Checagem de Escrita (CCortesia das Recomendações de Estilo do Núcleo do jQuery)</a>
 
-	3.A Actual Types
+	3.A Tipos Existentes 
 
 	* String:
 
@@ -359,34 +359,34 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 		`variable === null`
 
-	* null or undefined:
+	* null ou undefined:
 
 		`variable == null`
 
 	* undefined:
 
-		* Global Variables:
+		* Variáveis Globais:
 
 			* `typeof variable === "undefined"`
 
-		* Local Variables:
+		* Variáveis Locais:
 
 			* `variable === undefined`
 
-		* Properties:
+		* Propriedades:
 			* `object.prop === undefined`
 			* `object.hasOwnProperty( prop )`
 			* `"prop" in object`
 
 
-	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`, as recommended.
+	JavaScript é uma linguagem de escrita dinâmica - o que pode ser seu melhor amigo ou pior inimigo, então: Sempre respeite o `tipo`, como recomendado.
 
 
-	3.B Coerced Types
+	3.B Tipos Coagidos
 
-	Consider the implications of the following...
+	Considere as implicações do seguinte...
 
-	Given this HTML:
+	Dado este HTML:
 
 	```html
 
@@ -399,20 +399,20 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	// 3.B.1.1
 
-	// `foo` has been declared with the value `0` and its type is `number`
+	// `foo` foi declarado com o valor `0` e seu tipo é `number`
 	var foo = 0;
 
 	// typeof foo;
 	// "number"
 	...
 
-	// Somewhere later in your code, you need to update `foo`
-	// with a new value derived from an input element
+	// Algum momento depois no seu código, você precisa atualizar `foo`
+	// com um novo valor derivado de um elemento `input`
 
 	foo = document.getElementById("foo-input").value;
 
-	// If you were to test `typeof foo` now, the result would be `string`
-	// This means that if you had logic that tested `foo` like:
+	// Se você testasse `typeof foo` agora, o resultado seria uma `string`
+	// Isso significa que se tivesse uma lógica que testasse `foo` como:
 
 	if ( foo === 1 ) {
 
@@ -420,15 +420,15 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	}
 
-	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	// `importantTask()` nunca seria chamado, mesmo que `foo` tivesse um valor "1"
 
 
 	// 3.B.1.2
 
-	// You can preempt issues by using smart coercion with unary + or - operators:
+	// Você pode prevenir problemas utilizando uma coerção automática com os operadores + ou -:
 
 	foo = +document.getElementById("foo-input").value;
-	      ^ unary + operator will convert its right side operand to a number
+	      ^ o operador + irá converter o operando do lado direito para um número
 
 	// typeof foo;
 	// "number"
@@ -439,10 +439,10 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	}
 
-	// `importantTask()` will be called
+	// `importantTask()` será chamado 
 	```
 
-	Here are some common cases along with coercions:
+	Aqui temos alguns casos comuns com coerções:
 
 
 	```javascript
@@ -460,7 +460,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	// "1"
 
 	string;
-	 // "1"
+	// "1"
 
 	+string;
 	// 1
@@ -533,88 +533,88 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	parseInt( num, 10 );
 
-	// is the same as...
+	// é o mesmo que...
 
 	~~num;
 
 	```
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Avaliação Condicional</a>
 
 	```javascript
 
 	// 4.1.1
-	// When only evaluating that an array has length,
-	// instead of this:
+	// Quando estiver apenas avaliando se uma array tem tamanho,
+	// ao invés disso:
 	if ( array.length > 0 ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...avalie a verdade lógica, como isso:
 	if ( array.length ) ...
 
 
 	// 4.1.2
-	// When only evaluating that an array is empty,
-	// instead of this:
+	// Quando estiver apenas avaliando se uma array está vazia,
+	// ao invés disso:
 	if ( array.length === 0 ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...avalie a verdade lógica, como isso:
 	if ( !array.length ) ...
 
 
 	// 4.1.3
-	// When only evaluating that a string is not empty,
-	// instead of this:
+	// Quando estiver apenas avaliando se uma string não está vazia,
+	// ao invés disso:
 	if ( string !== "" ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...avalie a verdade lógica, como isso:
 	if ( string ) ...
 
 
 	// 4.1.4
-	// When only evaluating that a string _is_ empty,
-	// instead of this:
+	// Quando estiver apenas avaliando se uma string está vazia,
+	// ao invés disso:
 	if ( string === "" ) ...
 
-	// ...evaluate falsy-ness, like this:
+	// ...avalie se ela é logicamente falsa, como isso:
 	if ( !string ) ...
 
 
 	// 4.1.5
-	// When only evaluating that a reference is true,
-	// instead of this:
+	// Quando estiver avaliando se uma referência é verdadeira,
+	// ao invés disso:
 	if ( foo === true ) ...
 
-	// ...evaluate like you mean it, take advantage of it's primitive capabilities:
+	// ...avalie como se quisesse isso, use a vantagem de suas capacidades primitivas:
 	if ( foo ) ...
 
 
 	// 4.1.6
-	// When evaluating that a reference is false,
-	// instead of this:
+	// Quando estiver avaliando se uma referência é falsa,
+	// ao invés disso:
 	if ( foo === false ) ...
 
-	// ...use negation to coerce a true evaluation
+	// ...use a negação para coagir para uma avaliação verdadeira
 	if ( !foo ) ...
 
-	// ...Be careful, this will also match: 0, "", null, undefined, NaN
-	// If you _MUST_ test for a boolean false, then use
+	// ...Seja cuidadoso, isso também irá funcionar com: 0, "", null, undefined, NaN
+	// Se você _PRECISA_ testar um valor falso de tipo booleano, então use
 	if ( foo === false ) ...
 
 
 	// 4.1.7
-	// When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-	// instead of this:
+	// Quando apenas estiver avaliando uma referência que pode ser `null` ou `undefined`, mas não `false`, "" ou 0,
+	// ao invés disso:
 	if ( foo === null || foo === undefined ) ...
 
-	// ...take advantage of == type coercion, like this:
+	// ...aproveite a vantagem da coerção de tipo com ==, como isso:
 	if ( foo == null ) ...
 
-	// Remember, using == will match a `null` to BOTH `null` and `undefined`
-	// but not `false`, "" or 0
+	// Lembre-se, utilizando == irá funcionar em um `null` TANTO para `null` quanto para `undefined`
+	// mas não para `false`, "" ou 0
 	null == undefined
 
 	```
-	ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+	SEMPRE avalie para o melhor e mais preciso resultado - o que está acima é uma recomendação, não um dogma.
 
 	```javascript
 
@@ -852,15 +852,15 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	var switchObj = {
 		alpha: function() {
-			// statements
+			// instruções
 			// a return
 		},
 		beta: function() {
-			// statements
+			// instruções
 			// a return
 		},
 		_default: function() {
-			// statements
+			// instruções
 			// a return
 		}
 	};
@@ -868,15 +868,15 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	var switchModule = (function () {
 		return {
 			alpha: function() {
-				// statements
+				// instruções
 				// a return
 			},
 			beta: function() {
-				// statements
+				// instruções
 				// a return
 			},
 			_default: function() {
-				// statements
+				// instruções
 				// a return
 			}
 		};
@@ -907,7 +907,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```javascript
 
 	// 7.B.1.1
-	// Bad:
+	// Ruim:
 	function returnLate( foo ) {
 		var ret;
 
@@ -919,7 +919,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 		return ret;
 	}
 
-	// Good:
+	// Bom:
 
 	function returnEarly( foo ) {
 
@@ -934,13 +934,13 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 8. <a name="native">Objetos Nativos e Hospedados</a>
 
-	O conceito principal aqui é:
+	O principio básico aqui é:
 
 	### Não faça coisas estúpidas e tudo vai ficar bem.
 
-	Para reforçar esse conceito, por favor, assista está apresentação:
+	Para reforçar esse conceito, por favor, assista essa apresentação:
 
-	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+	#### “Everything is Permitted: Extending Built-ins” por Andrew Dupont (JSConf2011, Portland, Oregon)
 
 	<iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
 
@@ -949,18 +949,18 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 9. <a name="comments">Comentários</a>
 
-	* Seguir o estilo do JSDoc é legal (Closure Compiler type hints++)
-	* Uma linha acima do código que está sendo comentado
-	* Comentários em multiplas linhas são bons
-	* Comentários no fim da linha são proibídos!
+	* O estilo do JSDoc é bom (dicas de escrita do Closure Compiler++)
+	* Uma linha única acima do código que é comentado
+	* Multiplas linhas é boms
+	* Comentários ao final da linha são proibidos!
 
 
 
 ## Apêndice
 
-### Vírgula na frente.
+### Vírgula inicial.
 
-Qualquer projeto que diga que esse documento é sua guia de estilo não aceitará formatação com vírgulas na frente, a não ser que seja explicitamente especificado.
+Qualquer projeto que cite este documento como seu guia base de estilo não aceitará formatação de código com vírgula inicial, a não ser que isso seja explicitamente especificado de outra forma.
 
 Veja: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
 Destaques: "Isso é horrível, e um motivo para rejeitar vírgulas na frente.", "vírgulas na frente devem ser evitadas"
