@@ -934,11 +934,11 @@ Projetos _devem_ incluir alguma forma de teste unitário, por referência, de im
 
 8. <a name="native">Native & Host Objects</a>
 
-	The basic principal here is:
+	O conceito principal aqui é:
 
-	### Don't do stupid shit and everything will be ok.
+	### Não faça coisas estúpidas e tudo vai ficar bem.
 
-	To reinforce this concept, please watch the following presentation:
+	Para reforçar esse conceito, por favor, assista está apresentação:
 
 	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -947,20 +947,20 @@ Projetos _devem_ incluir alguma forma de teste unitário, por referência, de im
 	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Comentários</a>
 
-	* JSDoc style is good (Closure Compiler type hints++)
-	* Single line above the code that is subject
-	* Multiline is good
-	* End of line comments are prohibited!
+	* Seguir o estilo do JSDoc é legal (Closure Compiler type hints++)
+	* Uma linha acima do código que está sendo comentado
+	* Comentários em multiplas linhas são bons
+	* Comentários no fim da linha são proibídos!
 
 
 
-## Appendix
+## Apêndice
 
-### Comma First.
+### Vírgula na frente.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
+Qualquer projeto que diga que esse documento é sua guia de estilo não aceitará formatação com vírgulas na frente, a não ser que seja explicitamente especificado.
 
-See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
-Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
+Veja: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
+Destaques: "Isso é horrível, e um motivo para rejeitar vírgulas na frente.", "vírgulas na frente devem ser evitadas"
