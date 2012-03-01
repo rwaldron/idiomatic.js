@@ -619,70 +619,70 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```javascript
 
 	// 4.2.1
-	// Type coercion and evaluation notes
+	// Coerção de tipo e notas sobre avaliações
 
-	Prefer `===` over `==` (unless the case requires loose type evaluation)
+	Prefira `===` ao invés de  `==` (ao menos em casos que necessitem avaliação de tipos flexíveis)
 
-	=== does not coerce type, which means that:
+	=== não faz coerção de tipo, o que significa que:
 
 	"1" === 1;
 	// false
 
-	== does coerce type, which means that:
+	== faz coerção de tipo, o que significa que:
 
 	"1" == 1;
 	// true
 
 
 	// 4.2.2
-	// Booleans, Truthies & Falsies
+	// Booleanos, Verdades e Negações
 
-	Booleans: true, false
+	Booleanos: true, false
 
-	Truthy are: "foo", 1
+	Tipos verdadeiros são: "foo", 1
 
-	Falsy are: "", 0, null, undefined, NaN, void 0
+	Tipos de negações são: "", 0, null, undefined, NaN, void 0
 
 	```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Estilo Prático</a>
 
 	```javascript
 
 	// 5.1.1
-	// A Practical Module
+	// Um módulo prático
 
 	(function( global ) {
 		var Module = (function() {
 
-			var data = "secret";
+			var data = "segredo";
 
 			return {
-				// This is some boolean property
+				// Essa é uma propriedade booleana
 				bool: true,
-				// Some string value
-				string: "a string",
-				// An array property
+				// Algum valor de string
+				string: "uma string",
+				// Uma propriedade em array
 				array: [ 1, 2, 3, 4 ],
-				// An object property
+				// Uma propriedade em objeto
 				object: {
-					lang: "en-Us"
+					lang: "pt-BR"
 				},
 				getData: function() {
-					// get the current value of `data`
+					// pega o valor atual de `data`
 					return data;
 				},
 				setData: function( value ) {
-					// set the value of `data` and return it
+					// atribui o valor a data que é retornado
 					return ( data = value );
 				}
 			};
 		})();
 
-		// Other things might happen here
+		// Outras coisas que também podem acontecer aqui
 
-		// expose our module to the global object
+		// Expor seu módulo ao objeto global
 		global.Module = Module;
 
 	})( this );
@@ -692,7 +692,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```javascript
 
 	// 5.2.1
-	// A Practical Constructor
+	// Um Construtor Prático
 
 	(function( global ) {
 
@@ -712,13 +712,13 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 		};
 
 
-		// To call constructor's without `new`, you might do this:
+		// Para chamar um construtor sem o `new`, você pode fazer assim:
 		var ctor = function( foo ) {
 			return new Ctor( foo );
 		};
 
 
-		// expose our constructor to the global object
+		// exponha nosso construtor ao objeto global
 		global.ctor = ctor;
 
 	})( this );
@@ -727,17 +727,17 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Nomenclatura</a>
 
 
-	You are not a human code compiler/compressor, so don't try to be one.
+	Se você não é um humano compilador ou compactador de código, não tente ser um.
 
-	The following code is an example of egregious naming:
+	O código a seguir é um exemplo de nomenclatura ruim:
 
 	```javascript
 
 	// 6.1.1
-	// Example of code with poor names
+	// Exemplo de código com nomenclaturas fracas
 
 	function q(s) {
 		return document.querySelectorAll(s);
@@ -746,14 +746,14 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	for(i=0;i<els.length;i++){a.push(els[i]);}
 	```
 
-	Without a doubt, you've written code like this - hopefully that ends today.
+	Sem dúvida, você já deve ter escrito código assim - provavelmente isso acaba hoje.
 
-	Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+	Aqui temos o mesmo trecho lógico, porém com uma nomenclatura simpática e mais inteligente (e uma estrutura legível):
 
 	```javascript
 
 	// 6.2.1
-	// Example of code with improved names
+	// Exemplo de código com nomenclatura melhorada
 
 	function query( selector ) {
 		return document.querySelectorAll( selector );
@@ -770,42 +770,53 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	```
 
-	A few additional naming pointers:
+	Algumas indicações adicionais de nomenclaturas
 
 	```javascript
 
 	// 6.3.1
-	// Naming strings
+	// Nomes de strings
 
-	`dog` is a string
+	`dog` é uma string
 
 
 	// 6.3.2
-	// Naming arrays
+	// Nomes de arrays 
 
-	`dogs` is an array of `dog` strings
+	`dogs` é uma array de strings `dog`
 
 
 	// 6.3.3
-	// Naming functions, objects, instances, etc
+	// Nomes de funções, objetos, instancias, etc
 
-	camelCase; function and var declarations
+	// funções e declarações de variáveis
+	camelCase; 
 
 
 	// 6.3.4
-	// Naming constructors, prototypes, etc.
+	// Nomes de construtores, protótipos, etc
 
-	PascalCase; constructor function
+	// função construtora
+	PascalCase;
 
 
 	// 6.3.5
-	// Naming regular expressions
+	// Nomes de expressões regulares
 
 	rDesc = //;
 
 
 	// 6.3.6
-	// From the Google Closure Library Style Guide
+	// Do Guia de Estilos da Biblioteca do Google Closure 
+
+	funcoesNomeadasAssim;
+  variaveisNomeadasAssim;
+	ConstrutoresNomeadosAssim;
+	EnumNomeadosAssim;
+	metodosNomeadosAssim;
+	CONSTANTES_SIMBOLICAS_ASSIM;
+
+	// nota da tradução: não havia tradução no Google Closure, o original é o seguinte:
 
 	functionNamesLikeThis;
 	variableNamesLikeThis;
@@ -815,25 +826,24 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	SYMBOLIC_CONSTANTS_LIKE_THIS;
 
 
-
 	```
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Miscelânea</a>
 
-	This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+	Esta seção deve servir para ilustrar idéias e conceitos sobre como não se considerar isso como um dogma, mas ao invés disso deve encorajar o questionamento de práticas na tentativa de encontrar formas melhores para executar tarefas comuns na programação em JavaScript.
 
-	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+	A. Utilizar `switch` deve ser evitado, métodos modernos de verificação deverão adicionar funções com `switch` em suas listas negras
 
-	There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+	Parecem haver melhorias significativamente drásticas à execução de `switch` nas últimas versões do Firefox e do Chrome:
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
-	Notable improvements can be witnesses here as well:
+	Melhorias notáveis podem ser observadas aqui também:
 	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
 
 	// 7.A.1.1
-	// An example switch statement
+	// Um exemplo de uma instrução switch
 
 	switch( foo ) {
 		case "alpha":
@@ -843,25 +853,25 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 			beta();
 			break;
 		default:
-			// something to default to
+			// algo para executar por padrão
 			break;
 	}
 
 	// 7.A.1.2
-	// A better approach would be to use an object literal or even a module:
+	// Um caso melhor seria utilizar um objeto literal ou até um módulo:
 
 	var switchObj = {
 		alpha: function() {
 			// instruções
-			// a return
+			// um retorno
 		},
 		beta: function() {
 			// instruções
-			// a return
+			// um retorno
 		},
 		_default: function() {
 			// instruções
-			// a return
+			// um retorno
 		}
 	};
 
@@ -869,40 +879,40 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 		return {
 			alpha: function() {
 				// instruções
-				// a return
+				// um retorno
 			},
 			beta: function() {
 				// instruções
-				// a return
+				// um retorno
 			},
 			_default: function() {
 				// instruções
-				// a return
+				// um retorno
 			}
 		};
 	})();
 
 
 	// 7.A.1.3
-	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+	// Se `foo` é uma propriedade de `switchObj` ou `switchModule`, execute-a como um método...
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-	// If you know and trust the value of `foo`, you could even omit the OR check
-	// leaving only the execution:
+	// Se você conhece e confia no valor de `foo`, você pode inclusive omitir a checagem `OR`
+	// deixando apenas a execução:
 
 	switchObj[ foo ]( args );
 
 	switchModule[ foo ]( args );
 
 
-	// This pattern also promotes code reusability.
+	// Esse padrão também promove a reutilização de código
 
 	```
 
-	B. Early returns promote code readability with negligible performance difference
+	B. Retornos antecipados promovem legibilidade de código com mínima diferença de performance
 
 	```javascript
 
