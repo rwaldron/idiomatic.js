@@ -1,6 +1,6 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Princípios para Escrever Javascript de forma Consistente e Idiomática
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Este é um documento vivo e novas idéias para melhorar os códigos correspondentes são sempre bem vindas. Contribua: faça fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -9,24 +9,26 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+## Todo código em qualquer aplicação deve parecer como se fosse escrito por uma única pessoa, independente de quantas pessoas tenham contribuído.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+### A lista a seguir descreve as práticas que eu uso em todo código onde sou o autor original; contribuições em projetos que eu criei devem seguir essas mesmas orientações.
 
-### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
+### Eu não tenho a intenção de impor minhas preferências por estilos nos códigos de outras pessoas; se eles seguem um estilo em comum - isso deve ser respeitado.
 
-> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má idéia™. Se milhares de pessoas estão utilizando o seu código, então escreva o seu código com máxima clareza, não sob a sua preferência pessoal sobre como ser esperto com uma especificação." - Idan Gazit
 
-## Translations
+## Traduções
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
 * [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
+* [Português - Brasil](https://github.com/leobalter/idiomatic.js/)
 
 
-## Important, Non-Idiomatic Stuff:
+## Conteúdo Importante e Não Idiomático:
 
-### Code Quality: Awesome Tools, Resources & References
+### Qualidade de Código: Ferramentas, Recursos e Referências Bacanas
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -35,14 +37,14 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+[Leveraging Code Quality Tools (em pt_BR: Aproveitamento de Ferramentas de Qualidade de Código) por Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
-### Get Smart
+### Fique Ligado
 
 [http://es5.github.com/](http://es5.github.com/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Deve ser considerado o seguinte: 1) incompleto; e 2) *LEITURA OBRIGATÓRIA*. Eu não concordo sempre com os estilos escritos pelos autores abaixo, mas uma coisa é certa: Eles são consistentes. Além disso, esses são autoridades na linguagem.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -51,16 +53,16 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
 
-### Build & Deployment Process
+### Processos de Build e Deploy
 
-Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. Some popular and proven tools include the JavaScript-based [Uglify.js](https://github.com/mishoo/UglifyJS), as well as the Java-based [Google Closure Compiler](http://code.google.com/closure/compiler/) and [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Choose one and support it.
+Projetos devem sempre tentar incluir alguns formatos genéricos para que o código fonte possa ser compactado no preparo para uso em produção. Algumas ferramentas populares e testadas incluem o [Uglify.js](https://github.com/mishoo/UglifyJS) feito em JavaScript, assim como o [Google Closure Compiler](http://code.google.com/closure/compiler/) e [YUI Compressor](http://developer.yahoo.com/yui/compressor/) feitos em Java. Escolha um e apoie o mesmo.
 
-You can now find a functional, generic "build kit" in the `/kits` directory of this repository. Usage is easy: 1) copy the contents of a kit found in `/kits` to a new working directory, 2) save your project .js file in the `/src` directory, 3) put the name of the project in `project.txt`, 4) run `make` from command line. (Even easier directions: replace occurrences of "foo")
+Você pode encontrar um "build kit" funcional e genérico no diretório `/kits` deste repositório. A Utilização é simples: 1) copie o conteúdo de um dos kits encontrados em `/kits` para um novo diretório, 2) grave o arquivo .js de  seu projeto no diretório `/src`, 3) coloque o nome do projeto dentro de `project.txt`, 4) execute o `make` pela linha de comando. (Caminho mais fácil: troque as ocorrências de "foo")
 
 
-### Test Facility
+### Ambiente de Teste
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+Projetos _devem_ incluir alguma forma de teste unitário, por referência, de implementaçao ou funcional. Demonstrações de casos de uso NÃO SE QUALIFICAM como "testes". A lista a seguir contém frameworks de testes, nenhuma delas é considerada melhor que as demais.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -69,132 +71,132 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
 
-## Table of Contents
+## Tabela de Conteúdos
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
-
-
-## Idiomatic Style Manifesto
+ * [Espaço em Branco](#whitespace)
+ * [Sintaxe Bonita](#spacing)
+ * [Checagem de Escrita (Cortesia das Recomendações de Estilo do Núcleo do jQuery)](#type)
+ * [Avaliação Condicional](#cond)
+ * [Estilo Prático](#practical)
+ * [Nomenclatura](#naming)
+ * [Miscelâneas](#misc)
+ * [Objetos Nativos e Hospedados](#native)
+ * [Comentários](#comments)
 
 
-1. <a name="whitespace">Whitespace</a>
-
-	* Never mix spaces and tabs.
-	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law.
-		* For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-	* If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-		* Enforced consistency
-		* Eliminating end of line whitespace
-		* Eliminating blank line whitespace
-		* Commits and diffs that are easier to read
+## Manifesto de Estilo Idiomático
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+1. <a name="whitespace">Espaço em Branco</a>
 
-	A. Parens, Braces, Linebreaks
+	* Nunca misture espaços e tabs.
+ 	* Quando começar um projeto, antes de escrever qualquer código, escolha entre indentação suave (espaços) ou tabulação real (tabs) - isso é lei.
+		* Pela legibilidade, eu sempre recomendo que configure o tamanho de indentação de seu editor para dois caracteres - isso significa dois espaços ou dois espaços representando um tab real.
+	* Se o seu editor suportar, sempre trabalhe com a configuração de "mostrar caracteres invisíveis" ligada. Os benefícios desta prática são:
+		* Fortalecer a consistência
+		* Eliminação de espaço em branco ao final da linha
+		* Eliminação de espaços em uma linha em branco
+		* Leituras de commits e diffs ficam mais legíveis
+
+
+2. <a name="spacing">Sintaxe Bonita</a>
+
+	A. Parênteses, Chaves e Quebras de Linhas
 
 	```javascript
 
-	// if/else/for/while/try always have spaces, braces and span multiple lines
-	// this encourages readability
+	// if/else/for/while/try sempre tem espaços, chaves e ocorrem em múltiplas linhas
+	// isso facilita a legibilidade
 
 	// 2.A.1.1
-	// Examples of really cramped syntax
+	// Exemplos de código pouco claro/bagunçado
 
-	if(condition) doSomething();
+	if(condicao) facaAlgo();
 
-	while(condition) iterating++;
+	while(condicao) iteracao++;
 
-	for(var i=0;i<100;i++) someIterativeFn();
+	for(var i=0;i<100;i++) algumaIteracao();
 
 
 	// 2.A.1.1
-	// Use whitespace to promote readability
+	// Use espaço em branco para facilitar a leitura
 
-	if ( condition ) {
-		// statements
+	if ( condicao ) {
+		// instruções
 	}
 
-	while ( condition ) {
-		// statements
+	while ( condicao ) {
+		// instruções
 	}
 
 	for ( var i = 0; i < 100; i++ ) {
-		// statements
+		// instruções
 	}
 
-	// Even better:
+	// Ainda melhor:
 
 	var i,
 		length = 100;
 
 	for ( i = 0; i < length; i++ ) {
-		// statements
+		// instruções
 	}
 
-	// Or...
+	// Ou...
 
 	var i = 0,
 		length = 100;
 
 	for ( ; i < length; i++ ) {
-		// statements
+		// instruções
 	}
 
 	var prop;
 
 	for ( prop in object ) {
-		// statements
+		// instruções
 	}
 
 
 	if ( true ) {
-		// statements
+		// instruções
 	} else {
-		// statements
+		// instruções
 	}
 	```
 
 
-	B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+	B. Atribuições, Declarações, Funções ( Nomenclatura, Expressão, Construtor )
 
 	```javascript
 
 	// 2.B.1.1
-	// Variables
+	// Variáveis
 	var foo = "bar",
 		num = 1,
 		undef;
 
-	// Literal notations:
+	// Notações Literais:
 	var array = [],
 		object = {};
 
 
 	// 2.B.1.2
-	// Using only one `var` per scope (function) promotes readability
-	// and keeps your declaration list free of clutter (also saves a few keystrokes)
-
-	// Bad
+	// Utilizando apenas um `var` por escopo (função) promove legibilidade
+	// e mantém a sua lista de declaração livre de desordem (além de evitar algumas tecladas)
+	
+	// Ruim
 	var foo = "";
 	var bar = "";
 	var qux;
 
-	// Good
+	// Bom
 	var foo = "",
 		bar = "",
 		quux;
 
-	// or..
-	var // Comment on these
+	// ou..
+	var // comentário aqui
 	foo = "",
 	bar = "",
 	quux;
@@ -204,44 +206,44 @@ Projects _must_ include some form of unit, reference, implementation or function
 	```javascript
 
 	// 2.B.2.1
-	// Named Function Declaration
+	// Declaração de Função Nomeada
 	function foo( arg1, argN ) {
 
 	}
 
-	// Usage
+	// Utilização
 	foo( arg1, argN );
 
 
 	// 2.B.2.2
-	// Named Function Declaration
+	// Declaração de Função Nomeada
 	function square( number ) {
 		return number * number;
 	}
 
-	// Usage
+	// Utilização
 	square( 10 );
 
-	// Really contrived continuation passing style
+	// Estilo de passagem artificialmente contínua
 	function square( number, callback ) {
 		callback( number * number );
 	}
 
 	square( 10, function( square ) {
-		// callback statements
+		// instruções de callback
 	});
 
 
 	// 2.B.2.3
-	// Function Expression
+	// Expressão de Função
 	var square = function( number ) {
-		// Return something valuable and relevant
+		// Retorna algo de valor e relevante
 		return number * number;
 	};
 
-	// Function Expression with Identifier
-	// This preferred form has the added value of being
-	// able to call itself and have an identity in stack traces:
+	// Expressão de Função com Identificador
+	// Esse formato preferencial tem o valor adicional de permitir
+	// chamar a si mesmo e ter uma identidade na pilha de comandos:
 	var factorial = function factorial( number ) {
 		if ( number < 2 ) {
 			return 1;
@@ -252,13 +254,13 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 2.B.2.4
-	// Constructor Declaration
+	// Declaração de Construtor
 	function FooBar( options ) {
 
 		this.options = options;
 	}
 
-	// Usage
+	// Utilização
 	var fooBar = new FooBar({ a: "alpha" });
 
 	fooBar.options;
