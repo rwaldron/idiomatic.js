@@ -83,6 +83,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Misc](#misc)
  * [Native & Host Objects](#native)
  * [Comments](#comments)
+ * [One Language Code](#language)
 
 
 ## Idiomatic Style Manifesto
@@ -974,6 +975,32 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* Single line above the code that is subject
 	* Multiline is good
 	* End of line comments are prohibited!
+
+
+10. <a name="language">One Language Code</a>
+
+	JavaScript needs to be written in one language as their native instructions are already in English.
+
+	Even if you have any difficulty in speaking or writing English, you may struggle a bit to maintain the readability of your code.
+
+	This principle is even more important in an Open Source project. This way you should consider comments as well.
+
+	Notice that variable contents are not included in this rule in small or specific projects, but you should consider [localization](https://en.wikipedia.org/wiki/L10n) in bigger or Open Source projects.
+
+	```javascript
+	// Bad
+        function calculaValor(arg1, arg2) {
+		var retorno = arg1 + arg2;
+		return retorno;
+	}
+
+	// Good
+	console.log('Hello World');
+
+	// Good as well
+	console.log('Oi Mundo');
+
+	```
 
 
 
