@@ -995,10 +995,10 @@ Projects _must_ include some form of unit, reference, implementation or function
 	}
 
 	// Good
-	console.log('Hello World');
+	console.log("Hello World");
 
 	// Good as well
-	console.log('Oi Mundo');
+	console.log("Oi Mundo");
 
 	```
 
