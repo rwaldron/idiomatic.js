@@ -56,9 +56,9 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 ### Build & Deployment Process
 
-Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. Some popular and proven tools include the JavaScript-based [Uglify.js](https://github.com/mishoo/UglifyJS), as well as the Java-based [Google Closure Compiler](http://code.google.com/closure/compiler/) and [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Choose one and support it.
+Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
 
-You can now find a functional, generic "build kit" in the `/kits` directory of this repository. Usage is easy: 1) copy the contents of a kit found in `/kits` to a new working directory, 2) save your project .js file in the `/src` directory, 3) put the name of the project in `project.txt`, 4) run `make` from command line. (Even easier directions: replace occurrences of "foo")
+
 
 
 ### Test Facility
@@ -202,9 +202,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 	foo = "",
 	bar = "",
 	quux;
-	
+
 	// 2.B.1.3
-	// var statements should always be in the beginning of their respective scope (function). 
+	// var statements should always be in the beginning of their respective scope (function).
 	// Same goes for const and let from ECMAScript 6.
 
 	// Bad
@@ -215,12 +215,12 @@ Projects _must_ include some form of unit, reference, implementation or function
 		var bar = "",
 			qux;
 	}
-	
+
 	// Good
 	function foo() {
 		var bar = "",
 			qux;
-			
+
 		// all statements after the variables declarations.
 	}
 	```
