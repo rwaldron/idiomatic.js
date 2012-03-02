@@ -11,7 +11,7 @@
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
-* Leo Beto Souza [@leobetosouza](http://twitter.com/@leobetosouza), [github](https://github.com/leobetosouza)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -989,16 +989,16 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	```javascript
 	// Bad
-        function calculaValor(arg1, arg2) {
+	function calculaValor( arg1, arg2 ) {
 		var retorno = arg1 + arg2;
 		return retorno;
 	}
 
 	// Good
-	console.log("Hello World");
+	console.log( "Hello World" );
 
 	// Good as well
-	console.log("Oi Mundo");
+	console.log( "Oi Mundo" );
 
 	```
 
