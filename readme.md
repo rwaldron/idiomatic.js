@@ -9,6 +9,9 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -22,7 +25,7 @@
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
 * [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
-
+* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
 
 ## Important, Non-Idiomatic Stuff:
 
@@ -80,6 +83,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Misc](#misc)
  * [Native & Host Objects](#native)
  * [Comments](#comments)
+ * [One Language Code](#language)
 
 
 ## Idiomatic Style Manifesto
@@ -198,7 +202,27 @@ Projects _must_ include some form of unit, reference, implementation or function
 	foo = "",
 	bar = "",
 	quux;
+	
+	// 2.B.1.3
+	// var statements should always be in the beginning of their respective scope (function). 
+	// Same goes for const and let from ECMAScript 6.
 
+	// Bad
+	function foo() {
+
+		// some statements here
+
+		var bar = "",
+			qux;
+	}
+	
+	// Good
+	function foo() {
+		var bar = "",
+			qux;
+			
+		// all statements after the variables declarations.
+	}
 	```
 
 	```javascript
@@ -951,6 +975,32 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* Single line above the code that is subject
 	* Multiline is good
 	* End of line comments are prohibited!
+
+
+10. <a name="language">One Language Code</a>
+
+	JavaScript needs to be written in one language as their native instructions are already in English.
+
+	Even if you have any difficulty in speaking or writing English, you may struggle a bit to maintain the readability of your code.
+
+	This principle is even more important in an Open Source project. This way you should consider comments as well.
+
+	Notice that variable contents are not included in this rule in small or specific projects, but you should consider [localization](https://en.wikipedia.org/wiki/L10n) in bigger or Open Source projects.
+
+	```javascript
+	// Bad
+	function calculaValor( arg1, arg2 ) {
+		var retorno = arg1 + arg2;
+		return retorno;
+	}
+
+	// Good
+	console.log( "Hello World" );
+
+	// Good as well
+	console.log( "Oi Mundo" );
+
+	```
 
 
 
