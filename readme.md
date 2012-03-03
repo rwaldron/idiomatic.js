@@ -1,6 +1,6 @@
 # Princípios para Escrever JavaScript de forma Consistente e Idiomática
 
-## Este é um documento vivo e novas idéias para melhorar os códigos correspondentes são sempre bem vindas. Contribua: faça fork, clone, branch, commit, push, pull request.
+## Este é um documento vivo e novas ideias para melhorar os códigos correspondentes são sempre bem vindas. Contribua: faça fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -13,13 +13,13 @@
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/@leobetosouza), [github](https://github.com/leobetosouza)
 
-## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independente de quantas pessoas tenham contribuído.
+## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
 
 ### A lista a seguir descreve as práticas que eu uso em todo código onde sou o autor original; contribuições em projetos que eu criei devem seguir essas mesmas orientações.
 
-### Eu não tenho a intenção de impor minhas preferências por estilos nos códigos de outras pessoas; se eles seguem um estilo em comum - isso deve ser respeitado.
+### Eu não tenho a intenção de impor minhas preferências por estilos nos códigos de outras pessoas; se eles seguem um estilo em comum, isso deve ser respeitado.
 
-> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má idéia™. Se milhares de pessoas estão usando o seu código, escreva-o com máxima clareza, não sob a sua preferência pessoal de como ser esperto com a especificação." - Idan Gazit
+> "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má ideia™. Se milhares de pessoas estão usando o seu código, escreva-o com máxima clareza, não sob a sua preferência pessoal de como ser esperto com a especificação." - Idan Gazit
 
 ## Traduções
 
@@ -28,9 +28,9 @@
 * [Português - Brasil](https://github.com/leobalter/idiomatic.js/)
 
 
-## Conteúdo Importante e Não Idiomático:
+## Conteúdo importante e não idiomático:
 
-### Qualidade de Código: Ferramentas, Recursos e Referências Bacanas
+### Qualidade de código: ferramentas, recursos e referências bacanas
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -42,11 +42,11 @@
 [Leveraging Code Quality Tools (em pt_BR: Tirando Proveito de Ferramentas de Qualidade de Código) por Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
-### Fique Ligado
+### Fique ligado
 
 [http://es5.github.com/](http://es5.github.com/)
 
-A lista a seguir deve ser considerada: 1) incompleta; e 2) *LEITURA OBRIGATÓRIA*. Eu não concordo sempre com os estilos escritos pelos autores abaixo, mas uma coisa é certa: Eles são consistentes. Além disso, esses são autoridades na linguagem.
+A lista a seguir deve ser considerada: 1) incompleta; e 2) *LEITURA OBRIGATÓRIA*. Eu não concordo sempre com os estilos escritos pelos autores abaixo, mas uma coisa é certa: eles são consistentes. Além disso, esses são autoridades na linguagem.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -55,16 +55,16 @@ A lista a seguir deve ser considerada: 1) incompleta; e 2) *LEITURA OBRIGATÓRIA
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
 
-### Processos de Build e Deploy
+### Processos de build e deploy
 
 Projetos devem sempre tentar incluir alguns formatos genéricos para que o código fonte possa ser compactado no preparo para uso em produção. Algumas ferramentas populares e testadas incluem o [Uglify.js](https://github.com/mishoo/UglifyJS) feito em JavaScript, assim como o [Google Closure Compiler](http://code.google.com/closure/compiler/) e [YUI Compressor](http://developer.yahoo.com/yui/compressor/) feitos em Java. Escolha um e apoie o mesmo.
 
 Você pode encontrar um "build kit" funcional e genérico no diretório `/kits` deste repositório. A Utilização é simples: 1) copie o conteúdo de um dos kits encontrados em `/kits` para um novo diretório, 2) grave o arquivo .js de  seu projeto no diretório `/src`, 3) coloque o nome do projeto dentro de `project.txt`, 4) execute o `make` pela linha de comando. (Caminho mais fácil: troque as ocorrências de "foo")
 
 
-### Ambiente de Teste
+### Ambiente de teste
 
-Projetos _devem_ incluir alguma forma de teste unitário, de referência, de implementaçao ou funcional. Demonstrações de casos de uso NÃO SE QUALIFICAM como "testes". A lista a seguir contém frameworks de testes, nenhuma delas é considerada melhor que as demais.
+Projetos _devem_ incluir alguma forma de teste unitário, de referência, de implementação ou funcional. Demonstrações de casos de uso NÃO SE QUALIFICAM como "testes". A lista a seguir contém frameworks de testes, nenhuma delas é considerada melhor que as demais.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -75,35 +75,35 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 ## Índice
 
- * [Espaço em Branco](#whitespace)
- * [Sintaxe Bonita](#spacing)
- * [Checagem de Escrita (Cortesia das Recomendações de Estilo do Núcleo do jQuery)](#type)
- * [Avaliação Condicional](#cond)
- * [Estilo Prático](#practical)
+ * [Espaço em branco](#whitespace)
+ * [Sintaxe bonita](#spacing)
+ * [Checagem de escrita (cortesia das Recomendações de Estilo do Núcleo do jQuery)](#type)
+ * [Avaliação condicional](#cond)
+ * [Estilo prático](#practical)
  * [Nomenclatura](#naming)
  * [Miscelâneas](#misc)
- * [Objetos Nativos e Hospedados](#native)
+ * [Objetos nativos e hospedados](#native)
  * [Comentários](#comments)
 
 
-## Manifesto de Estilo Idiomático
+## Manifesto de estilo idiomático
 
 
-1. <a name="whitespace">Espaço em Branco</a>
+1. <a name="whitespace">Espaço em branco</a>
 
 	* Nunca misture espaços e tabs.
  	* Quando começar um projeto, antes de escrever qualquer código, escolha entre indentação suave (espaços) ou tabulação real (tabs) - isso é lei.
 		* Pela legibilidade, eu sempre recomendo que configure o tamanho de indentação de seu editor para dois caracteres - isso significa dois espaços ou dois espaços representando um tab real.
 	* Se o seu editor suportar, sempre trabalhe com a configuração de "mostrar caracteres invisíveis" ligada. Os benefícios desta prática são:
-		* Fortalecer a consistência
-		* Eliminar espaço em branco ao final da linha
-		* Eliminar espaços em uma linha em branco
-		* Commits e diffs mais legíveis
+		* fortalecer a consistência;
+		* eliminar espaço em branco ao final da linha;
+		* eliminar espaços em uma linha em branco;
+		* commits e diffs mais legíveis.
 
 
-2. <a name="spacing">Sintaxe Bonita</a>
+2. <a name="spacing">Sintaxe bonita</a>
 
-	A. Parênteses, Chaves e Quebras de Linhas
+	A. Parênteses, chaves e quebras de linhas
 
 	```javascript
 
@@ -168,7 +168,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```
 
 
-	B. Atribuições, Declarações, Funções ( Nomenclatura, Expressão, Construtor )
+	B. Atribuições, declarações, funções (nomenclatura, expressão, construtor)
 
 	```javascript
 
@@ -178,7 +178,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 		num = 1,
 		undef;
 
-	// Notações Literais:
+	// Notações literais:
 	var array = [],
 		object = {};
 
@@ -230,7 +230,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```javascript
 
 	// 2.B.2.1
-	// Declaração de Função Nomeada
+	// Declaração de função nomeada
 	function foo( arg1, argN ) {
 
 	}
@@ -240,7 +240,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 	// 2.B.2.2
-	// Declaração de Função Nomeada
+	// Declaração de função nomeada
 	function square( number ) {
 		return number * number;
 	}
@@ -259,13 +259,13 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 	// 2.B.2.3
-	// Expressão de Função
+	// Expressão de função
 	var square = function( number ) {
 		// Retorna algo de valor e relevante
 		return number * number;
 	};
 
-	// Expressão de Função com Identificador
+	// Expressão de função com identificador
 	// Esse formato preferencial tem o valor adicional de permitir
 	// chamar a si mesmo e ter uma identidade na pilha de comandos:
 	var factorial = function factorial( number ) {
@@ -278,7 +278,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 	// 2.B.2.4
-	// Declaração de Construtor
+	// Declaração de construtor
 	function FooBar( options ) {
 
 		this.options = options;
@@ -293,14 +293,14 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```
 
 
-	C. Exceções, Pequenos Desvios
+	C. Exceções, pequenos desvios
 
 	```javascript
 
 	// 2.C.1.1
 	// Funções com callbacks
 	foo(function() {
-		// Veja que não há espaço extra entre o primeiro parentesis
+		// Veja que não há espaço extra entre os parênteses
 		// da chamada de função e a palavra "function"
 	});
 
@@ -314,14 +314,14 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 		b: "beta"
 	});
 
-	// Parêntesis internos de agrupamento, sem espaço
+	// Parênteses internos de agrupamento, sem espaço
 	if ( !("foo" in obj) ) {
 
 	}
 
 	```
 
-	D. Consistência Sempre Ganha
+	D. Consistência sempre ganha
 
 	Nas seções 2.A-2.C, as regras de espaço em branco são recomendadas sob um propósito simples e maior: consistência.
 	É importante notar que preferências de formatação, tais como "espaço em branco interno" deve ser considerado opcional, mas apenas um estilo deve existir por toda a fonte de seu projeto.
@@ -350,13 +350,13 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	```
 
-	E. Finais de Linha e Linhas Vazias
+	E. Finais de linha e linhas vazias
 
 	Espaços em branco podem arruinar diffs e fazer com que _changesets_ sejam impossíveis de se ler. Considere incorporar um gancho de pre-commit que remova espaços em branco ao final das linhas e espaços em branco em linhas vazias automaticamente.
 
-3. <a name="type">Checagem de Escrita (CCortesia das Recomendações de Estilo do Núcleo do jQuery)</a>
+3. <a name="type">Checagem de escrita (cortesia das Recomendações de Estilo do Núcleo do jQuery)</a>
 
-	3.A Tipos Existentes 
+	3.A Tipos existentes 
 
 	* String:
 
@@ -403,10 +403,10 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 			* `"prop" in object`
 
 
-	JavaScript é uma linguagem de escrita dinâmica - o que pode ser seu melhor amigo ou pior inimigo, então: Sempre respeite o `tipo`, como recomendado.
+	JavaScript é uma linguagem de escrita dinâmica - o que pode ser seu melhor amigo ou pior inimigo, então: sempre respeite o `tipo`, como recomendado.
 
 
-	3.B Tipos Coagidos
+	3.B Tipos coagidos
 
 	Considere as implicações do seguinte...
 
@@ -563,12 +563,12 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	```
 
-4. <a name="cond">Avaliação Condicional</a>
+4. <a name="cond">Avaliação condicional</a>
 
 	```javascript
 
 	// 4.1.1
-	// Quando estiver apenas avaliando se uma array tem tamanho,
+	// Quando estiver apenas avaliando se um array tem tamanho,
 	// ao invés disso:
 	if ( array.length > 0 ) ...
 
@@ -577,7 +577,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 	// 4.1.2
-	// Quando estiver apenas avaliando se uma array está vazia,
+	// Quando estiver apenas avaliando se um array está vazia,
 	// ao invés disso:
 	if ( array.length === 0 ) ...
 
@@ -659,7 +659,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 	// 4.2.2
-	// Booleanos, Verdades e Negações
+	// Booleanos, verdades e negações
 
 	Booleanos: true, false
 
@@ -716,7 +716,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```javascript
 
 	// 5.2.1
-	// Um Construtor Prático
+	// Um construtor prático
 
 	(function( global ) {
 
@@ -754,7 +754,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 6. <a name="naming">Nomenclatura</a>
 
 
-	Se você não é um humano compilador ou compactador de código, não tente ser um.
+	Se você não é um compilador humano ou compactador de código, não tente ser um.
 
 	O código a seguir é um exemplo de nomenclatura ruim:
 
@@ -856,9 +856,9 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	Esta seção deve servir para ilustrar idéias e conceitos sobre como não se considerar isso como um dogma, mas ao invés disso deve encorajar o questionamento de práticas na tentativa de encontrar formas melhores para executar tarefas comuns na programação em JavaScript.
 
-	A. Utilizar `switch` deve ser evitado, métodos modernos de verificação deverão adicionar funções com `switch` em suas listas negras
+	A. Evite utilizar `switch`, métodos modernos de verificação deverão adicionar funções com `switch` em suas listas negras
 
-	Parecem haver melhorias significativamente drásticas à execução de `switch` nas últimas versões do Firefox e do Chrome:
+	Parece haver melhorias drásticas à execução de `switch` nas últimas versões do Firefox e do Chrome:
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
 	Melhorias notáveis podem ser observadas aqui também:
@@ -966,9 +966,9 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	```
 
 
-8. <a name="native">Objetos Nativos e Hospedados</a>
+8. <a name="native">Objetos nativos e hospedados</a>
 
-	O principio básico aqui é:
+	O princípio básico aqui é:
 
 	### Não faça coisas estúpidas e tudo vai ficar bem.
 
@@ -985,7 +985,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 	* O estilo do JSDoc é bom (dicas de escrita do Closure Compiler++)
 	* Uma linha única acima do código que é comentado
-	* Multiplas linhas é boms
+	* Multiplas linhas é bom 
 	* Comentários ao final da linha são proibidos!
 
 
