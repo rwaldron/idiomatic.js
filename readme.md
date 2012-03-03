@@ -83,6 +83,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Misc](#misc)
  * [Native & Host Objects](#native)
  * [Comments](#comments)
+ * [One Language Code](#language)
 
 
 ## Idiomatic Style Manifesto
@@ -976,6 +977,9 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* End of line comments are prohibited!
 
 
+10. <a name="language">One Language Code</a>
+
+	Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
 
 ## Appendix
 
