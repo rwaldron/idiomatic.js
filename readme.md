@@ -577,7 +577,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 
 	// 4.1.2
-	// Quando estiver apenas avaliando se um array está vazia,
+	// Quando estiver apenas avaliando se um array está vazio,
 	// ao invés disso:
 	if ( array.length === 0 ) ...
 
