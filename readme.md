@@ -20,7 +20,7 @@
 
 ### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes, si elles ont un style commun - dans ce cas, il est important de respecter le style de chacun.
 
-> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soit même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
 
 ## Traductions
 
@@ -46,7 +46,7 @@
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Ce qui suit doit être considéré 1) incomplète, et 2) LECTURE OBLIGATOIRE. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine: Ils sont conformes. En outre, ce sont les autorités sur le language.
+Ce qui suit doit être considéré 1) __incomplète__, et 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine: Ils sont conformes. En outre, ce sont les autorités sur le language.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -347,7 +347,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	E. End of Lines and Empty Lines
 
-	Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuer __automatiquement__ avant chaque "commit".
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
