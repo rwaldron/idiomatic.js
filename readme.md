@@ -105,7 +105,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	```javascript
 
 	// if/else/for/while/try ont toujours des espaces, des parenthèses et plusieurs sauts de ligne
-	// cela améliorer la lisibilité
+	// cela améliore la lisibilité
 
 	// 2.A.1.1
 	// Exemples de mauvaises pratiques
@@ -149,7 +149,6 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	}
 
 	var prop;
-
 	for ( prop in object ) {
 		// statements
 	}
@@ -199,19 +198,18 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	quux;
 
 	// 2.B.1.3
-	// var statements should always be in the beginning of their respective scope (function).
-	// Same goes for const and let from ECMAScript 6.
+	// La déclaration des variables 'var' doit toujours être au début de la portée de chaque fonction.
+	// Le même principe s'applique au 'const' défini dans ECMAScript 6.
 
-	// Bad
+	// Mauvais
 	function foo() {
 
 		// some statements here
-
 		var bar = "",
 			qux;
 	}
 
-	// Good
+	// Correcte
 	function foo() {
 		var bar = "",
 			qux;
