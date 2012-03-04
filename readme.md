@@ -284,7 +284,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	```
 
 
-	C. Exceptions, Slight Deviations
+	C. Exceptions, de légères différences
 
 	```javascript
 
@@ -312,7 +312,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	```
 
-	D. Consistency Always Wins
+	D. La cohérence gagne toujours
 
 	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
 	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
