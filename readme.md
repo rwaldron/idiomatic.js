@@ -953,11 +953,11 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 8. <a name="native">Native & Host Objects</a>
 
-	The basic principal here is:
+        Le principe de base est ici:
 
-	### Don't do stupid shit and everything will be ok.
+	### Ne faites de choses stupides et tout sera OK.
 
-	To reinforce this concept, please watch the following presentation:
+	Pour renforcer ce concept, s'il vous plaît regarder la présentation suivante:
 
 	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -974,7 +974,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	* Les commentaires en find de ligne sont interdits!
 
 
-10. <a name="language">Un code de Language</a>
+10. <a name="language">Un code, un language</a>
 
 	Les programmes doivent être rédigés dans un language, quelle que soit le language, le mainteneur ou les mainteneurs donnent les bonnes pratiques.
 
