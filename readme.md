@@ -46,7 +46,7 @@
 
 [http://es5.github.com/](http://es5.github.com/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Ce qui suit doit être considéré 1) incomplète, et 2) LECTURE OBLIGATOIRE. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine: Ils sont conformes. En outre, ce sont les autorités sur le language.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -62,7 +62,7 @@ Pour cette tâche, [grunt](https://github.com/cowboy/grunt) by Ben Alman rassemb
 
 ### Testabilité
 
-Les projets _doivent_ inclure certaines formes de test unitaire, par référence, d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas ne sont pas des «tests». Ce qui suit est une liste de cadres d'essai, aucune d'entre elles sont approuvées plus que l'autre.
+Les projets _doivent_ inclure certaines formes de test unitaire, par référence, d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas ne sont pas des «tests». Ce qui suit est une bibliothèque de test, aucune d'entre elles n'ait approuvée plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -71,9 +71,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
 
-## Table of Contents
+## Table des matières
 
- * [Whitespace](#whitespace)
+ * [Les Espaces](#whitespace)
  * [Beautiful Syntax](#spacing)
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
@@ -86,7 +86,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 ## Idiomatic Style Manifesto
 
-1. <a name="whitespace">Whitespace</a>
+1. <a name="whitespace">Les Espaces</a>
 
 	* Ne jamais mélanger les espaces et les tabulations.
 	* Avant d'écriture le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
