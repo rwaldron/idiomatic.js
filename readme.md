@@ -100,15 +100,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 2. <a name="spacing">Une belle syntaxe</a>
 
-	A. Parens, Braces, Linebreaks
+	A. Conditions, Parenthèses, Saut de ligne
 
 	```javascript
 
-	// if/else/for/while/try always have spaces, braces and span multiple lines
-	// this encourages readability
+	// if/else/for/while/try ont toujours des espaces, des parenthèses et plusieurs sauts de ligne
+	// cela améliorer la lisibilité
 
 	// 2.A.1.1
-	// Examples of really cramped syntax
+	// Exemples de mauvaises pratiques
 
 	if(condition) doSomething();
 
@@ -118,7 +118,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 
 	// 2.A.1.1
-	// Use whitespace to promote readability
+	// Utilisez les espaces afin d'améliorer la lisibilité
 
 	if ( condition ) {
 		// statements
@@ -133,7 +133,6 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	}
 
 	// Even better:
-
 	var i,
 		length = 100;
 
@@ -142,7 +141,6 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	}
 
 	// Or...
-
 	var i = 0,
 		length = 100;
 
@@ -165,7 +163,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	```
 
 
-	B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+	B. Déclaration, Affectation, Fonction ( Nommage, Expression, Constructeur )
 
 	```javascript
 
@@ -181,20 +179,20 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 
 	// 2.B.1.2
-	// Using only one `var` per scope (function) promotes readability
-	// and keeps your declaration list free of clutter (also saves a few keystrokes)
+	// Utilisez une unique déclaration `var` par portée de (fonction) améliore la lisibilité
+	// et permets de garder une déclaration séparée du corps de la fonction (en adéquation avec la portée des variables en JavaScript)
 
-	// Bad
+	// Mauvais
 	var foo = "";
 	var bar = "";
 	var qux;
 
-	// Good
+	// Correcte
 	var foo = "",
 		bar = "",
 		quux;
 
-	// or..
+	// ou..
 	var // Comment on these
 	foo = "",
 	bar = "",
