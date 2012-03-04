@@ -81,7 +81,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
  * [Naming](#naming)
  * [Misc](#misc)
  * [Native & Host Objects](#native)
- * [Comments](#comments)
+ * [Commentaires](#comments)
  * [One Language Code](#language)
 
 ## Manifeste style idiomatique
@@ -966,17 +966,18 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Commentaires</a>
 
-	* JSDoc style is good (Closure Compiler type hints++)
-	* Single line above the code that is subject
-	* Multiline is good
-	* End of line comments are prohibited!
+	* Le style de commentaire JSDoc est bon (Closure Compiler type hints++)
+	* Une seule ligne de commentaire au-dessus du code surlequel il s'applique
+	* L'utilisation de plusieurs lignes est bon
+	* Les commentaires en find de ligne sont interdits!
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">Un code de Language</a>
 
-	Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+	Les programmes doivent être rédigés dans un language, quelle que soit le language, comme dicté par le mainteneur ou mainteneurs.
+
 
 ## Appendix
 
