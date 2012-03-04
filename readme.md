@@ -78,7 +78,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
  * [Practical Style](#practical)
- * [Naming](#naming)
+ * [Règles de nommage](#naming)
  * [Misc](#misc)
  * [Native & Host Objects](#native)
  * [Commentaires](#comments)
@@ -746,12 +746,12 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Règles de nommage</a>
 
 
-	You are not a human code compiler/compressor, so don't try to be one.
+	Vous n'êtes pas compilateur ou un compresseur, il ne faut pas essayer d'être un.
 
-	The following code is an example of egregious naming:
+	Le code suivant est un exemple flagrant de nommage :
 
 	```javascript
 
@@ -976,7 +976,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 10. <a name="language">Un code de Language</a>
 
-	Les programmes doivent être rédigés dans un language, quelle que soit le language, comme dicté par le mainteneur ou mainteneurs.
+	Les programmes doivent être rédigés dans un language, quelle que soit le language, le mainteneur ou les mainteneurs donnent les bonnes pratiques.
 
 
 ## Appendix
