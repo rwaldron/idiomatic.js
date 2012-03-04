@@ -30,7 +30,7 @@
 
 ## Important, aspect Non-Idiomatique :
 
-### Qualité du Code : outils indispensables, ressources et références pertinentes
+### Qualité du Code : indispensables, ressources et références
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -55,10 +55,10 @@ Ce qui suit doit être considéré 1) incomplète, et 2) LECTURE OBLIGATOIRE. Je
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
 
-### Process de Build & de Deploiement
+### Processus de "Build" et de déploiement
 
 Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
-Pour cette tâche, [grunt](https://github.com/cowboy/grunt) by Ben Alman rassemble les bonnes pratiques officielles du project idiomatic.js.
+Pour cette tâche, [grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques officielles du project idiomatic.js.
 
 ### Testabilité
 
@@ -84,7 +84,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
  * [Comments](#comments)
  * [One Language Code](#language)
 
-## Idiomatic Style Manifesto
+## Manifeste style idiomatique
 
 1. <a name="whitespace">Les Espaces</a>
 
@@ -981,6 +981,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 ## Appendix
 
 ### Comma First.
+
 
 Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
 
