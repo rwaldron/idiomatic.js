@@ -46,7 +46,7 @@
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Ce qui suit doit être considéré 1) __incomplète__, et 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine: Ils sont conformes. En outre, ce sont les autorités sur le language.
+Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine: Ils sont conformes. En outre, ce sont les autorités sur le language.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -58,7 +58,7 @@ Ce qui suit doit être considéré 1) __incomplète__, et 2) __LECTURE OBLIGATOI
 ### Processus de "Build" et de déploiement
 
 Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
-Pour cette tâche, [grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques officielles du project idiomatic.js.
+Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques officielles de notre project.
 
 ### Testabilité
 
@@ -74,7 +74,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 ## Table des matières
 
  * [Les Espaces](#whitespace)
- * [Beautiful Syntax](#spacing)
+ * [Une Belle Syntaxe](#spacing)
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
  * [Practical Style](#practical)
@@ -98,7 +98,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		* Améliorer la lisibilité de vos "commit" et des "diff"
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+2. <a name="spacing">Une belle syntaxe</a>
 
 	A. Parens, Braces, Linebreaks
 
