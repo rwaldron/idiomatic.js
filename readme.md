@@ -1,6 +1,6 @@
 # Principe d'écriture d'un code Javascript cohérent et idiomatique
 
-## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenus. Pour Contribuer: "fork", "clone", "branch", "commit", "push", "pull request" sont les bienvenues.
+## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenues. Pour Contribuer: "fork", "clone", "branch", "commit", "push", "pull request".
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -969,7 +969,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	* Le style de commentaire JSDoc est bon (Closure Compiler type hints++)
 	* Une seule ligne de commentaire au-dessus du code surlequel il s'applique
-	* L'utilisation de plusieurs lignes est bon
+	* L'utilisation de plusieurs lignes est bonne
 	* Les commentaires en find de ligne sont interdits!
 
 
