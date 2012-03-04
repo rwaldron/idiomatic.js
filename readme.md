@@ -16,21 +16,21 @@
 
 ## Tout code, peu importe les bases sur lequels il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
 
-### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont j'en suis l'auteur. Les contributions aux projets dont j'en l'auteur doivent suivre ces lignes directrices.
+### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont j'en suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
-### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes, si elles ont un style commun - dans ce cas, il est important de le respecter.
+### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes, si elles ont un style commun - dans ce cas, il est important de respecter le style de chacun.
 
 > "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
 ## Traductions
 
-* [English](https://github.com/rwldrn/idiomatic.js)
-* [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
-* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
+* [Anglais](https://github.com/rwldrn/idiomatic.js)
+* [Espagnol](https://github.com/MatiasArriola/idiomatic.js/)
+* [Portugais - Brésilien](https://github.com/leobalter/idiomatic.js/)
 
-## Important, Non-Idiomatic Stuff:
+## Important, des aspects Non-Idiomatique :
 
-### Code Quality: Awesome Tools, Resources & References
+### Qualité du Code : des outils pertinents et des ressources et références pertinentes
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -39,10 +39,10 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+[Optimisation des outils de qualité de code par Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
-### Get Smart
+### Soyez Intelligent
 
 [http://es5.github.com/](http://es5.github.com/)
 
