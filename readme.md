@@ -1,6 +1,6 @@
 # Principe d'écriture d'un code Javascript cohérent et idiomatique
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenus. Pour Contribuer: "fork", "clone", "branch", "commit", "push", "pull request" sont les bienvenues.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -8,16 +8,17 @@
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+## Tout code, peu importe les bases sur lequels il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont j'en suis l'auteur. Les contributions aux projets dont j'en l'auteur doivent suivre ces lignes directrices.
 
-### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
+### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes, si elles ont un style commun - dans ce cas, il est important de le respecter.
 
 > "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
