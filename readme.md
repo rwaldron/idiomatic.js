@@ -751,7 +751,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	Vous n'êtes pas compilateur ou un compresseur, il ne faut pas essayer d'être un.
 
-	Le code suivant est un exemple flagrant de nommage :
+	Le code suivant est un exemple flagrant de ce qu'il ne faut pas faire:
 
 	```javascript
 
@@ -765,9 +765,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	for(i=0;i<els.length;i++){a.push(els[i]);}
 	```
 
-	Without a doubt, you've written code like this - hopefully that ends today.
+	Vous avez peut être probablement écrit le code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
 
-	Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+	Trouvez ci-desssous la même logique, mais avec plus de clareté, de compréhension et surtour plus de lisibilité fonctionnelle:
 
 	```javascript
 
