@@ -954,7 +954,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
         Le principe de base est ici:
 
-	### Ne faites de choses stupides et tout sera OK.
+	### Ne faites pas de choses stupides et tout sera OK.
 
 	Pour renforcer ce concept, s'il vous plaît regarder la présentation suivante:
 
