@@ -74,7 +74,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 ## Table des matières
 
  * [Les Espaces](#whitespace)
- * [Une Belle Syntaxe](#spacing)
+ * [Une Syntaxe Précise](#spacing)
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
  * [Practical Style](#practical)
@@ -82,7 +82,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
  * [Misc](#misc)
  * [Native & Host Objects](#native)
  * [Commentaires](#comments)
- * [One Language Code](#language)
+ * [Un code, un language](#language)
 
 ## Manifeste style idiomatique
 
@@ -98,9 +98,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		* Améliorer la lisibilité de vos "commit" et des "diff"
 
 
-2. <a name="spacing">Une belle syntaxe</a>
+2. <a name="spacing">Une Syntaxe Précise</a>
 
-	A. Conditions, Parenthèses, Saut de ligne
+	A. Parenthèses, Accolades, Sauts de ligne
 
 	```javascript
 
@@ -341,7 +341,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	```
 
-	E. End of Lines and Empty Lines
+	E. Fin de ligne et lignes vides
 
 	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuer __automatiquement__ avant chaque "commit".
 
