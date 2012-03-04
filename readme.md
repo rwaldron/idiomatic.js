@@ -28,9 +28,9 @@
 * [Espagnol](https://github.com/MatiasArriola/idiomatic.js/)
 * [Portugais - Brésilien](https://github.com/leobalter/idiomatic.js/)
 
-## Important, des aspects Non-Idiomatique :
+## Important, aspect Non-Idiomatique :
 
-### Qualité du Code : des outils pertinents et des ressources et références pertinentes
+### Qualité du Code : outils indispensables, ressources et références pertinentes
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -55,16 +55,14 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
 
-### Build & Deployment Process
+### Process de Build & de Deploiement
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
+Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
+Pour cette tâche, [grunt](https://github.com/cowboy/grunt) by Ben Alman rassemble les bonnes pratiques officielles du project idiomatic.js.
 
+### Testabilité
 
-
-
-### Test Facility
-
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+Les projets _doivent_ inclure certaines formes de test unitaire, par référence, d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas ne sont pas des «tests». Ce qui suit est une liste de cadres d'essai, aucune d'entre elles sont approuvées plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -86,9 +84,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Comments](#comments)
  * [One Language Code](#language)
 
-
 ## Idiomatic Style Manifesto
-
 
 1. <a name="whitespace">Whitespace</a>
 
