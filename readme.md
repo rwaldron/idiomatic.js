@@ -749,7 +749,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 6. <a name="naming">Règles de nommage</a>
 
 
-	Vous n'êtes pas compilateur ou un compresseur, il ne faut pas essayer d'être un.
+	Vous n'êtes pas un compilateur ou un compresseur, il ne faut pas essayer d'être un.
 
 	Le code suivant est un exemple flagrant de ce qu'il ne faut pas faire:
 
@@ -921,7 +921,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	```
 
-	B. Early returns promote code readability with negligible performance difference
+	B. Les "return" prématurés permettent d'améliorer la lisibilité du code avec une différence de performance négligeable
 
 	```javascript
 
@@ -939,7 +939,6 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	}
 
 	// Good:
-
 	function returnEarly( foo ) {
 
 		if ( foo ) {
