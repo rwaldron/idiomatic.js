@@ -2,12 +2,30 @@
 
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
-### All code in any code-base should look like a single person typed it, no matter how many people contributed.
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
+* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
+* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
+* Raynos  [github](https://github.com/Raynos)
+* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
+
+## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
-### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected.
+### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
 
+> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+
+## Traductions
+
+* [English](https://github.com/rwldrn/idiomatic.js)
+* [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
+* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
 
 ## Important, Non-Idiomatic Stuff:
 
@@ -38,20 +56,21 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 ### Build & Deployment Process
 
-Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. Some popular and proven tools include the JavaScript-based [Uglify.js](https://github.com/mishoo/UglifyJS), as well as the Java-based [Google Closure Compiler](http://code.google.com/closure/compiler/) and [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Choose one and support it.
+Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
 
-You can now find a functional, generic "build kit" in the `/kits` directory of this repository. Usage is easy: 1) copy the contents of a kit found in `/kits` to a new working directory, 2) save your project .js file in the `/src` directory, 3) put the name of the project in `project.txt`, 4) run `make` from command line. (Even easier directions: replace occurrences of "foo")
+
 
 
 ### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests".
+Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
  * [Vows](https://github.com/cloudhead/vows)
+ * [Mocha](https://github.com/visionmedia/mocha)
  * [Hiro](http://hirojs.com/)
-
+ * [JsTestDriver](https://code.google.com/p/js-test-driver/)
 
 ## Table of Contents
 
@@ -64,6 +83,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Misc](#misc)
  * [Native & Host Objects](#native)
  * [Comments](#comments)
+ * [One Language Code](#language)
 
 
 ## Idiomatic Style Manifesto
@@ -73,12 +93,13 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	* Ne jamais mélanger les espaces et les tabulations.
 	* Avant d'écriture le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-		* Pour la lisibilité, paramétrer votre éditeur avec une indentation de 4 caractères.
+	 	* Pour la lisibilité, paramétrer votre éditeur avec une indentation de 4 caractères.
 	* Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
 		* Améliore la cohérence du code
 		* Elimine les espaces de fin de ligne
 		* Elimine les espaces utilisés pour des lignes blanches
 		* Améliorer la lisibilité de vos "commit" et des "diff"
+
 
 2. <a name="spacing">Beautiful Syntax</a>
 
@@ -116,10 +137,25 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// Even better:
 
+	var i,
+		length = 100;
+
+	for ( i = 0; i < length; i++ ) {
+		// statements
+	}
+
+	// Or...
+
 	var i = 0,
 		length = 100;
 
 	for ( ; i < length; i++ ) {
+		// statements
+	}
+
+	var prop;
+
+	for ( prop in object ) {
 		// statements
 	}
 
@@ -149,7 +185,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 	// 2.B.1.2
 	// Using only one `var` per scope (function) promotes readability
-	// and keeps your declaration list free of clutter (also saves a few bytes)
+	// and keeps your declaration list free of clutter (also saves a few keystrokes)
 
 	// Bad
 	var foo = "";
@@ -167,6 +203,26 @@ Projects _must_ include some form of unit, reference, implementation or function
 	bar = "",
 	quux;
 
+	// 2.B.1.3
+	// var statements should always be in the beginning of their respective scope (function).
+	// Same goes for const and let from ECMAScript 6.
+
+	// Bad
+	function foo() {
+
+		// some statements here
+
+		var bar = "",
+			qux;
+	}
+
+	// Good
+	function foo() {
+		var bar = "",
+			qux;
+
+		// all statements after the variables declarations.
+	}
 	```
 
 	```javascript
@@ -182,46 +238,56 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 2.B.2.2
-	// Named Function (w/ callback argument)
-	function bar( arg1, callback ) {
-
-		if ( arg1 && callback ) {
-			callback();
-		}
+	// Named Function Declaration
+	function square( number ) {
+		return number * number;
 	}
 
 	// Usage
-	bar( arg1, function() {
+	square( 10 );
+
+	// Really contrived continuation passing style
+	function square( number, callback ) {
+		callback( number * number );
+	}
+
+	square( 10, function( square ) {
 		// callback statements
 	});
 
 
 	// 2.B.2.3
 	// Function Expression
-	var quux = function( arg1, callback ) {
-
-		if ( arg1 && callback ) {
-			callback();
-		}
-
-		// always return 'something'
-		return true;
+	var square = function( number ) {
+		// Return something valuable and relevant
+		return number * number;
 	};
 
-	// Usage:
-	quux( arg1, function() {
-		// callback statements
-	});
+	// Function Expression with Identifier
+	// This preferred form has the added value of being
+	// able to call itself and have an identity in stack traces:
+	var factorial = function factorial( number ) {
+		if ( number < 2 ) {
+			return 1;
+		}
+
+		return number * factorial( number-1 );
+	};
 
 
 	// 2.B.2.4
-	// Constructor definition
-	function FooBar() {
-		return this;
+	// Constructor Declaration
+	function FooBar( options ) {
+
+		this.options = options;
 	}
 
-	// Usage:
-	var fooBar = new FooBar();
+	// Usage
+	var fooBar = new FooBar({ a: "alpha" });
+
+	fooBar.options;
+	// { a: "alpha" }
+
 	```
 
 
@@ -288,7 +354,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
-	3.A
+	3.A Actual Types
 
 	* String:
 
@@ -335,195 +401,165 @@ Projects _must_ include some form of unit, reference, implementation or function
 			* `"prop" in object`
 
 
-JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
+	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`, as recommended.
 
-Given the following HTML:
 
-```html
+	3.B Coerced Types
 
-<input type="text" id="foo-input" value="1">
+	Consider the implications of the following...
 
-```
+	Given this HTML:
 
-Consider the implications of this logic:
+	```html
 
-```js
+	<input type="text" id="foo-input" value="1">
 
-// 3.B.1.1
+	```
 
-// `foo` has been declared with the value `0` and its type is `number`
-var foo = 0;
 
-// typeof foo;
-// "number"
-...
+	```js
 
-// Somewhere later in your code, you need to update `foo`
-// with a new value derived from an input element
+	// 3.B.1.1
 
-foo = document.getElementById("foo-input").value;
+	// `foo` has been declared with the value `0` and its type is `number`
+	var foo = 0;
 
-// If you were to test `typeof foo` now, the result would be `string`
-// This means that if you had logic that tested `foo` like:
+	// typeof foo;
+	// "number"
+	...
 
-if ( foo === 1 ) {
+	// Somewhere later in your code, you need to update `foo`
+	// with a new value derived from an input element
 
-	importantTask();
+	foo = document.getElementById("foo-input").value;
 
-}
+	// If you were to test `typeof foo` now, the result would be `string`
+	// This means that if you had logic that tested `foo` like:
 
-// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	if ( foo === 1 ) {
 
+		importantTask();
 
-// 3.B.1.2
+	}
 
-// You can preempt issues by using smart coercion with unary + or - operators:
+	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
 
-foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will convert its right side operand to a number
 
-// typeof foo;
-// "number"
+	// 3.B.1.2
 
-if ( foo === 1 ) {
+	// You can preempt issues by using smart coercion with unary + or - operators:
 
-	importantTask();
+	foo = +document.getElementById("foo-input").value;
+	      ^ unary + operator will convert its right side operand to a number
 
-}
+	// typeof foo;
+	// "number"
 
-// `importantTask()` will be called
-```
+	if ( foo === 1 ) {
 
-3.B
+		importantTask();
 
-```javascript
+	}
 
-// 3.B.1.1
+	// `importantTask()` will be called
+	```
 
-// `foo` has been declared with the value `0` and its type is `number`
-var foo = 0;
+	Here are some common cases along with coercions:
 
-// typeof foo;
-// "number"
-...
 
-// Somewhere later in your code, you need to update `foo`
-// with a new value derived from an input element
+	```javascript
 
-foo = document.getElementById("foo-input").value;
+	// 3.B.2.1
 
-// If you were to test `typeof foo` now, the result would be `string`
-// This means that if you had logic that tested `foo` like:
+	var number = 1,
+		string = "1",
+		bool = false;
 
-if ( foo === 1 ) {
+	number;
+	// 1
 
-	importantTask();
+	number + "";
+	// "1"
 
-}
+	string;
+	 // "1"
 
-// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	+string;
+	// 1
 
+	+string++;
+	// 1
 
-// 3.B.1.2
+	string;
+	// 2
 
-// You can preempt issues by using smart coercion with unary + or - operators:
+	bool;
+	// false
 
-foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will convert its right side operand to a number
+	+bool;
+	// 0
 
-// typeof foo;
-// "number"
+	bool + "";
+	// "false"
+	```
 
-if ( foo === 1 ) {
 
-	importantTask();
+	```javascript
+	// 3.B.2.2
 
-}
+	var number = 1,
+		string = "1",
+		bool = true;
 
-// `importantTask()` will be called
+	string === number;
+	// false
 
-```
+	string === number + "";
+	// true
 
-Here are some common cases along with coercions:
+	+string === number;
+	// true
 
+	bool === number;
+	// false
 
-```javascript
+	+bool === number;
+	// true
 
-// 3.B.2.1
+	bool === string;
+	// false
 
-var number = 1,
-string = "1",
-bool = false;
+	bool === !!string;
+	// true
+	```
 
-number;
-// 1
+	```javascript
+	// 3.B.2.3
 
-number + "";
-// "1"
+	var array = [ "a", "b", "c" ];
 
-string;
- // "1"
+	!!~array.indexOf( "a" );
+	// true
 
-+string;
-// 1
+	!!~array.indexOf( "b" );
+	// true
 
-+string++;
-// 1
+	!!~array.indexOf( "c" );
+	// true
 
-string;
-// 2
+	!!~array.indexOf( "d" );
+	// false
 
-bool;
-// false
 
-+bool;
-// 0
+	var num = 2.5;
 
-bool + "";
-// "false"
-```
+	parseInt( num, 10 );
 
+	// is the same as...
 
-```javascript
-// 3.B.2.2
+	~~num;
 
-var number = 1,
-string = "1",
-bool = true;
-
-string === number;
-// false
-
-string === number + "";
-// true
-
-+string === number;
-// true
-
-bool === number;
-// false
-
-+bool === number;
-// true
-
-bool === string;
-// false
-
-bool === !!string;
-// true
-```
-
-```javascript
-// 3.B.2.3
-
-var array = [ "a", "b", "c" ];
-
-!~~array.indexOf( "d" );
-// false
-
-!~~array.indexOf( "a" );
-// true
-```
+	```
 
 4. <a name="cond">Conditional Evaluation</a>
 
@@ -599,9 +635,8 @@ var array = [ "a", "b", "c" ];
 	// but not `false`, "" or 0
 	null == undefined
 
-
 	```
-
+	ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
 
 	```javascript
 
@@ -643,13 +678,12 @@ var array = [ "a", "b", "c" ];
 	(function( global ) {
 		var Module = (function() {
 
-			// Private to this closure
-			var secret = "secret";
+			var data = "secret";
 
 			return {
 				// This is some boolean property
 				bool: true,
-				// Some other important string
+				// Some string value
 				string: "a string",
 				// An array property
 				array: [ 1, 2, 3, 4 ],
@@ -657,13 +691,13 @@ var array = [ "a", "b", "c" ];
 				object: {
 					lang: "en-Us"
 				},
-				getSecret: function() {
-					// get the "private" variable from here
-					return secret;
+				getData: function() {
+					// get the current value of `data`
+					return data;
 				},
-				setSecret: function( value ) {
-					// set the "private" variable
-					return ( secret = value );
+				setData: function( value ) {
+					// set the value of `data` and return it
+					return ( data = value );
 				}
 			};
 		})();
@@ -676,8 +710,6 @@ var array = [ "a", "b", "c" ];
 	})( this );
 
 	```
-
-	* NOTE: In the above example, "secret" is _not_really_ private
 
 	```javascript
 
@@ -810,9 +842,15 @@ var array = [ "a", "b", "c" ];
 
 7. <a name="misc">Misc</a>
 
+	This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+
 	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
-	Also, switch sucks. http://jsperf.com/switch-vs-object-literal-vs-module
+	There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+	http://jsperf.com/switch-vs-object-literal-vs-module
+
+	Notable improvements can be witnesses here as well:
+	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
 
@@ -870,9 +908,9 @@ var array = [ "a", "b", "c" ];
 	// 7.A.1.3
 	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
-	( switchObj.hasOwnProperty( foo ) && switchObj[ foo ] || switchObj._default )( args );
+	( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
-	( switchModule.hasOwnProperty( foo ) && switchModule[ foo ] || switchModule._default )( args );
+	( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
 	// If you know and trust the value of `foo`, you could even omit the OR check
 	// leaving only the execution:
@@ -939,10 +977,15 @@ var array = [ "a", "b", "c" ];
 	* End of line comments are prohibited!
 
 
+10. <a name="language">One Language Code</a>
+
+	Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
 
 ## Appendix
 
 ### Comma First.
 
-Should be avoided at all costs. See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
+Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
+
+See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
 Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
