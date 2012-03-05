@@ -57,9 +57,7 @@ A lista a seguir deve ser considerada: 1) incompleta; e 2) *LEITURA OBRIGATÓRIA
 
 ### Processos de build e deploy
 
-Projetos devem sempre tentar incluir alguns formatos genéricos para que o código fonte possa ser compactado no preparo para uso em produção. Algumas ferramentas populares e testadas incluem o [Uglify.js](https://github.com/mishoo/UglifyJS) feito em JavaScript, assim como o [Google Closure Compiler](http://code.google.com/closure/compiler/) e [YUI Compressor](http://developer.yahoo.com/yui/compressor/) feitos em Java. Escolha um e apoie o mesmo.
-
-Você pode encontrar um "build kit" funcional e genérico no diretório `/kits` deste repositório. A Utilização é simples: 1) copie o conteúdo de um dos kits encontrados em `/kits` para um novo diretório, 2) grave o arquivo .js de  seu projeto no diretório `/src`, 3) coloque o nome do projeto dentro de `project.txt`, 4) execute o `make` pela linha de comando. (Caminho mais fácil: troque as ocorrências de "foo")
+Projetos devem sempre tentar incluir algumas formas genéricas nas quais o código podem ser checados com ferramentas de lint, testados e compactados no preparo para uso em produção. Para essa tarefa, o [grunt](https://github.com/cowboy/grunt) pelo Ben Alman é a melhor opção, além de ter substituído oficialmente o diretório "kits/" neste repositório.
 
 
 ### Ambiente de teste
@@ -84,6 +82,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
  * [Miscelâneas](#misc)
  * [Objetos nativos e hospedados](#native)
  * [Comentários](#comments)
+ * [Código em apenas um idioma](#language)
 
 
 ## Manifesto de estilo idiomático
@@ -987,6 +986,11 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 	* Uma linha única acima do código que é comentado
 	* Multiplas linhas é bom 
 	* Comentários ao final da linha são proibidos!
+
+
+10. <a name="language">Código em apenas um idioma</a>
+
+	Programas devem ser escritos em um único idioma, não importe o idioma que seja, a ser definido por quem o mantém.
 
 
 
