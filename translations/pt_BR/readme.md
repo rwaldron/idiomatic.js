@@ -82,7 +82,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
  * [Miscelâneas](#misc)
  * [Objetos nativos e hospedados](#native)
  * [Comentários](#comments)
- * [Código em um único idioma](#language)
+ * [Código em apenas um idioma](#language)
 
 
 ## Manifesto de estilo idiomático
