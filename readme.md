@@ -75,7 +75,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
  * [Une Syntaxe Précise](#spacing)
  * [Vérification de Type (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
+ * [Style Pratique](#practical)
  * [Règles de nommage](#naming)
  * [Misc](#misc)
  * [Native & Host Objects](#native)
@@ -422,8 +422,8 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	foo = document.getElementById("foo-input").value;
 
-	// Si vous deviez tester `typeof foo` maintenant, le résultat serait `string`
-	// Cela signifie que si vous aviez la logique testant `foo` commt suit:
+	// Si vous deviez tester `typeof foo` maintenant, le résultat serait "string"
+	// Cela signifie que si vous aviez la logique testant `foo` comme suit:
 
 	if ( foo === 1 ) {
 
@@ -435,24 +435,24 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	// 3.B.1.2
 
-	// You can preempt issues by using smart coercion with unary + or - operators:
+	// Vous pouvez vous prémunir de ce problème en utilisant la coercion de type de l'opérateur unaire + ou -:
 
 	foo = +document.getElementById("foo-input").value;
-	      ^ unary + operator will convert its right side operand to a number
+	      ^ opérateur unaire + convertissant à sa droite l'opérante en "number"
 
 	// typeof foo;
 	// "number"
 
 	if ( foo === 1 ) {
 
-		importantTask();
+		important();
 
 	}
 
-	// `importantTask()` will be called
+	// `important()` sera évaluer
 	```
 
-	Here are some common cases along with coercions:
+	Voici quelques cas courants de coercion :
 
 
 	```javascript
@@ -543,7 +543,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	parseInt( num, 10 );
 
-	// is the same as...
+	// identique à...
 
 	~~num;
 
@@ -656,7 +656,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Style Pratique</a>
 
 	```javascript
 
