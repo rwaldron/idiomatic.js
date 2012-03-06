@@ -758,12 +758,12 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	Vous avez peut être probablement écrit le code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
 
-	Trouvez ci-desssous la même logique, mais avec plus de clareté, de compréhension et surtour plus de lisibilité fonctionnelle:
+	Ci-dessous la même logique, avec plus de clareté et surtout plus de lisibilité fonctionnelle:
 
 	```javascript
 
 	// 6.2.1
-	// Example of code with improved names
+	// Exemple de code avec un nommage amélioré
 
 	function query( selector ) {
 		return document.querySelectorAll( selector );
@@ -780,20 +780,20 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	```
 
-	A few additional naming pointers:
+	Quelques conseilles supplémentaires:
 
 	```javascript
 
 	// 6.3.1
-	// Naming strings
+	// Nommage des chaines de caractères "string"
 
-	`dog` is a string
+	`dog` est une chaine de caractère
 
 
 	// 6.3.2
-	// Naming arrays
+	// Nommage des chaines des tableaux "array"
 
-	`dogs` is an array of `dog` strings
+	`dogs` est un tableau de `dog` chaine de caractère
 
 
 	// 6.3.3
