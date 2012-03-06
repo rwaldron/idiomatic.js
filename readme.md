@@ -18,9 +18,9 @@
 
 ### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont j'en suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
-### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes, si elles ont un style commun - dans ce cas, il est important de respecter le style de chacun.
+### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
 
-> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soit même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
+> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
 
 ## Traductions
 
@@ -28,7 +28,7 @@
 * [Espagnol](https://github.com/MatiasArriola/idiomatic.js/)
 * [Portugais - Brésilien](https://github.com/leobalter/idiomatic.js/)
 
-## Important, aspect Non-Idiomatique :
+## Important, aspect non-Idiomatique :
 
 ### Qualité du Code : indispensables, ressources et références
 
@@ -41,12 +41,11 @@
 
 [Optimisation des outils de qualité de code par Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
-
-### Soyez Intelligent
+### Soyez cohérent
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine: Ils sont conformes. En outre, ce sont les autorités sur le language.
+Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont les autorités sur le language.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -54,15 +53,14 @@ Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LEC
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
-
 ### Processus de "Build" et de déploiement
 
 Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
-Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques officielles de notre project.
+Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques, que nous soutenons dans notre project.
 
 ### Testabilité
 
-Les projets _doivent_ inclure certaines formes de test unitaire, par référence, d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas ne sont pas des «tests». Ce qui suit est une bibliothèque de test, aucune d'entre elles n'ait approuvée plus que l'autre.
+Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnelle. Utilisez des Demos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèque de test, aucune d'entre elles n'est approuvée plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -84,7 +82,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
  * [Commentaires](#comments)
  * [Un code, un language](#language)
 
-## Manifeste style idiomatique
+## Manifeste : style idiomatique
 
 1. <a name="whitespace">Les Espaces</a>
 
@@ -96,7 +94,6 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		* Elimine les espaces de fin de ligne
 		* Elimine les espaces utilisés pour des lignes blanches
 		* Améliorer la lisibilité de vos "commit" et des "diff"
-
 
 2. <a name="spacing">Une Syntaxe Précise</a>
 
@@ -121,15 +118,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	// Utilisez les espaces afin d'améliorer la lisibilité
 
 	if ( condition ) {
-		// statements
+		// déclarations
 	}
 
 	while ( condition ) {
-		// statements
+		// déclarations
 	}
 
 	for ( var i = 0; i < 100; i++ ) {
-		// statements
+		// déclarations
 	}
 
 	// Even better:
@@ -137,7 +134,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		length = 100;
 
 	for ( i = 0; i < length; i++ ) {
-		// statements
+		// déclarations
 	}
 
 	// Or...
@@ -145,19 +142,19 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		length = 100;
 
 	for ( ; i < length; i++ ) {
-		// statements
+		// déclarations
 	}
 
 	var prop;
 	for ( prop in object ) {
-		// statements
+		// déclarations
 	}
 
 
 	if ( true ) {
-		// statements
+		// déclarations
 	} else {
-		// statements
+		// déclarations
 	}
 	```
 
@@ -172,14 +169,13 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		num = 1,
 		undef;
 
-	// Literal notations:
+	// Notations littérales:
 	var array = [],
 		object = {};
 
-
 	// 2.B.1.2
 	// Utilisez une unique déclaration `var` par portée de (fonction) améliore la lisibilité
-	// et permets de garder une déclaration séparée du corps de la fonction (en adéquation avec la portée des variables en JavaScript)
+	// et permets de garder une déclaration séparée du corps de la fonction (en adéquation avec la portée des variables JS)
 
 	// Mauvais
 	var foo = "";
@@ -204,7 +200,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	// Mauvais
 	function foo() {
 
-		// some statements here
+		// déclarations
 		var bar = "",
 			qux;
 	}
@@ -214,29 +210,29 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 		var bar = "",
 			qux;
 
-		// all statements after the variables declarations.
+		// toutes les autres déclarations sont après la déclaration des variables.
 	}
 	```
 
 	```javascript
 
 	// 2.B.2.1
-	// Named Function Declaration
+	// Déclaration de fonction nommée
 	function foo( arg1, argN ) {
 
 	}
 
-	// Usage
+	// Utilisation
 	foo( arg1, argN );
 
 
 	// 2.B.2.2
-	// Named Function Declaration
+	// Déclaration de fonction nommée
 	function square( number ) {
 		return number * number;
 	}
 
-	// Usage
+	// Utilisation
 	square( 10 );
 
 	// Really contrived continuation passing style
@@ -245,14 +241,14 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	}
 
 	square( 10, function( square ) {
-		// callback statements
+		// déclaration de la callback
 	});
 
 
 	// 2.B.2.3
-	// Function Expression
+	// Expression de fonction
 	var square = function( number ) {
-		// Return something valuable and relevant
+		// Renvoie quelque chose de pertinent
 		return number * number;
 	};
 
@@ -322,21 +318,21 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	// 2.D.1.1
 
 	if (condition) {
-		// statements
+		// déclarations
 	}
 
 	while (condition) {
-		// statements
+		// déclarations
 	}
 
 	for (var i = 0; i < 100; i++) {
-		// statements
+		// déclarations
 	}
 
 	if (true) {
-		// statements
+		// déclarations
 	} else {
-		// statements
+		// déclarations
 	}
 
 	```
@@ -837,9 +833,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
 
-	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch déclarations
 
-	There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+	There seems to be drastic improvements to the execution of `switch` déclarations in latest releases of Firefox and Chrome.
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
 	Notable improvements can be witnesses here as well:
@@ -867,15 +863,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 
 	var switchObj = {
 		alpha: function() {
-			// statements
+			// déclarations
 			// a return
 		},
 		beta: function() {
-			// statements
+			// déclarations
 			// a return
 		},
 		_default: function() {
-			// statements
+			// déclarations
 			// a return
 		}
 	};
@@ -883,15 +879,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire, par référence
 	var switchModule = (function () {
 		return {
 			alpha: function() {
-				// statements
+				// déclarations
 				// a return
 			},
 			beta: function() {
-				// statements
+				// déclarations
 				// a return
 			},
 			_default: function() {
-				// statements
+				// déclarations
 				// a return
 			}
 		};
