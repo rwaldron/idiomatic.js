@@ -73,7 +73,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
  * [Les Espaces](#whitespace)
  * [Une Syntaxe Précise](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
+ * [Vérification de Type (Courtesy jQuery Core Style Guidelines)](#type)
  * [Conditional Evaluation](#cond)
  * [Practical Style](#practical)
  * [Règles de nommage](#naming)
@@ -129,7 +129,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		// déclarations
 	}
 
-	// Even better:
+	// même mieux:
 	var i,
 		length = 100;
 
@@ -158,7 +158,6 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	}
 	```
 
-
 	B. Déclaration, Affectation, Fonction ( Nommage, Expression, Constructeur )
 
 	```javascript
@@ -174,8 +173,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		object = {};
 
 	// 2.B.1.2
-	// Utilisez une unique déclaration `var` par portée de (fonction) améliore la lisibilité
-	// et permets de garder une déclaration séparée du corps de la fonction (en adéquation avec la portée des variables JS)
+	// Utilisez une unique déclaration `var` par portée de (fonction) améliore la
+	// lisibilité et permets de garder une déclaration séparée du corps de la fonction
+	// (en adéquation avec la portée des variables JS)
 
 	// Mauvais
 	var foo = "";
@@ -235,7 +235,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	// Utilisation
 	square( 10 );
 
-	// Really contrived continuation passing style
+	// Passage d'une callback par variable nommée
 	function square( number, callback ) {
 		callback( number * number );
 	}
@@ -265,13 +265,13 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 
 	// 2.B.2.4
-	// Constructor Declaration
+	// Déclaration de Constructeur
 	function FooBar( options ) {
 
 		this.options = options;
 	}
 
-	// Usage
+	// Utilisation
 	var fooBar = new FooBar({ a: "alpha" });
 
 	fooBar.options;
@@ -280,28 +280,28 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	```
 
 
-	C. Exceptions, de légères différences
+	C. Exceptions et légères différences
 
 	```javascript
 
 	// 2.C.1.1
-	// Functions with callbacks
+	// Fonctions avec 'callbacks'
 	foo(function() {
-		// Note there is no extra space between the first paren
-		// of the executing function call and the word "function"
+		// remarque : il n'y a pas d'espace supplémentaire entre la première parenthèse
+		// d'exécution de la fonction appelée et le mot réservé "function"
 	});
 
-	// Function accepting an array, no space
+	// Fonction acceptant un tableau, sans espace
 	foo([ "alpha", "beta" ]);
 
 	// 2.C.1.2
-	// Function accepting an object, no space
+	// Fonction acceptant un objet, sans espace
 	foo({
 		a: "alpha",
 		b: "beta"
 	});
 
-	// Inner grouping parens, no space
+	// Regroupement de déclaration à l'intérieur de parenthèse, sans espace
 	if ( !("foo" in obj) ) {
 
 	}
@@ -310,8 +310,8 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	D. La cohérence gagne toujours
 
-	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+	Dans les sections 2.A-2.C, les règles d'espacement sont énoncées sous forme de recommandation avec un objectif simple et plus abouti : la cohérence.
+	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérer comme optionnels. Un unique style doit exister pour tous les sources d'un projet.
 
 	```javascript
 
@@ -341,7 +341,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuer __automatiquement__ avant chaque "commit".
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Vérification de Type (Courtesy jQuery Core Style Guidelines)</a>
 
 	3.A Actual Types
 
@@ -370,7 +370,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 		`variable === null`
 
-	* null or undefined:
+	* null ou undefined:
 
 		`variable == null`
 
@@ -390,7 +390,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 			* `"prop" in object`
 
 
-	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`, as recommended.
+	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'type', en appliquant les règles ci-dessus.
 
 
 	3.B Coerced Types
