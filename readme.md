@@ -188,7 +188,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		quux;
 
 	// ou..
-	var // Comment on these
+	var // donnez votre avis
 	foo = "",
 	bar = "",
 	quux;
@@ -252,9 +252,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		return number * number;
 	};
 
-	// Function Expression with Identifier
-	// This preferred form has the added value of being
-	// able to call itself and have an identity in stack traces:
+	// Expression de fonction avec un identifiant
+	// Cette forme préférée a pour valeur ajoutée d'être en mesure de se faire appeler
+	// et d'avoir une identité dans les traces de pile
 	var factorial = function factorial( number ) {
 		if ( number < 2 ) {
 			return 1;
@@ -311,7 +311,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	D. La cohérence gagne toujours
 
 	Dans les sections 2.A-2.C, les règles d'espacement sont énoncées sous forme de recommandation avec un objectif simple et plus abouti : la cohérence.
-	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérer comme optionnels. Un unique style doit exister pour tous les sources d'un projet.
+	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérer comme optionnels. Un _unique style_ doit exister pour tous les sources d'un projet.
 
 	```javascript
 
@@ -343,7 +343,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 3. <a name="type">Vérification de Type (Courtesy jQuery Core Style Guidelines)</a>
 
-	3.A Actual Types
+	3.A Types réels
 
 	* String:
 
@@ -364,7 +364,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	* Array:
 
 		`Array.isArray(arrayObject)`
-		(wherever possible)
+		(dans la mesure du possible)
 
 	* null:
 
@@ -376,15 +376,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	* undefined:
 
-		* Global Variables:
+		* Variable Global:
 
 			* `typeof variable === "undefined"`
 
-		* Local Variables:
+		* Variable Local:
 
 			* `variable === undefined`
 
-		* Properties:
+		* Propriétés:
 			* `object.prop === undefined`
 			* `object.hasOwnProperty( prop )`
 			* `"prop" in object`
@@ -393,11 +393,11 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'type', en appliquant les règles ci-dessus.
 
 
-	3.B Coerced Types
+	3.B Coercion de type
 
-	Consider the implications of the following...
+	Considérons les implications de ce qui suit...
 
-	Given this HTML:
+	Etant donné ce code HTML:
 
 	```html
 
@@ -410,28 +410,27 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	// 3.B.1.1
 
-	// `foo` has been declared with the value `0` and its type is `number`
+	// `foo` a été déclaré avec la valeur `0` et son type est `number`
 	var foo = 0;
 
 	// typeof foo;
 	// "number"
 	...
 
-	// Somewhere later in your code, you need to update `foo`
-	// with a new value derived from an input element
+	// Quelque part plus loin dans votre code, vous devez mettre à jour `foo`
+	// avec une nouvelle valeur issue de l'element 'input'
 
 	foo = document.getElementById("foo-input").value;
 
-	// If you were to test `typeof foo` now, the result would be `string`
-	// This means that if you had logic that tested `foo` like:
+	// Si vous deviez tester `typeof foo` maintenant, le résultat serait `string`
+	// Cela signifie que si vous aviez la logique testant `foo` commt suit:
 
 	if ( foo === 1 ) {
 
-		importantTask();
-
+		important();
 	}
 
-	// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	// `important()` ne serait jamais évalué, même si `foo` a une valeur de "1"
 
 
 	// 3.B.1.2
