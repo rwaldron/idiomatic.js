@@ -77,7 +77,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
  * [Conditional Evaluation](#cond)
  * [Style Pratique](#practical)
  * [Règles de nommage](#naming)
- * [Misc](#misc)
+ * [Divers](#misc)
  * [Native & Host Objects](#native)
  * [Commentaires](#comments)
  * [Un code, un language](#language)
@@ -137,7 +137,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		// déclarations
 	}
 
-	// Or...
+	// Ou...
 	var i = 0,
 		length = 100;
 
@@ -656,12 +656,12 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	```
 
 
-5. <a name="practical">Style Pratique</a>
+5. <a name="practical">Style usuel</a>
 
 	```javascript
 
 	// 5.1.1
-	// A Practical Module
+	// A Module
 
 	(function( global ) {
 		var Module = (function() {
@@ -702,14 +702,13 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	```javascript
 
 	// 5.2.1
-	// A Practical Constructor
+	// A Constructeur
 
 	(function( global ) {
 
 		function Ctor( foo ) {
 
 			this.foo = foo;
-
 			return this;
 		}
 
@@ -735,12 +734,10 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	```
 
-
-
 6. <a name="naming">Règles de nommage</a>
 
 
-	Vous n'êtes pas un compilateur ou un compresseur, il ne faut pas essayer d'être un.
+	Vous n'êtes pas un compilateur ou un minificateur, il ne faut pas essayer d'être un.
 
 	Le code suivant est un exemple flagrant de ce qu'il ne faut pas faire:
 
@@ -824,11 +821,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	methodNamesLikeThis;
 	SYMBOLIC_CONSTANTS_LIKE_THIS;
 
-
-
 	```
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Divers</a>
 
 	This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
 
