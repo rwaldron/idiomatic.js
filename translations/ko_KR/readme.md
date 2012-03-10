@@ -1,6 +1,6 @@
 # Principles of Writing Consistent, Idiomatic JavaScript
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## 이 문서는 계속 바뀝니다. 주변의 코드를 더 낫게 만들기 위한 좋은 아이디어가 있으시면 알려주세요. Github에서 fork, clone, branch, commit, push, pull request 하는 방법으로 참여해 보세요. 
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -21,11 +21,12 @@
 
 > "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
-## Translations
+## 번역 
 
-* [French](https://github.com/jfroffice/idiomatic.js/)
-* [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
-* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
+* [프랑스어](https://github.com/jfroffice/idiomatic.js/)
+* [스페인어](https://github.com/MatiasArriola/idiomatic.js/)
+* [포르투갈어 - 브라질](https://github.com/leobalter/idiomatic.js/)
+* [한국어](http://https://github.com/EngForDev/idiomatic.js/)
 
 ## Important, Non-Idiomatic Stuff:
 
