@@ -26,7 +26,7 @@
 * [프랑스어](https://github.com/jfroffice/idiomatic.js/)
 * [스페인어](https://github.com/MatiasArriola/idiomatic.js/)
 * [포르투갈어 - 브라질](https://github.com/leobalter/idiomatic.js/)
-* [한국어](http://https://github.com/EngForDev/idiomatic.js/)
+* [한국어](http://https://github.com/EngForDev/idiomatic.js/) - 참여 : 이대엽, rkJun, nassol, 망고, Hwan Min Hong, 심태현, leoinsight
 
 ## Important, Non-Idiomatic Stuff:
 
