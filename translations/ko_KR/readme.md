@@ -12,6 +12,7 @@
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
+* [engfordev](http://engfordev.com) 이대엽 / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / 망고 / Hwan Min Hong / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / leoinsight
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
@@ -26,7 +27,7 @@
 * [프랑스어](https://github.com/jfroffice/idiomatic.js/)
 * [스페인어](https://github.com/MatiasArriola/idiomatic.js/)
 * [포르투갈어 - 브라질](https://github.com/leobalter/idiomatic.js/)
-* [한국어](https://github.com/EngForDev/idiomatic.js/) - by [EngForDev.com](http://engfordev.com) : 이대엽, rkJun, nassol, 망고, Hwan Min Hong, 심태현, leoinsight
+* [한국어](https://github.com/EngForDev/idiomatic.js/)
 
 ## 관련은 없지만, 중요한 자료:
 
@@ -64,7 +65,7 @@ Projects should always attempt to include some generic means by which source can
 
 ### 테스트 Facility
 
-프로젝트에는 unit, reference, implementation이나 기능에 관한 테스트 부분이 _들어가 있어야_ 합니다. functional testing. 시범 데모인 DO NOT QUALIFY를 사용해서 테스트하세요. 아래에는 테스트를 하는 프레임워크의 목록을 나열해 두었습니다. 이 중에 어느 하나를 더욱 추천하는 것은 아닙니다.
+프로젝트에는 unit, reference, implementation이나 기능에 관한 테스트 부분이 _들어가 있어야_ 합니다. 시범 데모인 DO NOT QUALIFY를 사용해서 테스트하세요. 아래에는 테스트를 하는 프레임워크의 목록을 나열해 두었습니다. 이 중에 어느 하나를 더욱 추천하는 것은 아닙니다.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
