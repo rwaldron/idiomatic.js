@@ -5,14 +5,20 @@
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
-* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
-* Raynos  [github](https://github.com/Raynos)
+* Kit Cambridge [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
+* Raynos [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
-* [engfordev](http://engfordev.com) 이대엽 / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / 망고 / Hwan Min Hong / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / leoinsight
+* 개발자영어(EngForDev) [engfordev](http://www.opentutorials.org/course/167/1363) - 홍환민(Hwan Min Hong) / 권민택(MinTaek Kwon) [@leoinsight](http://twitter.com/leoinsight) /
+심태원(Tw Shim) [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) /
+김나솔(Nassol Kim) [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) /
+박준태(Juntai Park) [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) /
+심민규 / 원강민 / 유정협 /이대엽
+
+
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
@@ -27,7 +33,7 @@
 * [프랑스어](https://github.com/jfroffice/idiomatic.js/)
 * [스페인어](https://github.com/MatiasArriola/idiomatic.js/)
 * [포르투갈어 - 브라질](https://github.com/leobalter/idiomatic.js/)
-* [한국어](https://github.com/EngForDev/idiomatic.js/)
+* [한국어](https://github.com/EngForDev/idiomatic.js/tree/ko/translations/ko_KR)
 
 ## 관련은 없지만, 중요한 자료:
 
@@ -49,16 +55,16 @@
 
 아래 리스트는 1) 이 주제의 모든 지식들을 포괄하지는 않습니다. 2) *반드시 읽기를 권합니다*. 저는 아래 저자들이 말하는 코딩 스타일에 대해 항상 찬성하는 것은 아니지만, 분명한 것은 그들이 일관성 있단 겁니다. 게다가 이들은 프로그래밍 언어의 권위자들입니다.
 
- * [Eloquent JavaScript](http://eloquentjavascript.net/)
+ * [유창한 자바스크립트(Eloquent JavaScript)](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
- * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [Adventures in JavaScript Development](http://rmurphey.com/)
+ * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [자바스크립트 개발 모험(Adventures in JavaScript Development)](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [더글라스 크록포드의 월드와이드웹(Douglas Crockford's Wrrrld Wide Web)](http://www.crockford.com)
 
 
 ### 빌드 & 배포 프로세스
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
+프로젝트는 배포를 위해 소스코드를 압축하는 방법을 마련해두어야 합니다. . For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
 
 
 
@@ -206,7 +212,7 @@ Projects should always attempt to include some generic means by which source can
 	quux;
 
 	// 2.B.1.3
-	// var statements should always be in the beginning of their respective scope (function).
+	// var statements should always be in the beginning of their respective scope (function). 
 	// Same goes for const and let from ECMAScript 6.
 
 	// Bad
@@ -983,7 +989,7 @@ Projects should always attempt to include some generic means by which source can
 
 10. <a name="language">One Language Code</a>
 
-	Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+	프로그램은 유지보수 하는 사람들에 의해 가급적 하나의 언어(영어이든 아니든 무슨 언어로든 간에 - 역자 주)로 쓰이는 것이 좋습니다.
 
 ## 부록
 
