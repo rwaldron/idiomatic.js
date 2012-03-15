@@ -27,7 +27,7 @@
 * [French](https://github.com/jfroffice/idiomatic.js/)
 * [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
 * [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
-* [Korean](https://github.com/EngForDev/idiomatic.js/tree/ko/translations/ko_KR);
+* [Korean](https://github.com/EngForDev/idiomatic.js/tree/ko/translations/ko_KR)
 
 ## Important, Non-Idiomatic Stuff:
 
