@@ -16,7 +16,7 @@
 심태원(Tw Shim) [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) /
 김나솔(Nassol Kim) [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) /
 박준태(Juntai Park) [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) /
-심민규 / 원강민 / 유정협 /이대엽
+심민규 / 원강민 / 유정협(Justin Yoo) [@justinchronicle](http://twitter.com/justinchronicle) /이대엽
 
 
 
