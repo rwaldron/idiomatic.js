@@ -989,5 +989,6 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
 
-See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
-Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
+Recommended reading:
+	* https://gist.github.com/357981 (discussion)
+	* http://inimino.org/~inimino/blog/javascript_whitespace
