@@ -987,7 +987,4 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ### Comma First.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
-
-See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
-Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
+Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
