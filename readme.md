@@ -22,6 +22,7 @@
 
 > "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
+
 ## Translations
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
@@ -58,7 +59,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 ### Build & Deployment Process
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
+Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
 
 
 
@@ -86,6 +87,18 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Native & Host Objects](#native)
  * [Comments](#comments)
  * [One Language Code](#language)
+
+
+
+------------------------------------------------
+
+
+## Preface
+
+The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+
+
+
 
 
 ## Idiomatic Style Manifesto
