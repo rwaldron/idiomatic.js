@@ -22,7 +22,6 @@
 
 > "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
 
-
 ## Translations
 
 * [French](https://github.com/jfroffice/idiomatic.js/)
@@ -59,7 +58,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 ### Build & Deployment Process
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
+Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task,  [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
 
 
 
@@ -89,30 +88,19 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [One Language Code](#language)
 
 
-
-------------------------------------------------
-
-
-## Preface
-
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
-
-
-
 ## Idiomatic Style Manifesto
 
 
 1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+
+	* Never mix spaces and tabs.
+	* When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs &mdash; this is law.
+		* For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
+	* If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
+		* Enforced consistency
+		* Eliminating end of line whitespace
+		* Eliminating blank line whitespace
+		* Commits and diffs that are easier to read
 
 
 2. <a name="spacing">Beautiful Syntax</a>
@@ -370,49 +358,49 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 	3.A Actual Types
 
-  - String:
+	* String:
 
 		`typeof variable === "string"`
 
-  - Number:
+	* Number:
 
 		`typeof variable === "number"`
 
-  - Boolean:
+	* Boolean:
 
 		`typeof variable === "boolean"`
 
-  - Object:
+	* Object:
 
 		`typeof variable === "object"`
 
-  - Array:
+	* Array:
 
 		`Array.isArray(arrayObject)`
 		(wherever possible)
 
-  - null:
+	* null:
 
 		`variable === null`
 
-  - null or undefined:
+	* null or undefined:
 
 		`variable == null`
 
-  - undefined:
+	* undefined:
 
-	  - Global Variables:
+		* Global Variables:
 
-			`typeof variable === "undefined"`
+			* `typeof variable === "undefined"`
 
-	  - Local Variables:
+		* Local Variables:
 
-			`variable === undefined`
+			* `variable === undefined`
 
-	  - Properties:
-		  - `object.prop === undefined`
-		  - `object.hasOwnProperty( prop )`
-		  - `"prop" in object`
+		* Properties:
+			* `object.prop === undefined`
+			* `object.hasOwnProperty( prop )`
+			* `"prop" in object`
 
 
 	JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`, as recommended.
@@ -496,7 +484,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 	// "1"
 
 	string;
-  // "1"
+	 // "1"
 
 	+string;
 	// 1
