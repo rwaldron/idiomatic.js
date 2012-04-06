@@ -117,570 +117,566 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 2. <a name="spacing">Beautiful Syntax</a>
 
-  A. Parens, Braces, Linebreaks
+    A. Parens, Braces, Linebreaks
 
-  ```javascript
+    ```javascript
 
-  // if/else/for/while/try always have spaces, braces and span multiple lines
-  // this encourages readability
+    // if/else/for/while/try always have spaces, braces and span multiple lines
+    // this encourages readability
 
-  // 2.A.1.1
-  // Examples of really cramped syntax
+    // 2.A.1.1
+    // Examples of really cramped syntax
 
-  if(condition) doSomething();
+    if(condition) doSomething();
 
-  while(condition) iterating++;
+    while(condition) iterating++;
 
-  for(var i=0;i<100;i++) someIterativeFn();
-
-
-  // 2.A.1.1
-  // Use whitespace to promote readability
-
-  if ( condition ) {
-    // statements
-  }
-
-  while ( condition ) {
-    // statements
-  }
-
-  for ( var i = 0; i < 100; i++ ) {
-    // statements
-  }
-
-  // Even better:
-
-  var i,
-    length = 100;
-
-  for ( i = 0; i < length; i++ ) {
-    // statements
-  }
-
-  // Or...
-
-  var i = 0,
-    length = 100;
-
-  for ( ; i < length; i++ ) {
-    // statements
-  }
-
-  var prop;
-
-  for ( prop in object ) {
-    // statements
-  }
+    for(var i=0;i<100;i++) someIterativeFn();
 
 
-  if ( true ) {
-    // statements
-  } else {
-    // statements
-  }
-  ```
+    // 2.A.1.1
+    // Use whitespace to promote readability
+
+    if ( condition ) {
+      // statements
+    }
+
+    while ( condition ) {
+      // statements
+    }
+
+    for ( var i = 0; i < 100; i++ ) {
+      // statements
+    }
+
+    // Even better:
+
+    var i,
+      length = 100;
+
+    for ( i = 0; i < length; i++ ) {
+      // statements
+    }
+
+    // Or...
+
+    var i = 0,
+      length = 100;
+
+    for ( ; i < length; i++ ) {
+      // statements
+    }
+
+    var prop;
+
+    for ( prop in object ) {
+      // statements
+    }
 
 
-  B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
-
-  ```javascript
-
-  // 2.B.1.1
-  // Variables
-  var foo = "bar",
-    num = 1,
-    undef;
-
-  // Literal notations:
-  var array = [],
-    object = {};
+    if ( true ) {
+      // statements
+    } else {
+      // statements
+    }
+    ```
 
 
-  // 2.B.1.2
-  // Using only one `var` per scope (function) promotes readability
-  // and keeps your declaration list free of clutter (also saves a few keystrokes)
+    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
-  // Bad
-  var foo = "";
-  var bar = "";
-  var qux;
+    ```javascript
 
-  // Good
-  var foo = "",
+    // 2.B.1.1
+    // Variables
+    var foo = "bar",
+      num = 1,
+      undef;
+
+    // Literal notations:
+    var array = [],
+      object = {};
+
+
+    // 2.B.1.2
+    // Using only one `var` per scope (function) promotes readability
+    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+
+    // Bad
+    var foo = "";
+    var bar = "";
+    var qux;
+
+    // Good
+    var foo = "",
+      bar = "",
+      quux;
+
+    // or..
+    var // Comment on these
+    foo = "",
     bar = "",
     quux;
 
-  // or..
-  var // Comment on these
-  foo = "",
-  bar = "",
-  quux;
+    // 2.B.1.3
+    // var statements should always be in the beginning of their respective scope (function).
+    // Same goes for const and let from ECMAScript 6.
 
-  // 2.B.1.3
-  // var statements should always be in the beginning of their respective scope (function).
-  // Same goes for const and let from ECMAScript 6.
+    // Bad
+    function foo() {
 
-  // Bad
-  function foo() {
+      // some statements here
 
-    // some statements here
-
-    var bar = "",
-      qux;
-  }
-
-  // Good
-  function foo() {
-    var bar = "",
-      qux;
-
-    // all statements after the variables declarations.
-  }
-  ```
-
-  ```javascript
-
-  // 2.B.2.1
-  // Named Function Declaration
-  function foo( arg1, argN ) {
-
-  }
-
-  // Usage
-  foo( arg1, argN );
-
-
-  // 2.B.2.2
-  // Named Function Declaration
-  function square( number ) {
-    return number * number;
-  }
-
-  // Usage
-  square( 10 );
-
-  // Really contrived continuation passing style
-  function square( number, callback ) {
-    callback( number * number );
-  }
-
-  square( 10, function( square ) {
-    // callback statements
-  });
-
-
-  // 2.B.2.3
-  // Function Expression
-  var square = function( number ) {
-    // Return something valuable and relevant
-    return number * number;
-  };
-
-  // Function Expression with Identifier
-  // This preferred form has the added value of being
-  // able to call itself and have an identity in stack traces:
-  var factorial = function factorial( number ) {
-    if ( number < 2 ) {
-      return 1;
+      var bar = "",
+        qux;
     }
 
-    return number * factorial( number-1 );
-  };
+    // Good
+    function foo() {
+      var bar = "",
+        qux;
+
+      // all statements after the variables declarations.
+    }
+    ```
+
+    ```javascript
+
+    // 2.B.2.1
+    // Named Function Declaration
+    function foo( arg1, argN ) {
+
+    }
+
+    // Usage
+    foo( arg1, argN );
 
 
-  // 2.B.2.4
-  // Constructor Declaration
-  function FooBar( options ) {
+    // 2.B.2.2
+    // Named Function Declaration
+    function square( number ) {
+      return number * number;
+    }
 
-    this.options = options;
-  }
+    // Usage
+    square( 10 );
 
-  // Usage
-  var fooBar = new FooBar({ a: "alpha" });
+    // Really contrived continuation passing style
+    function square( number, callback ) {
+      callback( number * number );
+    }
 
-  fooBar.options;
-  // { a: "alpha" }
+    square( 10, function( square ) {
+      // callback statements
+    });
 
-  ```
+
+    // 2.B.2.3
+    // Function Expression
+    var square = function( number ) {
+      // Return something valuable and relevant
+      return number * number;
+    };
+
+    // Function Expression with Identifier
+    // This preferred form has the added value of being
+    // able to call itself and have an identity in stack traces:
+    var factorial = function factorial( number ) {
+      if ( number < 2 ) {
+        return 1;
+      }
+
+      return number * factorial( number-1 );
+    };
 
 
-  C. Exceptions, Slight Deviations
+    // 2.B.2.4
+    // Constructor Declaration
+    function FooBar( options ) {
 
-  ```javascript
+      this.options = options;
+    }
 
-  // 2.C.1.1
-  // Functions with callbacks
-  foo(function() {
-    // Note there is no extra space between the first paren
-    // of the executing function call and the word "function"
-  });
+    // Usage
+    var fooBar = new FooBar({ a: "alpha" });
 
-  // Function accepting an array, no space
-  foo([ "alpha", "beta" ]);
+    fooBar.options;
+    // { a: "alpha" }
 
-  // 2.C.1.2
-  // Function accepting an object, no space
-  foo({
-    a: "alpha",
-    b: "beta"
-  });
+    ```
 
-  // Inner grouping parens, no space
-  if ( !("foo" in obj) ) {
 
-  }
+    C. Exceptions, Slight Deviations
 
-  ```
+    ```javascript
 
-  D. Consistency Always Wins
+    // 2.C.1.1
+    // Functions with callbacks
+    foo(function() {
+      // Note there is no extra space between the first paren
+      // of the executing function call and the word "function"
+    });
 
-  In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-  It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    // Function accepting an array, no space
+    foo([ "alpha", "beta" ]);
 
-  ```javascript
+    // 2.C.1.2
+    // Function accepting an object, no space
+    foo({
+      a: "alpha",
+      b: "beta"
+    });
 
-  // 2.D.1.1
+    // Inner grouping parens, no space
+    if ( !("foo" in obj) ) {
 
-  if (condition) {
-    // statements
-  }
+    }
 
-  while (condition) {
-    // statements
-  }
+    ```
 
-  for (var i = 0; i < 100; i++) {
-    // statements
-  }
+    D. Consistency Always Wins
 
-  if (true) {
-    // statements
-  } else {
-    // statements
-  }
+    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
+    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
 
-  ```
+    ```javascript
 
-  E. End of Lines and Empty Lines
+    // 2.D.1.1
 
-  Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    if (condition) {
+      // statements
+    }
+
+    while (condition) {
+      // statements
+    }
+
+    for (var i = 0; i < 100; i++) {
+      // statements
+    }
+
+    if (true) {
+      // statements
+    } else {
+      // statements
+    }
+
+    ```
+
+    E. End of Lines and Empty Lines
+
+    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
-  3.A Actual Types
+    A. Actual Types
 
-  - String:
+    String:
 
-    `typeof variable === "string"`
+        `typeof variable === "string"`
 
-  - Number:
+    Number:
 
-    `typeof variable === "number"`
+        `typeof variable === "number"`
 
-  - Boolean:
+    Boolean:
 
-    `typeof variable === "boolean"`
+        `typeof variable === "boolean"`
 
-  - Object:
+    Object:
 
-    `typeof variable === "object"`
+        `typeof variable === "object"`
 
-  - Array:
+    Array:
 
-    `Array.isArray(arrayObject)`
-    (wherever possible)
+        `Array.isArray(arrayObject)`
+        (wherever possible)
 
-  - null:
+    null:
 
-    `variable === null`
+        `variable === null`
 
-  - null or undefined:
+    null or undefined:
 
-    `variable == null`
+        `variable == null`
 
-  - undefined:
+    undefined:
 
-    - Global Variables:
+      Global Variables:
 
-      `typeof variable === "undefined"`
+        `typeof variable === "undefined"`
 
-    - Local Variables:
+      Local Variables:
 
-      `variable === undefined`
+        `variable === undefined`
 
-    - Properties:
-      - `object.prop === undefined`
-      - `object.hasOwnProperty( prop )`
-      - `"prop" in object`
+      Properties:
+        `object.prop === undefined`
+        `object.hasOwnProperty( prop )`
+        `"prop" in object`
 
+    B. Coerced Types
 
-  JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`, as recommended.
+    Consider the implications of the following...
 
+    Given this HTML:
 
-  3.B Coerced Types
+    ```html
 
-  Consider the implications of the following...
+    <input type="text" id="foo-input" value="1">
 
-  Given this HTML:
+    ```
 
-  ```html
 
-  <input type="text" id="foo-input" value="1">
+    ```js
 
-  ```
+    // 3.B.1.1
 
+    // `foo` has been declared with the value `0` and its type is `number`
+    var foo = 0;
 
-  ```js
+    // typeof foo;
+    // "number"
+    ...
 
-  // 3.B.1.1
+    // Somewhere later in your code, you need to update `foo`
+    // with a new value derived from an input element
 
-  // `foo` has been declared with the value `0` and its type is `number`
-  var foo = 0;
+    foo = document.getElementById("foo-input").value;
 
-  // typeof foo;
-  // "number"
-  ...
+    // If you were to test `typeof foo` now, the result would be `string`
+    // This means that if you had logic that tested `foo` like:
 
-  // Somewhere later in your code, you need to update `foo`
-  // with a new value derived from an input element
+    if ( foo === 1 ) {
 
-  foo = document.getElementById("foo-input").value;
+      importantTask();
 
-  // If you were to test `typeof foo` now, the result would be `string`
-  // This means that if you had logic that tested `foo` like:
+    }
 
-  if ( foo === 1 ) {
+    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
 
-    importantTask();
 
-  }
+    // 3.B.1.2
 
-  // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // You can preempt issues by using smart coercion with unary + or - operators:
 
+    foo = +document.getElementById("foo-input").value;
+          ^ unary + operator will convert its right side operand to a number
 
-  // 3.B.1.2
+    // typeof foo;
+    // "number"
 
-  // You can preempt issues by using smart coercion with unary + or - operators:
+    if ( foo === 1 ) {
 
-  foo = +document.getElementById("foo-input").value;
-        ^ unary + operator will convert its right side operand to a number
+      importantTask();
 
-  // typeof foo;
-  // "number"
+    }
 
-  if ( foo === 1 ) {
+    // `importantTask()` will be called
+    ```
 
-    importantTask();
+    Here are some common cases along with coercions:
 
-  }
 
-  // `importantTask()` will be called
-  ```
+    ```javascript
 
-  Here are some common cases along with coercions:
+    // 3.B.2.1
 
+    var number = 1,
+      string = "1",
+      bool = false;
 
-  ```javascript
+    number;
+    // 1
 
-  // 3.B.2.1
+    number + "";
+    // "1"
 
-  var number = 1,
-    string = "1",
-    bool = false;
+    string;
+    // "1"
 
-  number;
-  // 1
+    +string;
+    // 1
 
-  number + "";
-  // "1"
+    +string++;
+    // 1
 
-  string;
-  // "1"
+    string;
+    // 2
 
-  +string;
-  // 1
+    bool;
+    // false
 
-  +string++;
-  // 1
+    +bool;
+    // 0
 
-  string;
-  // 2
+    bool + "";
+    // "false"
+    ```
 
-  bool;
-  // false
 
-  +bool;
-  // 0
+    ```javascript
+    // 3.B.2.2
 
-  bool + "";
-  // "false"
-  ```
+    var number = 1,
+      string = "1",
+      bool = true;
 
+    string === number;
+    // false
 
-  ```javascript
-  // 3.B.2.2
+    string === number + "";
+    // true
 
-  var number = 1,
-    string = "1",
-    bool = true;
+    +string === number;
+    // true
 
-  string === number;
-  // false
+    bool === number;
+    // false
 
-  string === number + "";
-  // true
+    +bool === number;
+    // true
 
-  +string === number;
-  // true
+    bool === string;
+    // false
 
-  bool === number;
-  // false
+    bool === !!string;
+    // true
+    ```
 
-  +bool === number;
-  // true
+    ```javascript
+    // 3.B.2.3
 
-  bool === string;
-  // false
+    var array = [ "a", "b", "c" ];
 
-  bool === !!string;
-  // true
-  ```
+    !!~array.indexOf( "a" );
+    // true
 
-  ```javascript
-  // 3.B.2.3
+    !!~array.indexOf( "b" );
+    // true
 
-  var array = [ "a", "b", "c" ];
+    !!~array.indexOf( "c" );
+    // true
 
-  !!~array.indexOf( "a" );
-  // true
+    !!~array.indexOf( "d" );
+    // false
 
-  !!~array.indexOf( "b" );
-  // true
 
-  !!~array.indexOf( "c" );
-  // true
+    var num = 2.5;
 
-  !!~array.indexOf( "d" );
-  // false
+    parseInt( num, 10 );
 
+    // is the same as...
 
-  var num = 2.5;
+    ~~num;
 
-  parseInt( num, 10 );
-
-  // is the same as...
-
-  ~~num;
-
-  ```
+    ```
 
 
 4. <a name="cond">Conditional Evaluation</a>
 
-  ```javascript
+    ```javascript
 
-  // 4.1.1
-  // When only evaluating that an array has length,
-  // instead of this:
-  if ( array.length > 0 ) ...
+    // 4.1.1
+    // When only evaluating that an array has length,
+    // instead of this:
+    if ( array.length > 0 ) ...
 
-  // ...evaluate truthiness, like this:
-  if ( array.length ) ...
-
-
-  // 4.1.2
-  // When only evaluating that an array is empty,
-  // instead of this:
-  if ( array.length === 0 ) ...
-
-  // ...evaluate truthiness, like this:
-  if ( !array.length ) ...
+    // ...evaluate truthiness, like this:
+    if ( array.length ) ...
 
 
-  // 4.1.3
-  // When only evaluating that a string is not empty,
-  // instead of this:
-  if ( string !== "" ) ...
+    // 4.1.2
+    // When only evaluating that an array is empty,
+    // instead of this:
+    if ( array.length === 0 ) ...
 
-  // ...evaluate truthiness, like this:
-  if ( string ) ...
-
-
-  // 4.1.4
-  // When only evaluating that a string _is_ empty,
-  // instead of this:
-  if ( string === "" ) ...
-
-  // ...evaluate falsy-ness, like this:
-  if ( !string ) ...
+    // ...evaluate truthiness, like this:
+    if ( !array.length ) ...
 
 
-  // 4.1.5
-  // When only evaluating that a reference is true,
-  // instead of this:
-  if ( foo === true ) ...
+    // 4.1.3
+    // When only evaluating that a string is not empty,
+    // instead of this:
+    if ( string !== "" ) ...
 
-  // ...evaluate like you mean it, take advantage of it's primitive capabilities:
-  if ( foo ) ...
-
-
-  // 4.1.6
-  // When evaluating that a reference is false,
-  // instead of this:
-  if ( foo === false ) ...
-
-  // ...use negation to coerce a true evaluation
-  if ( !foo ) ...
-
-  // ...Be careful, this will also match: 0, "", null, undefined, NaN
-  // If you _MUST_ test for a boolean false, then use
-  if ( foo === false ) ...
+    // ...evaluate truthiness, like this:
+    if ( string ) ...
 
 
-  // 4.1.7
-  // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-  // instead of this:
-  if ( foo === null || foo === undefined ) ...
+    // 4.1.4
+    // When only evaluating that a string _is_ empty,
+    // instead of this:
+    if ( string === "" ) ...
 
-  // ...take advantage of == type coercion, like this:
-  if ( foo == null ) ...
-
-  // Remember, using == will match a `null` to BOTH `null` and `undefined`
-  // but not `false`, "" or 0
-  null == undefined
-
-  ```
-  ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
-
-  ```javascript
-
-  // 4.2.1
-  // Type coercion and evaluation notes
-
-  Prefer `===` over `==` (unless the case requires loose type evaluation)
-
-  === does not coerce type, which means that:
-
-  "1" === 1;
-  // false
-
-  == does coerce type, which means that:
-
-  "1" == 1;
-  // true
+    // ...evaluate falsy-ness, like this:
+    if ( !string ) ...
 
 
-  // 4.2.2
-  // Booleans, Truthies & Falsies
+    // 4.1.5
+    // When only evaluating that a reference is true,
+    // instead of this:
+    if ( foo === true ) ...
 
-  Booleans: true, false
+    // ...evaluate like you mean it, take advantage of it's primitive capabilities:
+    if ( foo ) ...
 
-  Truthy are: "foo", 1
 
-  Falsy are: "", 0, null, undefined, NaN, void 0
+    // 4.1.6
+    // When evaluating that a reference is false,
+    // instead of this:
+    if ( foo === false ) ...
 
-  ```
+    // ...use negation to coerce a true evaluation
+    if ( !foo ) ...
+
+    // ...Be careful, this will also match: 0, "", null, undefined, NaN
+    // If you _MUST_ test for a boolean false, then use
+    if ( foo === false ) ...
+
+
+    // 4.1.7
+    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
+    // instead of this:
+    if ( foo === null || foo === undefined ) ...
+
+    // ...take advantage of == type coercion, like this:
+    if ( foo == null ) ...
+
+    // Remember, using == will match a `null` to BOTH `null` and `undefined`
+    // but not `false`, "" or 0
+    null == undefined
+
+    ```
+    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+
+    ```javascript
+
+    // 4.2.1
+    // Type coercion and evaluation notes
+
+    Prefer `===` over `==` (unless the case requires loose type evaluation)
+
+    === does not coerce type, which means that:
+
+    "1" === 1;
+    // false
+
+    == does coerce type, which means that:
+
+    "1" == 1;
+    // true
+
+
+    // 4.2.2
+    // Booleans, Truthies & Falsies
+
+    Booleans: true, false
+
+    Truthy are: "foo", 1
+
+    Falsy are: "", 0, null, undefined, NaN, void 0
+
+    ```
 
 
 5. <a name="practical">Practical Style</a>
