@@ -560,6 +560,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf( "d" );
     // false
 
+    // Note that the above should be considered "unnecessarily clever"
+    // Prefer the obvious approach of comparing the returned value of
+    // indexOf, like:
+
+    if ( array.indexOf( "a" ) >= 0 ) {
+      // ...
+    }
+
+
 
     var num = 2.5;
 
@@ -617,7 +626,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // instead of this:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of it's primitive capabilities:
+    // ...evaluate like you mean it, take advantage of built in capabilities:
     if ( foo ) ...
 
 
