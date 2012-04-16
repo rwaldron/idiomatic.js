@@ -580,6 +580,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
+    C. DOM Types
+
+    Node:
+
+    `elem.nodeType === 1`
+
+
 
 4. <a name="cond">Conditional Evaluation</a>
 
