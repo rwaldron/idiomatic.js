@@ -567,7 +567,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
     }
+    ```
 
+    ```javascript
+    // 3.B.2.3
 
 
     var num = 2.5;
