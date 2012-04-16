@@ -372,47 +372,48 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     String:
 
-        `typeof variable === "string"`
+        typeof variable === "string"
 
     Number:
 
-        `typeof variable === "number"`
+        typeof variable === "number"
 
     Boolean:
 
-        `typeof variable === "boolean"`
+        typeof variable === "boolean"
 
     Object:
 
-        `typeof variable === "object"`
+        typeof variable === "object"
 
     Array:
 
-        `Array.isArray(arrayObject)`
+        Array.isArray( arrayLikeObject )
         (wherever possible)
 
     null:
 
-        `variable === null`
+        variable === null
 
     null or undefined:
 
-        `variable == null`
+        variable == null
 
     undefined:
 
       Global Variables:
 
-        `typeof variable === "undefined"`
+        typeof variable === "undefined"
 
       Local Variables:
 
-        `variable === undefined`
+        variable === undefined
 
       Properties:
-        `object.prop === undefined`
-        `object.hasOwnProperty( prop )`
-        `"prop" in object`
+
+        object.prop === undefined
+        object.hasOwnProperty( prop )
+        "prop" in object
 
     B. Coerced Types
 
