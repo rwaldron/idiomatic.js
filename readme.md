@@ -391,6 +391,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         Array.isArray( arrayLikeObject )
         (wherever possible)
 
+    Node:
+
+        elem.nodeType === 1
+
     null:
 
         variable === null
@@ -583,12 +587,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ~~num;
 
     ```
-
-    C. DOM Types
-
-    Node:
-
-    `elem.nodeType === 1`
 
 
 
