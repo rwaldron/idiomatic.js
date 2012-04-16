@@ -872,43 +872,27 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
   Notable improvements can be witnesses here as well:
   https://github.com/rwldrn/idiomatic.js/issues/13
 
-  ```javascript
+    ```javascript
 
-  // 7.A.1.1
-  // An example switch statement
+    // 7.A.1.1
+    // An example switch statement
 
-  switch( foo ) {
-    case "alpha":
-      alpha();
-      break;
-    case "beta":
-      beta();
-      break;
-    default:
-      // something to default to
-      break;
-  }
-
-  // 7.A.1.2
-  // A better approach would be to use an object literal or even a module:
-
-  var switchObj = {
-    alpha: function() {
-      // statements
-      // a return
-    },
-    beta: function() {
-      // statements
-      // a return
-    },
-    _default: function() {
-      // statements
-      // a return
+    switch( foo ) {
+      case "alpha":
+        alpha();
+        break;
+      case "beta":
+        beta();
+        break;
+      default:
+        // something to default to
+        break;
     }
-  };
 
-  var switchModule = (function () {
-    return {
+    // 7.A.1.2
+    // A better approach would be to use an object literal or even a module:
+
+    var switchObj = {
       alpha: function() {
         // statements
         // a return
@@ -922,56 +906,72 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         // a return
       }
     };
-  })();
+
+    var switchModule = (function () {
+      return {
+        alpha: function() {
+          // statements
+          // a return
+        },
+        beta: function() {
+          // statements
+          // a return
+        },
+        _default: function() {
+          // statements
+          // a return
+        }
+      };
+    })();
 
 
-  // 7.A.1.3
-  // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+    // 7.A.1.3
+    // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
-  ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
-  ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-  // If you know and trust the value of `foo`, you could even omit the OR check
-  // leaving only the execution:
+    // If you know and trust the value of `foo`, you could even omit the OR check
+    // leaving only the execution:
 
-  switchObj[ foo ]( args );
+    switchObj[ foo ]( args );
 
-  switchModule[ foo ]( args );
+    switchModule[ foo ]( args );
 
 
-  // This pattern also promotes code reusability.
+    // This pattern also promotes code reusability.
 
-  ```
+    ```
 
   B. Early returns promote code readability with negligible performance difference
 
-  ```javascript
+    ```javascript
 
-  // 7.B.1.1
-  // Bad:
-  function returnLate( foo ) {
-    var ret;
+    // 7.B.1.1
+    // Bad:
+    function returnLate( foo ) {
+      var ret;
 
-    if ( foo ) {
-      ret = "foo";
-    } else {
-      ret = "quux";
+      if ( foo ) {
+        ret = "foo";
+      } else {
+        ret = "quux";
+      }
+      return ret;
     }
-    return ret;
-  }
 
-  // Good:
+    // Good:
 
-  function returnEarly( foo ) {
+    function returnEarly( foo ) {
 
-    if ( foo ) {
-      return "foo";
+      if ( foo ) {
+        return "foo";
+      }
+      return "quux";
     }
-    return "quux";
-  }
 
-  ```
+    ```
 
 
 8. <a name="native">Native & Host Objects</a>
@@ -991,10 +991,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 9. <a name="comments">Comments</a>
 
-  * JSDoc style is good (Closure Compiler type hints++)
   * Single line above the code that is subject
   * Multiline is good
   * End of line comments are prohibited!
+  * JSDoc style is good, but requires a significant time investment
 
 
 10. <a name="language">One Language Code</a>
