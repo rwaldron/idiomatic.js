@@ -776,89 +776,89 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
   The following code is an example of egregious naming:
 
-  ```javascript
+    ```javascript
 
-  // 6.1.1
-  // Example of code with poor names
+    // 6.1.1
+    // Example of code with poor names
 
-  function q(s) {
-    return document.querySelectorAll(s);
-  }
-  var i,a=[],els=q("#foo");
-  for(i=0;i<els.length;i++){a.push(els[i]);}
-  ```
+    function q(s) {
+      return document.querySelectorAll(s);
+    }
+    var i,a=[],els=q("#foo");
+    for(i=0;i<els.length;i++){a.push(els[i]);}
+    ```
 
   Without a doubt, you've written code like this - hopefully that ends today.
 
   Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
 
-  ```javascript
+    ```javascript
 
-  // 6.2.1
-  // Example of code with improved names
+    // 6.2.1
+    // Example of code with improved names
 
-  function query( selector ) {
-    return document.querySelectorAll( selector );
-  }
+    function query( selector ) {
+      return document.querySelectorAll( selector );
+    }
 
-  var idx = 0,
-    elements = [],
-    matches = query("#foo"),
-    length = matches.length;
+    var idx = 0,
+      elements = [],
+      matches = query("#foo"),
+      length = matches.length;
 
-  for( ; idx < length; idx++ ){
-    elements.push( matches[ idx ] );
-  }
+    for( ; idx < length; idx++ ){
+      elements.push( matches[ idx ] );
+    }
 
-  ```
+    ```
 
   A few additional naming pointers:
 
-  ```javascript
+    ```javascript
 
-  // 6.3.1
-  // Naming strings
+    // 6.3.1
+    // Naming strings
 
-  `dog` is a string
-
-
-  // 6.3.2
-  // Naming arrays
-
-  `dogs` is an array of `dog` strings
+    `dog` is a string
 
 
-  // 6.3.3
-  // Naming functions, objects, instances, etc
+    // 6.3.2
+    // Naming arrays
 
-  camelCase; function and var declarations
-
-
-  // 6.3.4
-  // Naming constructors, prototypes, etc.
-
-  PascalCase; constructor function
+    `dogs` is an array of `dog` strings
 
 
-  // 6.3.5
-  // Naming regular expressions
+    // 6.3.3
+    // Naming functions, objects, instances, etc
 
-  rDesc = //;
-
-
-  // 6.3.6
-  // From the Google Closure Library Style Guide
-
-  functionNamesLikeThis;
-  variableNamesLikeThis;
-  ConstructorNamesLikeThis;
-  EnumNamesLikeThis;
-  methodNamesLikeThis;
-  SYMBOLIC_CONSTANTS_LIKE_THIS;
+    camelCase; function and var declarations
 
 
+    // 6.3.4
+    // Naming constructors, prototypes, etc.
 
-  ```
+    PascalCase; constructor function
+
+
+    // 6.3.5
+    // Naming regular expressions
+
+    rDesc = //;
+
+
+    // 6.3.6
+    // From the Google Closure Library Style Guide
+
+    functionNamesLikeThis;
+    variableNamesLikeThis;
+    ConstructorNamesLikeThis;
+    EnumNamesLikeThis;
+    methodNamesLikeThis;
+    SYMBOLIC_CONSTANTS_LIKE_THIS;
+
+
+
+    ```
 
 7. <a name="misc">Misc</a>
 
