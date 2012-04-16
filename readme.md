@@ -362,7 +362,11 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. End of Lines and Empty Lines
+    E. Quotes
+
+    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+
+    F. End of Lines and Empty Lines
 
     Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
 
