@@ -862,15 +862,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 7. <a name="misc">Misc</a>
 
-  This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
 
-  A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
-  There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
-  http://jsperf.com/switch-vs-object-literal-vs-module
+    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    http://jsperf.com/switch-vs-object-literal-vs-module
 
-  Notable improvements can be witnesses here as well:
-  https://github.com/rwldrn/idiomatic.js/issues/13
+    Notable improvements can be witnesses here as well:
+    https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
@@ -944,7 +944,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-  B. Early returns promote code readability with negligible performance difference
+    B. Early returns promote code readability with negligible performance difference
 
     ```javascript
 
