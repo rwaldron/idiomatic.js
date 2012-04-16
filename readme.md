@@ -772,9 +772,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 6. <a name="naming">Naming</a>
 
 
-  You are not a human code compiler/compressor, so don't try to be one.
+    You are not a human code compiler/compressor, so don't try to be one.
 
-  The following code is an example of egregious naming:
+    The following code is an example of egregious naming:
 
     ```javascript
 
@@ -788,9 +788,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-  Without a doubt, you've written code like this - hopefully that ends today.
+    Without a doubt, you've written code like this - hopefully that ends today.
 
-  Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
 
     ```javascript
 
@@ -812,7 +812,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-  A few additional naming pointers:
+    A few additional naming pointers:
 
     ```javascript
 
