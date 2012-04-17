@@ -593,6 +593,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ~~num;
 
+    num>>0;
+
     ```
 
 
