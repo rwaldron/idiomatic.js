@@ -560,16 +560,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     var array = [ "a", "b", "c" ];
 
-    !!~array.indexOf( "a" );
+    !!~array.indexOf("a");
     // true
 
-    !!~array.indexOf( "b" );
+    !!~array.indexOf("b");
     // true
 
-    !!~array.indexOf( "c" );
+    !!~array.indexOf("c");
     // true
 
-    !!~array.indexOf( "d" );
+    !!~array.indexOf("d");
     // false
 
     // Note that the above should be considered "unnecessarily clever"
