@@ -329,6 +329,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       b: "beta"
     });
 
+    // Single argument string literal, no space
+    foo("bar");
+
     // Inner grouping parens, no space
     if ( !("foo" in obj) ) {
 
