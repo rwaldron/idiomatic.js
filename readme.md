@@ -55,6 +55,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
 
 ### Build & Deployment Process
