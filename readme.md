@@ -593,7 +593,34 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ~~num;
 
-    num>>0;
+    num >> 0;
+    
+    num >>> 0;
+    
+    // All result in 2
+
+
+    // Keep in mind however, that negative numbers will be treated differently...
+
+    var neg = -2.5;
+
+    parseInt( neg, 10 );
+
+    // is the same as...
+
+    ~~neg;
+
+    neg >> 0;
+    
+    // All result in -2
+    // However...
+    
+    neg >>> 0;
+    
+    // Will result in 4294967294
+    
+
+
 
     ```
 
