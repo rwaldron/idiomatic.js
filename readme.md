@@ -74,6 +74,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Mocha](https://github.com/visionmedia/mocha)
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
+ * [Buster.js](http://busterjs.org/)
 
 ## Table of Contents
 
