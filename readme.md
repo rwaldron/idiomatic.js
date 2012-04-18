@@ -1024,7 +1024,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 8. <a name="native">Native & Host Objects</a>
 
-    The basic principal here is:
+    The basic principle here is:
 
     ### Don't do stupid shit and everything will be ok.
 
