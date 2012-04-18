@@ -20,7 +20,7 @@
 
 ### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
 
-> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
+> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi-même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
 
 ## Traductions
 
@@ -28,7 +28,7 @@
 * [Espagnol](https://github.com/MatiasArriola/idiomatic.js/)
 * [Portugais - Brésilien](https://github.com/leobalter/idiomatic.js/)
 
-## Important, aspect non-Idiomatique :
+## Important, aspect non-idiomatique :
 
 ### Qualité du Code : indispensables, ressources et références
 
@@ -53,14 +53,14 @@ Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LEC
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
-### Processus de "Build" et de déploiement
+### Processus de "build" et de déploiement
 
 Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
 Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques, que nous soutenons dans notre project.
 
 ### Testabilité
 
-Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnelle. Utilisez des Demos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèque de test, aucune d'entre elles n'est approuvée plus que l'autre.
+Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèque de test, aucune d'entre elles n'est approuvée plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
