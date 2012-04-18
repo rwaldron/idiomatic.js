@@ -475,7 +475,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // You can preempt issues by using smart coercion with unary + or - operators:
 
     foo = +document.getElementById("foo-input").value;
-          ^ unary + operator will convert its right side operand to a number
+    //    ^ unary + operator will convert its right side operand to a number
 
     // typeof foo;
     // "number"
@@ -711,14 +711,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 4.2.1
     // Type coercion and evaluation notes
 
-    Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // Prefer `===` over `==` (unless the case requires loose type evaluation)
 
-    === does not coerce type, which means that:
+    // === does not coerce type, which means that:
 
     "1" === 1;
     // false
 
-    == does coerce type, which means that:
+    // == does coerce type, which means that:
 
     "1" == 1;
     // true
@@ -727,11 +727,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 4.2.2
     // Booleans, Truthies & Falsies
 
-    Booleans: true, false
+    // Booleans:
+    true, false
 
-    Truthy are: "foo", 1
+    // Truthy:
+    "foo", 1
 
-    Falsy are: "", 0, null, undefined, NaN, void 0
+    // Falsy:
+    "", 0, null, undefined, NaN, void 0
 
     ```
 
