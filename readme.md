@@ -74,7 +74,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
  * [Les Espaces](#whitespace)
  * [Une Syntaxe Précise](#spacing)
  * [Vérification de Type (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
+ * [Tests Conditionnels](#cond)
  * [Style Pratique](#practical)
  * [Règles de nommage](#naming)
  * [Divers](#misc)
@@ -549,43 +549,43 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 	```
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Tests Conditionnels</a>
 
 	```javascript
 
 	// 4.1.1
-	// When only evaluating that an array has length,
-	// instead of this:
+	// Lorsque vous évaluez que la taille d'un tableau est non nulle,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( array.length > 0 ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...préférer :
 	if ( array.length ) ...
 
 
 	// 4.1.2
-	// When only evaluating that an array is empty,
-	// instead of this:
+	// A l'inverse, lorsque vous évaluez si un tableau est vide,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( array.length === 0 ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...préférer :
 	if ( !array.length ) ...
 
 
 	// 4.1.3
-	// When only evaluating that a string is not empty,
-	// instead of this:
+	// Lorsque vous évaluez si une chaine est non vide,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( string !== "" ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...préférer :
 	if ( string ) ...
 
 
 	// 4.1.4
-	// When only evaluating that a string _is_ empty,
-	// instead of this:
+	// A l'inverse, lorsque vous évaluez si une chaine est vide,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( string === "" ) ...
 
-	// ...evaluate falsy-ness, like this:
+	// ...préférer :
 	if ( !string ) ...
 
 
