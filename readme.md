@@ -25,10 +25,11 @@
 
 ## Translations
 
-* [French](https://github.com/jfroffice/idiomatic.js/)
-* [Spanish](https://github.com/MatiasArriola/idiomatic.js/)
-* [Portuguese - Brazil](https://github.com/leobalter/idiomatic.js/)
-* [Korean](https://github.com/EngForDev/idiomatic.js/tree/ko/translations/ko_KR)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
 
 ## Important, Non-Idiomatic Stuff:
 
