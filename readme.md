@@ -961,7 +961,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 10. <a name="language">Un code, un language</a>
 
-	Les programmes doivent être rédigés dans un language, quelle que soit le language, le mainteneur ou les mainteneurs donnent les bonnes pratiques.
+	Les programmes doivent être rédigés dans un language, quelque soit le language, le mainteneur ou les mainteneurs donnent les bonnes pratiques.
 
 
 ## Appendix
