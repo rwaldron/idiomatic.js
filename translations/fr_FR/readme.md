@@ -1,17 +1,36 @@
 # Principe d'écriture d'un code Javascript cohérent et idiomatique
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenues. Pour Contribuer: "fork", "clone", "branch", "commit", "push", "pull request".
 
-### All code in any code-base should look like a single person typed it, no matter how many people contributed.
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
+* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
+* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
+* Raynos  [github](https://github.com/Raynos)
+* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+## Tout code, peu importe les bases sur lequels il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
 
-### I do not intend to impose my style preferences on other people's code if they have an existing common style - this should be respected.
+### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont j'en suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
+### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
 
-## Important, Non-Idiomatic Stuff:
+> "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi-même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
 
-### Code Quality: Awesome Tools, Resources & References
+## Traductions
+
+* [Anglais](https://github.com/rwldrn/idiomatic.js)
+* [Espagnol](https://github.com/MatiasArriola/idiomatic.js/)
+* [Portugais - Brésilien](https://github.com/leobalter/idiomatic.js/)
+
+## Important, aspect non-idiomatique :
+
+### Qualité du Code : indispensables, ressources et références
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -20,14 +39,13 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+[Optimisation des outils de qualité de code par Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
-
-### Get Smart
+### Soyez cohérent
 
 [http://es5.github.com/](http://es5.github.com/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont les autorités sur le language.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -35,62 +53,59 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 
+### Processus de "build" et de déploiement
 
-### Build & Deployment Process
+Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
+Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques, que nous soutenons dans notre project.
 
-Projects should always attempt to include some generic means by which source can be compressed in preparation for production use. Some popular and proven tools include the JavaScript-based [Uglify.js](https://github.com/mishoo/UglifyJS), as well as the Java-based [Google Closure Compiler](http://code.google.com/closure/compiler/) and [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Choose one and support it.
+### Testabilité
 
-You can now find a functional, generic "build kit" in the `/kits` directory of this repository. Usage is easy: 1) copy the contents of a kit found in `/kits` to a new working directory, 2) save your project .js file in the `/src` directory, 3) put the name of the project in `project.txt`, 4) run `make` from command line. (Even easier directions: replace occurrences of "foo")
-
-
-### Test Facility
-
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests".
+Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèque de test, aucune d'entre elles n'est approuvée plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
  * [Vows](https://github.com/cloudhead/vows)
+ * [Mocha](https://github.com/visionmedia/mocha)
  * [Hiro](http://hirojs.com/)
+ * [JsTestDriver](https://code.google.com/p/js-test-driver/)
 
+## Table des matières
 
-## Table of Contents
-
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
+ * [Les Espaces](#whitespace)
+ * [Une Syntaxe Précise](#spacing)
+ * [Vérification de Type (Courtesy jQuery Core Style Guidelines)](#type)
+ * [Tests Conditionnels](#cond)
+ * [Style Pratique](#practical)
+ * [Règles de nommage](#naming)
+ * [Divers](#misc)
  * [Native & Host Objects](#native)
- * [Comments](#comments)
+ * [Commentaires](#comments)
+ * [Un code, un language](#language)
 
+## Manifeste : style idiomatique
 
-## Idiomatic Style Manifesto
-
-
-1. <a name="whitespace">Whitespace</a>
+1. <a name="whitespace">Les Espaces</a>
 
 	* Ne jamais mélanger les espaces et les tabulations.
 	* Avant d'écriture le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-		* Pour la lisibilité, paramétrer votre éditeur avec une indentation de 4 caractères.
+	 	* Pour la lisibilité, paramétrer votre éditeur avec une indentation de 4 caractères.
 	* Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
 		* Améliore la cohérence du code
 		* Elimine les espaces de fin de ligne
 		* Elimine les espaces utilisés pour des lignes blanches
 		* Améliorer la lisibilité de vos "commit" et des "diff"
 
-2. <a name="spacing">Beautiful Syntax</a>
+2. <a name="spacing">Une Syntaxe Précise</a>
 
-	A. Parens, Braces, Linebreaks
+	A. Parenthèses, Accolades, Sauts de ligne
 
 	```javascript
 
-	// if/else/for/while/try always have spaces, braces and span multiple lines
-	// this encourages readability
+	// if/else/for/while/try ont toujours des espaces, des parenthèses et plusieurs sauts de ligne
+	// cela améliore la lisibilité
 
 	// 2.A.1.1
-	// Examples of really cramped syntax
+	// Exemples de mauvaises pratiques
 
 	if(condition) doSomething();
 
@@ -100,39 +115,50 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 
 	// 2.A.1.1
-	// Use whitespace to promote readability
+	// Utilisez les espaces afin d'améliorer la lisibilité
 
 	if ( condition ) {
-		// statements
+		// déclarations
 	}
 
 	while ( condition ) {
-		// statements
+		// déclarations
 	}
 
 	for ( var i = 0; i < 100; i++ ) {
-		// statements
+		// déclarations
 	}
 
-	// Even better:
+	// même mieux:
+	var i,
+		length = 100;
 
+	for ( i = 0; i < length; i++ ) {
+		// déclarations
+	}
+
+	// Ou...
 	var i = 0,
 		length = 100;
 
 	for ( ; i < length; i++ ) {
-		// statements
+		// déclarations
+	}
+
+	var prop;
+	for ( prop in object ) {
+		// déclarations
 	}
 
 
 	if ( true ) {
-		// statements
+		// déclarations
 	} else {
-		// statements
+		// déclarations
 	}
 	```
 
-
-	B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+	B. Déclaration, Affectation, Fonction ( Nommage, Expression, Constructeur )
 
 	```javascript
 
@@ -142,153 +168,182 @@ Projects _must_ include some form of unit, reference, implementation or function
 		num = 1,
 		undef;
 
-	// Literal notations:
+	// Notations littérales:
 	var array = [],
 		object = {};
 
-
 	// 2.B.1.2
-	// Using only one `var` per scope (function) promotes readability
-	// and keeps your declaration list free of clutter (also saves a few bytes)
+	// Utilisez une unique déclaration `var` par portée de (fonction) améliore la
+	// lisibilité et permets de garder une déclaration séparée du corps de la fonction
+	// (en adéquation avec la portée des variables JS)
 
-	// Bad
+	// Mauvais
 	var foo = "";
 	var bar = "";
 	var qux;
 
-	// Good
+	// Correcte
 	var foo = "",
 		bar = "",
 		quux;
 
-	// or..
-	var // Comment on these
+	// ou..
+	var // donnez votre avis
 	foo = "",
 	bar = "",
 	quux;
 
+	// 2.B.1.3
+	// La déclaration des variables 'var' doit toujours être au début de la portée de chaque fonction.
+	// Le même principe s'applique au 'const' défini dans ECMAScript 6.
+
+	// Mauvais
+	function foo() {
+
+		// déclarations
+		var bar = "",
+			qux;
+	}
+
+	// Correcte
+	function foo() {
+		var bar = "",
+			qux;
+
+		// toutes les autres déclarations sont après la déclaration des variables.
+	}
 	```
 
 	```javascript
 
 	// 2.B.2.1
-	// Named Function Declaration
+	// Déclaration de fonction nommée
 	function foo( arg1, argN ) {
 
 	}
 
-	// Usage
+	// Utilisation
 	foo( arg1, argN );
 
 
 	// 2.B.2.2
-	// Named Function (w/ callback argument)
-	function bar( arg1, callback ) {
-
-		if ( arg1 && callback ) {
-			callback();
-		}
+	// Déclaration de fonction nommée
+	function square( number ) {
+		return number * number;
 	}
 
-	// Usage
-	bar( arg1, function() {
-		// callback statements
+	// Utilisation
+	square( 10 );
+
+	// Passage d'une callback par variable nommée
+	function square( number, callback ) {
+		callback( number * number );
+	}
+
+	square( 10, function( square ) {
+		// déclaration de la callback
 	});
 
 
 	// 2.B.2.3
-	// Function Expression
-	var quux = function( arg1, callback ) {
-
-		if ( arg1 && callback ) {
-			callback();
-		}
-
-		// always return 'something'
-		return true;
+	// Expression de fonction
+	var square = function( number ) {
+		// Renvoie quelque chose de pertinent
+		return number * number;
 	};
 
-	// Usage:
-	quux( arg1, function() {
-		// callback statements
-	});
+	// Expression de fonction avec un identifiant
+	// Cette forme préférée a pour valeur ajoutée d'être en mesure de se faire appeler
+	// et d'avoir une identité dans les traces de pile
+	var factorial = function factorial( number ) {
+		if ( number < 2 ) {
+			return 1;
+		}
+
+		return number * factorial( number-1 );
+	};
 
 
 	// 2.B.2.4
-	// Constructor definition
-	function FooBar() {
-		return this;
+	// Déclaration de Constructeur
+	function FooBar( options ) {
+
+		this.options = options;
 	}
 
-	// Usage:
-	var fooBar = new FooBar();
+	// Utilisation
+	var fooBar = new FooBar({ a: "alpha" });
+
+	fooBar.options;
+	// { a: "alpha" }
+
 	```
 
 
-	C. Exceptions, Slight Deviations
+	C. Exceptions et légères différences
 
 	```javascript
 
 	// 2.C.1.1
-	// Functions with callbacks
+	// Fonctions avec 'callbacks'
 	foo(function() {
-		// Note there is no extra space between the first paren
-		// of the executing function call and the word "function"
+		// remarque : il n'y a pas d'espace supplémentaire entre la première parenthèse
+		// d'exécution de la fonction appelée et le mot réservé "function"
 	});
 
-	// Function accepting an array, no space
+	// Fonction acceptant un tableau, sans espace
 	foo([ "alpha", "beta" ]);
 
 	// 2.C.1.2
-	// Function accepting an object, no space
+	// Fonction acceptant un objet, sans espace
 	foo({
 		a: "alpha",
 		b: "beta"
 	});
 
-	// Inner grouping parens, no space
+	// Regroupement de déclaration à l'intérieur de parenthèse, sans espace
 	if ( !("foo" in obj) ) {
 
 	}
 
 	```
 
-	D. Consistency Always Wins
+	D. La cohérence gagne toujours
 
-	In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-	It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+	Dans les sections 2.A-2.C, les règles d'espacement sont énoncées sous forme de recommandation avec un objectif simple et plus abouti : la cohérence.
+	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérer comme optionnels. Un _unique style_ doit exister pour tous les sources d'un projet.
 
 	```javascript
 
 	// 2.D.1.1
 
 	if (condition) {
-		// statements
+		// déclarations
 	}
 
 	while (condition) {
-		// statements
+		// déclarations
 	}
 
 	for (var i = 0; i < 100; i++) {
-		// statements
+		// déclarations
 	}
 
 	if (true) {
-		// statements
+		// déclarations
 	} else {
-		// statements
+		// déclarations
 	}
 
 	```
 
-	E. End of Lines and Empty Lines
+	E. Fin de ligne et lignes vides
 
-	Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuer __automatiquement__ avant chaque "commit".
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Vérification de Type (Courtesy jQuery Core Style Guidelines)</a>
 
-	3.A
+	3.A Types réels
 
 	* String:
 
@@ -309,347 +364,314 @@ Projects _must_ include some form of unit, reference, implementation or function
 	* Array:
 
 		`Array.isArray(arrayObject)`
-		(wherever possible)
+		(dans la mesure du possible)
 
 	* null:
 
 		`variable === null`
 
-	* null or undefined:
+	* null ou undefined:
 
 		`variable == null`
 
 	* undefined:
 
-		* Global Variables:
+		* Variable Global:
 
 			* `typeof variable === "undefined"`
 
-		* Local Variables:
+		* Variable Local:
 
 			* `variable === undefined`
 
-		* Properties:
+		* Propriétés:
 			* `object.prop === undefined`
 			* `object.hasOwnProperty( prop )`
 			* `"prop" in object`
 
 
-JavaScript is a dynamically typed language - which can be your best friend or worst enemy, so: Always respect `type`. As recommended
+	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'type', en appliquant les règles ci-dessus.
 
-Given the following HTML:
 
-```html
+	3.B Coercion de type
 
-<input type="text" id="foo-input" value="1">
+	Considérons les implications de ce qui suit...
 
-```
+	Etant donné ce code HTML:
 
-Consider the implications of this logic:
+	```html
 
-```js
+	<input type="text" id="foo-input" value="1">
 
-// 3.B.1.1
+	```
 
-// `foo` has been declared with the value `0` and its type is `number`
-var foo = 0;
 
-// typeof foo;
-// "number"
-...
+	```js
 
-// Somewhere later in your code, you need to update `foo`
-// with a new value derived from an input element
+	// 3.B.1.1
 
-foo = document.getElementById("foo-input").value;
+	// `foo` a été déclaré avec la valeur `0` et son type est `number`
+	var foo = 0;
 
-// If you were to test `typeof foo` now, the result would be `string`
-// This means that if you had logic that tested `foo` like:
+	// typeof foo;
+	// "number"
+	...
 
-if ( foo === 1 ) {
+	// Quelque part plus loin dans votre code, vous devez mettre à jour `foo`
+	// avec une nouvelle valeur issue de l'element 'input'
 
-	importantTask();
+	foo = document.getElementById("foo-input").value;
 
-}
+	// Si vous deviez tester `typeof foo` maintenant, le résultat serait "string"
+	// Cela signifie que si vous aviez la logique testant `foo` comme suit:
 
-// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	if ( foo === 1 ) {
 
+		important();
+	}
 
-// 3.B.1.2
+	// `important()` ne serait jamais évalué, même si `foo` a une valeur de "1"
 
-// You can preempt issues by using smart coercion with unary + or - operators:
 
-foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will convert its right side operand to a number
+	// 3.B.1.2
 
-// typeof foo;
-// "number"
+	// Vous pouvez vous prémunir de ce problème en utilisant la coercion de type de l'opérateur unaire + ou -:
 
-if ( foo === 1 ) {
+	foo = +document.getElementById("foo-input").value;
+	      ^ opérateur unaire + convertissant à sa droite l'opérante en "number"
 
-	importantTask();
+	// typeof foo;
+	// "number"
 
-}
+	if ( foo === 1 ) {
 
-// `importantTask()` will be called
-```
+		important();
 
-3.B
+	}
 
-```javascript
+	// `important()` sera évaluer
+	```
 
-// 3.B.1.1
+	Voici quelques cas courants de coercion:
 
-// `foo` has been declared with the value `0` and its type is `number`
-var foo = 0;
 
-// typeof foo;
-// "number"
-...
+	```javascript
 
-// Somewhere later in your code, you need to update `foo`
-// with a new value derived from an input element
+	// 3.B.2.1
 
-foo = document.getElementById("foo-input").value;
+	var number = 1,
+		string = "1",
+		bool = false;
 
-// If you were to test `typeof foo` now, the result would be `string`
-// This means that if you had logic that tested `foo` like:
+	number;
+	// 1
 
-if ( foo === 1 ) {
+	number + "";
+	// "1"
 
-	importantTask();
+	string;
+	 // "1"
 
-}
+	+string;
+	// 1
 
-// `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	+string++;
+	// 1
 
+	string;
+	// 2
 
-// 3.B.1.2
+	bool;
+	// false
 
-// You can preempt issues by using smart coercion with unary + or - operators:
+	+bool;
+	// 0
 
-foo = +document.getElementById("foo-input").value;
-      ^ unary + operator will convert its right side operand to a number
+	bool + "";
+	// "false"
+	```
 
-// typeof foo;
-// "number"
 
-if ( foo === 1 ) {
+	```javascript
+	// 3.B.2.2
 
-	importantTask();
+	var number = 1,
+		string = "1",
+		bool = true;
 
-}
+	string === number;
+	// false
 
-// `importantTask()` will be called
+	string === number + "";
+	// true
 
-```
+	+string === number;
+	// true
 
-Here are some common cases along with coercions:
+	bool === number;
+	// false
 
+	+bool === number;
+	// true
 
-```javascript
+	bool === string;
+	// false
 
-// 3.B.2.1
+	bool === !!string;
+	// true
+	```
 
-var number = 1,
-string = "1",
-bool = false;
+	```javascript
+	// 3.B.2.3
 
-number;
-// 1
+	var array = [ "a", "b", "c" ];
 
-number + "";
-// "1"
+	!!~array.indexOf( "a" );
+	// true
 
-string;
- // "1"
+	!!~array.indexOf( "b" );
+	// true
 
-+string;
-// 1
+	!!~array.indexOf( "c" );
+	// true
 
-+string++;
-// 1
+	!!~array.indexOf( "d" );
+	// false
 
-string;
-// 2
 
-bool;
-// false
+	var num = 2.5;
 
-+bool;
-// 0
+	parseInt( num, 10 );
 
-bool + "";
-// "false"
-```
+	// identique à...
 
+	~~num;
 
-```javascript
-// 3.B.2.2
+	```
 
-var number = 1,
-string = "1",
-bool = true;
-
-string === number;
-// false
-
-string === number + "";
-// true
-
-+string === number;
-// true
-
-bool === number;
-// false
-
-+bool === number;
-// true
-
-bool === string;
-// false
-
-bool === !!string;
-// true
-```
-
-```javascript
-// 3.B.2.3
-
-var array = [ "a", "b", "c" ];
-
-!~~array.indexOf( "d" );
-// false
-
-!~~array.indexOf( "a" );
-// true
-```
-
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Tests Conditionnels</a>
 
 	```javascript
 
 	// 4.1.1
-	// When only evaluating that an array has length,
-	// instead of this:
+	// Lorsque vous évaluez que la taille d'un tableau est non nulle,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( array.length > 0 ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...préférez :
 	if ( array.length ) ...
 
 
 	// 4.1.2
-	// When only evaluating that an array is empty,
-	// instead of this:
+	// A l'inverse, lorsque vous évaluez si un tableau est vide,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( array.length === 0 ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...préférez :
 	if ( !array.length ) ...
 
 
 	// 4.1.3
-	// When only evaluating that a string is not empty,
-	// instead of this:
+	// Lorsque vous évaluez si une chaine est non vide,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( string !== "" ) ...
 
-	// ...evaluate truthiness, like this:
+	// ...préférez :
 	if ( string ) ...
 
 
 	// 4.1.4
-	// When only evaluating that a string _is_ empty,
-	// instead of this:
+	// A l'inverse, lorsque vous évaluez si une chaine est vide,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( string === "" ) ...
 
-	// ...evaluate falsy-ness, like this:
+	// ...préférez :
 	if ( !string ) ...
 
 
 	// 4.1.5
-	// When only evaluating that a reference is true,
-	// instead of this:
+	// Lorsque vous évaluez si une référence est vraie,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === true ) ...
 
-	// ...evaluate like you mean it, take advantage of it's primitive capabilities:
+	// ...évaluer ce que cela signifie et bénéficier des tests primitifs:
 	if ( foo ) ...
 
 
 	// 4.1.6
-	// When evaluating that a reference is false,
-	// instead of this:
+	// Lorsque vous évaluez si une référence est fausse,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === false ) ...
 
-	// ...use negation to coerce a true evaluation
+	// ...utilise la négation et la coercion de l'évaluation de la vérité:
 	if ( !foo ) ...
 
-	// ...Be careful, this will also match: 0, "", null, undefined, NaN
-	// If you _MUST_ test for a boolean false, then use
+	// ...Soyez prudent, cela correspondra aux valeurs suivantes: 0, "", null, undefined, NaN
+	// Vous _DEVEZ_ dans ce cas tester la valeur `faux`, comme suit:
 	if ( foo === false ) ...
 
 
 	// 4.1.7
-	// When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-	// instead of this:
+	// Lorsque vous évaluez une référence et seulement une référence qui peut être null ou undefined, mais NOT fausse, "" ou 0,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === null || foo === undefined ) ...
 
-	// ...take advantage of == type coercion, like this:
+	// ...bénéficier de la coercion de type ==, comme suit:
 	if ( foo == null ) ...
 
-	// Remember, using == will match a `null` to BOTH `null` and `undefined`
-	// but not `false`, "" or 0
+	// Souvenez vous, utilisez == vérifira une égalité avec `null` et `null` & `undefined`
+	// mais pas `false`, "" ou 0
 	null == undefined
 
-
 	```
-
+	_TOUJOURS_ tester avec le meilleur et le plus performant des résultats - les consignes ci-dessus sont une ligne de conduite et non un dogme.
 
 	```javascript
 
 	// 4.2.1
-	// Type coercion and evaluation notes
+	// Cohercion de Type coercion et remarques
 
-	Prefer `===` over `==` (unless the case requires loose type evaluation)
+	Preferez `===` à la place de `==` (à moins que le cas de test require la perte d'évaluation de type)
 
-	=== does not coerce type, which means that:
+	=== n'effectue pas de cohercion de type, ce qui signifie que:
 
 	"1" === 1;
-	// false
+	// faux
 
-	== does coerce type, which means that:
+	== effectue la cohercion de type, ce qui signifie que:
 
 	"1" == 1;
-	// true
+	// vrai
 
 
 	// 4.2.2
-	// Booleans, Truthies & Falsies
+	// Booléens, valeurs de vérités et de négation
 
-	Booleans: true, false
+	Booléens: true, false
 
-	Truthy are: "foo", 1
+	sont vrais: "foo", 1
 
-	Falsy are: "", 0, null, undefined, NaN, void 0
+	sont faux: "", 0, null, undefined, NaN, void 0
 
 	```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Style usuel</a>
 
 	```javascript
 
 	// 5.1.1
-	// A Practical Module
+	// Module
 
 	(function( global ) {
 		var Module = (function() {
 
-			// Private to this closure
-			var secret = "secret";
+			var data = "secret";
 
 			return {
 				// This is some boolean property
 				bool: true,
-				// Some other important string
+				// Some string value
 				string: "a string",
 				// An array property
 				array: [ 1, 2, 3, 4 ],
@@ -657,39 +679,36 @@ var array = [ "a", "b", "c" ];
 				object: {
 					lang: "en-Us"
 				},
-				getSecret: function() {
-					// get the "private" variable from here
-					return secret;
+				getData: function() {
+					// get the current value of `data`
+					return data;
 				},
-				setSecret: function( value ) {
-					// set the "private" variable
-					return ( secret = value );
+				setData: function( value ) {
+					// set the value of `data` and return it
+					return ( data = value );
 				}
 			};
 		})();
 
-		// Other things might happen here
+		// D'autres choses peuvent être implémenter ici
 
-		// expose our module to the global object
+		// Exposition de notre module via l'objet global
 		global.Module = Module;
 
 	})( this );
 
 	```
 
-	* NOTE: In the above example, "secret" is _not_really_ private
-
 	```javascript
 
 	// 5.2.1
-	// A Practical Constructor
+	// Contructeur
 
 	(function( global ) {
 
 		function Ctor( foo ) {
 
 			this.foo = foo;
-
 			return this;
 		}
 
@@ -702,27 +721,25 @@ var array = [ "a", "b", "c" ];
 		};
 
 
-		// To call constructor's without `new`, you might do this:
+		// Appel du contructeur sans `new`, en utilisant cette syntaxe:
 		var ctor = function( foo ) {
 			return new Ctor( foo );
 		};
 
 
-		// expose our constructor to the global object
+		// Exposition de notre constructeur via l'objet global
 		global.ctor = ctor;
 
 	})( this );
 
 	```
 
+6. <a name="naming">Règles de nommage</a>
 
 
-6. <a name="naming">Naming</a>
+	Vous n'êtes pas un compilateur ou un minificateur, il ne faut pas essayer d'être un.
 
-
-	You are not a human code compiler/compressor, so don't try to be one.
-
-	The following code is an example of egregious naming:
+	Le code suivant est un exemple flagrant de ce qu'il ne faut pas faire:
 
 	```javascript
 
@@ -736,14 +753,14 @@ var array = [ "a", "b", "c" ];
 	for(i=0;i<els.length;i++){a.push(els[i]);}
 	```
 
-	Without a doubt, you've written code like this - hopefully that ends today.
+	Vous avez peut être probablement écrit le code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
 
-	Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+	Ci-dessous la même logique, avec plus de clareté et surtout plus de lisibilité fonctionnelle:
 
 	```javascript
 
 	// 6.2.1
-	// Example of code with improved names
+	// Exemple de code avec un nommage amélioré
 
 	function query( selector ) {
 		return document.querySelectorAll( selector );
@@ -760,42 +777,42 @@ var array = [ "a", "b", "c" ];
 
 	```
 
-	A few additional naming pointers:
+	Quelques conseilles supplémentaires:
 
 	```javascript
 
 	// 6.3.1
-	// Naming strings
+	// Nommage des chaines de caractères "string"
 
-	`dog` is a string
+	`dog` est une chaine de caractère
 
 
 	// 6.3.2
-	// Naming arrays
+	// Nommage des chaines des tableaux "array"
 
-	`dogs` is an array of `dog` strings
+	`dogs` est un tableau de `dog` chaine de caractère
 
 
 	// 6.3.3
-	// Naming functions, objects, instances, etc
+	// Nommage des fonctions, objets, instances, etc
 
-	camelCase; function and var declarations
+	camelCase; fonction et déclarations var
 
 
 	// 6.3.4
-	// Naming constructors, prototypes, etc.
+	// Nommage des contructeurs, prototypes, etc.
 
-	PascalCase; constructor function
+	PascalCase; fonction constructeur
 
 
 	// 6.3.5
-	// Naming regular expressions
+	// Nommage des expressions régulières
 
 	rDesc = //;
 
 
 	// 6.3.6
-	// From the Google Closure Library Style Guide
+	// Extrait du guide de la librairie de Google Closure
 
 	functionNamesLikeThis;
 	variableNamesLikeThis;
@@ -804,20 +821,24 @@ var array = [ "a", "b", "c" ];
 	methodNamesLikeThis;
 	SYMBOLIC_CONSTANTS_LIKE_THIS;
 
-
-
 	```
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Divers</a>
 
-	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+	Cette section servira à illustrer des idées et des concepts qui ne devraient pas être considérés comme un dogme, mais il existe, au lieu d'encourager les pratiques en doute dans une tentative de trouver de meilleures façons de le faire les tâches courantes de programmation JavaScript.
 
-	Also, switch sucks. http://jsperf.com/switch-vs-object-literal-vs-module
+	A. L'utilisation des `switch` doit être évitée, les méthodes modernes de tracking devraient 'blacklister' l'utilisation des fonctions avec `switch`.
+
+	Il semble y avoir des améliorations radicales à l'exécution des déclarations de `switch` dans les dernières version de Firefox et Chrome.    
+	http://jsperf.com/switch-vs-object-literal-vs-module
+
+	Des améliorations notables sont également visibles ici:
+	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
 
 	// 7.A.1.1
-	// An example switch statement
+	// Exemple de déclaration de `switch`
 
 	switch( foo ) {
 		case "alpha":
@@ -827,41 +848,41 @@ var array = [ "a", "b", "c" ];
 			beta();
 			break;
 		default:
-			// something to default to
+			// comportement par défaut
 			break;
 	}
 
 	// 7.A.1.2
-	// A better approach would be to use an object literal or even a module:
+	// Une meilleur approche est d'utiliser un object literal ou même un module:
 
 	var switchObj = {
 		alpha: function() {
-			// statements
-			// a return
+			// déclarations
+			// return
 		},
 		beta: function() {
-			// statements
-			// a return
+			// déclarations
+			// return
 		},
 		_default: function() {
-			// statements
-			// a return
+			// déclarations
+			// return
 		}
 	};
 
 	var switchModule = (function () {
 		return {
 			alpha: function() {
-				// statements
-				// a return
+				// déclarations
+				// return
 			},
 			beta: function() {
-				// statements
-				// a return
+				// déclarations
+				// return
 			},
 			_default: function() {
-				// statements
-				// a return
+				// déclarations
+				// return
 			}
 		};
 	})();
@@ -870,9 +891,9 @@ var array = [ "a", "b", "c" ];
 	// 7.A.1.3
 	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
-	( switchObj.hasOwnProperty( foo ) && switchObj[ foo ] || switchObj._default )( args );
+	( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
-	( switchModule.hasOwnProperty( foo ) && switchModule[ foo ] || switchModule._default )( args );
+	( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
 	// If you know and trust the value of `foo`, you could even omit the OR check
 	// leaving only the execution:
@@ -886,7 +907,7 @@ var array = [ "a", "b", "c" ];
 
 	```
 
-	B. Early returns promote code readability with negligible performance difference
+	B. Les "return" prématurés permettent d'améliorer la lisibilité du code avec une différence de performance négligeable
 
 	```javascript
 
@@ -904,7 +925,6 @@ var array = [ "a", "b", "c" ];
 	}
 
 	// Good:
-
 	function returnEarly( foo ) {
 
 		if ( foo ) {
@@ -918,11 +938,11 @@ var array = [ "a", "b", "c" ];
 
 8. <a name="native">Native & Host Objects</a>
 
-	The basic principal here is:
+        Le principe de base est ici:
 
-	### Don't do stupid shit and everything will be ok.
+	### Ne faites pas de choses stupides et tout sera OK.
 
-	To reinforce this concept, please watch the following presentation:
+	Pour renforcer ce concept, s'il vous plaît regarder la présentation suivante:
 
 	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -931,18 +951,22 @@ var array = [ "a", "b", "c" ];
 	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Commentaires</a>
 
-	* JSDoc style is good (Closure Compiler type hints++)
-	* Single line above the code that is subject
-	* Multiline is good
-	* End of line comments are prohibited!
+	* Le style de commentaire JSDoc est bon (Closure Compiler type hints++)
+	* Une seule ligne de commentaire au-dessus du code surlequel il s'applique
+	* L'utilisation de plusieurs lignes est bonne
+	* Les commentaires en find de ligne sont interdits!
 
 
+10. <a name="language">Un code, un language</a>
 
-## Appendix
+	Les programmes doivent être rédigés dans un language, quelque soit le language, le mainteneur ou les mainteneurs doivent donner les bonnes pratiques.
 
-### Comma First.
 
-Should be avoided at all costs. See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
-Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
+## Appendice
+
+### Première virgule.
+
+
+Tout projet qui cite ce document comme son guide de style de base ne pourra accepter le formatage du code première virgule, sauf mention contraire.
