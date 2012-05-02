@@ -452,7 +452,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	// `important()` sera évaluer
 	```
 
-	Voici quelques cas courants de coercion :
+	Voici quelques cas courants de coercion:
 
 
 	```javascript
@@ -558,7 +558,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( array.length > 0 ) ...
 
-	// ...préférer :
+	// ...préférez :
 	if ( array.length ) ...
 
 
@@ -567,7 +567,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( array.length === 0 ) ...
 
-	// ...préférer :
+	// ...préférez :
 	if ( !array.length ) ...
 
 
@@ -576,7 +576,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( string !== "" ) ...
 
-	// ...préférer :
+	// ...préférez :
 	if ( string ) ...
 
 
@@ -585,73 +585,73 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( string === "" ) ...
 
-	// ...préférer :
+	// ...préférez :
 	if ( !string ) ...
 
 
 	// 4.1.5
-	// When only evaluating that a reference is true,
-	// instead of this:
+	// Lorsque vous évaluez si une référence est vraie,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === true ) ...
 
-	// ...evaluate like you mean it, take advantage of it's primitive capabilities:
+	// ...évaluer ce que cela signifie et bénéficier des tests primitifs:
 	if ( foo ) ...
 
 
 	// 4.1.6
-	// When evaluating that a reference is false,
-	// instead of this:
+	// Lorsque vous évaluez si une référence est fausse,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === false ) ...
 
-	// ...use negation to coerce a true evaluation
+	// ...utilise la négation et la coercion de l'évaluation de la vérité:
 	if ( !foo ) ...
 
-	// ...Be careful, this will also match: 0, "", null, undefined, NaN
-	// If you _MUST_ test for a boolean false, then use
+	// ...Soyez prudent, cela correspondra aux valeurs suivantes: 0, "", null, undefined, NaN
+	// Vous _DEVEZ_ dans ce cas tester la valeur `faux`, comme suit:
 	if ( foo === false ) ...
 
 
 	// 4.1.7
-	// When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-	// instead of this:
+	// Lorsque vous évaluez une référence et seulement une référence qui peut être null ou undefined, mais NOT fausse, "" ou 0,
+	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === null || foo === undefined ) ...
 
-	// ...take advantage of == type coercion, like this:
+	// ...bénéficier de la coercion de type ==, comme suit:
 	if ( foo == null ) ...
 
-	// Remember, using == will match a `null` to BOTH `null` and `undefined`
-	// but not `false`, "" or 0
+	// Souvenez vous, utilisez == vérifira une égalité avec `null` et `null` & `undefined`
+	// mais pas `false`, "" ou 0
 	null == undefined
 
 	```
-	ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+	_TOUJOURS_ tester avec le meilleur et le plus performant des résultats - les consignes ci-dessus sont une ligne de conduite et non un dogme.
 
 	```javascript
 
 	// 4.2.1
-	// Type coercion and evaluation notes
+	// Cohercion de Type coercion et remarques
 
-	Prefer `===` over `==` (unless the case requires loose type evaluation)
+	Preferez `===` à la place de `==` (à moins que le cas de test require la perte d'évaluation de type)
 
-	=== does not coerce type, which means that:
+	=== n'effectue pas de cohercion de type, ce qui signifie que:
 
 	"1" === 1;
-	// false
+	// faux
 
-	== does coerce type, which means that:
+	== effectue la cohercion de type, ce qui signifie que:
 
 	"1" == 1;
-	// true
+	// vrai
 
 
 	// 4.2.2
-	// Booleans, Truthies & Falsies
+	// Booléens, valeurs de vérités et de négation
 
-	Booleans: true, false
+	Booléens: true, false
 
-	Truthy are: "foo", 1
+	sont vrais: "foo", 1
 
-	Falsy are: "", 0, null, undefined, NaN, void 0
+	sont faux: "", 0, null, undefined, NaN, void 0
 
 	```
 
@@ -661,7 +661,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	```javascript
 
 	// 5.1.1
-	// A Module
+	// Module
 
 	(function( global ) {
 		var Module = (function() {
@@ -690,9 +690,9 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 			};
 		})();
 
-		// Other things might happen here
+		// D'autres choses peuvent être implémenter ici
 
-		// expose our module to the global object
+		// Exposition de notre module via l'objet global
 		global.Module = Module;
 
 	})( this );
@@ -702,7 +702,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 	```javascript
 
 	// 5.2.1
-	// A Constructeur
+	// Contructeur
 
 	(function( global ) {
 
@@ -721,13 +721,13 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		};
 
 
-		// To call constructor's without `new`, you might do this:
+		// Appel du contructeur sans `new`, en utilisant cette syntaxe:
 		var ctor = function( foo ) {
 			return new Ctor( foo );
 		};
 
 
-		// expose our constructor to the global object
+		// Exposition de notre constructeur via l'objet global
 		global.ctor = ctor;
 
 	})( this );
@@ -794,25 +794,25 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 
 	// 6.3.3
-	// Naming functions, objects, instances, etc
+	// Nommage des fonctions, objets, instances, etc
 
-	camelCase; function and var declarations
+	camelCase; fonction et déclarations var
 
 
 	// 6.3.4
-	// Naming constructors, prototypes, etc.
+	// Nommage des contructeurs, prototypes, etc.
 
-	PascalCase; constructor function
+	PascalCase; fonction constructeur
 
 
 	// 6.3.5
-	// Naming regular expressions
+	// Nommage des expressions régulières
 
 	rDesc = //;
 
 
 	// 6.3.6
-	// From the Google Closure Library Style Guide
+	// Extrait du guide de la librairie de Google Closure
 
 	functionNamesLikeThis;
 	variableNamesLikeThis;
@@ -825,20 +825,20 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 7. <a name="misc">Divers</a>
 
-	This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+	Cette section servira à illustrer des idées et des concepts qui ne devraient pas être considérés comme un dogme, mais il existe, au lieu d'encourager les pratiques en doute dans une tentative de trouver de meilleures façons de le faire les tâches courantes de programmation JavaScript.
 
-	A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch déclarations
+	A. L'utilisation des `switch` doit être évitée, les méthodes modernes de tracking devraient 'blacklister' l'utilisation des fonctions avec `switch`.
 
-	There seems to be drastic improvements to the execution of `switch` déclarations in latest releases of Firefox and Chrome.
+	Il semble y avoir des améliorations radicales à l'exécution des déclarations de `switch` dans les dernières version de Firefox et Chrome.    
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
-	Notable improvements can be witnesses here as well:
+	Des améliorations notables sont également visibles ici:
 	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
 
 	// 7.A.1.1
-	// An example switch statement
+	// Exemple de déclaration de `switch`
 
 	switch( foo ) {
 		case "alpha":
@@ -848,25 +848,25 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 			beta();
 			break;
 		default:
-			// something to default to
+			// comportement par défaut
 			break;
 	}
 
 	// 7.A.1.2
-	// A better approach would be to use an object literal or even a module:
+	// Une meilleur approche est d'utiliser un object literal ou même un module:
 
 	var switchObj = {
 		alpha: function() {
 			// déclarations
-			// a return
+			// return
 		},
 		beta: function() {
 			// déclarations
-			// a return
+			// return
 		},
 		_default: function() {
 			// déclarations
-			// a return
+			// return
 		}
 	};
 
@@ -874,15 +874,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 		return {
 			alpha: function() {
 				// déclarations
-				// a return
+				// return
 			},
 			beta: function() {
 				// déclarations
-				// a return
+				// return
 			},
 			_default: function() {
 				// déclarations
-				// a return
+				// return
 			}
 		};
 	})();
@@ -961,15 +961,15 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 10. <a name="language">Un code, un language</a>
 
-	Les programmes doivent être rédigés dans un language, quelque soit le language, le mainteneur ou les mainteneurs donnent les bonnes pratiques.
+	Les programmes doivent être rédigés dans un language, quelque soit le language, le mainteneur ou les mainteneurs doivent donner les bonnes pratiques.
 
 
-## Appendix
+## Appendice
 
-### Comma First.
+### Première virgule.
 
 
-Any project that cites this document as its base style guide will not accept comma first code formatting unless explicitly specified otherwise.
+Tout projet qui cite ce document comme son guide de style de base ne pourra accepter le formatage du code première virgule, sauf mention contraire.
 
-See: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
+(cf: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html)
 Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
