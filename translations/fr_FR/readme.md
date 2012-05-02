@@ -970,6 +970,3 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 
 Tout projet qui cite ce document comme son guide de style de base ne pourra accepter le formatage du code première virgule, sauf mention contraire.
-
-(cf: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html)
-Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
