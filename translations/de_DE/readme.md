@@ -35,3 +35,33 @@
 * [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
 * [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+
+## Wichtiger, nicht-idiomatischer Kram:
+
+### Code-Qualität: Tolle Werkzeuge, Ressourcen und Referenzen
+
+ * [jsPerf](http://jsperf.com/)
+ * [jsFiddle](http://jsfiddle.net/)
+ * [jsbin](http://jsbin.com/)
+ * [JavaScript Lint (JSL)](http://javascriptlint.com/)
+ * [jshint](http://jshint.com/)
+ * [jslint](http://jslint.org/)
+
+[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+
+
+### Schlau werden
+
+[http://es5.github.com/](http://es5.github.com/)
+
+Bei den Folgenden Ressourcen sollte berücksichtigt werden das sie 1) unvollständig und 2) *PFLICHTLEKTÜREN* sind. Ich stimme dem geschriebenen Style der unten stehenden Autoren nicht immer zu, aber eins ist sicher: Sie sind konsequent. Außerdem sind dies echte Autoriäten in dieser Sprache.
+
+ * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+ * [Eloquent JavaScript](http://eloquentjavascript.net/)
+ * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
+ * [Adventures in JavaScript Development](http://rmurphey.com/)
+ * [Perfection Kills](http://perfectionkills.com/)
+ * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [JS Assessment](https://github.com/rmurphey/js-assessment)
+
+### Build- und Deployment-Prozess
