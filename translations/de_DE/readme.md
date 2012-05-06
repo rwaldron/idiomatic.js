@@ -65,3 +65,38 @@ Bei den Folgenden Ressourcen sollte berücksichtigt werden das sie 1) unvollstä
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
 ### Build- und Deployment-Prozess
+
+Jedes Projekt sollte Komponenten verwenden, um den Code zu linten, testen oder komprimieren, um so im Produktivbereich eingesetzt zu werden. Ben Alan hat für diese Aufgabe [grunt](https://github.com/cowboy/grunt) entworfen und damit offiziell das "kits/" Verzeichnis aus diesem Repository ersetzt.
+
+### Hilfsmittel zum Testen
+
+Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Functional-Testing enthalten. Demonstrationen von Anwendungsfällen reichen als Test niht aus. Die unten aufgeführte Liste beinhaltet eine Menge nützlicher Test-Frameworks.
+
+ * [QUnit](http://github.com/jquery/qunit)
+ * [Jasmine](https://github.com/pivotal/jasmine)
+ * [Vows](https://github.com/cloudhead/vows)
+ * [Mocha](https://github.com/visionmedia/mocha)
+ * [Hiro](http://hirojs.com/)
+ * [JsTestDriver](https://code.google.com/p/js-test-driver/)
+ * [Buster.js](http://busterjs.org/)
+
+## Inhaltsverzeichnis
+
+ * [Whitespace](#whitespace)
+ * [Schöne Syntax](#spacing)
+ * [Typprüfung](#type)
+ * [Bedingte Auswertungen](#cond)
+ * [Praktischer Style](#practical)
+ * [Bezeichnung](#naming)
+ * [Sonstiges](#misc)
+ * [Native & Host Objekte](#native)
+ * [Kommentare](#comments)
+ * [Ein-Sprache-Code](#language)
+
+
+
+------------------------------------------------
+
+## Vorwort
+
+
