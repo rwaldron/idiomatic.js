@@ -1,6 +1,7 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Принципы написания консистентного, идиоматического Джаваскрипта ***
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Это "живой" документ и новые идеи по улучшению когда всегда приветствуются.
+ Участники: fork, clone, branch, commit, push, pull request. ***
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -15,26 +16,26 @@
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+## Весь код должен выглядеть так, как будто один человек это писал, неважно как много людей работали над ним. ***
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+### Последующее является списоком норм, которыми я руководствуюсь при написании кода, когда я являюсь первым автором; вклад в проекты, которые я создал, должен отвечать этим нормам. ***
 
-### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
+### Я не намерен навязывать свои предпочтения в стиле другим людям; свой стиль написания кода достоен уважения.
 
-> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+> "Чтобы быть хорошим управляющим проекта, нужно понимать, что писать код для себя это Плохая Идея. Если тысячи людей используют твой код, то пишите свой код максимально понятно" - Идан Газит.
 
+## Переводы
 
-## Translations
+* [Французский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Испанский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Португальский - Бразильский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Корейский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Японский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Русский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 
-* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+## Важное, не идиоматическое
 
-## Important, Non-Idiomatic Stuff:
-
-### Code Quality: Awesome Tools, Resources & References
+### Качество кода: отличные инструменты, ресурсы и ссылки
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -43,16 +44,15 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+ [Использование инструментов по улучшению качества кода](http://anton.kovalyov.net/slides/gothamjs/)
 
-
-### Get Smart
+### Становись умнее
 
 [http://es5.github.com/](http://es5.github.com/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Следующее должно считаться 1) незавершенным и 2) требующим чтения. Я не всегда согласен со стилями этих авторов, но одно точно: они консистентны. Более того, это каноны для языка.
 
- * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Adventures in JavaScript Development](http://rmurphey.com/)
@@ -60,17 +60,15 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
+ ### Компиляция и Развертывание
 
-### Build & Deployment Process
-
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
+ ***
 
 
 
-### Test Facility
+ ### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+ Проекты должны иметь юнит, ссылочные, по реализации или функуциональные тесты. Демо use case не является тестом. Это список фреймворков для тестирования, ни один из которых ни получил большего одобрения, чем другие.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -80,69 +78,64 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
 
-## Table of Contents
+## Содержание
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
-
+ * [Пробелы, табуляция и пустые строки](#whitespace)
+ * [Красивый синтаксис](#spacing)
+ * [Проверка типов (Вежливое руководство по стилю от jQuery Core](#type)
+ * [Условное Вычисление/Обработка](#cond)
+ * [Практичный стиль](#practical)
+ * [Именование](#naming)
+ * [Разное](#misc)
+ * ["Родные" и "чужие" объекты](#native)
+ * [Комментарии](#comments)
+ * [Код одного языка](#language)
 
 
 ------------------------------------------------
 
 
-## Preface
+## Предисловие
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Следующие секции обрисовывают/показывают приемлимое руководство по стилю для современной разработки на языке Javascript и не являются предписанием. Самое важное - это закон написания консистентного кода. Какой бы стиль вы не выбрали для вашего проекта, он должен считаться законом. Сошлитесь на этот документ как заявление о приверженности вашего проекта к консистентности кода, читабельности и удобству сопровождения.
 
 
 
-## Idiomatic Style Manifesto
 
+## Манифест Идиоматического Стиля
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+1. <a name="whitespace">Пробелы, табуляция и пустые строки</a>
+  - Никогда не путайте пробел и знак табуляции.
+  - Перед тем как начать проект, перед тем, как писать код, выберите между "тихими" отступами (пробелами) или настоящими знаками табуляции и считайте это **законом**.
+    	- Для лучшей читаемости кода, я всегда рекомендую выставлять размер отступа в вашем редакторе на 2 символа&mdash это либо два пробела, либо два пробела, которые представляют собой знак табуляции.
+  - Всегда работайте со включенной "показать скрытое" опцией, если ваш редактор поддерживает ее. Преимущества:
+  		- принужденная последовательность
+  		- удаление пробела в конце строки
+  		- удаление пустых строк
+  		- легко читаемые коммиты и диффы
 
+2. <a name="spacing">Красивый Синтаксис</a> 
+  	
+  	A. Скобки, Фигурные Скобки, Переносы Строк
 
-2. <a name="spacing">Beautiful Syntax</a>
+  	````javascript
 
-    A. Parens, Braces, Linebreaks
+  	// if/else/for/while/try всегда разделяются пробелом,
+  	// это улучшает читабельность
 
-    ```javascript
+  	// 2.A.1.1
+  	// Пример неразборчивого синтаксиса
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+  	if(condition) doSomething();
 
-    // 2.A.1.1
-    // Examples of really cramped syntax
+  	while(condition) iterating++;
 
-    if(condition) doSomething();
+  	for(var i=0;i<100;i++) someInterativeFn();
 
-    while(condition) iterating++;
+  	// 2.A.1.1
+  	// Используйте пробелы для того, чтобы улучшить читаемость
 
-    for(var i=0;i<100;i++) someIterativeFn();
-
-
-    // 2.A.1.1
-    // Use whitespace to promote readability
-
-    if ( condition ) {
+  	if ( condition ) {
       // statements
     }
 
@@ -187,104 +180,103 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+    B. Присваивание, Объявление, Функции (Именованные, Выражение, Конструктор)
 
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Переменные
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Обозначение/объявление литералов:
     var array = [],
-      object = {};
+    	object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) promotes readability
-    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+    // Использование только одного `var` на одну область видимости улучшает читаемость
+    // и упорядочивает блок объявления переменных (также сохраняет вам несколько нажатий клавиш)
 
-    // Bad
+    // Неправильно
     var foo = "";
     var bar = "";
     var qux;
 
-    // Good
+    // Правильно
     var foo = "",
       bar = "",
       quux;
 
-    // or..
-    var // Comment on these
+    // или...
+    var // комментарий для переменных
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+    // var операторы всегда должны быть в начале области видимости (функции).
+    // Тоже самое верно для констант и let оператора из ECMAScript 6.
 
-    // Bad
+    // Неправильно
     function foo() {
 
-      // some statements here
+      // выражения
 
       var bar = "",
         qux;
     }
 
-    // Good
+    // Правильно
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // все выражения после объявления переменных.
     }
     ```
 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // Обяъвление Именнованых Функций
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Использование
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // Обяъвление Именнованых Функций
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Использование
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Очень надуманный стиль передачи параметров
     function square( number, callback ) {
       callback( number * number );
     }
 
     square( 10, function( square ) {
-      // callback statements
+      // обратный вызов
     });
 
-
     // 2.B.2.3
-    // Function Expression
+    // Функция-Выражение
     var square = function( number ) {
-      // Return something valuable and relevant
+      // вернуть что-то ценное и важное
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Функция-Выражение с Идентификатором
+    // Такое объявление хорошо тем, что функция может вызвать сама себя
+    // и ее имя будет видно в стеке вызовов функций:
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -293,15 +285,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return number * factorial( number-1 );
     };
 
-
     // 2.B.2.4
-    // Constructor Declaration
+    // Объявление Конструктора
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Использование
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -310,41 +301,40 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Exceptions, Slight Deviations
+    C. Исключения, Незначительные Отклонения от правил
 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Функции с обратным вызовом
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Заметьте, что пробела между "function" и первой скобкой нет
     });
 
-    // Function accepting an array, no space
+    // Функция, которая принимает массив как параметр, тоже без пробела
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Функция, которая принимает объект как параметр, тоже без пробела
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Одна строка, тоже без пробела
     foo("bar");
 
-    // Inner grouping parens, no space
+    // Внутренние скобки, тоже без пробела
     if ( !("foo" in obj) ) {
 
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Последовательность Всегда Побеждает
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    В секции 2.A-2.C, правила использования проблела и знака табуляции установлены с простой целью: согласованность. 
+    Очень важно отметить, что предпочтения в форматировании, как "внутренний пробел", должны считаться необязательными/опциональными, но в вашем проекте должен использоваться только один стиль формартирования.
 
     ```javascript
 
@@ -370,17 +360,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. Quotes
+		E. Кавычки
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+		Абсолютно неважно какие кавычки вы используете (одинарные или двойные), нет никакой разницы в том, как JavaScript обрабатывает их. Что **действительно важно**, это сохранять согласованность. **Никогда не путайте кавычки в вашем проекте. Выберите один стиль и придерживайтесь его.**
 
-    F. End of Lines and Empty Lines
+    F. Конец строки и пустые строки
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Пробелы, знаки табуляции могут испортить диффы и сделать чэнджсеты непригодными для чтения. Подумайте о создании pre-commit hook, который убирает пробелы в конце строк и пустых строк автоматически.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
-
-    A. Actual Types
+3. <a name="type">Проверка типов (Вежливое руководство по стилю от jQuery Core)</a>    
+		
+		A. Типы
 
     String:
 
@@ -401,7 +391,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     Array:
 
         Array.isArray( arrayLikeObject )
-        (wherever possible)
+        (где возможно)
 
     Node:
 
@@ -417,25 +407,27 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     undefined:
 
-      Global Variables:
+      Глобальные переменные:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Локальные переменные:
 
         variable === undefined
 
-      Properties:
+      Свойства:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+    JavaScript динамически типизированный язык. То, что может быть вашим "лучшим другом", может быть и вашим "злейшим" врагом. Всегда следуйте рекомендациям относительно `type`.
 
-    Consider the implications of the following...
+    B. Неявное приведение типов
 
-    Given this HTML:
+    Представьте результаты следующего...
+
+    Дан такой HTML:
 
     ```html
 
@@ -448,20 +440,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` была объявлена, ей был присвоен `0` и ее тип `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Дальше в коде вам нужно обновить значение `foo`
+    // новым значением из input элемента
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Если бы вы проверили тип переменной сейчас `typeof foo`, то получили бы `string`
+    // Это значит, что если бы вы тестировали `foo` вот так:
 
     if ( foo === 1 ) {
 
@@ -469,15 +461,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // то `importantTask()` никогда бы не была вызвана, даже если значение `foo` было бы "1"
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Вы можете избежать ошибок, используя приведение типов с помощью унарных операторов "+" и "-":
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ унарный операторв + приведет правую часть выражения к типу `number`
 
     // typeof foo;
     // "number"
@@ -488,10 +480,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` будет вызвана
     ```
 
-    Here are some common cases along with coercions:
+    Вот несколько простых примеров приведения типов:
 
 
     ```javascript
@@ -577,9 +569,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // Заметьте, что выше изложенное можно считать "черезчур умным"
+    // Лучше делать так:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -631,122 +622,122 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Условное Вычисление/Обработка</a>
 
-    ```javascript
+		```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Проверяя, есть ли у массива длина,
+    // вместо:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // проверяйте значение выражения:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Проверяя, пустой ли массив:
+    // вместо:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // проверяйте значение выражения:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Проверяя, не пуста ли строка:
+    // вместо:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // проверяйте значение выражения:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Проверяя, пустая ли строка:
+    // вместо:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // проверяйте ложно ли выражение:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Проверяя, является ли переменная истиной,
+    // вместо:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // проверяйте следующим образом:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+		// Проверяя, является ли переменная ложью,
+    // вместо:    
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // проверяйте, используя отрицание:
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Будьте осторожны, потому что это выражение справедливо и для: 0, "", null, undefined, NaN
+    // Для проверки значения заведомо ложных выражений, используйте:
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Проверяя, если переменная null или undefined, но НЕ ложь, "" или 0,
+    // вместо:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...воспользуйтесь оператором ==:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Помните, что сравнение с помощью оператора == с `null` сработает для ОБОИХ `null` и `undefined` 
+    // но не для `false`, "" или 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    ВСЕГДА оценивайте самый лучший и точный результат - выше приведено руководство, а не догма. 
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Приведение видов и оценка выражений
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // Отдавай предпочтение `===`, а не `==` (только если конкретный случай не требует не строго типизированной оценки)
 
-    // === does not coerce type, which means that:
+    // === не приводит типы принудительно, т.е.:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == приводит типы принудительно, т.е.:
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Booleans, Truthies & Falsies
+    // Логические выражения, Истинные и Ложные
 
-    // Booleans:
+    // Логические выражения:
     true, false
 
-    // Truthy:
+    // Истинные:
     "foo", 1
 
-    // Falsy:
+    // Ложные:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
 5. <a name="practical">Practical Style</a>
-
-    ```javascript
+	
+		```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Практический модуль
 
     (function( global ) {
       var Module = (function() {
@@ -754,30 +745,30 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Логическое свойство
           bool: true,
-          // Some string value
+          // Свойство типа строка
           string: "a string",
-          // An array property
+          // Свойство - массив
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Свойство - объект
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // get the current value of `data`
+            // получить текущее значение переменной `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // присвоить значение переменной `data` и вернуть его
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Другие объявления
 
-      // expose our module to the global object
+      // делаем наш модуль глобальным 
       global.Module = Module;
 
     })( this );
@@ -787,7 +778,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Практический конструктор
 
     (function( global ) {
 
@@ -807,13 +798,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // Чтобы вызывать конструктор без использования оператора `new`, можно объявить конструктор так:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // делаем наш конструктор глобальным 
       global.ctor = ctor;
 
     })( this );
@@ -822,17 +813,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Именование</a>
 
 
-    You are not a human code compiler/compressor, so don't try to be one.
+    Вы не компилятор или компрессор, так что не пытайтесь быть одним из них. 
 
-    The following code is an example of egregious naming:
+    Весь последующий код является примером плохового именования переменных:
 
     ```javascript
 
     // 6.1.1
-    // Example of code with poor names
+    // Пример кода с "бедными на описание" именами переменных 
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -841,14 +832,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+    Без сомнения, если вы написали такой код, я надеюсь, что это прекратится сегодня.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    Вот кусок кода с такой же логикой, но с лучшим именованием переменных (и читаемой структурой):
 
     ```javascript
 
     // 6.2.1
-    // Example of code with improved names
+    // Пример кода с улучшенным именованием переменных
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -865,42 +856,42 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    A few additional naming pointers:
+    Вот еще несколько советов для именования переменных:
 
     ```javascript
 
     // 6.3.1
-    // Naming strings
+    // Строки
 
     `dog` is a string
 
 
     // 6.3.2
-    // Naming arrays
+    // Массивы
 
     `dogs` is an array of `dog` strings
 
 
     // 6.3.3
-    // Naming functions, objects, instances, etc
+    // Именование функций, объектов, инстансов, etc
 
-    camelCase; function and var declarations
+    camelCase; фунции и объявление переменных
 
 
     // 6.3.4
-    // Naming constructors, prototypes, etc.
+    // Именование конструкторов, прототипов, etc.
 
-    PascalCase; constructor function
+    PascalCase; конструкторы
 
 
     // 6.3.5
-    // Naming regular expressions
+    // Именование регулярных выражений
 
     rDesc = //;
 
 
     // 6.3.6
-    // From the Google Closure Library Style Guide
+    // Из рекомендации по стилю Google Closure Library 
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -913,22 +904,22 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Разное</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+		Этот раздел будет служить для описания идей и концепций, которые не должны рассматриваться догма, но существуют поощрения сомнения в общепринятых методах в попытке найти более эффективные способы для выполнения общих задач программирования JavaScript.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. Использование `switch` следует избегать, потому что современный метод откладки будет скрывать вызовы функций, которые используют `switch`. 
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    В последних версиях браузеров Firefox и Chrome кажется есть значительные улучшения в исполнении функций, которые используют `switch`.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnesses here as well:
+    На заметные улучшения также можно посмотреть тут:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Пример оператора switch
 
     switch( foo ) {
       case "alpha":
@@ -938,12 +929,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         beta();
         break;
       default:
-        // something to default to
+        // какое-то значение по умолчанию
         break;
     }
 
     // 7.A.1.2
-    // A better approach would be to use an object literal or even a module:
+    // Лучшим подходом было бы использовать объект или даже модуль:
 
     var switchObj = {
       alpha: function() {
@@ -979,7 +970,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 7.A.1.3
-    // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+    // Если `foo` это свойство `switchObj` или `switchModule`, то выполнить метод...
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
@@ -993,16 +984,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     switchModule[ foo ]( args );
 
 
-    // This pattern also promotes code reusability.
+    // Эта модель также поддерживает повторное использование кода.
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. "Ранние возвраты" способствуют читабельности кода с незначительной разницей в производительности
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Неправильно:
     function returnLate( foo ) {
       var ret;
 
@@ -1014,7 +1005,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return ret;
     }
 
-    // Good:
+    // Правильно:
 
     function returnEarly( foo ) {
 
@@ -1027,13 +1018,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">"Родные" и "чужие" объекты</a>
 
-    The basic principle here is:
+    Основное правило тут: 
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Не делайте тупых вещей и все будет хорошо.
 
-    To reinforce this concept, please watch the following presentation:
+    Для усиления этой концепции, посмотрите вот это видео:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -1042,20 +1033,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Комментарии</a>
 
-  * Single line above the code that is subject
-  * Multiline is good
-  * End of line comments are prohibited!
-  * JSDoc style is good, but requires a significant time investment
+  * Однострочные комментарии на линию выше кода
+  * Комментарии в несколько строк тоже приветствуются
+  * Комментарии в конце строки запрещены!
+  * Стиль JSDoc хорош, но в нем нужно долго разбираться
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">Код Одного Языка</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+		Программы должны быть написаны на одном языка, независимо от языка, так, как требуют того люди, которые сопровождают код.		
 
-## Appendix
+## Аппендикс
 
-### Comma First.
+### Первая Запятая.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Любой проект, который ссылается этот документ в качестве руководства по стилю, не примет форматирование кода "первой запятой", только если автор специально не укажется этого. 
