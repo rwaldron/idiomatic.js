@@ -14,6 +14,7 @@
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
+* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 
 ## Tutto il codice in qualsiasi linguaggio dovrebbe sembrare come scritto da una singola persona, non importa quante persone vi abbiano contribuito.
 
@@ -30,7 +31,7 @@
 * [Portoghese - Brasiliano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [Coreano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
 * [Giapponese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Italiano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Inglese](https://github.com/rwldrn/idiomatic.js)
 
 ## Cose importanti, non idiomatiche:
 
