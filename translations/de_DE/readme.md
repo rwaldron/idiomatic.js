@@ -87,7 +87,7 @@ Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Fun
  * [Typprüfung](#type)
  * [Bedingte Auswertungen](#cond)
  * [Praktischer Style](#practical)
- * [Bezeichnung](#naming)
+ * [Bezeichnungen](#naming)
  * [Sonstiges](#misc)
  * [Native & Host Objekte](#native)
  * [Kommentare](#comments)
@@ -664,3 +664,173 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```
 
 
+5. <a name="practical">Praktischer Style</a>
+
+    ```javascript
+
+    // 5.1.1
+    // Ein praktisches Modul
+
+    (function( global ) {
+      var Module = (function() {
+
+        var data = "secret";
+
+        return {
+          // Eine boolesche Eigenschaft
+          bool: true,
+          // Ein Stringwert
+          string: "a string",
+          // Eine Array-Eigenschaft
+          array: [ 1, 2, 3, 4 ],
+          // Eine Objekteigenschaft
+          object: {
+            lang: "en-Us"
+          },
+          getData: function() {
+            // gibt den Wert von data
+            return data;
+          },
+          setData: function( value ) {
+            // setzt den Wert von data
+            return ( data = value );
+          }
+        };
+      })();
+
+      // Hier könnten weitere Dinge passieren
+
+      // Das Modul im globalen Namensraum verfügbar machen
+      global.Module = Module;
+
+    })( this );
+
+    ```
+
+    ```javascript
+
+    // 5.2.1
+    // Ein praktischer Konstruktor
+
+    (function( global ) {
+
+      function Ctor( foo ) {
+
+        this.foo = foo;
+
+        return this;
+      }
+
+      Ctor.prototype.getFoo = function() {
+        return this.foo;
+      };
+
+      Ctor.prototype.setFoo = function( val ) {
+        return ( this.foo = val );
+      };
+
+
+      // Um den Konstruktor ohne `new` aufzurufen, machst du möglicherweise sowas:
+      var ctor = function( foo ) {
+        return new Ctor( foo );
+      };
+
+
+      // Konstruktor im globalen Namensraum verfügbar machen
+      global.ctor = ctor;
+
+    })( this );
+
+    ```
+
+6. <a name="naming">Bezeichnungen</a>
+
+    Du bist kein Compiler, also versuch nicht einer zu sein.
+
+    Der folgende Code ist ein Beispiel für entsetzlich schlechte Bezeichnungen:
+
+    ```javascript
+
+    // 6.1.1
+    // Beispielcode mit schlechten Bezeichnungen
+
+    function q(s) {
+      return document.querySelectorAll(s);
+    }
+    var i,a=[],els=q("#foo");
+    for(i=0;i<els.length;i++){a.push(els[i]);}
+    ```
+
+    Du hast ohne Zweifel solch' einen Code geschrieben - hoffentlich hört das heute auf.
+
+    Hier ist der gleiche Code, nur klarer, durchdachter und mit einer lesbaren Struktur:
+
+    ```javascript
+
+    // 6.2.1
+    // Beispielcode mit verbesserten Bezeichnungen
+
+    function query( selector ) {
+      return document.querySelectorAll( selector );
+    }
+
+    var idx = 0,
+      elements = [],
+      matches = query("#foo"),
+      length = matches.length;
+
+    for( ; idx < length; idx++ ){
+      elements.push( matches[ idx ] );
+    }
+
+    ```
+
+    Ein paar weitere Punkte bezüglich der Bezeichnungen:
+
+    ```javascript
+
+    // 6.3.1
+    // Strings benennen
+
+    `dog` ist ein String
+
+
+    // 6.3.2
+    // Arrays benennen
+
+    `dogs` ist ein Array bestehend aus `dog` Strings
+
+
+    // 6.3.3
+    // Funktionen, Objekte, Instanzen etc. benennen
+
+    camelCase; Funktions- und var- Deklarationen
+
+
+    // 6.3.4
+    // Konstruktoren und Prototypen benennen
+
+    PascalCase; Konstruktorfunktion
+
+
+    // 6.3.5
+    // Reguläre Ausdrücke benennen
+
+    rDesc = //;
+
+
+    // 6.3.6
+    // Aus dem Google Closure Library Style Guide
+
+    functionNamesLikeThis;
+    variableNamesLikeThis;
+    ConstructorNamesLikeThis;
+    EnumNamesLikeThis;
+    methodNamesLikeThis;
+    SYMBOLIC_CONSTANTS_LIKE_THIS;
+
+
+
+    ```
+
+7. <a name="misc">Sonstiges</a>
