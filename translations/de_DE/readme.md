@@ -109,11 +109,11 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 
 1. <a name="whitespace">Whitespace</a>
-  - Mische niemals Spaces und Tabs
-  - Bevor du mit einem Projekt beginnst und Code schreibst, entscheide dich zwischen Soft Intends (Spaces) oder echten Tabs.
-    - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces oder zwei Spaces repräsentieren einen echten Tab.
-  - Wenn dein Editor die Konfiguration "Steuerzeichen einblenden" unterstützt, solltest du sie einschalten. Das bringt folgende Vorteile mit sich:
-    - Erzwungene Konsistenz
-    - Zerstören von Whitespaces am Ende der Zeile
-    - Zerstören von leeren "Whitespace Zeilen"
-    - Commits und Diffs sind einfacher zu lesen
+    - Mische niemals Spaces und Tabs
+    - Bevor du mit einem Projekt beginnst und Code schreibst, entscheide dich zwischen Soft Intends (Spaces) oder echten Tabs.
+        - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces oder zwei Spaces repräsentieren einen echten Tab.
+    - Wenn dein Editor die Konfiguration "Steuerzeichen einblenden" unterstützt, solltest du sie einschalten. Das bringt folgende Vorteile mit sich:
+        - Erzwungene Konsistenz
+        - Zerstören von Whitespaces am Ende der Zeile
+        - Zerstören von leeren "Whitespace Zeilen"
+        - Commits und Diffs sind einfacher zu lesen
