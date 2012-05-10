@@ -99,4 +99,21 @@ Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Fun
 
 ## Vorwort
 
+Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaScript-Entwicklung. Es handelt sich dabei aber nicht etwa um eine Art Vorschrift. Das wichtigste was man aber mitnehmen sollte ist das **Gesetz der Stilkonsistenz**. Egal welchen Stil du für dein Projekt wählst, er sollte als Regel betrachtet werden.
 
+
+
+
+
+## Idiomatisches Style Manifest
+
+
+1. <a name="whitespace">Whitespace</a>
+  - Mische niemals Spaces und Tabs
+  - Bevor du mit einem Projekt beginnst und Code schreibst, entscheide dich zwischen Soft Intends (Spaces) oder echten Tabs.
+    - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces oder zwei Spaces repräsentieren einen echten Tab.
+  - Wenn dein Editor die Konfiguration "Steuerzeichen einblenden" unterstützt, solltest du sie einschalten. Das bringt folgende Vorteile mit sich:
+    - Erzwungene Konsistenz
+    - Zerstören von Whitespaces am Ende der Zeile
+    - Zerstören von leeren "Whitespace Zeilen"
+    - Commits und Diffs sind einfacher zu lesen
