@@ -865,6 +865,43 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
+    The ``` this ``` keyword to be used in another context. Whenever it is possible, we should prefer the ``` .bind(this) ``` pattern. 
+
+
+    ```javascript
+
+    // Example with Underscore.bind
+
+    var aBindedFunction = _.bind(function() {
+        this.doSomething();
+    }, this);
+
+    ```
+
+    Or, we can make usage of the binding offered by some Frameworks. 
+
+    ```javascript
+
+    // Example with Underscore.map
+
+    var weirdNumbers = _.map([ 4, 8, 0, -1, -6, -100 ], function(value) {
+        return this.weird(value);
+    }, this);
+
+    ```
+
+    As last resort, a reference to ``` this ``` in another context should be achieved by creating a variable named ``` self ```.
+
+    ```javascript
+
+    var self = this;
+
+    setTimeout(function() {
+        self.doSomething();
+    }, 500);
+
+    ```
+
     A few additional naming pointers:
 
     ```javascript
