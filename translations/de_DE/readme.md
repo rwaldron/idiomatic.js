@@ -117,3 +117,191 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         - Zerstören von Whitespaces am Ende der Zeile
         - Zerstören von leeren "Whitespace Zeilen"
         - Commits und Diffs sind einfacher zu lesen
+
+2. <a name="spacing">Schöne Syntax</a>
+
+    A. Leerzeichen, geschweifte Klammern und Zeilenumbrüche
+
+    ```javascript
+
+    // if/else/for/while/try enthalten immer Leerzeichen, geschweifte Klammern
+    // und erstrecken sich über mehrere Zeilen
+    // Das trägt zur Lesbarkeit bei
+
+    // 2.A.1.1
+    // Beispiele von echt verkrampfter Syntax
+
+    if(Bedingung) machWas();
+
+    while(Bedingung) iterieren++;
+
+    for(var i=0;i<100;i++) irgendeineIterativeFunktion();
+
+
+    // 2.A.1.1
+    // Benutze Whitespaces um die Lesbarkeit zu verbessern
+
+    if ( Bedingung ) {
+        // statements
+    }
+
+    while ( Bedingung ) {
+        // statements
+    }
+
+    for ( var i = 0; i < 100; i++ ) {
+        // statements
+    }
+
+    // Noch besser:
+
+    var i,
+        length = 100;
+
+    for ( i = 0; i < length; i++ ) {
+        // statements
+    }
+
+    // Oder...
+
+    var i = 0,
+        length = 100;
+
+    for ( ; i < length; i++ ) {
+        // statements
+    }
+
+    var prop;
+
+    for ( prop in object ) {
+        // statements
+    }
+
+    if ( true ) {
+        // statements
+    } else {
+        // statements
+    }
+    ```
+
+
+    B. Zuweisungen, Deklarationen, Funktionen (Benamte, Ausdrücke, Kontruktoren)
+
+    ```javascript
+
+    // 2.B.1.1
+    // Variablen
+    var foo = "bar",
+        num = 1,
+        undef;
+
+    // Literalnotationen:
+
+    var array = [],
+        object = {};
+
+
+    // 2.B.1.2
+    // Nur einmal `var` pro Scope (Funktion) zu verwenden, verbessert die Lesbarkeit
+    // und hält deine Deklarationsliste frei von Verwirrungen
+
+    // Schlecht
+    var foo = "";
+    var bar = "";
+    var qux;
+
+    // Gut
+    var foo = "",
+        bar = "",
+        quux;
+
+    // Oder..
+    var // Hier kommentieren
+    foo = "",
+    bar = "",
+    quux;
+
+    // 2.B.1.3
+    // var Statements sollten immer an den Anfang ihrers respektiven Scopes (Funktion)
+    // Das gleiche gilt für const und let aus ECMAScript 6
+
+    // Schlecht
+    function foo() {
+        // irgendwas
+
+        var bar = "",
+            qux;
+    }
+
+    // Gut
+    function foo() {
+        var bar = "",
+        qux;
+
+        // alle Statements nach der var-Deklaration
+    }
+    ```
+
+    ```javascript
+    
+    // 2.B.2.1
+    // Benannte Funktionsdeklaration
+    function foo( arg1, argN ) {
+
+    }
+
+    // Benutzung
+    foo( arg1, argN );
+
+
+    // 2.B.2.2
+    // Benannte Funktionsdeklaration
+    function quadrat(zahl) {
+        return zahl * zahl;
+    }
+
+    // Benutzung
+    quadrat( 10 );
+
+    function quadrat( zahl, callback ) {
+        callback( zahl * zahl);
+    }
+
+    quadrat( 10, function (square) {
+        // callback Statements
+    });
+
+    // 2.B.2.3
+    // Funktionsausdruck
+    var quadrat = function ( zahl ) {
+        // gibt irgendwas zurück
+        return zahl * zahl;
+    }
+
+    // Functionsausdruck mit Bezeichner
+    // Diese Form hat den Vorteil, das sie sich selbst aufrufen kann
+    // und der Bezeichner im Stack Trace zufinden ist
+    var factorial = function factorial( zahl ) {
+        if ( zahl < 2 ) {
+            return 1;
+        }
+
+        return zahl * factorial( zahl-1 );
+    };
+
+
+    // 2.B.2.4
+    // Konstrukturdeklaration
+    function fooBar ( options) {
+
+        this.options = options;
+    }
+
+    // Benutzung
+    var fooBar = new FooBar({ a: "alpha" });
+
+    fooBar.options:
+    // { a: "alpha" }
+    ```
+
+    C. Ausnahmen, Leichte Abweichungen
