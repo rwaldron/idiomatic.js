@@ -364,4 +364,154 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     E. Anführungszeichen
 
+    Ob du jetzt einfache oder doppelte Anführungszeichen bevorzugst ist völlig egal. JavaScript parst sie immer gleich. Das einzige worauf auf jeden Fall geachtet werden **MUSS**, ist Konsistenz. **Vermische niemals Anführungszeichen innerhalb eines Projekts.** Suche dir einen Stil aus und bleib dabei.
 
+    F. Zeilenenden und leere Zeilen
+
+    Whitespaces können diffs ruinieren. Pre-Commit-Hooks können verwendet werden, um End-Of-Line-Whitespaces zu leere Zeilen zu entfernen.
+
+3. <a name="type">Typprüfung</a>
+
+    A. Primitive Typen
+
+    String:
+
+        typeof variable === "string"
+
+    Number:
+
+        typeof variable === "number"
+
+    Boolean:
+
+        typeof variable === "boolean"
+
+    Object:
+
+        typeof variable === "object"
+
+    Array:
+
+        Array.isArray( arrayArtigesObjekt )
+        (wenn möglich)
+
+    Node:
+
+        elem.nodeType === 1
+
+    null:
+
+        variable === null
+
+    null oder undefined:
+
+        variable == null
+
+    undefined:
+
+        Globale Variablen:
+
+            typeof variable === "undefined"
+
+        Lokale Variablen:
+
+            variable === undefined
+
+        Properties:
+
+            object.prop === undefined
+            object.hasOwnProperty( prop )
+            "prop" in object
+
+    B. Gezwungene Typen
+
+    Betrachten wir folgende Auswirkungen...
+
+    Dieses HTML ist gegeben:
+
+    ```html
+
+    <input type="text" id="foo-input" value="1">
+    ```
+
+    ```js
+
+    // 3.B.1.1
+
+    // `foo` wurde mit dem Wert `0` deklariert und ist vom Typ `number`
+    var foo = 0;
+
+    // typeof foo;
+    // "number"
+    ...
+
+    // Später im Code musst du `foo` mit einem neuen Wert aus dem input-Element überschreiben
+    foo = document.getElementById("foo-input").value;
+
+    // Wenn du jetzt mit `typeof foo` testen möchtest, wird das ergebnis `string` sein
+    // Das bedeutet, wenn du Logik hast, die `foo` so testet:
+
+    if ( foo === 1 ) {
+
+        wichtigeFunktion();
+
+    }
+
+    // `wichtigeFunktion()` würde niemals ausgeführt, selbst wenn `foo` den wert "1" hätte
+
+    // 3.B.1.2
+
+    // Du kannst diese Probleme umgehen, indem du die Typen mit unären - order + - Operationen erzwingst:
+
+    foo = +document.getElementById("foo-input".value;
+    //    ^ unärer + - Operator konvertiert den rechten Operanden in eine Zahl (Number)
+    // typeof foo;
+    // "number"
+
+    if ( foo === 1 ) {
+
+        wichtigeFunktion();
+
+    }
+
+    // `wichtigeFunktion()` würde ausgeführt
+    ```
+
+    Hier sind ein paar Fälle in denen Erzwingungen verwendet werden:
+
+
+    ```javascript
+
+    // 3.B.2.1
+
+    var number = 1,
+        string = "1",
+        bool = false;
+
+    number;
+    // 1
+
+    number + "";
+    // "1"
+
+    string;
+    // "1"
+
+    +string;
+    // 1
+
+    +string++;
+    // 1
+
+    string;
+    // 2
+
+    bool;
+    // false
+
+    +bool;
+    // 0
+
+    bool + "";
+    // "false"
+    ```
