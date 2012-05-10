@@ -515,3 +515,92 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     bool + "";
     // "false"
     ```
+
+
+    ```javascript
+    // 3.B.2.2
+
+    var number = 1,
+        string = "1",
+        bool = true;
+
+    string === number;
+    // false
+
+    string === number + "";
+    // true
+
+    +string === number;
+    // true
+
+    bool === number;
+    // false
+
+    +bool === number;
+    // true
+
+    bool === string;
+    // false
+
+    bool == !!string;
+    // true
+    ```
+
+    ```javascript
+    // 3.B.2.3
+
+    var array = [ "a", "b", "c" ];
+
+    !!~array.indexOf("a");
+    // true
+
+    !!~array.indexOf("b");
+    // true
+
+    !!~array.indexOf("c");
+    // true
+
+    !!~array.indexOf("d");
+    // false
+    ```
+
+    ```javascript
+    // 3.B.2.3
+
+
+    var num = 2.5;
+
+    parseInt( num, 10 );
+
+    // ist das Gleiche wie...
+
+    ~num;
+
+    num >> 0;
+
+    num >>> 0;
+
+    // Gibt 2 zurück
+
+
+    // Denke daran das negative Zahlen anders behandelt werden...
+
+    var neg = -2.5;
+
+    parseInt( neg, 10 );
+
+    // Ist das Gleiche wie...
+
+    ~~neg;
+
+    neg >> 0;
+
+    // Gibt 2 zurück
+    // Wie dem auch sei...
+
+    neg >>> 0;
+
+    // Gibt 4294967294 zurück
+
+
+    ```
