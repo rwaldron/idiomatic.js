@@ -305,3 +305,63 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```
 
     C. Ausnahmen, Leichte Abweichungen
+
+    ```javascript
+
+    // 2.C.1.1
+    // Funktionen mit Callbacks
+    foo(function() {
+        // Achte drauf, das es hier keinen extra Whitespace nach der ersten Klammer gibt
+    });
+
+    // Funktionen, die ein Array erwarten, keine Whitespaces auf erster Ebene
+    foo([ "alpha", "beta" ]);
+
+    // 2.C.1.2
+    // Funktionen, die ein Object erwarten, haben ebenfalls keine Spaces
+    foo({
+        a: "alpha",
+        b: "beta"
+    });
+
+    // Einzelner Stringliteral, kein Space
+    foo("bar");
+
+    // Inner gruppierte Klammern, kein Space
+    if ( !("foo" in obj) ) {
+
+    }
+
+    ```
+
+    D. Konsistenz gewinnt immer
+
+    In Sektion 2.A-2.C, sieht man den Vorteil durch die Verwendung von Whitespaces. Lesbarkeit und Konsistenz.
+    Es ist immer wichtig darauf zu achten, Formatierungsvorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
+
+    ```javascript
+
+    // 2.D.1.1
+
+    if (Bedingung) {
+        // statements
+    }
+
+    while (Bedingung) {
+        // statements
+    }
+
+    for (var i = 0; i < 100; i++) {
+        // statements
+    }
+
+    if (true) {
+        // statements
+    } else {
+        // statements
+    }
+    ```
+
+    E. Anführungszeichen
+
+
