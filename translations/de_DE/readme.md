@@ -604,3 +604,63 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 
     ```
+
+4. <a name="cond">Bedingte Auswertungen</a>
+
+    ```javascript
+    //4.1.1
+    // When du nur prüfen willst, ob ein Array eine Länge hat, ...
+    if ( array.length > 0 ) ...
+
+    // prüfe es so:
+    if ( array.length ) ...
+
+    
+    // 4.1.2
+    // Wenn du nur prüfen willst, ob ein Array leer ist...
+    if ( array.legth === 0 ) ...
+
+    // mach es so:
+    if ( !array.length ) ...
+
+
+    // 4.1.3
+    // Wenn du prüfen willst ob ein String nich leer ist
+    if ( string !== "" ) ...
+
+    // ... mach es so:
+    if ( string ) ...
+
+
+    // 4.1.4
+    // Wenn du prüfen willst ob ein String leer ist...
+    if ( string === "" ) ...
+
+    // ... mach es so:
+    if ( !string ) ...
+
+
+    // 4.1.5
+    // Wenn du prüfen willst, ob eine Reference false ist...
+    if ( foo === false ) ...
+
+    // ... nutze die Negierung um eine eine true-Auswertung zu erzwingen
+    if ( !foo ) ...
+
+    // ... Sei vorsichtig, das würde auch bei 0, "", null, undefined und NaN funktionieren
+    // Wenn du für einen boolsches false testen _musst_, mach's so:
+    if ( foo === false ) ...
+
+    // 4.1.7
+    // Wenn du eine Reference prüfen möchtest, die möglicherweise null oder undefined aber NICHT false...
+    if ( foo === null || foo === undefined ) ...
+
+    // ... nutze den Vorteil der Typerzwingung
+    if ( foo == null ) ...
+
+    // Denk dran, '==' wird 'null' auf 'null' UND 'undefined' matchen, aber nicht 'false', "" oder 0
+    null == undefined
+    
+    ```
+
+
