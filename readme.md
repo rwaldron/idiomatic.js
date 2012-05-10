@@ -878,7 +878,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    Or, we can make usage of the binding offered by some Frameworks. 
+    Or, we can make usage of the bindings offered by some functions in some frameworks. 
 
     ```javascript
 
