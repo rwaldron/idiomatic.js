@@ -91,7 +91,7 @@ Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Fun
  * [Sonstiges](#misc)
  * [Native & Host Objekte](#native)
  * [Kommentare](#comments)
- * [Ein-Sprache-Code](#language)
+ * [Einsprachiger Code](#language)
 
 
 
@@ -834,3 +834,136 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```
 
 7. <a name="misc">Sonstiges</a>
+
+
+    ```javascript
+
+    // 7.A.1.1
+    // Ein Beispiel Switch Statement
+
+    switch( foo ) {
+      case "alpha":
+        alpha();
+        break;
+      case "beta":
+        beta();
+        break;
+      default:
+        // Fallback
+        break;
+    }
+
+    // 7.A.1.2
+    // Besser sollte man aber ein Objektliteral oder Modul verewnden:
+
+    var switchObj = {
+      alpha: function() {
+        // statements
+        // a return
+      },
+      beta: function() {
+        // statements
+        // a return
+      },
+      _default: function() {
+        // statements
+        // a return
+      }
+    };
+
+    var switchModule = (function () {
+      return {
+        alpha: function() {
+          // statements
+          // a return
+        },
+        beta: function() {
+          // statements
+          // a return
+        },
+        _default: function() {
+          // statements
+          // a return
+        }
+      };
+    })();
+
+
+    // 7.A.1.3
+    // Wenn `foo` eine Eigenschaft von `switchObj` oder `switchModule` ist, führe diesen Code hier aus..
+
+    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+
+    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+
+    // Wenn du auf die Werte von `foo` vertraust und weißt was drin ist,
+    // kannst du die ODER-Prüfung weglassen und den Code einfach nur ausführen:
+
+    switchObj[ foo ]( args );
+
+    switchModule[ foo ]( args );
+
+    // Dieses Muster sorgt außerdem für Wiederverwendbarkeit von Code
+
+    ```
+
+    B. Frühzeitige Rückgaben sorgen für lesbareren Code mit einem kleinen Performance-Unterschied
+
+    ```javascript
+
+    // 7.B.1.1
+    // Schlecht:
+    function returnLate( foo ) {
+      var ret;
+
+      if ( foo ) {
+        ret = "foo";
+      } else {
+        ret = "quux";
+      }
+      return ret;
+    }
+
+    // Gut:
+
+    function returnEarly( foo ) {
+
+      if ( foo ) {
+        return "foo";
+      }
+      return "quux";
+    }
+
+    ```
+
+8. <a name="native">Native & Host Objekte</a>
+
+    Das grundsätzliche Prinzip ist hier: 
+
+    ### Mach keinen unsinn und alles wird okay.
+
+    Um das Ganze noch mehr zu stärken, schaue dir diese Präsentationen an:
+
+    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+
+    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
+
+    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+
+
+9. <a name="comments">Kommentare</a>
+
+    * Mehrzeilige Kommentare sind gut
+    * End of line comments are prohibited!
+    * JSDoc style is good, but requires a significant time investment
+
+
+10. <a name="language">Einsprachiger Code</a>
+
+    Programme sollten in einer Sprache geschrieben sein, egal um welche Sprache es sich handelt, wenn der Projektbetreuer diese vorgibt.
+
+## Appendix
+
+### Comma First.
+
+Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
