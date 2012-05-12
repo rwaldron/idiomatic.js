@@ -834,7 +834,15 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```
 
 7. <a name="misc">Sonstiges</a>
+    
+    Diese Sektion stellt Ideen und Konzepte dar, die nicht dogmatisch betrachtet werden sollten. Sie sollen fragliche Praktiken fördern die immer wieder in der JavaScript Programmierung auftauchen.
 
+    A. `switch` Statemens sollten vermieden werden.
+
+    Es scheint starke Verbesserungen bei der Ausführung von `switch` Statements im neuesten Firefox und Chrome zu geben.
+    http://jsperf.com/switch-vs-object-literal-vs-module
+
+    https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
@@ -962,8 +970,9 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Programme sollten in einer Sprache geschrieben sein, egal um welche Sprache es sich handelt, wenn der Projektbetreuer diese vorgibt.
 
-## Appendix
+## Anhang 
 
 ### Comma First.
 
+Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet akzeptiert keine Comma-First-Formatierung, solang es nicht explizit von Projektautor angegeben wurde.
 Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
