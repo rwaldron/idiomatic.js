@@ -40,6 +40,7 @@ Lo siguiente debería de ser considerado 1) éstas son incompletas, y 2) *REQUER
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
 (Todos estos artículos están en inglés)
+ * [Essential JavaScript & jQuery Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
 ### Proceso de Build y Deployment
 
