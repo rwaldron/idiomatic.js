@@ -53,6 +53,7 @@ A lista a seguir deve ser considerada: 1) incompleta; e 2) *LEITURA OBRIGATÓRIA
  * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [Essential JavaScript & jQuery Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/) 
 
 
 ### Processos de build e deploy
