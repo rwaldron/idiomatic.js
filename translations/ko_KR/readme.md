@@ -60,6 +60,7 @@
  * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [자바스크립트 개발 모험(Adventures in JavaScript Development)](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
  * [더글라스 크록포드의 월드와이드웹(Douglas Crockford's Wrrrld Wide Web)](http://www.crockford.com)
+ * [Essential JavaScript & jQuery Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
 
 ### 빌드 & 배포 프로세스
