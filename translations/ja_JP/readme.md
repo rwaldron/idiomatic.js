@@ -59,6 +59,7 @@
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
+ * [Essential JavaScript & jQuery Design Patterns](http://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 
 
 ### ビルドとデプロイのプロセス
