@@ -13,6 +13,10 @@
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
+* Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
+* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
+
+* EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 
 ## Tout code, peu importe les bases sur lequels il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
 
@@ -25,8 +29,11 @@
 ## Traductions
 
 * [Anglais](https://github.com/rwldrn/idiomatic.js)
-* [Espagnol](https://github.com/MatiasArriola/idiomatic.js/)
-* [Portugais - Brésilien](https://github.com/leobalter/idiomatic.js/)
+* [Allemand](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [Espagnol](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portugais - Brésilien](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
 
 ## Important, aspect non-idiomatique :
 

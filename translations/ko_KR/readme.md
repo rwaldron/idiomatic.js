@@ -1,17 +1,20 @@
 # 자연스럽고 일관성 있게 자바스크립트 코딩하는 원칙
 
-## 이 문서는 계속 바뀝니다. 주변의 코드를 더 낫게 만들기 위한 좋은 아이디어가 있으시면 알려주세요. Github에서 fork, clone, branch, commit, push, pull request 하는 방법으로 참여해 보세요. 
+## 이 문서는 계속 바뀝니다. 주변의 코드를 더 낫게 만들기 위한 좋은 아이디어가 있으시면 알려주세요. Github에서 fork, clone, branch, commit, push, pull request 하는 방법으로 참여해 보세요.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
-* Kit Cambridge [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
-* Raynos [github](https://github.com/Raynos)
+* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
+* Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
+* Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
+* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
 * 개발자영어(EngForDev) [engfordev](http://www.opentutorials.org/course/167/1363) - 홍환민(Hwan Min Hong) / 권민택(MinTaek Kwon) [@leoinsight](http://twitter.com/leoinsight) /
 심태원(Tw Shim) [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) /
 김나솔(Nassol Kim) [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) /
@@ -28,7 +31,7 @@
 
 > "성공적인 프로젝트의 멋진 일원이 되기 위해서는 여러분 마음대로 코드를 작성하는 것이 나쁜 생각™임을 깨닫는 것이지요. 수천만 사람들이 여러분의 코드를 사용한다면, 가장 명확하게 코딩해야 합니다. 언어 명세가 허용하는 한 가장 똑똑한 코드를 만들겠다는 당신의 개인적인 선호에 따라서가 아니라" - Idan Gazit
 
-## 번역 
+## 번역
 
 * [프랑스어](https://github.com/jfroffice/idiomatic.js/)
 * [스페인어](https://github.com/MatiasArriola/idiomatic.js/)
@@ -212,7 +215,7 @@
 	quux;
 
 	// 2.B.1.3
-	// var statements should always be in the beginning of their respective scope (function). 
+	// var statements should always be in the beginning of their respective scope (function).
 	// Same goes for const and let from ECMAScript 6.
 
 	// Bad
@@ -260,7 +263,7 @@
 	}
 
 	square( 10, function( square ) {
-		// 콜백 문장 
+		// 콜백 문장
 	});
 
 
@@ -437,7 +440,7 @@
 	// "number"
 	...
 
-	// 나중에 입력요소(input element)에서 받은 새로운 값을 
+	// 나중에 입력요소(input element)에서 받은 새로운 값을
 	// `foo` 변수에다가 넣어야 합니다.
 
 	foo = document.getElementById("foo-input").value;
@@ -585,7 +588,7 @@
 
 
 	// 4.1.2
-	// 배열이 비어있다는 것만을 확인할 때에는, 
+	// 배열이 비어있다는 것만을 확인할 때에는,
 	// 아래처럼 작성하지 마시고:
 	if ( array.length === 0 ) ...
 
@@ -839,11 +842,11 @@
 	// 6.3.6
 	// 구글 Closure 라이브러리 스타일 가이드에서 발췌한 것
 
-	functionNamesLikeThis;  // 함수는 이렇게 이름을 지으시고.. 
+	functionNamesLikeThis;  // 함수는 이렇게 이름을 지으시고..
 	variableNamesLikeThis;  // 변수는 이렇게 이름을 지으세요.
 	ConstructorNamesLikeThis;  // 생성자는 이렇게 이름을 지으시고..
 	EnumNamesLikeThis;  // Enum의 이름은 이렇게 지으세요.
-	methodNamesLikeThis;  // 메서드의 이름은 이렇게 지으시고, 
+	methodNamesLikeThis;  // 메서드의 이름은 이렇게 지으시고,
 	SYMBOLIC_CONSTANTS_LIKE_THIS;  // symbolic 상수의 이름은 이렇게 지어주세요.
 
 
