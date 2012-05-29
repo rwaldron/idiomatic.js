@@ -49,7 +49,7 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
- [Использование инструментов по улучшению качества кода](http://anton.kovalyov.net/slides/gothamjs/)
+ [Использование инструментов по улучшению качества кода от Антона Ковалева](http://anton.kovalyov.net/slides/gothamjs/)
 
 ### Становись умнее
 
