@@ -3,6 +3,22 @@
 ## Esta traducción es un fork de https://github.com/rwldrn/idiomatic.js/ (inglés), con mínimas modificaciones.
 Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull request, contactarme en [fernetjs](http://fernetjs.com) o vía [@matiasarriola](https://twitter.com/matiasarriola). Tratemos de tener este documento actualizado, e ir incluyendo cosas que estén faltando!
 
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
+* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
+* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
+* Raynos  [github](https://github.com/Raynos)
+* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
+* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
+* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
+* Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
+* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
+
+* EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
+
 ## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, no importa cuanta gente haya contribuido.
 
 ### La lista que se presenta a continuación destaca las prácticas que uso en todo el código del que soy autor, y las contribuciones a todos los proyectos que he creado, deben seguir estas prácticas.
@@ -11,8 +27,12 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 
 ## Traducciones
 
-* [French](https://github.com/jfroffice/idiomatic.js/)
 * [ORIGINAL] [English] (https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
 
 ## Cosas importantes, no directamente relacionadas al js idiomático:
 
