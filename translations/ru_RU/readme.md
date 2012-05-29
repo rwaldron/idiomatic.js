@@ -49,7 +49,7 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
- [Использование инструментов по улучшению качества кода от Антона Ковалева](http://anton.kovalyov.net/slides/gothamjs/)
+[Использование инструментов по улучшению качества кода от Антона Ковалева](http://anton.kovalyov.net/slides/gothamjs/)
 
 ### Становись умнее
 
@@ -57,7 +57,7 @@
 
 Следующее должно считаться 1) незавершенным, и 2) *ТРЕБУЮЩИМ ЧТЕНИЯ*. Я не всегда согласен со стилями этих авторов, но одно точно: они консистентны. Более того, это каноны для языка.
 
-  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+ * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Adventures in JavaScript Development](http://rmurphey.com/)
@@ -71,9 +71,9 @@
 
 
 
- ### Тестирование
+### Тестирование
 
- Проекты должны иметь юнит, ссылочные, "по реализации" или функуциональные тесты. "Показать, что оно работает" не является тестом. Это список фреймворков для тестирования, ни один из которых ни получил бОльшего одобрения, чем другие.
+Проекты должны иметь юнит, ссылочные, "по реализации" или функуциональные тесты. "Показать, что оно работает" не является тестом. Это список фреймворков для тестирования, ни один из которых ни получил бОльшего одобрения, чем другие.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
