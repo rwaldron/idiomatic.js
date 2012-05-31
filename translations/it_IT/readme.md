@@ -1,5 +1,6 @@
 # Princìpi per la scrittura di JavaScript consistente ed idiomatico
 
+
 ## Questo è un documento sempre in continua evoluzione e nuove idee per migliorare il codice che ci circonda sono sempre le benvenute. Contribuisci: fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
@@ -8,6 +9,7 @@
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
+* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
 * Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
@@ -15,27 +17,40 @@
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
+* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+
 
 ## Tutto il codice in qualsiasi linguaggio dovrebbe sembrare come scritto da una singola persona, non importa quante persone vi abbiano contribuito.
 
 ### Il seguente elenco, evidenzia le pratiche che utilizzo in tutto il codice di cui sono l'autore originale; contributi ai progetti da me creati dovrebbero seguire queste linee guida.
 
-### Non è mia intenzione imporre il mio stile sul codice altrui; se gli altri hanno già uno stile esistente che seguono - questo dovrebbe essere rispettato.
+### Non è mia intenzione imporre il mio stile su codice o progetti altrui; se esiste già uno stile comune, esso dovrebbe essere rispettato.
 
-> "Parte dell'essere un buon amministratore per un progetto di successo è capire che la scrittura di codice per sé stessi è una Cattiva Idea™. Se migliaia di persone usano il tuo codice, allora scrivi il tuo codice in modo che abbia la massima chiarezza, e non seguendo i tuoi gusti personali su come renderlo chiaro all'interno delle specifiche" - Idan Gazit
+
+> ### "Argomenti sullo stile sono inutili. Ci dovrebbe essere una guida di stile, e voi dovreste seguirla"
+>_Rebecca_ _Murphey_
+
+&nbsp;
+
+> ### "Parte dell'essere un buon amministratore per un progetto di successo è capire che la scrittura di codice per sé stessi è una Cattiva Idea™. Se migliaia di persone usano il tuo codice, allora scrivi il tuo codice in modo che abbia la massima chiarezza, e non seguendo i tuoi gusti personali su come renderlo chiaro all'interno delle specifiche"
+>_Idan_ _Gazit_
+
 
 ## Traduzioni
 
+* [Tedesco](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [Francese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spagnolo](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
 * [Portoghese - Brasiliano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [Coreano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
 * [Giapponese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Russo](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Inglese](https://github.com/rwldrn/idiomatic.js)
+
 
 ## Cose importanti, non idiomatiche:
 
-### Qualità del codice: Ottimi strumenti, Risorse e Guide
+### Strumenti per la qualità del codice, Risorse e Guide
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -44,15 +59,12 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools di Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
-
-
 ### Impara
 
-[http://es5.github.com/](http://es5.github.com/)
+### [ECMAScript 5.1 con Annotazioni](http://es5.github.com/)
+### [Specifiche Linguaggio EcmaScript, edizione 5.1](http://ecma-international.org/ecma-262/5.1/)
 
-I seguenti dovrebbero essere considerati come 1) incompleti e 2) *DA LEGGERE*. Non sempre sono d'accordo con lo stile scritto dagli autori qui sotto, ma una cosa è certa:
-Sono consistenti. Quindi, sono autorità per questo linguaggio.
+I seguenti dovrebbero essere considerati come 1) incompleti e 2) *UNA LETTURA RICHIESTA*. Non sempre sono d'accordo con lo stile scritto dagli autori qui sotto, ma una cosa è certa: sono consistenti. Quindi, sono autorità per questo linguaggio.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -61,11 +73,14 @@ Sono consistenti. Quindi, sono autorità per questo linguaggio.
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
-
+ * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+ 
+ 
+ 
 
 ### Processo di costruzione e distribuzione
 
-I progetti dovrebbero sempre cercare di includere qualche mezzo generico per il quale il sorgente possa essere validato (linted), testato e compresso in preparazione per l'uso in produzione. Per questo lavoro, [grunt](https://github.com/cowboy/grunt) di Ben Alman non è secondo a nessuno e ha ufficialmente rimpiazzato la directory "kits/" di questo repo.
+I progetti dovrebbero sempre cercare di includere qualche mezzo generico per il quale il sorgente possa essere validato (linted), testato e compresso in preparazione per l'uso in ambiente di produzione. Per questo lavoro, [grunt](https://github.com/cowboy/grunt) di Ben Alman non è secondo a nessuno e ha ufficialmente rimpiazzato la directory "kits/" di questo repo.
 
 
 
@@ -211,7 +226,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // Sbagliato
     var foo = "";
     var bar = "";
-    var quux;
+    var qux;
 
     // Corretto
     var foo = "",
@@ -824,13 +839,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 6. <a name="naming">Nomenclatura</a>
 
 
-    Voi non siete dei compilatori/compressori umani di codice, perciò non provate ad esserlo.
+    A. Voi non siete dei compilatori/compressori umani di codice, perciò non provate ad esserlo.
 
     Il seguente codice è un esempio di tremenda nomenclatura:
 
     ```javascript
 
-    // 6.1.1
+    // 6.A.1.1
     // Esempio di codice con nomi per niente chiari
 
     function q(s) {
@@ -840,13 +855,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Sicuramente avrete scritto codice come questo - con la speranza che ciò termini oggi.
+    Sicuramente avrete scritto codice come questo - con la speranza che ciò finisca oggi.
 
     Ecco lo stesso pezzo di codice, ma con una nomencaltura più riflessiva ed esplicativa (ed una struttura leggibile):
 
     ```javascript
 
-    // 6.2.1
+    // 6.A.2.1
     // Esempio di codice con nomi migliorati
 
     function query( selector ) {
@@ -863,40 +878,41 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     }
     ```
 
-    Alcune ulteriori considerazioni:
+    A. Alcune ulteriori considerazioni:
 
     ```javascript
 
-    // 6.3.1
+    // 6.A.3.1
     // Nominare stringhe
 
     `dog` è una stringa
 
 
-    // 6.3.2
+    // 6.A.3.2
     // Nominare array
 
     `dogs` è un array di stringhe `dog`
 
 
-    // 6.3.3
+    // 6.A.3.3
     // Nominare funzioni, oggetti, istanze, ecc.
 
     camelCase; dichiarazioni di funzione e variabile
 
-    // 6.3.4
+
+    // 6.A.3.4
     // Nominare costruttori, prototipi, ecc.
 
     PascalCase; funzione costruttore
 
 
-    // 6.3.5
+    // 6.A.3.5
     // Nominare espressioni regolari
 
     rDesc = //;
 
 
-    // 6.3.6
+    // 6.A.3.6
     // Dalla guida allo stile della libreria di Google Closure
 
     functionNamesLikeThis;
@@ -906,10 +922,162 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     methodNamesLikeThis;
     SYMBOLIC_CONSTANTS_LIKE_THIS;
 
+    ```
 
+    B. La varie faccie di `this`
+    
+    Oltre i generalmente ben conosciuti casi d'uso di `call` e `apply`, preferite sempre `.bind( this )` o una funzione equivalente, per la creazione di definizioni `BoundFunction` che dovranno successivamente essere invocate. Ricorrete all'aliasing solo quando non ci sono altre opzioni preferibili.
+    
+    ```javascript
+    
+    // 6.B.1
+    function Device( opts ) {
+    
+      this.value = null;
+      
+      // apre uno stream asincrono,
+      // questo verrà richiamato continuamente
+      stream.read( opts.path, function( data ) {
+      
+        // Aggiorna il valore corrente di questa istanza
+        // con il più recente valore recuperato dallo
+        // stream di dati
+        
+      }.bind( this );
+      
+      // Regola la frequenza degli eventi emessi da
+      // questa istanza di Device
+      setInterval(function() {
+        
+        // Emette un evento regolato
+        this.emit("event");
+        
+      }.bind( this ), opts.freq || 100 );
+    }
+    
+    // Fate finta che abbiamo ereditato EventEmitter ;)
+    
+    ```
+    
+    Quando non disponibile, funzioni equivalenti a `.bind` esistono in molte librerie JavaScript moderne.
+    
+    
+    ```javascript
+    // 6.B.2
+    
+    // es. lodash/underscore, _.bind()
+    function Device( opts ) {
+    
+      this.value = null;
+      
+      stream.read( opts.path, _.bind(function( data ) {
+      
+        this.value = data;
+        
+      }, this) );
+      
+      setInterval(_.bind(function() {
+      
+        this.emit("event");
+        
+      }, this), opts.freq || 100 );
+    }
+    
+    // es. jQuery.proxy
+    function Device( opts ) {
+    
+      this.value = null;
+      
+      stream.read( opts.path, jQuery.proxy(function( data ) {
+      
+        this.value = data;
+        
+      }, this) );
+      
+      setInterval( jQuery.proxy(function() {
+      
+        this.emit("event");
+        
+      }, this), opts.freq || 100 );
+    }
+    
+    // es. dojo.hitch
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, dojo.hitch( this, function( data ) {
+
+        this.value = data;
+
+      }) );
+
+      setInterval( dojo.hitch( this, function() {
+
+        this.emit("event");
+
+      }), opts.freq || 100 );
+    }
+    
+    ```
+    
+    Come ultima risorsa, create un alias a `this` usando `self` come identificatore. Con questo approccio è estremamente facile generare bug e dovrebbe essere evitato ogni volta che è possibile.
+      
+    ```javascript
+      
+    // 6.B.3
+
+    function Device( opts ) {
+      var self = this;
+
+      this.value = null;
+
+      stream.read( opts.path, function( data ) {
+
+        self.value = data;
+
+      });
+
+      setInterval(function() {
+
+        self.emit("event");
+
+      }, opts.freq || 100 );
+    }
 
     ```
 
+
+    C. Uso di `thisArg`
+    
+    Diversi metodi prototipo interni a ES 5.1 forniscono una speciale firma `thisArg`, che dovrebbe essere usata tutte le volte che è possibile
+    
+    ```javascript
+    
+    // 6.C.1
+    
+    var obj;
+    
+    obj = { f: "foo", b: "bar", q: "qux" };
+
+    Object.keys( obj ).forEach(function( key ) {
+
+      // |this| ora fa riferimento a `obj`
+
+      console.log( this[ key ] );
+
+    }, obj ); // <-- l'ultimo argomento è `thisArg`
+
+    // Stampa...
+
+    // "foo"
+    // "bar"
+    // "qux"
+
+    ```
+
+    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.filter`
+    
 7. <a name="misc">Varie</a>
 
     Questa sezione servirà ad illustrare idee e concetti che non dovrebbero essere considerati un dogma, ma che invece esistono per incoraggiare pratiche di analisi nel tentativo di ricercare le migliori modalità per fare lavori di programmazione JavaScript comuni.
