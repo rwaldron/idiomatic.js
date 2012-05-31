@@ -1,5 +1,8 @@
 # Principles of Writing Consistent, Idiomatic JavaScript
 
+## "Arguments over style are pointless. There should be a style guide, and you should follow it" - Rebecca Murphey
+
+
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
