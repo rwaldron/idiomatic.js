@@ -1,7 +1,5 @@
 # Principles of Writing Consistent, Idiomatic JavaScript
 
-## "Arguments over style are pointless. There should be a style guide, and you should follow it" - Rebecca Murphey
-
 
 ## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
@@ -29,7 +27,14 @@
 
 ### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
 
-> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec." - Idan Gazit
+
+> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
+>_Rebecca_ _Murphey_
+
+&nbsp;
+
+> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
+>_Idan_ _Gazit_
 
 
 ## Translations
