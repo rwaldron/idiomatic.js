@@ -25,7 +25,7 @@
 
 ### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
-### I do not intend to impose my style preferences on other people's code; if they have an existing common style - this should be respected.
+### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
 
 
 > ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
@@ -51,7 +51,7 @@
 
 ## Important, Non-Idiomatic Stuff:
 
-### Code Quality: Awesome Tools, Resources & References
+### Code Quality Tools, Resources & References
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -60,12 +60,10 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+## Get Smart
 
-
-### Get Smart
-
-[http://es5.github.com/](http://es5.github.com/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
 The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
 
@@ -76,6 +74,9 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
+ * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+
+
 
 
 ### Build & Deployment Process
