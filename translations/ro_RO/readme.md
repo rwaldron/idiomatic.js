@@ -598,7 +598,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     // De remarcat că cele de mai sus trebuie considerate "inteligente inutil"
     // E de preferat abordarea evidentă a comparării valorii returnate de
-    // indexOf, precum:
+    // indexOf, după cum urmează:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -650,111 +650,111 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Evaluare Condițională</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Când se evaluează dacă un array are dimensiune,
+    // în loc de:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...se evaluează valoarea de adevăr, după cum urmează:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Când se evaluează dacă un array este gol,
+    // în loc de:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...se evaluează valoarea de adevăr, după cum urmează:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Când se evaluează dacă un string nu este gol,
+    // în loc de:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...se evaluează valoarea de adevăr, după cum urmează:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Când se evaluează dacă un string _este_ gol,
+    // în loc de:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...se evaluează falsitatea, după cum urmează:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Când se evaluează dacă o referință este adevarată,
+    // în loc de:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...se evaluează așa cum are sens, profitând de capacitățile native ale limbajului:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Când se evaluează dacă o referință este falsă,
+    // în loc de:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...se folosește negarea pentru a constrânge o evaluare adevarată
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Atenție, această declarație va funcționa și cu: 0, "", null, undefined, NaN
+    // Dacă _TREBUIE_ verificată o valoare booleană falsă, se folosește
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Când se evaluează numai o referință care poate fi null sau undefined, dar NU și false, "" sau 0,
+    // în loc de:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...trebuie profitat de constrângerea tipului ==, după cum urmează:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Reține, folosirea == va corespunde cu `null` atât pentru `null` cât și pentru `undefined`
+    // dar nu și pentru `false`, "" sau 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    Se evaluează ÎNTOTDEAUNA pentru cel mai bun, cel mai precis rezultat - instrucțiunile de mai sus sunt o recomandare, nu o dogmă.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Tipuri de constrângere și note de evaluare
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // Se preferă `===` în pofida `==` (cu excepția cazului care necesită evaluarea tipului declarat)
 
-    // === does not coerce type, which means that:
+    // === nu constrânge tipul, ceea ce înseamnă că:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == constrânge tipul, ceea ce înseamnă că:
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Booleans, Truthies & Falsies
+    // Valori Boolene, de Adevăr și Negative
 
-    // Booleans:
+    // Boolene:
     true, false
 
-    // Truthy:
+    // Valori de Adevăr:
     "foo", 1
 
-    // Falsy:
+    // Valori Negative:
     "", 0, null, undefined, NaN, void 0
 
     ```
