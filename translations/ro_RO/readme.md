@@ -28,7 +28,7 @@
 ### Nu intenționez să impun preferințele mele de stilizare a codului altor oameni sau proiecte; în cazul în care un stil comun există, ar trebui respectat.
 
 
-> ### "Argumentele de stilizare sunt inutile. Ar trebui să existe un ghid de stil, şi ar trebui urmat"
+> ### "Dezbaterile asupra stilizării sunt inutile. Ar trebui să existe un ghid de stil, şi ar trebui urmat"
 >_Rebecca_ _Murphey_
 
 &nbsp;
@@ -82,7 +82,7 @@ Următoarele ar trebui să fie considerate 1) incomplete, și 2) *LECTURĂ OBLIG
 
 ### Procesul de Build & Deployment
 
-Proiectele ar trebui să încerce mereu să includă unele mijloace generice, care pot fi validate (linted), testate și comprimate în vederea pregătirii pentru producție. Pentru această activitate, [grunt](https://github.com/cowboy/grunt) de Ben Alman este principala opțiune și a înlocuit oficial directorul "kits/" al acestui repozitoriu.
+Proiectele ar trebui să încerce mereu să includă unele mijloace prin care sursele pot fi validate (linted), testate și comprimate în vederea pregătirii pentru producție. Pentru această activitate, [grunt](https://github.com/cowboy/grunt) de Ben Alman este principala opțiune și a înlocuit oficial directorul "kits/" al acestui repozitoriu.
 
 
 
@@ -125,185 +125,185 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
 
 
-## Idiomatic Style Manifesto
+## Manifest de stil idiomatic
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+1. <a name="whitespace">Spațierea</a>
+  - Nu se amestecă spațiile albe cu taburile.
+  - La începutul unui proiect, înainte de a începe să scrii cod, alege între spațiere soft (spații) sau taburi - consideră aceasta **lege**.
+      - Pentru lizibilitate, recomand configurarea setării de indentare a editorului la 2 caractere &mdash; asta înseamnă două spații sau două spații reprezentând un tab real.
+  - Dacă editorul suportă, opțiunea "show invisibles" ar trebui să fie bifată. Beneficiile acestei practici sunt:
+      - Consecvență aplicată
+      - Eliminarea spațiilor albe de la sfîrșitul liniei
+      - Eliminarea rândurilor libere
+      - Commit-urile și diff-urile sunt mai ușor de citit
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+2. <a name="spacing">Sintaxă curată</a>
 
-    A. Parens, Braces, Linebreaks
+    A. Parantezele, Acoladele, Liniile noi
 
     ```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/try au întotdeauna spații, acolade și se întind pe mai multe linii
+    // asta încurajează lizibilitatea codului
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Exemple de sintaxă foarte înghesuită
 
     if(condition) doSomething();
 
-    while(condition) iterating++;
+    while(condition) iterating++;   
 
     for(var i=0;i<100;i++) someIterativeFn();
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Folosește spațiere pentru a încuraja lizibilitatea codului
 
     if ( condition ) {
-      // statements
+      // declarații
     }
 
     while ( condition ) {
-      // statements
+      // declarații
     }
 
     for ( var i = 0; i < 100; i++ ) {
-      // statements
+      // declarații
     }
 
-    // Even better:
+    // De preferat:
 
     var i,
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
-      // statements
+      // declarații
     }
 
-    // Or...
+    // Sau...
 
     var i = 0,
       length = 100;
 
     for ( ; i < length; i++ ) {
-      // statements
+      // declarații
     }
 
     var prop;
 
     for ( prop in object ) {
-      // statements
+      // declarații
     }
 
 
     if ( true ) {
-      // statements
+      // declarații
     } else {
-      // statements
+      // declarații
     }
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+    B. Atribuiri, Declarații, Funcții ( Nomenclatura, Expresie, Constructor )
 
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Variabile
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Notații literale:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) promotes readability
-    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+    // Folosirea unei singure `var` per context (funcție) încurajează lizibilitatea codului
+    // și păstrează lista declarațiilor în ordine (de asemenea te scutește de câteva tastări)
 
-    // Bad
+    // Incorect
     var foo = "";
     var bar = "";
     var qux;
 
-    // Good
+    // Corect
     var foo = "",
       bar = "",
       quux;
 
-    // or..
-    var // Comment on these
+    // sau..
+    var // Comentarii
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+    // declarațiile de variable trebuie să fie la începutul contextului lor respectiv (funcției).
+    // Același lucru se aplică pentru const și let din ECMAScript 6.
 
-    // Bad
+    // Incorect
     function foo() {
 
-      // some statements here
+      // unele declarații aici
 
       var bar = "",
         qux;
     }
 
-    // Good
+    // Corect
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // restul codului după declarațiile de variabile
     }
     ```
 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // Declarație de funcție denumită
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Utilizare
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // Declarație de funcție denumită
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Utilizare
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Stil de transmitere a continuării foarte complicat
     function square( number, callback ) {
       callback( number * number );
     }
 
     square( 10, function( square ) {
-      // callback statements
+      // declarații callback
     });
 
 
     // 2.B.2.3
-    // Function Expression
+    // Exprimarea Funcției
     var square = function( number ) {
-      // Return something valuable and relevant
+      // returnează ceva valoros și relevant
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Exprimarea Funcției și Identificator
+    // Această formă preferată are valoarea adăugată de a fi
+    // capabilă de a se invoca și de a avea o identitate în stiva de comenzi
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -314,13 +314,13 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Declarația Constructor-ului
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Utilizare
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -329,73 +329,73 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     ```
 
 
-    C. Exceptions, Slight Deviations
+    C. Excepții, Ușoare Abateri
 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Funcții cu callbacks
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // De observat că nu există spațiu intre prima paranteză
+      // a funcției în execuție și cuvântul "function"
     });
 
-    // Function accepting an array, no space
+    // Funcție care primește ca parametru un array, fără spații
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Funcție care primește ca paremtru un obiect, fără spații
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Un singur argument literal de tip string, fără spații
     foo("bar");
 
-    // Inner grouping parens, no space
+    // Paranteze interioare grupate, fără spații
     if ( !("foo" in obj) ) {
 
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Consecvența are câștig de cauză întotdeauna
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    În secțiunile 2.A-2.C, normele de spațiere sunt stabilite drept o recomandare cu un scop simplu și precis: consecvența.
+    E important de reținut că preferințele de formatare, precum "spațierea interioară" ar trebui să fie considerate opționale, dar un singur stil ar trebui să existe pe întreaga sursă a proiectului.
 
     ```javascript
 
     // 2.D.1.1
 
     if (condition) {
-      // statements
+      // declarații
     }
 
     while (condition) {
-      // statements
+      // declarații
     }
 
     for (var i = 0; i < 100; i++) {
-      // statements
+      // declarații
     }
 
     if (true) {
-      // statements
+      // declarații
     } else {
-      // statements
+      // declarații
     }
 
     ```
 
-    E. Quotes
+    E. Ghilimele
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Fie că preferi ghilimele simple sau duble nu ar trebui să conteze, nu există o diferență în modul de parsare al JavaScript. Ce trebuie **NEAPĂRAT FĂCUT** este să primeze consecvența. **Nu amesteca tipul de ghilimele în același proiect. Alege un stil și ține-te de el.**
 
-    F. End of Lines and Empty Lines
+    F. Sfîrșitul de Linii și Liniile Goale
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Spațiile albe pot ruina diff-urile și pot randa modificările imposibil de citit. Ia în calcul incorporarea unui hook pre-commit care elimină automat spațiile albe de la sfîrșitul liniilor și spațiile goale de pe liniile libere.
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
