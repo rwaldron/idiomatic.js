@@ -841,18 +841,18 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Nomenclatură</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Nu ești un compilator/compresor de cod uman, deci nu încerca să fii unul.
 
-    The following code is an example of egregious naming:
+    Următorul cod este un exemplu de nomenclatură greșită:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Exemplu de cod cu denumire slabă
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -861,14 +861,14 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+    Fără nicio îndoială, ai scris cod ca acesta - sperăm să se încheie azi.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    Iată aceeași bucată de cod, dar cu o nomenclatură simpatică, mai expresivă (și o structură mai lizibilă):
 
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Exemplu de cod cu nomenclatură îmbunătățită
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -885,42 +885,42 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     ```
 
-    A few additional naming pointers:
+    Câteva indicii suplimentare de nomenclatură:
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Nume de string-uri
 
-    `dog` is a string
+    `dog` e un string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Nume de array-uri
 
-    `dogs` is an array of `dog` strings
+    `dogs` e un array de string-uri `dog`
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Nume de funcții, obiecte, instanțe, etc
 
-    camelCase; function and var declarations
+    camelCase; funcții și declarații de variabile
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+    // Nume de constructori, prototipuri, etc.
 
-    PascalCase; constructor function
+    PascalCase; funcție constructor
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Nume de expresii regulate
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // Din ghidul de stil al librăriei Google Closure
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -931,9 +931,9 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     ```
 
-    B. Faces of `this`
+    B. Variații ale `this`
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+    Dincolo de uzul general al metodelor `call` și `apply`, se preferă întotdeauna `.bind( this )` sau o funcție echivalentă, pentru a crea definiții `BoundFunction` pentru invocarea ulterioară. Se recurge la aliasing când nu mai sunt alte opțiuni disponibile.
 
     ```javascript
 
@@ -942,32 +942,32 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // deschide un stream asincron,
+      // care va fi apelat continuu
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // Actualizează valoarea actuală a acestei instanțe
+        // cu cea mai recentă valoare din
+        // streamul de date
         this.value = data;
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
+      // Reglează frecvența evenimentelor emise de
+      // această instanță Device
       setInterval(function() {
 
-        // Emit a throttled event
+        // Emite un eveniment regulator
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // Pretindem că am moștenit EventEmitter ;)
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Când nu e disponibil, echivalente funcționale pentru `.bind` există în multe librării JavaScript moderne.
 
 
     ```javascript
@@ -1029,7 +1029,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    În ultimă instanță, creează un alias pentru `this` folosind `self` drept Identifier. Această soluție este predispusă la bug-uri și trebuie evitată ori de câte ori este posibil.
 
     ```javascript
 
@@ -1056,9 +1056,9 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     ```
 
 
-    C. Use `thisArg`
+    C. Folosește `thisArg`
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    Mai multe metode prototype native din ES 5.1 vin cu semnătură `thisArg` specială, care ar trebui folosită ori de câte ori este posibil
 
     ```javascript
 
@@ -1070,13 +1070,13 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| se referă acum la `obj`
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- ultimul argument este `thisArg`
 
-    // Prints...
+    // Afișează...
 
     // "foo"
     // "bar"
@@ -1084,7 +1084,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` poate fi folosit împreună cu `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Misc</a>
 
