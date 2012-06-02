@@ -284,7 +284,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     // Utilizare
     square( 10 );
 
-    // Stil de transmitere a continuării foarte complicat
+    // Stil foarte artificial de transmitere a continuității
     function square( number, callback ) {
       callback( number * number );
     }
@@ -395,11 +395,11 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     F. Sfîrșitul de Linii și Liniile Goale
 
-    Spațiile albe pot ruina diff-urile și pot randa modificările imposibil de citit. Ia în calcul incorporarea unui hook pre-commit care elimină automat spațiile albe de la sfîrșitul liniilor și spațiile goale de pe liniile libere.
+    Spațiile albe pot distruge diff-urile și pot randa modificările imposibil de citit. Ia în calcul incorporarea unui hook pre-commit care elimină automat spațiile albe de la sfîrșitul liniilor și spațiile goale de pe liniile libere.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Verificarea tipului (Curtoazie a indicațiilor stilistice din jQuery Core)</a>
 
-    A. Actual Types
+    A. Tipuri Existente
 
     String:
 
@@ -420,7 +420,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     Array:
 
         Array.isArray( arrayLikeObject )
-        (wherever possible)
+        (ori de câte ori este posibil)
 
     Node:
 
@@ -430,31 +430,31 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
         variable === null
 
-    null or undefined:
+    null sau undefined:
 
         variable == null
 
     undefined:
 
-      Global Variables:
+      Variabile Globale:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Variabile Locale:
 
         variable === undefined
 
-      Properties:
+      Proprietăți:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+    B. Tipuri Constrânse
 
-    Consider the implications of the following...
+    Luați în considerare implicațiile următoarelor...
 
-    Given this HTML:
+    Dat fiind codul HTML:
 
     ```html
 
@@ -467,20 +467,20 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` a fost declarat cu valoarea `0` și este de tipul `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Ulterior, trebuie actualizată variabila `foo`
+    // cu o nouă valoare derivată dintr-un element `input`
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Dacă ar fi să verificați `typeof foo` acum, rezultatul ar fi `string`
+    // Asta înseamnă că dacă ați fi avut logică care să verifice `foo` în următoarea manieră:
 
     if ( foo === 1 ) {
 
@@ -488,15 +488,15 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // `importantTask()` nu s-ar evalua, chiar dacă `foo` are valoarea "1"
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Se pot anticipa asftel de probleme prin folosirea operatorilor unari + sau -:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ operatorul unar + va converti operandul din dreapta într-un număr
 
     // typeof foo;
     // "number"
@@ -507,10 +507,10 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` va fi apelat
     ```
 
-    Here are some common cases along with coercions:
+    Câteva cazuri comune, alături de constrângeri:
 
 
     ```javascript
@@ -596,9 +596,9 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // De remarcat că cele de mai sus trebuie considerate "inteligente inutil"
+    // E de preferat abordarea evidentă a comparării valorii returnate de
+    // indexOf, precum:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -613,7 +613,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // e la fel ca...
 
     ~~num;
 
@@ -621,27 +621,27 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     num >>> 0;
 
-    // All result in 2
+    // Toate au ca rezultat 2
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // De reținut totuși, numerele negative vor fi tratate diferit...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // e la fel ca...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Toate au ca rezultat -2
+    // Totuși...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // Va avea ca rezultat 4294967294
 
 
 
