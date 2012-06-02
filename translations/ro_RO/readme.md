@@ -760,12 +760,12 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Stil practic</a>
 
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Un modul practic
 
     (function( global ) {
       var Module = (function() {
@@ -773,30 +773,30 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Aceasta este o proprietate booleană
           bool: true,
-          // Some string value
+          // O valoare string oarecare
           string: "a string",
-          // An array property
+          // O proprietare de tip array
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // O proprietate de tip obiect
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // get the current value of `data`
+            // returnează valoarea actuală a variabilei `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // setează valoarea variabilei `data` și o returnează
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Alte instrucțiuni pot urma aici
 
-      // expose our module to the global object
+      // expune modulul obiectului global
       global.Module = Module;
 
     })( this );
@@ -806,7 +806,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Un Constructor Practic
 
     (function( global ) {
 
@@ -826,13 +826,13 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // Pentru a apela constructorul fără `new`, se poate utiliza:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // expune modulul obiectului global
       global.ctor = ctor;
 
     })( this );
