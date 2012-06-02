@@ -1,7 +1,7 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Principii de scriere cod JavaScript consistent și idiomatic
 
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Acesta este un document în continuă dezvoltare și noi idei pentru îmbunătățirea codului pe care-l scriem sunt întotdeauna binevenite. Contribuie și tu: fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -21,23 +21,23 @@
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
 
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+## Tot codul dintr-o aplicație trebuie să arate ca și cum ar fi fost scris de o singură persoană, indiferent de câți oameni au contribuit la scrierea lui.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+### Următoarea listă subliniază practicile pe care le folosesc în aplicațiile al căror autor original sunt; contribuțiile la proiectele pe care le-am creat ar trebui să urmeze aceste indicații.
 
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
+### Nu intenționez să impun preferințele mele de stilizare a codului altor oameni sau proiecte; în cazul în care un stil comun există, ar trebui respectat.
 
 
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
+> ### "Argumentele de stilizare sunt inutile. Ar trebui să existe un ghid de stil, şi ar trebui urmat"
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
+> ### "Una din condițiile pentru a fi un bun administrator al unui proiect de succes este realizarea faptului că a scrie cod pentru tine este o IDEE REA™. Dacă mii de oameni îți folosesc codul, atunci scrie cod pentru claritate maximă, nu după preferințele personale de a deveni expert în specificații."
 >_Idan_ _Gazit_
 
 
-## Translations
+## Traduceri
 
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
@@ -47,11 +47,12 @@
 * [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
 * [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
 
 
-## Important, Non-Idiomatic Stuff:
+## Conținut Important și Non-Idiomatic:
 
-### Code Quality Tools, Resources & References
+### Calitatea codului: Unelte, Resurse și Referințe
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -60,12 +61,12 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-## Get Smart
+## Învață
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 5.1 Adnotat](http://es5.github.com/)
+### [Specificațiile EcmaScript, Ediția 5.1](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Următoarele ar trebui să fie considerate 1) incomplete, și 2) *LECTURĂ OBLIGATORIE*. Nu sunt întotdeauna de acord cu stilul promovat de următorii autori, dar un lucru este clar: Sunt consecvenți. Mai mult decât atât, ei reprezintă autorități ale limbajului.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -79,16 +80,16 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 
 
-### Build & Deployment Process
+### Procesul de Build & Deployment
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
+Proiectele ar trebui să încerce mereu să includă unele mijloace generice, care pot fi validate (linted), testate și comprimate în vederea pregătirii pentru producție. Pentru această activitate, [grunt](https://github.com/cowboy/grunt) de Ben Alman este principala opțiune și a înlocuit oficial directorul "kits/" al acestui repozitoriu.
 
 
-### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+
+### Procesul de Testare
+
+Proiectele _trebuie_ să includă o formă sau alta de testare unitară, de referință, de implementare sau funcțională. Studiile de caz NU SE CONSIDERĂ "teste". Lista următoare este o listă de framework-uri de testare, niciunul dintre ele nefiind mai avizat decât celălalt.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -98,27 +99,27 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
 
-## Table of Contents
+## Cuprins
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Spațiile albe](#whitespace)
+ * [Sintaxă plăcută](#spacing)
+ * [Verificarea tipului (Curtoazie a indicațiilor stilistice din jQuery Core)](#type)
+ * [Evaluare condițională](#cond)
+ * [Stil practic](#practical)
+ * [Nomenclatura](#naming)
+ * [Diverse](#misc)
+ * [Obiecte native și gazdă](#native)
+ * [Comentarii](#comments)
+ * [Un cod, un limbaj](#language)
 
 
 
 ------------------------------------------------
 
 
-## Preface
+## Prefață
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvoltarea modernă de cod JavaScript și nu sunt menite să fie normative. Cea mai importantă de reținut este **legea coerenței stilului de cod**. Orice stil ai considera pentru proiectul tău trebuie considerat lege. Consideră acest document ca o declarație a consistenței, lizibilității și mentenabilității proiectului tău.
 
 
 

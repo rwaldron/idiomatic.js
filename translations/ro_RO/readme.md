@@ -119,7 +119,7 @@ Proiectele _trebuie_ să includă o formă sau alta de testare unitară, de refe
 
 ## Prefață
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvoltarea modernă de cod JavaScript și nu sunt menite să fie normative. Cea mai importantă de reținut este **legea coerenței stilului de cod**. Orice stil ai considera pentru proiectul tău trebuie considerat lege. Consideră acest document ca o declarație a consistenței, lizibilității și mentenabilității proiectului tău.
 
 
 
