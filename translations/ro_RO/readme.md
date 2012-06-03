@@ -1,4 +1,4 @@
-# Principii de scriere cod JavaScript consistent și idiomatic
+# Principii de codare consistentă și idiomatică în JavaScript
 
 
 ## Acesta este un document în continuă dezvoltare și noi idei pentru îmbunătățirea codului pe care-l scriem sunt întotdeauna binevenite. Contribuie și tu: fork, clone, branch, commit, push, pull request.
@@ -1086,22 +1086,22 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     `thisArg` poate fi folosit împreună cu `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Diverse</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Această secțiune ilustrează idei și concepte care nu ar trebui considerate dogmatice, ci există pentru a încuraja practicile de punere sub semnul întrebării într-o încercare de a găsi căi mai bune pentru a executa sarcini comune în programarea JavaScript.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. Utilizarea `switch` ar trebui evitată, metode moderne de tracing vor trece funcțiile cu declarații switch pe lista neagră
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    Se pare că există îmbunătățiri drastice ale executării declarațiilor `switch` în ultimele versiuni Firefox și Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnesses here as well:
+    îmbunătățiri notabile pot fi observate și aici:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Un exemplu de declarație switch
 
     switch( foo ) {
       case "alpha":
@@ -1111,71 +1111,71 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
         beta();
         break;
       default:
-        // something to default to
+        // execută implicit
         break;
     }
 
     // 7.A.1.2
-    // A better approach would be to use an object literal or even a module:
+    // O abordare mai bună ar fi folosirea un obiect literal sau chiar a unui modul:
 
     var switchObj = {
       alpha: function() {
-        // statements
-        // a return
+        // declarații
+        // return
       },
       beta: function() {
-        // statements
-        // a return
+        // declarații
+        // return
       },
       _default: function() {
-        // statements
-        // a return
+        // declarații
+        // return
       }
     };
 
     var switchModule = (function () {
       return {
         alpha: function() {
-          // statements
-          // a return
+          // declarații
+          // return
         },
         beta: function() {
-          // statements
-          // a return
+          // declarații
+          // return
         },
         _default: function() {
-          // statements
-          // a return
+          // declarații
+          // return
         }
       };
     })();
 
 
     // 7.A.1.3
-    // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+    // Dacă `foo` este o proprietate a `switchObj` sau a `switchModule`, execută ca o metodă...
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-    // If you know and trust the value of `foo`, you could even omit the OR check
-    // leaving only the execution:
+    // Dacă știți și aveți încredere în valoarea lui `foo`, ați putea chiar omite verificarea OR
+    // păstrând doar execuția:
 
     switchObj[ foo ]( args );
 
     switchModule[ foo ]( args );
 
 
-    // This pattern also promotes code reusability.
+    // Acest șablon încurajează, de asemenea, reutilizarea codului.
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. "Return"-urile timpurii încurajează lizibilitatea codului cu diferențe de performanță neglijabile
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Incorect:
     function returnLate( foo ) {
       var ret;
 
@@ -1187,7 +1187,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
       return ret;
     }
 
-    // Good:
+    // Corect:
 
     function returnEarly( foo ) {
 
