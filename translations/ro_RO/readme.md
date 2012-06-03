@@ -1200,35 +1200,35 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Obiecte native și gazdă</a>
 
-    The basic principle here is:
+    Principiul de bază aici este:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Nu fă nimic stupid și totul va fi în regulă.
 
-    To reinforce this concept, please watch the following presentation:
+    Pentru a consolida acest concept, vizionați următoarea prezentare:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Everything is Permitted: Extending Built-ins” de Andrew Dupont (JSConf2011, Portland, Oregon)
 
     <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Comentarii</a>
 
-  * Single line above the code that is subject
-  * Multiline is good
-  * End of line comments are prohibited!
-  * JSDoc style is good, but requires a significant time investment
+  * O singură linie deasupra codului la care se referă
+  * Comentariile pe mai multe linii sunt bune
+  * Comentariile la sfârșitul de linie sunt interzise!
+  * Stilul din JSDoc este bun, dar necesită o investiție substanțială de timp
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">Un cod, un limbaj</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    Programele ar trebui scrise într-un singur limbaj, oricare ar fi el, așa cum a fost dictat de administrator sau administratori.
 
-## Appendix
+## Anexă
 
-### Comma First.
+### Prima virgulă (Comma First).
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Orice proiect care are ca referință acest document la baza ghidului de stilizare nu va accepta o formatare de tip prima virgulă (comma first), cu excepția cazului în care acest lucru a fost specificat diferit de autorul proiectului.
