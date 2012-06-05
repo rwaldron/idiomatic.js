@@ -28,7 +28,7 @@
 ### Nu intenționez să impun preferințele mele de stilizare a codului altor oameni sau proiecte; în cazul în care un stil comun există, ar trebui respectat.
 
 
-> ### "Dezbaterile asupra stilizării sunt inutile. Ar trebui să existe un ghid de stil, şi ar trebui urmat"
+> ### "Dezbaterile asupra stilizării sunt inutile. Ar trebui să existe un ghid de stilizare, şi ar trebui urmat"
 >_Rebecca_ _Murphey_
 
 &nbsp;
