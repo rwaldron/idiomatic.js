@@ -1,5 +1,6 @@
 # 一貫性のある慣用的なJavaScriptの書き方
 
+
 ## これは継続しているドキュメントであるため、私たちのコードを改善できる新しいアイデアを常に歓迎します。貢献方法: fork、clone、branch、commit、push、pull request。
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
@@ -16,27 +17,40 @@
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
 * Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
+* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
+* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+
 
 ## どんなに多くの人が貢献したとしても、どのコードも一人で書いたようにするべきです。
 
 ### 次の項目では私のすべてのコードで使用しているプラクティスを説明しているため、私のプロジェクトに貢献する場合はこれらのガイドラインを理解していなければなりません。
 
-### 私は皆さんのコードに私のスタイルを押し付けるつもりはありませんし、もしすでに共通のスタイルがあるのであればそちらを順守すべきです。
+### 私は皆さんのコードやプロジェクトに私のスタイルを押し付けるつもりはありませんし、もしすでに共通のスタイルがあるのであればそちらを順守すべきです。
 
-> "成功を収めるプロジェクトをうまく管理することの一つが自分でコードを書いて実現するということではありません。もし多くの人があなたのコードを利用しているなら、仕様の中にはあなたの好みではなく、最大限に明確なコードを書きましょう。" - Idan Gazit
 
+> ### "スタイルに関する議論は無意味です。ここにあるスタイルガイドにあなたは従うべきです。"
+>_Rebecca_ _Murphey_
+
+&nbsp;
+
+> ### "成功を収めるプロジェクトをうまく管理することの一つが自分でコードを書いて実現するということではありません。もし多くの人があなたのコードを利用しているなら、仕様の中にはあなたの好みではなく、最大限に明確なコードを書きましょう。" - Idan Gazit
+>_Idan_ _Gazit_
 
 ## 翻訳
 
+* [ドイツ語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [フランス語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [スペイン語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
 * [ポルトガル語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [韓国語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
 * [日本語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [イタリア語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [ロシア語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+
 
 ## 慣用的ではないもの（重要）:
 
-### コードの品質: 素晴らしいツールや情報とリファレンス
+### コードの品質ツールや情報とリファレンス
 
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -45,12 +59,11 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-[Anton KovalyovによるLeveraging Code Quality Tools](http://anton.kovalyov.net/slides/gothamjs/)
 
+## 賢くなろう
 
-### 賢くなろう
-
-[http://es5.github.com/](http://es5.github.com/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
 下記の事項は 1) 不完全、2) *必読*ということを熟考しなければなりません。私はこれらの作者によるスタイルに常に同意はしていませんが、彼らは一貫性があるため信頼できるのも確かです。その上、これらは言語の世界では権威があるものです。
 
@@ -61,6 +74,9 @@
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
+ * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+
+
 
 
 ### ビルドとデプロイのプロセス
@@ -446,7 +462,7 @@
     ```
 
 
-    ```js
+    ```javascript
 
     // 3.B.1.1
 
@@ -821,13 +837,13 @@
 6. <a name="naming">ネーミング</a>
 
 
-    あなたがコードをコンパイルしたり圧縮したりするわけではないので、そういった事をしようとしてはいけません。
+    A. あなたがコードをコンパイルしたり圧縮したりするわけではないので、そういった事をしようとしてはいけません。
 
     次のコードはひどいネーミングの例です:
 
     ```javascript
 
-    // 6.1.1
+    // 6.A.1.1
     // 悪い名前を使ったコードの例
 
     function q(s) {
@@ -843,7 +859,7 @@
 
     ```javascript
 
-    // 6.2.1
+    // 6.A.2.1
     // 改善したネーミングを使ったコードの例
 
     function query( selector ) {
@@ -855,7 +871,7 @@
       matches = query("#foo"),
       length = matches.length;
 
-    for( ; idx < length; idx++ ){
+    for ( ; idx < length; idx++ ) {
       elements.push( matches[ idx ] );
     }
 
@@ -865,37 +881,37 @@
 
     ```javascript
 
-    // 6.3.1
+    // 6.A.3.1
     // 文字列のネーミング
 
     `dog` は文字列です
 
 
-    // 6.3.2
+    // 6.A.3.2
     // 配列のネーミング
 
     `dogs` は `dog` という文字列の配列です
 
 
-    // 6.3.3
+    // 6.A.3.3
     // 関数、オブジェクト、インスタンスなどのネーミング
 
     camelCase; function と var による宣言
 
 
-    // 6.3.4
+    // 6.A.3.4
     // コンストラクターやプロトタイプなどのネーミング
 
     PascalCase; コンストラクター
 
 
-    // 6.3.5
+    // 6.A.3.5
     // 正規表現のネーミング
 
     rDesc = //;
 
 
-    // 6.3.6
+    // 6.A.3.6
     // Google Closure Library Style Guideより
 
     functionNamesLikeThis;
@@ -905,9 +921,161 @@
     methodNamesLikeThis;
     SYMBOLIC_CONSTANTS_LIKE_THIS;
 
+    ```
 
+    B. `this` の扱い
+
+    後から呼び出される `BoundFunction` を定義する場合は `call` や `apply` の一般的な使われ方よりも `.bind( this )` や同等の機能が好ましいです。好ましいオプションがない場合だけ、別の方法を考えましょう。
+
+    ```javascript
+
+    // 6.B.1
+    function Device( opts ) {
+
+      this.value = null;
+
+      // これは非同期のストリームをオープンし
+      // 継続的に呼び出されます
+      stream.read( opts.path, function( data ) {
+
+        // このインスタンスの現在の値を
+        // データストリームの最新の値で更新します
+        this.value = data;
+
+      }.bind(this) );
+
+      // デバイスのインスタンスから頻繁に発行される
+      // イベントを絞ります
+      setInterval(function() {
+
+        // 絞ったイベントを発行します
+        this.emit("event");
+
+      }.bind(this), opts.freq || 100 );
+    }
+
+    // EventEmitterを継承したかのように装います ;)
 
     ```
+
+    もし利用できない場合でも最近の多くのJavaScriptライブラリには `.bind` と同様な機能があります。
+
+
+    ```javascript
+    // 6.B.2
+
+    // 例）lodash/underscoreの_.bind()
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, _.bind(function( data ) {
+
+        this.value = data;
+
+      }, this) );
+
+      setInterval(_.bind(function() {
+
+        this.emit("event");
+
+      }, this), opts.freq || 100 );
+    }
+
+    // 例）jQuery.proxy
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, jQuery.proxy(function( data ) {
+
+        this.value = data;
+
+      }, this) );
+
+      setInterval( jQuery.proxy(function() {
+
+        this.emit("event");
+
+      }, this), opts.freq || 100 );
+    }
+
+    // 例）dojo.hitch
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, dojo.hitch( this, function( data ) {
+
+        this.value = data;
+
+      }) );
+
+      setInterval( dojo.hitch( this, function() {
+
+        this.emit("event");
+
+      }), opts.freq || 100 );
+    }
+
+    ```
+
+    最後の回避方法は、識別子として`this`への別名に`self`を使うことですが、これは極端なバグになる傾向があるため、可能な限り避けるべきです。
+
+    ```javascript
+
+    // 6.B.3
+
+    function Device( opts ) {
+      var self = this;
+
+      this.value = null;
+
+      stream.read( opts.path, function( data ) {
+
+        self.value = data;
+
+      });
+
+      setInterval(function() {
+
+        self.emit("event");
+
+      }, opts.freq || 100 );
+    }
+
+    ```
+
+
+    C. `thisArg`を使う
+
+    ES 5.1の各プロトタイプのメソッドでは特別な`thisArg`という署名に対応しています。これは可能な限り利用するべきです。
+
+    ```javascript
+
+    // 6.C.1
+
+    var obj;
+
+    obj = { f: "foo", b: "bar", q: "qux" };
+
+    Object.keys( obj ).forEach(function( key ) {
+
+      // |this|は`obj`への参照
+
+      console.log( this[ key ] );
+
+    }, obj ); // <-- 最後の引数が`thisArg`
+
+    // 結果は...
+
+    // "foo"
+    // "bar"
+    // "qux"
+
+    ```
+
+    `thisArg`は`Array.prototype.every`、`Array.prototype.forEach`、`Array.prototype.some`、`Array.prototype.map`、`Array.prototype.filter`と一緒に利用できます。
 
 7. <a name="misc">雑則</a>
 
