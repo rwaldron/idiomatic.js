@@ -99,6 +99,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
+ * [Sinon.js](http://sinonjs.org/)
 
 ## Table of Contents
 
