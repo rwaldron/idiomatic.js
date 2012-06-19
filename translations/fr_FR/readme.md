@@ -89,18 +89,30 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
  * [Commentaires](#comments)
  * [Un code, un language](#language)
 
+
+
+------------------------------------------------
+
+
+## Préface
+
+Les sections suivantes décrivent un guide de style _raisonable_ pour tout développement moderne en JavaScript et ne sont pas censées être normatives. Le plus important à appliquer est la **loi de cohérence dans le style de code**. Le style que vous avez choisi pour votre projet, quel qu'il soit, doit être considéré comme la loi. Référer à ce document pour afficher l'engagement de votre projet à utiliser un style de code cohérent, lisibile et maintenable.
+
+
+
+
 ## Manifeste : style idiomatique
 
 1. <a name="whitespace">Les Espaces</a>
 
-	* Ne jamais mélanger les espaces et les tabulations.
-	* Avant d'écriture le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-	 	* Pour la lisibilité, paramétrer votre éditeur avec une indentation de 4 caractères.
-	* Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
-		* Améliore la cohérence du code
-		* Elimine les espaces de fin de ligne
-		* Elimine les espaces utilisés pour des lignes blanches
-		* Améliorer la lisibilité de vos "commit" et des "diff"
+  - Ne jamais mélanger les espaces et les tabulations.
+  - Avant d'écrire le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
+      - Pour la lisibilité, paramétrer votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
+  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
+      - Améliore la cohérence du code
+      - Elimine les espaces de fin de ligne
+      - Elimine les espaces utilisés pour des lignes blanches
+      - Améliorer la lisibilité de vos "commit" et des "diff"
 
 2. <a name="spacing">Une Syntaxe Précise</a>
 
