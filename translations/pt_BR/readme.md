@@ -92,6 +92,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
+ * [Sinon.js](http://sinonjs.org/)
 
 ## Índice
 
@@ -1120,57 +1121,87 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   }
 
   // 7.A.1.2
-  // Um caso melhor seria utilizar um objeto literal ou até um módulo:
+  // Uma maneira alternativa de dar suporte para facilidade de composição e 
+  // reutiilização é utilizar um objeto que guarde "cases" e uma função
+  // para delegar:
 
-  var switchObj = {
+  var cases, delegator;
+
+  // Retornos de exemplo apenas para ilustração.
+  cases = {
     alpha: function() {
       // instruções
       // um retorno
+      return [ "Alpha", arguments.length ];
     },
     beta: function() {
       // instruções
       // um retorno
+      return [ "Beta", arguments.length ];
     },
     _default: function() {
       // instruções
       // um retorno
+      return [ "Default", arguments.length ];
     }
   };
 
-  var switchModule = (function () {
-    return {
-      alpha: function() {
-        // instruções
-        // um retorno
-      },
-      beta: function() {
-        // instruções
-        // um retorno
-      },
-      _default: function() {
-        // instruções
-        // um retorno
-      }
-    };
-  })();
+  delegator = function() {
+    var args, key, delegate;
 
+    // Transforma a lista de argumentos em uma array
+    args = [].slice.call( arguments );
+
+    // Retira a chave inicial dos argumentos
+    key = args.shift();
+
+    // Atribui o manipulador de caso padrão
+    delegate = cases._default;
+
+    // Deriva o método para delegar a operação para
+    if ( cases.hasOwnProperty( key ) ) {
+      delegate = cases[ key ];
+    }
+
+    // O argumento de escopo pode ser definido para algo específico
+    // nesse caso, |null| será suficiente
+    return delegate.apply( null, args );
+  };
 
   // 7.A.1.3
-  // Se `foo` é uma propriedade de `switchObj` ou `switchModule`, execute-a como um método...
+  // Coloque a API do 7.A.1.2 para funcionar:
 
-  ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+  delegator( "alpha", 1, 2, 3, 4, 5 );
+  // [ "Alpha", 5 ]
 
-  ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+  // Claro que a argumento de chave inicial pode ser facilmente baseada
+  // em alguma outra condição arbitrária.
 
-  // Se você conhece e confia no valor de `foo`, você pode inclusive omitir a checagem `OR`
-  // deixando apenas a execução:
+  var caseKey, someUserInput;
 
-  switchObj[ foo ]( args );
+  // Possivelmente alguma maneira de entrada de formulário?
+  someUserInput = 9;
 
-  switchModule[ foo ]( args );
+  if ( someUserInput > 10 ) {
+    caseKey = "alpha";
+  } else {
+    caseKey = "beta";
+  }
 
+  // ou...
 
-  // Esse padrão também promove a reutilização de código
+  caseKey = someUserInput > 10 ? "alpha" : "beta";
+
+  // E assim...
+
+  delegator( caseKey, someUserInput );
+  // [ "Beta", 1 ]
+
+  // E claro...
+
+  delegator();
+  // [ "Default", 0 ]
+
 
   ```
 
