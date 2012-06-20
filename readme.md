@@ -1118,62 +1118,86 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // 7.A.1.2
-    // A better approach would be to use an object literal or even a module:
+    // A alternate approach that supports composability and reusability is to
+    // use an object to store "cases" and a function to delegate:
 
-    var switchObj = {
+    var cases, delegator;
+
+    // Example returns for illustration only.
+    cases = {
       alpha: function() {
         // statements
         // a return
+        return [ "Alpha", arguments.length ];
       },
       beta: function() {
         // statements
         // a return
+        return [ "Beta", arguments.length ];
       },
       _default: function() {
         // statements
         // a return
+        return [ "Default", arguments.length ];
       }
     };
 
-    var switchModule = function( foo ) {
-      var switchObj = {
-        alpha: function() {
-          // statements
-          // a return
-        },
-        beta: function() {
-          // statements
-          // a return
-        },
-        _default: function() {
-          // statements
-          // a return
-        }
-      };
+    delegator = function() {
+      var args, key, delegate;
 
-      if ( switchObj.hasOwnProperty( foo ) ) {
-        return switchObj[ foo ];
+      // Transform arguments list into an array
+      args = [].slice.call( arguments );
+
+      // shift the case key from the arguments
+      key = args.shift();
+
+      // Assign the default case handler
+      delegate = cases._default;
+
+      // Derive the method to delegate operation to
+      if ( cases.hasOwnProperty( key ) ) {
+        delegate = cases[ key ];
       }
 
-      return switchObj._default;
+      // The scope arg could be set to something specific,
+      // in this case, |null| will suffice
+      return delegate.apply( null, args );
     };
 
     // 7.A.1.3
-    // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+    // Put the API in 7.A.1.2 to work:
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+    delegator( "alpha", 1, 2, 3, 4, 5 );
+    // [ "Alpha", 5 ]
 
-    switchModule( foo )( args );
+    // Of course, the `case` key argument could easily be based
+    // on some other arbitrary condition.
 
-    // If you know and trust the value of `foo`, you could even omit the OR check
-    // leaving only the execution:
+    var caseKey, someUserInput;
 
-    switchObj[ foo ]( args );
+    // Possibly some kind of form input?
+    someUserInput = 9;
 
-    switchModule( foo )( args );
+    if ( someUserInput > 10 ) {
+      caseKey = "alpha";
+    } else {
+      caseKey = "beta";
+    }
 
+    // or...
 
-    // This pattern also promotes code reusability.
+    caseKey = someUserInput > 10 ? "alpha" : "beta";
+
+    // And then...
+
+    delegator( caseKey, someUserInput );
+    // [ "Beta", 1 ]
+
+    // And of course...
+
+    delegator();
+    // [ "Default", 0 ]
+
 
     ```
 
