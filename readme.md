@@ -1135,8 +1135,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }
     };
 
-    var switchModule = (function () {
-      return {
+    var switchModule = function( foo ) {
+      var switchObj = {
         alpha: function() {
           // statements
           // a return
@@ -1150,22 +1150,27 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
           // a return
         }
       };
-    })();
 
+      if ( switchObj.hasOwnProperty( foo ) ) {
+        return switchObj[ foo ];
+      }
+
+      return switchObj._default;
+    };
 
     // 7.A.1.3
     // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+    switchModule( foo )( args );
 
     // If you know and trust the value of `foo`, you could even omit the OR check
     // leaving only the execution:
 
     switchObj[ foo ]( args );
 
-    switchModule[ foo ]( args );
+    switchModule( foo )( args );
 
 
     // This pattern also promotes code reusability.
