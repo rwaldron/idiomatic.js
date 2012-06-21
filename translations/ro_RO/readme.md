@@ -20,6 +20,7 @@
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
+* Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
 
 
 ## Tot codul dintr-o aplicație trebuie să arate ca și cum ar fi fost scris de o singură persoană, indiferent de câți oameni au contribuit la scrierea lui.
@@ -55,6 +56,7 @@
 
 ### Calitatea codului: Unelte, Resurse și Referințe
 
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
