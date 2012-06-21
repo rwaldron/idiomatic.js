@@ -38,6 +38,7 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 
 ### Calidad de código: Herramientas, recursos y referencias
 
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
