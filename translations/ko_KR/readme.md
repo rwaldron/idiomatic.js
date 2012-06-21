@@ -20,7 +20,7 @@
 김나솔(Nassol Kim) [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) /
 박준태(Juntai Park) [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) /
 심민규 / 원강민 / 유정협(Justin Yoo) [@justinchronicle](http://twitter.com/justinchronicle) /이대엽
-
+* Evgeny Mandrikov [@_godin_](http://twitter.com/_godin_), [github](https://github.com/Godin)
 
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.

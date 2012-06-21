@@ -20,6 +20,7 @@
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
+* Evgeny Mandrikov [@_godin_](http://twitter.com/_godin_), [github](https://github.com/Godin)
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
