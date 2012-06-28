@@ -51,7 +51,7 @@
 * [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [简体中文](https://github.com/sofish/idiomatic.js/tree/master/translations/zh_CN)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 
 
 ## Important, Non-Idiomatic Stuff:
