@@ -30,12 +30,12 @@
 ### 我并不想强制别人在其代码或项目中使用我个人所偏好的代码风格；如果已经存在一个通用编码规范，它必须受到尊崇。
 
 
-> ### "对风格的挑刺毫无无意义可言。他们必须是指导原则，且你必须遵循。"
+> ### "对风格的挑刺毫无无意义可言。它们必须是指导原则，且你必须遵循。"
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-> ### "成为一个优秀的成功项目管理者的一个条件是明白，按自己的偏好风格写代码是非常不好的做法。如果成千上万的人都在使用你的代码，那么请尽可能通俗易懂地写出你的代码，而非在规范之下自作聪明地使用自己偏好的风格。"
+> ### "成为一个优秀的成功项目管理者的一个条件是，明白按自己的偏好风格写代码是非常不好的做法。如果成千上万的人都在使用你的代码，那么请尽可能通俗易懂地写出你的代码，而非在规范之下自作聪明地使用自己偏好的风格。"
 >_Idan_ _Gazit_
 
 ## 翻译版本
@@ -53,7 +53,7 @@
 
 ## 重要，非常通用资源：
 
-### 代码质量工具，资源和文献
+### 代码质量工具、资源和文献
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
@@ -68,7 +68,7 @@
 ### [ECMAScript 5.1 注解版](http://es5.github.com/)
 ### [EcmaScript 语言规范, 5.1 版](http://ecma-international.org/ecma-262/5.1/)
 
-如下列文档的现实是：1）不完全版，2）*必读*。我并不全（不总是，always agree）赞同下列所有作者所写的风格，但有一点可以确定的是：他们具备一致性。除此之外，他们还都是这门语言的权威人士。
+下列文档的现实是：1）不完全版，2）*必读*。我并不全（不总是，always agree）赞同下列所有作者所写的风格，但有一点可以确定的是：他们具备一致性。除此之外，他们还都是这门语言的权威人士。
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -85,7 +85,7 @@
 
 ### 测试工具
 
-项目 _必须_ 包括某此类型的单元、引用、实现或者功能性测试。使用代码示例并不足以称为“测试”。下面是一系列测试框架，他们谁都不是谁的更好替代品（which are endorsed more than the other）。
+项目 _必须_ 包括某此类型的单元、引用、实现或者功能性测试。使用代码示例并不足以称为“测试”。下面是一系列测试框架，他们只代表自己（谁都不是谁的更好替代品，which are endorsed more than the other）。
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -115,20 +115,20 @@
 
 下面的章节描述的是一个 _合理_ 的现代 JavaScript 开发风格指南，并非硬性规定。其想送出的核心理念是*高度统一的代码风格*（the law of code style consistency）。你为项目所择风格都应为最高准则。作为一个描述放置于你的项目中，并链接到这个文档作为代码风格一致性、可读性和可维护性的保证。
 
-## Idiomatic Style Manifesto
+## Idiomatic 风格宣言
 
 1. <a name="whitespace">空白</a>
   - 永远都不要混用空格和Tab。
-  - 开始一个项目，在写代码之前，选择软缩进（空格）或者 Tab（作为缩进方式），以将其作为**最高准则**。
-      - 为了可读, 我总是推荐在你的编辑中中设计2个字母的缩进 &mdash; 这等同于两个空格或者两个空格替代一个 Tab。
+  - 开始一个项目，在写代码之前，选择软缩进（空格）或者 Tab（作为缩进方式），并将其作为**最高准则**。
+      - 为了可读, 我总是推荐在你的编辑中设计2个字母的缩进 &mdash; 这等同于两个空格或者两个空格替代一个 Tab。
   - 如果你的编辑器支持，请总是打开 “显示不可见字符” 这个设置。好处是：
       - 保证一致性
-      - 消灭行末的空格
-      - 消灭空行的空格
+      - 去掉行末的空格
+      - 去掉空行的空格
       - 提交和对比更具可读性
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+2. <a name="spacing">美化语法</a>
 
     A. 小括号, 花括号, 换行
 
@@ -151,15 +151,15 @@
     // 使用空格来提升可读性
 
     if ( condition ) {
-      // statements
+      // 语句
     }
 
     while ( condition ) {
-      // statements
+      // 语句
     }
 
     for ( var i = 0; i < 100; i++ ) {
-      // statements
+      // 语句
     }
 
     // 更好的做法:
@@ -168,7 +168,7 @@
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
-      // statements
+      // 语句
     }
 
     // 或者...
@@ -177,20 +177,20 @@
       length = 100;
 
     for ( ; i < length; i++ ) {
-      // statements
+      // 语句
     }
 
     var prop;
 
     for ( prop in object ) {
-      // statements
+      // 语句
     }
 
 
     if ( true ) {
-      // statements
+      // 语句
     } else {
-      // statements
+      // 语句
     }
     ```
 
@@ -286,11 +286,11 @@
     // 2.B.2.3
     // 函数表达式
     var square = function( number ) {
-      // 返回有价值的、相关的东西
+      // 返回有价值的、相关的内容
       return number * number;
     };
 
-    // 带标记符的函数表达式
+    // 带标识符的函数表达式
     // 这种首选形式有附加的功能让其可以调用自身
     // 并且在堆栈中有标识符
     var factorial = function factorial( number ) {
@@ -357,28 +357,28 @@
     // 2.D.1.1
 
     if (condition) {
-      // statements
+      // 语句
     }
 
     while (condition) {
-      // statements
+      // 语句
     }
 
     for (var i = 0; i < 100; i++) {
-      // statements
+      // 语句
     }
 
     if (true) {
-      // statements
+      // 语句
     } else {
-      // statements
+      // 语句
     }
 
     ```
 
     E. 引号
 
-    无论你选择单引号还是双引号都无所谓，在 JavaScript 中它们在解析上没有区别. 而**绝对需要**强制的是一致性。 **永远不要在同一个项目中混用两种引号，选择一种，并保持一致**。
+    无论你选择单引号还是双引号都无所谓，在 JavaScript 中它们在解析上没有区别。而**绝对需要**强制的是一致性。 **永远不要在同一个项目中混用两种引号，选择一种，并保持一致**。
 
     F. 行末和空行
 
@@ -437,7 +437,7 @@
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. 类型转换（强制类型，Coerced Types）
+    B. 转换类型（强制类型，Coerced Types）
 
     考虑下面这个的含义...
 
@@ -461,8 +461,7 @@
     // "number"
     ...
 
-    // 在后续的代码中，你需要更新 `foo`
-    // 赋予在 input 元素中得到的新值
+    // 在后续的代码中，你需要更新 `foo`，赋予在 input 元素中得到的新值
 
     foo = document.getElementById("foo-input").value;
 
@@ -585,7 +584,7 @@
 
     // 值得注意的是上述都是 "不必要的聪明"
     // 采用明确的方案来比较返回的值
-    // indexOf, like:
+    // 如 indexOf：
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -611,7 +610,7 @@
     // 结果都是 2
 
 
-    // 时间牢记心底, 负值将被区别对待...
+    // 时刻牢记心底, 负值将被区别对待...
 
     var neg = -2.5;
 
@@ -693,7 +692,7 @@
     // 相对于使用这个：
     if ( foo === null || foo === undefined ) ...
 
-    // ...享受 == 类型强制转换，像这样:
+    // ...享受 == 类型强制转换的好处，像这样:
     if ( foo == null ) ...
 
     // 谨记，使用 == 将会令 `null` 匹配 `null` 和 `undefined`
@@ -701,7 +700,7 @@
     null == undefined
 
     ```
-    总是判断最好、最准备的值，上述是指南而非教条。
+    总是判断最好、最精确的值，上述是指南而非教条。
 
     ```javascript
 
@@ -710,12 +709,12 @@
 
     // 首次 `===`，`==` 次之 (除非需要松散类型的对比)
 
-    // === 总不做类型转换，这意味着:
+    // `===` 总不做类型转换，这意味着:
 
     "1" === 1;
     // false
 
-    // == 会转换类型，这意味着:
+    // `==` 会转换类型，这意味着:
 
     "1" == 1;
     // true
@@ -820,7 +819,6 @@
 6. <a name="naming">命名</a>
 
 
-
     A. 你并不是一个人肉 编译器/压缩器，所以尝试去变身为其一。
 
     下面的代码是一个极糟命名的典范:
@@ -880,7 +878,7 @@
     // 6.A.3.3
     // 命名函数、对象、实例，等
 
-    驼峰; function 和 var 声明
+    camlCase; function 和 var 声明
 
 
     // 6.A.3.4
@@ -909,7 +907,7 @@
 
     B. 面对 `this`
 
-    除使用众所周知的 `call` 和 `apply` 外，总是优先选择 `.bind( this )` 或者一个功能物价物，创建 `BoundFunction` 声明供后续调用。仅当没有更好的选择时才使用别名。
+    除使用众所周知的 `call` 和 `apply` 外，总是优先选择 `.bind( this )` 或者一个功能上等价于它的。创建 `BoundFunction` 声明供后续调用，当没有更好的选择时才使用别名。
 
     ```javascript
 
@@ -1030,7 +1028,7 @@
 
     C. 使用 `thisArg`
 
-    好几个 ES 5.1 原型中的方法都内置了一个特殊的 `thisArg` 标记，尽可能多地使用它
+    好几个 ES 5.1 中的原型的方法都内置了一个特殊的 `thisArg` 标记，尽可能多地使用它
 
     ```javascript
 
@@ -1060,9 +1058,9 @@
 
 7. <a name="misc">Misc</a>
 
-    这个部分将要说明的想法和理念都并非教条。相反更鼓励对现存实践保持好奇，以尝试提供完全一般 JavaScript 编程任务的更好方案。
+    这个部分将要说明的想法和理念都并非教条。相反更鼓励对现存实践保持好奇，以尝试提供完成一般 JavaScript 编程任务的更好方案。
 
-    A. 避免使用 `switch`，现代方法跟踪（method tracing）将会把把带有 switch 表达式的函数列为黑名单。
+    A. 避免使用 `switch`，现代方法跟踪（method tracing）将会把带有 switch 表达式的函数列为黑名单。
 
     似乎在最新版本的 Firefox 和 Chrome 都对 `switch` 语句有重大改进。http://jsperf.com/switch-vs-object-literal-vs-module
 
@@ -1095,18 +1093,18 @@
     // 返回值仅作说明用
     cases = {
       alpha: function() {
-        // statements
-        // a return
+        // 语句
+        // 一个返回值
         return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // statements
-        // a return
+        // 语句
+        // 一个返回值
         return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // statements
-        // a return
+        // 语句
+        // 一个返回值
         return [ "Default", arguments.length ];
       }
     };
@@ -1219,7 +1217,7 @@
   * 单行注释放于代码上方为首选
   * 多行也可以
   * 行末注释应被避免!
-  * JSDoc 的方式也不划，但需要比较多的时间
+  * JSDoc 的方式也不错，但需要比较多的时间
 
 
 10. <a name="language">单用一门语言</a>
