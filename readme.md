@@ -1256,8 +1256,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
   * Multiline is good
   * End of line comments are prohibited!
   * JSDoc style is good, but requires a significant time investment
-		
-		
+
+
 10. <a name="language">One Language Code</a>
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
@@ -1353,8 +1353,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // Good:
     return (a + b);
-	
-		```
+
+    ```
 
 
 ## Appendix
