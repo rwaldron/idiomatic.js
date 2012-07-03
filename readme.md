@@ -920,10 +920,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Naming booleans
 
-    rDesc = //;
-
+    `hasDuplicate` is named like a question and implies a boolean type.
+    booleans named in a positive way like `allowChange` helps avoid confusing double negatives.
 
     // 6.A.3.6
     // From the Google Closure Library Style Guide
@@ -934,7 +934,26 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     EnumNamesLikeThis;
     methodNamesLikeThis;
     SYMBOLIC_CONSTANTS_LIKE_THIS;
+    ```
+    
 
+    Prefixing variable names using Hungarian Notation (aDogs oJSONResponse iCount) makes code harder to read and should be avoided.
+    Using descriptive variable names and JSDoc style comments is preferred.
+        
+
+    There are some exceptions where prefixing is well understood and sometimes preferred.
+    ```javascript 
+    // 6.A.4.1
+    // regular expressions 
+    rDesc = //;
+
+    // 6.A.4.2
+    // private or protected 
+    _internalValue;
+
+    // 6.A.4.3
+    // cached copy of a jQuery wrapped object
+    $body = $('body');
     ```
 
     B. Faces of `this`
@@ -1267,3 +1286,5 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 ### Comma First.
 
 Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+
+
