@@ -114,14 +114,15 @@
  * [자잘한 것들](#misc)
  * [네이티브 & 호스트 객체](#native)
  * [주석 달기](#comments)
- * [One Language Code](#language)
+ * [한 언어로 작성하기](#language)
 
 
 
 ------------------------------------------------
 
 
-## Preface
+<!---## Preface-->
+## 서문
 
 The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
 
@@ -246,24 +247,23 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+    // var 문은 관련있는 스코프(함수) 안의 시작하는 곳에 있어야합니다.
+    // ECMAScript 6의  const, let도 같은 맥락으로 이 규칙이 적용됩니다.
 
-    // Bad
+    // 나쁜 스타일
     function foo() {
 
-      // some statements here
-
+      // 여기에 어떤 구문이 있음
       var bar = "",
         qux;
     }
 
-    // Good
+    // 좋은 스타일
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // 변수 선언이후에 모든 구문들이 옴.
     }
     ```
 
@@ -1016,14 +1016,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     ```
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+
     As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
 
     ```javascript
@@ -1051,7 +1044,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Use `thisArg`
+    C. `thisArg` 사용하기
 
     Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
 
@@ -1209,16 +1202,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
-
 9. <a name="comments">주석 달기</a>
-
   * JSDoc 스타일이 좋아요 (Closure Compiler type hints++)
   * 주제를 가진 코드위에는 한 줄로 주석을 달아요.
   * 보통은 여러줄로 주석을 다는게 좋고요.
   * 코드의 맨 마지막 줄에 주석을 다는 것은 금물이에요!
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">한 언어로 작성하기</a>
 
     프로그램은 유지보수 하는 사람들에 의해 가급적 하나의 언어(영어이든 아니든 무슨 언어로든 간에 - 역자 주)로 쓰이는 것이 좋습니다.
 
