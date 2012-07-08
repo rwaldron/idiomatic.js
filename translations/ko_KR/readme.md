@@ -133,7 +133,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 1. <a name="whitespace">화이트 스페이스</a>
-
   - 절대 스페이스와 탭을 섞어 쓰지 마세요.
   - 프로젝트를 시작할 때, 코드를 작성하기 전에 먼저 스페이스와 탭 중의 하나를 선택하여야 합니다. 이것이 **규칙** 입니다.
       - 가독성을 위해서 저는 항상 편집기의 들여쓰기 크기를 2 문자로 설정하기를 권장합니다. &mdash; 2 문자란 2 스페이스 또는 탭으로 표현되는 2칸 공간을 의미합니다.
@@ -391,9 +390,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. Quotes
+    E. 따옴표
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    작은 따옴표로 하냐 큰 따옴표로 하냐는 별로 중요하지않습니다, 자바스크립트에서는 그둘은 파싱하는 과정에서 전혀 차이가 없으니까요. 중요한것은 **절대적인 일관성** 이 있어야 한다는 점입니다. **같은 프로젝트에서는 절대로 큰따옴표와 작은따옴표를 섞지 마세요. 한 스타일을 정해서 고수하세요.**
 
 
     F. 각 줄의 끝부분, 빈 줄
