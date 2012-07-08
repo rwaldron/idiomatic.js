@@ -1194,10 +1194,10 @@ Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.co
 
 9. <a name="comments">주석 달기</a>
 
-    * JSDoc 스타일이 좋아요 (Closure Compiler type hints++)
-    * 주제를 가진 코드위에는 한 줄로 주석을 달아요.
-    * 보통은 여러줄로 주석을 다는게 좋고요.
-    * 코드의 맨 마지막 줄에 주석을 다는 것은 금물이에요!
+  * JSDoc 스타일이 좋아요 (Closure Compiler type hints++)
+  * 주제를 가진 코드위에는 한 줄로 주석을 달아요.
+  * 보통은 여러줄로 주석을 다는게 좋고요.
+  * 코드의 맨 마지막 줄에 주석을 다는 것은 금물이에요!
 
 
 10. <a name="language">One Language Code</a>
