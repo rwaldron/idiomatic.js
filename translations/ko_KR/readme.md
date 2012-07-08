@@ -29,7 +29,8 @@
 ### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
 
 
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
+<!--> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"-->
+> ### "스타일에 관한 논쟁은 무의미하다. 스타일 가이드가 있을테니, 거기에 따르기만 해라"
 >_Rebecca_ _Murphey_
 
 &nbsp;
@@ -91,7 +92,7 @@
 
 ### 테스트 Facility
 
-프로젝트에는 unit, reference, implementation이나 기능에 관한 테스트 부분이 _들어가 있어야_ 합니다. 시범 데모인 DO NOT QUALIFY를 사용해서 테스트하세요. 아래에는 테스트를 하는 프레임워크의 목록을 나열해 두었습니다. 이 중에 어느 하나를 더욱 추천하는 것은 아닙니다.
+프로젝트에는 유닛, 참조, 구현, 기능에 관한 테스트가 _들어가 있어야_ 합니다. 유스 케이스를 "테스트"로 **한정하지 마세요.** 아래에는 테스트를 하는 프레임워크의 목록을 나열해 두었습니다. 이 중에 어느 하나를 더욱 추천하는 것은 아닙니다.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -124,8 +125,9 @@
 <!---## Preface-->
 ## 서문
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
+<!--The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.-->
+<!--下記のセクションではモダンなJavaScriptの開発のための_合理的な_スタイルガイドを説明していますが、規範的になれという意味ではありません。最も重要なことは一貫性のあるコードスタイル法則ということです。どんなものでもあなたのプロジェクトのために選ぶスタイルは一貫性のある法則であるべきです。一貫性、可読性、メンテナンス性のあるコードスタイルにするためにあなたのプロジェクトのコミットメントとしてこのドキュメントへリンクしてください。-->
+이 글의 섹션은 현대적인 자바스크립트 개발을 위한 _합리적인_ 스타일가이드를 제시하고 있지만, 그게 규정이라는 의미는 아닙니다. 제일 중요한 것은 **일관성 있는 코딩 스타일을 위한 규칙** 입니다. 프로젝트에 어떤 스타일을 사용하던간에 반드시 지켜져야 합니다. 이 문서를 프로젝트의 일관성, 가독성, 유지보수용이성을 위한 참고자료로써 링크해 주세요.
 
 
 
@@ -929,9 +931,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Faces of `this`
+    B. `this` 다루기
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+    나중에 불려지는 `BoundFunction`을 정의 하기위해선 `call` 이나 `apply` 가 일반 적으로 쓰여지고 있긴 하지만, `.bind( this )` 같은 함수를 사용하는편이 좋습니다. 더 좋은 선택지가 없을 때에만 엘리어싱을 고려하세요.
+
 
     ```javascript
 
@@ -940,38 +943,36 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // 비동기 스트림으로 열어서,
+      // 지속적으로 불릴 것 입니다.
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // 이 인스턴스의 현재 값을
+        // 데이터 스트림의 최신값으로 업데이트
         this.value = data;
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
+      // 이 Device 인스턴스에서의 이벤트 발생 빈도를 조절
       setInterval(function() {
 
-        // Emit a throttled event
+        // 조절된 이벤트를 발생
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // EventEmitter를 구현하는 척만 했어요. ;)
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    이런게 불가능할 경우를 위해, 많은 현대적인 자바스크립트 라이브러리들이 `.bind` 같은 함수를 가지고 있습니다.
 
 
     ```javascript
     // 6.B.2
 
-    // eg. lodash/underscore, _.bind()
+    // lodash/underscore 의 _.bind()
     function Device( opts ) {
 
       this.value = null;
@@ -989,7 +990,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }, this), opts.freq || 100 );
     }
 
-    // eg. jQuery.proxy
+    // jQuery.proxy
     function Device( opts ) {
 
       this.value = null;
@@ -1007,7 +1008,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }, this), opts.freq || 100 );
     }
 
-    // eg. dojo.hitch
+    // dojo.hitch
     function Device( opts ) {
 
       this.value = null;
@@ -1027,7 +1028,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    최후의 수단으로, `this` 의 알리아스를 `self`로 만드세요. 이 방법은 버그가 매우 발생하기 쉬우므로 가능한한 피해야 합니다.
 
     ```javascript
 
@@ -1056,7 +1057,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     C. `thisArg` 사용하기
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    ES 5.1 의 내부 프로토타입의 함수는 `thisArg`라는 특별한 시그니쳐를 가지고 있고 가능한 한 사용해야합니다
 
     ```javascript
 
@@ -1068,11 +1069,11 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| 는 이제 `obj`에 대한 참조
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- 이 최후의 인수가 `thisArg`
 
     // Prints...
 
@@ -1082,7 +1083,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` 는 `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter` 같은 것과 같이 쓸 수 있습니다.
 
 7. <a name="misc">자잘한 것들</a>
 
