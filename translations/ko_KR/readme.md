@@ -117,15 +117,27 @@ Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.co
  * [One Language Code](#language)
 
 
+
+------------------------------------------------
+
+
+## Preface
+
+The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+
+
+
+
+
 ## 자연스러운 스타일에 관한 선언문
 
 
 1. <a name="whitespace">화이트 스페이스</a>
 
-    - 절대 스페이스와 탭을 섞어 쓰지 마세요.
-    - 프로젝트를 시작할 때, 코드를 작성하기 전에 먼저 스페이스와 탭 중의 하나를 선택하여야 합니다. 이것이 **규칙** 입니다.
+  - 절대 스페이스와 탭을 섞어 쓰지 마세요.
+  - 프로젝트를 시작할 때, 코드를 작성하기 전에 먼저 스페이스와 탭 중의 하나를 선택하여야 합니다. 이것이 **규칙** 입니다.
       - 가독성을 위해서 저는 항상 편집기의 들여쓰기 크기를 2 문자로 설정하기를 권장합니다. &mdash; 2 문자란 2 스페이스 또는 탭으로 표현되는 2칸 공간을 의미합니다.
-    - 에디터가 들여쓰기 설정을 지원한다면, 저는 "show invisibles" 설정을 켜고 작업합니다. 이렇게 했을 때의 장점은 다음과 같아요:
+  - 에디터가 들여쓰기 설정을 지원한다면, 저는 "show invisibles" 설정을 켜고 작업합니다. 이렇게 했을 때의 장점은 다음과 같아요:
       - 일관성을 강제할 수 있어요.
       - 줄 끝의 공백문자 제거하기 좋아요.
       - 빈 줄 공백문자를 제거하기 좋아요.
@@ -1005,7 +1017,14 @@ Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.co
     }
 
     ```
-
+  - Never mix spaces and tabs.
+  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
+      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
+  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
+      - Enforced consistency
+      - Eliminating end of line whitespace
+      - Eliminating blank line whitespace
+      - Commits and diffs that are easier to read
     As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
 
     ```javascript
