@@ -497,7 +497,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.2
 
-    // smart coercion을 1진법의 +나 - 단항 연산자와 함께 사용함으로써 이슈를 선점할 수 있다:
+    // 1진법의 +나 - 단항 연산자를 사용한 smart 강제변환으로 문제를 해결할 수 있습니다:
 
     foo = +document.getElementById("foo-input").value;
           ^ 1진법의 단항연산자 +는 오른쪽에 있는 부분을 숫자로 바꿉니다.
@@ -600,6 +600,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf( "d" );
     // false
 
+    // 주의: 위의 구문들은 "필요없이 영리"하지 않은지 생각해 보아야 합니다
+    // 다음 구문처럼 비교되는 indexOf의 리턴 값이 더 명확한 쪽이
+    // 좋지 않을까요?
+
+    if ( array.indexOf( "a" ) >= 0 ) {
+      // ...
+    }
+    ```
+
+    ```javascript
+    // 3.B.2.4
 
     var num = 2.5;
 
@@ -613,23 +624,22 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     num >>> 0;
 
-    // All result in 2
+    // 전부 2가 됩니다.
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
-
+    // 하지만 음수는 다르게 취급되는것도 명심하셔야 합니다...
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // 위처럼 쓴 것은, 아래에 쓴 것과 같은 의미입니다.
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // 전부 -2가 됩니다.
+    // 하지만...
 
     neg >>> 0;
 

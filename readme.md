@@ -612,7 +612,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
     ```javascript
-    // 3.B.2.3
+    // 3.B.2.4
 
 
     var num = 2.5;
