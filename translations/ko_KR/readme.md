@@ -15,13 +15,12 @@
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
 * Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
-* 개발자영어(EngForDev) [engfordev](http://www.opentutorials.org/course/167/1363) - 홍환민(Hwan Min Hong) / 권민택(MinTaek Kwon) [@leoinsight](http://twitter.com/leoinsight) /
-Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) /
-김나솔(Nassol Kim) [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) /
-박준태(Juntai Park) [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) /
-심민규 / 원강민 / 유정협(Justin Yoo) [@justinchronicle](http://twitter.com/justinchronicle) /이대엽
+* EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
+* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
+* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
-
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
@@ -29,14 +28,15 @@ Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.co
 
 ### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
 
+
 > ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-
-> "성공적인 프로젝트의 멋진 일원이 되기 위해서는 여러분 마음대로 코드를 작성하는 것이 나쁜 생각™임을 깨닫는 것이지요. 수천만 사람들이 여러분의 코드를 사용한다면, 가장 명확하게 코딩해야 합니다. 언어 명세가 허용하는 한 가장 똑똑한 코드를 만들겠다는 당신의 개인적인 선호에 따라서가 아니라"
+> ### "성공적인 프로젝트의 멋진 일원이 되기 위해서는 여러분 마음대로 코드를 작성하는 것이 나쁜 생각™임을 깨닫는 것이지요. 수천만 사람들이 여러분의 코드를 사용한다면, 가장 명확하게 코딩해야 합니다. 언어 명세가 허용하는 한 가장 똑똑한 코드를 만들겠다는 당신의 개인적인 선호에 따라서가 아니라"
 >_Idan_ _Gazit_
+
 
 ## 번역
 
