@@ -643,7 +643,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // 이경우엔 4294967294가 나옵니다.
 
 
 
@@ -725,21 +725,21 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    **항상** 최선의 결과를 내는 비교가 무엇인지 고민하세요. - 위에 것들은 다 가이드라인입니다, 교리같은건 아니죠.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // 형변환 과 비교에 관한 메모
 
-    Prefer `===` over `==` (unless the case requires loose type evaluation)
+    `===` 가 `==` 보다 좋습니다. (느슨한 형 비교가 필요하지 않는 이상)
 
-    === does not coerce type, which means that:
+    === 는 형변환을 하지 않습니다. 무슨뜻인가 하면:
 
     "1" === 1;
     // false
 
-    == does coerce type, which means that:
+    == 는 형변환을 합니다, 무슨 뜻인가 하면:
 
     "1" == 1;
     // true
@@ -752,7 +752,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     참(true)으로 간주되는 것: "foo", 1
 
-     거짓(false)으로 간주되는 것: "", 0, null, undefined, NaN, void 0
+    거짓(false)으로 간주되는 것: "", 0, null, undefined, NaN, void 0
 
     ```
 
