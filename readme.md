@@ -125,7 +125,7 @@ Projects _must_ include some form of unit, reference, implementation or function
 
 ## Preface
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
 
 
 
@@ -612,7 +612,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
     ```javascript
-    // 3.B.2.3
+    // 3.B.2.4
 
 
     var num = 2.5;
