@@ -1252,10 +1252,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 9. <a name="comments">Comments</a>
 
-  * Single line above the code that is subject
-  * Multiline is good
-  * End of line comments are prohibited!
-  * JSDoc style is good, but requires a significant time investment
+    #### Single line above the code that is subject
+    #### Multiline is good
+    #### End of line comments are prohibited!
+    #### JSDoc style is good, but requires a significant time investment
 
 
 10. <a name="language">One Language Code</a>
