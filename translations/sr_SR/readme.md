@@ -23,7 +23,7 @@
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 
 
-## Сав код у било којој "code-base" требало би да изгледа као да га је написао једна особа без обзира колико је људи допринело његовом креирању.
+## Сав код у било којој "бази кода" требало би да изгледа као да га је написао једна особа без обзира колико је људи допринело његовом креирању.
 
 ### Листа која следи уоквирује праксу коју ја примењујем у свом коду чији сам ја оригинални аутор; сарадници на пројектима које сам ја креирао требало би да се придржавају ових упутстава.
 
@@ -83,16 +83,16 @@
 
 
 
-### Build & Deployment Process
+### Build & Deployment Процес
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
+Пројекти би требало да увек садрже неки вид генеричћких алата помоћу којих код може бити прочишћен, тестиран и компримован и процесу примпреме за продукциону примену. За овај задатак, [grunt](https://github.com/cowboy/grunt) од Ben Alman-а је скоро ништа и званично је заменио "kits/" директоријум овог репозиторијума.
 
 
-### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+
+### Погон за тестирање
+
+Пројекти _морају_ да укључе неку форму 'unit', 'reference', 'implementation' или 'functional' тестирања. 'Use case' демои се НЕ КВАЛИФИКУЈУ као "тестови". Следи листа алата за тестирање, ниједан од њих није прихваћенији од других.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -103,57 +103,58 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Buster.js](http://busterjs.org/)
  * [Sinon.js](http://sinonjs.org/)
 
-## Table of Contents
+## Садржај
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Белине (Whitespace)](#whitespace)
+ * [Лепа Синтакса](#spacing)
+ * [Провера типа (Захвалница jQuery Core Style Guidelines)](#type)
+ * [Условна евалуација](#cond)
+ * [Практичан Стил](#practical)
+ * [Именовање](#naming)
+ * [Разно](#misc)
+ * [Природни & Host Објекти](#native)
+ * [Коментари](#comments)
+ * [Код у једном језику](#language)
 
 
 
 ------------------------------------------------
 
 
-## Preface
+## Предговор
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you chose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Следеће секције оцртавају _разуман_ водич за стил модерног JavaScript развоја и није им намера да буду преопшиирне. Најзначајнија порука је **закон о коезистентности стила писања кода**. Шта год да изаберете као стил за ваш пројекат то треба сматрати законом. Повежите овај документ као изјаву вашег пројекта коезистентности стила писања кода, читљивости и лакоћи одржавања истог.
 
 
 
-## Idiomatic Style Manifesto
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+
+## Идиоматски Манифест Стила
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+1. <a name="whitespace">Белине (Whitespace)</a>
+  - Никада не мешајте размаке и табулаторе.
+  - Када започињете пројекат, пре него што напишете једну линију кода, изаберите између размака (spaces) и табулатора, ово третирајте као **жакон**.
+      - Ради читљивости, ја увек препоручујем да поставите увлачење вашег едитора на два карактера &mdash; ово представља два размака или таб величине два размака.
+  - Уколико ваш едитор подржава, увек радите са укљученом опцијом "show invisibles". Користи од ове праксе су:
+      - Наметнута коезистентност
+      - Елиминисање непотребних размака на крају реда
+      - Елиминисање непотребних размака у празним редовима
+      - Commits and diffs који се лакше читају
 
-    A. Parens, Braces, Linebreaks
+
+2. <a name="spacing">Лепа Синтакса</a>
+
+    A. Размаци, Заграде, Нови Ред
 
     ```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/трудите се да увек имају размаке, заграде и да се простиру на више редова
+    // ово подстиче читљивост
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Примери стварно скучене синтаксе
 
     if(condition) doSomething();
 
@@ -163,7 +164,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Користите белине да би промовисали читљивост
 
     if ( condition ) {
       // statements
@@ -177,7 +178,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    // Even better:
+    // Још боље:
 
     var i,
       length = 100;
@@ -186,7 +187,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    // Or...
+    // Или...
 
     var i = 0,
       length = 100;
@@ -210,46 +211,46 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+    B. Додела вредности, Декларације, Функције ( Именоване, Изрази, Конструктор )
 
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Промењиве
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Словна нотација:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) promotes readability
-    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+    // Коришчење само једне `var` декларације по области важења (function) промовише читљивост
+    // и одржава вашу листу декларација чисту од clutter (а штеди и неколико куцања по тастерима)
 
-    // Bad
+    // Лоше
     var foo = "";
     var bar = "";
     var qux;
 
-    // Good
+    // Добро
     var foo = "",
       bar = "",
       quux;
 
-    // or..
-    var // Comment on these
+    // Или..
+    var // Коментар о овима
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+    // var декларације би увек требало да се налазе на почетку њихове области важења (function).
+    // Ово исто важи и const и let из ECMAScript 6.
 
-    // Bad
+    // Лоше
     function foo() {
 
       // some statements here
@@ -258,7 +259,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         qux;
     }
 
-    // Good
+    // Добро
     function foo() {
       var bar = "",
         qux;
@@ -270,22 +271,22 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // Декларација Именоване Функције
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Коришћење
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // Декларација Именоване Функције
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Коришћење
     square( 10 );
 
     // Really contrived continuation passing style
@@ -299,15 +300,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.3
-    // Function Expression
+    // Функциони израз
     var square = function( number ) {
       // Return something valuable and relevant
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Функциони израз са одређивачем
+    // Ово је пожељни облик има додату вредност да може
+    // да позове себе и име идентитет у stack traces:
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -318,13 +319,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Декларација Конструктора
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Коришћење
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -333,41 +334,41 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Exceptions, Slight Deviations
+    C. Exceptions, Мала одступања
 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Функције са callbacks
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Забележите да нема додатог размака између прве заграде
+      // позива функције која се извршава и рећи "function"
     });
 
-    // Function accepting an array, no space
+    // Функција која прихвата низ, без размака
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Функција која прихвата објекат, без размака
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Један текстуални аргумент, без размака
     foo("bar");
 
-    // Inner grouping parens, no space
+    // Унутрашње груписање заграда, без размака
     if ( !("foo" in obj) ) {
 
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Козистентност увек побеђује
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    У секцијама 2.A-2.C, правила коришћења белина су постављена као четврта као препорука са једноставнијом, вишом наменом: консистентност.
+    Важно је да се забелижи преференце форматиранја, као што "унутрашње белине" се могу сматрати опционе, али само један стил би тхребало да се примењује кроз цео код вашег пројекта.
 
     ```javascript
 
@@ -393,17 +394,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. Quotes
+    E. Наводници
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Све једно да ли преферирате једнострује или двоструке наводнике, не посто ји разлика како их JavaScript парсира. оно што је **АБСОЛУТНО МОРАЊЕ** наметнути консистентно коришћење. **Никада не мешати различите наводнике у истом пројекту. Изаберите један стил и држите се њега.**
 
-    F. End of Lines and Empty Lines
+    F. Крај Реда и Празни редови
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Белине могу упропастити diffs и учинити их нечитљивим. Размотрите укључивање pre-commit hook који уклања белине на крају реда и белине у празним редовима аутоматски.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Провера типа (Захвалница jQuery Core Style Guidelines)</a>
 
-    A. Actual Types
+    A. Актуални типови
 
     String:
 
@@ -440,15 +441,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     undefined:
 
-      Global Variables:
+      Глобалне промењиве:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Локалне промењиве:
 
         variable === undefined
 
-      Properties:
+      Особине:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
@@ -456,9 +457,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     B. Coerced Types
 
-    Consider the implications of the following...
+    Размислите о импликацијама следећег...
 
-    Given this HTML:
+    За дати  HTML:
 
     ```html
 
@@ -471,20 +472,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` је декларисана са вредношћу `0` и њен тип је `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Негде касније у васем коду, желите да освежите `foo`
+    // са новом вредносћу која је дошла из улазног елемента
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Ако би сада тестирали `typeof foo`, резултат би био `string`
+    // Ово значи да ако имате логику које проверава `foo` као:
 
     if ( foo === 1 ) {
 
@@ -492,15 +493,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // `importantTask()` никада не би био извршен, чак и када `foo` има вредност "1"
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Можете предупредити проблеме користећи smart coercion са unary + or - операторима:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ unary + оператор ће конвертовати свој десни операнд у број
 
     // typeof foo;
     // "number"
@@ -511,10 +512,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` ће бити позван
     ```
 
-    Here are some common cases along with coercions:
+    Ово неколико уобичајених примера са coercions:
 
 
     ```javascript
@@ -600,9 +601,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // Забележите да предходно треба сматрати "непотребно паметно"
+    // Преферирајте очигледан приступ упоређивању повратне вредности
+    // indexOf, као:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -617,7 +618,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // је исто као...
 
     ~~num;
 
@@ -625,27 +626,27 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     num >>> 0;
 
-    // All result in 2
+    // Све има резултат 2
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // Запамптите, негативни бројеви ће бити другачије третирано...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // је исто као...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Све има резултат -2
+    // Ипак...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // ће имати резултат 4294967294
 
 
 
@@ -654,82 +655,82 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Условна евалуација</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // када само утврђујете да низ има своју дужину,
+    // уместо овога:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...установите истинитост, овако:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Када само утврђујете да низ је празан,
+    // уместо овога:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...утврдите истинитост, овако:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Када само утврђујете да string није празан,
+    // иместо овога:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...установите истинитост, овако:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // када само утврђујете да string _је_ празан,
+    // уместо овога:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...утврдите неистинитост, овако:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Када само утврђујете да референца је true,
+    // уместо овога:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...установите онако како то и мислите, искористите уграђене могућности:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Када утврђујете да је референца false,
+    // уместо овога:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...користите негацију да coerce a true evaluation
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Будите опрезни, ово ће исто умечовати: 0, "", null, undefined, NaN
+    // Ако _МОРАТЕ_ да тестирате на логићко false, користите
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Када само утврђујете да референца може бити null или undefined, али НЕ и false, "" or 0,
+    // уместо овога:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...искористите предност  == type coercion, овако:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Упамтите, коришћење == will умечовати `null` за ОБОЈЕ `null` и `undefined`
+    // али не и за `false`, "" или 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    УВЕК утврђујте за најбољи, најтачнији резултат - предходно је путоказ, а не догма.
 
     ```javascript
 
@@ -755,21 +756,21 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Booleans:
     true, false
 
-    // Truthy:
+    // Истинито:
     "foo", 1
 
-    // Falsy:
+    // Неистинито:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Практичан Стил</a>
 
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Практичан Модул
 
     (function( global ) {
       var Module = (function() {
@@ -777,30 +778,30 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Ово је нека логичка особина
           bool: true,
-          // Some string value
+          // Нека текстуална вредност
           string: "a string",
-          // An array property
+          // Низ
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Објекат
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // get the current value of `data`
+            // враћа текућу вредност промењиве `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // поставља вредност промењиве `data` и враћа је
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Остале ствари које се могу овде десити
 
-      // expose our module to the global object
+      // изложите наш модул као глобални објекат
       global.Module = Module;
 
     })( this );
@@ -810,7 +811,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // практични конструктор
 
     (function( global ) {
 
@@ -830,13 +831,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // да би позвали конструкторе без коришћења `new`, можете урадити ово:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // изложите наш конструктор као глобални објекат
       global.ctor = ctor;
 
     })( this );
@@ -845,18 +846,18 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Именовање</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Ви нисте људски compiler/compressor кода, и непокушавајте да то будете.
 
-    The following code is an example of egregious naming:
+    Следећи код је пример egregious именовања:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Пример кода са лошим именима
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -865,14 +866,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+    Без сумње, њи сте писали код као овај - срећом то престаје данас.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    Ево истог парчета логике, али са нежнијим, паметнијим именовањем (и лакше читајућом структуром):
 
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Пример кода са унапређеним именовањем
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -889,42 +890,42 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    A few additional naming pointers:
+    Неколико додатних показивача приликом именовања:
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Именовање string-ова
 
-    `dog` is a string
+    `dog` је string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Именовање низова
 
-    `dogs` is an array of `dog` strings
+    `dogs` је низ `dog` string-ова
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Именовање функција, објеката, инстанци, и осталог
 
-    camelCase; function and var declarations
+    camelCase; функције и var декларације
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+    // Именовање конструктора, прототипова, и сл.
 
-    PascalCase; constructor function
+    PascalCase; конструктор функција
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Именовање регуларних израза
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // Из Google Closure Library Style Guide
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -937,7 +938,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     B. Faces of `this`
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+    Изван генерално добро познатих случајева `call` и `apply`, увек преферирајте `.bind( this )` или функционални еквивалент, за креирање `BoundFunction` дефиниција жа каснију инвокацију. Једнини разлог за aliasing када преферерирана опција није расположива.
 
     ```javascript
 
@@ -971,7 +972,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Када није доступна, функционални еквилент за `.bind` постоји у многим JavaScript библиотекама.
 
 
     ```javascript
@@ -1033,7 +1034,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    Као последњу могућност, креирајте alias на `this` користећи `self` као индентифајер. Ово је веома подложно грешкама и треба избегавати кад год је то могуће.
 
     ```javascript
 
@@ -1060,9 +1061,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Use `thisArg`
+    C. Користи `thisArg`
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    Неколико prototype метода из ES 5.1 built-ins долазе са специјалним `thisArg` потписом, који је потребно користити кад год је то могуће
 
     ```javascript
 
@@ -1088,24 +1089,24 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` се може користити са `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Разно</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Ова секција ће служити да илуструје идеје и концепте које не треба сматрати за догмама, већ постоје да би подстакле преиспитивање пракси као покушај да се пронађе бољи пут извршавања уобичајених JavaScript програмерских задатака.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. коришћење `switch` треба избегавати, модерне методе праћења ће ставити на црну листу функције са switch изразима
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    Изгледа да постоје драстична побољшања у извршавању `switch` израза у последњим издањима Firefox и Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnesses here as well:
+    Приметна побољшања се могу уочити такође у овде:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Пример switch израза
 
     switch( foo ) {
       case "alpha":
@@ -1120,7 +1121,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // 7.A.1.2
-    // A better approach would be to use an object literal or even a module:
+    // Бољи пример би било коришћење објекта или чак модула:
 
     var switchObj = {
       alpha: function() {
@@ -1156,13 +1157,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 7.A.1.3
-    // If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
+    // Ако `foo` је особина `switchObj` или `switchModule`, извршите као метод...
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
     ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-    // If you know and trust the value of `foo`, you could even omit the OR check
+    // Ако познајете и верујете вредности `foo`, можете изоставити и OR проверу
     // leaving only the execution:
 
     switchObj[ foo ]( args );
@@ -1170,16 +1171,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     switchModule[ foo ]( args );
 
 
-    // This pattern also promotes code reusability.
+    // Овај шаблон промовише и поновно коришћење кода.
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. Рано враћање вредности функција промовише читљивост кода с мањом разликом у перформанси кода
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Лоше:
     function returnLate( foo ) {
       var ret;
 
@@ -1191,7 +1192,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return ret;
     }
 
-    // Good:
+    // Добро:
 
     function returnEarly( foo ) {
 
@@ -1204,13 +1205,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Природни & Host Објекти</a>
 
-    The basic principle here is:
+    Основни принцип овде је:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Не правите глупости и све ће бити у реду.
 
-    To reinforce this concept, please watch the following presentation:
+    Да би утврдили овај концепт, молим вас погледајте следећу презентацију:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -1219,20 +1220,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Коментари</a>
 
-  * Single line above the code that is subject
-  * Multiline is good
-  * End of line comments are prohibited!
-  * JSDoc style is good, but requires a significant time investment
+  * Једна линија изнад кода који је тема
+  * Више линија је добро
+  * Коментари на крају реда су забрањени!
+  * JSDoc стил је добар, али захтева значајну инвестицију у времену
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">Код у једном језику</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    Програми би требало бити писани у једном језику, безобзира који је то језик, диктирано од стране задуженог за код.
 
-## Appendix
+## Додатци
 
-### Comma First.
+### Прво Зарез.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Сваки пројекат који цитира овај документ као своју основи за стил неће прихватити прво зарез форматирање, осим ако није експлицитно специфицирано од стране аутора пројекта.
