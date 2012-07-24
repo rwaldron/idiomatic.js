@@ -23,6 +23,7 @@
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
 
@@ -54,7 +55,8 @@
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
 ## Important, Non-Idiomatic Stuff:
