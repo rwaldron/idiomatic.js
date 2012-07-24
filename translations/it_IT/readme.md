@@ -15,10 +15,15 @@
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
+* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
 ## Tutto il codice in qualsiasi linguaggio dovrebbe sembrare come scritto da una singola persona, non importa quante persone vi abbiano contribuito.
@@ -39,14 +44,19 @@
 
 ## Traduzioni
 
-* [Tedesco](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [Francese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spagnolo](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portoghese - Brasiliano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Coreano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Giapponese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Russo](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Inglese](https://github.com/rwldrn/idiomatic.js)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
 ## Cose importanti, non idiomatiche:
@@ -76,9 +86,9 @@ I seguenti dovrebbero essere considerati come 1) incompleti e 2) *UNA LETTURA RI
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
  * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
- 
- 
- 
+
+
+
 
 ### Processo di costruzione e distribuzione
 
@@ -145,7 +155,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     ```javascript
 
-    // if/else/for/while/try hanno sempre spazi, parentesi graffe e sono suddivisi su 
+    // if/else/for/while/try hanno sempre spazi, parentesi graffe e sono suddivisi su
     // più linee questo incoragga la leggibilità
 
     // 2.A.1.1
@@ -823,7 +833,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
       Ctor.prototype.setFoo = function( val ) {
         return ( this.foo = val );
       };
-      
+
 
       // Per richiamare il costruttore senza `new`, potreste fare così:
       var ctor = function( foo ) {
@@ -927,82 +937,82 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     ```
 
     B. La varie faccie di `this`
-    
+
     Oltre i generalmente ben conosciuti casi d'uso di `call` e `apply`, preferite sempre `.bind( this )` o una funzione equivalente, per la creazione di definizioni `BoundFunction` che dovranno successivamente essere invocate. Ricorrete all'aliasing solo quando non ci sono altre opzioni preferibili.
-    
+
     ```javascript
-    
+
     // 6.B.1
     function Device( opts ) {
-    
+
       this.value = null;
-      
+
       // apre uno stream asincrono,
       // questo verrà richiamato continuamente
       stream.read( opts.path, function( data ) {
-      
+
         // Aggiorna il valore corrente di questa istanza
         // con il più recente valore recuperato dallo
         // stream di dati
-        
+
       }.bind( this );
-      
+
       // Regola la frequenza degli eventi emessi da
       // questa istanza di Device
       setInterval(function() {
-        
+
         // Emette un evento regolato
         this.emit("event");
-        
+
       }.bind( this ), opts.freq || 100 );
     }
-    
+
     // Fate finta che abbiamo ereditato EventEmitter ;)
-    
+
     ```
-    
+
     Quando non disponibile, funzioni equivalenti a `.bind` esistono in molte librerie JavaScript moderne.
-    
-    
+
+
     ```javascript
     // 6.B.2
-    
+
     // es. lodash/underscore, _.bind()
     function Device( opts ) {
-    
+
       this.value = null;
-      
+
       stream.read( opts.path, _.bind(function( data ) {
-      
+
         this.value = data;
-        
+
       }, this) );
-      
+
       setInterval(_.bind(function() {
-      
+
         this.emit("event");
-        
+
       }, this), opts.freq || 100 );
     }
-    
+
     // es. jQuery.proxy
     function Device( opts ) {
-    
+
       this.value = null;
-      
+
       stream.read( opts.path, jQuery.proxy(function( data ) {
-      
+
         this.value = data;
-        
+
       }, this) );
-      
+
       setInterval( jQuery.proxy(function() {
-      
+
         this.emit("event");
-        
+
       }, this), opts.freq || 100 );
     }
-    
+
     // es. dojo.hitch
     function Device( opts ) {
 
@@ -1020,13 +1030,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
       }), opts.freq || 100 );
     }
-    
+
     ```
-    
+
     Come ultima risorsa, create un alias a `this` usando `self` come identificatore. Con questo approccio è estremamente facile generare bug e dovrebbe essere evitato ogni volta che è possibile.
-      
+
     ```javascript
-      
+
     // 6.B.3
 
     function Device( opts ) {
@@ -1051,15 +1061,15 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 
     C. Uso di `thisArg`
-    
+
     Diversi metodi prototipo interni a ES 5.1 forniscono una speciale firma `thisArg`, che dovrebbe essere usata tutte le volte che è possibile
-    
+
     ```javascript
-    
+
     // 6.C.1
-    
+
     var obj;
-    
+
     obj = { f: "foo", b: "bar", q: "qux" };
 
     Object.keys( obj ).forEach(function( key ) {
@@ -1079,7 +1089,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     ```
 
     `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.filter`
-    
+
 7. <a name="misc">Varie</a>
 
     Questa sezione servirà ad illustrare idee e concetti che non dovrebbero essere considerati un dogma, ma che invece esistono per incoraggiare pratiche di analisi nel tentativo di ricercare le migliori modalità per fare lavori di programmazione JavaScript comuni.
@@ -1119,11 +1129,11 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
       },
       beta: function() {
         // istruzioni
-        // termina e ritorna       
+        // termina e ritorna
       },
       _default: function() {
         // istruzioni
-        // termina e ritorna     
+        // termina e ritorna
       }
     };
 
@@ -1135,11 +1145,11 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
         },
         beta: function() {
           // istruzioni
-          // termina e ritorna       
+          // termina e ritorna
         },
         _default: function() {
           // istruzioni
-          // termina e ritorna     
+          // termina e ritorna
         }
       };
     })();

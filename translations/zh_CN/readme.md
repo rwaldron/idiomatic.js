@@ -21,6 +21,8 @@
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
 ## 无论有多少人在维护，所有在代码仓库中的代码理应看起来像同一个人写的。
@@ -50,6 +52,9 @@
 * [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 ## 重要，非常通用资源：
 
@@ -630,7 +635,7 @@
     // 结果即是 4294967294
 
     ```
-    
+
 4. <a name="cond">对比运算</a>
 
     ```javascript
@@ -1000,7 +1005,7 @@
     ```
 
     提供一个候选，创建一个 `this` 的别名，以 `self` 作为标识符。这很有可能出 bug，应尽可能避免。
-    
+
     ```javascript
 
     // 6.B.3

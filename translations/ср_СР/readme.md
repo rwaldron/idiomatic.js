@@ -41,18 +41,19 @@
 
 ## Преводи
 
-* [Немачки](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [Француски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Шпански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Португалски - Бразилски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [корејски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Јапански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Италијански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Руски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Кинески](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Румунски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [Српски - ћирилица](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
-* [Српски - латиница](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
 ## Важне, Не-Идиоматске ствари:
