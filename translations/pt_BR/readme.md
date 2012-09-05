@@ -623,7 +623,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
     var neg = -2.5;
 
-    parteInt( neg, 10 );
+    parseInt( neg, 10 );
 
     // é o mesmo que...
 
