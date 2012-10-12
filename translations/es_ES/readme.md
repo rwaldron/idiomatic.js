@@ -17,23 +17,36 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
 * Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
+* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
+* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
 ## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, no importa cuanta gente haya contribuido.
 
 ### La lista que se presenta a continuación destaca las prácticas que uso en todo el código del que soy autor, y las contribuciones a todos los proyectos que he creado, deben seguir estas prácticas.
 
-### No intento imponer mis preferencias de estilo en el código de otras personas; si tienen un algún estilo común, homogéneo, esto debería ser respetado. 
+### No intento imponer mis preferencias de estilo en el código de otras personas; si tienen un algún estilo común, homogéneo, esto debería ser respetado.
 
 ## Traducciones
 
-* [ORIGINAL] [English] (https://github.com/rwldrn/idiomatic.js/)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
 * [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
 * [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 ## Cosas importantes, no directamente relacionadas al js idiomático:
 
@@ -247,12 +260,12 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 	// 2.B.2.3
 	// Expresión de función
 	var square = function( number ) {
-		// Retornar algo relevante y con valor agregado 
+		// Retornar algo relevante y con valor agregado
 		return number * number;
 	};
 
 	// Expresión de función con identificador
-	// Esta forma es preferida porque tiene el valor agregado de 
+	// Esta forma es preferida porque tiene el valor agregado de
 	// poder ser llamada a sí misma y ser identificable en el stacktrace (MUY útil para debugging) :
 	var factorial = function factorial( number ) {
 		if ( number < 2 ) {
@@ -286,11 +299,11 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 	// 2.C.1.1
 	// Funciones con callbacls
 	foo(function() {
-		// Como se ve no hay espacio entre el primer paréntesis 
+		// Como se ve no hay espacio entre el primer paréntesis
 		// y la palabra "function"
 	});
 
-	// Función que acepta un Array como parámetro, sin espacio entre ([ 
+	// Función que acepta un Array como parámetro, sin espacio entre ([
 	foo([ "alpha", "beta" ]);
 
 	// 2.C.1.2
@@ -429,7 +442,7 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 	}
 
-	// `importantTask()` nunca habría sido evaluada, incluso con `foo` teniendo un valor de "1" 
+	// `importantTask()` nunca habría sido evaluada, incluso con `foo` teniendo un valor de "1"
 
 	// 3.B.1.2
 
@@ -828,14 +841,14 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 7. <a name="misc">Varios</a>
 
-	Esta sección va a servir para describir ideas y conceptos que no deberían se considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript. 
+	Esta sección va a servir para describir ideas y conceptos que no deberían se considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript.
 
 	A. Usar `switch` debería ser evitado, traceo moderno de métodos van a poner en una lista negra a las funciones con sentencias switch.
 
 	Parecen haber mejoras drásticas a la ejecución de sentencias `switch` en las últimas versiones de Firefox y Chrome.
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
-	Mejoras destacables pueden ser vistas aquí también: 
+	Mejoras destacables pueden ser vistas aquí también:
 	https://github.com/rwldrn/idiomatic.js/issues/13
 
 	```javascript
@@ -910,7 +923,7 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 	```
 
-	B. Hacer un return temprano promociana la legibilidad del código con un ínfimo impacto en la performance 
+	B. Hacer un return temprano promociana la legibilidad del código con un ínfimo impacto en la performance
 
 	```javascript
 
@@ -944,7 +957,7 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 	El principio fundamental aquí es:
 
-	### No hagas mierda estúpida y todo va a estar bien. 
+	### No hagas mierda estúpida y todo va a estar bien.
 
 	Para reforzar este concepto, mirar esta presentación:
 

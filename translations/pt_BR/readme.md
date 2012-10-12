@@ -20,6 +20,9 @@
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
 ## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
@@ -31,25 +34,29 @@
 > ### "Argumentos além do estilo são inúteis. Deve haver um guia de estilo, e você deve segui-lo"
 >_Rebecca_ _Murphey_
 
-> ### "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má ideia™. Se milhares de pessoas estão usando o seu código, escreva-o com máxima clareza, não sob a sua preferência pessoal de como ser esperto com a especificação." 
+> ### "Parte de ser um bom gestor de um projeto bem sucedido é perceber que escrever código para si mesmo é uma má ideia™. Se milhares de pessoas estão usando o seu código, escreva-o com máxima clareza, não sob a sua preferência pessoal de como ser esperto com a especificação."
 >_Idan_ _Gazit_
 
 ## Traduções
 
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Português - Brasil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
 * [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
 * [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
 ## Conteúdo importante e não idiomático:
 
-### Qualidade de código: ferramentas, recursos e referências 
+### Qualidade de código: ferramentas, recursos e referências
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
@@ -521,7 +528,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
     number + "";
     // "1"
-  
+
     string;
     // "1"
 
@@ -591,7 +598,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     !!~array.indexOf( "d" );
     // false
 
-    // Note que o que está acima deve ser considerado 
+    // Note que o que está acima deve ser considerado
     // "desnecessariamente inteligente".
     // Prefira a aproximação óbvia de comparar o valor retornado do
     // indexOf, como por exemplo:
@@ -618,7 +625,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     // Todos resultam em 2
 
 
-    // De qualquer forma, lembre-se que números negativos são tratados 
+    // De qualquer forma, lembre-se que números negativos são tratados
     // de forma diferente...
 
     var neg = -2.5;
@@ -743,7 +750,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   // 4.2.2
   // Booleanos, verdades e negações
 
-  // Booleanos: 
+  // Booleanos:
   true, false
 
   // Verdades:
@@ -951,7 +958,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
       // isso será chamado continuamente
       stream.read( opts.path, function( data ) {
 
-        // Atualiza o valor atual dessa instancia 
+        // Atualiza o valor atual dessa instancia
         // com o valor mais recente do
         // data stream
         this.value = data;
@@ -1123,7 +1130,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   }
 
   // 7.A.1.2
-  // Uma maneira alternativa de dar suporte para facilidade de composição e 
+  // Uma maneira alternativa de dar suporte para facilidade de composição e
   // reutiilização é utilizar um objeto que guarde "cases" e uma função
   // para delegar:
 
@@ -1257,7 +1264,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   * Uma linha única acima do código que é comentado
   * Multiplas linhas é bom
   * Comentários ao final da linha são proibidos!
-  * O estilo do JSDoc é bom, porém requer um investimento de tempo significante 
+  * O estilo do JSDoc é bom, porém requer um investimento de tempo significante
 
 
 10. <a name="language">Código em apenas um idioma</a>

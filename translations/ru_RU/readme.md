@@ -18,7 +18,11 @@
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
 ## Код в любом проекте должен выглядеть так, будто его писал один человек, неважно как много людей работали над ним. ***
@@ -37,14 +41,19 @@
 
 ## Переводы
 
-* [Немецкий](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [Французский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Испанский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Португальский - Бразильский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Корейский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Японский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Итальянский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Русский](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 ## Важное, не идиоматическое
 
@@ -129,8 +138,8 @@
         - удаление пустых строк
         - легко читаемые коммиты и диффы
 
-2. <a name="spacing">Красивый Синтаксис</a> 
-    
+2. <a name="spacing">Красивый Синтаксис</a>
+
     A. Скобки, Фигурные Скобки, Переносы Строк
 
     ```javascript
@@ -348,7 +357,7 @@
 
     D. Консистентность Всегда Побеждает
 
-    В секции 2.A-2.C, правила использования проблела и знака табуляции установлены с простой целью: консистентность. 
+    В секции 2.A-2.C, правила использования проблела и знака табуляции установлены с простой целью: консистентность.
     Очень важно отметить, что предпочтения в форматировании, как "внутренний пробел", должны считаться опциональными, но в вашем проекте должен использоваться только один стиль формартирования.
 
     ```javascript
@@ -603,9 +612,9 @@
     ~~num;
 
     num >> 0;
-    
+
     num >>> 0;
-    
+
     // All result in 2
 
 
@@ -620,14 +629,14 @@
     ~~neg;
 
     neg >> 0;
-    
+
     // All result in -2
     // Хотя...
-    
+
     neg >>> 0;
-    
+
     // покажет 4294967294
-    
+
 
 
 
@@ -686,7 +695,7 @@
 
     // 4.1.6
     // Проверяя, является ли переменная ложью,
-    // вместо:    
+    // вместо:
     if ( foo === false ) ...
 
     // проверяйте, используя отрицание:
@@ -705,12 +714,12 @@
     // ...воспользуйтесь оператором ==:
     if ( foo == null ) ...
 
-    // Помните, что сравнение с помощью оператора == с `null` сработает для ОБОИХ `null` и `undefined` 
+    // Помните, что сравнение с помощью оператора == с `null` сработает для ОБОИХ `null` и `undefined`
     // но не для `false`, "" или 0
     null == undefined
 
     ```
-    ВСЕГДА оценивайте самый лучший и точный результат - выше приведено руководство, а не догма. 
+    ВСЕГДА оценивайте самый лучший и точный результат - выше приведено руководство, а не догма.
 
     ```javascript
 
@@ -781,7 +790,7 @@
 
       // Другие объявления
 
-      // делаем наш модуль глобальным 
+      // делаем наш модуль глобальным
       global.Module = Module;
 
     })( this );
@@ -817,7 +826,7 @@
       };
 
 
-      // делаем наш конструктор глобальным 
+      // делаем наш конструктор глобальным
       global.ctor = ctor;
 
     })( this );
@@ -829,14 +838,14 @@
 6. <a name="naming">Именование</a>
 
 
-    A. Вы не компилятор или компрессор, так что не пытайтесь быть одним из них. 
+    A. Вы не компилятор или компрессор, так что не пытайтесь быть одним из них.
 
     Весь последующий код является примером плохового именования переменных:
 
     ```javascript
 
     // 6.A.1.1
-    // Пример кода с "бедными на описание" именами переменных 
+    // Пример кода с "бедными на описание" именами переменных
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -882,7 +891,7 @@
     // 6.A.3.2
     // Массивы
 
-    `dogs` 
+    `dogs`
 
 
     // 6.A.3.3
@@ -904,7 +913,7 @@
 
 
     // 6.A.3.6
-    // Из рекомендации по стилю Google Closure Library 
+    // Из рекомендации по стилю Google Closure Library
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -1070,7 +1079,7 @@
 
     Этот раздел описывает идеи и концепции, которые не должны рассматриваться как догма. Он существуют для поощрения сомнений в общепринятых методах в попытке найти более эффективные способы для выполнения общих задач программирования JavaScript.
 
-    A. Использование `switch` следует избегать, потому что современный метод откладки будет скрывать вызовы функций, которые используют `switch`. 
+    A. Использование `switch` следует избегать, потому что современный метод откладки будет скрывать вызовы функций, которые используют `switch`.
 
     В последних версиях браузеров Firefox и Chrome кажется есть значительные улучшения в исполнении функций, которые используют `switch`.
     http://jsperf.com/switch-vs-object-literal-vs-module
@@ -1182,7 +1191,7 @@
 
 8. <a name="native">"Родные" и "чужие" объекты</a>
 
-    Основное правило: 
+    Основное правило:
 
     ### Не делайте тупых вещей и все будет хорошо.
 
@@ -1211,4 +1220,4 @@
 
 ### Первая Запятая.
 
-Любой проект, который ссылается этот документ в качестве руководства по стилю, не примет форматирование кода "первой запятой", только если автор специально не укажется этого. 
+Любой проект, который ссылается этот документ в качестве руководства по стилю, не примет форматирование кода "первой запятой", только если автор специально не укажется этого.
