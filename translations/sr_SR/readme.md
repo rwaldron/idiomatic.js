@@ -1,7 +1,7 @@
-# Принципи писања Конзистентног, Идиоматског JavaScript-а
+# Principi pisanja konzistentnog, idiomatskog JavaScript-a
 
 
-## Ово је "жив" документ и нове идеје за унапређење кода око нас су увек добродошле. Допринесите: fork, clone, branch, commit, push, pull request.
+## Ovo je "živ" dokument i nove ideje za unapređenje koda oko nas su uvek dobrodošle. Doprinesite:  fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -20,43 +20,50 @@
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
+* Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
-## Сав код у било којој "бази кода" требало би да изгледа као да га је написао једна особа без обзира колико је људи допринело његовом креирању.
+## Sav kod u bilo kojoj "bazi koda" trebalo bi da izgleda kao da ga je napisala jedna osoba, bez obzira koliko je ljudi doprinelo njegovom kreiranju.
 
-### Листа која следи уоквирује праксу коју ја примењујем у свом коду чији сам ја оригинални аутор; сарадници на пројектима које сам ја креирао требало би да се придржавају ових упутстава.
+### Lista koja sledi uokviruje praksu koju ja primenjujem u svom kodu, čiji sam ja originalni autor. Saradnici, na projektima koje sam ja kreirao, bi trebalo da se pridržavaju ovih uputstava.
 
-### Ја немам намеру да намећем своје особине стила на код или пројекте других људи; ако већ постоји заједнички стил, он мора бити поштован.
+### Ja nemam nameru da namećem svoje osobine stila na kod ili projekte drugih ljudi, ako već postoji zajednički stil, on mora biti poštovan.
 
 
-> ### "Аргументи око стила немају смисла. Потребно је да постоји упутство коришћења стила, и ти би требало да га се придржаваш."
+> ### "Argumenti oko stila nemaju smisla. Potrebno je da postoji uputstvo korišćenja stila, i ti bi trebalo da ga se pridržavaš."
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-> ### "Део улоге доброг управника успешног пројекта је и у разумевању да писанје кода по својим мерилима је Лоша Идеја™. Ако хиљаде људи користи твој код, онда пиши најјаснији код, а не према својим личним преференцијама или да са жељом да исаднеш паметан у оквирима спецификације."
+> ### "Deo uloge dobrog upravnika uspešnog projekta je i u razumevanju da pisanje koda po svojim merilima je loša ideja™. Ako hiljade ljudi koristi tvoj kod, onda piši najjasniji kod, a ne preva svojim ličnim preferencijama ili da sa željom da ispadneš pametan u okvirima specifikacije."
 >_Idan_ _Gazit_
 
 
-## Преводи
+## Translations
 
-* [Немачки](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [Француски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Шпански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Португалски - Бразилски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [корејски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Јапански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Италијански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Руски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Румински](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [Српски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
-## Важно, Не-Идиоматске ствари:
+## Važne, ne idiomatske stvari:
 
-### Алати за квалитет кода, Извори и Литература
+### Alati za proveravanje kvaliteta koda, izvori i literatura
 
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
@@ -64,12 +71,12 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-## Будите паметнији
+## Budite pametniji
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-Следеће треба сматрати за 1) непотпуну, и 2) *ОБАВЕЗНА ЛЕКТИРА*. Ја се не слажем увек са стилом писаног од стране аутора у наставку, али једна ствар је сигурна: Они су доследни. Осим тога, то су ауторитет у овом језику.
+Sledeće treba smatrati za: 1) nepotpunu, i 2) *OBAVEZNA LEKTIRA*. Ja se ne slažem uvek sa stilom pisanog od strane autora u nastavku, ali jedna stvar je sigurna: Oni su dosledni. Osim toga, to su autoriteti u ovom jeziku.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -83,16 +90,15 @@
 
 
 
-### Build & Deployment Процес
+### Build i deployment procesi
 
-Пројекти би требало да увек садрже неки вид генеричћких алата помоћу којих код може бити прочишћен, тестиран и компримован и процесу примпреме за продукциону примену. За овај задатак, [grunt](https://github.com/cowboy/grunt) од Ben Alman-а је скоро ништа и званично је заменио "kits/" директоријум овог репозиторијума.
-
-
+Projekti bi trebalo da uvek sadrže neki vid generičkih alata pomoću kojih kod može biti pročišćen, testiran i komprimovan u procesu pripreme za produkcionu primenu. Za ovaj zadatak, [grunt](https://github.com/cowboy/grunt) od Ben Alman-a je odličan i zvanično je zamenio "kits/" direktorijum ovog repozitorijuma.
 
 
-### Погон за тестирање
 
-Пројекти _морају_ да укључе неку форму 'unit', 'reference', 'implementation' или 'functional' тестирања. 'Use case' демои се НЕ КВАЛИФИКУЈУ као "тестови". Следи листа алата за тестирање, ниједан од њих није прихваћенији од других.
+### Pogon za testiranje
+
+Projekti _moraju_ da uključe neku formu "unit", "reference", "implementation" ili "functional" testiranja. "Use case" demoi se NE KVALIFIKUJU kao "testovi". Sledi lista alata za testiranje, nijedan od njih nije prihvaćeniji od drugih.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -103,58 +109,57 @@
  * [Buster.js](http://busterjs.org/)
  * [Sinon.js](http://sinonjs.org/)
 
-## Садржај
+## Sadržaj
 
- * [Белине (Whitespace)](#whitespace)
- * [Лепа Синтакса](#spacing)
- * [Провера типа (Захвалница jQuery Core Style Guidelines)](#type)
- * [Условна евалуација](#cond)
- * [Практичан Стил](#practical)
- * [Именовање](#naming)
- * [Разно](#misc)
- * [Природни & Host Објекти](#native)
- * [Коментари](#comments)
- * [Код у једном језику](#language)
+ * [Beline (Whitespace)](#whitespace)
+ * [Lepa sintaksa](#spacing)
+ * [Provera tipa (Zahvalnica jQuery Core Style Guidelines)](#type)
+ * [Uslovna evaluacija](#cond)
+ * [Praktičan stil](#practical)
+ * [Imenovanje](#naming)
+ * [Razno](#misc)
+ * [Native i Host objekti](#native)
+ * [Komentari](#comments)
+ * [Kod u jednom jeziku](#language)
 
 
 
 ------------------------------------------------
 
 
-## Предговор
+## Predgovor
 
-Следеће секције оцртавају _разуман_ водич за стил модерног JavaScript развоја и није им намера да буду преопшиирне. Најзначајнија порука је **закон о коезистентности стила писања кода**. Шта год да изаберете као стил за ваш пројекат то треба сматрати законом. Повежите овај документ као изјаву вашег пројекта коезистентности стила писања кода, читљивости и лакоћи одржавања истог.
-
-
+Sledeće sekcije ocrtavaju _razuma_ vodič za stil modernog JavaScript razvoja i nije im namera da budu preopširne. Najznačajnija poruka je **zakon o koezistentnosti stila pisanja koda**. Šta god da izaberete kao stil za vaš projekat to treba smatrati zakonom. Povežite ovaj dokument kao izjavu vašeg projekta koezistentnosti stila pisanja koda, čitljivosti i lakoći održavanja istog.
 
 
 
 
-## Идиоматски Манифест Стила
+
+## Idiomatski manifest stila
 
 
-1. <a name="whitespace">Белине (Whitespace)</a>
-  - Никада не мешајте размаке и табулаторе.
-  - Када започињете пројекат, пре него што напишете једну линију кода, изаберите између размака (spaces) и табулатора, ово третирајте као **закон**.
-      - Ради читљивости, ја увек препоручујем да поставите увлачење вашег едитора на два карактера &mdash; ово представља два размака или таб величине два размака.
-  - Уколико ваш едитор подржава, увек радите са укљученом опцијом "show invisibles". Користи од ове праксе су:
-      - Наметнута коезистентност
-      - Елиминисање непотребних размака на крају реда
-      - Елиминисање непотребних размака у празним редовима
-      - Commits and diffs који се лакше читају
+1. <a name="whitespace">Beline (Whitespace)</a>
+  - Nikada ne mešajte razmake i tabulatore.
+  - Kada započinjete projekat, pre nego što napišete i jednu liniju koda, izaberite između razmaka (spaces) i tabulatora i to tretirajte kao **zakon**.
+      - Radi čitljivosti, ja uvek preporučujem da postavite uvlačenje vašeg editora na dva karaktera &mdash; ovo predstavlja dva razmaka ili tab veličine dva razmaka.
+  - Ukoliko vaš editor podržava, uvek radite sa uključenom opcijom "show invisibles". Koristi od ove prakse su:
+      - Nametnuta koezistentnost
+      - Eliminisanje nepotrebnih razmaka na kraju reda
+      - Eliminisanje nepotrebnih razmaka u praznim redovima
+      - Commits i diffs komande koje se lakše čitaju
 
 
-2. <a name="spacing">Лепа Синтакса</a>
+2. <a name="spacing">Lepa sintaksa</a>
 
-    A. Размаци, Заграде, Нови Ред
+    A. Razmaci, zagrade, novi red
 
     ```javascript
 
-    // if/else/for/while/трудите се да увек имају размаке, заграде и да се простиру на више редова
-    // ово подстиче читљивост
+    // if/else/for/while/try uvek imaju razmake, zagrade i prostiru se na više redova
+    // ovo podstiče čitljivost
 
     // 2.A.1.1
-    // Примери стварно скучене синтаксе
+    // Primeri stvarno skučene sintakse
 
     if(condition) doSomething();
 
@@ -164,7 +169,7 @@
 
 
     // 2.A.1.1
-    // Користите белине да би промовисали читљивост
+    // Koristite beline da bi promovisali čitljivost
 
     if ( condition ) {
       // statements
@@ -178,7 +183,7 @@
       // statements
     }
 
-    // Још боље:
+    // Još bolje:
 
     var i,
       length = 100;
@@ -187,7 +192,7 @@
       // statements
     }
 
-    // Или...
+    // Ili...
 
     var i = 0,
       length = 100;
@@ -211,46 +216,46 @@
     ```
 
 
-    B. Додела вредности, Декларације, Функције ( Именоване, Изрази, Конструктор )
+    B. Dodela vrednosti, deklaracije, funkcije ( imenovane, izrazi, konstruktor )
 
     ```javascript
 
     // 2.B.1.1
-    // Промењиве
+    // Promenjive
     var foo = "bar",
       num = 1,
       undef;
 
-    // Словна нотација:
+    // Slovna notacija:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Коришчење само једне `var` декларације по области важења (function) промовише читљивост
-    // и одржава вашу листу декларација чисту од насумичног (а штеди и неколико куцања по тастерима)
+    // Korišćenje samo jedne `var` deklaracije po oblasti važenja (function) promoviše čitljivost
+    // i održava vašu listu deklaracija čistu od nasumičnog (a štedi i nekoliko kucanja po taserima)
 
-    // Лоше
+    // Loše
     var foo = "";
     var bar = "";
     var qux;
 
-    // Добро
+    // Dobro
     var foo = "",
       bar = "",
       quux;
 
-    // Или..
-    var // Коментар о овима
+    // Ili..
+    var // Komentar o ovima
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var декларације би увек требало да се налазе на почетку њихове области важења (function).
-    // Ово исто важи и const и let из ECMAScript 6.
+    // var deklaracije bi uvek trebalo da se nalaze na početku njihove oblasti važenja (function).
+    // Ovo isto važi i za const i let iz ECMAScript 6.
 
-    // Лоше
+    // Loše
     function foo() {
 
       // some statements here
@@ -259,7 +264,7 @@
         qux;
     }
 
-    // Добро
+    // Dobro
     function foo() {
       var bar = "",
         qux;
@@ -271,25 +276,25 @@
     ```javascript
 
     // 2.B.2.1
-    // Декларација Именоване Функције
+    // Deklaracija imenovane funkcije
     function foo( arg1, argN ) {
 
     }
 
-    // Коришћење
+    // Korišćenje
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Декларација Именоване Функције
+    // Deklaracija imenovane funkcije
     function square( number ) {
       return number * number;
     }
 
-    // Коришћење
+    // Usage
     square( 10 );
 
-    // Веома измишљен стил преношења параметара
+    // Veoma izmišljen stil prenošenja parametara
     function square( number, callback ) {
       callback( number * number );
     }
@@ -300,15 +305,15 @@
 
 
     // 2.B.2.3
-    // Функциони израз
+    // Funkcioni izraz
     var square = function( number ) {
       // Return something valuable and relevant
       return number * number;
     };
 
-    // Функциони израз са одређивачем
-    // Ово је пожељни облик има додату вредност да може
-    // да позове себе и име идентитет у stack traces:
+    // Funkcioni izraz sa određivačem
+    // Ovaj poželjni oblik ima dodatu vrednost da može
+    // da pozove sebe i ima identitet u stack traces:
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -319,13 +324,13 @@
 
 
     // 2.B.2.4
-    // Декларација Конструктора
+    // Deklaracija konstruktora
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Коришћење
+    // Korišćenje
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -334,41 +339,41 @@
     ```
 
 
-    C. Exceptions, Мала одступања
+    C. Izuzetci, mala odstupanja
 
     ```javascript
 
     // 2.C.1.1
-    // Функције са повратним позивима (callbacks)
+    // Funkcije sa povratnim pozivima (callbacks)
     foo(function() {
-      // Забележите да нема додатог размака између прве заграде
-      // позива функције која се извршава и рећи "function"
+      // Zabeležite da nema dodatog razmaka između prve zagrade
+      // poziva funkcije koja se izvršava i reči "function"
     });
 
-    // Функција која прихвата низ, без размака
+    // Funkcija koja prihvata niz, bez razmaka
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Функција која прихвата објекат, без размака
+    // Funkcija koja prihvata objekat, bez razmaka
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Један текстуални аргумент, без размака
+    // Jedan tekstualni argument, bez razmaka
     foo("bar");
 
-    // Унутрашње груписање заграда, без размака
+    // Unutrašnje grupisanje zagrada, bez razmaka
     if ( !("foo" in obj) ) {
 
     }
 
     ```
 
-    D. Козистентност увек побеђује
+    D. Konzistentnost uvek pobeđuje
 
-    У секцијама 2.A-2.C, правила коришћења белина су постављена као четврта као препорука са једноставнијом, вишом наменом: консистентност.
-    Важно је да се забелижи преференце форматиранја, као што "унутрашње белине" се могу сматрати опционе, али само један стил би тхребало да се примењује кроз цео код вашег пројекта.
+    U sekcijama 2.A-2.C, pravila korišćenja belina su postavljena preporuka sa jednostavnijom, višom namenom: konzistentnost.
+    Važno je da se naglasi da preference formatiranja, kao što su "unutrašnje beline", se mogu smatrati opcionim, ali samo jedan stil bi trebalo da se primenjuje kroz ceo kod vašeg projekta.
 
     ```javascript
 
@@ -394,17 +399,17 @@
 
     ```
 
-    E. Наводници
+    E. Navodnici
 
-    Све једно да ли преферирате једнострује или двоструке наводнике, не посто ји разлика како их JavaScript парсира. оно што се **АБСОЛУТНО МОРА** је наметнути конзистентно коришћење. **Никада не мешати различите наводнике у истом пројекту. Изаберите један стил и држите се њега.**
+    Sve jedno da li preferirate jednostruke ili dvostruke navodnike, ne postoji razlika kako ih JavaScript parsira. Ono što se **APSOLUTNO MORA** nametnuti je konzistentnost. **Nikada ne mešati različite navognike u istom projektu. Izaberite jedan stil i držite se njega.**
 
-    F. Крај Реда и Празни редови
+    F. Kraj reda i prazni redovi
 
-    Белине могу упропастити diffs и учинити их нечитљивим. Размотрите укључивање pre-commit hook који уклања белине на крају реда и белине у празним редовима аутоматски.
+    Beline mogu upropastiti diff komande i učiniti ih nečitljivim. Razmotrite uključivanje pre-commit hook koji automatski uklanja beline na kraju reda i beline u praznim redovima.
 
-3. <a name="type">Провера типа (Захвалница jQuery Core Style Guidelines)</a>
+3. <a name="type">Provera tipa (Zahvalnica jQuery Core Style Guidelines)</a>
 
-    A. Актуални типови
+    A. Stvarni tipovi
 
     String:
 
@@ -441,25 +446,25 @@
 
     undefined:
 
-      Глобалне промењиве:
+      Globalne promenjive:
 
         typeof variable === "undefined"
 
-      Локалне промењиве:
+      Lokalne promenjive:
 
         variable === undefined
 
-      Особине:
+      Osobine:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Имплицвитна конверзија типа
+    B. Implicitna konverzija tipa
 
-    Размислите о импликацијама следећег...
+    Razmislite o implikacijama sledećeg...
 
-    За дати  HTML:
+    Za dati HTML:
 
     ```html
 
@@ -472,20 +477,20 @@
 
     // 3.B.1.1
 
-    // `foo` је декларисана са вредношћу `0` и њен тип је `number`
+    // `foo` je deklarisana sa vrednošću `0` i njen tip je `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Негде касније у васем коду, желите да освежите `foo`
-    // са новом вредносћу која је дошла из улазног елемента
+    // Negde kasnije u vašem kodu, želite da osvežite `foo`
+    // sa novom vrednošću koja je došla iz ulaznog elementa
 
     foo = document.getElementById("foo-input").value;
 
-    // Ако би сада тестирали `typeof foo`, резултат би био `string`
-    // Ово значи да ако имате логику које проверава `foo` као:
+    // Ako bi sada testirali `typeof foo`, rezultat bi bio `string`
+    // Ovo znači da ako imate logiku koja proverava `foo` kao:
 
     if ( foo === 1 ) {
 
@@ -493,15 +498,15 @@
 
     }
 
-    // `importantTask()` никада не би био извршен, чак и када `foo` има вредност "1"
+    // `importantTask()` nikada ne bi bio izvršen, čak i kada `foo` ima vrednost "1"
 
 
     // 3.B.1.2
 
-    // Можете предупредити проблеме користећи паметну имплицитну конверзију типа са unary + or - операторима:
+    // Možete preduprediti probleme koristeći pametnu implicitnu konverziju tipa sa unarnim + i - operatorima:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + оператор ће конвертовати свој десни операнд у број
+    //    ^ unarni + operator će konvertovati svoj desi operand u broj
 
     // typeof foo;
     // "number"
@@ -512,10 +517,10 @@
 
     }
 
-    // `importantTask()` ће бити позван
+    // `importantTask()` će biti pozvan
     ```
 
-    Ово неколико уобичајених примера са konverzijom типа:
+    Evo nekoliko uobičajenih primera sa konverzijom tipa:
 
 
     ```javascript
@@ -601,9 +606,9 @@
     !!~array.indexOf("d");
     // false
 
-    // Забележите да предходно треба сматрати "непотребно паметно"
-    // Преферирајте очигледан приступ упоређивању повратне вредности
-    // indexOf, као:
+    // Zabeležite da prethodno treba smatrati "nepotrebno pametno"
+    // Preferirajte očigledan pristup u upoređivanju povratne vrednosti
+    // indexOf, kao:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -611,14 +616,14 @@
     ```
 
     ```javascript
-    // 3.B.2.3
+    // 3.B.2.4
 
 
     var num = 2.5;
 
     parseInt( num, 10 );
 
-    // је исто као...
+    // je isto kao...
 
     ~~num;
 
@@ -626,27 +631,27 @@
 
     num >>> 0;
 
-    // Све има резултат 2
+    // Sve ima rezultat 2
 
 
-    // Запамптите, негативни бројеви ће бити другачије третирани...
+    // Zapamtite, negativni brojevi će biti drugačije tretirani...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // је исто као...
+    // je isto kao...
 
     ~~neg;
 
     neg >> 0;
 
-    // Све има резултат -2
-    // Ипак...
+    // Sve ima rezultat -2
+    // Međutim...
 
     neg >>> 0;
 
-    // ће имати резултат 4294967294
+    // će imati rezultat 4294967294
 
 
 
@@ -655,122 +660,122 @@
 
 
 
-4. <a name="cond">Условна евалуација</a>
+4. <a name="cond">Uslovna evaluacija</a>
 
     ```javascript
 
     // 4.1.1
-    // када само утврђујете да низ има своју дужину,
-    // уместо овога:
+    // Kada utvrđujete da niz ima svoju dužinu,
+    // umesto ovoga:
     if ( array.length > 0 ) ...
 
-    // ...установите истинитост, овако:
+    // ...ustanovite istinitost, ovako:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // Када само утврђујете да низ је празан,
-    // уместо овога:
+    // Kada utvrđujete da je niz prazan,
+    // umesto ovoga:
     if ( array.length === 0 ) ...
 
-    // ...утврдите истинитост, овако:
+    // ...ustanovite istinitost, ovako:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // Када само утврђујете да string није празан,
-    // иместо овога:
+    // Kada utvrđujete da string nije prazan,
+    // umesto ovoga:
     if ( string !== "" ) ...
 
-    // ...установите истинитост, овако:
+    // ...ustanovite istinitost, ovako:
     if ( string ) ...
 
 
     // 4.1.4
-    // када само утврђујете да string _је_ празан,
-    // уместо овога:
+    // Kada utvrđujete da string _jeste_ prazan:
+    // umesto ovoga:
     if ( string === "" ) ...
 
-    // ...утврдите неистинитост, овако:
+    // ...ustanovite neistinitost, ovako:
     if ( !string ) ...
 
 
     // 4.1.5
-    // Када само утврђујете да референца је true,
-    // уместо овога:
+    // Kada utvrđujete da je referenca true,
+    // umesto ovoga:
     if ( foo === true ) ...
 
-    // ...установите онако како то и мислите, искористите уграђене могућности:
+    // ...ustanovite onako kako ste to i mislili like you mean it, iskoristite ugrađene mogućnosti:
     if ( foo ) ...
 
 
     // 4.1.6
-    // Када утврђујете да је референца false,
-    // уместо овога:
+    // Kada utvrđujete da je referenca false,
+    // umesto ovoga:
     if ( foo === false ) ...
 
-    // ...користите негацију да конвергурате истиниту евалуацију
+    // ...koristite negaciju da prinudite istinitu evaluaciju
     if ( !foo ) ...
 
-    // ...Будите опрезни, ово ће исто умечовати: 0, "", null, undefined, NaN
-    // Ако _МОРАТЕ_ да тестирате на логићко false, користите
+    // ...Budite oprezni, ovo će isto odgovarati i: 0, "", null, undefined, NaN
+    // Ako _MORATE_ da testirate na logičko false, koristite
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // Када само утврђујете да референца може бити null или undefined, али НЕ и false, "" or 0,
-    // уместо овога:
+    // Kada samo utvrđujete da referenca može biti null ili undefinded, ali NE i false, "" ili 0,
+    // umesto ovoga:
     if ( foo === null || foo === undefined ) ...
 
-    // ...искористите предност  == type конверзију, овако:
+    // ...iskoristite prednost == prinudne konverzije tipa, ovako:
     if ( foo == null ) ...
 
-    // Упамтите, коришћење == will умечовати `null` за ОБОЈЕ `null` и `undefined`
-    // али не и за `false`, "" или 0
+    // Upamtite, korišćenje == će odgovarati `null` za `null` _I_ `undefined`
+    // ali ne i za `false`, "" ili 0
     null == undefined
 
     ```
-    УВЕК утврђујте за најбољи, најтачнији резултат - предходно је путоказ, а не догма.
+    Uvek utvrđujte za najbolji, najtačniji rezultat - prethodno je smernica, a ne dogma.
 
     ```javascript
 
     // 4.2.1
-    // Забелеске око конверзије типа и евалуације
+    // Zabeleške oko prinudne konverzije tipa i evaluacije
 
-    // Преферишите `===` у односу на `==` (осим ако случај захтева лабаву проверу типа)
+    // Preferišite `===` u odnosu na `==` (osim ako slučaj zahteva labavu proveru tipa)
 
-    // === не конвертује тип, што значи да:
+    // === ne konvertuje tip, što znači da:
 
     "1" === 1;
     // false
 
-    // == конвертује тип, што значи да:
+    // == konvertuje tip, što znači da:
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Логичке промењиве, Истинитост & Неистинитост
+    // Logičke promenjive, istinitost i neistinitost
 
-    // Логичке промењиве:
+    // Logičke promenjive:
     true, false
 
-    // Истинито:
+    // Istinito:
     "foo", 1
 
-    // Неистинито:
+    // Neistinito:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
-5. <a name="practical">Практичан Стил</a>
+5. <a name="practical">Praktičan stil</a>
 
     ```javascript
 
     // 5.1.1
-    // Практичан Модул
+    // Praktičan modul
 
     (function( global ) {
       var Module = (function() {
@@ -778,30 +783,30 @@
         var data = "secret";
 
         return {
-          // Ово је нека логичка особина
+          // Ovo je nak logička osobina
           bool: true,
-          // Нека текстуална вредност
+          // Neka tekstualna vrednost
           string: "a string",
-          // Низ
+          // Niz
           array: [ 1, 2, 3, 4 ],
-          // Објекат
+          // Objekat
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // враћа текућу вредност промењиве `data`
+            // vraća tekuću vrednost promenjive `data`
             return data;
           },
           setData: function( value ) {
-            // поставља вредност промењиве `data` и враћа је
+            // postavlja vrednost promenjive `data` i vraća je
             return ( data = value );
           }
         };
       })();
 
-      // Остале ствари које се могу овде десити
+      // Ostale stvari koje se mogu ovde desiti
 
-      // изложите наш модул као глобални објекат
+      // izložite naš modul kao globalni objekat
       global.Module = Module;
 
     })( this );
@@ -811,7 +816,7 @@
     ```javascript
 
     // 5.2.1
-    // практични конструктор
+    // Praktični konstruktor
 
     (function( global ) {
 
@@ -831,13 +836,13 @@
       };
 
 
-      // да би позвали конструкторе без коришћења `new`, можете урадити ово:
+      // da bi pozvali konstruktore bez korišćenja `new`, možete uraditi ovo:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // изложите наш конструктор као глобални објекат
+      // izložite naš konstruktor kao globalni objekat
       global.ctor = ctor;
 
     })( this );
@@ -846,18 +851,18 @@
 
 
 
-6. <a name="naming">Именовање</a>
+6. <a name="naming">Imenovanje</a>
 
 
 
-    A. Ви нисте људски compiler/compressor кода, и непокушавајте да то будете.
+    A. Vi niste ljudski kompajler/kompresor koda, i ne pokušavajte to da budete.
 
-    Следећи код је пример именовања које не треба радити:
+    Sledeći kod je primer nečuvenog imenovanja:
 
     ```javascript
 
     // 6.A.1.1
-    // Пример кода са лошим именима
+    // Primer koda sa lošim imenima
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -866,14 +871,14 @@
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Без сумње, њи сте писали код као овај - срећом то престаје данас.
+    Bez sumnje, vi ste pisali kod kao ovaj - srećom to prestaje danas.
 
-    Ево истог парчета логике, али са суптилнијим, паметнијим именовањем (и лакше читајућом структуром):
+    Evo istog parčeta logike, ali sa suptilnijim, pametnijim imenovanjem (i čitljivijom strukturom):
 
     ```javascript
 
     // 6.A.2.1
-    // Пример кода са унапређеним именовањем
+    // Primer koda sa unapređenim imenovanjem
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -890,42 +895,42 @@
 
     ```
 
-    Неколико додатних показивача приликом именовања:
+    Nekoliko dodatnih saveta prilikom imenovanja:
 
     ```javascript
 
     // 6.A.3.1
-    // Именовање string-ова
+    // Imenovanje string-ova
 
-    `dog` је string
+    `dog` je string
 
 
     // 6.A.3.2
-    // Именовање низова
+    // Imenovanje nizova
 
-    `dogs` је низ `dog` string-ова
+    `dogs` je niz `dog` string-ova
 
 
     // 6.A.3.3
-    // Именовање функција, објеката, инстанци, и осталог
+    // Imenovanje funkcija, objekata, instanci, itd
 
-    camelCase; функције и var декларације
+    camelCase; funkcije i var deklaracije
 
 
     // 6.A.3.4
-    // Именовање конструктора, прототипова, и сл.
+    // Imenovanje konstruktora, prototipova, itd
 
-    PascalCase; конструктор функција
+    PascalCase; konstruktor funkcija
 
 
     // 6.A.3.5
-    // Именовање регуларних израза
+    // Imenovanje regularnih izraza
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // Из Google Closure Library Style Guide
+    // Iz Google Closure Library Style Guide
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -936,9 +941,10 @@
 
     ```
 
-    B. Облици `this`
+    B. Oblici `this`
 
-    Изван генерално добро познатих случајева `call` и `apply`, увек преферирајте `.bind( this )` или функционални еквивалент, за креирање `BoundFunction` дефиниција жа каснију инвокацију. Једнини разлог за aliasing када преферерирана опција није расположива.
+    Izvan dobro poznatih "use case"-ova za `call` i `apply`, uvek preferirajte `.bind( this )` ili funkcionalni ekvivalent, za kreiranje `BoundFunction` definicija za kasnije prizivanje.
+    Pribegavajte korišćenju pseudonimima (aliasing) kada preferirana opcija nije raspoloživa.
 
     ```javascript
 
@@ -947,32 +953,30 @@
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // otvori asinhroni tok,
+      // ovo će biti pozivano neprekidno
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // Ažurirajte trenutne vrednosti this instance
+        // sa poslednjom vrednošću sa toka podataka
         this.value = data;
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
+      // Podesite učestalost ažuriranja
       setInterval(function() {
 
-        // Emit a throttled event
+        // Emitujte događaj
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // Samo se pretvarajte da smo nasledili EventEmitter ;)
 
     ```
 
-    Када није доступна, функционални еквилент за `.bind` постоји у многим JavaScript библиотекама.
+    Kada nije dostupan, funkcionalni ekvilen za `.bind` postoji u mnogim modernim JavaScript bibliotekama.
 
 
     ```javascript
@@ -1034,7 +1038,7 @@
 
     ```
 
-    Као последњу могућност, креирајте alias на `this` користећи `self` као индентифајер. Ово је веома подложно грешкама и треба избегавати кад год је то могуће.
+    Kao poslednju mogućnost, kreirajte pseudonim na `this` koristeći `self` kao identifikator. Ovo je veoma podložno greškama i treba izbegavati kad god je to moguće.
 
     ```javascript
 
@@ -1061,9 +1065,9 @@
     ```
 
 
-    C. Користи `thisArg`
+    C. Use `thisArg`
 
-    Неколико prototype метода из ES 5.1 built-ins долазе са специјалним `thisArg` потписом, који је потребно користити кад год је то могуће
+    Nekoliko prototype metoda iz ES 5.1 dolaze sa specijalnim `thisArg` potpisom, koji je potrebno koristiti kad god je to moguće
 
     ```javascript
 
@@ -1079,9 +1083,9 @@
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- poslednji argument je `thisArg`
 
-    // Prints...
+    // Ispisuje...
 
     // "foo"
     // "bar"
@@ -1089,24 +1093,24 @@
 
     ```
 
-    `thisArg` се може користити са `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` se može koristiti sa `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Разно</a>
+7. <a name="misc">Razno</a>
 
-    Ова секција ће служити да илуструје идеје и концепте које не треба сматрати за догмама, већ постоје да би подстакле преиспитивање пракси као покушај да се пронађе бољи пут извршавања уобичајених JavaScript програмерских задатака.
+    Ova sekcija će služiti da ilustruje ideje i koncepte koje ne treba smatrati dogmama, već postoje da bi podstakle preispitivanje praksi kao pokušaj da se pronađe bolji način izvršavanja uobičajenih JavaScript programerski zadataka.
 
-    A. коришћење `switch` треба избегавати, модерне методе праћења ће ставити на црну листу функције са switch изразима
+    A. Korišćenje `switch`-a treba izbegavati, moderne metode praćenja će staviti na crnu listu funkcije sa switch izrazima
 
-    Изгледа да постоје драстична побољшања у извршавању `switch` израза у последњим издањима Firefox и Chrome.
+    Izgleda da postoje drastična poboljšanja u izvršavanju `switch` izraza u poslednjim izdanjima Firefox i Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Приметна побољшања се могу уочити такође у овде:
+    Primetna poboljšanja se mogu uočiti takođe i ovde:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // Пример switch израза
+    // Primer switch izraza
 
     switch( foo ) {
       case "alpha":
@@ -1116,71 +1120,100 @@
         beta();
         break;
       default:
-        // something to default to
+        // podrazumevana vrednost
         break;
     }
 
     // 7.A.1.2
-    // Бољи пример би било коришћење објекта или чак модула:
+    // Alternativni pristup koji podržava "composability" i "reusability" je da se
+    // koristi objekat koji sadrži sve slučajeve i funkciju da delegira:
 
-    var switchObj = {
+    var cases, delegator;
+
+    // Example returns for illustration only.
+    cases = {
       alpha: function() {
-        // statements
-        // a return
+        // izrazi
+        // povratna vrednost
+        return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // statements
-        // a return
+        // izrazi
+        // povratna vrednost
+        return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // statements
-        // a return
+        // izrazi
+        // povratna vrednost
+        return [ "Default", arguments.length ];
       }
     };
 
-    var switchModule = (function () {
-      return {
-        alpha: function() {
-          // statements
-          // a return
-        },
-        beta: function() {
-          // statements
-          // a return
-        },
-        _default: function() {
-          // statements
-          // a return
-        }
-      };
-    })();
+    delegator = function() {
+      var args, key, delegate;
 
+      // Transformiše listu argumenata u niz
+      args = [].slice.call( arguments );
+
+      // uzmi vrednost prvog indeksa iz liste argumenata
+      key = args.shift();
+
+      // Dodeli podrazumevani obrađivač slučajeva
+      delegate = cases._default;
+
+      // Izvedi metodu koja će da delegira operacije
+      if ( cases.hasOwnProperty( key ) ) {
+        delegate = cases[ key ];
+      }
+
+      // Obim argumenta bi mogao biti podešen na nešto specifično,
+      // u ovom slučaju, |null| je dovoljno
+      return delegate.apply( null, args );
+    };
 
     // 7.A.1.3
-    // Ако `foo` је особина `switchObj` или `switchModule`, извршите као метод...
+    // Postavi API iz 7.A.1.2 da radi:
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+    delegator( "alpha", 1, 2, 3, 4, 5 );
+    // [ "Alpha", 5 ]
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+    // Naravno, `case` argument bi lako mogao da bude baziran
+    // na nekom drugom arbitrarnom uslovu.
 
-    // Ако познајете и верујете вредности `foo`, можете изоставити и OR проверу
-    // leaving only the execution:
+    var caseKey, someUserInput;
 
-    switchObj[ foo ]( args );
+    // Možda neka vrsta form input-a?
+    someUserInput = 9;
 
-    switchModule[ foo ]( args );
+    if ( someUserInput > 10 ) {
+      caseKey = "alpha";
+    } else {
+      caseKey = "beta";
+    }
 
+    // ili...
 
-    // Овај шаблон промовише и поновно коришћење кода.
+    caseKey = someUserInput > 10 ? "alpha" : "beta";
+
+    // i onda...
+
+    delegator( caseKey, someUserInput );
+    // [ "Beta", 1 ]
+
+    // i naravno...
+
+    delegator();
+    // [ "Default", 0 ]
+
 
     ```
 
-    B. Рано враћање вредности функција промовише читљивост кода с мањом разликом у перформанси кода
+    B. Rano vraćanje vrednosti funkcija promoviše čitljivost koda sa manjom razlikom u performansama koda
 
     ```javascript
 
     // 7.B.1.1
-    // Лоше:
+    // Loše:
     function returnLate( foo ) {
       var ret;
 
@@ -1192,7 +1225,7 @@
       return ret;
     }
 
-    // Добро:
+    // Dobro:
 
     function returnEarly( foo ) {
 
@@ -1205,13 +1238,13 @@
     ```
 
 
-8. <a name="native">Природни & Host Објекти</a>
+8. <a name="native">Native & Host Objekti</a>
 
-    Основни принцип овде је:
+    Osnovni princip ovde je:
 
-    ### Не правите глупости и све ће бити у реду.
+    ### Ne pravite glupa sranja i sve će biti u redu.
 
-    Да би утврдили овај концепт, молим вас погледајте следећу презентацију:
+    Da bi utvrdili ovaj koncept, molim vas da pogledate sledeću prezentaciju:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -1220,20 +1253,27 @@
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Коментари</a>
+9. <a name="comments">Komentari</a>
 
-  * Једна линија изнад кода који је тема
-  * Више линија је добро
-  * Коментари на крају реда су забрањени!
-  * JSDoc стил је добар, али захтева значајну инвестицију у времену
+    #### Jedna linija iznad koda je naslov
+    #### Više linija je dobro
+    #### Komentari na kraju reda su zabranjeni!
+    #### JSDoc stil je dobar, ali zahteva značajnu insvesticiju u vremenu
 
 
-10. <a name="language">Код у једном језику</a>
+10. <a name="language">Kod u jednom jeziku</a>
 
-    Програми би требало бити писани у једном језику, безобзира који је то језик, диктирано од стране задуженог за код.
+    Programi bi trebalo biti pisani u jednom jeziku, bez obzira koji je to jezik, diktirano od strane osobe ili osoba koje održavaju kod.
 
-## Додатци
+## Dodaci
 
-### Зарез Први.
+### Zarez prvi.
 
-Сваки пројекат који цитира овај документ као своју основи за стил неће прихватити прво зарез форматирање, осим ако није експлицитно специфицирано од стране аутора пројекта.
+Svaki projekat koji citira ovaj dukument kao svoj osnovni stil neće prihvatiti "prvi zaret" formatiranje, osim ako nije eksplicitno naglašeno od strane autora projekta.
+
+
+
+----------
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron and Contributors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
