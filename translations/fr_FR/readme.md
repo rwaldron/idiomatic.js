@@ -27,7 +27,7 @@
 
 ## Tout code, peu importe les bases sur lequels il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
 
-### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont j'en suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
+### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont je suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
 ### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
 
@@ -67,7 +67,7 @@
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je n'ai pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont les autorités sur le language.
+Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je ne suis pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont des autorités sur le language.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -77,12 +77,12 @@ Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LEC
 
 ### Processus de "build" et de déploiement
 
-Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, testé et minifier les fichiers afin d'avoir de meilleurs performances en production.
-Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques, que nous soutenons dans notre project.
+Les projets doivent toujours tenter d'inclure des moyens de vérifier le code implémenté avec Lint, tester et minifier les fichiers afin d'avoir de meilleurs performances en production.
+Pour cette tâche, [Grunt](https://github.com/cowboy/grunt) maintenu par Ben Alman rassemble les bonnes pratiques, que nous soutenons dans notre projet.
 
 ### Testabilité
 
-Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnelle. Utilisez des démos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèque de test, aucune d'entre elles n'est approuvée plus que l'autre.
+Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implementation et de périmètre fonctionnel. Utiliser des démos de cas d'utilisation NE SONT PAS des "tests". Ce qui suit est une liste de bibliothèques de test, aucune d'entre elles n'est approuvée plus que l'autre.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -111,7 +111,7 @@ Les projets _doivent_ inclure certaines formes de test unitaire : tests d'implem
 
 ## Préface
 
-Les sections suivantes décrivent un guide de style _raisonable_ pour tout développement moderne en JavaScript et ne sont pas censées être normatives. Le plus important à appliquer est la **loi de cohérence dans le style de code**. Le style que vous avez choisi pour votre projet, quel qu'il soit, doit être considéré comme la loi. Référer à ce document pour afficher l'engagement de votre projet à utiliser un style de code cohérent, lisibile et maintenable.
+Les sections suivantes décrivent un guide de style _raisonable_ pour tout développement moderne en JavaScript et ne sont pas censées être normatives. Le plus important à appliquer est la **loi de cohérence dans le style de code**. Le style que vous avez choisi pour votre projet, quel qu'il soit, doit être considéré comme la loi. Référer à ce document pour afficher l'engagement de votre projet à utiliser un style de code cohérent, lisible et maintenable.
 
 
 
@@ -207,7 +207,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		object = {};
 
 	// 2.B.1.2
-	// Utilisez une unique déclaration `var` par portée de (fonction) améliore la
+	// Utiliser une unique déclaration `var` par portée de (fonction) améliore la
 	// lisibilité et permets de garder une déclaration séparée du corps de la fonction
 	// (en adéquation avec la portée des variables JS)
 
@@ -216,7 +216,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	var bar = "";
 	var qux;
 
-	// Correcte
+	// Correct
 	var foo = "",
 		bar = "",
 		quux;
@@ -345,7 +345,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	D. La cohérence gagne toujours
 
 	Dans les sections 2.A-2.C, les règles d'espacement sont énoncées sous forme de recommandation avec un objectif simple et plus abouti : la cohérence.
-	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérer comme optionnels. Un _unique style_ doit exister pour tous les sources d'un projet.
+	Il est important de noter que les préférences de formatage, tel que les "espaces situés à l'intérieur de déclaration", doivent être considérés comme optionnels. Un _unique style_ doit exister pour tous les sources d'un projet.
 
 	```javascript
 
@@ -373,7 +373,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	E. Fin de ligne et lignes vides
 
-	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuer __automatiquement__ avant chaque "commit".
+	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuée __automatiquement__ avant chaque "commit".
 
 3. <a name="type">Vérification de Type (Courtesy jQuery Core Style Guidelines)</a>
 
@@ -650,10 +650,10 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === null || foo === undefined ) ...
 
-	// ...bénéficier de la coercion de type ==, comme suit:
+	// ...bénéficiez de la coercion de type ==, comme suit:
 	if ( foo == null ) ...
 
-	// Souvenez vous, utilisez == vérifira une égalité avec `null` et `null` & `undefined`
+	// Souvenez vous, utiliser == vérifiera une égalité avec `null` et `null` & `undefined`
 	// mais pas `false`, "" ou 0
 	null == undefined
 
@@ -665,7 +665,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// 4.2.1
 	// Cohercion de Type coercion et remarques
 
-	Preferez `===` à la place de `==` (à moins que le cas de test require la perte d'évaluation de type)
+	Preferez `===` à la place de `==` (à moins que le cas de test ne requiert la perte d'évaluation de type)
 
 	=== n'effectue pas de cohercion de type, ce qui signifie que:
 
@@ -703,28 +703,28 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 			var data = "secret";
 
 			return {
-				// This is some boolean property
+				//Ceci est une proprété booléenne (boolean)
 				bool: true,
-				// Some string value
+				//  Une chaîne de caractère (string)
 				string: "a string",
-				// An array property
+				// Une propriété tableau (array)
 				array: [ 1, 2, 3, 4 ],
-				// An object property
+				// Une propriété objet (object)
 				object: {
 					lang: "en-Us"
 				},
 				getData: function() {
-					// get the current value of `data`
+					// obtenir la valeur courante de `data`
 					return data;
 				},
 				setData: function( value ) {
-					// set the value of `data` and return it
+					// affecter une valeur `value` à `data` et le renvoyer
 					return ( data = value );
 				}
 			};
 		})();
 
-		// D'autres choses peuvent être implémenter ici
+		// D'autres choses peuvent être implémentées ici
 
 		// Exposition de notre module via l'objet global
 		global.Module = Module;
@@ -787,9 +787,9 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	for(i=0;i<els.length;i++){a.push(els[i]);}
 	```
 
-	Vous avez peut être probablement écrit le code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
+	Vous avez peut être déjà écrit un code comme ci-dessus - nous espérons que cette mauvaise pratique se terminera aujourd'hui.
 
-	Ci-dessous la même logique, avec plus de clareté et surtout plus de lisibilité fonctionnelle:
+	Ci-dessous la même logique, avec plus de clarté et surtout plus de lisibilité fonctionnelle:
 
 	```javascript
 
