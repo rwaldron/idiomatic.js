@@ -1,7 +1,7 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Principios para escribir JavaScript consistente e idiomático
 
-
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Esta traducción es un fork de https://github.com/rwldrn/idiomatic.js/ (inglés), con mínimas modificaciones.
+Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull request, contactarme en [fernetjs](http://fernetjs.com) o vía [@matiasarriola](https://twitter.com/matiasarriola). Tratemos de tener este documento actualizado, e ir incluyendo cosas que estén faltando!
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -26,25 +26,15 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
+## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, no importa cuanta gente haya contribuido.
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+### La lista que se presenta a continuación destaca las prácticas que uso en todo el código del que soy autor, y las contribuciones a todos los proyectos que he creado, deben seguir estas prácticas.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+### No intento imponer mis preferencias de estilo en el código de otras personas; si tienen un algún estilo común, homogéneo, esto debería ser respetado.
 
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
+## Traducciones
 
-
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
->_Rebecca_ _Murphey_
-
-&nbsp;
-
-> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
->_Idan_ _Gazit_
-
-
-## Translations
-
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -58,10 +48,9 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
+## Cosas importantes, no directamente relacionadas al js idiomático:
 
-## Important, Non-Idiomatic Stuff:
-
-### Code Quality Tools, Resources & References
+### Calidad de código: Herramientas, recursos y referencias
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
@@ -71,35 +60,32 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-## Get Smart
+[Usando herramientas de calidad de código - por Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/) (inglés)
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+### Conociendo mejor el lenguaje
 
- * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
+[http://es5.github.com/](http://es5.github.com/)
+
+Lo siguiente debería de ser considerado 1) éstas son incompletas, y 2) *REQUERIDAS* lecturas. No siempre estoy de acuerdo con el estilo escrito por los autores que acá abajo presento, pero una cosa es cierta: Son consistentes; y son autoridades en el lenguaje.
+
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
- * [Adventures in JavaScript Development](http://rmurphey.com/)
+ * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
- * [JS Assessment](https://github.com/rmurphey/js-assessment)
- * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+(Todos estos artículos están en inglés)
+
+### Proceso de Build y Deployment
+
+Los proyectos deberían siempre tratar de incluir algún mecanismo para que el código pueda ser comprimido y optimizado para uso en producción. Algunos ejemplos de herramientas que hacen esto son [Uglify.js](https://github.com/mishoo/UglifyJS) (hecha en JavaScript), [Google Closure Compiler](http://code.google.com/closure/compiler/) (basada en java), y [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Escoge una y dale soporte.
+
+Se puede encontrar un "kit para build" genérico, ya funcional, en el directorio `/kits` de este mismo repositorio. El uso es sencillo: 1) copiar los contenidos de algún kit de la carpeta `/kits` a un nuevo directorio en el que se va a trabajar, 2) guarda el .js de tu proyecto en el directorio `/src` 3) incluir el nombre del proyecto en el archivo `project.txt`, 4) correr el comando `make` desde la terminal.
 
 
+### Testing
 
-
-### Build & Deployment Process
-
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
-
-
-### Test Facility
-
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional testing etc. Las demos NO CUENTAN como "tests". A continuación, una lista de frameworks para testing, ninguno de los cuales recomiendo más que otro.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -107,1175 +93,897 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Mocha](https://github.com/visionmedia/mocha)
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
- * [Buster.js](http://busterjs.org/)
- * [Sinon.js](http://sinonjs.org/)
 
-## Table of Contents
+## Tabla de contenidos
 
- * [Whitespace](#whitespace)
+ * [Espacios en blanco](#whitespace)
  * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
+ * [Checkeo de tipos (Cortesía de la guía de estilo de jQuery)](#type)
+ * [Evaluación condicional](#cond)
+ * [Estilo práctico](#practical)
  * [Naming](#naming)
- * [Misc](#misc)
+ * [Varios](#misc)
  * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Comentarios](#comments)
 
 
-
-------------------------------------------------
-
-
-## Preface
-
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+## Manifiesto de estilo idiomático
 
 
+1. <a name="whitespace">Espacios en blanco</a>
 
-
-
-## Idiomatic Style Manifesto
-
-
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+	* Nunca mezclar espacios y tabulaciones.
+	* Cuando comienzas con un proyecto, antes de escribir código, escoger entre indentación blanda (espacios), o tabulaciones &mdash; Esto es LEY.
+		* Para legibilidad, siempre recomiendo setear las preferencias de tu editor para que el tamaño de la identación sea de dos caracteres &mdash; esto significa, usar dos espacios, o que dos espacios representen una tabulación.
+	* Si tu editor lo soporta, siempre trabajar con la preferencia para que se muestren los caracteres invisibles activada. Los beneficios de esta práctica son:
+		* Refuerza la consistencia
+		* Eliminar el espacio en blanco del fin de línea
+		* Eliminar los espacios en blanco de las líneas vacías
+		* Los commits y los diffs (comparar cambios contra versiones anteriores, etc.) va a ser mucho más fácil
 
 
 2. <a name="spacing">Beautiful Syntax</a>
 
-    A. Parens, Braces, Linebreaks
+	A. Paréntesis, Llaves, Fines de línea
 
-    ```javascript
+	```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+	// if/else/for/while/try siempre tienen espacios y se extienden a múltiples líneas
+	// Esto mejora la legibilidad
 
-    // 2.A.1.1
-    // Examples of really cramped syntax
+	// 2.A.1.1
+	// Ejemplos de sintaxis toda comprimida
 
-    if(condition) doSomething();
+	if(condition) doSomething();
 
-    while(condition) iterating++;
+	while(condition) iterating++;
 
-    for(var i=0;i<100;i++) someIterativeFn();
+	for(var i=0;i<100;i++) someIterativeFn();
 
 
-    // 2.A.1.1
-    // Use whitespace to promote readability
+	// 2.A.1.1
+	// Uso de espacios para mejorar la legibilidad
 
-    if ( condition ) {
-      // statements
-    }
+	if ( condition ) {
+		// statements
+	}
 
-    while ( condition ) {
-      // statements
-    }
+	while ( condition ) {
+		// statements
+	}
 
-    for ( var i = 0; i < 100; i++ ) {
-      // statements
-    }
+	for ( var i = 0; i < 100; i++ ) {
+		// statements
+	}
 
-    // Even better:
+	// Aún mejor:
 
-    var i,
-      length = 100;
+	var i,
+		length = 100;
 
-    for ( i = 0; i < length; i++ ) {
-      // statements
-    }
+	for ( i = 0; i < length; i++ ) {
+		// statements
+	}
 
-    // Or...
+	// O...
 
-    var i = 0,
-      length = 100;
+	var i = 0,
+		length = 100;
 
-    for ( ; i < length; i++ ) {
-      // statements
-    }
+	for ( ; i < length; i++ ) {
+		// statements
+	}
 
-    var prop;
+	var prop;
 
-    for ( prop in object ) {
-      // statements
-    }
+	for ( prop in object ) {
+		// statements
+	}
 
 
-    if ( true ) {
-      // statements
-    } else {
-      // statements
-    }
-    ```
+	if ( true ) {
+		// statements
+	} else {
+		// statements
+	}
+	```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+	B. Asignaciones, Declaraciones, Funciones (Nombradas, Expresiones, Constructores)
 
-    ```javascript
+	```javascript
 
-    // 2.B.1.1
-    // Variables
-    var foo = "bar",
-      num = 1,
-      undef;
+	// 2.B.1.1
+	// Variables
+	var foo = "bar",
+		num = 1,
+		undef;
 
-    // Literal notations:
-    var array = [],
-      object = {};
+	// Notaciones literales:
+	var array = [],
+		object = {};
 
 
-    // 2.B.1.2
-    // Using only one `var` per scope (function) promotes readability
-    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+	// 2.B.1.2
+	// Usando solo una instancia de `var` por scope (o sea, dentro de la función), mejora la legibilidad
+	// y mantiene tu lista de declaraciones claras (también ahorra de tipear un poco más)
 
-    // Bad
-    var foo = "";
-    var bar = "";
-    var qux;
+	// Mal
+	var foo = "";
+	var bar = "";
+	var qux;
 
-    // Good
-    var foo = "",
-      bar = "",
-      quux;
+	// Bien
+	var foo = "",
+		bar = "",
+		quux;
 
-    // or..
-    var // Comment on these
-    foo = "",
-    bar = "",
-    quux;
+	// o..
+	var // comentar en éstos
+	foo = "",
+	bar = "",
+	quux;
 
-    // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+	```
 
-    // Bad
-    function foo() {
+	```javascript
 
-      // some statements here
+	// 2.B.2.1
+	// Declaración De Función Nombrada
+	function foo( arg1, argN ) {
 
-      var bar = "",
-        qux;
-    }
+	}
 
-    // Good
-    function foo() {
-      var bar = "",
-        qux;
+	// Uso
+	foo( arg1, argN );
 
-      // all statements after the variables declarations.
-    }
-    ```
 
-    ```javascript
+	// 2.B.2.2
+	// Declaración De Función Nombrada
+	function square( number ) {
+		return number * number;
+	}
 
-    // 2.B.2.1
-    // Named Function Declaration
-    function foo( arg1, argN ) {
+	// Uso
+	square( 10 );
 
-    }
+	// Really contrived continuation passing style
+	function square( number, callback ) {
+		callback( number * number );
+	}
 
-    // Usage
-    foo( arg1, argN );
+	square( 10, function( square ) {
+		// callback statements
+	});
 
 
-    // 2.B.2.2
-    // Named Function Declaration
-    function square( number ) {
-      return number * number;
-    }
+	// 2.B.2.3
+	// Expresión de función
+	var square = function( number ) {
+		// Retornar algo relevante y con valor agregado
+		return number * number;
+	};
 
-    // Usage
-    square( 10 );
+	// Expresión de función con identificador
+	// Esta forma es preferida porque tiene el valor agregado de
+	// poder ser llamada a sí misma y ser identificable en el stacktrace (MUY útil para debugging) :
+	var factorial = function factorial( number ) {
+		if ( number < 2 ) {
+			return 1;
+		}
 
-    // Really contrived continuation passing style
-    function square( number, callback ) {
-      callback( number * number );
-    }
+		return number * factorial( number-1 );
+	};
 
-    square( 10, function( square ) {
-      // callback statements
-    });
 
+	// 2.B.2.4
+	// Declaración de Constructor
+	function FooBar( options ) {
 
-    // 2.B.2.3
-    // Function Expression
-    var square = function( number ) {
-      // Return something valuable and relevant
-      return number * number;
-    };
+		this.options = options;
+	}
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
-    var factorial = function factorial( number ) {
-      if ( number < 2 ) {
-        return 1;
-      }
+	// Uso
+	var fooBar = new FooBar({ a: "alpha" });
 
-      return number * factorial( number-1 );
-    };
+	fooBar.options;
+	// { a: "alpha" }
 
+	```
 
-    // 2.B.2.4
-    // Constructor Declaration
-    function FooBar( options ) {
 
-      this.options = options;
-    }
+	C. Algunas excepciones
 
-    // Usage
-    var fooBar = new FooBar({ a: "alpha" });
+	```javascript
 
-    fooBar.options;
-    // { a: "alpha" }
+	// 2.C.1.1
+	// Funciones con callbacls
+	foo(function() {
+		// Como se ve no hay espacio entre el primer paréntesis
+		// y la palabra "function"
+	});
 
-    ```
+	// Función que acepta un Array como parámetro, sin espacio entre ([
+	foo([ "alpha", "beta" ]);
 
+	// 2.C.1.2
+	// Función que acepta un objeto, sin espacio
+	foo({
+		a: "alpha",
+		b: "beta"
+	});
 
-    C. Exceptions, Slight Deviations
+	// Grupo de paréntesis dentro de paréntesis, sin espacio
+	if ( !("foo" in obj) ) {
 
-    ```javascript
+	}
 
-    // 2.C.1.1
-    // Functions with callbacks
-    foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
-    });
+	```
 
-    // Function accepting an array, no space
-    foo([ "alpha", "beta" ]);
+	D. La consistencia siempre gana
 
-    // 2.C.1.2
-    // Function accepting an object, no space
-    foo({
-      a: "alpha",
-      b: "beta"
-    });
+	En las secciones 2.A-2.C, las reglas para los espacios son puestas con un objetivo mas simple y con un propósito más general: consistencia.
+	Es importante destacar que algunas preferencias de formato, deberían ser consideradas opcionales, pero solo un estilo debería existir a través de todo el código de fuente de tu proyecto.
 
-    // Single argument string literal, no space
-    foo("bar");
+	```javascript
 
-    // Inner grouping parens, no space
-    if ( !("foo" in obj) ) {
+	// 2.D.1.1
 
-    }
+	if (condition) {
+		// statements
+	}
 
-    ```
+	while (condition) {
+		// statements
+	}
 
-    D. Consistency Always Wins
+	for (var i = 0; i < 100; i++) {
+		// statements
+	}
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+	if (true) {
+		// statements
+	} else {
+		// statements
+	}
 
-    ```javascript
+	```
 
-    // 2.D.1.1
+	E. Fin de línea y líneas vacías
 
-    if (condition) {
-      // statements
-    }
+	Espacios en blanco pueden arruinar diffs y hacer los cambios imposibles leer. Considera agregar algún mecanismo para remover automáticamente los espacios que se encuentran al final de la línea o en líneas vacías.
 
-    while (condition) {
-      // statements
-    }
+3. <a name="type">Checkeo de tipos (Cortesía de la guía de estilo de jQuery)</a>
 
-    for (var i = 0; i < 100; i++) {
-      // statements
-    }
+	3.A Tipos
 
-    if (true) {
-      // statements
-    } else {
-      // statements
-    }
+	* String:
 
-    ```
+		`typeof variable === "string"`
 
-    E. Quotes
+	* Number:
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+		`typeof variable === "number"`
 
-    F. End of Lines and Empty Lines
+	* Boolean:
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+		`typeof variable === "boolean"`
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+	* Object:
 
-    A. Actual Types
+		`typeof variable === "object"`
 
-    String:
+	* Array:
 
-        typeof variable === "string"
+		`Array.isArray(arrayObject)`
+		(cuando sea posible / hay implementaciónes que no tienen esta función)
 
-    Number:
+	* null:
 
-        typeof variable === "number"
+		`variable === null`
 
-    Boolean:
+	* null or undefined:
 
-        typeof variable === "boolean"
+		`variable == null`
 
-    Object:
+	* undefined:
 
-        typeof variable === "object"
+		* Variables globales:
 
-    Array:
+			* `typeof variable === "undefined"`
 
-        Array.isArray( arrayLikeObject )
-        (wherever possible)
+		* Variables locales:
 
-    Node:
+			* `variable === undefined`
 
-        elem.nodeType === 1
+		* Propiedades:
+			* `object.prop === undefined`
+			* `object.hasOwnProperty( prop )`
+			* `"prop" in object`
 
-    null:
 
-        variable === null
+	JavaScript es un lenguaje dinámicamente tipado - por lo que puede ser tu mejor amigo o tu peor enemigo, entonces: Siempre respeta al `type` como se recomienda.
 
-    null or undefined:
+	3.B Conversiones implícitas de tipos
 
-        variable == null
+	Considera lo que causaría lo siguiente...
 
-    undefined:
+	Dado este HTML:
 
-      Global Variables:
+	```html
 
-        typeof variable === "undefined"
+	<input type="text" id="foo-input" value="1">
 
-      Local Variables:
+	```
 
-        variable === undefined
 
-      Properties:
+	```js
 
-        object.prop === undefined
-        object.hasOwnProperty( prop )
-        "prop" in object
+	// 3.B.1.1
 
-    B. Coerced Types
+	// `foo` ha sido declarado con el valor `0` y su tipo es `number`
+	var foo = 0;
 
-    Consider the implications of the following...
+	// typeof foo;
+	// "number"
+	...
 
-    Given this HTML:
+	// En algún lugar, más tarde en tu código, necesitas modificar `foo`
+	// con un nuevo valor derivado de el elemento input del HTML
 
-    ```html
+	foo = document.getElementById("foo-input").value;
 
-    <input type="text" id="foo-input" value="1">
+	// Si vas a testear `typeof foo` ahora, el resultado sería `string`
+	// Esto significa que si hubieras tenido lógica que comparara `foo` así:
 
-    ```
+	if ( foo === 1 ) {
 
+		importantTask();
 
-    ```javascript
+	}
 
-    // 3.B.1.1
+	// `importantTask()` nunca habría sido evaluada, incluso con `foo` teniendo un valor de "1"
 
-    // `foo` has been declared with the value `0` and its type is `number`
-    var foo = 0;
+	// 3.B.1.2
 
-    // typeof foo;
-    // "number"
-    ...
+	// Te le podés adelantar a los problemas, usando conversión de tipos con los operadores unarios + o - :
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+	foo = +document.getElementById("foo-input").value;
+	      ^ el operador unario + va a convertir su operando derecho a number
 
-    foo = document.getElementById("foo-input").value;
+	// typeof foo;
+	// "number"
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+	if ( foo === 1 ) {
 
-    if ( foo === 1 ) {
+		importantTask();
 
-      importantTask();
+	}
 
-    }
+	// `importantTask()` va a ser llamada
+	```
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+	Aquí hay algunos casos comunes de conversiones implícitas:
 
 
-    // 3.B.1.2
+	```javascript
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+	// 3.B.2.1
 
-    foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+	var number = 1,
+		string = "1",
+		bool = false;
 
-    // typeof foo;
-    // "number"
+	number;
+	// 1
 
-    if ( foo === 1 ) {
+	number + "";
+	// "1"
 
-      importantTask();
+	string;
+	 // "1"
 
-    }
+	+string;
+	// 1
 
-    // `importantTask()` will be called
-    ```
+	+string++;
+	// 1
 
-    Here are some common cases along with coercions:
+	string;
+	// 2
 
+	bool;
+	// false
 
-    ```javascript
+	+bool;
+	// 0
 
-    // 3.B.2.1
+	bool + "";
+	// "false"
+	```
 
-    var number = 1,
-      string = "1",
-      bool = false;
 
-    number;
-    // 1
+	```javascript
+	// 3.B.2.2
 
-    number + "";
-    // "1"
+	var number = 1,
+		string = "1",
+		bool = true;
 
-    string;
-    // "1"
+	string === number;
+	// false
 
-    +string;
-    // 1
+	string === number + "";
+	// true
 
-    +string++;
-    // 1
+	+string === number;
+	// true
 
-    string;
-    // 2
+	bool === number;
+	// false
 
-    bool;
-    // false
+	+bool === number;
+	// true
 
-    +bool;
-    // 0
+	bool === string;
+	// false
 
-    bool + "";
-    // "false"
-    ```
+	bool === !!string;
+	// true
+	```
 
+	```javascript
+	// 3.B.2.3
 
-    ```javascript
-    // 3.B.2.2
+	var array = [ "a", "b", "c" ];
 
-    var number = 1,
-      string = "1",
-      bool = true;
+	!!~array.indexOf( "a" );
+	// true
 
-    string === number;
-    // false
+	!!~array.indexOf( "b" );
+	// true
 
-    string === number + "";
-    // true
+	!!~array.indexOf( "c" );
+	// true
 
-    +string === number;
-    // true
+	!!~array.indexOf( "d" );
+	// false
 
-    bool === number;
-    // false
 
-    +bool === number;
-    // true
+	var num = 2.5;
 
-    bool === string;
-    // false
+	parseInt( num, 10 );
 
-    bool === !!string;
-    // true
-    ```
+	// es lo mismo que...
 
-    ```javascript
-    // 3.B.2.3
+	~~num;
 
-    var array = [ "a", "b", "c" ];
+	```
 
-    !!~array.indexOf("a");
-    // true
+4. <a name="cond">Evaluación condicional</a>
 
-    !!~array.indexOf("b");
-    // true
+	```javascript
 
-    !!~array.indexOf("c");
-    // true
+	// 4.1.1
+	// Cuando evaluamos para saber si un array tiene algún elemento,
+	// en lugar de hacer esto:
+	if ( array.length > 0 ) ...
 
-    !!~array.indexOf("d");
-    // false
+	// ...evaluar por el valor de verdad de la expresión, como en este caso:
+	if ( array.length ) ...
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
 
-    if ( array.indexOf( "a" ) >= 0 ) {
-      // ...
-    }
-    ```
+	// 4.1.2
+	// Cuando solo evaluamos que un array está vacío,
+	// en lugar de esto:
+	if ( array.length === 0 ) ...
 
-    ```javascript
-    // 3.B.2.4
+	// ...evaluar el valor de verdad de la expresión:
+	if ( !array.length ) ...
 
 
-    var num = 2.5;
+	// 4.1.3
+	// Cuando evaluamos que un string no es vacío,
+	// en vez de hacer esto:
+	if ( string !== "" ) ...
 
-    parseInt( num, 10 );
+	// ...evaluar el valor de verdad de la expresión:
+	if ( string ) ...
 
-    // is the same as...
 
-    ~~num;
+	// 4.1.4
+	// Cuando evaluamos si un string es vacío,
+	// en lugar de:
+	if ( string === "" ) ...
 
-    num >> 0;
+	// ...evaluar la expresión por falso, como aquí:
+	if ( !string ) ...
 
-    num >>> 0;
 
-    // All result in 2
+	// 4.1.5
+	// Cuando evaluamos si una variable es true,
+	// en lugar de esto:
+	if ( foo === true ) ...
 
+	// ...expresar directamente de la siguiente manera:
+	if ( foo ) ...
 
-    // Keep in mind however, that negative numbers will be treated differently...
 
-    var neg = -2.5;
+	// 4.1.6
+	// Cuando evaluamos si una variable es false,
+	// en vez de:
+	if ( foo === false ) ...
 
-    parseInt( neg, 10 );
+	// ...usar negación y expresar de esta manera
+	if ( !foo ) ...
 
-    // is the same as...
+	// ...Tener cuidado, porque la anterior expresión va a ser true también para: 0, "", null, undefined, NaN
+	// si se _DEBE_ testear por el valor false únicamente, utilizar el ===
+	if ( foo === false ) ...
 
-    ~~neg;
 
-    neg >> 0;
+	// 4.1.7
+	// Cuando solamente se esta evaluando una referencia que puede ser null o undefined, pero NO false, "" or 0,
+	// en lugar de:
+	if ( foo === null || foo === undefined ) ...
 
-    // All result in -2
-    // However...
+	// ...tomar ventaja del uso del operador ==:
+	if ( foo == null ) ...
 
-    neg >>> 0;
+	// Recuerda, usar == va a matchear `null` con AMBOS `null` y `undefined`
+	// pero no `false`, "" o 0
+	null == undefined
 
-    // Will result in 4294967294
+	```
+	SIEMPRE evaluar por el mejor, más preciso resultado - lo de arriba es sólo una guía o un dogma y depende mucho de cada situación.
 
+	```javascript
 
+	// 4.2.1
+	// Sobre los tipos y evaluación de expresiones
 
+	Preferir `===` por sobre `==` (a menos que el caso particular requiera una evaluación no fuertemente tipada)
 
-    ```
+	=== no genera coerción de tipos, lo que significa que:
 
+	"1" === 1;
+	// false
 
+	== genera coerción de tipos, lo que significa que:
 
-4. <a name="cond">Conditional Evaluation</a>
+	"1" == 1;
+	// true
 
-    ```javascript
 
-    // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
-    if ( array.length > 0 ) ...
+	// 4.2.2
+	// Booleanos, Verdaderos y Falsos
 
-    // ...evaluate truthiness, like this:
-    if ( array.length ) ...
+	Booleanos: true, false
 
+	Verdaderos: "foo", 1
 
-    // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
-    if ( array.length === 0 ) ...
+	Falsos: "", 0, null, undefined, NaN, void 0
 
-    // ...evaluate truthiness, like this:
-    if ( !array.length ) ...
+	```
 
 
-    // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
-    if ( string !== "" ) ...
+5. <a name="practical">Estilo práctico</a>
 
-    // ...evaluate truthiness, like this:
-    if ( string ) ...
+	```javascript
 
+	// 5.1.1
+	// Un módulo práctico
 
-    // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
-    if ( string === "" ) ...
+	(function( global ) {
+		var Module = (function() {
 
-    // ...evaluate falsy-ness, like this:
-    if ( !string ) ...
+			var data = "secret";
 
+			return {
+				// Esta es una propiedad booleana
+				bool: true,
+				// Algun valor string
+				string: "a string",
+				// Una propiedad Array
+				array: [ 1, 2, 3, 4 ],
+				// Una propiedad objeto
+				object: {
+					lang: "es-AR"
+				},
+				getData: function() {
+					// Obtener el valor de `data`
+					return data;
+				},
+				setData: function( value ) {
+					// setea el valor de `data` y lo retorna
+					return ( data = value );
+				}
+			};
+		})();
 
-    // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
-    if ( foo === true ) ...
+		// Otras cosas podrían pasar aquí
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
-    if ( foo ) ...
+		// Exponer nuestro módulo al módulo global
+		global.Module = Module;
 
+	})( this );
 
-    // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
-    if ( foo === false ) ...
+	```
 
-    // ...use negation to coerce a true evaluation
-    if ( !foo ) ...
+	```javascript
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
-    if ( foo === false ) ...
+	// 5.2.1
+	// Un constructor práctico
 
+	(function( global ) {
 
-    // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
-    if ( foo === null || foo === undefined ) ...
+		function Ctor( foo ) {
 
-    // ...take advantage of == type coercion, like this:
-    if ( foo == null ) ...
+			this.foo = foo;
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
-    null == undefined
+			return this;
+		}
 
-    ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+		Ctor.prototype.getFoo = function() {
+			return this.foo;
+		};
 
-    ```javascript
+		Ctor.prototype.setFoo = function( val ) {
+			return ( this.foo = val );
+		};
 
-    // 4.2.1
-    // Type coercion and evaluation notes
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+		// para llamar al constructor sin usar `new`, se podría hacer de la siguiente manera:
+		var ctor = function( foo ) {
+			return new Ctor( foo );
+		};
 
-    // === does not coerce type, which means that:
 
-    "1" === 1;
-    // false
+		// Exponer nuestro constructor al objeto global
+		global.ctor = ctor;
 
-    // == does coerce type, which means that:
+	})( this );
 
-    "1" == 1;
-    // true
-
-
-    // 4.2.2
-    // Booleans, Truthies & Falsies
-
-    // Booleans:
-    true, false
-
-    // Truthy:
-    "foo", 1
-
-    // Falsy:
-    "", 0, null, undefined, NaN, void 0
-
-    ```
-
-
-5. <a name="practical">Practical Style</a>
-
-    ```javascript
-
-    // 5.1.1
-    // A Practical Module
-
-    (function( global ) {
-      var Module = (function() {
-
-        var data = "secret";
-
-        return {
-          // This is some boolean property
-          bool: true,
-          // Some string value
-          string: "a string",
-          // An array property
-          array: [ 1, 2, 3, 4 ],
-          // An object property
-          object: {
-            lang: "en-Us"
-          },
-          getData: function() {
-            // get the current value of `data`
-            return data;
-          },
-          setData: function( value ) {
-            // set the value of `data` and return it
-            return ( data = value );
-          }
-        };
-      })();
-
-      // Other things might happen here
-
-      // expose our module to the global object
-      global.Module = Module;
-
-    })( this );
-
-    ```
-
-    ```javascript
-
-    // 5.2.1
-    // A Practical Constructor
-
-    (function( global ) {
-
-      function Ctor( foo ) {
-
-        this.foo = foo;
-
-        return this;
-      }
-
-      Ctor.prototype.getFoo = function() {
-        return this.foo;
-      };
-
-      Ctor.prototype.setFoo = function( val ) {
-        return ( this.foo = val );
-      };
-
-
-      // To call constructor's without `new`, you might do this:
-      var ctor = function( foo ) {
-        return new Ctor( foo );
-      };
-
-
-      // expose our constructor to the global object
-      global.ctor = ctor;
-
-    })( this );
-
-    ```
+	```
 
 
 
 6. <a name="naming">Naming</a>
 
 
+	Si no sos un compilador/compresor humano de código, entonces no trates de serlo.
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+	A continuación ejemplos "tristes" de nombramiento de variables
 
-    The following code is an example of egregious naming:
+	```javascript
 
-    ```javascript
+	// 6.1.1
+	// Ejemplo de código con nombres de variables pobres / poco descriptivos
 
-    // 6.A.1.1
-    // Example of code with poor names
+	function q(s) {
+		return document.querySelectorAll(s);
+	}
+	var i,a=[],els=q("#foo");
+	for(i=0;i<els.length;i++){a.push(els[i]);}
+	```
 
-    function q(s) {
-      return document.querySelectorAll(s);
-    }
-    var i,a=[],els=q("#foo");
-    for(i=0;i<els.length;i++){a.push(els[i]);}
-    ```
+	Sin alguna duda, alguna vez has escrito código como este - con un poco de suerte, eso termina hoy.
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+	Aquí está la misma pieza de lógica, pero con un nombramiento de variables más inteligente (y una estructura más legible):
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+	```javascript
 
-    ```javascript
+	// 6.2.1
+	// Ejemplo de código con nombres mejorados
 
-    // 6.A.2.1
-    // Example of code with improved names
+	function query( selector ) {
+		return document.querySelectorAll( selector );
+	}
 
-    function query( selector ) {
-      return document.querySelectorAll( selector );
-    }
+	var idx = 0,
+		elements = [],
+		matches = query("#foo"),
+		length = matches.length;
 
-    var idx = 0,
-      elements = [],
-      matches = query("#foo"),
-      length = matches.length;
+	for( ; idx < length; idx++ ){
+		elements.push( matches[ idx ] );
+	}
 
-    for ( ; idx < length; idx++ ) {
-      elements.push( matches[ idx ] );
-    }
+	```
 
-    ```
+	Algunos tips más para nombramiento de variables:
 
-    A few additional naming pointers:
+	```javascript
 
-    ```javascript
+	// 6.3.1
+	// Nombrando strings
 
-    // 6.A.3.1
-    // Naming strings
+	"dog" es un string
 
-    `dog` is a string
 
+	// 6.3.2
+	// Nombrando arrays
 
-    // 6.A.3.2
-    // Naming arrays
+	"dogs" es un array de "dog" strings
 
-    `dogs` is an array of `dog` strings
 
+	// 6.3.3
+	// Nombrando funciones, objetos, instancias, etc.
 
-    // 6.A.3.3
-    // Naming functions, objects, instances, etc
+	camelCase; función y declaración de variable
 
-    camelCase; function and var declarations
 
+	// 6.3.4
+	// Nombrando constructores, prototypes, clases, etc.
 
-    // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+	PascalCase; función constructora
 
-    PascalCase; constructor function
 
+	// 6.3.5
+	// Nombrando expresiones regulares
 
-    // 6.A.3.5
-    // Naming regular expressions
+	rDesc = //;
 
-    rDesc = //;
 
+	// 6.3.6
+	// Extraído de la guía de estilo de la Google Closure Library
 
-    // 6.A.3.6
-    // From the Google Closure Library Style Guide
+	functionNamesLikeThis;
+	variableNamesLikeThis;
+	ConstructorNamesLikeThis;
+	EnumNamesLikeThis;
+	methodNamesLikeThis;
+	SYMBOLIC_CONSTANTS_LIKE_THIS;
 
-    functionNamesLikeThis;
-    variableNamesLikeThis;
-    ConstructorNamesLikeThis;
-    EnumNamesLikeThis;
-    methodNamesLikeThis;
-    SYMBOLIC_CONSTANTS_LIKE_THIS;
 
-    ```
 
-    B. Faces of `this`
+	```
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+7. <a name="misc">Varios</a>
 
-    ```javascript
+	Esta sección va a servir para describir ideas y conceptos que no deberían se considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript.
 
-    // 6.B.1
-    function Device( opts ) {
+	A. Usar `switch` debería ser evitado, traceo moderno de métodos van a poner en una lista negra a las funciones con sentencias switch.
 
-      this.value = null;
+	Parecen haber mejoras drásticas a la ejecución de sentencias `switch` en las últimas versiones de Firefox y Chrome.
+	http://jsperf.com/switch-vs-object-literal-vs-module
 
-      // open an async stream,
-      // this will be called continuously
-      stream.read( opts.path, function( data ) {
+	Mejoras destacables pueden ser vistas aquí también:
+	https://github.com/rwldrn/idiomatic.js/issues/13
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
-        this.value = data;
-
-      }.bind(this) );
-
-      // Throttle the frequency of events emitted from
-      // this Device instance
-      setInterval(function() {
-
-        // Emit a throttled event
-        this.emit("event");
-
-      }.bind(this), opts.freq || 100 );
-    }
-
-    // Just pretend we've inherited EventEmitter ;)
-
-    ```
-
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
-
-
-    ```javascript
-    // 6.B.2
-
-    // eg. lodash/underscore, _.bind()
-    function Device( opts ) {
-
-      this.value = null;
-
-      stream.read( opts.path, _.bind(function( data ) {
-
-        this.value = data;
-
-      }, this) );
-
-      setInterval(_.bind(function() {
-
-        this.emit("event");
-
-      }, this), opts.freq || 100 );
-    }
-
-    // eg. jQuery.proxy
-    function Device( opts ) {
-
-      this.value = null;
-
-      stream.read( opts.path, jQuery.proxy(function( data ) {
-
-        this.value = data;
-
-      }, this) );
-
-      setInterval( jQuery.proxy(function() {
-
-        this.emit("event");
-
-      }, this), opts.freq || 100 );
-    }
-
-    // eg. dojo.hitch
-    function Device( opts ) {
-
-      this.value = null;
-
-      stream.read( opts.path, dojo.hitch( this, function( data ) {
-
-        this.value = data;
-
-      }) );
-
-      setInterval( dojo.hitch( this, function() {
-
-        this.emit("event");
-
-      }), opts.freq || 100 );
-    }
-
-    ```
-
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
-
-    ```javascript
-
-    // 6.B.3
-
-    function Device( opts ) {
-      var self = this;
-
-      this.value = null;
-
-      stream.read( opts.path, function( data ) {
-
-        self.value = data;
-
-      });
-
-      setInterval(function() {
-
-        self.emit("event");
-
-      }, opts.freq || 100 );
-    }
-
-    ```
-
-
-    C. Use `thisArg`
-
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
-
-    ```javascript
-
-    // 6.C.1
-
-    var obj;
-
-    obj = { f: "foo", b: "bar", q: "qux" };
-
-    Object.keys( obj ).forEach(function( key ) {
-
-      // |this| now refers to `obj`
-
-      console.log( this[ key ] );
-
-    }, obj ); // <-- the last arg is `thisArg`
-
-    // Prints...
-
-    // "foo"
-    // "bar"
-    // "qux"
-
-    ```
-
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
-
-7. <a name="misc">Misc</a>
-
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
-
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
-
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
-    http://jsperf.com/switch-vs-object-literal-vs-module
-
-    Notable improvements can be witnesses here as well:
-    https://github.com/rwldrn/idiomatic.js/issues/13
-
-    ```javascript
-
-    // 7.A.1.1
-    // An example switch statement
-
-    switch( foo ) {
-      case "alpha":
-        alpha();
-        break;
-      case "beta":
-        beta();
-        break;
-      default:
-        // something to default to
-        break;
-    }
-
-    // 7.A.1.2
-    // A alternate approach that supports composability and reusability is to
-    // use an object to store "cases" and a function to delegate:
-
-    var cases, delegator;
-
-    // Example returns for illustration only.
-    cases = {
-      alpha: function() {
-        // statements
-        // a return
-        return [ "Alpha", arguments.length ];
-      },
-      beta: function() {
-        // statements
-        // a return
-        return [ "Beta", arguments.length ];
-      },
-      _default: function() {
-        // statements
-        // a return
-        return [ "Default", arguments.length ];
-      }
-    };
-
-    delegator = function() {
-      var args, key, delegate;
-
-      // Transform arguments list into an array
-      args = [].slice.call( arguments );
-
-      // shift the case key from the arguments
-      key = args.shift();
-
-      // Assign the default case handler
-      delegate = cases._default;
-
-      // Derive the method to delegate operation to
-      if ( cases.hasOwnProperty( key ) ) {
-        delegate = cases[ key ];
-      }
-
-      // The scope arg could be set to something specific,
-      // in this case, |null| will suffice
-      return delegate.apply( null, args );
-    };
-
-    // 7.A.1.3
-    // Put the API in 7.A.1.2 to work:
-
-    delegator( "alpha", 1, 2, 3, 4, 5 );
-    // [ "Alpha", 5 ]
-
-    // Of course, the `case` key argument could easily be based
-    // on some other arbitrary condition.
-
-    var caseKey, someUserInput;
-
-    // Possibly some kind of form input?
-    someUserInput = 9;
-
-    if ( someUserInput > 10 ) {
-      caseKey = "alpha";
-    } else {
-      caseKey = "beta";
-    }
-
-    // or...
-
-    caseKey = someUserInput > 10 ? "alpha" : "beta";
-
-    // And then...
-
-    delegator( caseKey, someUserInput );
-    // [ "Beta", 1 ]
-
-    // And of course...
-
-    delegator();
-    // [ "Default", 0 ]
-
-
-    ```
-
-    B. Early returns promote code readability with negligible performance difference
-
-    ```javascript
-
-    // 7.B.1.1
-    // Bad:
-    function returnLate( foo ) {
-      var ret;
-
-      if ( foo ) {
-        ret = "foo";
-      } else {
-        ret = "quux";
-      }
-      return ret;
-    }
-
-    // Good:
-
-    function returnEarly( foo ) {
-
-      if ( foo ) {
-        return "foo";
-      }
-      return "quux";
-    }
-
-    ```
+	```javascript
+
+	// 7.A.1.1
+	// Ejemplo de una sentencia switch
+
+	switch( foo ) {
+		case "alpha":
+			alpha();
+			break;
+		case "beta":
+			beta();
+			break;
+		default:
+			// hacer algo por defecto
+			break;
+	}
+
+	// 7.A.1.2
+	// Una mejor manera de hacer esto sería usar un objeto literal o incluso un módulo:
+
+	var switchObj = {
+		alpha: function() {
+			// statements
+			// a return
+		},
+		beta: function() {
+			// statements
+			// a return
+		},
+		_default: function() {
+			// statements
+			// a return
+		}
+	};
+
+	var switchModule = (function () {
+		return {
+			alpha: function() {
+				// statements
+				// a return
+			},
+			beta: function() {
+				// statements
+				// a return
+			},
+			_default: function() {
+				// statements
+				// a return
+			}
+		};
+	})();
+
+
+	// 7.A.1.3
+	// Si `foo` es una propiedad de `switchObj` o `switchModule`, ejecutar como un método...
+
+	( switchObj.hasOwnProperty( foo ) && switchObj[ foo ] || switchObj._default )( args );
+
+	( switchModule.hasOwnProperty( foo ) && switchModule[ foo ] || switchModule._default )( args );
+
+	// Si ya se sabe que existe `foo` y podemos confiar en eso, se puede omitir el uso del OR
+	// dejando sólo la ejecución:
+
+	switchObj[ foo ]( args );
+
+	switchModule[ foo ]( args );
+
+
+	// Este patrón también facilita la reutilización de código.
+
+	```
+
+	B. Hacer un return temprano promociana la legibilidad del código con un ínfimo impacto en la performance
+
+	```javascript
+
+	// 7.B.1.1
+	// Mal:
+	function returnLate( foo ) {
+		var ret;
+
+		if ( foo ) {
+			ret = "foo";
+		} else {
+			ret = "quux";
+		}
+		return ret;
+	}
+
+	// Bien:
+
+	function returnEarly( foo ) {
+
+		if ( foo ) {
+			return "foo";
+		}
+		return "quux";
+	}
+
+	```
 
 
 8. <a name="native">Native & Host Objects</a>
 
-    The basic principle here is:
+	El principio fundamental aquí es:
 
-    ### Don't do stupid shit and everything will be ok.
+	### No hagas mierda estúpida y todo va a estar bien.
 
-    To reinforce this concept, please watch the following presentation:
+	Para reforzar este concepto, mirar esta presentación:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon) - recomendada!
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
+	<iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
 
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
-
-
-9. <a name="comments">Comments</a>
-
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-10. <a name="language">One Language Code</a>
+9. <a name="comments">Comentarios</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
-
-## Appendix
-
-### Comma First.
-
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+	* El estilo de JSDoc es bueno y aceptable (Closure Compiler type hints++)
+	* Comentar en la línea que está encima del código del que se está hablando
+	* Comentarios en múltiples líneas son buenos
+	* Comentarios en el fin de línea están prohibidos!!
 
 
 
-----------
+## Apéndice
 
+### Coma Primero.
 
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron and Contributors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
+Cualquier proyecto que cite este documento como una guía para estilo no va a aceptar formateo de código con "coma primero", a menos que sea explícitamente específicado.
+
+Ver: https://mail.mozilla.org/pipermail/es-discuss/2011-September/016805.html
+Notable: "That is horrible, and a reason to reject comma first.", "comma-first still is to be avoided"
+
+Salud.
