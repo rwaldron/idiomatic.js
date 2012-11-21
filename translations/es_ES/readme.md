@@ -26,9 +26,9 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
-## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, no importa cuanta gente haya contribuido.
+## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, sin importar cuánta gente haya contribuido
 
-### La lista que se presenta a continuación destaca las prácticas que uso en todo el código del que soy autor, y las contribuciones a todos los proyectos que he creado, deben seguir estas prácticas.
+### La lista que se presenta a continuación destaca las prácticas que uso en todo el código del que soy autor, y las contribuciones a todos los proyectos que he creado deben seguir estas prácticas.
 
 ### No intento imponer mis preferencias de estilo en el código de otras personas; si tienen un algún estilo común, homogéneo, esto debería ser respetado.
 
@@ -923,7 +923,7 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 	```
 
-	B. Hacer un return temprano promociana la legibilidad del código con un ínfimo impacto en la performance
+	B. Hacer un return temprano mejora la legibilidad del código y no tiene un impacto significativo en el rendimiento
 
 	```javascript
 
