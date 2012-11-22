@@ -1,7 +1,7 @@
 # Principios para escribir JavaScript consistente e idiomático
 
 ## Esta traducción es un fork de https://github.com/rwldrn/idiomatic.js/ (inglés), con mínimas modificaciones.
-Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull request, contactarme en [fernetjs](http://fernetjs.com) o vía [@matiasarriola](https://twitter.com/matiasarriola). Tratemos de tener este documento actualizado, e ir incluyendo cosas que estén faltando!
+Ante cualquier duda, sugerencia, etc. puedes reportar una issue, crear una pull request o contactar conmigo en [fernetjs](http://fernetjs.com) o vía [@matiasarriola](https://twitter.com/matiasarriola). ¡Tratemos de tener este documento actualizado e ir incluyendo cosas que falten!
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -24,6 +24,7 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Israel Viana [@ivianag](http://twitter.com/ivianag), [github](https://github.com/isra00)
 
 
 ## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, sin importar cuánta gente haya contribuido
@@ -48,11 +49,11 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
-## Cosas importantes, no directamente relacionadas al js idiomático:
+## Cosas importantes, no relacionadas directamente con el JS idiomático:
 
-### Calidad de código: Herramientas, recursos y referencias
+### Calidad de código: herramientas, recursos y referencias
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [Plug-in de JavaScript](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) para [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
@@ -67,7 +68,7 @@ Ante cualquier duda, sugerencia, etc. cualquier levantar un issue, una pull requ
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Lo siguiente debería de ser considerado 1) éstas son incompletas, y 2) *REQUERIDAS* lecturas. No siempre estoy de acuerdo con el estilo escrito por los autores que acá abajo presento, pero una cosa es cierta: Son consistentes; y son autoridades en el lenguaje.
+Los siguientes artículos son 1) incompletos y 2) *OBLIGATORIOS*. No siempre estoy de acuerdo con el estilo escrito por sus autores, pero dos cosas son ciertas: son consistentes, y son autoridades en el lenguaje.
 
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
@@ -78,14 +79,14 @@ Lo siguiente debería de ser considerado 1) éstas son incompletas, y 2) *REQUER
 
 ### Proceso de Build y Deployment
 
-Los proyectos deberían siempre tratar de incluir algún mecanismo para que el código pueda ser comprimido y optimizado para uso en producción. Algunos ejemplos de herramientas que hacen esto son [Uglify.js](https://github.com/mishoo/UglifyJS) (hecha en JavaScript), [Google Closure Compiler](http://code.google.com/closure/compiler/) (basada en java), y [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Escoge una y dale soporte.
+Los proyectos deberían tratar de incluir siempre algún mecanismo para que el código pueda ser comprimido y optimizado para su uso en producción. Algunos ejemplos de herramientas que hacen esto son [Uglify.js](https://github.com/mishoo/UglifyJS) (hecha en JavaScript), [Google Closure Compiler](http://code.google.com/closure/compiler/) (basada en Java), y [YUI Compressor](http://developer.yahoo.com/yui/compressor/). Escoge una y dale soporte.
 
-Se puede encontrar un "kit para build" genérico, ya funcional, en el directorio `/kits` de este mismo repositorio. El uso es sencillo: 1) copiar los contenidos de algún kit de la carpeta `/kits` a un nuevo directorio en el que se va a trabajar, 2) guarda el .js de tu proyecto en el directorio `/src` 3) incluir el nombre del proyecto en el archivo `project.txt`, 4) correr el comando `make` desde la terminal.
+Se puede encontrar un "kit para build" genérico, ya funcional, en el directorio `/kits` de este mismo repositorio. El uso es sencillo: 1) copiar los contenidos de algún kit de la carpeta `/kits` a un nuevo directorio en el que se va a trabajar, 2) guarda el .js de tu proyecto en el directorio `/src` 3) incluir el nombre del proyecto en el archivo `project.txt`, 4) ejecutar el comando `make` desde la terminal.
 
 
 ### Testing
 
-Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional testing etc. Las demos NO CUENTAN como "tests". A continuación, una lista de frameworks para testing, ninguno de los cuales recomiendo más que otro.
+Los proyectos _deben_ incluir alguna forma de testing (test unitario, test funcional, etc). Las demos NO CUENTAN como "tests". A continuación, una lista de frameworks para testing, ninguno de los cuales recomiendo más que otro.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -113,16 +114,16 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 1. <a name="whitespace">Espacios en blanco</a>
 
 	* Nunca mezclar espacios y tabulaciones.
-	* Cuando comienzas con un proyecto, antes de escribir código, escoger entre indentación blanda (espacios), o tabulaciones &mdash; Esto es LEY.
-		* Para legibilidad, siempre recomiendo setear las preferencias de tu editor para que el tamaño de la identación sea de dos caracteres &mdash; esto significa, usar dos espacios, o que dos espacios representen una tabulación.
-	* Si tu editor lo soporta, siempre trabajar con la preferencia para que se muestren los caracteres invisibles activada. Los beneficios de esta práctica son:
-		* Refuerza la consistencia
-		* Eliminar el espacio en blanco del fin de línea
-		* Eliminar los espacios en blanco de las líneas vacías
-		* Los commits y los diffs (comparar cambios contra versiones anteriores, etc.) va a ser mucho más fácil
+	* Al comenzar un proyecto, antes de escribir código, escoger entre indentación blanda (espacios), o tabulaciones &mdash; Esto es LEY.
+		* Para mayor legibilidad, siempre recomiendo ajustar las preferencias de tu editor para que el tamaño de la indentación sea de dos caracteres &mdash; esto significa, usar dos espacios, o que dos espacios representen una tabulación.
+	* Si tu editor lo soporta, trabajar siempre con la preferencia activada para que se muestren los caracteres invisibles. Los beneficios de esta práctica son:
+		* Reforzar la consistencia.
+		* Eliminar el espacio en blanco del fin de línea.
+		* Eliminar los espacios en blanco de las líneas vacías.
+		* Facilitar los commits y los diffs (comparar cambios contra versiones anteriores, etc).
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+2. <a name="spacing">Sintaxis elegante</a>
 
 	A. Paréntesis, Llaves, Fines de línea
 
@@ -751,7 +752,7 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 6. <a name="naming">Naming</a>
 
 
-	Si no sos un compilador/compresor humano de código, entonces no trates de serlo.
+	Si no eres un compilador/compresor humano de código, no trates de serlo.
 
 	A continuación ejemplos "tristes" de nombramiento de variables
 
@@ -767,9 +768,9 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 	for(i=0;i<els.length;i++){a.push(els[i]);}
 	```
 
-	Sin alguna duda, alguna vez has escrito código como este - con un poco de suerte, eso termina hoy.
+	Seguramente, alguna vez hayas escrito código como este. Con un poco de suerte dejarás de hacerlo hoy mismo.
 
-	Aquí está la misma pieza de lógica, pero con un nombramiento de variables más inteligente (y una estructura más legible):
+	Aquí está el mismo fragmento, pero con un nombramiento de variables más inteligente (y una estructura más legible):
 
 	```javascript
 
@@ -841,11 +842,11 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 7. <a name="misc">Varios</a>
 
-	Esta sección va a servir para describir ideas y conceptos que no deberían se considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript.
+	Esta sección servirá para describir ideas y conceptos que no deberían se considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript.
 
-	A. Usar `switch` debería ser evitado, traceo moderno de métodos van a poner en una lista negra a las funciones con sentencias switch.
+	A. El uso de `switch` debería ser evitado, ya que los métodos modernos de tracing marcarán como negativas las funciones que contengan sentencias `switch`.
 
-	Parecen haber mejoras drásticas a la ejecución de sentencias `switch` en las últimas versiones de Firefox y Chrome.
+	Parecen haber mejoras drásticas en la ejecución de sentencias `switch` en las últimas versiones de Firefox y Chrome.
 	http://jsperf.com/switch-vs-object-literal-vs-module
 
 	Mejoras destacables pueden ser vistas aquí también:
@@ -957,7 +958,7 @@ Los proyectos _deben_ incluir alguna forma de testing - unit testing, functional
 
 	El principio fundamental aquí es:
 
-	### No hagas mierda estúpida y todo va a estar bien.
+	### No hagas cosas estúpidas y todo irá bien.
 
 	Para reforzar este concepto, mirar esta presentación:
 
