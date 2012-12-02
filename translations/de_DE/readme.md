@@ -1,4 +1,4 @@
-# Prinzipien des Schreibens von konsequenten und idiomatischen JavaScript
+# Prinzipien des Schreibens von konsequentem und idiomatischem JavaScript
 
 ## Dies ist ein lebendiges Dokument und neue Ideen, die den Code in unserem Umfeld verbessern, sind immer willkommen. Tragt dazu bei: "fork", "clone", "branch", "commit", "push", "pull request".
 
@@ -25,11 +25,11 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
-## Jeder Code sollte so aussehen als wenn ihn nur eine Person geschrieben hätte, völlig egal wieviele daran gearbeitet haben.
+## Code sollte grundsätzlich so aussehen als wäre er von einer einzig Person geschrieben worden, völlig egal wie viele letztlich daran gearbeitet haben.
 
 ### Die folgende Liste nennt die Praktiken, die sich in jeden Code den ich ursprünglich geschrieben habe wiederfinden sollten. Sämtliche Beiträge dich Ich für Projekte geleistet habe, sollten diesen Praktiken folgen.
 
-### Ich möchte nicht anderen Leuten meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte das respektiert werden.
+### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte das respektiert werden.
 
 > "Das es eine schlechte Idee ist, nur für sich selbst Code zu schreiben, ist etwas was man als guter Betreuer eines erfolgreichen Projektes begreifen muss™. Wenn tausende Leute deinen Code benutzen, dann schreibe deinen Code möglichst klar und übersichtlich,  nicht einfach nur nach deinen persönlichen Vorlieben." - Idan Gazit
 
@@ -54,7 +54,7 @@
 
 ### Code-Qualität: Tolle Werkzeuge, Ressourcen und Referenzen
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) für [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
@@ -85,7 +85,7 @@ Jedes Projekt sollte Komponenten verwenden, um den Code zu linten, testen oder k
 
 ### Hilfsmittel zum Testen
 
-Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Functional-Testing enthalten. Demonstrationen von Anwendungsfällen reichen als Test niht aus. Die unten aufgeführte Liste beinhaltet eine Menge nützlicher Test-Frameworks.
+Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Functional-Testing enthalten. Demonstrationen von Anwendungsfällen reichen als Test nicht aus. Die unten aufgeführte Liste beinhaltet eine Menge nützlicher Test-Frameworks.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -352,7 +352,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     D. Konsistenz gewinnt immer
 
     In Sektion 2.A-2.C, sieht man den Vorteil durch die Verwendung von Whitespaces. Lesbarkeit und Konsistenz.
-    Es ist immer wichtig darauf zu achten, Formatierungsvorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
+    Es ist immer wichtig darauf zu achten, Formatierungs vorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
 
     ```javascript
 
@@ -852,7 +852,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Diese Sektion stellt Ideen und Konzepte dar, die nicht dogmatisch betrachtet werden sollten. Sie sollen fragliche Praktiken fördern die immer wieder in der JavaScript Programmierung auftauchen.
 
-    A. `switch` Statemens sollten vermieden werden.
+    A. `switch` Statements sollten vermieden werden.
 
     Es scheint starke Verbesserungen bei der Ausführung von `switch` Statements im neuesten Firefox und Chrome zu geben.
     http://jsperf.com/switch-vs-object-literal-vs-module
@@ -877,7 +877,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     }
 
     // 7.A.1.2
-    // Besser sollte man aber ein Objektliteral oder Modul verewnden:
+    // Besser sollte man aber ein Objektliteral oder Modul verwenden:
 
     var switchObj = {
       alpha: function() {
@@ -963,7 +963,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Das grundsätzliche Prinzip ist hier:
 
-    ### Mach keinen unsinn und alles wird okay.
+    ### Mach keinen Unsinn und alles wird gut.
 
     Um das Ganze noch mehr zu stärken, schaue dir diese Präsentationen an:
 
@@ -989,5 +989,4 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 ### Comma First.
 
-Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet akzeptiert keine Comma-First-Formatierung, solang es nicht explizit von Projektautor angegeben wurde.
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet, akzeptiert keine Comma-First-Formatierung, solang es nicht explizit von Projektautor angegeben wurde.
