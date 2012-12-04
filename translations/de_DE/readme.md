@@ -1,4 +1,4 @@
-# Prinzipien des Schreibens von konsequentem und idiomatischem JavaScript
+# Grundsätze for das schreiben vonkonsequentem und idiomatischem JavaScript
 
 ## Dies ist ein lebendiges Dokument und neue Ideen, die den Code in unserem Umfeld verbessern, sind immer willkommen. Tragt dazu bei: "fork", "clone", "branch", "commit", "push", "pull request".
 
@@ -27,7 +27,7 @@
 
 ## Code sollte grundsätzlich so aussehen als wäre er von einer einzig Person geschrieben worden, völlig egal wie viele letztlich daran gearbeitet haben.
 
-### Die folgende Liste nennt die Praktiken, die sich in jeden Code den ich ursprünglich geschrieben habe wiederfinden sollten. Sämtliche Beiträge dich Ich für Projekte geleistet habe, sollten diesen Praktiken folgen.
+### Das folgende Dokument zeigt Praktiken, die sich in jedem Code den ich ursprünglich geschrieben habe wiederfinden sollten. Sämtliche Beiträge dich Ich für Projekte geleistet habe, sollten diesen Praktiken folgen.
 
 ### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte das respektiert werden.
 
@@ -126,11 +126,11 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 1. <a name="whitespace">Whitespace</a>
     - Mische niemals Spaces und Tabs
     - Bevor du mit einem Projekt beginnst und Code schreibst, entscheide dich zwischen Soft Intends (Spaces) oder echten Tabs.
-        - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces oder zwei Spaces repräsentieren einen echten Tab.
+        - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces repräsentieren einen echten Tab.
     - Wenn dein Editor die Konfiguration "Steuerzeichen einblenden" unterstützt, solltest du sie einschalten. Das bringt folgende Vorteile mit sich:
         - Erzwungene Konsistenz
-        - Zerstören von Whitespaces am Ende der Zeile
-        - Zerstören von leeren "Whitespace Zeilen"
+        - Löschen von Whitespaces am Ende der Zeile
+        - Löschen von leeren "Whitespace Zeilen"
         - Commits und Diffs sind einfacher zu lesen
 
 2. <a name="spacing">Schöne Syntax</a>
@@ -326,7 +326,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.C.1.1
     // Funktionen mit Callbacks
     foo(function() {
-        // Achte drauf, das es hier keinen extra Whitespace nach der ersten Klammer gibt
+      // Achte drauf, das es hier keinen extra Whitespace nach der ersten Klammer gibt
     });
 
     // Funktionen, die ein Array erwarten, keine Whitespaces auf erster Ebene
@@ -656,13 +656,13 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 
     // 4.1.5
-    // Wenn du prüfen willst, ob eine Reference false ist...
+    // Wenn du prüfen willst, ob eine Referenz false ist...
     if ( foo === false ) ...
 
     // ... nutze die Negierung um eine eine true-Auswertung zu erzwingen
     if ( !foo ) ...
 
-    // ... Sei vorsichtig, das würde auch bei 0, "", null, undefined und NaN funktionieren
+    // ... aber vorsicht, das würde auch bei 0, "", null, undefined und NaN funktionieren
     // Wenn du für einen boolsches false testen _musst_, mach's so:
     if ( foo === false ) ...
 
@@ -684,7 +684,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 5.1.1
-    // Ein praktisches Modul
+    // Ein angewandter Modul
 
     (function( global ) {
       var Module = (function() {
@@ -725,7 +725,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 5.2.1
-    // Ein praktischer Konstruktor
+    // Ein angewandter Konstruktor
 
     (function( global ) {
 
@@ -762,7 +762,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Du bist kein Compiler, also versuch nicht einer zu sein.
 
-    Der folgende Code ist ein Beispiel für entsetzlich schlechte Bezeichnungen:
+    Der folgende Code ist ein Beispiel für entsetzlich schlechten Bezeichnungen:
 
     ```javascript
 
@@ -776,7 +776,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Du hast ohne Zweifel solch' einen Code geschrieben - hoffentlich hört das heute auf.
+    Du hast ohne Zweifel schon mal solchen Code geschrieben - das hört heute auf.
 
     Hier ist der gleiche Code, nur klarer, durchdachter und mit einer lesbaren Struktur:
 
@@ -965,7 +965,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     ### Mach keinen Unsinn und alles wird gut.
 
-    Um das Ganze noch mehr zu stärken, schaue dir diese Präsentationen an:
+    Um das Ganze noch mehr zu stärken, schaue dir folgende Präsentationen an:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -977,8 +977,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 9. <a name="comments">Kommentare</a>
 
     * Mehrzeilige Kommentare sind gut
-    * End of line comments are prohibited!
-    * JSDoc style is good, but requires a significant time investment
+    * Kommentare am Zeilenende sind untersagt!
+    * JSDoc Style Kommentare sind gut, aber erfordern mehr Zeit.
 
 
 10. <a name="language">Einsprachiger Code</a>
