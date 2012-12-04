@@ -1,4 +1,4 @@
-# Grundsätze for das schreiben vonkonsequentem und idiomatischem JavaScript
+# Grundsätze for das schreiben von konsequentem und idiomatischem JavaScript
 
 ## Dies ist ein lebendiges Dokument und neue Ideen, die den Code in unserem Umfeld verbessern, sind immer willkommen. Tragt dazu bei: "fork", "clone", "branch", "commit", "push", "pull request".
 
