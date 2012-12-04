@@ -157,15 +157,15 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // Benutze Whitespaces um die Lesbarkeit zu verbessern
 
     if ( Bedingung ) {
-        // statements
+      // statements
     }
 
     while ( Bedingung ) {
-        // statements
+      // statements
     }
 
     for ( var i = 0; i < 100; i++ ) {
-        // statements
+      // statements
     }
 
     // Noch besser:
@@ -174,7 +174,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         length = 100;
 
     for ( i = 0; i < length; i++ ) {
-        // statements
+      // statements
     }
 
     // Oder...
@@ -183,19 +183,19 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         length = 100;
 
     for ( ; i < length; i++ ) {
-        // statements
+      // statements
     }
 
     var prop;
 
     for ( prop in object ) {
-        // statements
+      // statements
     }
 
     if ( true ) {
-        // statements
+      // statements
     } else {
-        // statements
+      // statements
     }
     ```
 
@@ -242,7 +242,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // Schlecht
     function foo() {
-        // irgendwas
+      // irgendwas
 
         var bar = "",
             qux;
@@ -250,10 +250,10 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // Gut
     function foo() {
-        var bar = "",
-        qux;
+      var bar = "",
+      qux;
 
-        // alle Statements nach der var-Deklaration
+         // alle Statements nach der var-Deklaration
     }
     ```
 
@@ -272,34 +272,34 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.B.2.2
     // Benannte Funktionsdeklaration
     function quadrat(zahl) {
-        return zahl * zahl;
+      return zahl * zahl;
     }
 
     // Benutzung
     quadrat( 10 );
 
     function quadrat( zahl, callback ) {
-        callback( zahl * zahl);
+      callback( zahl * zahl);
     }
 
     quadrat( 10, function (square) {
-        // callback Statements
+      // callback Statements
     });
 
     // 2.B.2.3
     // Funktionsausdruck
     var quadrat = function ( zahl ) {
-        // gibt irgendwas zurück
-        return zahl * zahl;
+      // gibt irgendwas zurück
+      return zahl * zahl;
     }
 
     // Functionsausdruck mit Bezeichner
     // Diese Form hat den Vorteil, das sie sich selbst aufrufen kann
     // und der Bezeichner im Stack Trace zufinden ist
     var factorial = function factorial( zahl ) {
-        if ( zahl < 2 ) {
-            return 1;
-        }
+      if ( zahl < 2 ) {
+        return 1;
+      }
 
         return zahl * factorial( zahl-1 );
     };
@@ -335,8 +335,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.C.1.2
     // Funktionen, die ein Object erwarten, haben ebenfalls keine Spaces
     foo({
-        a: "alpha",
-        b: "beta"
+      a: "alpha",
+      b: "beta"
     });
 
     // Einzelner Stringliteral, kein Space
@@ -359,21 +359,21 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.D.1.1
 
     if (Bedingung) {
-        // statements
+      // statements
     }
 
     while (Bedingung) {
-        // statements
+      // statements
     }
 
     for (var i = 0; i < 100; i++) {
-        // statements
+      // statements
     }
 
     if (true) {
-        // statements
+      // statements
     } else {
-        // statements
+      // statements
     }
     ```
 
@@ -633,7 +633,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // 4.1.2
     // Wenn du nur prüfen willst, ob ein Array leer ist...
-    if ( array.legth === 0 ) ...
+    if ( array.length === 0 ) ...
 
     // mach es so:
     if ( !array.length ) ...
