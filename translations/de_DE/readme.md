@@ -990,3 +990,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 ### Comma First.
 
 Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet, akzeptiert keine Comma-First-Formatierung, solang es nicht explizit von Projektautor angegeben wurde.
+
+----------
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Grundsätze for das schreiben vonkonsequentem und idiomatischem JavaScript</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron und Mitwirkenden</a> ist lizensiert unter  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Basierend auf einer Arbeit unter <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
