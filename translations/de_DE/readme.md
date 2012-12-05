@@ -684,7 +684,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 5.1.1
-    // Ein angewandter Modul
+    // Ein angewandtes Modul
 
     (function( global ) {
       var Module = (function() {
