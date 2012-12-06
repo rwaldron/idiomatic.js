@@ -1,4 +1,4 @@
-# Prinzipien des Schreibens von konsequenten und idiomatischen JavaScript
+# Grundsätze for das schreiben von konsequentem und idiomatischem JavaScript
 
 ## Dies ist ein lebendiges Dokument und neue Ideen, die den Code in unserem Umfeld verbessern, sind immer willkommen. Tragt dazu bei: "fork", "clone", "branch", "commit", "push", "pull request".
 
@@ -25,11 +25,11 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
-## Jeder Code sollte so aussehen als wenn ihn nur eine Person geschrieben hätte, völlig egal wieviele daran gearbeitet haben.
+## Code sollte grundsätzlich so aussehen als wäre er von einer einzig Person geschrieben worden, völlig egal wie viele letztlich daran gearbeitet haben.
 
-### Die folgende Liste nennt die Praktiken, die sich in jeden Code den ich ursprünglich geschrieben habe wiederfinden sollten. Sämtliche Beiträge dich Ich für Projekte geleistet habe, sollten diesen Praktiken folgen.
+### Das folgende Dokument zeigt Praktiken, die sich in jedem Code den ich ursprünglich geschrieben habe wiederfinden sollten. Sämtliche Beiträge dich Ich für Projekte geleistet habe, sollten diesen Praktiken folgen.
 
-### Ich möchte nicht anderen Leuten meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte das respektiert werden.
+### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte das respektiert werden.
 
 > "Das es eine schlechte Idee ist, nur für sich selbst Code zu schreiben, ist etwas was man als guter Betreuer eines erfolgreichen Projektes begreifen muss™. Wenn tausende Leute deinen Code benutzen, dann schreibe deinen Code möglichst klar und übersichtlich,  nicht einfach nur nach deinen persönlichen Vorlieben." - Idan Gazit
 
@@ -54,7 +54,7 @@
 
 ### Code-Qualität: Tolle Werkzeuge, Ressourcen und Referenzen
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) für [Sonar](http://www.sonarsource.org/)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
@@ -85,7 +85,7 @@ Jedes Projekt sollte Komponenten verwenden, um den Code zu linten, testen oder k
 
 ### Hilfsmittel zum Testen
 
-Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Functional-Testing enthalten. Demonstrationen von Anwendungsfällen reichen als Test niht aus. Die unten aufgeführte Liste beinhaltet eine Menge nützlicher Test-Frameworks.
+Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Functional-Testing enthalten. Demonstrationen von Anwendungsfällen reichen als Test nicht aus. Die unten aufgeführte Liste beinhaltet eine Menge nützlicher Test-Frameworks.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -126,11 +126,11 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 1. <a name="whitespace">Whitespace</a>
     - Mische niemals Spaces und Tabs
     - Bevor du mit einem Projekt beginnst und Code schreibst, entscheide dich zwischen Soft Intends (Spaces) oder echten Tabs.
-        - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces oder zwei Spaces repräsentieren einen echten Tab.
+        - Für die Lesbarkeit empfehle ich die Einrückung immer auf die Größe von zwei Zeichen zu setzen. Das bedeutet zwei Spaces repräsentieren einen echten Tab.
     - Wenn dein Editor die Konfiguration "Steuerzeichen einblenden" unterstützt, solltest du sie einschalten. Das bringt folgende Vorteile mit sich:
         - Erzwungene Konsistenz
-        - Zerstören von Whitespaces am Ende der Zeile
-        - Zerstören von leeren "Whitespace Zeilen"
+        - Löschen von Whitespaces am Ende der Zeile
+        - Löschen von leeren "Whitespace Zeilen"
         - Commits und Diffs sind einfacher zu lesen
 
 2. <a name="spacing">Schöne Syntax</a>
@@ -157,15 +157,15 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // Benutze Whitespaces um die Lesbarkeit zu verbessern
 
     if ( Bedingung ) {
-        // statements
+      // statements
     }
 
     while ( Bedingung ) {
-        // statements
+      // statements
     }
 
     for ( var i = 0; i < 100; i++ ) {
-        // statements
+      // statements
     }
 
     // Noch besser:
@@ -174,7 +174,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         length = 100;
 
     for ( i = 0; i < length; i++ ) {
-        // statements
+      // statements
     }
 
     // Oder...
@@ -183,19 +183,19 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         length = 100;
 
     for ( ; i < length; i++ ) {
-        // statements
+      // statements
     }
 
     var prop;
 
     for ( prop in object ) {
-        // statements
+      // statements
     }
 
     if ( true ) {
-        // statements
+      // statements
     } else {
-        // statements
+      // statements
     }
     ```
 
@@ -242,7 +242,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // Schlecht
     function foo() {
-        // irgendwas
+      // irgendwas
 
         var bar = "",
             qux;
@@ -250,10 +250,10 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // Gut
     function foo() {
-        var bar = "",
-        qux;
+      var bar = "",
+      qux;
 
-        // alle Statements nach der var-Deklaration
+         // alle Statements nach der var-Deklaration
     }
     ```
 
@@ -272,34 +272,34 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.B.2.2
     // Benannte Funktionsdeklaration
     function quadrat(zahl) {
-        return zahl * zahl;
+      return zahl * zahl;
     }
 
     // Benutzung
     quadrat( 10 );
 
     function quadrat( zahl, callback ) {
-        callback( zahl * zahl);
+      callback( zahl * zahl);
     }
 
     quadrat( 10, function (square) {
-        // callback Statements
+      // callback Statements
     });
 
     // 2.B.2.3
     // Funktionsausdruck
     var quadrat = function ( zahl ) {
-        // gibt irgendwas zurück
-        return zahl * zahl;
+      // gibt irgendwas zurück
+      return zahl * zahl;
     }
 
     // Functionsausdruck mit Bezeichner
     // Diese Form hat den Vorteil, das sie sich selbst aufrufen kann
     // und der Bezeichner im Stack Trace zufinden ist
     var factorial = function factorial( zahl ) {
-        if ( zahl < 2 ) {
-            return 1;
-        }
+      if ( zahl < 2 ) {
+        return 1;
+      }
 
         return zahl * factorial( zahl-1 );
     };
@@ -326,7 +326,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.C.1.1
     // Funktionen mit Callbacks
     foo(function() {
-        // Achte drauf, das es hier keinen extra Whitespace nach der ersten Klammer gibt
+      // Achte drauf, das es hier keinen extra Whitespace nach der ersten Klammer gibt
     });
 
     // Funktionen, die ein Array erwarten, keine Whitespaces auf erster Ebene
@@ -335,8 +335,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.C.1.2
     // Funktionen, die ein Object erwarten, haben ebenfalls keine Spaces
     foo({
-        a: "alpha",
-        b: "beta"
+      a: "alpha",
+      b: "beta"
     });
 
     // Einzelner Stringliteral, kein Space
@@ -352,28 +352,28 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     D. Konsistenz gewinnt immer
 
     In Sektion 2.A-2.C, sieht man den Vorteil durch die Verwendung von Whitespaces. Lesbarkeit und Konsistenz.
-    Es ist immer wichtig darauf zu achten, Formatierungsvorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
+    Es ist immer wichtig darauf zu achten, Formatierungs vorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
 
     ```javascript
 
     // 2.D.1.1
 
     if (Bedingung) {
-        // statements
+      // statements
     }
 
     while (Bedingung) {
-        // statements
+      // statements
     }
 
     for (var i = 0; i < 100; i++) {
-        // statements
+      // statements
     }
 
     if (true) {
-        // statements
+      // statements
     } else {
-        // statements
+      // statements
     }
     ```
 
@@ -633,7 +633,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // 4.1.2
     // Wenn du nur prüfen willst, ob ein Array leer ist...
-    if ( array.legth === 0 ) ...
+    if ( array.length === 0 ) ...
 
     // mach es so:
     if ( !array.length ) ...
@@ -656,13 +656,13 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 
     // 4.1.5
-    // Wenn du prüfen willst, ob eine Reference false ist...
+    // Wenn du prüfen willst, ob eine Referenz false ist...
     if ( foo === false ) ...
 
     // ... nutze die Negierung um eine eine true-Auswertung zu erzwingen
     if ( !foo ) ...
 
-    // ... Sei vorsichtig, das würde auch bei 0, "", null, undefined und NaN funktionieren
+    // ... aber vorsicht, das würde auch bei 0, "", null, undefined und NaN funktionieren
     // Wenn du für einen boolsches false testen _musst_, mach's so:
     if ( foo === false ) ...
 
@@ -684,7 +684,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 5.1.1
-    // Ein praktisches Modul
+    // Ein angewandtes Modul
 
     (function( global ) {
       var Module = (function() {
@@ -725,7 +725,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 5.2.1
-    // Ein praktischer Konstruktor
+    // Ein angewandter Konstruktor
 
     (function( global ) {
 
@@ -762,7 +762,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Du bist kein Compiler, also versuch nicht einer zu sein.
 
-    Der folgende Code ist ein Beispiel für entsetzlich schlechte Bezeichnungen:
+    Der folgende Code ist ein Beispiel für entsetzlich schlechten Bezeichnungen:
 
     ```javascript
 
@@ -776,7 +776,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Du hast ohne Zweifel solch' einen Code geschrieben - hoffentlich hört das heute auf.
+    Du hast ohne Zweifel schon mal solchen Code geschrieben - das hört heute auf.
 
     Hier ist der gleiche Code, nur klarer, durchdachter und mit einer lesbaren Struktur:
 
@@ -852,7 +852,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Diese Sektion stellt Ideen und Konzepte dar, die nicht dogmatisch betrachtet werden sollten. Sie sollen fragliche Praktiken fördern die immer wieder in der JavaScript Programmierung auftauchen.
 
-    A. `switch` Statemens sollten vermieden werden.
+    A. `switch` Statements sollten vermieden werden.
 
     Es scheint starke Verbesserungen bei der Ausführung von `switch` Statements im neuesten Firefox und Chrome zu geben.
     http://jsperf.com/switch-vs-object-literal-vs-module
@@ -877,7 +877,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     }
 
     // 7.A.1.2
-    // Besser sollte man aber ein Objektliteral oder Modul verewnden:
+    // Besser sollte man aber ein Objektliteral oder Modul verwenden:
 
     var switchObj = {
       alpha: function() {
@@ -963,9 +963,9 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Das grundsätzliche Prinzip ist hier:
 
-    ### Mach keinen unsinn und alles wird okay.
+    ### Mach keinen Unsinn und alles wird gut.
 
-    Um das Ganze noch mehr zu stärken, schaue dir diese Präsentationen an:
+    Um das Ganze noch mehr zu stärken, schaue dir folgende Präsentationen an:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -977,8 +977,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 9. <a name="comments">Kommentare</a>
 
     * Mehrzeilige Kommentare sind gut
-    * End of line comments are prohibited!
-    * JSDoc style is good, but requires a significant time investment
+    * Kommentare am Zeilenende sind untersagt!
+    * JSDoc Style Kommentare sind gut, aber erfordern mehr Zeit.
 
 
 10. <a name="language">Einsprachiger Code</a>
@@ -989,5 +989,9 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 ### Comma First.
 
-Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet akzeptiert keine Comma-First-Formatierung, solang es nicht explizit von Projektautor angegeben wurde.
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Jedes Projekt, welches dieses Dokument als grundsätzlichen Style Guide verwendet, akzeptiert keine Comma-First-Formatierung, solang es nicht explizit von Projektautor angegeben wurde.
+
+----------
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Grundsätze for das schreiben vonkonsequentem und idiomatischem JavaScript</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron und Mitwirkenden</a> ist lizensiert unter  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Basierend auf einer Arbeit unter <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
