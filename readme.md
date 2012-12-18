@@ -320,7 +320,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         return 1;
       }
 
-      return number * factorial( number-1 );
+      return number * factorial( number - 1 );
     };
 
 
