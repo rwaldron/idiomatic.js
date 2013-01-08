@@ -70,7 +70,7 @@
  * [jslint](http://jslint.org/)
 
 
-### 똑똑해지기
+## 똑똑해지기
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
@@ -111,7 +111,7 @@
 
 ## 목차
 
- * [화이트스페이스](#whitespace)
+ * [공백](#whitespace)
  * [구문(Syntax)을 아름답게 작성하기](#spacing)
  * [데이터형을 확인하기(Type Checking) (Courtesy jQuery Core Style Guidelines)](#type)
  * [조건을 판정하기(Conditional Evaluation)](#cond)
@@ -140,7 +140,7 @@
 ## 자연스러운 스타일에 관한 선언문
 
 
-1. <a name="whitespace">화이트 스페이스</a>
+1. <a name="whitespace">공백</a>
   - 절대 스페이스와 탭을 섞어 쓰지 마세요.
   - 프로젝트를 시작할 때, 코드를 작성하기 전에 먼저 스페이스와 탭 중의 하나를 선택하여야 합니다. 이것이 **규칙** 입니다.
       - 가독성을 위해서 저는 항상 편집기의 들여쓰기 크기를 2 문자로 설정하기를 권장합니다. &mdash; 2 문자란 2 스페이스 또는 탭으로 표현되는 2칸 공간을 의미합니다.
@@ -405,7 +405,7 @@
     F. 각 줄의 끝부분, 빈 줄
 
     여백이 있으면 바뀐 내용들을 읽을 수가 없게 됩니다. 또한 diff툴이 제대로 작동하지 않습니다.
-  줄의 끝에 있는 여백이나 빈 줄에 들어있는 ‘커밋하기 전에 공백을 자동으로 지워주는 훅’(pre-commit hook)을 사용해 보세요.
+  줄의 끝에 있는 여백이나 빈 줄에 들어있는 공백을 자동적으로 제거해주는 ‘pre-commit hook'을 사용해 보세요.
 
 3. <a name="type">자료형 확인하기 (Courtesy jQuery Core Style Guidelines)</a>
 
@@ -607,7 +607,7 @@
     !!~array.indexOf( "d" );
     // false
 
-    // 주의: 위의 구문들은 "필요없이 영리"하지 않은지 생각해 보아야 합니다
+    // 주의: 위의 구문들은 "과도하게 영리"한 방법이 아닌지 생각해 보아야 합니다
     // 다음 구문처럼 비교되는 indexOf의 리턴 값이 더 명확한 쪽이
     // 좋지 않을까요?
 
@@ -848,7 +848,7 @@
 6. <a name="naming">이름 짓기</a>
 
 
-    A. 여러분은 컴파일러나 압축기(compressor)가 아닙니다. 그런게 되려고 노력하실 필요 없습니다.
+    A. 여러분은 컴파일러나 압축기(compressor)가 아닙니다. 그렇게 되려고 시도하지 마세요.
 
     다음은 이름을 심하게 안 좋게 지은 코드 작성 사례입니다:
 
@@ -938,7 +938,7 @@
 
     B. `this` 다루기
 
-    나중에 불려지는 `BoundFunction`을 정의 하기위해선 `call` 이나 `apply` 가 일반 적으로 쓰여지고 있긴 하지만, `.bind( this )` 같은 함수를 사용하는편이 좋습니다. 더 좋은 선택지가 없을 때에만 엘리어싱을 고려하세요.
+    나중에 호출되는 `BoundFunction`을 정의 하기위해서 `call` 이나 `apply` 가 일반 적으로 쓰여지고 있긴 하지만, `.bind( this )` 같은 함수를 사용하는편이 좋습니다. 더 좋은 선택지가 없을 때에만 엘리어싱을 고려하세요.
 
 
     ```javascript
