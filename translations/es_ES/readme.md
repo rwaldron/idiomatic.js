@@ -54,6 +54,7 @@ Ante cualquier duda, sugerencia, etc. puedes reportar una issue, crear una pull 
 ### Calidad de código: herramientas, recursos y referencias
 
  * [Plug-in de JavaScript](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) para [Sonar](http://www.sonarsource.org/)
+ * [Plato](https://github.com/jsoverson/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
