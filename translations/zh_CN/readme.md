@@ -86,7 +86,7 @@
 
 ### 编译和部署
 
-项目必须总是提供一些通用的方法来检验（can be linted）、测试和压缩源码以为产品阶段使用做准备。对于此类工作 Ben Alman 所写的 [grunt](https://github.com/cowboy/grunt) 可畏首屈一指，并已替代这个仓库的 “kits/” 目录作官方工具。
+项目必须总是提供一些通用的方法来检验（can be linted）、测试和压缩源码以为产品阶段使用做准备。对于此类工作 Ben Alman 所写的 [grunt](https://github.com/cowboy/grunt) 可谓首屈一指，并已替代这个仓库的 “kits/” 目录作官方工具。
 
 ### 测试工具
 

@@ -1,4 +1,4 @@
-# Grundsätze for das schreiben von konsequentem und idiomatischem JavaScript
+# Grundsätze für das schreiben von konsequentem und idiomatischem JavaScript
 
 ## Dies ist ein lebendiges Dokument und neue Ideen, die den Code in unserem Umfeld verbessern, sind immer willkommen. Tragt dazu bei: "fork", "clone", "branch", "commit", "push", "pull request".
 
@@ -25,11 +25,11 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 
 
-## Code sollte grundsätzlich so aussehen als wäre er von einer einzig Person geschrieben worden, völlig egal wie viele letztlich daran gearbeitet haben.
+## Code sollte grundsätzlich so aussehen, als wäre er von einer einzigen Person geschrieben worden, völlig egal wie viele letztlich daran gearbeitet haben.
 
-### Das folgende Dokument zeigt Praktiken, die sich in jedem Code den ich ursprünglich geschrieben habe wiederfinden sollten. Sämtliche Beiträge dich Ich für Projekte geleistet habe, sollten diesen Praktiken folgen.
+### Das folgende Dokument zeigt Praktiken, die sich in jedem Code den ich ursprünglich geschrieben habe wiederfinden. Sämtliche Beiträge für Projekte die ich kreiert habe, sollten diesen Praktiken folgen.
 
-### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte das respektiert werden.
+### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte dieser respektiert werden.
 
 > "Das es eine schlechte Idee ist, nur für sich selbst Code zu schreiben, ist etwas was man als guter Betreuer eines erfolgreichen Projektes begreifen muss™. Wenn tausende Leute deinen Code benutzen, dann schreibe deinen Code möglichst klar und übersichtlich,  nicht einfach nur nach deinen persönlichen Vorlieben." - Idan Gazit
 
@@ -70,7 +70,7 @@
 
 [http://es5.github.com/](http://es5.github.com/)
 
-Bei den Folgenden Ressourcen sollte berücksichtigt werden das sie 1) unvollständig und 2) *PFLICHTLEKTÜREN* sind. Ich stimme dem geschriebenen Style der unten stehenden Autoren nicht immer zu, aber eins ist sicher: Sie sind konsequent. Außerdem sind dies echte Autoriäten in dieser Sprache.
+Bei den folgenden Ressourcen sollte berücksichtigt werden das sie 1) unvollständig und 2) *PFLICHTLEKTÜREN* sind. Ich stimme dem geschriebenen Style der unten stehenden Autoren nicht immer zu, aber eins ist sicher: Sie sind konsequent. Außerdem sind dies echte Autoriäten in dieser Sprache.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -353,7 +353,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     D. Konsistenz gewinnt immer
 
     In Sektion 2.A-2.C, sieht man den Vorteil durch die Verwendung von Whitespaces. Lesbarkeit und Konsistenz.
-    Es ist immer wichtig darauf zu achten, Formatierungs vorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
+    Es ist immer wichtig darauf zu achten, Formatierung-Vorlieben, wie der Whitespace innerhalb der Klammern, als optional zu betrachten. Trotzdem sollte sich eine Formatierung durch den ganzen Quelltext einheitlich erstrecken.
 
     ```javascript
 
@@ -763,7 +763,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     Du bist kein Compiler, also versuch nicht einer zu sein.
 
-    Der folgende Code ist ein Beispiel für entsetzlich schlechten Bezeichnungen:
+    Der folgende Code ist ein Beispiel für entsetzlich schlechte Bezeichnungen:
 
     ```javascript
 
@@ -984,7 +984,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 10. <a name="language">Einsprachiger Code</a>
 
-    Programme sollten in einer Sprache geschrieben sein, egal um welche Sprache es sich handelt, wenn der Projektbetreuer diese vorgibt.
+    Programme sollten in der Sprache geschrieben sein, egal um welche Sprache es sich handelt, die der Projektbetreuer vorgibt.
 
 ## Anhang
 

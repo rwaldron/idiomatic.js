@@ -24,6 +24,11 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
+* monkadd [github](https://github.com/monkadd)
+* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
+* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
+* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 
 
 
@@ -93,7 +98,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 ### Build & Deployment Process
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
+Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
 
 
 
