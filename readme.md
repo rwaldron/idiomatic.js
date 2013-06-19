@@ -1268,7 +1268,38 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     #### Multiline is good
     #### End of line comments are prohibited!
     #### JSDoc style is good, but requires a significant time investment
+    #### Elaborately formatted comments
+    
+    Fancy comments should be avoided. They are time-consuming, difficult to maintain and do not add much benefit. Example:
 
+    ```javascript
+      /////////////////////////
+     /// ** THIS IS BAD ** ///
+    /////////////////////////
+
+    // THIS IS OKAY
+
+    ```
+
+    One possible exception: comments that divide sections may extend to the current indent to create a visual break.
+
+    ```javascript
+
+    var module = {
+        obj : {
+            foo: function () {
+                ...
+            },
+
+    /////// SECTION DIVIDER
+
+            bar: function () {
+                ...
+            }
+        }
+    }
+
+    ```
 
 10. <a name="language">One Language Code</a>
 
