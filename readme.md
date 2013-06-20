@@ -1312,17 +1312,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Section dividers can extend to the first column:
 
     var module = {
-        obj : {
-            foo: function () {
-                ...
-            },
+      obj : {
+        foo : function () {
+          ...
+        },
 
-    /////// SECTION DIVIDER
+    //// SECTION DIVIDER
 
-            bar: function () {
+        bar : function () {
                 ...
-            }
         }
+      }
     }
 
     ```
