@@ -1264,26 +1264,52 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 9. <a name="comments">Comments</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
-    #### Elaborately formatted comments
-    
+    A. Single line above the code that is subject
+
+    B. Multiline is good
+
+    C. End of line comments are prohibited!
+
+    D. JSDoc style is good, but requires a significant time investment
+
+    E. Elaborately formatted comments
+
     Fancy comments should be avoided. They are time-consuming, difficult to maintain and do not add much benefit. Example:
 
     ```javascript
-      /////////////////////////
-     /// ** THIS IS BAD ** ///
-    /////////////////////////
+    // 9.E.1.1
+    // Very Bad:
 
-    // THIS IS OKAY
+      ////////////////////////
+     /// «« MY COMMENT »» ///
+    ////////////////////////
+
+    // 9.E.1.2
+    // Bad:
+
+    /*************
+    * My Comment *
+    *************/
+
+    /////
+    // My Comment
+    ////
+
+
+    // 9.E.1.3
+    // Good:
+
+    // My Comment
 
     ```
 
     One possible exception: comments that divide sections may extend to the current indent to create a visual break.
 
     ```javascript
+
+    // 9.E.2.1
+
+    // Section dividers can extend to the first column:
 
     var module = {
         obj : {
