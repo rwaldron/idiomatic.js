@@ -145,7 +145,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 ## Idiomatic Style Manifesto
 
 
-1. <a name="whitespace">Whitespace</a>
+### 1. <a name="whitespace">Whitespace</a>
   - Never mix spaces and tabs.
   - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
       - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
@@ -156,9 +156,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       - Commits and diffs that are easier to read
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+### 2. <a name="spacing">Beautiful Syntax</a>
 
-    A. Parens, Braces, Linebreaks
+#### A. Parens, Braces, Linebreaks
 
     ```javascript
 
@@ -223,7 +223,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+#### B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
     ```javascript
 
@@ -346,7 +346,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Exceptions, Slight Deviations
+#### C. Exceptions, Slight Deviations
 
     ```javascript
 
@@ -377,7 +377,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    D. Consistency Always Wins
+#### D. Consistency Always Wins
 
     In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
     It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
@@ -406,7 +406,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. Quotes
+#### E. Quotes
 
     Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
 
@@ -414,9 +414,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+### 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
-    A. Actual Types
+#### A. Actual Types
 
     String:
 
@@ -467,7 +467,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+### B. Coerced Types
 
     Consider the implications of the following...
 
@@ -667,7 +667,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+### 4. <a name="cond">Conditional Evaluation</a>
 
     ```javascript
 
@@ -777,7 +777,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-5. <a name="practical">Practical Style</a>
+### 5. <a name="practical">Practical Style</a>
 
     ```javascript
 
@@ -858,11 +858,11 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-6. <a name="naming">Naming</a>
+### 6. <a name="naming">Naming</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+#### A. You are not a human code compiler/compressor, so don't try to be one.
 
     The following code is an example of egregious naming:
 
@@ -948,7 +948,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Faces of `this`
+#### B. Faces of `this`
 
     Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
 
@@ -1073,7 +1073,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Use `thisArg`
+#### C. Use `thisArg`
 
     Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
 
@@ -1103,11 +1103,11 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Misc</a>
+### 7. <a name="misc">Misc</a>
 
     This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+#### A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
     There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
@@ -1216,7 +1216,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+#### B. Early returns promote code readability with negligible performance difference
 
     ```javascript
 
@@ -1246,7 +1246,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+### 8. <a name="native">Native & Host Objects</a>
 
     The basic principle here is:
 
@@ -1261,7 +1261,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+### 9. <a name="comments">Comments</a>
 
     #### Single line above the code that is subject
     #### Multiline is good
@@ -1269,7 +1269,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     #### JSDoc style is good, but requires a significant time investment
 
 
-10. <a name="language">One Language Code</a>
+### 10. <a name="language">One Language Code</a>
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
 
