@@ -1,6 +1,6 @@
 # Principles of Writing Consistent, Idiomatic JavaScript
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+**This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.**
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -29,19 +29,21 @@
 * Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+__All code in any code-base should look like a single person typed it, no matter how many people contributed.__
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+__The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.__
 
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
+__I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.__
 
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
->_Rebecca_ _Murphey_
+> "Arguments over style are pointless. There should be a style guide, and you should follow it"
+>
+>_Rebecca Murphey_
 
 &nbsp;
 
-> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
->_Idan_ _Gazit_
+> "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
+>
+>_Idan Gazit_
 
 ## Translations
 
@@ -73,8 +75,8 @@
 
 ## Get Smart
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+__[Annotated ECMAScript 5.1](http://es5.github.com/)__
+__[EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)__
 
 The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
 
@@ -1208,7 +1210,9 @@ The basic principle here is:
 
 To reinforce this concept, please watch the following presentation:
 
-#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+> "Everything is Permitted: Extending Built-ins"
+>
+> _Andrew Dupont (JSConf2011, Portland, Oregon)_
 
 <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
 
@@ -1217,10 +1221,10 @@ http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending
 
 ### 9. <a name="comments">Comments</a>
 
-#### Single line above the code that is subject
-#### Multiline is good
-#### End of line comments are prohibited!
-#### JSDoc style is good, but requires a significant time investment
+ - Single line above the code that is subject
+ - Multiline is good
+ - End of line comments are prohibited!
+ - JSDoc style is good, but requires a significant time investment
 
 
 ### 10. <a name="language">One Language Code</a>
