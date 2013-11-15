@@ -1,42 +1,11 @@
 # Principles of Writing Consistent, Idiomatic JavaScript
 
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
-
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
-* Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
-* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
-* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
-* Raynos  [github](https://github.com/Raynos)
-* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
-* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idan)
-* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
-* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
-* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
-* Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
-* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
-* EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
-* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
-* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
-* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
-* Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
-* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
-* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
-* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
-* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
-* monkadd [github](https://github.com/monkadd)
-* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
-* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
-* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
-
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
 
 
 > ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
@@ -48,73 +17,8 @@
 >_Idan_ _Gazit_
 
 
-## Translations
-
-* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
-* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
-## Important, Non-Idiomatic Stuff:
-
-### Code Quality Tools, Resources & References
-
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
- * [Plato](https://github.com/jsoverson/plato)
- * [jsPerf](http://jsperf.com/)
- * [jsFiddle](http://jsfiddle.net/)
- * [jsbin](http://jsbin.com/)
- * [JavaScript Lint (JSL)](http://javascriptlint.com/)
- * [jshint](http://jshint.com/)
- * [jslint](http://jslint.org/)
-
-## Get Smart
-
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
-
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
-
- * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
- * [Eloquent JavaScript](http://eloquentjavascript.net/)
- * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
- * [Adventures in JavaScript Development](http://rmurphey.com/)
- * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
- * [JS Assessment](https://github.com/rmurphey/js-assessment)
- * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
-
-
-
-
-### Build & Deployment Process
-
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
-
-
-### Test Facility
-
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
-
- * [QUnit](http://github.com/jquery/qunit)
- * [Jasmine](https://github.com/pivotal/jasmine)
- * [Vows](https://github.com/cloudhead/vows)
- * [Mocha](https://github.com/visionmedia/mocha)
- * [Hiro](http://hirojs.com/)
- * [JsTestDriver](https://code.google.com/p/js-test-driver/)
- * [Buster.js](http://busterjs.org/)
- * [Sinon.js](http://sinonjs.org/)
 
 ## Table of Contents
 
@@ -229,7 +133,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 2.B.1.1
     // Variables
-    var foo = "bar",
+    var foo = 'bar',
       num = 1,
       undef;
 
@@ -243,19 +147,19 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // and keeps your declaration list free of clutter (also saves a few keystrokes)
 
     // Bad
-    var foo = "";
-    var bar = "";
+    var foo = '';
+    var bar = '';
     var qux;
 
     // Good
-    var foo = "",
-      bar = "",
+    var foo = '',
+      bar = '',
       quux;
 
     // or..
     var // Comment on these
-    foo = "",
-    bar = "",
+    foo = '',
+    bar = '',
     quux;
 
     // 2.B.1.3
@@ -267,13 +171,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       // some statements here
 
-      var bar = "",
+      var bar = '',
         qux;
     }
 
     // Good
     function foo() {
-      var bar = "",
+      var bar = '',
         qux;
 
       // all statements after the variables declarations.
@@ -338,10 +242,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // Usage
-    var fooBar = new FooBar({ a: "alpha" });
+    var fooBar = new FooBar({ a: 'alpha' });
 
     fooBar.options;
-    // { a: "alpha" }
+    // { a: 'alpha' }
 
     ```
 
@@ -358,20 +262,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     });
 
     // Function accepting an array, no space
-    foo([ "alpha", "beta" ]);
+    foo([ 'alpha', 'beta' ]);
 
     // 2.C.1.2
     // Function accepting an object, no space
     foo({
-      a: "alpha",
-      b: "beta"
+      a: 'alpha',
+      b: 'beta'
     });
 
     // Single argument string literal, no space
-    foo("bar");
+    foo('bar');
 
     // Inner grouping parens, no space
-    if ( !("foo" in obj) ) {
+    if ( !('foo' in obj) ) {
 
     }
 
@@ -420,19 +324,19 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     String:
 
-        typeof variable === "string"
+        typeof variable === 'string'
 
     Number:
 
-        typeof variable === "number"
+        typeof variable === 'number'
 
     Boolean:
 
-        typeof variable === "boolean"
+        typeof variable === 'boolean'
 
     Object:
 
-        typeof variable === "object"
+        typeof variable === 'object'
 
     Array:
 
@@ -455,7 +359,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       Global Variables:
 
-        typeof variable === "undefined"
+        typeof variable === 'undefined'
 
       Local Variables:
 
@@ -494,7 +398,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Somewhere later in your code, you need to update `foo`
     // with a new value derived from an input element
 
-    foo = document.getElementById("foo-input").value;
+    foo = document.getElementById('foo-input').value;
 
     // If you were to test `typeof foo` now, the result would be `string`
     // This means that if you had logic that tested `foo` like:
@@ -512,7 +416,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // You can preempt issues by using smart coercion with unary + or - operators:
 
-    foo = +document.getElementById("foo-input").value;
+    foo = +document.getElementById('foo-input').value;
     //    ^ unary + operator will convert its right side operand to a number
 
     // typeof foo;
@@ -535,17 +439,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 3.B.2.1
 
     var number = 1,
-      string = "1",
+      string = '1',
       bool = false;
 
     number;
     // 1
 
-    number + "";
+    number + '';
     // "1"
 
     string;
-    // "1"
+    // '1'
 
     +string;
     // 1
@@ -562,7 +466,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     +bool;
     // 0
 
-    bool + "";
+    bool + '';
     // "false"
     ```
 
@@ -571,13 +475,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 3.B.2.2
 
     var number = 1,
-      string = "1",
+      string = '1',
       bool = true;
 
     string === number;
     // false
 
-    string === number + "";
+    string === number + '';
     // true
 
     +string === number;
@@ -599,25 +503,25 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
     // 3.B.2.3
 
-    var array = [ "a", "b", "c" ];
+    var array = [ 'a', 'b', 'c' ];
 
-    !!~array.indexOf("a");
+    !!~array.indexOf('a');
     // true
 
-    !!~array.indexOf("b");
+    !!~array.indexOf('b');
     // true
 
-    !!~array.indexOf("c");
+    !!~array.indexOf('c');
     // true
 
-    !!~array.indexOf("d");
+    !!~array.indexOf('d');
     // false
 
     // Note that the above should be considered "unnecessarily clever"
     // Prefer the obvious approach of comparing the returned value of
     // indexOf, like:
 
-    if ( array.indexOf( "a" ) >= 0 ) {
+    if ( array.indexOf( 'a' ) >= 0 ) {
       // ...
     }
     ```
@@ -692,7 +596,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 4.1.3
     // When only evaluating that a string is not empty,
     // instead of this:
-    if ( string !== "" ) ...
+    if ( string !== '' ) ...
 
     // ...evaluate truthiness, like this:
     if ( string ) ...
@@ -701,7 +605,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 4.1.4
     // When only evaluating that a string _is_ empty,
     // instead of this:
-    if ( string === "" ) ...
+    if ( string === '' ) ...
 
     // ...evaluate falsy-ness, like this:
     if ( !string ) ...
@@ -753,12 +657,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // === does not coerce type, which means that:
 
-    "1" === 1;
+    '1' === 1;
     // false
 
     // == does coerce type, which means that:
 
-    "1" == 1;
+    '1' == 1;
     // true
 
 
@@ -769,10 +673,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     true, false
 
     // Truthy:
-    "foo", 1
+    'foo', 1
 
     // Falsy:
-    "", 0, null, undefined, NaN, void 0
+    '', 0, null, undefined, NaN, void 0
 
     ```
 
@@ -809,14 +713,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
             return ( data = value );
           }
         };
-      })();
+      }());
 
       // Other things might happen here
 
       // expose our module to the global object
       global.Module = Module;
 
-    })( this );
+    }( this ));
 
     ```
 
@@ -852,7 +756,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // expose our constructor to the global object
       global.ctor = ctor;
 
-    })( this );
+    }( this ));
 
     ```
 
@@ -874,7 +778,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     function q(s) {
       return document.querySelectorAll(s);
     }
-    var i,a=[],els=q("#foo");
+    var i,a=[],els=q('#foo');
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
@@ -893,7 +797,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     var idx = 0,
       elements = [],
-      matches = query("#foo"),
+      matches = query('#foo'),
       length = matches.length;
 
     for ( ; idx < length; idx++ ) {
@@ -975,7 +879,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       setInterval(function() {
 
         // Emit a throttled event
-        this.emit("event");
+        this.emit('event');
 
       }.bind(this), opts.freq || 100 );
     }
@@ -1003,7 +907,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       setInterval(_.bind(function() {
 
-        this.emit("event");
+        this.emit('event');
 
       }, this), opts.freq || 100 );
     }
@@ -1021,7 +925,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       setInterval( jQuery.proxy(function() {
 
-        this.emit("event");
+        this.emit('event');
 
       }, this), opts.freq || 100 );
     }
@@ -1039,7 +943,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       setInterval( dojo.hitch( this, function() {
 
-        this.emit("event");
+        this.emit('event');
 
       }), opts.freq || 100 );
     }
@@ -1065,7 +969,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       setInterval(function() {
 
-        self.emit("event");
+        self.emit('event');
 
       }, opts.freq || 100 );
     }
@@ -1083,7 +987,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     var obj;
 
-    obj = { f: "foo", b: "bar", q: "qux" };
+    obj = { f: 'foo', b: 'bar', q: 'qux' };
 
     Object.keys( obj ).forEach(function( key ) {
 
@@ -1121,10 +1025,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // An example switch statement
 
     switch( foo ) {
-      case "alpha":
+      case 'alpha':
         alpha();
         break;
-      case "beta":
+      case 'beta':
         beta();
         break;
       default:
@@ -1143,17 +1047,17 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       alpha: function() {
         // statements
         // a return
-        return [ "Alpha", arguments.length ];
+        return [ 'Alpha', arguments.length ];
       },
       beta: function() {
         // statements
         // a return
-        return [ "Beta", arguments.length ];
+        return [ 'Beta', arguments.length ];
       },
       _default: function() {
         // statements
         // a return
-        return [ "Default", arguments.length ];
+        return [ 'Default', arguments.length ];
       }
     };
 
@@ -1182,7 +1086,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 7.A.1.3
     // Put the API in 7.A.1.2 to work:
 
-    delegator( "alpha", 1, 2, 3, 4, 5 );
+    delegator( 'alpha', 1, 2, 3, 4, 5 );
     // [ "Alpha", 5 ]
 
     // Of course, the `case` key argument could easily be based
@@ -1194,14 +1098,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     someUserInput = 9;
 
     if ( someUserInput > 10 ) {
-      caseKey = "alpha";
+      caseKey = 'alpha';
     } else {
-      caseKey = "beta";
+      caseKey = 'beta';
     }
 
     // or...
 
-    caseKey = someUserInput > 10 ? "alpha" : "beta";
+    caseKey = someUserInput > 10 ? 'alpha' : 'beta';
 
     // And then...
 
@@ -1226,9 +1130,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       var ret;
 
       if ( foo ) {
-        ret = "foo";
+        ret = 'foo';
       } else {
-        ret = "quux";
+        ret = 'quux';
       }
       return ret;
     }
@@ -1238,9 +1142,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     function returnEarly( foo ) {
 
       if ( foo ) {
-        return "foo";
+        return 'foo';
       }
-      return "quux";
+      return 'quux';
     }
 
     ```
