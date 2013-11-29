@@ -1,7 +1,6 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Принципи за писане на систематичен, идиоматичен JavaScript
 
-
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Това е развиващ се документ и всички идеи за развиване на кода са са винаги добре дошли. Може да сътрудничите: fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -29,44 +28,45 @@
 * Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
 * Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
+* Borislav Banchev [github](https://github.com/borislavvv)
 
 
+ 
+## Целият код в една база данни трябва да изглежда всякаш един човек го е писал, без значение колко хора са помагали.
+  
+### Следващият списък подчертава практиките, които авторът на оригиналния документ използва; всички допълвания към документа трябва да ползват тези насоки.
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
-
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
-
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
-
-
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
->_Rebecca_ _Murphey_
+### Това са само насоки, ако се наложи да се ползват други правила, това е въпрос на личен избор.
+  
+### "Спорове около стила са безсмислени. Трябва да има ръководство за стила и ти трябва да го следваш."
+>_Ребека_ _Мърфи_
 
 &nbsp;
 
-> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
->_Idan_ _Gazit_
+> ### "Част от това да бъдеш добър ръководител на проект е да разбереш, че писането на код за себе си е  Лоша Идея™. Ако хиляди хора ти ползват кода, то пиши код с максимална ясното, не по лични предпочитания как да бъдеш умен в твоите си разбирания."
+>_Идан_ _Газит_
 
 
-## Translations
+## Преводи
 
-* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [Немски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [Френски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Испански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Португалски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Корейски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Японски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Италиански](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Руски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Румънски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
-* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Сръбски](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Сръбски - латиница](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Български](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 
 
-## Important, Non-Idiomatic Stuff:
+## Важни, неидиоматични неща:
 
-### Code Quality Tools, Resources & References
+### Инструменти за качествен код, ресурски & връзки
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [Plato](https://github.com/jsoverson/plato)
@@ -77,12 +77,12 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
 
-## Get Smart
+## Най-важното: умната 
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [Анотация ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript езикови спецификации, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Следните неща да се вземат в предвид 1) непълно, и 2) *Изисква препрочитане*. Не винаги съм съгласен със стила на авторите по-надолу, но едно е сигурно: Те са последателни, нещо повече - те са авторитети в езика.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -96,16 +96,16 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 
 
-### Build & Deployment Process
+### Билд & Деплой процес
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
+Проектите винаги трябва да се опитват някакви правила по които да могат да бъдат проверени, тествани и компресирани в подготовката за продукционна версия. За тази задача, [grunt](https://github.com/gruntjs/grunt) от Ben Alman е безценен проект и официално е заменило "kits/" директоритите от това хранилище.
 
 
-### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+
+### Тестов механизъм
+
+Проектите _трябва_ да включват някаква форма на юнит тетване, справки, изпъление или функционално тестване. 'Use case' демонстрациите НЕ СА "тестове". Това е списък със заверени тестващи прибори.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -116,57 +116,51 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Buster.js](http://busterjs.org/)
  * [Sinon.js](http://sinonjs.org/)
 
-## Table of Contents
+## Съдържание
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Празни полета](#whitespace)
+ * [Красив синтаксис](#spacing)
+ * [Проверка на типове(Бладарение на jQuery Core стилови насоки)](#type)
+ * [Условни уравнения](#cond)
+ * [Практически стил](#practical)
+ * [Именуване](#naming)
+ * [Смесено](#misc)
+ * [Обекти](#native)
+ * [Коментари](#comments)
+ * [Едноезиков код](#language)
 
 
 
 ------------------------------------------------
 
 
-## Preface
+## Преговор
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Следващата секция очертава _разумни_ стилови насоки за модерно JavaScript писане без намерение да е норма. Най-важното си остава **закона за последователно стилизиран код**. Какъвто и стил да изберете за проектът ви, трябва да е закон. Може да давате връзка към този документ за стил на вашия проект.
 
 
-
-## Idiomatic Style Manifesto
-
-
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
+## Манифест за идиоматичен стил
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+1. <a name="whitespace">Празни полета</a>
+  - Никога не смесвайте табулации и празни полета.
+  - Когато започвате проект, преди да пишете код, изберете празно поле или табулация, и зачитайте този **закон**.
+  - За четимост, се предлага да се настрой редактора на 2 празни полета &mdash; това значи 2 празни полета да се равняват на 1 табулация.
+  - Ако редакторът ви го поддържа, работете винаги със "покажи невидимите" пуснато. Ползата от тази практика е :
+      - Принудително постоянство
+      - Премахване на последно празно пространство от края на реда
 
-    A. Parens, Braces, Linebreaks
+2. <a name="spacing">Красив синтаксис</a>
+
+    A. Големи и малки скоби, нов ред
 
     ```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/try винаги имат празни пространства, и се пишат на няколко реда
+    // това насърчава четимостта
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Пример за трудно четим синтаксис
 
     if(condition) doSomething();
 
@@ -176,7 +170,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Ползвайте празно пространство за повишаване на четливостта
 
     if ( condition ) {
       // statements
@@ -190,7 +184,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    // Even better:
+    // Даже по-добре:
 
     var i,
       length = 100;
@@ -199,7 +193,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    // Or...
+    // Или...
 
     var i = 0,
       length = 100;
@@ -223,46 +217,46 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+    B. Придаване на стойност, декларации, функции ( наименовани, изрази, конструктури )
 
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Променливи
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Литерали:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) promotes readability
-    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+    // Използвайте едно `var` на скоуп (функция) насърчава четимостта
+    // и пази декларациите от бъркотии (по-малко писане също)
 
-    // Bad
+    // зле
     var foo = "";
     var bar = "";
     var qux;
 
-    // Good
+    // добре
     var foo = "",
       bar = "",
       quux;
 
-    // or..
+    // или..
     var // Comment on these
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+    // var декларациите винаги трябва да са в началото на скоупа (функцията).
+    // Същото е и за константите от ECMAScript 6.
 
-    // Bad
+    // зле
     function foo() {
 
       // some statements here
@@ -271,7 +265,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         qux;
     }
 
-    // Good
+    // добре
     function foo() {
       var bar = "",
         qux;
@@ -283,25 +277,25 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // Деклариране на именовани функции
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Извикване
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+	// Именовани функции декларация
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Ползване
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Наистина скалъпен начин за стойност
     function square( number, callback ) {
       callback( number * number );
     }
@@ -312,15 +306,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.3
-    // Function Expression
+    // Изрази функции
     var square = function( number ) {
       // Return something valuable and relevant
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Функции изрази с имена
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -331,13 +323,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Конструктури
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Извикване
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -346,41 +338,40 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Exceptions, Slight Deviations
+    C. Изключения, леко отклонение
 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Функции с колбек
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Няма празно поле преди функцията      
     });
 
-    // Function accepting an array, no space
+    // Функцията приема масив, без празни полета
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Функция, приемаща обект, няма празно поле
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Аргумент един низ, няма разно поле
     foo("bar");
 
-    // Inner grouping parens, no space
+    // Вътрешни скоби, няма празно поле
     if ( !("foo" in obj) ) {
 
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Последователността винаги е по-добре
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    Във секции 2.A-2.C, празните полета се препоръчват с цел последователност при писането на код.
+    Важно е да се разбере, че трябва да се избере един модел на писане в целия проект.
 
     ```javascript
 
@@ -406,40 +397,41 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. Quotes
+    E. Кавички
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Няма значение дали се избира единични или двойни кавички, няма разлика при интерпретирането им. What **НАЙ-ВАЖНОТО** е да е консистентен кода. **Не смесвайте използването на кавички в проекта. Изберете един стил и се придържайте към него.**
 
     F. End of Lines and Empty Lines
+    F. Край на редове и празни редове
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Празните полета могат много да затруднят четимостта когато са наслагани хаотично. Добре да се премахват в края на реда.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Проверяване на типове (Благодарности на jQuery Core Style Guidelines)</a>
 
-    A. Actual Types
+    A. Реални типове
 
-    String:
+    Низ:
 
         typeof variable === "string"
 
-    Number:
+    Число:
 
         typeof variable === "number"
 
-    Boolean:
+    Булева стойност:
 
         typeof variable === "boolean"
 
-    Object:
+    Обект:
 
         typeof variable === "object"
 
-    Array:
+    Масив:
 
         Array.isArray( arrayLikeObject )
         (wherever possible)
 
-    Node:
+    Разклонение:
 
         elem.nodeType === 1
 
@@ -447,31 +439,31 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
         variable === null
 
-    null or undefined:
+    null или undefined:
 
         variable == null
 
     undefined:
 
-      Global Variables:
+      Глобални променливи:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Локални променливи:
 
         variable === undefined
 
-      Properties:
+      Свойства:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+    B. Прехвърляне към тип
 
-    Consider the implications of the following...
+    Помислете върху последиците от следното...
 
-    Given this HTML:
+    От този HTML:
 
     ```html
 
@@ -484,20 +476,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` е деклариран със стойност `0` и типът му е `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Някъде по-надолу в кода трябва да се промени `foo`
+    // с нова стойност, извлечена от input елемента
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Ако се тества `typeof foo` резултатът ще бъде `string`
+    // Това значи, че ако има логика, която тества `foo` така:
 
     if ( foo === 1 ) {
 
@@ -505,14 +497,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // `importantTask()` няма да бъде извикана дори `foo` като има стойност "1"
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Това може да се реши като се използва унарните + или - операции за прехвърляне на тип:
 
     foo = +document.getElementById("foo-input").value;
+    //    ^ унарният оператор ще конвертира дясната страна към число
     //    ^ unary + operator will convert its right side operand to a number
 
     // typeof foo;
@@ -525,9 +518,11 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // `importantTask()` will be called
+    // `importantTask()` ще се извика
     ```
 
     Here are some common cases along with coercions:
+	Ето някои общи случаи с използване на принудително преобразуване на типове:
 
 
     ```javascript
@@ -613,8 +608,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
+    // Горното може да се разглежда като ненужно хитро
+    // Предпочитайте очевидния подход за сравняване на върната стойност с
     // indexOf, like:
 
     if ( array.indexOf( "a" ) >= 0 ) {
@@ -630,7 +625,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // същото като...
 
     ~~num;
 
@@ -641,24 +636,24 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // All result in 2
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // Имайте впредвид, че отрицателните числа ще се разглеждат различно...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // е същото като...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Резултатът е -2
+    // Въпреки това...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // Резултатът е 4294967294
 
 
 
@@ -667,122 +662,122 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Условни проверки</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Когато проверявате дали масив има дължина,
+    // вместо това:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...проверявайте за вярност така:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Когато проверявате дали масив е празен,
+    // вместо това:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...проверявайте така:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Когато проверявате низ дали е празен
+    // вместо това:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...проверявайте така
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Когато проверявате дали низ _е_ празен,
+    // вместо това:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...проверявайте така:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Когато проверявате дали референция е true
+    // вместо това:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...ползвайте вградените възможности
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Когато се проверява дали референция е празна,
+    // вместо това:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...ползвайте обратната стойност на правилният вариант
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Внимавайте, това също може да съвпада с : 0, "", null, undefined, NaN
+    // Ако _ТРЯБВА_ да се тества за false, ползвайте
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Когато проверявате дали референция може да е null или undefined, но НЕ false, "" или 0,
+    // вместо това: 
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...ползвайте == типово прехвърляне така:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Запомнете, ползвайки == ще приравни `null` към `null` и `undefined`
+    // но не и към `false`, "" или 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    Винаги проверявайте за най-точни резултати, горното са насоки, не догма
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Прехвърляне на типове и проверка бележки
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // Предпочитайте `===` над `==` (освен ако случая не изисква свободна типова оценка)
 
-    // === does not coerce type, which means that:
+    // === не прехвърля тип, което значи това:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == прехвърля тип, което значи:
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Booleans, Truthies & Falsies
+    // Булеви стойности, вярно, грешно
 
-    // Booleans:
+    // Булеви стойности:
     true, false
 
-    // Truthy:
+    // Вярно:
     "foo", 1
 
-    // Falsy:
+    // Грешно:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Практически стил</a>
 
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Практически модул
 
     (function( global ) {
       var Module = (function() {
@@ -790,30 +785,30 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Някаква булева стойност
           bool: true,
-          // Some string value
+          // Някакъв низ
           string: "a string",
-          // An array property
+          // Масив
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Обект
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // get the current value of `data`
+            // стойността на `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // задай стойност `data` и я върни
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Друг код
 
-      // expose our module to the global object
+      // Разкрийте модула на глобалния обект
       global.Module = Module;
 
     })( this );
@@ -823,7 +818,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Практически конструктор
 
     (function( global ) {
 
@@ -843,13 +838,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // За извикване на конструктор без `new`, може така:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
-
-      // expose our constructor to the global object
+      // открий конструктора на глобалния обект
       global.ctor = ctor;
 
     })( this );
@@ -858,18 +852,18 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Именоване</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Ти не си човек-компилатор, не се и опитвай да бъдеш.
 
-    The following code is an example of egregious naming:
+    Пример за лош код:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Неправилни имена
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -878,14 +872,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+	Всеки може да е писал такъв код. Дано това да спре от днес.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    Ето някакъв код с по-добри имена:
 
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Пример за код с подобрени имена
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -902,42 +896,42 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    A few additional naming pointers:
+    Някои допълнителни показатели за имена:
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Именоване на низ
 
     `dog` is a string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Именоване на масив
 
     `dogs` is an array of `dog` strings
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Функции, обекти, инстанции, други
 
     camelCase; function and var declarations
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+    // Конструктори, прототипи, други
 
     PascalCase; constructor function
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Регулярни изрази
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // От Google Closure Library Style Guide
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -948,9 +942,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Faces of `this`
+    B. Лицата на `this`
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+	Предпочитайте `.bind( this )` пред `call` and `apply` или еквивалент, когато е възможно разбира се. 
 
     ```javascript
 
@@ -984,7 +978,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Ако няма как, функционални еквиваленти на `.bind` съществуват в много модерни библиотеки.
 
 
     ```javascript
@@ -1046,7 +1040,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    Като последно средство, създавайте псевдоним на `this` използвайки `self` като идентификатор. Това не е от най-добрите практики и са възможни много грешки.
 
     ```javascript
 
@@ -1073,9 +1067,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Use `thisArg`
+    C. Използвайте `thisArg`
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    Няколко прототипа на методи в ES 5.1 идват с включено `thisArg`, което трябва да се използва, когато е възможно.
 
     ```javascript
 
@@ -1087,13 +1081,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| се отнася към `obj`
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- последният arg е `thisArg`
+    
 
-    // Prints...
+    // Принтиране...
 
     // "foo"
     // "bar"
@@ -1101,24 +1096,24 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` може да се използва с `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Смесени</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Тази секция цели да илюстрира идеи и концепции, които не са догма, но за сметка на това поущряват практики с цел намиране на по-добри начини за съвместни програмни JavaScript задачи.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
-
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    A. Използването на `switch` може да се избегне.
+	
+    Въпреки, че има драстично подобряване на изпълнението на  `switch` в последните версии на Firefox и Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
-
-    Notable improvements can be witnesses here as well:
+ 
+    Забележителни промени могат да се забележат и тук:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Примерен switch
 
     switch( foo ) {
       case "alpha":
@@ -1133,8 +1128,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // 7.A.1.2
-    // A alternate approach that supports composability and reusability is to
-    // use an object to store "cases" and a function to delegate:
+    // Алтернативен подход, предлагащ преизползване 
+    // използва обект за запазване на "cases" и функция за делегат
 
     var cases, delegator;
 
@@ -1185,12 +1180,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     delegator( "alpha", 1, 2, 3, 4, 5 );
     // [ "Alpha", 5 ]
 
-    // Of course, the `case` key argument could easily be based
-    // on some other arbitrary condition.
+    // Разбира се `case` може да бъде базиран 
+    // на някои случайни условия.
 
     var caseKey, someUserInput;
 
-    // Possibly some kind of form input?
+    // От input?
     someUserInput = 9;
 
     if ( someUserInput > 10 ) {
@@ -1199,16 +1194,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       caseKey = "beta";
     }
 
-    // or...
+    // или...
 
     caseKey = someUserInput > 10 ? "alpha" : "beta";
 
-    // And then...
+    // и тогава...
 
     delegator( caseKey, someUserInput );
     // [ "Beta", 1 ]
 
-    // And of course...
+    // разбира се...
 
     delegator();
     // [ "Default", 0 ]
@@ -1216,12 +1211,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. Ранните връщания на метод повишават четимостта с пренебрежими разлики в изпълнението
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // зле:
     function returnLate( foo ) {
       var ret;
 
@@ -1233,7 +1228,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return ret;
     }
 
-    // Good:
+    // добре:
 
     function returnEarly( foo ) {
 
@@ -1246,13 +1241,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Обекти</a>
 
-    The basic principle here is:
+    Най-важният принцип тук е:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Не правете простотии и всичко ще е наред.
 
-    To reinforce this concept, please watch the following presentation:
+    За подсилване на концепцията, моля гледайте следната презентация:
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
@@ -1261,23 +1256,23 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Коментари</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+    #### Едноредови коментари над кода, към който се отнасят
+    #### Многоредовите коментари са добри
+    #### Забранени са коментари в края на реда!
+    #### JSDoc стила е добър, но изисква значителна инвестиция на време
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">Едноезиков код</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    Програмите трябва да са написани на един език, който и да било, както се диктува от поддържащите разработчици.
 
-## Appendix
+## Индекс
 
-### Comma First.
+### Първо запетая.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Всеки проект, който цитира този документ като основен стил, не приема запетая като начало на форматиране, освен ако не е казано изрично от автора на проекта.
 
 
 
