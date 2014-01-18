@@ -181,7 +181,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   // Melhor ainda:
 
   var i,
-    length = 100;
+      length = 100;
 
   for ( i = 0; i < length; i++ ) {
     // instruções
@@ -190,7 +190,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   // Ou...
 
   var i = 0,
-    length = 100;
+      length = 100;
 
   for ( ; i < length; i++ ) {
     // instruções
@@ -218,12 +218,12 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   // 2.B.1.1
   // Variáveis
   var foo = "bar",
-    num = 1,
-    undef;
+      num = 1,
+      undef;
 
   // Notações literais:
   var array = [],
-    object = {};
+      object = {};
 
 
   // 2.B.1.2
@@ -237,8 +237,8 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
   // Bom
   var foo = "",
-    bar = "",
-    quux;
+      bar = "",
+      quux;
 
   // ou..
   var // comentário aqui
@@ -257,13 +257,13 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     // algumas instruções aqui
 
     var bar = "",
-      qux;
+        qux;
   }
 
   // Bom
   function foo() {
     var bar = "",
-      qux;
+        qux;
 
     // algumas instruções depois das declarações de variáveis
   }
@@ -521,8 +521,8 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     // 3.B.2.1
 
     var number = 1,
-      string = "1",
-      bool = false;
+        string = "1",
+        bool = false;
 
     number;
     // 1
@@ -557,8 +557,8 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     // 3.B.2.2
 
     var number = 1,
-      string = "1",
-      bool = true;
+        string = "1",
+        bool = true;
 
     string === number;
     // false
@@ -878,9 +878,9 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
   }
 
   var idx = 0,
-    elements = [],
-    matches = query("#foo"),
-    length = matches.length;
+      elements = [],
+      matches = query("#foo"),
+      length = matches.length;
 
   for( ; idx < length; idx++ ){
     elements.push( matches[ idx ] );
