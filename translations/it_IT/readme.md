@@ -10,7 +10,7 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idan)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
@@ -24,7 +24,11 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
-
+* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
+* monkadd [github](https://github.com/monkadd)
+* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
+* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
+* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 
 
 ## Tutto il codice, in qualsiasi linguaggio sia, dovrebbe sembrare come scritto da un'unica persona, non importa quante persone vi abbiano contribuito.
@@ -94,8 +98,7 @@ I seguenti dovrebbero essere considerati come 1) incompleti e 2) *LETTURE NECESS
 
 ### Processo di costruzione e distribuzione
 
-Ogni progetto dovrebbe sempre cercare di fornire un qualche strumento generico, per mezzo del quale i sorgenti possano venire validati, testati e compressi per il successivo utilizzo in ambiente di produzione. Per questo lavoro, [grunt](https://github.com/cowboy/grunt) di Ben Alman non è secondo a nessuno e ha ufficialmente rimpiazzato la directory "kits/" di questo repo.
-
+Ogni progetto dovrebbe sempre cercare di fornire un qualche strumento generico, per mezzo del quale i sorgenti possano venire validati, testati e compressi per il successivo utilizzo in ambiente di produzione. Per questo lavoro, [grunt](https://github.com/gruntjs/grunt) di Ben Alman non è secondo a nessuno e ha ufficialmente rimpiazzato la directory "kits/" di questo repo.
 
 
 
