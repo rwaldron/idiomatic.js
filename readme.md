@@ -260,7 +260,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 2.B.1.3
     // var statements should always be in the beginning of their respective scope (function).
-    // Same goes for const and let from ECMAScript 6.
+    
 
     // Bad
     function foo() {
@@ -277,6 +277,27 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         qux;
 
       // all statements after the variables declarations.
+    }
+    
+    // 2.B.1.4
+    // const and let, from ECMAScript 6, should likewise be at the top of their scope (block).
+    
+    // Bad
+    function foo() {
+      let foo,
+        bar;
+      if (condition) {
+        bar = "";
+        // statements
+      }
+    }
+    // Good
+    function foo() {
+      let foo;
+      if (condition) {
+        let bar = "";
+        // statements
+      }
     }
     ```
 
