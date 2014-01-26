@@ -410,34 +410,36 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
     String:
 
-      typeof variavel === "string"
+        typeof variavel === "string"
 
     Number:
 
-      typeof variavel === "number"
+        typeof variavel === "number"
 
     Boolean:
 
-      typeof variavel === "boolean"
+        typeof variavel === "boolean"
 
     Object:
 
-      typeof variavel === "object"
+        typeof variavel === "object"
 
     Array:
 
-      Array.isArray( variavel )
-      (quando possível)
+        Array.isArray( variavel )
+        (quando possível)
 
     null:
 
-      variavel === null
+        variavel === null
 
     null ou undefined:
 
-      variavel == null
+        variavel == null
 
     undefined:
+    
+        variavel === undefined
 
       Variáveis Globais:
 
