@@ -29,6 +29,7 @@
 * Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
 * Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
+* Frankie Bagnardi [github](https://github.com/brigand)
 
 
 
@@ -658,6 +659,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     num >> 0;
 
     num >>> 0;
+    
+    num | 0;
 
     // All result in 2
 
@@ -673,6 +676,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ~~neg;
 
     neg >> 0;
+    
+    neg | 0;
 
     // All result in -2
     // However...
@@ -681,8 +686,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // Will result in 4294967294
 
+    
+    // and nonnumerical values...
 
-
+    parseInt("foobar");
+    
+    // is NaN, but these are all 0
+    
+    "Infinity" | 0;
+    
+    "-Infinity" ^ 0;
+    
+    Infinity >>> 0;
+    
+    NaN | 0;
 
     ```
 
