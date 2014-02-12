@@ -23,6 +23,7 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Felipe Teixeira [github](https://github.com/felipegtx)
 
 
 ## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
@@ -408,34 +409,35 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
     A. Tipos existentes
 
-    String:
+      String:
 
-      typeof variavel === "string"
+        typeof variavel === "string"
 
-    Number:
+      Number:
 
-      typeof variavel === "number"
+        typeof variavel === "number"
 
-    Boolean:
+      Boolean:
 
-      typeof variavel === "boolean"
+        typeof variavel === "boolean"
 
-    Object:
+      Object:
 
-      typeof variavel === "object"
+        typeof variavel === "object"
 
-    Array:
+      Array:
 
-      Array.isArray( variavel )
+        Array.isArray( variavel )
+      
       (quando possível)
 
-    null:
+      null:
 
-      variavel === null
+        variavel === null
 
-    null ou undefined:
+      null ou undefined:
 
-      variavel == null
+        variavel == null
 
     undefined:
 
