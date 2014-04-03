@@ -375,7 +375,12 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	```
 
-	E. Fin de ligne et lignes vides
+	E. Guillemets
+
+	Votre préférence personnelle pour les guillemets simples ou doubles n'a pas d'importance puisque Javascript les interprètent de la même manière. En revanche, la cohérence est primordial et doit être imposée.
+
+
+	F. Fin de ligne et lignes vides
 
 	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuée __automatiquement__ avant chaque "commit".
 
