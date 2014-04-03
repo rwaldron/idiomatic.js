@@ -29,7 +29,10 @@
 
 ### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont je suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
-### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
+### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si un style en commun existe déjà, il est important de le respecter.
+
+
+> "Les conversations autour du style n'a pas de sense. Il devrait y avoir un guide et celui-ci doit être respecté." - Rebecca Murphey
 
 > "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi-même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
 
