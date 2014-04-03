@@ -126,8 +126,8 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
   - Ne jamais mélanger les espaces et les tabulations.
   - Avant d'écrire le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-      - Pour la lisibilité, paramétrer votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
-  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
+      - Pour la lisibilité, paramétrez votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
+  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont les suivants :
       - Améliore la cohérence du code
       - Elimine les espaces de fin de ligne
       - Elimine les espaces utilisés pour des lignes blanches
