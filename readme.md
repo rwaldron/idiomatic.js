@@ -76,6 +76,7 @@
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [eslint](http://eslint.org/)
 
 ## Get Smart
 
