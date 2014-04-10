@@ -193,7 +193,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Even better:
 
     var i,
-      length = 100;
+        length = 100;
 
     for ( i = 0; i < length; i++ ) {
       // statements
@@ -202,7 +202,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Or...
 
     var i = 0,
-      length = 100;
+        length = 100;
 
     for ( ; i < length; i++ ) {
       // statements
@@ -230,12 +230,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // 2.B.1.1
     // Variables
     var foo = "bar",
-      num = 1,
-      undef;
+        num = 1,
+        undef;
 
     // Literal notations:
     var array = [],
-      object = {};
+        object = {};
 
 
     // 2.B.1.2
@@ -249,8 +249,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // Good
     var foo = "",
-      bar = "",
-      quux;
+        bar = "",
+        quux;
 
     // or..
     var // Comment on these
