@@ -23,6 +23,7 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
 
 
 ## Код в любом проекте должен выглядеть так, будто его писал один человек, неважно как много людей работали над ним. ***
