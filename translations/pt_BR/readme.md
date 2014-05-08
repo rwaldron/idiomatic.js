@@ -409,50 +409,50 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     A. Tipos existentes
 
     String:
-
+    ```javascript
       typeof variavel === "string"
-
+    ```
     Number:
-
+    ```javascript
       typeof variavel === "number"
-
+    ```
     Boolean:
-
+    ```javascript
       typeof variavel === "boolean"
-
+    ```
     Object:
-
+    ```javascript
       typeof variavel === "object"
-
+    ```
     Array:
-
+    ```javascript
       Array.isArray( variavel )
-      (quando possível)
-
+      // (quando possível)
+    ```
     null:
-
+    ```javascript
       variavel === null
-
+    ```
     null ou undefined:
-
+    ```javascript
       variavel == null
-
+    ```
     undefined:
 
       Variáveis Globais:
-
+    ```javascript
         typeof variavel === "undefined"
-
+    ```
       Variáveis Locais:
-
+    ```javascript
         variavel === undefined
-
+    ```
       Propriedades:
-
+    ```javascript
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
-
+    ```
     B. Tipos coagidos
 
     Considere as implicações do seguinte...
