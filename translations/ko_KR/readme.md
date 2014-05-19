@@ -23,12 +23,17 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
+* monkadd [github](https://github.com/monkadd)
+* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
+* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
+* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
 ### 제가 원저자인 프로젝트의 코드를 작성할 때는 몇 가지 원칙을 따르는데요, 아래의 목록에 그 원칙들을 나열하였습니다. 이 프로젝트의 코드작성에 참여할 때에는 다음의 가이드라인을 따라야 합니다.
 
-### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
+### 다른 사람들의 코드나 프로젝트에 제 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 코드 스타일이 있다면, 이미 있는 스타일을 더 우선시 하세요.
 
 
 <!--> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"-->
@@ -91,8 +96,8 @@
 
 ### 빌드 & 배포 프로세스
 
-<!--Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/cowboy/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.-->
-프로젝트는 배포를 위해 소스코드를 압축하는 방법을 마련해두어야 합니다. 이렇게 하기 위해, Ben Alman의 [grunt](https://github.com/cowboy/grunt) 는 둘째가라면 서러운 솔루션이며 공식적으로 이 레포지터리의 "kits/" 디랙토리를 대체 하고있습니다.
+<!--Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.-->
+프로젝트는 배포를 위해 소스코드를 압축하는 방법을 마련해두어야 합니다. 이렇게 하기 위해, Ben Alman의 [grunt](https://github.com/gruntjs/grunt) 는 둘째가라면 서러운 솔루션이며 공식적으로 이 레포지터리의 "kits/" 디랙토리를 대체 하고있습니다.
 
 
 
@@ -321,7 +326,7 @@
         return 1;
       }
 
-      return number * factorial( number-1 );
+      return number * factorial( number - 1 );
     };
 
 
@@ -1220,10 +1225,10 @@
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
 9. <a name="comments">주석 달기</a>
-  * JSDoc 스타일이 좋아요 (Closure Compiler type hints++)
-  * 주제를 가진 코드위에는 한 줄로 주석을 달아요.
-  * 보통은 여러줄로 주석을 다는게 좋고요.
-  * 코드의 맨 마지막 줄에 주석을 다는 것은 금물이에요!
+    #### 주제를 가진 코드위에는 한 줄로 주석을 달아요.
+    #### 보통은 여러줄로 주석을 다는게 좋고요.
+    #### 코드의 맨 마지막 줄에 주석을 다는 것은 금물이에요!
+    #### JSDoc 스타일이 좋지만, 꽤나 많은 시간이 필요합니다.
 
 
 10. <a name="language">한 언어로 작성하기</a>
@@ -1235,3 +1240,6 @@
 ### 쉼표를 맨 앞에 쓰는 것에 대하여.
 
 이 문서를 기본 스타일 가이드로 인용하는 모든 프로젝트는 달리 명시하지 않는 한, 쉼표를 맨 앞에 쓰는 코드 포맷은 허락되지 않습니다.
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
