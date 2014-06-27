@@ -78,6 +78,7 @@
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
  * [eslint](http://eslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
 
 ## Get Smart
 
