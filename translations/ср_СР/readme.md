@@ -21,6 +21,7 @@
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 
 
 ## Сав код у било којој "бази кода" требало би да изгледа као да га је написала једна особа, без обзира колико је људи допринело његовом креирању.
