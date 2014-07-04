@@ -22,6 +22,7 @@
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
+* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 
 
 ## Сав код у било којој "бази кода" требало би да изгледа као да га је написала једна особа, без обзира колико је људи допринело његовом креирању.
@@ -69,6 +70,7 @@
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [Editorconfig](http://editorconfig.org/)
 
 ## Будите паметнији
 

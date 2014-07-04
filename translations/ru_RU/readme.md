@@ -25,6 +25,7 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
+* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 
 
 ## Код в любом проекте должен выглядеть так, будто его писал один человек, неважно как много людей работали над ним. ***
@@ -68,6 +69,7 @@
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [Editorconfig](http://editorconfig.org/)
 
 [Использование инструментов по улучшению качества кода от Антона Ковалева](http://anton.kovalyov.net/slides/gothamjs/)
 
