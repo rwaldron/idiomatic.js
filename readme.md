@@ -29,8 +29,9 @@
 * Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
 * Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
-* Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
+* Aleksandr Filatov [@greybax](http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
+* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 
 
 
@@ -80,6 +81,7 @@
  * [jslint](http://jslint.org/)
  * [eslint](http://eslint.org/)
  * [jscs](https://www.npmjs.org/package/jscs)
+ * [Editorconfig](http://editorconfig.org/)
 
 ## Get Smart
 
@@ -157,6 +159,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       - Eliminating end of line whitespace
       - Eliminating blank line whitespace
       - Commits and diffs that are easier to read
+  - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
 
 
 2. <a name="spacing">Beautiful Syntax</a>
@@ -263,7 +266,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 2.B.1.3
     // var statements should always be in the beginning of their respective scope (function).
-    
+
 
     // Bad
     function foo() {
@@ -281,10 +284,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       // all statements after the variables declarations.
     }
-    
+
     // 2.B.1.4
     // const and let, from ECMAScript 6, should likewise be at the top of their scope (block).
-    
+
     // Bad
     function foo() {
       let foo,
