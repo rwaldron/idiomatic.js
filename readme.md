@@ -1139,7 +1139,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnesses here as well:
+    Notable improvements can be witnessed here as well:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
