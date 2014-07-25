@@ -256,7 +256,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Good
     var foo = "",
       bar = "",
-      quux;
+      qux;
 
     // or..
     var // Comment on these
