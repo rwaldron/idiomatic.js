@@ -96,7 +96,7 @@ Những thứ dưới đây nên coi là 1) không đầy đủ, and 2) *YÊU C�
 * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
 * [Hành trình Phát triển JavaScript](http://rmurphey.com/)
 * [Cú giết hoàn hảo](http://perfectionkills.com/)
-* [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+* [Douglas Crockford's World Wide Web](http://www.crockford.com)
 * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
 

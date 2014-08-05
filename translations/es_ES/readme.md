@@ -92,7 +92,7 @@ Los siguientes artículos son 1) incompletos y 2) *OBLIGATORIOS*. No siempre est
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [Douglas Crockford's World Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 (Todos estos artículos están en inglés)
 
