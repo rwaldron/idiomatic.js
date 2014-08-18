@@ -63,7 +63,7 @@
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/�?р_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 
 
@@ -81,6 +81,7 @@
  * [jslint](http://jslint.org/)
  * [eslint](http://eslint.org/)
  * [jscs](https://www.npmjs.org/package/jscs)
+ * [jscodesniffer](https://www.npmjs.org/package/jscodesniffer)
  * [Editorconfig](http://editorconfig.org/)
 
 ## Get Smart
@@ -1281,7 +1282,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     To reinforce this concept, please watch the following presentation:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Everything is Permitted: Extending Built-ins�? by Andrew Dupont (JSConf2011, Portland, Oregon)
 
     <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
 
