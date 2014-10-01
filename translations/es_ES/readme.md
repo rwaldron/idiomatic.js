@@ -828,7 +828,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
                     return data;
                 },
                 setData: function( value ) {
-                    // setea el valor de `data` y lo retorna
+                    // asigna el valor de `data` y lo retorna
                     return ( data = value );
                 }
             };
@@ -1197,7 +1197,7 @@ B. Caras de `this`
         delegate = cases[ key ];
       }
 
-      // El argumento de alcance podría ser seteado a algo específico,
+      // El argumento de alcance podría ser asignado a algo específico,
       // en este caso, |null| va a ser suficiente
       return delegate.apply( null, args );
     };
