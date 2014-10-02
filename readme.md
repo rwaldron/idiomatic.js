@@ -152,8 +152,8 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 1. <a name="whitespace">Whitespace</a>
   - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
+  - When beginning a project, before you write any code, always use spaces.
+      - Always use 4 space tabs. Never more, never less.
   - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
       - Enforced consistency
       - Eliminating end of line whitespace
@@ -435,7 +435,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     E. Quotes
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. We use only single quotes.**
 
     F. End of Lines and Empty Lines
 
