@@ -31,7 +31,10 @@
 
 ### La liste suivante donne un aperçu des pratiques que j'utilise dans tout le code dont je suis l'auteur. Les contributions aux projets dont je suis l'auteur doivent suivre ces lignes directrices.
 
-### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si elles ont un style commun, dans ce cas, il est important de respecter le style de chacun.
+### Je n'ai pas l'intention d'imposer mes préférences de style sur le code d'autres personnes. Si un style en commun existe déjà, il est important de le respecter.
+
+
+> "Les conversations autour du style n'a pas de sense. Il devrait y avoir un guide et celui-ci doit être respecté." - Rebecca Murphey
 
 > "Il est essentiel de réaliser que pour la réussite d'un projet, un bon intervenant ne doit pas coder pour soi-même mais pour les autres. Si un millier de personnes doivent utiliser votre code, écrivez le avec un maximun de clareté, non pour des préférences personnelles, mais pour être au plus prêt du besoin." - Idan Gazit
 
@@ -126,8 +129,8 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
   - Ne jamais mélanger les espaces et les tabulations.
   - Avant d'écrire le moindre code en début de projet, vous devez choisir entre l'indentation par espace ou par tabulation. C'est une règle.
-      - Pour la lisibilité, paramétrer votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
-  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont:
+      - Pour la lisibilité, paramétrez votre éditeur avec une indentation de deux caractères &mdash; ce qui veut dire deux espaces ou une tabulation représentant deux espaces.
+  - Si votre éditeur le supporte, travaillez toujours avec le mode "afficher les caractères invisibles" actif. Les avantages de cette pratique sont les suivants :
       - Améliore la cohérence du code
       - Elimine les espaces de fin de ligne
       - Elimine les espaces utilisés pour des lignes blanches
@@ -375,7 +378,12 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	```
 
-	E. Fin de ligne et lignes vides
+	E. Guillemets
+
+	Votre préférence personnelle pour les guillemets simples ou doubles n'a pas d'importance puisque Javascript les interprètent de la même manière. En revanche, la cohérence est primordial et doit être imposée.
+
+
+	F. Fin de ligne et lignes vides
 
 	Les espaces peuvent anéantir la lisibilité de vos "diffs". Considérez que la suppression des espaces et des espaces en fin de ligne doit être effectuée __automatiquement__ avant chaque "commit".
 
