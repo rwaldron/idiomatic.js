@@ -300,7 +300,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Good
     function foo() {
       let foo;
-      if (condition) {
+      if ( condition ) {
         let bar = "";
         // statements
       }
