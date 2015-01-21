@@ -482,7 +482,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // Du kannst diese Probleme umgehen, indem du die Typen mit unären - order + - Operationen erzwingst:
 
-    foo = +document.getElementById("foo-input".value;
+    foo = +document.getElementById("foo-input").value;
     //    ^ unärer + - Operator konvertiert den rechten Operanden in eine Zahl (Number)
     // typeof foo;
     // "number"
