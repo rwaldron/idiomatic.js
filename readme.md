@@ -83,6 +83,8 @@
  * [jscs](https://www.npmjs.org/package/jscs)
  * [Editorconfig](http://editorconfig.org/)
 
+[Usage of Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+
 ## Get Smart
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)

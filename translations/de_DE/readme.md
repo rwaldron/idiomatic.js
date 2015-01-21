@@ -1,5 +1,6 @@
 # Grundsätze für das schreiben von konsequentem und idiomatischem JavaScript
 
+
 ## Dies ist ein lebendiges Dokument und neue Ideen, die den Code in unserem Umfeld verbessern, sind immer willkommen. Tragt dazu bei: "fork", "clone", "branch", "commit", "push", "pull request".
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
@@ -9,7 +10,7 @@
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idan)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
@@ -23,8 +24,15 @@
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
+* monkadd [github](https://github.com/monkadd)
+* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
+* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
+* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
+* Aleksandr Filatov [@greybax](http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Martin Andreas Woerz [@ieservices] (https://twitter.com/ieservicesWorld), [github](https://github.com/ieservices), [web] (http://ieservices.de)
 
 
 ## Code sollte grundsätzlich so aussehen, als wäre er von einer einzigen Person geschrieben worden, völlig egal wie viele letztlich daran gearbeitet haben.
@@ -33,24 +41,30 @@
 
 ### Ich möchte anderen Leuten nicht meine Vorlieben aufzwängen; wenn es bereits einen geläufigen Style gibt, sollte dieser respektiert werden.
 
-> "Das es eine schlechte Idee ist, nur für sich selbst Code zu schreiben, ist etwas was man als guter Betreuer eines erfolgreichen Projektes begreifen muss™. Wenn tausende Leute deinen Code benutzen, dann schreibe deinen Code möglichst klar und übersichtlich,  nicht einfach nur nach deinen persönlichen Vorlieben." - Idan Gazit
+> "Das es eine schlechte Idee ist, nur für sich selbst Code zu schreiben, ist etwas was man als guter Betreuer eines erfolgreichen Projektes begreifen muss™. Wenn tausende Leute deinen Code benutzen, dann schreibe deinen Code möglichst klar und übersichtlich,  nicht einfach nur nach deinen persönlichen Vorlieben."
+>_Idan_ _Gazit_
 
+> ### "Arguments over style are pointless. Es sollte ein Style Guide geben und es ist ratsam diesem zu folgen"
+>_Rebecca_ _Murphey_
+
+&nbsp;
 
 ## Übersetzungen
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
-* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
-* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Deutsch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [Französisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portugisich - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Koreanisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italienisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Rumänisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [Chinesisch](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbisch - Kyrillisches Alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbisch - Lateinisches Aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+
 
 ## Wichtiger, nicht-idiomatischer Kram:
 
@@ -64,14 +78,17 @@
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [eslint](http://eslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
  * [Editorconfig](http://editorconfig.org/)
 
-[Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
+[Nutzung von "Code Quality Tools" von Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
-### Schlau werden
+### Wissen adaptieren
 
-[http://es5.github.com/](http://es5.github.com/)
+### [http://es5.github.com/](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
 Bei den folgenden Ressourcen sollte berücksichtigt werden das sie 1) unvollständig und 2) *PFLICHTLEKTÜREN* sind. Ich stimme dem geschriebenen Style der unten stehenden Autoren nicht immer zu, aber eins ist sicher: Sie sind konsequent. Außerdem sind dies echte Autoriäten in dieser Sprache.
 
@@ -83,9 +100,15 @@ Bei den folgenden Ressourcen sollte berücksichtigt werden das sie 1) unvollstä
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
+
+
+
 ### Build- und Deployment-Prozess
 
 Jedes Projekt sollte Komponenten verwenden, um den Code zu linten, testen oder komprimieren, um so im Produktivbereich eingesetzt zu werden. Ben Alan hat für diese Aufgabe [grunt](https://github.com/cowboy/grunt) entworfen und damit offiziell das "kits/" Verzeichnis aus diesem Repository ersetzt.
+
+
+
 
 ### Hilfsmittel zum Testen
 
@@ -98,6 +121,7 @@ Projekte _müssen_ irgendeine Art von Unit-, Reference, Implementation- oder Fun
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
+ * [Sinon.js](http://sinonjs.org/)
 
 ## Inhaltsverzeichnis
 
@@ -124,6 +148,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 
 
+
 ## Idiomatisches Style Manifest
 
 
@@ -136,6 +161,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         - Löschen von Whitespaces am Ende der Zeile
         - Löschen von leeren "Whitespace Zeilen"
         - Commits und Diffs sind einfacher zu lesen
+    - Nutze [Editorconfig](http://editorconfig.org/) wenn es möglich ist.  Es unterstützt die meisten IDEs und folgt den meisten Whitespace-Einstellungen.
+
 
 2. <a name="spacing">Schöne Syntax</a>
 
@@ -196,6 +223,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
       // statements
     }
 
+
     if ( true ) {
       // statements
     } else {
@@ -224,7 +252,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // Nur einmal `var` pro Scope (Funktion) zu verwenden, verbessert die Lesbarkeit
     // und hält deine Deklarationsliste frei von Verwirrungen
 
-    // Schlecht
+    // Mangelhaft
     var foo = "";
     var bar = "";
     var qux;
@@ -241,12 +269,13 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     quux;
 
     // 2.B.1.3
-    // var Statements sollten immer an den Anfang ihrers respektiven Scopes (Funktion)
+    // var Anweisungen sollten immer am Anfang ihreres respektiven Scopes (Funktion) stehen
     // Das gleiche gilt für const und let aus ECMAScript 6
 
-    // Schlecht
+    // Mangelhaft
     function foo() {
-      // irgendwas
+
+      // einige Anweisungen hier
 
         var bar = "",
             qux;
@@ -259,6 +288,27 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
          // alle Statements nach der var-Deklaration
     }
+
+    // 2.B.1.4
+    // const und let Anweisungen des ECMAScript 6 - sollten ebenso am Anfang des Scopes stehen (block).
+
+    // Mangelhaft
+    function foo() {
+      let foo,
+        bar;
+      if (condition) {
+        bar = "";
+        // Anweisungen
+      }
+    }
+    // Gut
+    function foo() {
+      let foo;
+      if (condition) {
+        let bar = "";
+        // Anweisungen
+      }
+    }
     ```
 
     ```javascript
@@ -269,7 +319,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     }
 
-    // Benutzung
+    // Anwendung
     foo( arg1, argN );
 
 
@@ -279,9 +329,10 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
       return zahl * zahl;
     }
 
-    // Benutzung
+    // Anwendung
     quadrat( 10 );
 
+    // Really contrived continuation passing style
     function quadrat( zahl, callback ) {
       callback( zahl * zahl);
     }
@@ -316,12 +367,14 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         this.options = options;
     }
 
-    // Benutzung
+    // Anwendung
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options:
     // { a: "alpha" }
     ```
+
+
 
     C. Ausnahmen, Leichte Abweichungen
 
@@ -453,7 +506,10 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     <input type="text" id="foo-input" value="1">
     ```
 
-    ```js
+
+
+
+    ```javascript
 
     // 3.B.1.1
 
@@ -464,7 +520,9 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // "number"
     ...
 
-    // Später im Code musst du `foo` mit einem neuen Wert aus dem input-Element überschreiben
+    // Später im Code solltest Du `foo` mit einem neu erhaltenen
+    // Wert aus dem input-Element überschreiben
+
     foo = document.getElementById("foo-input").value;
 
     // Wenn du jetzt mit `typeof foo` testen möchtest, wird das ergebnis `string` sein
@@ -581,10 +639,18 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     !!~array.indexOf("d");
     // false
+
+    // Beachte, dass das obenstehende als "unnötig clever" betrachtet werden sollte
+    // Bevorzuge allerdings the offensichtlichen Ansatz eines Vergleiches eines Rückgabewertes
+    // indexOf, like:
+
+    if ( array.indexOf( "a" ) >= 0 ) {
+      // ...
+    }
     ```
 
     ```javascript
-    // 3.B.2.3
+    // 3.B.2.4
 
 
     var num = 2.5;
@@ -622,13 +688,20 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // Gibt 4294967294 zurück
 
 
+
+
+
+
     ```
+
+
 
 4. <a name="cond">Bedingte Auswertungen</a>
 
     ```javascript
     //4.1.1
-    // When du nur prüfen willst, ob ein Array eine Länge hat, ...
+    // When du nur prüfen willst,
+    // ob ein Array eine Länge hat, ...
     if ( array.length > 0 ) ...
 
     // prüfe es so:
@@ -637,6 +710,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // 4.1.2
     // Wenn du nur prüfen willst, ob ein Array leer ist...
+    // anstelle von:
     if ( array.length === 0 ) ...
 
     // mach es so:
@@ -645,14 +719,15 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     // 4.1.3
     // Wenn du prüfen willst ob ein String nich leer ist
+    // anstelle von:
     if ( string !== "" ) ...
 
     // ... mach es so:
     if ( string ) ...
 
-
     // 4.1.4
     // Wenn du prüfen willst ob ein String leer ist...
+    // anstelle von:
     if ( string === "" ) ...
 
     // ... mach es so:
@@ -660,7 +735,17 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 
     // 4.1.5
-    // Wenn du prüfen willst, ob eine Referenz false ist...
+    // Wenn du prüfen willst, ob eine Referenz true ist...
+    // anstelle von:
+    if ( foo === true ) ...
+
+    // ...evaluate like you mean it, take advantage of built in capabilities:
+    if ( foo ) ...
+
+
+    // 4.1.6
+    // When evaluating that a reference is false,
+    // instead of this:
     if ( foo === false ) ...
 
     // ... nutze die Negierung um eine eine true-Auswertung zu erzwingen
@@ -671,16 +756,55 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     if ( foo === false ) ...
 
     // 4.1.7
-    // Wenn du eine Reference prüfen möchtest, die möglicherweise null oder undefined aber NICHT false...
+    // Wenn du eine Reference prüfen möchtest, die möglicherweise null oder undefined aber NICHT
+    // false...
     if ( foo === null || foo === undefined ) ...
 
     // ... nutze den Vorteil der Typerzwingung
     if ( foo == null ) ...
 
-    // Denk dran, '==' wird 'null' auf 'null' UND 'undefined' matchen, aber nicht 'false', "" oder 0
+    // Denk dran, '==' wird 'null' auf 'null' UND 'undefined' matchen,
+    // aber nicht 'false', "" oder 0
     null == undefined
 
     ```
+    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+
+    ```javascript
+
+    // 4.2.1
+    // Type coercion and evaluation notes
+
+    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+
+    // === does not coerce type, which means that:
+
+    "1" === 1;
+    // false
+
+    // == does coerce type, which means that:
+
+    "1" == 1;
+    // true
+
+
+    // 4.2.2
+    // Booleans, Truthies & Falsies
+
+    // Booleans:
+    true, false
+
+    // Truthy:
+    "foo", 1
+
+    // Falsy:
+    "", 0, null, undefined, NaN, void 0
+
+    ```
+
+    ```
+
+
 
 
 5. <a name="practical">Praktischer Style</a>
@@ -729,7 +853,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 5.2.1
-    // Ein angewandter Konstruktor
+    // Ein praktischer Konstruktor
 
     (function( global ) {
 
@@ -848,9 +972,162 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     methodNamesLikeThis;
     SYMBOLIC_CONSTANTS_LIKE_THIS;
 
+  ```
 
+    B. Faces of `this`
+
+    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+
+    ```javascript
+
+    // 6.B.1
+    function Device( opts ) {
+
+      this.value = null;
+
+      // open an async stream,
+      // this will be called continuously
+      stream.read( opts.path, function( data ) {
+
+        // Update this instance's current value
+        // with the most recent value from the
+        // data stream
+        this.value = data;
+
+      }.bind(this) );
+
+      // Throttle the frequency of events emitted from
+      // this Device instance
+      setInterval(function() {
+
+        // Emit a throttled event
+        this.emit("event");
+
+      }.bind(this), opts.freq || 100 );
+    }
+
+    // Just pretend we've inherited EventEmitter ;)
 
     ```
+
+    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+
+
+    ```javascript
+    // 6.B.2
+
+    // eg. lodash/underscore, _.bind()
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, _.bind(function( data ) {
+
+        this.value = data;
+
+      }, this) );
+
+      setInterval(_.bind(function() {
+
+        this.emit("event");
+
+      }, this), opts.freq || 100 );
+    }
+
+    // eg. jQuery.proxy
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, jQuery.proxy(function( data ) {
+
+        this.value = data;
+
+      }, this) );
+
+      setInterval( jQuery.proxy(function() {
+
+        this.emit("event");
+
+      }, this), opts.freq || 100 );
+    }
+
+    // eg. dojo.hitch
+    function Device( opts ) {
+
+      this.value = null;
+
+      stream.read( opts.path, dojo.hitch( this, function( data ) {
+
+        this.value = data;
+
+      }) );
+
+      setInterval( dojo.hitch( this, function() {
+
+        this.emit("event");
+
+      }), opts.freq || 100 );
+    }
+
+    ```
+
+       As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+
+        ```javascript
+
+        // 6.B.3
+
+        function Device( opts ) {
+          var self = this;
+
+          this.value = null;
+
+          stream.read( opts.path, function( data ) {
+
+            self.value = data;
+
+          });
+
+          setInterval(function() {
+
+            self.emit("event");
+
+          }, opts.freq || 100 );
+        }
+
+        ```
+
+
+        C. Use `thisArg`
+
+        Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+
+        ```javascript
+
+        // 6.C.1
+
+        var obj;
+
+        obj = { f: "foo", b: "bar", q: "qux" };
+
+        Object.keys( obj ).forEach(function( key ) {
+
+          // |this| now refers to `obj`
+
+          console.log( this[ key ] );
+
+        }, obj ); // <-- the last arg is `thisArg`
+
+        // Prints...
+
+        // "foo"
+        // "bar"
+        // "qux"
+
+        ```
+
+        `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Sonstiges</a>
 
@@ -883,54 +1160,82 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 7.A.1.2
     // Besser sollte man aber ein Objektliteral oder Modul verwenden:
 
-    var switchObj = {
+
+    var cases, delegator;
+
+    // Example returns for illustration only.
+    cases = {
       alpha: function() {
         // statements
         // a return
+        return [ "Alpha", arguments.length ];
       },
       beta: function() {
         // statements
         // a return
+        return [ "Beta", arguments.length ];
       },
       _default: function() {
         // statements
         // a return
+        return [ "Default", arguments.length ];
       }
     };
 
-    var switchModule = (function () {
-      return {
-        alpha: function() {
-          // statements
-          // a return
-        },
-        beta: function() {
-          // statements
-          // a return
-        },
-        _default: function() {
-          // statements
-          // a return
-        }
-      };
-    })();
+    delegator = function() {
+      var args, key, delegate;
 
+      // Transform arguments list into an array
+      args = [].slice.call( arguments );
+
+      // shift the case key from the arguments
+      key = args.shift();
+
+      // Assign the default case handler
+      delegate = cases._default;
+
+      // Derive the method to delegate operation to
+      if ( cases.hasOwnProperty( key ) ) {
+        delegate = cases[ key ];
+      }
+
+      // The scope arg could be set to something specific,
+      // in this case, |null| will suffice
+      return delegate.apply( null, args );
+    };
 
     // 7.A.1.3
     // Wenn `foo` eine Eigenschaft von `switchObj` oder `switchModule` ist, führe diesen Code hier aus..
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+    delegator( "alpha", 1, 2, 3, 4, 5 );
+    // [ "Alpha", 5 ]
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+    // Of course, the `case` key argument could easily be based
+    // on some other arbitrary condition.
 
-    // Wenn du auf die Werte von `foo` vertraust und weißt was drin ist,
-    // kannst du die ODER-Prüfung weglassen und den Code einfach nur ausführen:
+    var caseKey, someUserInput;
 
-    switchObj[ foo ]( args );
+    // Possibly some kind of form input?
+    someUserInput = 9;
 
-    switchModule[ foo ]( args );
+    if ( someUserInput > 10 ) {
+      caseKey = "alpha";
+    } else {
+      caseKey = "beta";
+    }
 
-    // Dieses Muster sorgt außerdem für Wiederverwendbarkeit von Code
+    caseKey = someUserInput > 10 ? "alpha" : "beta";
+
+    // And then...
+
+    delegator( caseKey, someUserInput );
+    // [ "Beta", 1 ]
+
+    // And of course...
+
+    delegator();
+    // [ "Default", 0 ]
+
 
     ```
 
@@ -939,7 +1244,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     ```javascript
 
     // 7.B.1.1
-    // Schlecht:
+    // Mangelhaft:
     function returnLate( foo ) {
       var ret;
 
@@ -963,6 +1268,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     ```
 
+
 8. <a name="native">Native & Host Objekte</a>
 
     Das grundsätzliche Prinzip ist hier:
@@ -980,9 +1286,10 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
 9. <a name="comments">Kommentare</a>
 
-    * Mehrzeilige Kommentare sind gut
-    * Kommentare am Zeilenende sind untersagt!
-    * JSDoc Style Kommentare sind gut, aber erfordern mehr Zeit.
+    #### Single line above the code that is subject
+    #### Mehrzeilige Kommentare sind gut
+    #### Kommentare am Zeilenende sind untersagt!
+    #### JSDoc Style Kommentare sind gut, aber erfordern mehr Zeit.
 
 
 10. <a name="language">Einsprachiger Code</a>
