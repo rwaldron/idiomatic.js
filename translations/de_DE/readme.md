@@ -188,15 +188,15 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // Benutze Whitespaces um die Lesbarkeit zu verbessern
 
     if ( Bedingung ) {
-      // statements
+      // Anweisungen
     }
 
     while ( Bedingung ) {
-      // statements
+      // Anweisungen
     }
 
     for ( var i = 0; i < 100; i++ ) {
-      // statements
+      // Anweisungen
     }
 
     // Noch besser:
@@ -205,7 +205,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         length = 100;
 
     for ( i = 0; i < length; i++ ) {
-      // statements
+      // Anweisungen
     }
 
     // Oder...
@@ -214,20 +214,20 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
         length = 100;
 
     for ( ; i < length; i++ ) {
-      // statements
+      // Anweisungen
     }
 
     var prop;
 
     for ( prop in object ) {
-      // statements
+      // Anweisungen
     }
 
 
     if ( true ) {
-      // statements
+      // Anweisungen
     } else {
-      // statements
+      // Anweisungen
     }
     ```
 
@@ -416,21 +416,21 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // 2.D.1.1
 
     if (Bedingung) {
-      // statements
+      // Anweisungen
     }
 
     while (Bedingung) {
-      // statements
+      // Anweisungen
     }
 
     for (var i = 0; i < 100; i++) {
-      // statements
+      // Anweisungen
     }
 
     if (true) {
-      // statements
+      // Anweisungen
     } else {
-      // statements
+      // Anweisungen
     }
     ```
 
@@ -1166,17 +1166,17 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     // Example returns for illustration only.
     cases = {
       alpha: function() {
-        // statements
+        // Anweisungen
         // a return
         return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // statements
+        // Anweisungen
         // a return
         return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // statements
+        // Anweisungen
         // a return
         return [ "Default", arguments.length ];
       }
