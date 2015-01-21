@@ -1070,62 +1070,62 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
 
     ```
 
-       As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+   As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
 
-        ```javascript
+    ```javascript
 
-        // 6.B.3
+    // 6.B.3
 
-        function Device( opts ) {
-          var self = this;
+    function Device( opts ) {
+      var self = this;
 
-          this.value = null;
+      this.value = null;
 
-          stream.read( opts.path, function( data ) {
+      stream.read( opts.path, function( data ) {
 
-            self.value = data;
+        self.value = data;
 
-          });
+      });
 
-          setInterval(function() {
+      setInterval(function() {
 
-            self.emit("event");
+        self.emit("event");
 
-          }, opts.freq || 100 );
-        }
+      }, opts.freq || 100 );
+    }
 
-        ```
+    ```
 
 
-        C. Use `thisArg`
+    C. Use `thisArg`
 
-        Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
 
-        ```javascript
+    ```javascript
 
-        // 6.C.1
+    // 6.C.1
 
-        var obj;
+    var obj;
 
-        obj = { f: "foo", b: "bar", q: "qux" };
+    obj = { f: "foo", b: "bar", q: "qux" };
 
-        Object.keys( obj ).forEach(function( key ) {
+    Object.keys( obj ).forEach(function( key ) {
 
-          // |this| now refers to `obj`
+      // |this| now refers to `obj`
 
-          console.log( this[ key ] );
+      console.log( this[ key ] );
 
-        }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- the last arg is `thisArg`
 
-        // Prints...
+    // Prints...
 
-        // "foo"
-        // "bar"
-        // "qux"
+    // "foo"
+    // "bar"
+    // "qux"
 
-        ```
+    ```
 
-        `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Sonstiges</a>
 
@@ -1221,6 +1221,8 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
     } else {
       caseKey = "beta";
     }
+
+    // oder...
 
     caseKey = someUserInput > 10 ? "alpha" : "beta";
 
