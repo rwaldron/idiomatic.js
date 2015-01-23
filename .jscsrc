@@ -1,0 +1,168 @@
+{
+    "requireCurlyBraces": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch"
+    ],
+    "requireSpaceBeforeKeywords": [
+        "else",
+        "catch",
+        "while"
+    ],
+    "requireSpaceAfterKeywords": [
+        "do",
+        "for",
+        "if",
+        "else",
+        "switch",
+        "case",
+        "try",
+        "catch",
+        "void",
+        "while",
+        "with",
+        "return",
+        "typeof"
+    ],
+    "requireSpaceBeforeBlockStatements": true,
+    "requireSpacesInConditionalExpression": {
+        "afterTest": true,
+        "beforeConsequent": true,
+        "afterConsequent": true,
+        "beforeAlternate": true
+    },
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInNamedFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInFunction": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInFunction": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInCallExpression": true,
+    "requireMultipleVarDecl": true,
+    "requireBlocksOnNewline": 1,
+    "requirePaddingNewLinesInObjects": true,
+    "requirePaddingNewlinesBeforeKeywords": [
+        "do",
+        "for",
+        "if",
+        "switch",
+        "try",
+        "void",
+        "while",
+        "with"
+    ],
+    "disallowEmptyBlocks": true,
+    "requireSpacesInsideObjectBrackets": "allButNested",
+    "requireSpacesInsideArrayBrackets": "allButNested",
+    "requireSpacesInsideParentheses": {
+        "all": true,
+        "except": [
+            "(",
+            ")",
+            "{",
+            "}",
+            "[",
+            "]",
+            "function"
+        ]
+    },
+    "disallowQuotedKeysInObjects": "allButReserved",
+    "disallowDanglingUnderscores": true,
+    "disallowSpaceAfterObjectKeys": true,
+    "requireSpaceBeforeObjectValues": true,
+    "requireCommaBeforeLineBreak": true,
+    "disallowSpaceAfterPrefixUnaryOperators": [
+        "++",
+        "--",
+        "+",
+        "-",
+        "~",
+        "!"
+    ],
+    "disallowSpaceBeforePostfixUnaryOperators": [
+        "++",
+        "--"
+    ],
+    "requireSpaceBeforeBinaryOperators": [
+        "=",
+        "+",
+        "-",
+        "/",
+        "*",
+        "^",
+        ">>",
+        "<<",
+        "==",
+        "===",
+        "!=",
+        "!=="
+    ],
+    "requireSpaceAfterBinaryOperators": [
+        "=",
+        "+",
+        "-",
+        "/",
+        "*",
+        "^",
+        ">>",
+        "<<",
+        "==",
+        "===",
+        "!=",
+        "!=="
+    ],
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "disallowMultipleLineBreaks": true,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowOperatorBeforeLineBreak": [
+        "+",
+        "."
+    ],
+    "disallowTrailingWhitespace": true,
+    "disallowTrailingComma": true,
+    "disallowKeywordsOnNewLine": [
+        "else"
+    ],
+    "requireLineBreakAfterVariableAssignment": true,
+    "requireCapitalizedConstructors": true,
+    "requireDotNotation": true,
+    "requireSpaceAfterLineComment": true,
+    "disallowNewlineBeforeBlockStatements": true,
+    "validateQuoteMarks": {
+        "mark": "'",
+        "escape": true
+    },
+    "validateIndentation": 4,
+    "validateParameterSeparator": ", ",
+    "requireSpaceBetweenArguments": true,
+    "safeContextKeyword": [ "self" ]
+}
+
