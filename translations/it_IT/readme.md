@@ -78,6 +78,7 @@
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
  * [Editorconfig](http://editorconfig.org/)
 
 ### Impara
@@ -94,7 +95,6 @@ I seguenti dovrebbero essere considerati come 1) incompleti e 2) *LETTURE NECESS
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
- * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
 
@@ -151,12 +151,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
 1. <a name="whitespace">Spazio vuoto</a>
   - Mai mischiare spazi e tabulazioni.
   - Quando iniziate un progetto, prima di cominciare a scrivere il codice, scegliete tra indentazione soft (spazi) o tabulazioni reali, e considerate questa scelta **legge**.
-      - Per la leggibilità, raccomando sempre di impostare la dimensione di indentamento del proprio editor a due caratteri &mdash; questo significa, due spazi o due spazi rappresentanti una tabulazione reale.
+      - Per la leggibilità, raccomando sempre di impostare la dimensione dei rientri del proprio editor a due caratteri &mdash; questo significa, due spazi o due spazi rappresentanti una tabulazione reale.
   - Se il vostro editor lo supporta, lavorate sempre con l'impostazione "mostra caratteri invisibili" attiva. I benefici di questa pratica sono:
       - Rafforzata consistenza
       - Eliminazione di spazi vuoti alla fine delle linee
       - Eliminazione di linee vuote
       - Commit e diff più facili da leggere
+  - Usate [Editorconfig](http://editorconfig.org/) quando possibile. Supporta la maggior parte degli IDE e gestisce la maggior parte delle impostazioni per gli spazi vuoti.
 
 
 2. <a name="spacing">Bella sintassi</a>
@@ -280,6 +281,27 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
         qux;
 
       // tutto il codice dopo le dichiarazioni delle variabili.
+    }
+
+    // 2.B.1.4
+    // const e let, da ECMAScript 6, dovrebbero essere posizionate all'inizio del loro scope (blocco).
+
+    // Sbagliato
+    function foo() {
+        let foo,
+        bar;
+        if ( condition ) {
+            bar = "";
+            // istruzioni
+        }
+    }
+    // Corretto
+    function foo() {
+        let foo;
+        if ( condition ) {
+            let bar = "";
+            // istruzioni
+        }
     }
     ```
 
@@ -969,6 +991,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
         // Aggiorna il valore corrente di questa istanza
         // con il più recente valore recuperato dal
         // flusso di dati
+        this.value = data;
 
       }.bind(this) );
 
@@ -1103,7 +1126,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
 
     ```
 
-    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.filter`
+    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Varie</a>
 
