@@ -66,6 +66,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
+ * [JavaScript: The Good Parts] (https://7chan.org/pr/src/OReilly_JavaScript_The_Good_Parts_May_2008.pdf)
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
