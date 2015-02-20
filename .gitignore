@@ -1,5 +1,6 @@
 .DS_Store
 *.swp
+.idea/
 dist
 kits/makefile-kit/dist
 kits/jakefile-kit/dist
