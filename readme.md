@@ -1266,14 +1266,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
     
 <h2 id="Backbone">Backbone.js</h2>
-<p>At Datu Health, we currently use the <a rel="nofollow" class="external text" href="http://backbonejs.org/">Backbone.js</a> framework to structure our front end code. It's a pretty flexible solution and provides tools to build single page applications. The previous link takes you to the source, but you may also want to reference the <a rel="nofollow" class="external text" href="http://backbonejs.org/docs/backbone.html">annotated source</a> as it provides a little more context and insight into how each method works.</p>
+<p>At Datu Health, we currently use the <a rel="nofollow" class="external text" href="http://backbonejs.org/" target="_blank">Backbone.js</a> framework to structure our front end code. It's a pretty flexible solution and provides tools to build single page applications. The previous link takes you to the source, but you may also want to reference the <a rel="nofollow" class="external text" href="http://backbonejs.org/docs/backbone.html" target="_blank">annotated source</a> as it provides a little more context and insight into how each method works. Backbone includes <a href="http://underscorejs.org/" target="_blank">Underscore.js</a> so become familiar with it.</p></p>
 <p>A lot of this info is taken from the Backbone site, but it has been filtered a bit in the attempt to lay things out in a little more novice friendly way.</p>
 
 <h3>Backbone high level concept</h3>
-<p>In Backbone we have <a href="#Backbone_Routers">Backbone Routers</a> which parse your routes (url) and sends you to the appropriate <a href="#Backbone_Views">Backbone View</a>. In the <a href="#Backbone_Views">Backbone View</a>, you have the bulk of the code that displays and manipulates the html/css. If you have data, a singular object would be stored in a <a href="#Backbone_Models">Backbone Model</a> whereas a collection of similar items would be stored in a <a href="#Backbone_Collections">Backbone Collection</a> -- in other words, if you only have a single person object (that holds their info), that would generally be stored in a model -- but if you had, say, an address book, you would have several people objects. You can then take that data and use it in the view to pass along to a template to get rendered.</p>
+<p>In Backbone we have <a href="#Backbone_Routers">Backbone Routers</a> which parse your routes (url) and sends you to the appropriate <a href="#Backbone_Views">Backbone View</a>. In the <a href="#Backbone_Views">Backbone View</a>, you have the bulk of the code that displays and manipulates the html/css. If you have data, a singular object would be stored in a <a href="#Backbone_Models">Backbone Model</a> whereas a collection of similar items would be stored in a <a href="#Backbone_Collections">Backbone Collection</a> -- in other words, if you only have a single person object (that holds their info), that would generally be stored in a model -- but if you had, say, an address book, you would have several people objects. You can then take that data and use it in the view to pass along to a template to get rendered.
 
 <h3 id="Backbone_Routers">Backbone Routers</h3>
-<p>This is where you parse the url, which is what essentially pertains to the section after the domain. E.g. <a rel="nofollow" class="external free" href="https://my-site.com/#stuff-that-backbone-cares-about">https://my-site.com/#stuff-that-backbone-cares-about</a></p>
+<p>This is where you parse the url, which is what essentially pertains to the section after the domain. E.g. https://my-site.com/#stuff-that-backbone-cares-about</p>
 <p>In the router you'll specify a routes object like so:</p>
 <pre> routes: {
    'super-cool-route': 'superCoolRouteHandler'
@@ -1287,7 +1287,11 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
  }
  ...
 </pre>
-<p>And that's mostly it at a high level. We have a little more complexity in our routers at Datu, but we'll get to that below.</p>
+<p>Routes can contain parameter parts, e.g. :param, which match a single URL component between slashes. Part of a route can be made optional by surrounding it in parentheses (/:optional).  For example:</p>
+<pre>
+'patients/:patientId/messages(/:subItem)': 'patientMessages',
+</pre>
+<p>During page load, after your application has finished creating all of its routers, be sure to call Backbone.history.start(), or Backbone.history.start({pushState: true}) to route the initial URL, which serves as a global router (per frame) to handle hashchange events or pushState, match the appropriate route, and trigger callbacks. You shouldn't ever have to create one of these yourself since Backbone.history already contains one.</p>
 
 <h3 id="Backbone_Views">Backbone Views</h3>
 <p>You should have all of the code pertaining to the look and feel of the page in a view. That is, once you have your data ready in your collection or model (more on that below) you then take that data and use the view to render it -- in our case, we use a template that we pass along the data to in order to render it.</p>
@@ -1362,11 +1366,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <li>Or you can pass it an object: myModel.set({ key1: 'value1', key2: 'value2'});</li>
 </ul>
 <p><br>
-<b>fetch</b>: generally, this is the method used to get data from the server. The default implementation allows you to easily mirror the server side data on the clientside, but this is generally more used in true RESTful situations. Side note: we at Datu sometimes repurpose the fetch method to be a semantic way of getting data.</p>
+<b>fetch</b>: generally, this is the method used to get data from the server. The default implementation allows you to easily mirror the server side data on the clientside, but this is generally more used in true RESTful situations. **This will not clear out your model, but rather extends the attributes of your model**. Side note: we at Datu sometimes repurpose the fetch method to be a semantic way of getting data.</p>
 <p><br>
 <b>parse</b>: a method that can be defined so as to parse the raw AJAX response. For example, if you have a date coming back in the response, by setting a parse method, you can handle the date parsing for that model, and any other model of the same type with one defined method that is called from parse.</p>
 <p><br>
 <b>Backbone.sync</b>: While not truly attached to a backbone model specifically, it is the primary method of making asynchronous calls. It takes three parameters: 1) a string that represents a HTTP verb. In our code, you'll see 'read' (GET), and 'create' (POST). 2) the model or collection to be read/saved. 3) options. These can be the callback methods as well as any other jquery request options.</p>
+
+<h5>Validation</h5>
+<p>Here at Datu we use a <a href="https://github.com/thedersen/backbone.validation" target="_blank">validation plugin</a> for validating backbone models. Please only use this method for validation<p>
 
 <h3 id="Backbone_Collections">Backbone Collections</h3>
 <p>Much like how a model often represents a row of table data, a collection often represents the entire table itself -- in other words it is an ordered set of models. At a high level, you can think of it like a JSON array of objects: [{model1}, {model2}, {model3}, ... ]</p>
@@ -1387,7 +1394,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <p><br>
 <b>reset</b>: this will completely reset the collection, discarding any previous models the collection held, and repopulates the list with the models passed to the method. This also takes takes a list of models (an array of objects).</p>
 <p><br>
-<b>fetch</b>: generally, this is the method used to get data from the server. The default implementation allows you to easily mirror the server side data on the clientside, but this is generally more used in true RESTful situations. Side note: we at Datu sometimes repurpose the fetch method to be a semantic way of getting data.</p>
+<b>fetch</b>: generally, this is the method used to get data from the server. The default implementation allows you to easily mirror the server side data on the clientside, but this is generally more used in true RESTful situations. **This will not clear out your collection, but rather extends the attributes of your collection**. Side note: we at Datu sometimes repurpose the fetch method to be a semantic way of getting data.</p>
 <p><br>
 <b>Backbone.sync</b>: While not truly attached to a backbone collection specifically, it is the primary method of making asynchronous calls. It takes three parameters: 1) a string that represents a HTTP verb. In our code, you'll see 'read' (GET), and 'create' (POST). 2) the model or collection to be read/saved. 3) options. These can be the callback methods as well as any other jquery request options.</p>
 
@@ -1405,13 +1412,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <p>In general, a good rule of thumb is to keep your concerns separate. The backbone paradigm and design offers logical places to handle various bits of logic.</p>
 <ul>
 <li>Keep all dom manipulation logic in the view.</li>
-<li>Keep all data manipulation logic in the controller or model.</li>
-<li>keep all the AJAX and corresponding asynchronous logic in the controller or model.</li>
+<li>Keep all data manipulation logic in the model or collection. You can easily reuse and extend models and collections throughout your application without concern for the views that are tying into them.</li>
+<li>Keep all the AJAX and corresponding asynchronous logic in the model or collection.</li>
 <li>Keep your templates as simple as possible -- some logic is unavoidable, but most of the data should be nice and neat <i>before</i> it gets to the template</li>
 </ul>
 
-<h5>AJAX Calls, Callbacks, Deferreds</h5>
-<p>When making asynchronous calls, there are different ways to handle the data responses coming back. At Datu we strongly prefer developers <b>not</b> use deferreds. While deferreds are a powerful tool to handle post-AJAX call duties, implementation can vary wildly (and has). One of the bigger overarching problems with deferreds is that they can be extremely fragile since you have to be very cognizant of more than just happy path handling.</p>
+<h5 id="Callbacks_Deferreds">AJAX Calls, Callbacks, Deferreds</h5>
+<p>When making asynchronous calls, there are different ways to handle the data responses coming back. At Datu we strongly prefer developers <b>not</b> use deferreds (represents work that is not yet finished). While deferreds are a powerful tool to handle post-AJAX call duties, implementation can vary wildly (and has). One of the bigger overarching problems with deferreds is that they can be extremely fragile since you have to be very cognizant of more than just happy path handling.</p>
 <p>As an alternative, anyone doing front end dev should use the built in callback methods that are available in Backbone.sync. More specifically these methods are:</p>
 <ul>
 <li>success -- this is called when (and only when) you get a good http response</li>
@@ -1419,6 +1426,23 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <li>complete -- this is called when the call response comes back, regardless of http success or error</li>
 </ul>
 <p>With those three callbacks combined with Backbone events, there's really no reasonable need for deferreds outside of a handful of very specific cases. At this point, there are deferreds in the code base -- however, moving forward, anyone that uses a deferred should have a strong case as to why it's better than the system of callbacks, and why the aforementioned system cannot be used. Further, the person reviewing new code should ask the question if they see a deferred in the submitted code.</p>
+
+<h5 id="Memory_Leaks">Avoid Memory Leaks By Unbinding Events</h5>
+<p>Avoid using .on() when binding an event:
+<pre>
+initialize: function() {
+    this.model.on('change', this.render, this);
+}
+</pre>
+<p>When using .on(), the "change" event handler is still bound even after the view has been removed. Even though your code no longer holds a reference to that view, it is never garbage collected since the model still holds a reference via the event handler. So while the DOM element may be removed, the view object itself is never released from memory. Use the .listenTo() method instead, like this:
+<pre>
+initialize: function() {
+    this.listenTo(this.model, 'change', this.render);
+}
+</pre>
+
+<h5 id="View_Parts">Render Parts Of Views Instead Of Entire Views</h5>
+<p>This prevents the entire view from re-rendering everytime there is a change to a model or collection. Instead try re-rendering only the part of the view corresponding to the changed attribute in the model or model in the collection. For example, create a template and view that pertains to each model in the collection.</p>
 </div>
 
 ## Appendix
