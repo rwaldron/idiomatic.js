@@ -103,6 +103,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Native & Host Objects](#native)
  * [Comments](#comments)
  * [One Language Code](#language)
+ * <a href="#Backbone">Backbone.js</a>
 
 
 
@@ -1263,6 +1264,162 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 10. <a name="language">One Language Code</a>
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    
+<h2 id="Backbone">Backbone.js</h2>
+<p>At Datu Health, we currently use the <a rel="nofollow" class="external text" href="http://backbonejs.org/">Backbone.js</a> framework to structure our front end code. It's a pretty flexible solution and provides tools to build single page applications. The previous link takes you to the source, but you may also want to reference the <a rel="nofollow" class="external text" href="http://backbonejs.org/docs/backbone.html">annotated source</a> as it provides a little more context and insight into how each method works.</p>
+<p>A lot of this info is taken from the Backbone site, but it has been filtered a bit in the attempt to lay things out in a little more novice friendly way.</p>
+
+<h3>Backbone high level concept</h3>
+<p>In Backbone we have <a href="#Backbone_Routers">Backbone Routers</a> which parse your routes (url) and sends you to the appropriate <a href="#Backbone_Views">Backbone View</a>. In the <a href="#Backbone_Views">Backbone View</a>, you have the bulk of the code that displays and manipulates the html/css. If you have data, a singular object would be stored in a <a href="#Backbone_Models">Backbone Model</a> whereas a collection of similar items would be stored in a <a href="#Backbone_Collections">Backbone Collection</a> -- in other words, if you only have a single person object (that holds their info), that would generally be stored in a model -- but if you had, say, an address book, you would have several people objects. You can then take that data and use it in the view to pass along to a template to get rendered.</p>
+
+<h3 id="Backbone_Routers">Backbone Routers</h3>
+<p>This is where you parse the url, which is what essentially pertains to the section after the domain. E.g. <a rel="nofollow" class="external free" href="https://my-site.com/#stuff-that-backbone-cares-about">https://my-site.com/#stuff-that-backbone-cares-about</a></p>
+<p>In the router you'll specify a routes object like so:</p>
+<pre> routes: {
+   'super-cool-route': 'superCoolRouteHandler'
+ }
+</pre>
+<p>Where the key is the url portion, e.g. domain/<b>#super-cool-route</b></p>
+<p>And the value is the name of the method that will handle what happens when the user hits that route:</p>
+<pre> ... 
+ superCoolRouteHandler: function() {
+   //Do some cool stuff, like call a backbone view and render some content
+ }
+ ...
+</pre>
+<p>And that's mostly it at a high level. We have a little more complexity in our routers at Datu, but we'll get to that below.</p>
+
+<h3 id="Backbone_Views">Backbone Views</h3>
+<p>You should have all of the code pertaining to the look and feel of the page in a view. That is, once you have your data ready in your collection or model (more on that below) you then take that data and use the view to render it -- in our case, we use a template that we pass along the data to in order to render it.</p>
+<p>However, the view also holds logic, where applicable/necessary, to manipulate the dom -- e.g. binding events, adding/removing classes, etc.</p>
+
+<h5>Key Properties/Methods</h5>
+<p><b>el</b>: this is one of two things and it's good to know the difference.</p>
+<ul>
+<li>A CSS style selector of the dom node you want the content of your view to be added to. E.g.</li>
+</ul>
+<pre>   el: 'div.my-awesome-div'
+</pre>
+<ul>
+<li>If left undefined, el becomes an empty &lt;div&gt;</li>
+</ul>
+<p><br>
+<b>$el</b>: this is a cached jquery object of the aforementioned el. You can reference it in the view via calling: this.$el</p>
+<p><br>
+<b>events</b>: this is an object that you can define in the view, and backbone will automatically bind the events for you. You must be aware though, that the events must follow a certain syntax and that they are bound to the view's "el" -- meaning you cannot bind events that are not descendants of "el" with this object.</p>
+<ul>
+<li>Syntax is as follows: the <b>key</b> of the item must have the event type first (e.g. click, keyup, etc), followed by a space, and then followed by a CSS style selector. The <b>value</b> of the item must be the name of a method you've created to handle the event</li>
+</ul>
+<pre>   events: {
+       'click li.my-awesome-menu-item': 'myAwesomeMenuHandler'
+   }
+   ...
+   myAwesomeMenuHandler: function(event) {
+       //handle the click event appropriately
+   }
+</pre>
+<p><br>
+<b>initialize</b>: this is a method that gets called as the view is created. If you want/need to, you can define it so that you can do various actions like pass along information from outside the view, setup a collection/model, setup listeners, and more. For example:</p>
+<pre>   initialize: function (options) {
+       //we can pass along data/info 
+       options = options || {};
+       this.awesomeData = options.awesomeData || [];
+       
+       //we can setup a collection
+       this.collection = new AwesomeCollection();
+       
+       //we can setup listeners (more on this later)
+       this.listenTo(this.collection, 'someCustomActionCalledByTheCollection', this.awesomeActionHandlerMethod)
+   }
+</pre>
+<p><b>render</b>: this is the heart of the view essentially. You define this method as how the view will render its content -- you setup the template and pass it any data it needs to render. E.g.</p>
+<pre>   render: function() {
+       var template = MyAwesomeTemplate;
+       
+       this.$el.html(template({
+           myAwesomeData1: 'some data'
+           myAwesomeData2: 'some more data'
+       }));
+   }
+</pre>
+
+<h3 id="Backbone_Models">Backbone Models</h3>
+<p>A model is, very generally, a single object in terms of data. For example, if you have a table that is populated with several rows, and each row has a friend alongside a little of their information, that row's data would be housed in a model.</p>
+<p>Backbone models provide a robust set of properties and methods, but in the interest of brevity, we'll look at a few key ones.</p>
+
+<h5>Key Properties/Methods</h5>
+<p><b>url</b>: this is a vital property to set if you are going to use the model to make an async call. It's what the Backbone.sync method (essentially a jquery ajax call with added features) points at to make the call. Pretty self explanatory, but worth mentioning nonetheless.</p>
+<p><br>
+<b>initialize</b>: much like the initialize method mentioned above in the Backbone views section, this method will run after the model has been created. You can pass along data, bind listeners, etc.</p>
+<p><br>
+<b>attributes</b>: an object that holds the model's data. More generally, it's where data gets set when using backbone conventions. It's not recommended to change these directly -- backbone provides accessor methods.</p>
+<p><br>
+<b>get</b>: the method to get a property from the attributes object. Syntax is generally: myModel.get('myProperty')</p>
+<p><br>
+<b>set</b>: the setter method has two implementations.</p>
+<ul>
+<li>You can pass it a single value: myModel.set('key', 'value');</li>
+<li>Or you can pass it an object: myModel.set({ key1: 'value1', key2: 'value2'});</li>
+</ul>
+<p><br>
+<b>fetch</b>: generally, this is the method used to get data from the server. The default implementation allows you to easily mirror the server side data on the clientside, but this is generally more used in true RESTful situations. Side note: we at Datu sometimes repurpose the fetch method to be a semantic way of getting data.</p>
+<p><br>
+<b>parse</b>: a method that can be defined so as to parse the raw AJAX response. For example, if you have a date coming back in the response, by setting a parse method, you can handle the date parsing for that model, and any other model of the same type with one defined method that is called from parse.</p>
+<p><br>
+<b>Backbone.sync</b>: While not truly attached to a backbone model specifically, it is the primary method of making asynchronous calls. It takes three parameters: 1) a string that represents a HTTP verb. In our code, you'll see 'read' (GET), and 'create' (POST). 2) the model or collection to be read/saved. 3) options. These can be the callback methods as well as any other jquery request options.</p>
+
+<h3 id="Backbone_Collections">Backbone Collections</h3>
+<p>Much like how a model often represents a row of table data, a collection often represents the entire table itself -- in other words it is an ordered set of models. At a high level, you can think of it like a JSON array of objects: [{model1}, {model2}, {model3}, ... ]</p>
+<p>And also like the model, it has several properties and methods, but we're mainly concerned with a few key ones.</p>
+
+<h5>Key Properties/Methods</h5>
+<p><b>url</b>: this is a vital property to set if you are going to use the model to make an async call. It's what the Backbone.sync method (essentially a jquery ajax call with added features) points at to make the call. Pretty self explanatory, but worth mentioning nonetheless.</p>
+<p><br>
+<b>model</b>: this is to specify a model class that the collection houses. For example, if my collection is "Cars" the model might be "Car"</p>
+<p><br>
+<b>initialize</b>: much like the initialize method mentioned above, this method will run after the model has been created. You can pass along data, bind listeners, etc.</p>
+<p><br>
+<b>models</b>: the raw array of objects -- often used when passing the entire collection to a template for a table to be rendered.</p>
+<p><br>
+<b>get</b>: the method to get a specific model from the collection. You need to know the id of the model (assigned upon the model's creation).</p>
+<p><br>
+<b>set</b>: the setter method will do a "smart" update on the collection where it will create models if they are new, delete models if they are present in the current list and not present in the list passed to the method, and will change any existing models if necessary. This takes takes a list of models (an array of objects).</p>
+<p><br>
+<b>reset</b>: this will completely reset the collection, discarding any previous models the collection held, and repopulates the list with the models passed to the method. This also takes takes a list of models (an array of objects).</p>
+<p><br>
+<b>fetch</b>: generally, this is the method used to get data from the server. The default implementation allows you to easily mirror the server side data on the clientside, but this is generally more used in true RESTful situations. Side note: we at Datu sometimes repurpose the fetch method to be a semantic way of getting data.</p>
+<p><br>
+<b>Backbone.sync</b>: While not truly attached to a backbone collection specifically, it is the primary method of making asynchronous calls. It takes three parameters: 1) a string that represents a HTTP verb. In our code, you'll see 'read' (GET), and 'create' (POST). 2) the model or collection to be read/saved. 3) options. These can be the callback methods as well as any other jquery request options.</p>
+
+<h3 id="Backbone_Events">Backbone Events</h3>
+<p>This has been mentioned above, but Backbone has an events module that can be used to bind and trigger custom events. This is available in any Backbone object (views, models, controllers, routers) and can also be extended on in order to do things like create a global event bus.</p>
+<p>These events do not have to be declared when they are bound and they can also take arguments. Example:</p>
+<pre>   //In a view, bind a custom listener to its collection to know when to render content
+   this.listenTo( this.collection, 'renderContent', this.render);
+   ...
+   //In the collection, once a successful AJAX call has been made, and the response has been set in the collection, we can trigger a render
+   this.trigger('renderContent')
+</pre>
+
+<h3>Backbone Best Practices</h3>
+<p>In general, a good rule of thumb is to keep your concerns separate. The backbone paradigm and design offers logical places to handle various bits of logic.</p>
+<ul>
+<li>Keep all dom manipulation logic in the view.</li>
+<li>Keep all data manipulation logic in the controller or model.</li>
+<li>keep all the AJAX and corresponding asynchronous logic in the controller or model.</li>
+<li>Keep your templates as simple as possible -- some logic is unavoidable, but most of the data should be nice and neat <i>before</i> it gets to the template</li>
+</ul>
+
+<h5>AJAX Calls, Callbacks, Deferreds</h5>
+<p>When making asynchronous calls, there are different ways to handle the data responses coming back. At Datu we strongly prefer developers <b>not</b> use deferreds. While deferreds are a powerful tool to handle post-AJAX call duties, implementation can vary wildly (and has). One of the bigger overarching problems with deferreds is that they can be extremely fragile since you have to be very cognizant of more than just happy path handling.</p>
+<p>As an alternative, anyone doing front end dev should use the built in callback methods that are available in Backbone.sync. More specifically these methods are:</p>
+<ul>
+<li>success -- this is called when (and only when) you get a good http response</li>
+<li>error -- this is called when you get any sort of "error" http response (401, 403, 404, 500, etc)</li>
+<li>complete -- this is called when the call response comes back, regardless of http success or error</li>
+</ul>
+<p>With those three callbacks combined with Backbone events, there's really no reasonable need for deferreds outside of a handful of very specific cases. At this point, there are deferreds in the code base -- however, moving forward, anyone that uses a deferred should have a strong case as to why it's better than the system of callbacks, and why the aforementioned system cannot be used. Further, the person reviewing new code should ask the question if they see a deferred in the submitted code.</p>
+</div>
 
 ## Appendix
 
