@@ -1272,6 +1272,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <h3>Backbone high level concept</h3>
 <p>In Backbone we have <a href="#Backbone_Routers">Backbone Routers</a> which parse your routes (url) and sends you to the appropriate <a href="#Backbone_Views">Backbone View</a>. In the <a href="#Backbone_Views">Backbone View</a>, you have the bulk of the code that displays and manipulates the html/css. If you have data, a singular object would be stored in a <a href="#Backbone_Models">Backbone Model</a> whereas a collection of similar items would be stored in a <a href="#Backbone_Collections">Backbone Collection</a> -- in other words, if you only have a single person object (that holds their info), that would generally be stored in a model -- but if you had, say, an address book, you would have several people objects. You can then take that data and use it in the view to pass along to a template to get rendered.
 
+<p>
+Comparing the overall structure of Backbone to a server-side MVC framework like Rails, the pieces line up like so:</p>
+<ul>
+<li>Backbone.Model – Like a Rails model minus the class methods. Wraps a row of data in business logic.</li>
+<li>Backbone.Collection – A group of models on the client-side, with sorting/filtering/aggregation logic.</li>
+<li>Backbone.Router – Rails routes.rb + Rails controller actions. Maps URLs to functions.</li>
+<li>Backbone.View – A logical, re-usable piece of UI. Often, but not always, associated with a model.</li>
+<li>Client-side Templates – Rails .html.erb views, rendering a chunk of HTML.</li>
+</ul>
+
 <h3 id="Backbone_Routers">Backbone Routers</h3>
 <p>This is where you parse the url, which is what essentially pertains to the section after the domain. E.g. https://my-site.com/#stuff-that-backbone-cares-about</p>
 <p>In the router you'll specify a routes object like so:</p>
@@ -1372,6 +1382,30 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <p><br>
 <b>Backbone.sync</b>: While not truly attached to a backbone model specifically, it is the primary method of making asynchronous calls. It takes three parameters: 1) a string that represents a HTTP verb. In our code, you'll see 'read' (GET), and 'create' (POST). 2) the model or collection to be read/saved. 3) options. These can be the callback methods as well as any other jquery request options.</p>
 
+<h5>Default Model Values</h5>
+<p>Backbone includes "defaults", however, the problem with it is that it only goes one level deep, so if you have nested objects being returned, there are places that will try to dereference something null and it'll blow up. At Datu we have created a custom function named setDefaults(), which is on the model prototype, so it is available to any model.  It should be called from within the parse function of the model like so:</p>
+<pre>
+parse: function(resp) {
+    this.setDefaults(resp);
+}
+</pre>
+<p>The default values should be specified from within the model like so:</p>
+<pre>defaultVals: {
+            "Name": "--",
+            "Categories": [],
+            "Date": "--",
+            "Status": "--",
+            "ID": "--",
+            "Codes": [
+                {
+                    "System": "--",
+                    "Standard": "--",
+                    "Name": "--"
+                }
+            ]
+        }
+});</pre></p>
+
 <h5>Validation</h5>
 <p>Here at Datu we use a <a href="https://github.com/thedersen/backbone.validation" target="_blank">validation plugin</a> for validating backbone models. Please only use this method for validation<p>
 
@@ -1399,7 +1433,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 <b>Backbone.sync</b>: While not truly attached to a backbone collection specifically, it is the primary method of making asynchronous calls. It takes three parameters: 1) a string that represents a HTTP verb. In our code, you'll see 'read' (GET), and 'create' (POST). 2) the model or collection to be read/saved. 3) options. These can be the callback methods as well as any other jquery request options.</p>
 
 <h3 id="Backbone_Events">Backbone Events</h3>
-<p>This has been mentioned above, but Backbone has an events module that can be used to bind and trigger custom events. This is available in any Backbone object (views, models, controllers, routers) and can also be extended on in order to do things like create a global event bus.</p>
+<p>This has been mentioned above, but Backbone has an events module that can be used to bind and trigger custom events. This is available in any Backbone object (views, models, controllers, routers) and can also be extended on in order to do things like create a global event bus.  View events are automatically bound to the view's context for you. </p>
 <p>These events do not have to be declared when they are bound and they can also take arguments. Example:</p>
 <pre>   //In a view, bind a custom listener to its collection to know when to render content
    this.listenTo( this.collection, 'renderContent', this.render);
@@ -1440,6 +1474,13 @@ initialize: function() {
     this.listenTo(this.model, 'change', this.render);
 }
 </pre>
+
+<h5>Binding "this"</h5> 
+<p>
+Perhaps the single most common JavaScript "gotcha" is the fact that when you pass a function as a callback, its value for this is lost. When dealing with events and callbacks in Backbone, you'll often find it useful to rely on listenTo or the optional context argument that many of Underscore and Backbone's methods use to specify the this that will be used when the callback is later invoked.</p>
+<pre>
+messages.each(this.addMessage, this);
+</pre>  
 
 <h5 id="View_Parts">Render Parts Of Views Instead Of Entire Views</h5>
 <p>This prevents the entire view from re-rendering everytime there is a change to a model or collection. Instead try re-rendering only the part of the view corresponding to the changed attribute in the model or model in the collection. For example, create a template and view that pertains to each model in the collection.</p>
