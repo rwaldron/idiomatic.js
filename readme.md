@@ -82,6 +82,7 @@
  * [eslint](http://eslint.org/)
  * [jscs](https://www.npmjs.org/package/jscs)
  * [Editorconfig](http://editorconfig.org/)
+ * [Hound](https://houndci.com/)
 
 ## Get Smart
 
