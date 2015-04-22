@@ -245,15 +245,25 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) promotes readability
-    // and keeps your declaration list free of clutter (also saves a few keystrokes)
+    // Using only one `var` per scope (function) or one `var` for each variable,
+    // promotes readability and keeps your declaration list free of clutter.
+    // Using one `var` per variable you can take more control of your versions
+    // and makes it easier to reorder the lines.
+    // One `var` per scope makes it easier to detect undeclared variables
+    // that may become implied globals.
+    // Choose better for your project and never mix them.
 
     // Bad
+    var foo = "",
+      bar = "";
+    var qux;
+
+    // Good
     var foo = "";
     var bar = "";
     var qux;
 
-    // Good
+    // or..
     var foo = "",
       bar = "",
       qux;
