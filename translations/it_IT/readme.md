@@ -31,6 +31,7 @@
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
 
 
 ## Tutto il codice, in qualsiasi linguaggio sia, dovrebbe sembrare come scritto da un'unica persona, non importa quante persone vi abbiano contribuito.
@@ -64,6 +65,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [繁體中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_TW)
 
 
 ## Cose importanti, non idiomatiche:
