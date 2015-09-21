@@ -1,7 +1,7 @@
 # Principios para escribir JavaScript consistente e idiomático
 
 
-## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request.
+## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request. 
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -31,7 +31,6 @@
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
-* Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
 
 
 
@@ -65,7 +64,6 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
-* [繁體中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_TW)
 
 
 ## Cosas importantes, no relacionadas directamente con el JS idiomático:
@@ -264,7 +262,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // 2.B.1.3
     // sentencias `var` deberían estar siempre al principio de su respectivo scope (alcance), que sería la función.
-
+    
 
     // Mal
     function foo() {
@@ -282,10 +280,10 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
       // todas las sentencias luego de la declaración de variables.
     }
-
+    
     // 2.B.1.4
     // const y let, de ECMAScript 6, de la misma manera deberían aparecer al principio de su scope (alcance), que sería el bloque.
-
+    
     // Mal
     function foo() {
       let foo,
@@ -639,7 +637,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // false
 
     // Nótese que el ejemplo anterior debería ser considerado "innecesariamente inteligente"
-    // Prefiérase el approach obvio de comparar el valor retornado de
+    // Prefiérase el approach obvio de comparar el valor retornado de 
     // indexOf, como en:
 
     if ( array.indexOf( "a" ) >= 0 ) {
@@ -790,13 +788,13 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // 4.2.2
     // Booleanos, Verdaderos y Falsos
 
-    //Booleanos:
+    //Booleanos: 
     true, false
 
-    //Verdaderos:
+    //Verdaderos: 
     "foo", 1
 
-    //Falsos:
+    //Falsos: 
     "", 0, null, undefined, NaN, void 0
 
     ```
