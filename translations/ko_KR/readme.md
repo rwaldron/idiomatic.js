@@ -33,7 +33,6 @@
 ### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
 
 
-<!--> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"-->
 > ### "스타일에 관한 논쟁은 무의미하다. 스타일 가이드가 있을테니, 거기에 따르기만 해라"
 >_Rebecca_ _Murphey_
 
