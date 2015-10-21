@@ -435,7 +435,19 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     E. Quotes
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Use double quotes for strings. **Never mix quotes in the same project.**
+
+    ```javascript
+    
+    // 2.E.1.1
+    
+    //BAD
+    var usCapital = 'Washington, D.C.';
+    
+    //GOOD
+    var usCapital = "Washington, D.C."; 
+    
+    ```
 
     F. End of Lines and Empty Lines
 
