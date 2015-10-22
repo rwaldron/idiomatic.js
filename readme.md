@@ -197,16 +197,19 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // Even better:
-
+    // For improved readability for loops should include the default value for the iterator
+    
+    //Good
+    
     var i,
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
       // statements
     }
-
-    // Or...
-
+    
+    //Bad
+    
     var i = 0,
       length = 100;
 
@@ -214,7 +217,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    var prop;
+     var prop;
 
     for ( prop in object ) {
       // statements
@@ -930,12 +933,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return document.querySelectorAll( selector );
     }
 
-    var idx = 0,
+    var idx,
       elements = [],
       matches = query("#foo"),
       length = matches.length;
 
-    for ( ; idx < length; idx++ ) {
+    for ( idx = 0; idx < length; idx++ ) {
       elements.push( matches[ idx ] );
     }
 
