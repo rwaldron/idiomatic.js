@@ -1305,11 +1305,25 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 9. <a name="comments">Comments</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
-
+    #### Comments SHOULD answer WHAT the line/s in question are doing
+    #### Comments should be placed before the first statment in a block of code that explain that block of code and are allowed sparingly inside of the block of code.
+    #### Comments can only be placed on their own line, or at the end of a line of code.
+    #### Comments are NOT a replacement for self-documenting code.
+    #### Even self-documenting code should have comments.
+    #### Comments should be as short and informative as possible.
+    #### If a block of code isn't self-documented or is "hacky" then it should have a comment
+    #### JSDoc style is good, but requires a significant time investment  
+  
+  // Good Comment //
+  
+  // maximum number of concurrent threads allowed
+  var maxThreads = 10;
+  
+  // Bad Comment //
+  
+  // The maximum number of threads that are allowed to run concurrently in this program.  
+  // There can be no more than this number of threads running at once.
+  var maxThreads = 10;
 
 10. <a name="language">One Language Code</a>
 
