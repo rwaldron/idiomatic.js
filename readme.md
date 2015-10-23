@@ -1,46 +1,12 @@
 # Principles of Writing Consistent, Idiomatic JavaScript
 
+This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
-* Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
-* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
-* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
-* Raynos  [github](https://github.com/Raynos)
-* Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
-* John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idan)
-* Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
-* Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
-* Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
-* Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
-* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
-* EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
-* Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
-* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
-* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
-* Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
-* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
-* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
-* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
-* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
-* monkadd [github](https://github.com/monkadd)
-* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
-* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
-* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
-* Aleksandr Filatov [@greybax](http://twitter.com/greybax), [github](https://github.com/greybax)
-* Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
-* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
 
-
-
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
-
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
-
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
-
+I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
 
 > ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
 >_Rebecca_ _Murphey_
@@ -50,79 +16,11 @@
 > ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
 >_Idan_ _Gazit_
 
-
-## Translations
-
-* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [日本語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
-* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
-* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
-* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
-
-
-## Important, Non-Idiomatic Stuff:
-
-### Code Quality Tools, Resources & References
-
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
- * [Plato](https://github.com/es-analysis/plato)
- * [jsPerf](http://jsperf.com/)
- * [jsFiddle](http://jsfiddle.net/)
- * [jsbin](http://jsbin.com/)
- * [JavaScript Lint (JSL)](http://javascriptlint.com/)
- * [jshint](http://jshint.com/)
- * [jslint](http://jslint.org/)
- * [eslint](http://eslint.org/)
- * [jscs](https://www.npmjs.org/package/jscs)
- * [Editorconfig](http://editorconfig.org/)
-
-## Get Smart
-
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
-
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
-
- * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
- * [Eloquent JavaScript](http://eloquentjavascript.net/)
- * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
- * [Adventures in JavaScript Development](http://rmurphey.com/)
- * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
- * [JS Assessment](https://github.com/rmurphey/js-assessment)
-
-
-
-
-### Build & Deployment Process
-
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
-
-
-### Test Facility
-
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
-
- * [QUnit](http://github.com/jquery/qunit)
- * [Jasmine](https://github.com/pivotal/jasmine)
- * [Vows](https://github.com/cloudhead/vows)
- * [Mocha](https://github.com/visionmedia/mocha)
- * [Hiro](http://hirojs.com/)
- * [JsTestDriver](https://code.google.com/p/js-test-driver/)
- * [Buster.js](http://busterjs.org/)
- * [Sinon.js](http://sinonjs.org/)
-
-## Table of Contents
-
+## Table of Contents:
+ 
+ * [Translations](translations.md)
+ * [Tools](tools.md)
+ * [Preface](#preface)
  * [Whitespace](#whitespace)
  * [Beautiful Syntax](#spacing)
  * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
@@ -134,21 +32,11 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Comments](#comments)
  * [One Language Code](#language)
 
-
-
-------------------------------------------------
-
-
-## Preface
+## <a name="preface">Preface:</a>
 
 The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
 
-
-
-
-
-## Idiomatic Style Manifesto
-
+## Idiomatic Style Guide
 
 1. <a name="whitespace">Whitespace</a>
   - Never mix spaces and tabs.
@@ -160,7 +48,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       - Eliminating blank line whitespace
       - Commits and diffs that are easier to read
   - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
-
 
 2. <a name="spacing">Beautiful Syntax</a>
 
@@ -180,7 +67,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     for(var i=0;i<100;i++) someIterativeFn();
 
-
     // 2.A.1.1
     // Use whitespace to promote readability
 
@@ -197,16 +83,19 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     }
 
     // Even better:
-
+    // For improved readability for loops should include the default value for the iterator
+    
+    //Good
+    
     var i,
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
       // statements
     }
-
-    // Or...
-
+    
+    //Bad
+    
     var i = 0,
       length = 100;
 
@@ -214,7 +103,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    var prop;
+     var prop;
 
     for ( prop in object ) {
       // statements
@@ -227,7 +116,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
     ```
-
 
     B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
 
@@ -242,7 +130,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Literal notations:
     var array = [],
       object = {};
-
 
     // 2.B.1.2
     // Using only one `var` per scope (function) promotes readability
@@ -266,7 +153,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 2.B.1.3
     // var statements should always be in the beginning of their respective scope (function).
-
 
     // Bad
     function foo() {
@@ -318,7 +204,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Usage
     foo( arg1, argN );
 
-
     // 2.B.2.2
     // Named Function Declaration
     function square( number ) {
@@ -336,8 +221,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     square( 10, function( square ) {
       // callback statements
     });
-
-
+    
     // 2.B.2.3
     // Function Expression
     var square = function( number ) {
@@ -356,7 +240,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return number * factorial( number - 1 );
     };
 
-
     // 2.B.2.4
     // Constructor Declaration
     function FooBar( options ) {
@@ -371,7 +254,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // { a: "alpha" }
 
     ```
-
 
     C. Exceptions, Slight Deviations
 
@@ -435,7 +317,19 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     E. Quotes
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Use double quotes for strings. **Never mix quotes in the same project.**
+
+    ```javascript
+    
+    // 2.E.1.1
+    
+    //BAD
+    var usCapital = 'Washington, D.C.';
+    
+    //GOOD
+    var usCapital = "Washington, D.C."; 
+    
+    ```
 
     F. End of Lines and Empty Lines
 
@@ -506,7 +400,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-
     ```javascript
 
     // 3.B.1.1
@@ -531,9 +424,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       importantTask();
 
     }
-
     // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
-
 
     // 3.B.1.2
 
@@ -555,7 +446,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
     Here are some common cases along with coercions:
-
 
     ```javascript
 
@@ -592,7 +482,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     bool + "";
     // "false"
     ```
-
 
     ```javascript
     // 3.B.2.2
@@ -652,7 +541,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
     // 3.B.2.4
 
-
     var num = 2.5;
 
     parseInt( num, 10 );
@@ -666,7 +554,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     num >>> 0;
 
     // All result in 2
-
 
     // Keep in mind however, that negative numbers will be treated differently...
 
@@ -686,12 +573,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     neg >>> 0;
 
     // Will result in 4294967294
-
-
-
-
     ```
-
 
 
 4. <a name="cond">Conditional Evaluation</a>
@@ -706,7 +588,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // ...evaluate truthiness, like this:
     if ( array.length ) ...
 
-
     // 4.1.2
     // When only evaluating that an array is empty,
     // instead of this:
@@ -714,7 +595,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // ...evaluate truthiness, like this:
     if ( !array.length ) ...
-
 
     // 4.1.3
     // When only evaluating that a string is not empty,
@@ -724,7 +604,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // ...evaluate truthiness, like this:
     if ( string ) ...
 
-
     // 4.1.4
     // When only evaluating that a string _is_ empty,
     // instead of this:
@@ -733,7 +612,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // ...evaluate falsy-ness, like this:
     if ( !string ) ...
 
-
     // 4.1.5
     // When only evaluating that a reference is true,
     // instead of this:
@@ -741,7 +619,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // ...evaluate like you mean it, take advantage of built in capabilities:
     if ( foo ) ...
-
 
     // 4.1.6
     // When evaluating that a reference is false,
@@ -754,7 +631,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // ...Be careful, this will also match: 0, "", null, undefined, NaN
     // If you _MUST_ test for a boolean false, then use
     if ( foo === false ) ...
-
 
     // 4.1.7
     // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
@@ -788,7 +664,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     "1" == 1;
     // true
 
-
     // 4.2.2
     // Booleans, Truthies & Falsies
 
@@ -802,7 +677,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     "", 0, null, undefined, NaN, void 0
 
     ```
-
 
 5. <a name="practical">Practical Style</a>
 
@@ -869,12 +743,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         return ( this.foo = val );
       };
 
-
       // To call constructor's without `new`, you might do this:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
-
 
       // expose our constructor to the global object
       global.ctor = ctor;
@@ -883,11 +755,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-
-
 6. <a name="naming">Naming</a>
-
-
 
     A. You are not a human code compiler/compressor, so don't try to be one.
 
@@ -918,12 +786,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return document.querySelectorAll( selector );
     }
 
-    var idx = 0,
+    var idx,
       elements = [],
       matches = query("#foo"),
       length = matches.length;
 
-    for ( ; idx < length; idx++ ) {
+    for ( idx = 0; idx < length; idx++ ) {
       elements.push( matches[ idx ] );
     }
 
@@ -938,12 +806,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     `dog` is a string
 
-
     // 6.A.3.2
     // Naming arrays
 
     `dogs` is an array of `dog` strings
-
 
     // 6.A.3.3
     // Naming functions, objects, instances, etc
@@ -1099,7 +965,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-
     C. Use `thisArg`
 
     Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
@@ -1240,9 +1105,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     delegator();
     // [ "Default", 0 ]
 
-
     ```
-
+    
+    
     B. Early returns promote code readability with negligible performance difference
 
     ```javascript
@@ -1269,9 +1134,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }
       return "quux";
     }
-
     ```
-
 
 8. <a name="native">Native & Host Objects</a>
 
@@ -1287,15 +1150,29 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
 
-
 9. <a name="comments">Comments</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
-
-
+    #### Comments SHOULD answer WHAT the line/s in question are doing
+    #### Comments should be placed before the first statment in a block of code that explain that block of code and are allowed sparingly inside of the block of code.
+    #### Comments can only be placed on their own line, or at the end of a line of code.
+    #### Comments are NOT a replacement for self-documenting code.
+    #### Even self-documenting code should have comments.
+    #### Comments should be as short and informative as possible.
+    #### If a block of code isn't self-documented or is "hacky" then it should have a comment
+    #### JSDoc style is good, but requires a significant time investment  
+    ```
+    // Good Comment //
+  
+    // maximum number of concurrent threads allowed
+    var maxThreads = 10;
+  
+    // Bad Comment //
+  
+    // The maximum number of threads that are allowed to run concurrently in this program.  
+    // There can be no more than this number of threads running at once.
+    var maxThreads = 10;
+    ```
+    
 10. <a name="language">One Language Code</a>
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
@@ -1306,9 +1183,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
 
-
-
 ----------
-
 
 <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron and Contributors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
