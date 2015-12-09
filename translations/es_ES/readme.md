@@ -1,7 +1,7 @@
 # Principios para escribir JavaScript consistente e idiomático
 
 
-## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request. 
+## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -262,7 +262,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // 2.B.1.3
     // sentencias `var` deberían estar siempre al principio de su respectivo scope (alcance), que sería la función.
-    
+
 
     // Mal
     function foo() {
@@ -280,10 +280,10 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
       // todas las sentencias luego de la declaración de variables.
     }
-    
+
     // 2.B.1.4
     // const y let, de ECMAScript 6, de la misma manera deberían aparecer al principio de su scope (alcance), que sería el bloque.
-    
+
     // Mal
     function foo() {
       let foo,
@@ -637,7 +637,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // false
 
     // Nótese que el ejemplo anterior debería ser considerado "innecesariamente inteligente"
-    // Prefiérase el approach obvio de comparar el valor retornado de 
+    // Prefiérase el approach obvio de comparar el valor retornado de
     // indexOf, como en:
 
     if ( array.indexOf( "a" ) >= 0 ) {
@@ -788,13 +788,13 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // 4.2.2
     // Booleanos, Verdaderos y Falsos
 
-    //Booleanos: 
+    //Booleanos:
     true, false
 
-    //Verdaderos: 
+    //Verdaderos:
     "foo", 1
 
-    //Falsos: 
+    //Falsos:
     "", 0, null, undefined, NaN, void 0
 
     ```
@@ -1279,9 +1279,7 @@ B. Caras de `this`
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon) - recomendada!
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
 9. <a name="comments">Comentarios</a>

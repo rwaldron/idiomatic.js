@@ -984,9 +984,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-	<iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-	http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+	http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
 9. <a name="comments">Commentaires</a>
