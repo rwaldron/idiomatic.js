@@ -83,6 +83,7 @@
  * [jscs](https://www.npmjs.org/package/jscs)
  * [jscodesniffer](https://www.npmjs.org/package/jscodesniffer)
  * [Editorconfig](http://editorconfig.org/)
+ * [Hound](https://houndci.com/)
 
 ## Get Smart
 
