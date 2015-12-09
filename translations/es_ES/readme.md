@@ -3,7 +3,7 @@
 
 ## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -101,7 +101,6 @@ Los siguientes artículos son 1) incompletos y 2) *OBLIGATORIOS*. No siempre est
 ### Proceso de Build y Deployment
 
 Los proyectos deberían tratar de incluir siempre algún mecanismo para que el código pueda ser verificado, comprimido y optimizado para su uso en producción. Para esta tarea, [grunt](https://github.com/gruntjs/grunt) por Ben Alman es la primera en ganar una gran popularidad, y ha reemplazado oficialmente la carpeta "kits/" que había en este repo.
-
 
 
 
@@ -343,7 +342,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // Expresión de función con identificador
     // Esta forma es preferida porque tiene el valor agregado de
-    // poder ser llamada a sí misma y ser identificable en el stacktrace (MUY útil para debugging) :
+    // poder ser llamada a sí misma y ser identificable en el seguimiento de la pila (MUY útil para debugging) :
     var factorial = function factorial( number ) {
         if ( number < 2 ) {
             return 1;
@@ -374,7 +373,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     ```javascript
 
     // 2.C.1.1
-    // Funciones con callbacls
+    // Funciones con callbacks
     foo(function() {
         // Como se ve no hay espacio entre el primer paréntesis
         // y la palabra "function"
@@ -460,7 +459,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     Array:
 
         Array.isArray( arrayLikeObject )
-        (cuando sea posible / hay implementaciónes que no tienen esta función)
+        (cuando sea posible / hay implementaciones que no tienen esta función)
 
     Node:
 
@@ -533,7 +532,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // 3.B.1.2
 
-    // Te le podés adelantar a los problemas, usando conversión de tipos con los operadores unarios + o - :
+    // Te puedes adelantar a los problemas, usando conversión de tipos con los operadores unarios + o - :
 
     foo = +document.getElementById("foo-input").value;
     //      ^ el operador unario + va a convertir su operando derecho a number
@@ -760,7 +759,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // ...tomar ventaja del uso del operador ==:
     if ( foo == null ) ...
 
-    // Recuerda, usar == va a matchear `null` con AMBOS `null` y `undefined`
+    // Recuerda, usar == va a comparar `null` con AMBOS `null` y `undefined`
     // pero no `false`, "" o 0
     null == undefined
 
@@ -772,7 +771,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // 4.2.1
     // Sobre los tipos y evaluación de expresiones
 
-    Preferir `===` por sobre `==` (a menos que el caso particular requiera una evaluación no fuertemente tipada)
+    Preferir `===` sobre `==` (a menos que el caso particular requiera una evaluación no fuertemente tipada)
 
     === no genera coerción de tipos, lo que significa que:
 
@@ -815,7 +814,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
             return {
                 // Esta es una propiedad booleana
                 bool: true,
-                // Algun valor string
+                // Algún valor string
                 string: "a string",
                 // Una propiedad Array
                 array: [ 1, 2, 3, 4 ],
@@ -1298,7 +1297,7 @@ B. Caras de `this`
 
 ### Coma Primero.
 
-Cualquier proyecto que cite este documento como una guía para estilo no va a aceptar formateo de código con "coma primero", a menos que sea explícitamente específicado por el autor de ese proyecto.
+Cualquier proyecto que cite este documento como una guía para estilo no va a aceptar formateo de código con "coma primero", a menos que sea explícitamente especificado por el autor de ese proyecto.
 
 
 
