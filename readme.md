@@ -122,6 +122,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
  * [Sinon.js](http://sinonjs.org/)
+ * [Tape](https://github.com/substack/tape)
 
 ## Table of Contents
 
