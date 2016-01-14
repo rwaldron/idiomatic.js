@@ -32,7 +32,7 @@
 * Aleksandr Filatov [@greybax](http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
-
+* Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)  
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
@@ -65,7 +65,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
-
+* [繁體中文](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_TW)  
 
 ## Important, Non-Idiomatic Stuff:
 

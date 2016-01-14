@@ -27,3 +27,4 @@
 * Aleksandr Filatov [@greybax](http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Calvin Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
