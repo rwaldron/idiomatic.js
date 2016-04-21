@@ -297,7 +297,7 @@ Die folgenden Bereiche zeigen einen vertretbaren Style Guide für moderne JavaSc
       return zahl * zahl;
     }
 
-    // Functionsausdruck mit Bezeichner
+    // Funktionsausdruck mit Bezeichner
     // Diese Form hat den Vorteil, dass sie sich selbst aufrufen kann
     // und der Bezeichner im Stack Trace zufinden ist
     var factorial = function factorial( zahl ) {
