@@ -127,7 +127,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 ## Prefácio
 
-As seções a seguir descrevem um guia de estilos razoável para desenvolvimento de JavaScript moderno e não pretendem serem obrigatórias. A conclusão mais importante é a **lei da consistência de estilo de código**. O que for escolhido como estilo para o seu projeto deverá ser considerado lei. Faça um link para este documento como uma regra do seu projeto sobre comprometimento de consistência, legibilidade e manutenção de estilo de código.
+As seções a seguir descrevem um guia de estilos razoável para desenvolvimento de JavaScript moderno e não pretendem ser obrigatórias. A conclusão mais importante é a **lei da consistência de estilo de código**. O que for escolhido como estilo para o seu projeto deverá ser considerado lei. Faça um link para este documento como uma regra do seu projeto sobre comprometimento de consistência, legibilidade e manutenção de estilo de código.
 
 
 
@@ -949,7 +949,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
     B. Faces do `this`
 
-    Além dos mais conhecidos casos de uso do `call` e `apply`, sempre prefira `.bind( this )` ou um equivalente funcional, para criar definições `BoundFunction` que possam serem invocadas posteriormente. Somente recorra ao aliasing quando não houver disponível uma outra opção preferencial.
+    Além dos mais conhecidos casos de uso do `call` e `apply`, sempre prefira `.bind( this )` ou um equivalente funcional, para criar definições `BoundFunction` que possam ser invocadas posteriormente. Somente recorra ao aliasing quando não houver disponível uma outra opção preferencial.
 
     ```javascript
 
