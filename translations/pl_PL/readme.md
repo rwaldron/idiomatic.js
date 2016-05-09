@@ -42,7 +42,7 @@
 ### Celem tego poradnika nie jest wymuszenie jedynego słusznego stylu pisania, jeżeli istnieją jakiekolwiek inne powszechnie używane zasady - należy je uszanować.
 
 
-> ### "Spory dostyczące stylu kodu są bezsensowne. Powinny istnieć jasne zasady pisania czystego kodu, a programista powinien ich przestrzegać."
+> ### "Spory dotyczące stylu kodu są bezsensowne. Powinny istnieć jasne zasady pisania czystego kodu, a programista powinien ich przestrzegać."
 >_Rebecca_ _Murphey_
 
 &nbsp;
@@ -1278,7 +1278,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
 
 10. <a name="language">Jeden język</a>
 
-    Wszystkie programy poweinny być pisane w jednym języku.
+    Wszystkie programy powinny być pisane w jednym języku.
 
 
 
