@@ -431,7 +431,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'types', en appliquant les règles ci-dessus.
 
 
-	3.B Coercion de type
+	3.B Coercion de type (Conversion implicite) 
 
 	Considérons les implications de ce qui suit...
 
@@ -473,7 +473,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	// 3.B.1.2
 
-	// Vous pouvez vous prémunir de ce problème en utilisant la coercion de type de l'opérateur unaire + ou - :
+	// Vous pouvez vous prémunir de ce problème en utilisant intelligemment la coercion de type de l'opérateur unaire + ou - :
 
 	foo = +document.getElementById("foo-input").value;
 	      ^ opérateur unaire + convertissant à sa droite l'opérande en "number"
@@ -782,7 +782,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 6.1.1
-	// Example of code with poor names
+	// Exemple de code ayant un nommage incompréhensible  
 
 	function q(s) {
 		return document.querySelectorAll(s);
@@ -927,22 +927,19 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 
 	// 7.A.1.3
-	// If `foo` is a property of `switchObj` or `switchModule`, execute as a method...
-
+	// Si `foo` est une propriété de `switchObj` ou `switchModule`, alors l'exécuter comme une méthode...
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
 
 	( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
 
-	// If you know and trust the value of `foo`, you could even omit the OR check
-	// leaving only the execution:
-
+	// Vous pouvez même omettre la vérification OR, si vous faites confiance à la valeur de `foo`
+	// Ce qui nous laisse que la partie pour exécuter le code: 
 	switchObj[ foo ]( args );
 
 	switchModule[ foo ]( args );
 
 
-	// This pattern also promotes code reusability.
-
+	// Ce patron encourage aussi la réutilisation de code (code reusability)
 	```
 
 	B. Les "return" prématurés permettent d'améliorer la lisibilité du code avec une différence de performance négligeable
@@ -950,7 +947,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 7.B.1.1
-	// Bad:
+	// Exemple de mauvaise pratique:
 	function returnLate( foo ) {
 		var ret;
 
@@ -962,7 +959,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 		return ret;
 	}
 
-	// Good:
+	// Bonne pratique:
 	function returnEarly( foo ) {
 
 		if ( foo ) {
@@ -974,9 +971,9 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Objets hôtes & natifs</a>
 
-        Le principe de base est ici :
+        Le principe de base est :
 
 	### Ne faites pas de choses stupides et tout sera OK.
 
