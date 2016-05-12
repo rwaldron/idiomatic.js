@@ -1,6 +1,6 @@
 # Принципы написания консистентного, идиоматического кода на JavaScript ***
 
-## Это "живой" документ и новые идеи по улучшению когда всегда приветствуются. Примите участие: fork, clone, branch, commit, push, pull request. ***
+## Это "живой" документ и новые идеи по улучшению кода всегда приветствуются. Примите участие: fork, clone, branch, commit, push, pull request. ***
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
