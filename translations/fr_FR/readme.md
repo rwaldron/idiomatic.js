@@ -740,7 +740,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 5.2.1
-	// Contructeur
+	// Constructeur
 
 	(function( global ) {
 
