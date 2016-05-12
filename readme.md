@@ -33,6 +33,7 @@
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)  
+* Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
@@ -411,9 +412,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Single argument string literal, no space
     foo("bar");
 
-    // Inner grouping parens, no space
+    // Expression parens, no space
     if ( !("foo" in obj) ) {
-
+      obj = (obj.bar || defaults).baz;
     }
 
     ```

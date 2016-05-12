@@ -28,3 +28,4 @@
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Calvin Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
+* Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
