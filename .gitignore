@@ -1,0 +1,6 @@
+.DS_Store
+*.swp
+dist
+kits/makefile-kit/dist
+kits/jakefile-kit/dist
+kits/jakefile-kit/node_modules
