@@ -480,7 +480,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
     // "number"
     ...
 
-    // Algum momento depois no seu código, você precisa atualizar `foo`
+    // Algum memento depois no seu código, você precisa atualizar `foo`
     // com um novo valor derivado de um elemento `input`
 
     foo = document.getElementById("foo-input").value;
