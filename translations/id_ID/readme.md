@@ -37,11 +37,11 @@
 * Fesuy [github](https://github.com/fesuydev)  
 
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+## Semua kode dalam kode-base akan terlihat seperti satu orang mengetik itu, tidak peduli berapa banyak orang memberikan kontribusi.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
+### Daftar berikut menguraikan praktik yang digunakan dalam semua kode milik penulis asli; kontribusi untuk proyek-proyek yang saya buat harus mengikuti panduan ini.
 
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
+### Saya tidak berniat untuk memaksakan preferensi gaya saya pada kode orang lain atau proyek; jika gaya umum sudah ada, itu harus dihormati.
 
 
 > ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
@@ -70,9 +70,9 @@
 * [繁體中文](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_TW)  
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 
-## Important, Non-Idiomatic Stuff:
+## Penting, Non-idiomatic Stuff:
 
-### Code Quality Tools, Resources & References
+### Code Quality Tools, Resources dan Referensi
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
  * [Plato](https://github.com/es-analysis/plato)
@@ -89,12 +89,12 @@
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
-## Get Smart
+## Ayo Pintar
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+berikut harus dipertimbangkan 1) tidak lengkap, dan 2) * DIBUTUHKAN MEMBACA *. Saya tidak selalu setuju dengan gaya yang ditulis oleh penulis di bawah ini, tapi satu hal yang pasti: Mereka konsisten. Selanjutnya, ini adalah otoritas pada bahasa.
 
  * [Baseline For Front End Developers: 2015](http://rmurphey.com/blog/2015/03/23/a-baseline-for-front-end-developers-2015/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -107,16 +107,15 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 
 
-### Build & Deployment Process
+### Build dan Deployment Proses
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
+Proyek harus selalu berusaha untuk memasukkan beberapa cara generik dimana sumber dapat di lint, diuji dan dikompresi dalam persiapan untuk penggunaan produksi. Untuk tugas ini, [grunt](https://github.com/gruntjs/grunt) oleh Ben Alman terbaik dan telah resmi menggantikan "kit /" direktori dari repo ini.
 
 
-### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+### Test Fasilitas
+
+Proyek _must_ mencakup beberapa bentuk unit, referensi, implementasi atau uji fungsional. Demo kasus penggunaan tidak memenuhi syarat sebagai "test". Berikut ini adalah daftar test frameworks, yang mendukung lebih dari yang lain.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -128,17 +127,17 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Sinon.js](http://sinonjs.org/)
  * [Tape](https://github.com/substack/tape)
 
-## Table of Contents
+## Daftar Isi
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
+ * [Spasi](#whitespace)
+ * [Keindahan Syntax](#spacing)
+ * [Pemeriksaan Type (Courtesy jQuery Core Style Guidelines)](#type)
+ * [Evaluasi Kondisional](#cond)
  * [Practical Style](#practical)
  * [Naming](#naming)
  * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
+ * [Native dan Host Objects](#native)
+ * [Komentar](#comments)
  * [One Language Code](#language)
 
 
@@ -146,40 +145,40 @@ Projects _must_ include some form of unit, reference, implementation or function
 ------------------------------------------------
 
 
-## Preface
+## Kata Pengantar
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Bagian berikut menguraikan panduan gaya _reasonable_ untuk pengembangan JavaScript modern dan tidak dimaksudkan untuk menjadi preskriptif. Yang paling penting dibawa pulang adalah hukum ** konsistensi kode gaya **. Apa pun yang Anda pilih sebagai gaya untuk proyek Anda harus dipertimbangkan hukum. Link ke dokumen ini sebagai pernyataan komitmen proyek Anda untuk kode gaya konsistensi, pembacaan dan rawatan.
 
 
 
-## Idiomatic Style Manifesto
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
-  - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
+## Manifesto Gaya Idiomatic
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+1. <a name="whitespace">Spasi</a>
+  - Jangan pernah mencampur spasi dan tab.
+   - Ketika awal proyek, sebelum Anda menulis kode apapun, memilih antara indentasi lunak (spasi) atau tab nyata, pertimbangkan **hukum ini**.
+       - Untuk dibaca, saya selalu merekomendasikan pengaturan ukuran indent editor untuk dua karakter &mdash; ini berarti dua ruang atau dua ruang mewakili tab nyata.
+   - Jika editor mendukungnya, selalu bekerja dengan pengaturan "show invisibles" diaktifkan. Manfaat dari latihan ini adalah:
+       - Konsistensi
+       - Menghilangkan akhir baris spasi
+       - Menghilangkan kosong baris spasi
+       - Commits dan diffs yang mudah dibaca
+  - Gunakan [Editorconfig](http://editorconfig.org/) bila memungkinkan. Mendukung sebagian IDE dan menangani pengaturan penting spasi.
+
+
+2. <a name="spacing">Keindahan Syntax</a>
 
     A. Parens, Braces, Linebreaks
 
     ```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/try selalu memiliki ruang, kurung, dan renggang beberapa baris
+    // ini mendorong kemudahan membaca
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Contoh dari syntax yang sukar dibaca
 
     if(condition) doSomething();
 
@@ -189,7 +188,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Gunakan spasi untuk mempermudah pembacaan
 
     if ( condition ) {
       // statements
@@ -203,7 +202,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    // Even better:
+    // Bahkan lebih baik:
 
     var i,
       length = 100;
@@ -212,7 +211,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // statements
     }
 
-    // Or...
+    // Atau...
 
     var i = 0,
       length = 100;
@@ -252,60 +251,60 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) or one `var` for each variable,
-    // promotes readability and keeps your declaration list free of clutter.
-    // Using one `var` per variable you can take more control of your versions
-    // and makes it easier to reorder the lines.
-    // One `var` per scope makes it easier to detect undeclared variables
-    // that may become implied globals.
-    // Choose better for your project and never mix them.
+    // Menggunakan hanya satu `var` per lingkup (fungsi) atau satu` var` untuk setiap variabel,
+    // Mempermudah pembacaan dan membuat daftar deklarasi Anda bebas dari kekacauan.
+    // Menggunakan satu `var` per variabel Anda dapat mengambil kontrol yang lebih dari versi Anda
+    // Dan membuatnya lebih mudah untuk menyusun ulang baris.
+    // Satu `var` per lingkup membuatnya lebih mudah untuk mendeteksi variabel terdeklarasikan
+    // Yang mungkin menjadi akan menjadi globals.
+    // Pilih baik untuk proyek Anda dan jangan pernah mencampur mereka.
 
-    // Bad
+    // Buruk
     var foo = "",
       bar = "";
     var qux;
 
-    // Good
+    // Baik
     var foo = "";
     var bar = "";
     var qux;
 
-    // or..
+    // atau..
     var foo = "",
       bar = "",
       qux;
 
-    // or..
-    var // Comment on these
+    // atau..
+    var // Komentar disini
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
+    // var statements harus selalu di awal lingkup masing-masing (fungsi).
 
 
-    // Bad
+    // Buruk
     function foo() {
 
-      // some statements here
+      // beberapa statement disini
 
       var bar = "",
         qux;
     }
 
-    // Good
+    // Baik
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // semua statement setelah variabel dideklarasikan.
     }
 
     // 2.B.1.4
-    // const and let, from ECMAScript 6, should likewise be at the top of their scope (block).
+    // const dan let, dari ECMAScript 6, juga harus berada di bagian atas ruang lingkup mereka (blok).
 
-    // Bad
+    // Buruk
     function foo() {
       let foo,
         bar;
@@ -314,7 +313,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         // statements
       }
     }
-    // Good
+    // Baik
     function foo() {
       let foo;
       if ( condition ) {
@@ -327,25 +326,25 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // Deklarasi nama fungsi
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Penggunaan
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // Deklarasi nama fungsi
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Penggunaan
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Benar-benar dibuat dengam gaya passing berkelanjutan
     function square( number, callback ) {
       callback( number * number );
     }
@@ -356,15 +355,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.3
-    // Function Expression
+    // Ekspresi fungsi
     var square = function( number ) {
-      // Return something valuable and relevant
+      // Mengembalikan suatu nilai yang valuable dan relevan
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Ekspresi fungsi dengan Identifier
+    // Bentuk yang disukai ini memiliki nilai tambah yang
+    // Mampu menyebut dirinya dan memiliki identitas di stack traces:
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -375,13 +374,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Deklarasi Constructor
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Penggunaan
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -395,36 +394,36 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Fungsi demham callbacks
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Catatan: tidak ada ruang ekstra antara parent pertama
+      // Dari pelaksanaan pemanggilan fungsi dan kata "function"
     });
 
-    // Function accepting an array, no space
+    // Fungsi menerima sebuah array, tidak ada ruang
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Fungsi menerima sebuah objek, tidak ada ruang
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Satu argumen string literal, tidak ada ruang
     foo("bar");
 
-    // Expression parens, no space
+    // Ekspresi parents, tidak ada ruang
     if ( !("foo" in obj) ) {
       obj = (obj.bar || defaults).baz;
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Konsistensi Selalu Menang
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    Di bagian 2.A-2.C, aturan spasi yang ditetapkan sebagai rekomendasi dengan sederhana, tujuan yang lebih tinggi: konsistensi.
+     Sangat penting untuk dicatat bahwa format preferensi, seperti "inner whitespace" harus dipertimbangkan opsional, tetapi hanya satu gaya harus ada di seluruh sumber proyek Anda.
 
     ```javascript
 
@@ -450,15 +449,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    E. Quotes
+    E. Tanda Kutip
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Apakah Anda lebih suka tunggal atau ganda seharusnya tidak masalah, tidak ada perbedaan dalam cara JavaScript mem-parsing mereka. Apa **BENAR-BENAR HARUS** harus ditegakkan adalah konsistensi. **Jangan pernah mencampur kutipan dalam proyek yang sama. Pilih satu gaya dan tetap dengan itu.**
 
-    F. End of Lines and Empty Lines
+    F. Akhir Baris dan Garis Kosong
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Spasi dapat merusak diffs dan membuat changesets mungkin untuk dibaca. Pertimbangkan menggabungkan hook pre-commit yang menghilangkan end-of-line spasi dan ruang kosong di baris kosong secara otomatis.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Pemeriksaan type(Courtesy jQuery Core Style Guidelines)</a>
 
     A. Actual Types
 
@@ -513,9 +512,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     B. Coerced Types
 
-    Consider the implications of the following...
+    Mempertimbangkan implikasi dari berikut ...
 
-    Given this HTML:
+    Mengingat HTML ini:
 
     ```html
 
@@ -528,20 +527,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `Foo` telah dinyatakan dengan nilai `0` dan jenisnya adalah `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Di suatu tempat dalam kode anda kemudian, Anda perlu memperbarui `foo`
+    // Dengan nilai baru yang berasal dari unsur masukan
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Jika Anda menguji `typeof foo` sekarang, hasilnya akan `string`
+    // Ini berarti bahwa jika Anda memiliki logika yang diuji `foo` seperti:
 
     if ( foo === 1 ) {
 
@@ -549,15 +548,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // `importantTask()` tidak akan pernah dievaluasi, meskipun `foo` memiliki nilai "1"
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Anda dapat mendahului masalah dengan menggunakan smart coercion dengan unary + atau - operators:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ unary + operator akan mengkonversi sisi operan haknya untuk nomor
 
     // typeof foo;
     // "number"
@@ -568,10 +567,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` akan terpanggil
     ```
 
-    Here are some common cases along with coercions:
+    Berikut adalah beberapa kasus yang umum bersama dengan coercions:
 
 
     ```javascript
@@ -657,9 +656,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // Perhatikan: bahwa di atas harus dipertimbangkan "unnecessarily clever"
+    // Memilih pendekatan yang jelas dari membandingkan nilai kembali dari
+    // IndexOf, seperti:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -674,7 +673,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // sama seperti...
 
     ~~num;
 
@@ -685,24 +684,24 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // All result in 2
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // Namun diingat, bahwa angka negatif akan diperlakukan berbeda...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // sama seperti...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Semua hasil di -2
+    // Namun ...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // Akan menghasilkan 4294967294
 
 
 
@@ -711,96 +710,96 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Evaluasi Kondisional</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Ketika hanya mengevaluasi bahwa array memiliki panjang,
+    // maka seperti dibawah ini:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...mengevaluasi truthiness, seperti ini:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Ketika hanya mengevaluasi bahwa array itu kosong,
+    // maka seperti dibawah ini:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...mengevaluasi truthiness, seperti ini:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Ketika hanya mengevaluasi bahwa string tidak kosong,
+    // maka seperti dibawah ini:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...mengevaluasi truthiness, seperti ini:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Ketika hanya mengevaluasi bahwa string itu kosong,
+    // maka seperti dibawah ini:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...mengevaluasi falsy-ness, seperti ini:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Ketika hanya mengevaluasi bahwa referensi benar,
+    // maka seperti dibawah ini:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...mengevaluasi seperti yang Anda maksud itu, mengambil keuntungan dari dibangun pada kemampuan:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Ketika mengevaluasi bahwa referensi adalah salah,
+    // maka seperti dibawah ini:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...menggunakan negasi untuk memaksa evaluasi yang benar
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Hati-hati, ini juga akan cocok: 0, "", null, undefined, NaN
+    // Jika Anda _HARUS_ test untuk false boolean, maka gunakan
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Ketika hanya mengevaluasi ref yang mungkin nol atau undefined, tapi tidak false, "" atau 0,
+    // maka seperti dibawah ini:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...mengambil keuntungan dari == type coercion, seperti ini:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Ingat, menggunakan == akan cocok dengan `null` untuk KEDUA` null` dan `undefined`
+    // tetapi tidak `false`," "atau 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    SELALU mengevaluasi untuk yang terbaik, hasil yang paling akurat - di atas merupakan pedoman, bukan dogma.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Type coercion dan catatan evaluasi
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // Prefer `===` over `==` (kecuali kasus memerlukan evaluasi jenis longgar)
 
-    // === does not coerce type, which means that:
+    // === menyamakan type, yang berarti bahwa:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == tidak menyamakan type, yang berarti bahwa::
 
     "1" == 1;
     // true
@@ -826,7 +825,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Sebuah Modul Praktis
 
     (function( global ) {
       var Module = (function() {
@@ -834,30 +833,30 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Ini adalah beberapa properti boolean
           bool: true,
-          // Some string value
+          // Beberapa nilai string
           string: "a string",
-          // An array property
+          // Properti Array
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Properti objek
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // get the current value of `data`
+            // mendapatkan nilai saat ini dari `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // menetapkan nilai `data` dan mengembalikannya
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Hal-hal lain yang mungkin terjadi di sini
 
-      // expose our module to the global object
+      // mengekspos modul ke obyek global
       global.Module = Module;
 
     })( this );
@@ -867,7 +866,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Sebuah Constructor Praktis
 
     (function( global ) {
 
@@ -887,13 +886,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // Untuk memanggil konstruktor tanpa `new`, Anda mungkin melakukan hal ini:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // mengekspos konstruktor untuk obyek global
       global.ctor = ctor;
 
     })( this );
@@ -906,14 +905,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Anda bukan manusia kode compiler/kompresor, jadi jangan mencoba untuk menjadi salah satu.
 
-    The following code is an example of egregious naming:
+    Kode berikut adalah contoh mengerikan penamaan:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Contoh kode dengan nama yang buruk
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -921,15 +920,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     var i,a=[],els=q("#foo");
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
+    Tanpa ragu, Anda sudah menulis kode seperti ini - mudah-mudahan yang berakhir hari ini.
 
-    Without a doubt, you've written code like this - hopefully that ends today.
-
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    Berikut bagian logika yang sama, tetapi dengan ramah, penamaan yang lebih bijaksana(dan struktur yang mudah dibaca):
 
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Contoh kode dengan nama ditingkatkan
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -946,42 +944,42 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    A few additional naming pointers:
+    Beberapa pointer penamaan tambahan:
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Penamaan string
 
-    `dog` is a string
+    `dogs` adalah string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Penamaan array
 
-    `dogs` is an array of `dog` strings
+    `dogs` adalah array dari` string dog`
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Penamaan fungsi, objek, contoh, dll
 
-    camelCase; function and var declarations
+    CamelCase; Fungsi dan var deklarasi
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+    // Penamaan konstruktor, prototipe, dll
 
-    PascalCase; constructor function
+    PascalCase; fungsi konstruktor
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Penamaan ekspresi reguler
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // Dari Google Closure Library Style Guide
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -994,7 +992,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     B. Faces of `this`
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+    Di luar kasus penggunaan umum dikenal dengan `call` dan` apply`, lebih disarankan `.bind (this)` atau setara fungsional, untuk menciptakan definisi `BoundFunction` untuk invocation nanti. Hanya resor untuk aliasing ketika tidak ada pilihan yang lebih tersedia.
 
     ```javascript
 
@@ -1003,38 +1001,38 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // Membuka aliran async,
+      // Ini akan disebut terus
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // Perbarui nilai ini misalnya saat
+        // Dengan nilai terbaru dari
+        // aliran data
         this.value = data;
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
+      // Throttle frekuensi dari event yang dipancarkan dari
+      // Contoh Device ini
       setInterval(function() {
 
-        // Emit a throttled event
+        // Memancarkan sebuah event throttled
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // Hanya berpura-pura kita telah mewarisi EventEmitter;)
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Ketika tidak tersedia, setara fungsional untuk `.bind` ada di banyak perpustakaan JavaScript modern.
 
 
     ```javascript
     // 6.B.2
 
-    // eg. lodash/underscore, _.bind()
+    // contoh: lodash/underscore, _.bind()
     function Device( opts ) {
 
       this.value = null;
@@ -1052,7 +1050,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }, this), opts.freq || 100 );
     }
 
-    // eg. jQuery.proxy
+    // contoh: jQuery.proxy
     function Device( opts ) {
 
       this.value = null;
@@ -1070,7 +1068,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }, this), opts.freq || 100 );
     }
 
-    // eg. dojo.hitch
+    // contoh: dojo.hitch
     function Device( opts ) {
 
       this.value = null;
@@ -1090,7 +1088,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    Sebagai usaha terakhir, membuat alias untuk `this` menggunakan` self` sebagai Identifier. Hal ini sangat rawan bug dan harus dihindari sebisa mungkin.
 
     ```javascript
 
@@ -1117,9 +1115,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Use `thisArg`
+    C. Menggunakan `thisArg`
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    Beberapa metode prototipe built-in ES 5.1 datang dengan signature khusus `thisArg`, yang harus digunakan bila memungkinkan
 
     ```javascript
 
@@ -1131,13 +1129,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| sekarang mengacu pada `obj`
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- arg terakhir adalah `thisArg`
 
-    // Prints...
+    // Cetak...
 
     // "foo"
     // "bar"
@@ -1145,24 +1143,24 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` dapat digunakan dengan `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Misc</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Bagian ini akan berfungsi untuk menggambarkan ide-ide dan konsep-konsep yang tidak boleh dianggap dogma, melainkan ada untuk mendorong praktik mempertanyakan dalam upaya untuk menemukan cara yang lebih baik untuk melakukan tugas-tugas pemrograman umum JavaScript.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. Menggunakan `switch` harus dihindari, cara modern tracing akan blacklist fungsi dengan switch statements
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
-    http://jsperf.com/switch-vs-object-literal-vs-module
+    Tampaknya ada peningkatan drastis untuk pelaksanaan `switch` dalam rilis terbaru dari Firefox dan Chrome.
+      http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnessed here as well:
+    Perbaikan penting dapat dilihat di sini juga:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Contoh switch statement
 
     switch( foo ) {
       case "alpha":
@@ -1172,31 +1170,31 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         beta();
         break;
       default:
-        // something to default to
+        // sesuatu untuk default
         break;
     }
 
     // 7.A.1.2
-    // A alternate approach that supports composability and reusability is to
-    // use an object to store "cases" and a function to delegate:
+    // Pendekatan alternatif yang mendukung composability dan usabilitas adalah untuk
+    // menggunakan objek untuk menyimpan "cases" dan fungsi untuk mendelegasikan:
 
     var cases, delegator;
 
-    // Example returns for illustration only.
+    // Contoh return hanya untuk ilustrasi.
     cases = {
       alpha: function() {
         // statements
-        // a return
+        // sebuah return
         return [ "Alpha", arguments.length ];
       },
       beta: function() {
         // statements
-        // a return
+        // sebuah return
         return [ "Beta", arguments.length ];
       },
       _default: function() {
         // statements
-        // a return
+        // sebuah return
         return [ "Default", arguments.length ];
       }
     };
@@ -1204,37 +1202,37 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     delegator = function() {
       var args, key, delegate;
 
-      // Transform arguments list into an array
+      // Transform daftar argumen ke dalam array
       args = [].slice.call( arguments );
 
-      // shift the case key from the arguments
+      // menggeser key cases dari argumen
       key = args.shift();
 
-      // Assign the default case handler
+      // Menetapkan default case handler
       delegate = cases._default;
 
-      // Derive the method to delegate operation to
+      // Mengambil metode untuk mendelegasikan operasi
       if ( cases.hasOwnProperty( key ) ) {
         delegate = cases[ key ];
       }
 
-      // The scope arg could be set to something specific,
-      // in this case, |null| will suffice
+      // Ruang lingkup arg bisa diatur untuk sesuatu yang spesifik,
+      // dalam hal ini, | null | akan cukup
       return delegate.apply( null, args );
     };
 
     // 7.A.1.3
-    // Put the API in 7.A.1.2 to work:
+    // Menempatkan API dalam 7.A.1.2 untuk bekerja:
 
     delegator( "alpha", 1, 2, 3, 4, 5 );
     // [ "Alpha", 5 ]
 
-    // Of course, the `case` key argument could easily be based
-    // on some other arbitrary condition.
+    // Tentu saja, `case` argumen key bisa dengan mudah didasarkan
+    // pada beberapa kondisi yang sewenang-wenang lainnya.
 
     var caseKey, someUserInput;
 
-    // Possibly some kind of form input?
+    // Mungkin semacam masukan form?
     someUserInput = 9;
 
     if ( someUserInput > 10 ) {
@@ -1243,16 +1241,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       caseKey = "beta";
     }
 
-    // or...
+    // atau...
 
     caseKey = someUserInput > 10 ? "alpha" : "beta";
 
-    // And then...
+    // Dan Kemudian...
 
     delegator( caseKey, someUserInput );
     // [ "Beta", 1 ]
 
-    // And of course...
+    // Dan Tentu saja...
 
     delegator();
     // [ "Default", 0 ]
@@ -1260,12 +1258,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. Awal kembali mempromosikan pembacaan kode dengan perbedaan kinerja diabaikan
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Buruk:
     function returnLate( foo ) {
       var ret;
 
@@ -1277,7 +1275,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return ret;
     }
 
-    // Good:
+    // Baik:
 
     function returnEarly( foo ) {
 
@@ -1290,36 +1288,36 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Native dan Host Objects</a>
 
-    The basic principle here is:
+    Prinsip dasar:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Jangan melakukan omong kosong bodoh dan semuanya akan ok.
 
-    To reinforce this concept, please watch the following presentation:
+    Untuk memperkuat konsep ini, silahkan menonton presentasi berikut:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Semuanya yang Diizinkan: Memperluas Built-in” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
     http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Komentar</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+    #### Satu baris dibawah kode itu adalah subjek
+    #### Multiline itu baik
+    #### Akhir dari line komentar terlarang!
+    #### Gaya JSDoc baik, tetapi membutuhkan waktu investasi yang signifikan
 
 
 10. <a name="language">One Language Code</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    Program harus ditulis dalam satu bahasa, apa pun bahasa yang mungkin, seperti yang ditentukan oleh pengelola atau pengelola.
 
-## Appendix
+## Lampiran
 
-### Comma First.
+### Koma Pertama.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Setiap proyek yang mengutip dokumen ini sebagai panduan dasar gaya yang tidak akan menerima format koma kode pertama, kecuali secara eksplisit ditentukan lain oleh penulis proyek ini.
 
 
 
