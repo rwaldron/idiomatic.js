@@ -268,7 +268,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     // Good
     var foo = "";
     var bar = "";
-    var qux;
+    var quux;
 
     // or..
     var foo = "",
@@ -291,13 +291,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       // some statements here
 
       var bar = "",
-        qux;
+        quux;
     }
 
     // Good
     function foo() {
       var bar = "",
-        qux;
+        quux;
 
       // all statements after the variables declarations.
     }
@@ -1127,7 +1127,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     var obj;
 
-    obj = { f: "foo", b: "bar", q: "qux" };
+    obj = { f: "foo", b: "bar", q: "quux" };
 
     Object.keys( obj ).forEach(function( key ) {
 
@@ -1141,7 +1141,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // "foo"
     // "bar"
-    // "qux"
+    // "quux"
 
     ```
 
