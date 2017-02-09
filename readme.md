@@ -1090,26 +1090,26 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    As a last resort, create an alias to `this` using `_this` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
 
     ```javascript
 
     // 6.B.3
 
     function Device( opts ) {
-      var self = this;
+      var _this = this;
 
       this.value = null;
 
       stream.read( opts.path, function( data ) {
 
-        self.value = data;
+        _this.value = data;
 
       });
 
       setInterval(function() {
 
-        self.emit("event");
+        _this.emit("event");
 
       }, opts.freq || 100 );
     }
