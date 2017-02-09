@@ -77,7 +77,7 @@ Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LEC
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Rebecca Murphey](http://www.rebeccamurphey.com/) or [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [Douglas Crockford's World Wide Web](http://www.crockford.com)
 
 ### Processus de "build" et de déploiement
 
