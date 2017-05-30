@@ -74,11 +74,11 @@
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
-## Important, Non-Idiomatic Stuff:
+## Σημαντικά, Μη-Ιδιωματικά Πράγματα:
 
-### Code Quality Tools, Resources & References
+### Code Quality Εργαλεία, Πόροι & Αναφορές
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) για το [Sonar](http://www.sonarsource.org/)
  * [Plato](https://github.com/es-analysis/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
@@ -93,12 +93,12 @@
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
-## Get Smart
+## Γίνετε έξυπνοι
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Τα επόμενα θα πρέπει να θεωρρηθούν 1) μη τελειωμένα και 2) *ΑΠΑΡΑΙΤΗΤΟ ΔΙΑΒΑΣΜΑ*. Δεν συμφωνώ πάντα με το στυλ που χρησιμοποιείται από τους παρακάτω συγγραφείς, αλλά ένα είναι σίγουρο: είναι συνεπής. Επιπλέον, πρόκειται για αρχές σχετικά με τη γλώσσα.
 
  * [Baseline For Front End Developers: 2015](http://rmurphey.com/blog/2015/03/23/a-baseline-for-front-end-developers-2015/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -111,16 +111,16 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 
 
-### Build & Deployment Process
+### Διαδικασία Δημιουργίας και Deployment
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
+Τα project θα πρέπει πάντα να προσπαθούν να περιέχουν κάποιους γενικούς τρόπους με τους οποίους να μπορούν να γίνουν linted, tested και συμπιεσμένα για την παραγωγή. Για αυτή τη διαδικασία το [grunt](https://github.com/gruntjs/grunt) από τον Ben Alman και το [webpack](https://github.com/webpack/webpack) είναι σπουδαία εργαλεία.
 
 
 
 
 ### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+Τα projects _πρέπει_ να περιέχουν κάποιου είδους unit, reference, implementation ή functional testing. Παρακάτω είναι μια λίστα με test frameworks, εκ των οποίων κανένα δεν συνιστάται πιο πολύ από τα άλλα.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -132,18 +132,18 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Sinon.js](http://sinonjs.org/)
  * [Tape](https://github.com/substack/tape)
 
-## Table of Contents
+## Πίνακας περιεχομένων
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
+ * [Λευκός χώρος](#whitespace)
+ * [Όμορφο Συντακτικό](#spacing)
+ * [Έλεγχος τύπου (ευγενείς οδηγίες jQuery Core Style)](#type)
  * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
+ * [Πρακτικό στυλ](#practical)
+ * [Ονομασία](#naming)
+ * [Διάφορα](#misc)
  * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Σχόλια](#comments)
+ * [Ένας κώδικας γλώσσας](#language)
 
 
 
