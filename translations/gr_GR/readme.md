@@ -150,27 +150,27 @@
 ------------------------------------------------
 
 
-## Preface
+## Πρόλογος
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Τα επόμενα τμήματα δείχνουν ένα _λογικό_ style guide για μοντέρνο JavaScript development και δεν είναι εντεταλμένα. Το πιο σημαντικό στοιχείο να αποκομίσετε είναι ο **νόμος της code style συνέπειας**. Ό,τι και να διαλέξετε για το στυλ του project σας πρέπει λαμβάνεται ως νόμος.
 
 
 
-## Idiomatic Style Manifesto
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
-  - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
+## Ιδιωματικό Style Manifesto
+
+
+1. <a name="whitespace">Λευκός χώρος</a>
+  - Ποτέ να μην συνδιάζετε κενά και tabs.
+  - Όταν ξεκινάτε ένα project, πριν γράψετε καν κώδικα, διαλέξτε ανάμεσα σε κενά ή tabs και θεωρήστε το **νόμο**.
+      - Για να είναι ευανάγνωστο, πάντα προτείνω να σετάρετε το indent του editor σας σε 2 χαρακτήρες &mdash; αυτό σημαίνει πως δυο κενά αντιπροσωπεύουν ένα tab.
+  - Αν το υποστηρίζει ο editor σας, πάντα να δουλεύετε με το "show invisibles" αναμένο. Τα πλεονεκτήματα αυτού είναι:
+      - Ενισχυμένη συνοχή
+      - Εξάλειψη των κενών στο τέλος της γραμμής
+      - Εξάλειψη των κενών γραμμών
+      - Commits και diffs που είναι ευκολότερα να διαβαστούν
+  - Χρησιμοποιείτε [Editorconfig](http://editorconfig.org/) όποτε μπορείτε.  Υποστηρίζει τα περισσότερα IDEs και διαχειρίζεται τις πεισσότερες ρυθμίσεις για τους κενούς χώρους.
 
 
 2. <a name="spacing">Beautiful Syntax</a>
