@@ -25,6 +25,7 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## Tout code, peu importe les bases sur lesquelles il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
@@ -50,6 +51,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 ## Important, aspect non idiomatique :
 

@@ -25,6 +25,7 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
@@ -54,6 +55,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## Conteúdo importante e não idiomático:

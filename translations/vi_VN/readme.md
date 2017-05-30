@@ -32,6 +32,7 @@
 * Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 
@@ -66,6 +67,7 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Tiếng Việt](https://github.com/rwldrn/idiomatic.js/tree/master/translations/vi_VN)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## Quan trọng, những thành phần không nhất quán
