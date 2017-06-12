@@ -720,91 +720,91 @@
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Όταν ελέγχετε αν ένα array έχει length,
+    // αντί για αυτό:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...να ελέγχετε το truthiness, με αυτόν τον τρόπο:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Όταν ελέγχετε ότι ένα array είναι empty,
+    // αντί για αυτό:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...να ελέγχετε το truthiness, με αυτόν τον τρόπο:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Όταν ελέγχετε ότι ένα string δεν είναι empty,
+    // αντί για αυτό:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...να ελέγχετε το truthiness, με αυτόν τον τρόπο:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Όταν ελέγχετε ότι ένα string _είναι_ empty,
+    // αντί για αυτό:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...να ελέγχετε το falsy-ness, με αυτόν τον τρόπο:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Όταν ελέγχετε ότι ένα reference είναι true,
+    // αντί για αυτό:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...να το ελέγχετε σαν να το εννωείτε, Επωφεληθείτε από τις ενσωματωμένες δυνατότητες:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Όταν ελέγχετε ότι ένα reference είναι false,
+    // αντί για αυτό:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...να χρησιμποιείτε negation για να κάνετε coerce ένα true evaluation
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Προσοχή, αυτό θα ισχύει και για: 0, "", null, undefined, NaN
+    // Αν _ΠΡΕΠΕΙ_ να ελέγξετε ένα boolean false, τότε να χρησιμποιείτε
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Όταν ελέγχετε έμα ref που μπορεί να είναι null ή undefined, αλλά ΟΧΙ false, "" or 0,
+    // αντί για αυτό:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...εκμεταλευτείτε το == type coercion, με αυτόν τον τρόπο:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Να θυμάστε πως η χρήση == θα ταιριάξει ένα `null` και στο `null` και στο `undefined`
+    // αλλά όχι `false`, "" ή 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    Πάντα να ελέγχετε για το καλύτερο, πιο ακριβές αποτέλεσμα - τα παραπάνω είναι μια κατευθυντήρια γραμμή, όχι ένα δόγμα.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Type coercion και evaluation notes
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // Να προτιμάρε `===` αντί για `==` (εκτός και αν αυτή η περίπτωση απαιτεί loose type evaluation)
 
-    // === does not coerce type, which means that:
+    // === δεν κάνει coerce το type, που σημαίνει ότι:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == κάνει coerce type, που σημαίνει ότι:
 
     "1" == 1;
     // true
