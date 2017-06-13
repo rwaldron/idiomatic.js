@@ -1296,34 +1296,34 @@
 
 8. <a name="native">Native & Host Objects</a>
 
-    The basic principle here is:
+    Η βασική αρχή εδώ είναι:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Μην κάνετε χαζές βλακείες και όλα θα δουλεύουν καλά.
 
-    To reinforce this concept, please watch the following presentation:
+    Για να ενισχύσετε αυτήν την έννοια, παρακαλούμε δείτε την ακόλουθη παρουσίαση:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Everything is Permitted: Extending Built-ins” του Andrew Dupont (JSConf2011, Portland, Oregon)
 
     http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
 9. <a name="comments">Comments</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+    #### Μονή γραμμή πάνς από τον κώδικα είναι υποκειμενικό
+    #### Πολλαπλή γραμμή είναι καλή
+    #### Τα σχόλια στο τέλος της γραμμής απαγορεύονται!
+    #### Το JSDoc στυλ είναι καλό, αλλά απαιτεί μια σημαντική επένδυση χρόνου
 
 
 10. <a name="language">One Language Code</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    Τα προγράμματα πρέπει να είναι γραμμένα σε μία γλώσσα, όποια και αν είναι αυτή η γλώσσα, όπως υπαγορεύει ο διαχειριστής ή οι συντηρητές.
 
-## Appendix
+## Παράρτημα
 
 ### Comma First.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Οποιοδήποτε project που παραθέτει αυτό το έγγραφο ως βασικό οδηγό στυλ δεν θα δεχτεί μορφοποίηση πρώτου κώδικα με κόμμα, εκτός εάν έχει οριστεί διαφορετικά από τον συντάκτη του project.
 
 
 
