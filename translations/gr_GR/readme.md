@@ -462,7 +462,7 @@
 
     Το κενό μπορεί να καταστρέψει τα diffs και να τα κάνει αδύνατο να διαβαστούν. Σκεφτείτε να συμπεριλαμβάνετε ένα pre-commit hook που θα διαγράφει το end-of-line κενό και τα blanks spaces στις κενές γραμμές αυτόματα.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Έλεγχος τύπου (ευγενείς οδηγίες jQuery Core Style)</a>
 
     A. Actual Types
 
@@ -825,7 +825,7 @@
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Πρακτικό στυλ</a>
 
     ```javascript
 
@@ -906,7 +906,7 @@
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Ονομασία</a>
 
 
 
@@ -1151,7 +1151,7 @@
 
     `thisArg` μπορεί να χρησιμοποιηθεί με `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Διάφορα</a>
 
     Αυτή η ενότητα θα χρησιμεύσει για να Εικονογραφηθούν ιδέες και έννοιες που δεν πρέπει να θεωρούνται δόγμα, αλλά αντίθετα υπάρχουν για να ενθαρρύνουμε τις πρακτικές αμφισβήτησης σε μια προσπάθεια να βρούμε καλύτερους τρόπους για να κάνουμε κοινές εργασίες προγραμματισμού JavaScript.
 
@@ -1307,7 +1307,7 @@
     http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Σχόλια</a>
 
     #### Μονή γραμμή πάνς από τον κώδικα είναι υποκειμενικό
     #### Πολλαπλή γραμμή είναι καλή
@@ -1315,7 +1315,7 @@
     #### Το JSDoc στυλ είναι καλό, αλλά απαιτεί μια σημαντική επένδυση χρόνου
 
 
-10. <a name="language">One Language Code</a>
+10. <a name="language">Ένας κώδικας γλώσσας</a>
 
     Τα προγράμματα πρέπει να είναι γραμμένα σε μία γλώσσα, όποια και αν είναι αυτή η γλώσσα, όπως υπαγορεύει ο διαχειριστής ή οι συντηρητές.
 
