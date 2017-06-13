@@ -35,6 +35,7 @@
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)  
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 * Fesuy [github](https://github.com/fesuydev)  
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
@@ -69,6 +70,7 @@
 * [Serbian - latin alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [繁體中文](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_TW)  
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 ## Important, Non-Idiomatic Stuff:
 

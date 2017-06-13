@@ -30,3 +30,4 @@
 * Calvin Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 * Fesuy [github](https://github.com/fesuydev)  
+* Stephane Moreau [github](https://github.com/stmoreau)  
