@@ -830,7 +830,7 @@
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Ένα Practical Module
 
     (function( global ) {
       var Module = (function() {
@@ -838,30 +838,30 @@
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Αυτό είναι boolean property
           bool: true,
-          // Some string value
+          // Ένα string value
           string: "a string",
-          // An array property
+          // Ένα array property
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Ένα object property
           object: {
             lang: "en-Us"
           },
           getData: function() {
-            // get the current value of `data`
+            // Επιστρέφει την τωρινή τιμή του `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // θέτει την τιμή του `data` και την επιστρέφει
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Άλλα πράγματα μπορούν να γίνουν εδώ
 
-      // expose our module to the global object
+      // Έκθεση του module στο global object
       global.Module = Module;
 
     })( this );
@@ -871,7 +871,7 @@
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Ένα Practical Constructor
 
     (function( global ) {
 
@@ -891,13 +891,13 @@
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // Για να καλέσετε constructor χωρίς `new`, μπορείτε να κάνετε αυτό:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // Έκθεση του constructor στο global object
       global.ctor = ctor;
 
     })( this );
