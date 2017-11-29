@@ -129,6 +129,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Buster.js](http://busterjs.org/)
  * [Sinon.js](http://sinonjs.org/)
  * [Tape](https://github.com/substack/tape)
+ * [Jest](https://facebook.github.io/jest/)
 
 ## Table of Contents
 
