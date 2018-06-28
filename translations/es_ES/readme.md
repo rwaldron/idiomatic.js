@@ -886,7 +886,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
 
 
-    Si no eres un compilador/compresor humano de código, no te esfuerces por de serlo.
+    A. Si no eres un compilador/compresor humano de código, no te esfuerces por de serlo.
 
     A continuación ejemplos "tristes" de nombramiento de variables
 
@@ -972,7 +972,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     ```
 
-B. Caras de `this`
+    B. Caras de `this`
 
     Mas allá de los generalmente bien conocidos casos de uso de `call` y `apply`, siempre preferir `.bind( this )` o equivalente, para crear definiciones de `BoundFunction` para invocar más tarde. Sólo recurrir a alias cuando no hay disponible una opción preferible.
 
