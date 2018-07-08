@@ -79,8 +79,6 @@
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
-[Использование инструментов по улучшению качества кода от Антона Ковалева](http://anton.kovalyov.net/slides/gothamjs/)
-
 ### Становись умнее
 
 ### [ECMAScript 5.1 с комментариями](http://es5.github.com/)
