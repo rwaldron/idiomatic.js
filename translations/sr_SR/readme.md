@@ -41,7 +41,7 @@
 
 &nbsp;
 
-> ### "Deo uloge dobrog upravnika uspešnog projekta je i u razumevanju da pisanje koda po svojim merilima je loša ideja™. Ako hiljade ljudi koristi tvoj kod, onda piši najjasniji kod, a ne preva svojim ličnim preferencijama ili da sa željom da ispadneš pametan u okvirima specifikacije."
+> ### "Deo uloge dobrog upravnika uspešnog projekta je i u razumevanju da pisanje koda po svojim merilima je loša ideja™. Ako hiljade ljudi koristi tvoj kod, onda piši najjasniji kod, a ne prema svojim ličnim preferencijama ili da sa željom da ispadneš pametan u okvirima specifikacije."
 >_Idan_ _Gazit_
 
 
