@@ -1280,7 +1280,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon) - recomendada!
 
-    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+    [Andrew Dupont: Everything is Permitted: Extending Built-ins](https://www.youtube.com/watch?v=xL3xCO7CLNM)
 
 
 9. <a name="comments">Comentarios</a>
