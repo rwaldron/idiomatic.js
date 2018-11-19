@@ -63,7 +63,7 @@
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 ## 重要的、通用的資源：
-> 建議搭配英文版一同閱讀，有些程式專有名次翻譯成中文或許無法很好地表達出原意。
+> 建議搭配英文版一同閱讀，有些程式專有名詞翻譯成中文或許無法很好地表達出原意。
 
 ### 程式品質工具、資源與參考文獻
 
