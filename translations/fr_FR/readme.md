@@ -1,4 +1,4 @@
-# Principe d'écriture d'un code Javascript cohérent et idiomatique
+# Principes d'écriture d'un code JavaScript cohérent et idiomatique
 
 ## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenues. Pour contribuer : "fork", "clone", "branch", "commit", "push", "pull request".
 
