@@ -3,7 +3,7 @@
 
 ## これは継続しているドキュメントであるため、私たちのコードを改善できる新しいアイデアを常に歓迎します。貢献方法: fork、clone、branch、commit、push、pull request。
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -19,7 +19,14 @@
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
+* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## どんなに多くの人が貢献したとしても、どのコードも一人で書いたようにするべきです。
@@ -39,14 +46,20 @@
 
 ## 翻訳
 
-* [ドイツ語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [フランス語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [スペイン語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [ポルトガル語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [韓国語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [日本語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [イタリア語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
-* [ロシア語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## 慣用的ではないもの（重要）:
@@ -54,12 +67,14 @@
 ### コードの品質ツールや情報とリファレンス
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [Plato](https://github.com/jsoverson/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [Editorconfig](http://editorconfig.org/)
 
 
 ## 賢くなろう
@@ -146,7 +161,7 @@
 
     ```javascript
 
-    // if/else/for/while/try は常にスペース、中括弧、複数の行に架かるるようにします
+    // if/else/for/while/try は常にスペースをもち、波括弧が複数の行に架かるようにします
     // これは可読性を促進します
 
     // 2.A.1.1
@@ -244,7 +259,6 @@
 
     // 2.B.1.3
     // var文は常にそれぞれのスコープ（関数）の最初になくてはなりません。
-    // ECMAScript 6のconstやletもまた同様です。
 
     // 悪い例
     function foo() {
@@ -261,6 +275,27 @@
         qux;
 
       // すべての文は変数の宣言の後に書きます
+    }
+
+    // 2.B.1.4
+    // ECMAScript 6のconstやletもまた同様です。
+
+    // 悪い例
+    function foo() {
+      let foo,
+        bar;
+      if ( condition ) {
+        bar = "";
+        // statements
+      }
+    }
+    // 良い例
+    function foo() {
+      let foo;
+      if ( condition ) {
+        let bar = "";
+        // statements
+      }
     }
     ```
 
@@ -285,7 +320,7 @@
     // 関数の使い方
     square( 10 );
 
-    // 不自然に続けて渡すスタイル
+    // とても不自然な継続渡しスタイル
     function square( number, callback ) {
       callback( number * number );
     }
@@ -303,8 +338,8 @@
     };
 
     // 識別子と式による関数の宣言
-    // この望ましい形はスタックトレースの中で自ら呼び出せる識別子を
-    // 持てる値が追加されます:
+    // この望ましい形では、スタックトレースの中で自ら呼び出せる識別子を
+    // 持つことができます
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -396,7 +431,7 @@
 
     F. 行末と空行
 
-    スペースは読めない変更点を生み、差分を壊します。行末のスペースや空行のスペースを削除するためにコミット前の内容を組み込むかしっかり考えてください。
+    スペースは読めない変更点を生み、差分を壊します。コミット前に、自動で行末のスペースや空行のスペースを削除する処理を行うことを検討してください。
 
 3. <a name="type">型のチェック（jQeury Core Style Guidelinesの作法）</a>
 
@@ -421,7 +456,7 @@
     配列:
 
         Array.isArray( arrayLikeObject )
-        (wherever possible)
+        (可能な限り)
 
     ノード:
 
@@ -494,7 +529,7 @@
 
     // 3.B.1.2
 
-    // + または - といった単項演算子を使って、強制的にこの問題を回避できます:
+    // + または - といった単項演算子による型強制を使って、この問題を回避できます:
 
     foo = +document.getElementById("foo-input").value;
     //    ^ この + 演算子は右側の値をnumberに変換します
@@ -597,8 +632,8 @@
     !!~array.indexOf("d");
     // false
 
-    // 上記は"無駄に考えすぎていないか"ということを考慮してください
-    // 次のようなindexOfが返した値を明確に比較するようなアプローチに
+    // 上記のやり方は"無駄に賢すぎる"と考えるべきです
+    // 次のように、indexOfが返した値を比較する明確なアプローチに
     // してみましょう。
 
     if ( array.indexOf( "a" ) >= 0 ) {
@@ -656,10 +691,10 @@
     ```javascript
 
     // 4.1.1
-    // 配列の長さだけを評価する場合は次の代わりに:
+    // 配列の長さがあるかだけを評価する場合は、次の代わりに:
     if ( array.length > 0 ) ...
 
-    // このように評価すればいいでしょう:
+    // このように真偽を評価すればいいでしょう:
     if ( array.length ) ...
 
 
@@ -667,7 +702,7 @@
     // 配列が空かどうかだけを評価する場合は次の代わりに:
     if ( array.length === 0 ) ...
 
-    // このように評価すればいいでしょう:
+    // このように真偽を評価すればいいでしょう:
     if ( !array.length ) ...
 
 
@@ -683,7 +718,7 @@
     // 文字列が空であることだけを評価する場合は次の代わりに:
     if ( string === "" ) ...
 
-    // このように評価すればいいでしょう:
+    // このように真偽を評価すればいいでしょう:
     if ( !string ) ...
 
 
@@ -691,7 +726,7 @@
     // 参照先がtrueかどうかだけ評価する場合は次の代わりに:
     if ( foo === true ) ...
 
-    // このように評価することを意味し、これは内部的な機能を利用します:
+    // このように評価します（おわかりのとおり、これは組み込まれた機能です）:
     if ( foo ) ...
 
 
@@ -699,7 +734,7 @@
     // 参照先がfalseかどうかを評価する場合は次の代わりに:
     if ( foo === false ) ...
 
-    // 強制的にtrueの評価を行うために否定を使います
+    // trueでの評価を強制させるため、ネゲートします
     if ( !foo ) ...
 
     // 注意点としてこの場合は0、""、null、undefined、NaNといった値にも
@@ -715,8 +750,8 @@
     // 次のように==を使用して型の変換を利用します
     if ( foo == null ) ...
 
-    // ==はfalse、""、0ではなくnullとundefinedの両方をnullとマッチすることを
-    // 覚えておいてください
+    // 覚えておいてください： ==を使うと、nullはnullおよびundefinedの両方とマッチします。
+    // しかし、falseと0にはマッチしません
     null == undefined
 
     ```
@@ -727,7 +762,7 @@
     // 4.2.1
     // 型の変換と評価の注意書き
 
-    // `==` よりも `===` を選びましょう（ルーズな型の評価が必要でない限り）
+    // `==` よりも `===` を選びましょう（あいまいな型の評価が必要でない限り）
 
     // ===は次のように型を変換しません:
 
@@ -746,21 +781,21 @@
     // ブール値:
     true, false
 
-    // trueな値:
+    // truthy（訳注：真のような）値:
     "foo", 1
 
-    // falseな値:
+    // falsy（訳注：偽のような）値:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
-5. <a name="practical">実際のスタイル</a>
+5. <a name="practical">実践的なスタイル</a>
 
     ```javascript
 
     // 5.1.1
-    // 実際のモジュール
+    // 実践的なモジュール
 
     (function( global ) {
       var Module = (function() {
@@ -768,9 +803,9 @@
         var data = "secret";
 
         return {
-          // 何かのブール値のプロパティ
+          // 何らかのブール値のプロパティ
           bool: true,
-          // 何かの文字列の値
+          // 何らかの文字列の値
           string: "a string",
           // 配列のプロパティ
           array: [ 1, 2, 3, 4 ],
@@ -789,9 +824,9 @@
         };
       })();
 
-      // に可能性のあるものはここに
+      // その他のコードがここに入る
 
-      // グローバルオブジェクトにモジュールを見えるようにします
+      // グローバルオブジェクトからモジュールが見えるようにします
       global.Module = Module;
 
     })( this );
@@ -801,7 +836,7 @@
     ```javascript
 
     // 5.2.1
-    // 実際のコンストラクター
+    // 実践的なコンストラクター
 
     (function( global ) {
 
@@ -827,7 +862,7 @@
       };
 
 
-      // グローバルオブジェクトにモジュールを見えるようにします
+      // グローバルオブジェクトからモジュールが見えるようにします
       global.ctor = ctor;
 
     })( this );
@@ -839,7 +874,7 @@
 6. <a name="naming">ネーミング</a>
 
 
-    A. あなたがコードをコンパイルしたり圧縮したりするわけではないので、そういった事をしようとしてはいけません。
+    A. あなたは人間コンパイラではありません。そうなろうとしてはいけません。
 
     次のコードはひどいネーミングの例です:
 
@@ -927,7 +962,7 @@
 
     B. `this` の扱い
 
-    後から呼び出される `BoundFunction` を定義する場合は `call` や `apply` の一般的な使われ方よりも `.bind( this )` や同等の機能が好ましいです。好ましいオプションがない場合だけ、別の方法を考えましょう。
+    後から呼び出される `BoundFunction` （訳注：thisが束縛された関数）を定義する場合は、よく使われる `call` や `apply` ではなく、 `.bind( this )` か、または同等の方法を使いましょう。selfの別名を作るのは、他に方法がない場合のみにするべきです。
 
     ```javascript
 
@@ -1022,7 +1057,7 @@
 
     ```
 
-    最後の回避方法は、識別子として`this`への別名に`self`を使うことですが、これは極端なバグになる傾向があるため、可能な限り避けるべきです。
+    最後の手段が、`this`の別名`self`を識別子として作ることです。しかしバグの原因になりやすいため、この方法は可能な限り避けるべきです。
 
     ```javascript
 
@@ -1051,7 +1086,7 @@
 
     C. `thisArg`を使う
 
-    ES 5.1の各プロトタイプのメソッドでは特別な`thisArg`という署名に対応しています。これは可能な限り利用するべきです。
+    ES 5.1組み込みのいつくかのプロトタイプメソッドは、特別な`thisArg`シグネチャに対応しています。可能な限り利用するべきです。
 
     ```javascript
 
@@ -1077,18 +1112,18 @@
 
     ```
 
-    `thisArg`は`Array.prototype.every`、`Array.prototype.forEach`、`Array.prototype.some`、`Array.prototype.map`、`Array.prototype.filter`と一緒に利用できます。
+    `thisArg`は`Array.prototype.every`、`Array.prototype.forEach`、`Array.prototype.some`、`Array.prototype.map`、`Array.prototype.filter`で利用できます。
 
 7. <a name="misc">雑則</a>
 
-    このセクションは偏見的と見なされるべきではないアイデアやコンセプトを説明する代わりに、一般的なプログラミングタスクを行うためのより良い方法を見つけるためのプラクティスを助長するものです。
+    このセクションは、ドグマとはいえないまでも、JavaScriptプログラミングをより良くこなすための、探究的なプラクティスの助けとなるアイデアおよびコンセプトを提供します。
 
-    A. `switch` の使用はできるだけ避けるべきでモダンなメソッドトレースはswitch文をブラックリストの関数にするでしょう
+    A. `switch` の使用はできるだけ避けるべきです。モダンなメソッドトレースは、switchを含む関数をブラックリスト入りさせるでしょう
 
     これは最新のFirefoxとChromeでの `switch` 文の実行の大幅な改善です。
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    注意すべき改善点はここでも確認できます:
+    注目すべき改善点はここでも確認できます:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
@@ -1109,61 +1144,89 @@
     }
 
     // 7.A.1.2
-    // オブジェクトリテラルやモジュールを利用したより良いアプローチ:
+    // `cases`とデリゲートする関数をオブジェクトに保存する代わりのやり方
+    // 再利用と再構成が可能になる
 
-    var switchObj = {
+    var cases, delegator;
+
+    // 説明用にreturnのみ記載
+    cases = {
       alpha: function() {
-        // 文
-        // 返り値
+        // ステートメント
+        // リターン
+        return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // 文
-        // 返り値
+        // ステートメント
+        // リターン
+        return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // 文
-        // 返り値
+        // ステートメント
+        // リターン
+        return [ "Default", arguments.length ];
       }
     };
 
-    var switchModule = (function () {
-      return {
-        alpha: function() {
-          // 文
-          // 返り値
-        },
-        beta: function() {
-          // 文
-          // 返り値
-        },
-        _default: function() {
-          // 文
-          // 返り値
-        }
-      };
-    })();
+    delegator = function() {
+      var args, key, delegate;
+
+      // 引数を配列に変換
+      args = [].slice.call( arguments );
+
+      // caseの部分を引数からとりだす
+      key = args.shift();
+
+      // まずデフォルトケースをアサインする
+      delegate = cases._default;
+
+      // 処理をデリゲートする関数を取り出す
+      if ( cases.hasOwnProperty( key ) ) {
+        delegate = cases[ key ];
+      }
+
+      // スコープ引数も指定可能
+      // この例では |null| にしている
+      return delegate.apply( null, args );
+    };
 
 
     // 7.A.1.3
-    // もし `foo` が `switchObj` または `switchModule` のプロパティならメソッドとして実行されます
+    // （7.A.1.2のAPIを使っています）
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+    delegator( "alpha", 1, 2, 3, 4, 5 );
+    // [ "Alpha", 5 ]
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+    // もちろん、`case`には簡単に算術条件も使える
 
-    // もし `foo` の値がはっきり分かっているなら、ORのチェックを省いて
-    // 実行部分だけ残すようにできます:
+    var caseKey, someUserInput;
 
-    switchObj[ foo ]( args );
+    // たとえばフォーム入力値
+    someUserInput = 9;
 
-    switchModule[ foo ]( args );
+    if ( someUserInput > 10 ) {
+      caseKey = "alpha";
+    } else {
+      caseKey = "beta";
+    }
 
+    // または
 
-    // このパターンはコードの再利用性を促進します。
+    caseKey = someUserInput > 10 ? "alpha" : "beta";
+
+    // そして
+
+    delegator( caseKey, someUserInput );
+    // [ "Beta", 1 ]
+
+    // そしてもちろん
+
+    delegator();
+    // [ "Default", 0 ]
 
     ```
 
-    B. ごくわずかなパフォーマンスと早く返り値を返すことでコードの可読性を促進します
+    B. すぐにReturnすることで、コードの可読性が上がり、わずかにパフォーマンスも向上します
 
     ```javascript
 
@@ -1203,9 +1266,7 @@
 
     #### Andrew Dupontによる“Everything is Permitted: Extending Built-ins”（JSConf2011、ポートランド、オレゴン州）
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
 9. <a name="comments">コメント</a>
@@ -1216,9 +1277,9 @@
   * JSDocのスタイルは良いですが大幅な時間を要します
 
 
-10. <a name="language">1つの言語としてのコード</a>
+10. <a name="language">1言語でのコード</a>
 
-    プログラムは1つの言語によって書かれるべきです。その言語が何であれ、メンテナーによって決定されるのです。
+    保守する人が要求するとおり、その言語が何であれ、プログラムは1つの言語によって書かれるべきです。
 
 ## 付録
 

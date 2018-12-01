@@ -1,72 +1,94 @@
 # Princìpi per la scrittura di JavaScript consistente ed idiomatico
 
 
-## Questo è un documento sempre in continua evoluzione e nuove idee per migliorare il codice che ci circonda sono sempre le benvenute. Contribuisci: fork, clone, branch, commit, push, pull request.
+## Questo è un documento in continua evoluzione e nuove idee sono sempre bene accette. Per contribuire: fork, clone, branch, commit, push, pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
-* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idangazit)
+* Idan Gazit [@idangazit](http://twitter.com/idangazit), [github](https://github.com/idan)
 * Leo Balter [@leobalter](http://twitter.com/leobalter), [github](https://github.com/leobalter)
 * Breno Oliveira [@garu_rj](http://twitter.com/garu_rj), [github](https://github.com/garu)
 * Leo Beto Souza [@leobetosouza](http://twitter.com/leobetosouza), [github](https://github.com/leobetosouza)
 * Ryuichi Okumura [@okuryu](http://twitter.com/okuryu), [github](https://github.com/okuryu)
+* Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
 * EngForDev [engfordev](http://www.opentutorials.org/course/167/1363) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
 * Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
+* Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
+* Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
+* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
+* monkadd [github](https://github.com/monkadd)
+* Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
+* Thomas P [@dragon5689](https://twitter.com/dragon5689) [github](https://github.com/dragon5689)
+* Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
+* Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
+* James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
-## Tutto il codice in qualsiasi linguaggio dovrebbe sembrare come scritto da una singola persona, non importa quante persone vi abbiano contribuito.
+## Tutto il codice, in qualsiasi linguaggio sia, dovrebbe sembrare come scritto da un'unica persona, non importa quante persone vi abbiano contribuito.
 
 ### Il seguente elenco, evidenzia le pratiche che utilizzo in tutto il codice di cui sono l'autore originale; contributi ai progetti da me creati dovrebbero seguire queste linee guida.
 
 ### Non è mia intenzione imporre il mio stile su codice o progetti altrui; se esiste già uno stile comune, esso dovrebbe essere rispettato.
 
 
-> ### "Argomenti sullo stile sono inutili. Ci dovrebbe essere una guida di stile, e voi dovreste seguirla"
+> ### "Discussioni sullo stile sono inutili. Ci dovrebbe essere una guida di stile, e voi dovreste seguirla"
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-> ### "Parte dell'essere un buon amministratore per un progetto di successo è capire che la scrittura di codice per sé stessi è una Cattiva Idea™. Se migliaia di persone usano il tuo codice, allora scrivi il tuo codice in modo che abbia la massima chiarezza, e non seguendo i tuoi gusti personali su come renderlo chiaro all'interno delle specifiche"
+> ### "Parte dell'essere un buon amministratore in un progetto votato al successo è capire che la scrittura di codice per sé stessi è una Cattiva Idea™. Se migliaia di persone usano il tuo codice, allora scrivi il tuo codice in modo che abbia la massima chiarezza, e non seguendo i tuoi gusti personali su come renderlo chiaro all'interno delle specifiche."
 >_Idan_ _Gazit_
 
 
 ## Traduzioni
 
-* [Tedesco](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
-* [Francese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
-* [Spagnolo](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
-* [Portoghese - Brasiliano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
-* [Coreano](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Giapponese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
-* [Russo](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
-* [Inglese](https://github.com/rwldrn/idiomatic.js)
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
+* [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
+* [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
+* [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
+* [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
+* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
+* [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
+* [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
+* [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
+* [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
+* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## Cose importanti, non idiomatiche:
 
-### Strumenti per la qualità del codice, Risorse e Guide
+### Strumenti per la qualità del codice, risorse e guide
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) per [Sonar](http://www.sonarsource.org/)
+ * [Plato](https://github.com/jsoverson/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
+ * [Editorconfig](http://editorconfig.org/)
 
 ### Impara
 
 ### [ECMAScript 5.1 con Annotazioni](http://es5.github.com/)
 ### [Specifiche Linguaggio EcmaScript, edizione 5.1](http://ecma-international.org/ecma-262/5.1/)
 
-I seguenti dovrebbero essere considerati come 1) incompleti e 2) *UNA LETTURA RICHIESTA*. Non sempre sono d'accordo con lo stile scritto dagli autori qui sotto, ma una cosa è certa: sono consistenti. Quindi, sono autorità per questo linguaggio.
+I seguenti dovrebbero essere considerati come 1) incompleti e 2) *LETTURE NECESSARIE*. Non sempre sono d'accordo con lo stile scritto dagli autori qui sotto, ma una cosa è certa: sono consistenti. Quindi, sono da considerare delle autorità per questo linguaggio.
 
  * [Baseline For Front End Developers](http://rmurphey.com/blog/2012/04/12/a-baseline-for-front-end-developers/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -75,21 +97,20 @@ I seguenti dovrebbero essere considerati come 1) incompleti e 2) *UNA LETTURA RI
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
- * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
- 
- 
- 
+
+
+
 
 ### Processo di costruzione e distribuzione
 
-I progetti dovrebbero sempre cercare di includere qualche mezzo generico per il quale il sorgente possa essere validato (linted), testato e compresso in preparazione per l'uso in ambiente di produzione. Per questo lavoro, [grunt](https://github.com/cowboy/grunt) di Ben Alman non è secondo a nessuno e ha ufficialmente rimpiazzato la directory "kits/" di questo repo.
+Ogni progetto dovrebbe sempre cercare di fornire un qualche strumento generico, per mezzo del quale i sorgenti possano venire validati, testati e compressi per il successivo utilizzo in ambiente di produzione. Per questo lavoro, [grunt](https://github.com/gruntjs/grunt) di Ben Alman non è secondo a nessuno e ha ufficialmente rimpiazzato la directory "kits/" di questo repo.
 
 
 
 
-### Processo di test
+### Processo di testing
 
-I progetti _devono_ includere una qualche sorta di unità, guida o implementazione di test oppure un test funzionale. Le dimostrazioni di casi d'uso NON SI QUALIFICANO come "test". La seguente è una lista di framework per il testing, nessuno dei quali è preferito rispetto all'altro.
+I progetti _devono_ includere una qualche sorta di unità, guida o implementazione di test oppure un test funzionale. Dimostrazioni di casi d'uso NON SONO QUALIFICATI come "test". La seguente è una lista di framework per il testing, nessuno dei quali è preferito rispetto all'altro.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -98,17 +119,18 @@ I progetti _devono_ includere una qualche sorta di unità, guida o implementazio
  * [Hiro](http://hirojs.com/)
  * [JsTestDriver](https://code.google.com/p/js-test-driver/)
  * [Buster.js](http://busterjs.org/)
+ * [Sinon.js](http://sinonjs.org/)
 
 ## Tavola dei contenuti
 
  * [Spazio vuoto](#whitespace)
  * [Bella sintassi](#spacing)
  * [Controllo dei tipi (offerto dalle linee guida della jQuery Core Style)](#type)
- * [Valutazione condizionale](#cond)
+ * [Esecuzione condizionale](#cond)
  * [Stile pratico](#practical)
  * [Nomenclatura](#naming)
  * [Varie](#misc)
- * [Oggetti nativi e ospiti](#native)
+ * [Oggetti nativi e ospite](#native)
  * [Commenti](#comments)
  * [Un codice di linguaggio](#language)
 
@@ -119,7 +141,7 @@ I progetti _devono_ includere una qualche sorta di unità, guida o implementazio
 
 ## Prefazione
 
-Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo moderno di JavaScript, e non sono intese per essere obbligatorie. Il concetto più importante è la **legge sulla consistenza dello stile del codice**. Qualsiasi stile scegliate per i vostri progetti dovrebbe essere considerato legge. Potete mettere un link a questo documento come espressione di impegno alla consistenza, leggibilità e manutenibilità del codice del vostro progetto.
+Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno sviluppo di JavaScript, e non sono intese per essere obbligatorie. Il concetto più importante è la **legge sulla consistenza dello stile nel codice**. Qualsiasi stile scegliate per i vostri progetti dovrebbe essere considerato legge. Potete mettere un link a questo documento come espressione di impegno alla consistenza, leggibilità e manutenibilità del codice del vostro progetto.
 
 
 
@@ -130,13 +152,14 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 1. <a name="whitespace">Spazio vuoto</a>
   - Mai mischiare spazi e tabulazioni.
-  - Quando iniziate un progetto, prima di scrivere qualsiasi codice, scegliete tra indentazione soft (spazi) o tabulazioni reali, considerate questo **legge**.
-      - Per la leggibilità, raccomando sempre di impostare la dimensione di indentamento del proprio editor a due caratteri &mdash; questo significa, due spazi o due spazi rappresentanti una tabulazione reale.
+  - Quando iniziate un progetto, prima di cominciare a scrivere il codice, scegliete tra indentazione soft (spazi) o tabulazioni reali, e considerate questa scelta **legge**.
+      - Per la leggibilità, raccomando sempre di impostare la dimensione dei rientri del proprio editor a due caratteri &mdash; questo significa, due spazi o due spazi rappresentanti una tabulazione reale.
   - Se il vostro editor lo supporta, lavorate sempre con l'impostazione "mostra caratteri invisibili" attiva. I benefici di questa pratica sono:
       - Rafforzata consistenza
       - Eliminazione di spazi vuoti alla fine delle linee
       - Eliminazione di linee vuote
       - Commit e diff più facili da leggere
+  - Usate [Editorconfig](http://editorconfig.org/) quando possibile. Supporta la maggior parte degli IDE e gestisce la maggior parte delle impostazioni per gli spazi vuoti.
 
 
 2. <a name="spacing">Bella sintassi</a>
@@ -145,8 +168,8 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     ```javascript
 
-    // if/else/for/while/try hanno sempre spazi, parentesi graffe e sono suddivisi su 
-    // più linee questo incoragga la leggibilità
+    // if/else/for/while/try hanno sempre spazi, parentesi graffe e sono suddivisi su
+    // più linee, questo incoragga la leggibilità
 
     // 2.A.1.1
     // Esempi di sintassi veramente illeggibile
@@ -161,11 +184,11 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // 2.A.1.1
     // Uso degli spazi vuoti per incrementare la leggibilità
 
-    if ( condition ) {
+    if ( condizione ) {
       // istruzioni
     }
 
-    while ( condition ) {
+    while ( condizione ) {
       // istruzioni
     }
 
@@ -206,7 +229,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     ```
 
 
-    B. Assegnazioni, dichiarazioni, funzioni ( nominata, espressione, costruttore )
+    B. Assegnazioni, dichiarazioni, funzioni ( non anonima, espressione, costruttore )
 
     ```javascript
 
@@ -222,7 +245,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 
     // 2.B.1.2
-    // L'utilizzo di solo una `var` per scope (funzione) incrementa la leggibilità
+    // L'utilizzo di una sola `var` per scope (funzione) incrementa la leggibilità
     // e mantiene la tua lista di dichiarazioni ordinata (inoltre riduce il numero di digitazioni)
 
     // Sbagliato
@@ -242,13 +265,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     quux;
 
     // 2.B.1.3
-    // le dichiarazioni var dovrebbero sempre essere all'inizio del rispettivo scope (funzione).
+    // le dichiarazioni var dovrebbero sempre risiedere all'inizio del rispettivo scope (funzione).
     // Lo stesso vale per const e let di ECMAScript 6.
 
     // Sbagliato
     function foo() {
 
-      // del codice qui
+      // alcune istruzioni qui
 
       var bar = "",
         qux;
@@ -261,12 +284,33 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
       // tutto il codice dopo le dichiarazioni delle variabili.
     }
+
+    // 2.B.1.4
+    // const e let, da ECMAScript 6, dovrebbero essere posizionate all'inizio del loro scope (blocco).
+
+    // Sbagliato
+    function foo() {
+        let foo,
+        bar;
+        if ( condition ) {
+            bar = "";
+            // istruzioni
+        }
+    }
+    // Corretto
+    function foo() {
+        let foo;
+        if ( condition ) {
+            let bar = "";
+            // istruzioni
+        }
+    }
     ```
 
     ```javascript
 
     // 2.B.2.1
-    // Dichiarazione di funzione nominata
+    // Dichiarazione di funzione non anonima
     function foo( arg1, argN ) {
 
     }
@@ -276,7 +320,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 
     // 2.B.2.2
-    // Dichiarazione di funzione nominata
+    // Dichiarazione di funzione non anonima
     function square( number ) {
       return number * number;
     }
@@ -284,32 +328,32 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // Utilizzo
     square( 10 );
 
-    // Stile di prosecuzione nel passaggio piuttosto artificioso
+    // Stile forzato di passaggio dei parametri a cascata
     function square( number, callback ) {
       callback( number * number );
     }
 
     square( 10, function( square ) {
-      // codice di callback
+      // istruzioni di callback
     });
 
 
     // 2.B.2.3
     // Funzione espressione
     var square = function( number ) {
-      // Ritorna qualcosa di valutabile e rilevante
+      // Ritorna qualcosa di importante e rilevante
       return number * number;
     };
 
     // Funzione espressione con identificatore
-    // Questa forma preferita ha il valore aggiunto di essere in grado
-    // di chiamare sé stessa ed ha un'identità nelle tracce dello stack:
+    // Questa è la variante preferita, ha il valore aggiunto di essere in grado
+    // di richiamare sé stessa ed ha un'identità nelle tracce dello stack:
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
       }
 
-      return number * factorial( number-1 );
+      return number * factorial( number - 1 );
     };
 
 
@@ -324,7 +368,8 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
-    // { a: "alpha "}
+    // { a: "alpha" }
+
     ```
 
 
@@ -335,7 +380,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // 2.C.1.1
     // Funzioni con callback
     foo(function() {
-      // Nota che non c'è spazio aggiuntivo tra la prima parentesi
+      // Nota che non ci sono spazi tra la prima parentesi
       // della funzione chiamata in esecuzione e la parola "function"
     });
 
@@ -349,7 +394,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
       b: "beta"
     });
 
-    // Singolo argomento literal stringa, nessuno spazio
+    // Singolo argomento stringa, nessuno spazio
     foo("bar");
 
     // Parentesi interne di raggruppamento, nessuno spazio
@@ -361,42 +406,42 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     D. La consistenza vince sempre
 
-    Nelle sezioni 2.A-2.C, le regole per lo spazio vuoto vengono stabilite come raccomandazione con uno scopo semplice ed importante: la consistenza.
+    Nelle sezioni da 2.A a 2.C, le regole per lo spazio vuoto vengono stabilite come raccomandazione per un motivo semplice ed importante: la consistenza.
     &Egrave; importante notare che le preferenze di formattazione, come lo "spazio vuoto interno" dovrebbero essere considerate opzionali, ma solo uno stile dovrebbe esistere per l'intero sorgente del vostro progetto.
 
     ```javascript
 
     // 2.D.1.1
 
-    if (condition) {
-      // dichiarazioni
+    if (condizione) {
+      // istruzioni
     }
 
-    while (condition) {
-      // dichiarazioni
+    while (condizione) {
+      // istruzioni
     }
 
     for (var i = 0; i < 100; i++) {
-      // dichiarazioni
+      // istruzioni
     }
 
     if (true) {
-      // dichiarazioni
+      // istruzioni
     } else {
-      // dichiarazioni
+      // istruzioni
     }
 
     ```
 
     E. Apici
 
-    Sia che preferiate singoli o doppi apici non importa, non c'è differenza di gestione da parte di JavaScript. Ciò che **DEVE ASSOLUTAMENTE** essere mantenuta è la consistenza. **Mai mischiare gli apici nello stesso progetto. Scegliete uno stile e proseguite con esso.**
+    Che preferiate singoli o doppi apici non importa, non c'è differenza di gestione da parte di JavaScript. Ciò che **DEVE ASSOLUTAMENTE** essere mantenuta è la consistenza. **Mai mischiare gli apici nello stesso progetto. Scegliete uno stile e proseguite con esso.**
 
     F. Fine delle linee e linee vuote
 
     Lo spazio vuoto può complicare le diff e rendere le modifiche impossibili da leggere. Considerate di implementare un hook di pre-commit che rimuova automaticamente lo spazio vuoto alla fine delle linee e gli spazi vuoti nelle linee vuote.
 
-3. <a name="type">Controllo dei tipi (offerto dalle linee guida della jQuery Core Style)</a>
+3. <a name="type">Controllo di tipo (offerto dalle linee guida della jQuery Core Style)</a>
 
     A. Tipi attuali
 
@@ -416,7 +461,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
         typeof variable === "object"
 
-    Matrice:
+    Array:
 
         Array.isArray( arrayLikeObject )
         (dove possibile)
@@ -451,9 +496,9 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     B. Tipi forzati
 
-    Considerate le implicazioni del seguente...
+    Considerate le implicazioni di ciò che segue...
 
-    Dato questo HTML:
+    Dato questo codice HTML:
 
     ```html
 
@@ -462,11 +507,11 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     ```
 
 
-    ```js
+    ```javascript
 
     // 3.B.1.1
 
-    // `foo` è stato dichiarato con il valore '0' ed il suo tipo è `number`
+    // `foo` è stato dichiarato di valore `0` ed il suo tipo è `number`
     var foo = 0;
 
     // typeof foo;
@@ -481,13 +526,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // Se testaste `typeof foo` adesso, il risultato sarebbe `string`
     // Ciò significa che se aveste del codice che testa `foo` in questo modo:
 
-    if ( foo === 1) {
+    if ( foo === 1 ) {
 
       importantTask();
 
     }
 
-    // `importantTask()` non verrebbe mai eseguito, anche se `foo` avesse valore di "1"
+    // `importantTask()` non verrebbe mai eseguito, anche se `foo` fosse di valore "1"
 
 
     // 3.B.1.2
@@ -495,9 +540,9 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // Potete prevenire questi problemi usando la forzatura intelligente con gli operatori unari + o -:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ l'operatore + unario convertirà il suo operando a destra in un numero
+    //    ^ l'operatore + unario convertirà il suo operando destro in un numero
 
-    // typeof foo
+    // typeof foo;
     // "number"
 
     if ( foo === 1 ) {
@@ -595,7 +640,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     !!~array.indexOf("d");
     // false
 
-    // Notate che i summenzionati dovrebbero essere considerati "inutilmente chiari"
+    // Tenete presente che i summenzionati esempi dovrebbero essere considerati come "eccessivamente chiari"
     // &Egrave; da preferire il più ovvio approccio di comparazione del valore ritornato
     // da indexOf, cioè:
 
@@ -605,7 +650,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     ```
 
     ```javascript
-    // 3.B.2.3
+    // 3.B.2.4
 
 
     var num = 2.5;
@@ -620,7 +665,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     num >>> 0;
 
-    // Tutti danno risultato di 2
+    // Tutti danno come risultato 2
 
 
     // Comunque ricordate che i numeri negativi verranno trattati differentemente...
@@ -635,8 +680,8 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     neg >> 0;
 
-    // Tutti danno risultato di -2
-    // Sebbene...
+    // Tutti danno come risultato -2
+    // Ma...
 
     neg >>> 0
 
@@ -649,57 +694,57 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 
 
-4. <a name="cond">Valutazione condizionale</a>
+4. <a name="cond">Esecuzione condizionale</a>
 
     ```javascript
 
     // 4.1.1
-    // Quando si deve solo valutare che un array abbia elementi,
+    // Quando si deve solo stabilire se un array ha una dimensione,
     // invece di questo:
     if ( array.length > 0 ) ...
 
-    // ...valutatene lo stato di verità, in questo modo:
+    // ...verificate la verità condizionale, in questo modo:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // Quando si deve solo valutare che un array è vuoto,
+    // Quando si deve solo stabilire che un array è vuoto,
     // invece di questo:
     if ( array.length === 0 ) ...
 
-    // ...valutatene lo stato di verità, in questo modo:
+    // ...verificate la verità condizionale, in questo modo:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // Quando si deve solo valutare che una stringa non è vuota,
+    // Quando si deve solo stabilire che una stringa non è vuota,
     // invece di questo:
     if ( string !== "" ) ...
 
-    // ...valutatene lo stato di verità, in questo modo:
+    // ...verificate la verità condizionale, in questo modo:
     if ( string ) ...
 
 
     // 4.1.4
-    // Quando si deve solo valutare che una stringa _è_ vuota,
+    // Quando si deve solo stabilire che una stringa _è_ vuota,
     // invece di questo:
     if ( string === "" ) ...
 
-    // ...valutatene lo stato di verità, in questo modo:
+    // ...verificate la verità condizionale, in questo modo:
     if ( !string ) ...
 
 
     // 4.1.5
-    // Quando si deve solo valutare che un riferimento è vero,
+    // Quando si deve solo stabilire che un riferimento è vero,
     // invece di questo:
     if ( foo === true ) ...
 
-    // ...valutatelo per il suo significato, avvantaggiatevi con le funzionalità proprie del linguaggio:
+    // ...verificatelo per il suo significato, avvantaggiatevi delle funzionalità proprie del linguaggio:
     if ( foo ) ...
 
 
     // 4.1.6
-    // Quando si deve solo valutare che un riferimento è falso,
+    // Quando si deve solo stabilire che un riferimento è falso,
     // invece di questo:
     if ( foo === false ) ...
 
@@ -712,7 +757,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 
     // 4.1.7
-    // Quando si deve solo testare che un riferimento potrebbe essere null o undefined,
+    // Quando si deve solo stabilire che un riferimento potrebbe essere null o undefined,
     // ma NON falso, "" o 0, invece di questo:
     if ( foo === null || foo === undefined ) ...
 
@@ -724,15 +769,14 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     null == undefined
 
     ```
-
     Valutate SEMPRE per il risultato migliore e più accurato - quella sopra è una linea guida, non un dogma.
 
     ```javascript
 
     // 4.2.1
-    // Forzatura di tipo e note di valutazione
+    // Note sulla forzatura di tipo e sulla valutazione
 
-    // Preferite `===` a `==` (a meno che il caso non richieda una valutazione non tipizzata)
+    // Preferite `===` a `==` (a meno che il caso non richieda una valutazione di tipo meno restrittiva)
 
     // === non forza il tipo, ciò significa che:
 
@@ -773,7 +817,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
         var data = "secret";
 
         return {
-          // Qualche proprietà booleana
+          // Proprietà booleana
           bool: true,
           // Un valore stringa
           string: "a string",
@@ -794,12 +838,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
         };
       })();
 
-      // Altre cose posso accadere qui
+      // Altre istruzioni
 
       // esponiamo il nostro modulo all'oggetto globale
       global.Module = Module;
 
     })( this );
+
     ```
 
     ```javascript
@@ -807,7 +852,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     // 5.2.1
     // Un costruttore pratico
 
-    (function( global ) ) {
+    (function( global ) {
 
       function Ctor( foo ) {
 
@@ -823,7 +868,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
       Ctor.prototype.setFoo = function( val ) {
         return ( this.foo = val );
       };
-      
+
 
       // Per richiamare il costruttore senza `new`, potreste fare così:
       var ctor = function( foo ) {
@@ -835,20 +880,23 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
       global.ctor = ctor;
 
     })( this );
+
     ```
+
 
 
 6. <a name="naming">Nomenclatura</a>
 
 
-    A. Voi non siete dei compilatori/compressori umani di codice, perciò non provate ad esserlo.
+
+    A. Non siete un compilatore/compressore umano di codice, quindi non cercate di esserlo.
 
     Il seguente codice è un esempio di tremenda nomenclatura:
 
     ```javascript
 
     // 6.A.1.1
-    // Esempio di codice con nomi per niente chiari
+    // Esempio di codice con nomi per nulla chiari
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -875,12 +923,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
       matches = query("#foo"),
       length = matches.length;
 
-    for( ; idx < length; idx++ ){
+    for( ; idx < length; idx++ ) {
       elements.push( matches[ idx ] );
     }
+
     ```
 
-    A. Alcune ulteriori considerazioni:
+    Alcune ulteriori considerazioni:
 
     ```javascript
 
@@ -927,82 +976,83 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     ```
 
     B. La varie faccie di `this`
-    
-    Oltre i generalmente ben conosciuti casi d'uso di `call` e `apply`, preferite sempre `.bind( this )` o una funzione equivalente, per la creazione di definizioni `BoundFunction` che dovranno successivamente essere invocate. Ricorrete all'aliasing solo quando non ci sono altre opzioni preferibili.
-    
+
+    Oltre ai generalmente ben conosciuti casi d'uso di `call` e `apply`, preferite sempre `.bind( this )` o una funzione equivalente, per la creazione di definizioni `BoundFunction` che dovranno successivamente essere invocate. Ricorrete all'aliasing solo quando non ci sono altre opzioni disponibili.
+
     ```javascript
-    
+
     // 6.B.1
     function Device( opts ) {
-    
+
       this.value = null;
-      
-      // apre uno stream asincrono,
+
+      // apre uno flusso asincrono,
       // questo verrà richiamato continuamente
       stream.read( opts.path, function( data ) {
-      
+
         // Aggiorna il valore corrente di questa istanza
-        // con il più recente valore recuperato dallo
-        // stream di dati
-        
-      }.bind( this );
-      
+        // con il più recente valore recuperato dal
+        // flusso di dati
+        this.value = data;
+
+      }.bind(this) );
+
       // Regola la frequenza degli eventi emessi da
       // questa istanza di Device
       setInterval(function() {
-        
+
         // Emette un evento regolato
         this.emit("event");
-        
-      }.bind( this ), opts.freq || 100 );
+
+      }.bind(this), opts.freq || 100 );
     }
-    
+
     // Fate finta che abbiamo ereditato EventEmitter ;)
-    
+
     ```
-    
+
     Quando non disponibile, funzioni equivalenti a `.bind` esistono in molte librerie JavaScript moderne.
-    
-    
+
+
     ```javascript
     // 6.B.2
-    
+
     // es. lodash/underscore, _.bind()
     function Device( opts ) {
-    
+
       this.value = null;
-      
+
       stream.read( opts.path, _.bind(function( data ) {
-      
+
         this.value = data;
-        
+
       }, this) );
-      
+
       setInterval(_.bind(function() {
-      
+
         this.emit("event");
-        
+
       }, this), opts.freq || 100 );
     }
-    
+
     // es. jQuery.proxy
     function Device( opts ) {
-    
+
       this.value = null;
-      
+
       stream.read( opts.path, jQuery.proxy(function( data ) {
-      
+
         this.value = data;
-        
+
       }, this) );
-      
+
       setInterval( jQuery.proxy(function() {
-      
+
         this.emit("event");
-        
+
       }, this), opts.freq || 100 );
     }
-    
+
     // es. dojo.hitch
     function Device( opts ) {
 
@@ -1020,13 +1070,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
       }), opts.freq || 100 );
     }
-    
+
     ```
-    
+
     Come ultima risorsa, create un alias a `this` usando `self` come identificatore. Con questo approccio è estremamente facile generare bug e dovrebbe essere evitato ogni volta che è possibile.
-      
+
     ```javascript
-      
+
     // 6.B.3
 
     function Device( opts ) {
@@ -1051,15 +1101,15 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 
     C. Uso di `thisArg`
-    
-    Diversi metodi prototipo interni a ES 5.1 forniscono una speciale firma `thisArg`, che dovrebbe essere usata tutte le volte che è possibile
-    
+
+    Diversi metodi di istanza delle funzioni interni di ES 5.1 forniscono una speciale firma `thisArg`, che dovrebbe essere usata tutte le volte che è possibile
+
     ```javascript
-    
+
     // 6.C.1
-    
+
     var obj;
-    
+
     obj = { f: "foo", b: "bar", q: "qux" };
 
     Object.keys( obj ).forEach(function( key ) {
@@ -1078,15 +1128,15 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     ```
 
-    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.filter`
-    
+    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+
 7. <a name="misc">Varie</a>
 
-    Questa sezione servirà ad illustrare idee e concetti che non dovrebbero essere considerati un dogma, ma che invece esistono per incoraggiare pratiche di analisi nel tentativo di ricercare le migliori modalità per fare lavori di programmazione JavaScript comuni.
+    Questa sezione servirà ad illustrare idee e concetti che non dovrebbero essere considerati un dogma, ma che invece esistono per incoraggiare pratiche di analisi nel tentativo di ricercare le migliori modalità per eseguire attività comuni di programmazione JavaScript.
 
     A. L'utilizzo di `switch` dovrebbe essere evitato, il metodo moderno di analisi metterà nella lista nera le funzioni con istruzioni switch
 
-    Sembra che ci sia un drastico miglioramento nell'esecuzione di istruzioni `switch` nelle ultime release di Firefox e Chrome.
+    Sembra che ci siano drastici miglioramenti nell'esecuzione di istruzioni `switch` nelle ultime release di Firefox e Chrome.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
     Visibili miglioramenti vengono riportati anche qui:
@@ -1110,57 +1160,86 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
     }
 
     // 7.A.1.2
-    // Un migliore approccio sarebbe quello di usare un oggetto o anche un modulo:
+    // Un approccio alternativo che supporta componibilità e riusabilità è di
+    // usare un oggetto come magazzino dei "casi" ed una funzione per delegare:
 
-    var switchObj = {
+    var cases, delegator;
+
+    // I return sono solo a titolo esplicativo.
+    cases = {
       alpha: function() {
         // istruzioni
-        // termina e ritorna
+        // un return
+        return [ "Alpha", arguments.length ];
       },
       beta: function() {
         // istruzioni
-        // termina e ritorna       
+        // un return
+        return [ "Beta", arguments.length ];
       },
       _default: function() {
         // istruzioni
-        // termina e ritorna     
+        // un return
+        return [ "Default", arguments.length ]
       }
     };
 
-    var switchModule = (function () {
-      return {
-        alpha: function() {
-          // istruzioni
-          // termina e ritorna
-        },
-        beta: function() {
-          // istruzioni
-          // termina e ritorna       
-        },
-        _default: function() {
-          // istruzioni
-          // termina e ritorna     
-        }
-      };
-    })();
+    delegator = function() {
+      var args, key, delegate;
 
+      // Trasforma la lista degli argomenti in un array
+      args = [].slice.call( arguments );
+
+      // Estrae la chiave del caso dagli argomenti
+      key = args.shift();
+
+      // Assegna il gestore del caso di default
+      delegate = cases._default;
+
+      // Risale al metodo al quale delegare l'esecuzione
+      if ( cases.hasOwnProperties( key ) ) {
+        delegate = cases[ key ];
+      }
+
+      // L'argomento dello scope può essere impostato a qualcosa di specifico,
+      // in questo caso, |null| sarà sufficiente
+      return delegate.apply( null, args );
+    };
 
     // 7.A.1.3
-    // Se `foo` è una proprietà di `switchObj` o `switchModule`, lo si esegue come un metodo...
+    // Per funzionare prendiamo la API di 7.A.1.2:
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchObj[ foo ] || switchObj._default )( args );
+    delegator( "alpha", 1, 2, 3, 4, 5 );
+    // [ "Alpha", 5 ]
 
-    ( Object.hasOwnProperty.call( switchObj, foo ) && switchModule[ foo ] || switchModule._default )( args );
+    // Ovviamente, l'argomento chiave `case` può facilmente essere basato
+    // su qualche altra condizione arbitraria.
 
-    // Se conoscete e vi fidate del valore di `foo`, potete anche omettere il controllo OR
-    // lasciando solo l'esecuzione:
+    var caseKey, someUserInput;
 
-    switchObj[ foo ]( args );
+    // Qualche possibile tipo di input da un form?
+    someUserInput = 9;
 
-    switchModule[ foo ]( args );
+    if ( someUserInput > 10 ) {
+      caseKey = "alpha";
+    } else {
+      caseKey = "beta";
+    }
 
+    // oppure...
 
-    // Questo pattern promuove anche la riusabilità del codice.
+    caseKey = someUserInput > 10 ? "alpha" : "beta";
+
+    // E quindi...
+
+    delegator( caseKey, someUserInput );
+    // [ "Beta", 1 ]
+
+    // E ovviamente...
+
+    delegator();
+    // [ "Default", 0 ]
+
 
     ```
 
@@ -1196,7 +1275,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
 8. <a name="native">Oggetti nativi e ospite</a>
 
-    Il principio base è:
+    Il principio base qui è:
 
     ### Non fare cose stupide e tutto andrà per il meglio.
 
@@ -1204,17 +1283,15 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 
     #### “Everything is Permitted: Extending Built-ins” di Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
 
 
 9. <a name="comments">Commenti</a>
 
-  * Linea singola sopra il codice a cui ci si riferisce
-  * Multilinea va bene
-  * Commenti a fine linea sono proibiti!
-  * Lo stile JSDoc va bene, ma richiede un significante investimento di tempo
+  #### Linea singola sopra il codice a cui ci si riferisce
+  #### Multilinea va bene
+  #### Commenti a fine linea sono proibiti!
+  #### Lo stile JSDoc va bene, ma richiede un significante investimento di tempo
 
 
 10. <a name="language">Un codice di linguaggio</a>
@@ -1226,3 +1303,10 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per lo sviluppo
 ### Comma First.
 
 Qualsiasi progetto che citi questo documento come sua guida base di stile non accetterà la formattazione comma first del codice, a meno che non sia esplicitamente specificato dall'autore del progetto.
+
+
+
+----------
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron and Contributors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
