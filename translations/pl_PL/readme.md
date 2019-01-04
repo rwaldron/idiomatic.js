@@ -1265,8 +1265,6 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
     https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
