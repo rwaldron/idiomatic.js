@@ -1284,7 +1284,7 @@ Nguyên tắc cơ bản:
 
 #### “Everything is Permitted: Extending Built-ins” (Tất cả đều cho phép: Mở rộng thành phần dựng sẵn) viết bởi Andrew Dupont (JSConf2011, Portland, Oregon)
 
-http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Chú thích</a>
