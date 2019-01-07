@@ -1266,7 +1266,7 @@
 
     #### Andrew Dupontによる“Everything is Permitted: Extending Built-ins”（JSConf2011、ポートランド、オレゴン州）
 
-    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">コメント</a>

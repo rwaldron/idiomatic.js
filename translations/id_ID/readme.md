@@ -1300,7 +1300,7 @@ Bagian berikut menguraikan panduan gaya _reasonable_ untuk pengembangan JavaScri
 
     #### “Semuanya yang Diizinkan: Memperluas Built-in” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Komentar</a>
