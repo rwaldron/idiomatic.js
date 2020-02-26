@@ -35,7 +35,8 @@
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)  
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 * Fesuy [github](https://github.com/fesuydev)  
-* Stephane Moreau [github](https://github.com/stmoreau)  
+* Stephane Moreau [github](https://github.com/stmoreau)
+* Denis Efremov [github](https://github.com/Piterden)
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
