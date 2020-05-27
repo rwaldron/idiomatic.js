@@ -74,8 +74,6 @@
 
 ## Важни, Не-Идиоматични Неща:
 
-### Code Quality Tools, Resources & References
-
 ### Инструменти за Качество на Кода, Ресурси & Референции
 
  * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
@@ -112,9 +110,9 @@
 
 Проектите винаги трябва да включат някои общи средства, чрез които източникът да бъде свързан, тестван и компресиран при подготовка за производствена употреба. За тази задача, [grunt](https://github.com/gruntjs/grunt) на Бен Алман е най-добрата от всички официални заместители на папката "kits/" в това хранилище.
 
-### Test Facility
+### Тестова база
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+Проектите трябва да включват някаква форма на единица, референция, имплементация или фунционално тестване. Демострационни случаи на употреба НЕ СЕ КВАЛИФИЦИРАТ като "тестове". По-долу има списък със тестови рамки, нито една от които не е одобрена повече от другата.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -127,7 +125,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Tape](https://github.com/substack/tape)
  * [Jest](https://facebook.github.io/jest/)
 
-## Table of Contents
+## Съдържание
 
  * [Whitespace](#whitespace)
  * [Beautiful Syntax](#spacing)
@@ -145,21 +143,17 @@ Projects _must_ include some form of unit, reference, implementation or function
 ------------------------------------------------
 
 
-## Preface
+## Предговор
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
+Следващите раздели посочват едно разумно ръководство на стил за съвременна разработка на JavaScript и не е предназначен за норматив. Най-важната част е **закона за постоянност на стила на кода**. Каквото и да изберете като стил за вашия проект, трябва да се счита за закон. Използвайте този документ като напътствие на вашето отдаване към проекта ви за консистентност на стила на кода, четимост и поддържане. 
 
-
-
-
-
-## Idiomatic Style Manifesto
+## Манифест на идиоматичния стил
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
+1. <a name="whitespace">Празно пространство</a>
+  - Никога не смесвайте спейсове и табове.
+  - Когато започнете един проект, преди да почнете да пишете какъвто и да е код, изберете между меки отсъпи (интервали) или реални табулации, считайте го за **закон**
+      - За четимост, винаги препоръчвам да зададете размера на отстъпа на вашия редактор на два знака &mdash; което означава два интервала или два интервала, представляващи истинска табулация.
   - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
       - Enforced consistency
       - Eliminating end of line whitespace
