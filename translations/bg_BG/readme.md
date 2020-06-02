@@ -154,25 +154,26 @@
   - Никога не смесвайте спейсове и табове.
   - Когато започнете един проект, преди да почнете да пишете какъвто и да е код, изберете между меки отсъпи (интервали) или реални табулации, считайте го за **закон**
       - За четимост, винаги препоръчвам да зададете размера на отстъпа на вашия редактор на два знака &mdash; което означава два интервала или два интервала, представляващи истинска табулация.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
-  - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
+  - Винаги работете с включена настройка "покажи скрити", ако редактора ви я поддържа. Предимствата на тази практика са:
+      - Усилена консистенция
+      - Премахване на интервал в края на реда
+      - Премахване на празни редове
+      - Комитите и разликите в кода само по-лесни за четене
+  - Използвайте [Editorconfig](http://editorconfig.org/) когато е възможно. Поддържа повечето IDEs и обработва повечето настройки за празно пространство.
 
-
-2. <a name="spacing">Beautiful Syntax</a>
+2. <a name="spacing">Красив синтаксис</a>
 
     A. Parens, Braces, Linebreaks
+    А. Скоби, Фигурни Скоби, Пренасяне на редовете
 
     ```javascript
 
     // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/try винаги имат интервали между тях, къдравите скоби и разделението между секциите са на множество редове
+    // това подобрява четимостта
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Примери за наистина нечетлив синтаксис
 
     if(condition) doSomething();
 
@@ -182,137 +183,136 @@
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Използвайте интервали за да повишите четимостта
 
     if ( condition ) {
-      // statements
+      // изрази
     }
 
     while ( condition ) {
-      // statements
+      // изрази
     }
 
     for ( var i = 0; i < 100; i++ ) {
-      // statements
+      // изрази
     }
 
-    // Even better:
+    // Още по-добре:
 
     var i,
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
-      // statements
+      // изрази
     }
 
-    // Or...
+    // Или...
 
     var i = 0,
       length = 100;
 
     for ( ; i < length; i++ ) {
-      // statements
+      // изрази
     }
 
     var prop;
 
     for ( prop in object ) {
-      // statements
+      // изрази
     }
 
 
     if ( true ) {
-      // statements
+      // изрази
     } else {
-      // statements
+      // изрази
     }
     ```
 
 
     B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
-
+    B. Прислояване, Декларации, Функции ( Именувани, Изрази, Конструктори)
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Променливи
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Литерална нотация:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) or one `var` for each variable,
-    // promotes readability and keeps your declaration list free of clutter.
-    // Using one `var` per variable you can take more control of your versions
-    // and makes it easier to reorder the lines.
-    // One `var` per scope makes it easier to detect undeclared variables
-    // that may become implied globals.
-    // Choose better for your project and never mix them.
+    // Използването на само един `var` на всеки обхват (функция) или по един `var` на всяка променлива,
+    // повишава четимостта и пази вашия списък на декларации от безредие.
+    // Използването по един `var` на всяка променлива можете да котролирате по-добре версиите 
+    // и освен това улеснява разместването на редовете.
+    // Един `var` на всеки обхват улеснява намирането на недекларирани променливи,
+    // които могат да станат подразбиращи се глобални.
+    // Изберете по-добри подход за вашия проект и никога не го смесвайте
 
-    // Bad
+    // Лош пример
     var foo = "",
       bar = "";
     var qux;
 
-    // Good
+    // Добър пример
     var foo = "";
     var bar = "";
     var qux;
 
-    // or..
+    // или..
     var foo = "",
       bar = "",
       qux;
 
-    // or..
-    var // Comment on these
+    // или..
+    var // Коментар на тези
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
+    // Операторите 'var' винаги трябва да са в началото на техния съответен обxват (функция).
 
-
-    // Bad
+    // Лош пример
     function foo() {
 
-      // some statements here
+      // някакви изрази
 
       var bar = "",
         qux;
     }
 
-    // Good
+    // Добър пример
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // всички изрази след декларацията на променливите
     }
 
     // 2.B.1.4
-    // const and let, from ECMAScript 6, should likewise be at the top of their scope (block).
+    // 'const' и `let`, от ECMAScript 6, също трябва да са в горната част на тегния обхват (блоков).
 
-    // Bad
+    // Лош пример
     function foo() {
       let foo,
         bar;
       if ( condition ) {
         bar = "";
-        // statements
+        // изрази
       }
     }
-    // Good
+    // Добър пример
     function foo() {
       let foo;
       if ( condition ) {
         let bar = "";
-        // statements
+        // изрази
       }
     }
     ```
