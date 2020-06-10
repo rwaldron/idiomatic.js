@@ -229,8 +229,6 @@
     }
     ```
 
-
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
     B. Прислояване, Декларации, Функции ( Именувани, Изрази, Конструктори)
     ```javascript
 
@@ -320,44 +318,44 @@
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // Деклариране на именувана функция
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Използване 
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // Деклариране на именувана функция
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Използване
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Много измислен стил на преминаване на параметри
     function square( number, callback ) {
       callback( number * number );
     }
 
     square( 10, function( square ) {
-      // callback statements
+      // повикани изрази
     });
 
 
     // 2.B.2.3
-    // Function Expression
+    // Функция-Израз
     var square = function( number ) {
-      // Return something valuable and relevant
+      // Върнете нещо важно и релевантно
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Функция-Израз с Идентификатор
+    // Тази предпочитана форма има добавената стойност
+    // и името му ще бъде видимо в стека на функционалните обаждания:
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -368,13 +366,13 @@
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Деклариране на Конструктор
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Използване
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -388,10 +386,10 @@
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Функции с обратно извикване
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Забележете, че няма интервали между първата скоба
+      // на изпълненото фунционално извикване и думата "function"
     });
 
     // Function accepting an array, no space
