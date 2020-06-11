@@ -392,66 +392,67 @@
       // на изпълненото фунционално извикване и думата "function"
     });
 
-    // Function accepting an array, no space
+    // Функция приемаща масив като параметър, без интервал
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Функция приемаща обект като параметър, без интервал
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Единичен низ като параметър, също без интервал
     foo("bar");
 
-    // Expression parens, no space
+    // Вътрешни скоби, също без интервал
     if ( !("foo" in obj) ) {
       obj = (obj.bar || defaults).baz;
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Консистентността винаги побеждава
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    В секции 2.A-2.C, правилата за интервали са изложени като препоръка с по-проста и по-извисена цел: консистентност.
+    Важно е да се отбележи, че предпочитанията за форматиране, такива като "вътрешно пространстро", трябва да се считат за незадължителни, но само един стил трябва да съществува из целия код на вашия проект.
 
     ```javascript
 
     // 2.D.1.1
 
     if (condition) {
-      // statements
+      // изрази
     }
 
     while (condition) {
-      // statements
+      // изрази
     }
 
     for (var i = 0; i < 100; i++) {
-      // statements
+      // изрази
     }
 
     if (true) {
-      // statements
+      // изрази
     } else {
-      // statements
+      // изрази
     }
 
     ```
 
-    E. Quotes
+    E. Кавички
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Независимо от това дали предпочитате единични или двойни кавички, няма разлика в това как JavaScript ги парсва. Това което **АБСОЛЮТНО ТРЯБВА** да се наложи е консистентност. **Никога не смесвайте кавичките в един и същи проект. Изберете един стил и се придържайте към него.**
 
-    F. End of Lines and Empty Lines
+    F. Край на Редовете и Празни Редове
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Пространствата могат да развалят разликите да направят промените невъзможни за четене. Помислете да включите "pre-commit" кука, която да премахне автоматично пространството на края на реда и празните пространства на редовете.
+
 
 3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
 
-    A. Actual Types
+    A. Типове
 
     String:
 
@@ -488,25 +489,25 @@
 
     undefined:
 
-      Global Variables:
+      Глобални променливи:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Локални променливи:
 
         variable === undefined
 
-      Properties:
+      Свойства:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+    B. Прехвърляне на Типове
 
-    Consider the implications of the following...
+    Представете си следното...
 
-    Given this HTML:
+    Даден ви е следния HTML:
 
     ```html
 
@@ -519,36 +520,34 @@
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` е деклариран със стойност `0` и неговия тип е `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Някъде по-късно във вашия код, трябва да обновите `foo`
+    // с ново стойност взета от елемента 'input'
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
-
+    // Ако сега тествате 'typeof foo`, резултатът ще бъде 'string' 
+    // Това означава, че ако имате локига която тества 'foo' като тази:
     if ( foo === 1 ) {
 
       importantTask();
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
-
+    // `importantTask()` няма никога да бъде достигнат дори и `foo` да има стойност "1"
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Можете да избегнете проблеми като използвате умно конрвертиране в унарните оператори + и -:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ унарния + ще преобразува десния си операнд в тип 'number'
 
     // typeof foo;
     // "number"
@@ -559,7 +558,7 @@
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` ще бъде извикана
     ```
 
     Here are some common cases along with coercions:
@@ -648,9 +647,9 @@
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // Забележете, че горните примери може да се считат за "ненужно умни"
+    // За предпочитане е очевидния подход да сравнявате върнатата стойност на
+    // indexOf, по този начин:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -665,7 +664,7 @@
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // е съшото като ...
 
     ~~num;
 
@@ -676,24 +675,24 @@
     // All result in 2
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // Помнете, че отрицателните числа ще бъдат обработени различно ...
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // е същото като...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Всичко са равни на -2
+    // Въпреки че при...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // Резултата ще е 4294967294
 
 
 
@@ -702,61 +701,62 @@
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Условна Проверка</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Проверете дали масивът има дължина,
+    // вместо:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...проверявайте за истина, по този начин:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Проверете дали масива е празен,
+    // вместо:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...проверявайте за вярност, по този начин:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Проверете дали низа не е празен,
+    // вместо:
+
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...проверявайте за вярност, по този начин:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Проверете дали низа _е_ празен,
+    // вместо:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...проверявайте дали израдът е неверен, по този начин:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Проверете дали тази референция е вярна,
+    // вместо:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...проверявайте, възползвайки се от вградените възможности:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Проверете дали тази референция е невярна,
+    // вместо:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...проверете, използвайки отрицание
     if ( !foo ) ...
 
     // ...Be careful, this will also match: 0, "", null, undefined, NaN
