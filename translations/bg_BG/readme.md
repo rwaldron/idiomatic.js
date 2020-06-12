@@ -818,7 +818,7 @@
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Практичен модул
 
     (function( global ) {
       var Module = (function() {
@@ -826,30 +826,30 @@
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Логическо свойство
           bool: true,
-          // Some string value
+          // Стойност от тип низ
           string: "a string",
-          // An array property
+          // Свойство - масив
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Свойство - обект
           object: {
-            lang: "en-Us"
+            lang: "bg-BG"
           },
           getData: function() {
-            // get the current value of `data`
+            // вземете текущата стойност на променливата `data`
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // присвоете стойността на `data` и я върнете
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Други декларации
 
-      // expose our module to the global object
+      // добавамя нашия модъл към глобалния обект
       global.Module = Module;
 
     })( this );
@@ -859,7 +859,7 @@
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Практичен Конструктор
 
     (function( global ) {
 
@@ -879,13 +879,13 @@
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // За да извикате конструктора без `new`, можете да направите това:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // добави нашия конструктор към глобалния обект
       global.ctor = ctor;
 
     })( this );
