@@ -759,60 +759,61 @@
     // ...проверете, използвайки отрицание
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Внимавайте, това важи и за: 0, "", null, undefined, NaN
+    // Ако _трябва_ да тествате за булево невярно, тогава използвайте
+    
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Когато проверявате дали null или undefined, но НЕ false, "" или 0,
+    // вместо това:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ...използвайте оператора ==:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Помнете, че използвайки оператора == с `null` важи И ЗА ДВЕТЕ `null` и `undefined`
+    // но не `false '," "или 0
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    Винаги проверявайте за най-добрия и точен резултат - горното е ръководство, не догма.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Преобразуване на типове и бележки за проверяване
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // За предпочитане е да използвате `===` вместо `==` (освен ако конкретния случай не изисква слабо типизирана оценка)
 
-    // === does not coerce type, which means that:
+    // === проверява и типа, т.е.:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == не проверява типа, т.е.:
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Booleans, Truthies & Falsies
+    // Логически изрази, Вярни & Невярни
 
-    // Booleans:
+    //  Логически изрази:
     true, false
 
-    // Truthy:
+    // Вярни:
     "foo", 1
 
-    // Falsy:
+    // Невярни:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Стил на Практика</a>
 
     ```javascript
 
