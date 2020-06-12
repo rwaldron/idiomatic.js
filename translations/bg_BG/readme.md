@@ -894,18 +894,18 @@
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">Наименуване</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Вие не сте човешки компилатор/компресор на код, затова не се опитвайте да бъдете такъв.
 
-    The following code is an example of egregious naming:
+    Последващия код е пример за лошо именуване:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Пример за код с лоши имена
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -914,14 +914,14 @@
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+    Без съмнение сте писали код като този - дано това приключи днес.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
-
+    Сега същото парче логика, но с по-добро, по-смислено именуване (и четима структура):
+    
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Пример на кода с подобрени имена
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -938,42 +938,41 @@
 
     ```
 
-    A few additional naming pointers:
+    Още няколко съвета за именуване на променливи::
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Именуване на низове
 
     `dog` is a string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Именуване на масиви
 
     `dogs` is an array of `dog` strings
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Именуване на фукнции, обекти, инстанции, и т.н.
 
     camelCase; function and var declarations
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
-
+    // Именуване на конструктори, прототипи и т.н.
     PascalCase; constructor function
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Именуване на регулярни изрази
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // Из Ръководство по стила Google Closure Library
 
     functionNamesLikeThis;
     variableNamesLikeThis;
@@ -984,10 +983,10 @@
 
     ```
 
-    B. Faces of `this`
+    B. Лица на `this`
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
-
+    Извън общоизвестните случаи на `call` и `apply`, винаги избирайте `.bind( this )` или фунционалния му еквивалент, за създаване на дефиниция `BoundFunction` за по-късно извикване. Създаването на псевдоним е в краян случай, ако други решения не са подходящи.
+    
     ```javascript
 
     // 6.B.1
@@ -995,38 +994,40 @@
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // Отворете асинхронен поток,
+      // това ще се извиква продължително
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // Обновете текущата стойност на инстанцията
+        // с последната стойност от
+        // потока на данни
         this.value = data;
 
       }.bind(this) );
 
       // Throttle the frequency of events emitted from
       // this Device instance
+      // Ограничете честотата на събитията изпратени от
+      // инстанцията на Device
       setInterval(function() {
 
-        // Emit a throttled event
+        // Изпращане на събитие
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // Просто се преструвайте, че сме наследили EventEmitter ;)
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Когато не е достъпен фукнционалния еквивалент на `.bind` съществува в много модерни JavaScript библиотеки.
 
 
     ```javascript
     // 6.B.2
 
-    // eg. lodash/underscore, _.bind()
+    // например lodash/underscore, _.bind()
     function Device( opts ) {
 
       this.value = null;
@@ -1044,7 +1045,7 @@
       }, this), opts.freq || 100 );
     }
 
-    // eg. jQuery.proxy
+    // например jQuery.proxy
     function Device( opts ) {
 
       this.value = null;
@@ -1062,7 +1063,7 @@
       }, this), opts.freq || 100 );
     }
 
-    // eg. dojo.hitch
+    // например dojo.hitch
     function Device( opts ) {
 
       this.value = null;
@@ -1082,7 +1083,7 @@
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    В краен случай, създайте алиас на `this` използвайки `self` като идентификатор. Това е изключително податливо на грешки и трябва да се избягва, когато е възможно.
 
     ```javascript
 
@@ -1109,9 +1110,9 @@
     ```
 
 
-    C. Use `thisArg`
+    C. Използване на `thisArg`
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    Няколко прототипни метода вградени в ES 5.1 идват със специалния `thisArg`, който трябва да се използва когато е възможно
 
     ```javascript
 
@@ -1123,13 +1124,13 @@
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| сочи към `obj`
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- последния аргумент е `thisArg`
 
-    // Prints...
+    // Ще изпечата...
 
     // "foo"
     // "bar"
@@ -1137,7 +1138,7 @@
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` може да се използва `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Misc</a>
 
