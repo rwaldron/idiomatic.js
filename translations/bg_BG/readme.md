@@ -1221,7 +1221,6 @@
 
     // Разбира се, ключовият аргумент на `случая` може да се основава лесно
     // при някакво друго произволно условие.
-    
     var caseKey, someUserInput;
 
     // Вероятно някакво поле на форма?
@@ -1280,36 +1279,36 @@
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">"Родни" и "Чужди" обекти</a>
 
     The basic principle here is:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Не правете глупости и всичко ще бъде наред.
 
-    To reinforce this concept, please watch the following presentation:
+    За да подсилите тази концепция, моля гледайте последващата презентация:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Everything is Permitted: Extending Built-ins” от Andrew Dupont (JSConf2011, Портланд, Орегон)
 
     https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
-9. <a name="comments">Comments</a>
+9. <a name="comments">Коментари</a>
 
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+    #### Едноредов коментар над кода, за който е предназначен
+    #### Многоредови коментари също са добре дошли
+    #### Коментарите в края на реда са забранени!
+    #### Стила JSDoc е добър, но изисква да се инвестира значително време
 
-
-10. <a name="language">One Language Code</a>
+10. <a name="language">Код на Един Език </a>
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    Програмите трябва да бъдат написани на един език, независимо какъв е той, както се изисква от хората, които поддържат кода.
 
-## Appendix
+## Приложение
 
-### Comma First.
+### Първа Запетая.
 
-Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
+Всеки проект, който се отнася до този документ като основно ръководство за стил, няма да приеме форматирането на кода "първа запетая", освен ако авторът на проекта конкретно не посочи това.
 
 
 
