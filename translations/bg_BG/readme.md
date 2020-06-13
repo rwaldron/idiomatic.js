@@ -1005,8 +1005,6 @@
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
       // Ограничете честотата на събитията изпратени от
       // инстанцията на Device
       setInterval(function() {
@@ -1140,22 +1138,22 @@
 
     `thisArg` може да се използва `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Разни</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Този раздел ще служи за илюстриране на идеи и концепции, които не трябва да се считат за догма, вместо това съществува за да даде под съмнение практиките в опит да се намери по-добри начини за изпълнение, често срещани JavaScript задачи.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. Използването на `switch` трябва да се избягва, тъй като съвременния метод за отстраняване на грешки ще скрие повикванията на функции, които го използват.
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    Изглежда че последните версии на браузърите Firefox и Chrome имат значителни подобрения в работата на функциите, които използват `switch`.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnessed here as well:
+    Забележими подобрения могат да се забележат също и тук:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Пример на оператора switch
 
     switch( foo ) {
       case "alpha":
@@ -1165,31 +1163,31 @@
         beta();
         break;
       default:
-        // something to default to
+        // код по подразбиране
         break;
     }
 
     // 7.A.1.2
-    // A alternate approach that supports composability and reusability is to
-    // use an object to store "cases" and a function to delegate:
 
+    // Алтернативен подход, който подкрепя използваемостта и повторната употреба е да
+    // се използва обект за съхранение на "случаи" и функция за делегация
     var cases, delegator;
 
-    // Example returns for illustration only.
+    // Примерът връща само с илюстративни цели.
     cases = {
       alpha: function() {
-        // statements
-        // a return
+        // изрази
+        // връщане
         return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // statements
-        // a return
+      // изрази
+        // връщане
         return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // statements
-        // a return
+        // изрази
+        // връщане
         return [ "Default", arguments.length ];
       }
     };
@@ -1197,37 +1195,36 @@
     delegator = function() {
       var args, key, delegate;
 
-      // Transform arguments list into an array
+      // Трансформиране на списъка с аргументите в масив
       args = [].slice.call( arguments );
 
-      // shift the case key from the arguments
+      // Променяне на ключа на случая от аргументите
       key = args.shift();
 
-      // Assign the default case handler
+      // Определяне на ключа по подразбиране
       delegate = cases._default;
 
-      // Derive the method to delegate operation to
+      // Извличане на метода за да делегиране на операция
       if ( cases.hasOwnProperty( key ) ) {
         delegate = cases[ key ];
       }
 
-      // The scope arg could be set to something specific,
-      // in this case, |null| will suffice
+      // Обхватния аргумент може да бъде зададен към нещо специфични,
+      // в този случай, |null| ще бъде достатъчно
       return delegate.apply( null, args );
     };
 
     // 7.A.1.3
-    // Put the API in 7.A.1.2 to work:
-
+    // Сложете Апито в 7.A.1.2 да работи:
     delegator( "alpha", 1, 2, 3, 4, 5 );
     // [ "Alpha", 5 ]
 
-    // Of course, the `case` key argument could easily be based
-    // on some other arbitrary condition.
-
+    // Разбира се, ключовият аргумент на `случая` може да се основава лесно
+    // при някакво друго произволно условие.
+    
     var caseKey, someUserInput;
 
-    // Possibly some kind of form input?
+    // Вероятно някакво поле на форма?
     someUserInput = 9;
 
     if ( someUserInput > 10 ) {
@@ -1236,16 +1233,16 @@
       caseKey = "beta";
     }
 
-    // or...
+    // или...
 
     caseKey = someUserInput > 10 ? "alpha" : "beta";
 
-    // And then...
+    // И тогава...
 
     delegator( caseKey, someUserInput );
     // [ "Beta", 1 ]
 
-    // And of course...
+    // И разбира се...
 
     delegator();
     // [ "Default", 0 ]
@@ -1253,12 +1250,12 @@
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. Ранните връщания подобряват четимостта на кода с незначителна разлика в производителността
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Лош пример:
     function returnLate( foo ) {
       var ret;
 
@@ -1270,7 +1267,7 @@
       return ret;
     }
 
-    // Good:
+    // Добър пример:
 
     function returnEarly( foo ) {
 
