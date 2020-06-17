@@ -26,7 +26,8 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
-* Stephane Moreau [github](https://github.com/stmoreau)  
+* Stephane Moreau [github](https://github.com/stmoreau) 
+* Boris Nekezov [github](https://github.com/boris-nekezov)   
 
 
 ## Tot codul dintr-o aplicație trebuie să arate ca și cum ar fi fost scris de o singură persoană, indiferent de câți oameni au contribuit la scrierea lui.
@@ -48,6 +49,7 @@
 ## Traduceri
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
