@@ -26,6 +26,7 @@
 * Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## Код в любом проекте должен выглядеть так, будто его писал один человек, неважно как много людей работали над ним. ***
@@ -57,21 +58,26 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 ## Важное, не идиоматическое
 
 ### Качество кода: онлайн сервисы, ресурсы и ссылки
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) для [Sonar](http://www.sonarsource.org/)
+ * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [Plato](https://github.com/es-analysis/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
+ * [Codepen](http://codepen.io/)
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [eslint](http://eslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
+ * [jscodesniffer](https://www.npmjs.org/package/jscodesniffer)
  * [Editorconfig](http://editorconfig.org/)
-
-[Использование инструментов по улучшению качества кода от Антона Ковалева](http://anton.kovalyov.net/slides/gothamjs/)
+ * [Hound](https://houndci.com/)
 
 ### Становись умнее
 
@@ -1203,7 +1209,7 @@
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Комментарии</a>

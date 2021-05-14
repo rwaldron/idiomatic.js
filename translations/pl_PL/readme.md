@@ -33,6 +33,7 @@
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Wojciech Adaszyński [github](https://github.com/wojciechAdaszynski)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## Cały kod w projekcie powinien wyglądać jakby pisała go jedna osoba, bez względu na to ile osób pracowało przy nim.
@@ -66,6 +67,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## Ważne, nieidiomatyczne rzeczy:
@@ -142,7 +144,7 @@ Projekty _muszą_ zawierać w jakiejkolwiek postaci testy: jednostkowe, funkcjon
 
 ## Przedmowa
 
-Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesny kod w języku JavaScript. Najważniejszą z nich jest **nakaz spójności kodu**. Niezależnie od obranego stylu w projekcie, pownien on być przestrzegany przez przystkich programistów. 
+Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesny kod w języku JavaScript. Najważniejszą z nich jest **nakaz spójności kodu**. Niezależnie od obranego stylu w projekcie, pownien on być przestrzegany przez przystkich programistów.
 
 
 
@@ -159,7 +161,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
       - Wymusić spójność
       - Uniknąć białych znaków na końcu linii
       - Uniknąć białych znaków w pustych liniach
-      - Wymusić czytelność Commitów i diffów 
+      - Wymusić czytelność Commitów i diffów
   - Używaj [Editorconfig](http://editorconfig.org/) jeżeli tylko jest to możliwe.  Wspiera on większość środowisk programistycznych oraz załatwia większość problemów związanych z białymi znakami.
 
 
@@ -169,7 +171,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
 
     ```javascript
 
-    // if/else/for/while/try zawsze występują ze spacją oraz nawiasami klamrowymi. Rozpinją się zawsze na kilka linii. 
+    // if/else/for/while/try zawsze występują ze spacją oraz nawiasami klamrowymi. Rozpinją się zawsze na kilka linii.
     // Zwiększa to czytelność.
 
     // 2.A.1.1
@@ -311,7 +313,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
     ```javascript
 
     // 2.B.2.1
-    // Deklaracje funkcji (Named Functions Declarations) 
+    // Deklaracje funkcji (Named Functions Declarations)
     function foo( arg1, argN ) {
 
     }
@@ -321,7 +323,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
 
 
     // 2.B.2.2
-    // Deklaracje funkcji (Named Functions Declarations) 
+    // Deklaracje funkcji (Named Functions Declarations)
     function square( number ) {
       return number * number;
     }
@@ -346,9 +348,9 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
       return number * number;
     };
 
-    // Wyrażenia funkcyjne z identyfikatorem 
+    // Wyrażenia funkcyjne z identyfikatorem
     // Jest to preferowana forma deklaracji wyrażeń funkcyjnych.
-    // Umożliwia ona wołanie samej siebie oraz posiada identyfikator na Stack Trace 
+    // Umożliwia ona wołanie samej siebie oraz posiada identyfikator na Stack Trace
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -408,7 +410,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
     D. Spójność jest najważniejsza
 
     W rozdziałach 2.A-2.C zasady dotyczące białych znaków służą jako wskazówki do utrzymania spójnego kodu.
-    Najważniejszym wnioskiem idącym z tego poradnika jest to, aby niezależnie od obranych preferencji(np. spacje wewnątrz ciała funkcji) utrymywane one były w całym projekcie. 
+    Najważniejszym wnioskiem idącym z tego poradnika jest to, aby niezależnie od obranych preferencji(np. spacje wewnątrz ciała funkcji) utrymywane one były w całym projekcie.
 
     ```javascript
 
@@ -639,7 +641,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
     !!~array.indexOf("d");
     // false
 
-    // Ostatnie przykłady mogą okazać się w póżniejszych etapach 
+    // Ostatnie przykłady mogą okazać się w póżniejszych etapach
     //prac nad projektem uciążliwe.
     // Polecanym zapisem powyższego przykładu jest:
 
@@ -751,7 +753,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
     if ( !foo ) ...
 
     // ...wyrażenie to jednak będzie prawdziwe również dla wartości: 0, null, undefined, NaN, ""
-    // jeżeli chcesz sprawdzić czy wyrażenie jest rzeczywiście fałszem: 
+    // jeżeli chcesz sprawdzić czy wyrażenie jest rzeczywiście fałszem:
     if ( foo === false ) ...
 
 
@@ -989,7 +991,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
       stream.read( opts.path, function( data ) {
 
         // Zaktualizuj wartość this dla funkcji
-        // zaktualizowaną wartościa ze strumienia 
+        // zaktualizowaną wartościa ze strumienia
         this.value = data;
 
       }.bind(this) );
@@ -1128,7 +1130,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
 
     This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
 
-    Ten rozdział opisuje metody, które nie powinne być traktowane jako żelazne zasady, lecz jako style które programista w miarę swoich preferencji może przyjąć lub nie. Jest to również próba zachęcenia do znajdowania lepszych sposobów realizacji bardzo często spotykanych problemów w kodzie JavaScript. 
+    Ten rozdział opisuje metody, które nie powinne być traktowane jako żelazne zasady, lecz jako style które programista w miarę swoich preferencji może przyjąć lub nie. Jest to również próba zachęcenia do znajdowania lepszych sposobów realizacji bardzo często spotykanych problemów w kodzie JavaScript.
 
     A. Używanie instrukcji `switch` powinno być ograniczone do minimum. Śledzenie wywołań funkcji w kodzie może ignorować te wywołane ze `switch`.
 
@@ -1263,9 +1265,7 @@ Poniższe rozdziały są jedynie sugestią jak pisać _rozsądny_ oraz nowoczesn
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Komentarze</a>

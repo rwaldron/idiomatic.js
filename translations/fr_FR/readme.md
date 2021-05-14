@@ -1,4 +1,4 @@
-# Principe d'écriture d'un code Javascript cohérent et idiomatique
+# Principes d'écriture d'un code JavaScript cohérent et idiomatique
 
 ## Il s'agit d'un document vivant, les nouvelles idées pour améliorer le code autour de nous sont toujours les bienvenues. Pour contribuer : "fork", "clone", "branch", "commit", "push", "pull request".
 
@@ -25,6 +25,7 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 ## Tout code, peu importe les bases sur lesquelles il est établi, devrait ressembler au code tapé par une seule personne, peu importe le nombre de personnes ayant contribué.
@@ -50,6 +51,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 ## Important, aspect non idiomatique :
 
@@ -431,7 +433,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	JavaScript est un langage typé dynamiquement - ce qui peut être votre meilleur ami comme votre pire ennemi : respectez donc les 'types', en appliquant les règles ci-dessus.
 
 
-	3.B Coercion de type
+	3.B Conversion de type
 
 	Considérons les implications de ce qui suit...
 
@@ -455,7 +457,8 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// "number"
 	...
 
-	// Quelque part plus loin dans votre code, vous devez mettre à jour `foo`
+	// Quelque part plus loin dans votre code, vous devez mettre 
+	jour `foo`
 	// avec une nouvelle valeur issue de l'élément 'input'
 
 	foo = document.getElementById("foo-input").value;
@@ -473,7 +476,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	// 3.B.1.2
 
-	// Vous pouvez vous prémunir de ce problème en utilisant la coercion de type de l'opérateur unaire + ou - :
+	// Vous pouvez vous prémunir de ce problème en utilisant la conversion de type avec l'opérateur unaire + ou - :
 
 	foo = +document.getElementById("foo-input").value;
 	      ^ opérateur unaire + convertissant à sa droite l'opérande en "number"
@@ -490,7 +493,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// `important()` sera évalué
 	```
 
-	Voici quelques cas courants de coercion :
+	Voici quelques cas courants de conversion :
 
 
 	```javascript
@@ -641,7 +644,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === false ) ...
 
-	// ...utilisez la négation et la coercion de l'évaluation de la vérité :
+	// ...utilisez la négation et la conversion de l'évaluation de la vérité :
 	if ( !foo ) ...
 
 	// ...Soyez prudent, cela correspondra aux valeurs suivantes : 0, "", null, undefined, NaN
@@ -654,7 +657,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	// Plutôt que d'utiliser l'expression suivante :
 	if ( foo === null || foo === undefined ) ...
 
-	// ...bénéficiez de la coercion de type ==, comme suit :
+	// ...bénéficiez de la conversion de type ==, comme suit :
 	if ( foo == null ) ...
 
 	// Souvenez-vous, utiliser == vérifiera une égalité avec `null` et `null` & `undefined`
@@ -667,16 +670,16 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 	```javascript
 
 	// 4.2.1
-	// Coercion de Type coercion et remarques
+	// Conversion de type et remarques
 
 	Preferez `===` à la place de `==` (à moins que le cas de test ne requiert la perte d'évaluation de type)
 
-	=== n'effectue pas de coercion de type, ce qui signifie que :
+	=== n'effectue pas de conversion de type, ce qui signifie que :
 
 	"1" === 1;
 	// faux
 
-	== effectue la coercion de type, ce qui signifie que :
+	== effectue la conversion de type, ce qui signifie que :
 
 	"1" == 1;
 	// vrai
@@ -984,7 +987,7 @@ Les sections suivantes décrivent un guide de style _raisonable_ pour tout déve
 
 	#### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-	http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+	https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Commentaires</a>

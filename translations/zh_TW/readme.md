@@ -26,6 +26,7 @@
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 ## 不論有多少人在撰寫同一個程式庫，所有在此程式庫的程式看起來都是由一個人寫的。
 
@@ -59,9 +60,10 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [繁體中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_TW)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 ## 重要的、通用的資源：
-> 建議搭配英文版一同閱讀，有些程式專有名次翻譯成中文或許無法很好地表達出原意。
+> 建議搭配英文版一同閱讀，有些程式專有名詞翻譯成中文或許無法很好地表達出原意。
 
 ### 程式品質工具、資源與參考文獻
 
@@ -1230,9 +1232,7 @@
 
     #### “一切都被允许: 擴展內建的方法或物件..等” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">註解</a>

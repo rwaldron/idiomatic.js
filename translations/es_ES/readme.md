@@ -31,6 +31,7 @@
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 
@@ -64,6 +65,7 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## Cosas importantes, no relacionadas directamente con el JS idiomático:
@@ -970,7 +972,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para un desar
 
     ```
 
-B. Caras de `this`
+    B. Caras de `this`
 
     Mas allá de los generalmente bien conocidos casos de uso de `call` y `apply`, siempre preferir `.bind( this )` o equivalente, para crear definiciones de `BoundFunction` para invocar más tarde. Sólo recurrir a alias cuando no hay disponible una opción preferible.
 
@@ -1278,7 +1280,7 @@ B. Caras de `this`
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon) - recomendada!
 
-    http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+    [Andrew Dupont: Everything is Permitted: Extending Built-ins](https://www.youtube.com/watch?v=xL3xCO7CLNM)
 
 
 9. <a name="comments">Comentarios</a>

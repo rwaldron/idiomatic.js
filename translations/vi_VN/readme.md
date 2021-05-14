@@ -32,6 +32,7 @@
 * Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
 
 
 
@@ -66,6 +67,7 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Tiếng Việt](https://github.com/rwldrn/idiomatic.js/tree/master/translations/vi_VN)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
 
 
 ## Quan trọng, những thành phần không nhất quán
@@ -1282,7 +1284,7 @@ Nguyên tắc cơ bản:
 
 #### “Everything is Permitted: Extending Built-ins” (Tất cả đều cho phép: Mở rộng thành phần dựng sẵn) viết bởi Andrew Dupont (JSConf2011, Portland, Oregon)
 
-http://www.everytalk.tv/talks/441-JSConf-Everything-is-Permitted-Extending-Built-ins
+https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Chú thích</a>
