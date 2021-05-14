@@ -33,8 +33,8 @@
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Stephane Moreau [github](https://github.com/stmoreau)  
-* Boris Nekezov [github](https://github.com/boris-nekezov)  
-
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
 
 
 ## Tất cả code trong bộ mã nguồn nên nhìn giống như một người viết ra, cho dù có bao nhiêu người đóng góp.
@@ -70,7 +70,8 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Tiếng Việt](https://github.com/rwldrn/idiomatic.js/tree/master/translations/vi_VN)
-* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)   
 
 
 ## Quan trọng, những thành phần không nhất quán
