@@ -33,7 +33,7 @@
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)  
-
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
 
 
 ## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, sin importar cuánta gente haya contribuído.
@@ -69,6 +69,7 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI) 
 
 
 ## Cosas importantes, no relacionadas directamente con el JS idiomático:
