@@ -76,7 +76,7 @@
 
 ### Code Quality Tools, Resources & References
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [SonarQube](https://www.sonarqube.org/)
  * [Plato](https://github.com/es-analysis/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
