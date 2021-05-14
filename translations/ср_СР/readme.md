@@ -25,6 +25,7 @@
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
 * Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)  
 
 
 ## Сав код у било којој "бази кода" требало би да изгледа као да га је написала једна особа, без обзира колико је људи допринело његовом креирању.
@@ -46,6 +47,7 @@
 ## Преводи
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)

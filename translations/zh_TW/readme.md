@@ -27,6 +27,7 @@
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
 * Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)  
 
 ## 不論有多少人在撰寫同一個程式庫，所有在此程式庫的程式看起來都是由一個人寫的。
 
@@ -47,6 +48,7 @@
 ## 多語言翻譯
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)

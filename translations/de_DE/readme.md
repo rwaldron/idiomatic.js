@@ -26,6 +26,7 @@
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)  
 
 
 ## Code sollte grundsätzlich so aussehen, als wäre er von einer einzigen Person geschrieben worden, völlig egal, wie viele letztlich daran gearbeitet haben.
@@ -40,6 +41,7 @@
 ## Übersetzungen
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)

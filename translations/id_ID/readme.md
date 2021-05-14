@@ -36,6 +36,7 @@
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 * Fesuy [github](https://github.com/fesuydev)  
 * Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)  
 
 
 ## Semua kode dalam kode-base akan terlihat seperti satu orang mengetik itu, tidak peduli berapa banyak orang memberikan kontribusi.
@@ -56,6 +57,8 @@
 
 ## Translations
 
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)

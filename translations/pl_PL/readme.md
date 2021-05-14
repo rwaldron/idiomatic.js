@@ -34,6 +34,7 @@
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Wojciech Adaszyński [github](https://github.com/wojciechAdaszynski)
 * Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)  
 
 
 ## Cały kod w projekcie powinien wyglądać jakby pisała go jedna osoba, bez względu na to ile osób pracowało przy nim.
@@ -55,6 +56,7 @@
 ## Tłumaczenia
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
