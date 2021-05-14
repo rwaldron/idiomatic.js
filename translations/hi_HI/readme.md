@@ -38,6 +38,7 @@
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
 
+
 ## किसी भी कोड-बेस का कोड ऐसा दिखना चाहिए जैसे एक ही व्यक्ति ने मानो पूरा कोड लिखा हो, भले ही कितने लोगों का उसमें योगदान रहा हो |
 
 ### निम्नलिखित सूची उन तरीकों को रेखांकित करती है जो मैं अपने कोड मे प्रयोग करता हूँ, जिनका मैं वास्तविक लेखक हूँ ; मेरे द्वारा रचित प्रोजेक्ट्स में दिए गए योगदानों को इन दिशा निर्देशों का पालन करना चाहिए |
@@ -56,6 +57,7 @@
 
 ## अनुवाद
 
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
