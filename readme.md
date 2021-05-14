@@ -36,7 +36,7 @@
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 * Fesuy [github](https://github.com/fesuydev)  
 * Stephane Moreau [github](https://github.com/stmoreau)  
-
+* Tushar Rajput [github](https://github.com/tush-tr)  
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
 
@@ -143,6 +143,7 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Native & Host Objects](#native)
  * [Comments](#comments)
  * [One Language Code](#language)
+ * [Inline vs individual arrow functions](#arrowfunctions)
 
 
 
@@ -1317,6 +1318,41 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 10. <a name="language">One Language Code</a>
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+11. <a name="arrowfunctions">Two ways of writing arrow functions</a>
+
+    Right way to interact with DOM elements and discussing two ways of writing and handling functions.
+    ```javascript
+    // First we will see correct way of interacting with DOM elements--
+    // So first of all target all the DOM nodes you want to work with in the script and assign to a variable--
+    const letter = document.getElementById("letter");
+    const counter = document.querySelector(".shownumber");
+
+    // TODO: Take input from letter,get the length of input text and show output to counter
+    // First way to do this we will create a function that take the value of letter and show to the counter:
+    const show = ()=>{
+      let len = letter.value.length;
+      counter.innerHTML = len;
+    }
+
+    // TODO: Add event listener to show the values
+    letter.addEventListener("keypress",show,false);
+    ```
+    Now we'll see how we can do the same work with one line using arrow functions
+    ```javascript
+    // first of all target all the DOM nodes you want to work with in the script and assign to a variable--
+    const letter = document.getElementById("letter");
+    const counter = document.querySelector(".shownumber");
+
+    letter.addEventListener("keypress",()=>{
+    let len = letter.value.length;
+    console.log(len);
+    counter.innerHTML = len;
+    },false)
+
+
+    ```
+  
+
 
 ## Appendix
 
