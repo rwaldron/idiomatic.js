@@ -1322,6 +1322,101 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
 
+
+11. <a name="semicolons">Semicolons/ASI</a>
+
+    Be explicit and put semicolons where they need to be.  Don't let the interpreter guess where you mean to put semicolons.  It's good for browser compatibility and code maintenance.
+
+  * Use semicolons after the end of every simple statement
+  * Use semicolons after every assignment statement (even when assigning a function literal or object literal), except when listing out the variables (in which case only the last assignment ends with a semicolon)
+  * Use semicolons after 'return', 'throw', 'continue', or 'break' statements
+
+    A. Semicolons after simple statements
+
+    ```javascript
+
+    // 11.A.1.1
+    // An example with a simple statement
+    // Bad:
+    users.push('Bob')
+
+    // Good:
+    users.push('Bob');
+
+    ```
+
+    B. Semicolons after assignment statements
+
+    ```javascript
+
+    // 11.B.1.1
+    // An example with a list of var assignments, followed by a simple statement
+    // We end up trying to call a(someFunction());
+    // Bad:
+    var a = 3
+        b = a
+    (someFunction())
+
+    // Good:
+    var a = 3,
+        b = a;
+    (someFunction());
+
+
+    // 11.B.1.2
+    // An example with an assignment statement which assigns a function literal, followed by a self executing function
+    // We end up passing the second function as an argument to the first function and then trying to call the result of the first function call as a function.
+    // Bad:
+    var fn = function() { 
+      alert('hello'); 
+	  }
+	
+    (function () {
+      alert('world');
+    })();
+
+    // Good:
+    var fn = function() { 
+      alert('hello'); 
+	  };
+	
+    (function () {
+      alert('world');
+    })();
+
+
+    // 11.B.1.3
+    // An example with an assignment statement which assigns an object literal
+    // Bad:
+    var dictionary = { 
+      'short' : 'not long',
+      'long'  : 'not short'
+    }
+
+    // Good:
+    var dictionary = { 
+      'short' : 'not long',
+      'long'  : 'not short'
+    };
+
+    ```
+
+    C. Semicolons after 'return', 'throw', 'continue', or 'break' statements
+
+    ```javascript
+
+    // 11.C.1.1
+    // An example with a return statement returning undefined due to ASI
+    // Bad:
+    return
+    a + b;
+
+    // Good:
+    return (a + b);
+
+    ```
+
+
 ## Appendix
 
 ### Comma First.
