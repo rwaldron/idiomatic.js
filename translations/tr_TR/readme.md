@@ -96,7 +96,7 @@
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
-## Akıllı Ol
+## Alını Kullan
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
@@ -558,15 +558,15 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     }
 
-    // `foo`, "1" değerine sahip olsaydı bile `importantTask()` satırı asla çalışmazdı.
+    // `foo`, "1" (string) değerine sahip olsaydı bile `importantTask()` satırı asla çalışmazdı.
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Tekli + veya - operatörleriyle akıllı zorlama kullanarak sorunları önleyebilirsiniz:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ tekli + operatorü sağ taraftaki işleneni bir sayıya çevirecektir
 
     // typeof foo;
     // "number"
@@ -577,10 +577,10 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` çağırılır
     ```
 
-    Here are some common cases along with coercions:
+    İşte zorlamalarla birlikte bazı yaygın durumlar:
 
 
     ```javascript
@@ -666,9 +666,9 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // Yukarıdakilerin "gereksiz yere akıllıca" olarak kabul edilmesi gerektiğini unutmayın.
+    // indexOf'un döndürülen değerini karşılaştırmanın bariz yaklaşımını tercih edin
+    // örneğin:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -683,7 +683,7 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // aynı şekilde...
 
     ~~num;
 
@@ -691,27 +691,27 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     num >>> 0;
 
-    // All result in 2
+    // Hepsi 2 ile sonuçlanıyor
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // Ancak, negatif sayıların farklı şekilde ele alınacağını unutmayın....
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // aynı şekilde...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Hepsi -2 ile sonuçlanıyor
+    // Ancak...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // Bu 4294967294 ile sonuçlanacaktır
 
 
 
@@ -720,111 +720,111 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Koşullu Değerlendirme</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Yalnızca bir dizinin uzunluğu olduğunu değerlendirirken,
+    // bunun yerine:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...doğruluğunu değerlendir, böyle:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Yalnızca bir dizinin boş olduğunu değerlendirirken,
+    // bunun yerine:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...doğruluğunu değerlendir, böyle:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Yalnızca bir stringin boş olmadığını değerlendirirken,
+    // bunun yerine:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...doğruluğunu değerlendir, böyle:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Yalnızca bir stringin boş _olduğunu_ değerlendirirken,
+    // bunun yerine:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...doğruluğu değerlendir, böyle:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Yalnızca bir referansın doğru olduğunu değerlendirirken,
+    // bunun yerine:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...sorgulamak istediğiniz şekilde değerlendirin, build in'lerden yararlanın:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Bir referansın yanlış olduğunu değerlendirirken,
+    // bunun yerine:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...gerçek bir değerlendirmeyi zorlamak için olumsuzlamayı '!' kullanın
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Dikkatli olun, bu aynı zamanda 0, "", null, undefined, NaN ile de eşleşecektir.
+    // Bir boolean'ı false için test etmeniz _ZORUNLU_ysa, bunu kullanın:
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Yalnızca bir referansın false, "" veya 0 DEĞİL, null veya undefined olduğunu değerlendirirken,
+    // bunun yerine:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ..."==" operatöründen yararlanın, bunun gibi:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Unutmayın, "==" kullanmak `null`'u HEM `null` ile HEM DE `undefined` ile eşleştirecektir
+    // ama `false`, "" veya 0 ile değil
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    HER ZAMAN en iyi, en doğru sonuç için değerlendirin - yukarıdakiler bir dogma değil, bir kılavuzdur.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Yazım koşullama ve değerlendirme notları
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // `==` yerine `===` tercih edin (durum gevşek tip değerlendirmesi gerektirmedikçe)
 
-    // === does not coerce type, which means that:
+    // === değişken tiplerini kontrol eder, yani:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == değişken tiplerini kontrol etmez, yani
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Booleans, Truthies & Falsies
+    // Booleanlar, True & False
 
-    // Booleans:
+    // Booleanlar:
     true, false
 
-    // Truthy:
+    // True:
     "foo", 1
 
-    // Falsy:
+    // False:
     "", 0, null, undefined, NaN, void 0
 
     ```
