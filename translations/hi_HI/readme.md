@@ -36,7 +36,8 @@
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
 * Fesuy [github](https://github.com/fesuydev)  
 * Stephane Moreau [github](https://github.com/stmoreau)  
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
+* Coşkun Atak [@dimaetor](http://twitter.com/dimaetor), [github](https://github.com/Coskntkk) 
 
 
 ## किसी भी कोड-बेस का कोड ऐसा दिखना चाहिए जैसे एक ही व्यक्ति ने मानो पूरा कोड लिखा हो, भले ही कितने लोगों का उसमें योगदान रहा हो |
@@ -74,6 +75,7 @@
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
 * [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
+* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR) 
 
 ## महत्वपूर्ण, नॉन-इडीओमैटिक स्टफ:
 

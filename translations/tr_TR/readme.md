@@ -1,7 +1,7 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Tutarlı, Deyimsel JavaScript Yazma İlkeleri
 
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Bu yaşayan bir belgedir ve çevremizdeki kodları geliştirmek için yeni fikirler her zaman memnuniyetle karşılanır. Katkıda bulunun: fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -37,27 +37,26 @@
 * Fesuy [github](https://github.com/fesuydev)  
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
 * Coşkun Atak [@dimaetor](http://twitter.com/dimaetor), [github](https://github.com/Coskntkk) 
 
+## Herhangi bir kod tabanındaki tüm kodlar, kaç kişi katkıda bulunursa bulunsun, tek bir kişinin yazdığı gibi görünmelidir.
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+### Aşağıdaki liste, orijinal yazarı olduğum tüm kodlarda kullandığım uygulamaları özetlemektedir; yarattığım projelere katkılar bu yönergeleri takip etmelidir.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
-
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
+### Stil tercihlerimi başkalarının kodlarına veya projelerine dayatmak niyetinde değilim; eğer mevcut bir ortak tarz varsa, buna saygı gösterilmelidir.
 
 
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
+> ### "Tarz üzerindeki tartışmalar anlamsızdır. Bir stil rehberi olmalı ve onu takip etmelisin."
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
+> ### "Başarılı bir projenin iyi bir temsilcisi olmanın bir parçası da kendiniz için kod yazmanın Kötü Bir Fikir™ olduğunu anlamaktır. Binlerce kişi kodunuzu kullanıyorsa, kodunuzu spesifikasyon içinde nasıl akıllı olacağına dair kişisel tercihiniz değil, maksimum netlik için yazın."
 >_Idan_ _Gazit_
 
 
-## Translations
+## Çeviriler
 
 * [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
@@ -76,11 +75,11 @@
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
 * [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)
-* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR)
+* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR) 
 
-## Important, Non-Idiomatic Stuff:
+## Önemli, Deyimsel Olmayan Şeyler:
 
-### Code Quality Tools, Resources & References
+### Kaliteli Kod İçim Araçlar, Kaynaklar & Referanslar
 
  * [SonarQube](https://www.sonarqube.org/)
  * [Plato](https://github.com/es-analysis/plato)
@@ -97,12 +96,12 @@
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
-## Get Smart
+## Alını Kullan
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Aşağıdaki liste şu şekilde dikkate alınmalıdır: 1) tamamlanmamış, and 2) *OKUNMASI GEREKLİ*. Aşağıdaki yazarların üslubuna her zaman katılmıyorum, ancak kesin olan bir şey var: Tutarlılar. Ayrıca dil üzerinde otoriteler.
 
  * [Baseline For Front End Developers: 2015](https://rmurphey.com/posts/a-baseline-for-front-end-developers-2015/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -115,16 +114,16 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 
 
-### Build & Deployment Process
+### Hazırlanma ve Yayımlanma Süreci
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
+Projeler, üretim kullanımına hazırlanırken her zaman kaynağın astarlanabileceği, test edilebileceği ve sıkıştırılabileceği bazı genel araçları dahil etmeye çalışmalıdır. Bu görev için Ben Alman tarafından yazılan [grunt](https://github.com/gruntjs/grunt) rakipsizdir ve resmi olarak bu deponun "kits/" dizininin yerini almıştır.
 
 
-### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+
+### Test Bölümü
+
+Projeler bir tür birim, referans, uygulama veya işlevsel test _içermelidir_. Use case demos DO NOT QUALIFY as "tests". Aşağıda, hiçbiri diğerinden daha fazla desteklenmeyen frameworklerin bir listesi bulunmaktadır.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -137,58 +136,58 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Tape](https://github.com/substack/tape)
  * [Jest](https://facebook.github.io/jest/)
 
-## Table of Contents
+## İçindekiler
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Boşluk](#whitespace)
+ * [Güzel Syntax](#spacing)
+ * [Yazım Kontrolü (İncelikli jQuery Temel Stil Rehberleri)](#type)
+ * [Koşullu Değerlendirme](#cond)
+ * [Pratik Stil](#practical)
+ * [İsimlendirme](#naming)
+ * [Çeşitli](#misc)
+ * [Yerel ve Ana Nesneler](#native)
+ * [Yorumlar](#comments)
+ * [Tek Dil Kod](#language)
 
 
 
 ------------------------------------------------
 
 
-## Preface
+## Önsöz
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil kılavuzunun ana hatlarını vermektedir ve kuralcı olması amaçlanmamıştır. En önemli çıkarım, **kod stili tutarlılığı yasasıdır**. Projeniz için stil olarak ne seçerseniz seçin yasa olarak kabul edilmelidir. Projenizin kod stili tutarlılığı, okunabilirliği ve sürdürülebilirliği konusundaki kararlılığının bir ifadesi olarak bu belgeye bağlantı verin.
 
 
 
-## Idiomatic Style Manifesto
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
-  - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
+## Deyimsel Stil Manifestosu
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+1. <a name="whitespace">Boşluk</a>
+  - Asla boşluk ve tabları birlikte kullanmayın.
+  - Bir projeye başlarken, hiçbir kod yazmadan önce, yumuşak satırbaşları (boşluklar) veya gerçek tablar arasından bir seçim yapın, bunu **kanun** olarak kabul edin.
+      - Okunabilirlik için, Editörünüzün girinti boyutunu her zaman iki karakter &mdash; olarak ayarlamanızı öneririm. Bu, gerçek bir tabı temsil eden iki boşluk veya iki boşluk anlamına gelir.
+  - Eğer editörünüz destekliyorsa, her zaman "show invisibles / görünmezleri göster" ayarını açık tutun. Bu uygulamanın faydaları şunlardır:
+      - Zorunlu tutarlılık
+      - Satır sonu boşluklarını ortadan kaldırma
+      - Boş satır boşluklarını ortadan kaldırma
+      - Okuması daha kolay olan eklemeler ve farklılıklar
+  - Mümkün olduğunda [Düzenleyici yapılandırması](http://editorconfig.org/) kullanın.  It supports most IDEs and handles most whitespace settings.
 
-    A. Parens, Braces, Linebreaks
+
+2. <a name="spacing">Güzel Syntax</a>
+
+    A. Parantezler, Süslü Parantezler, Satır sonları
 
     ```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/try her zaman boşlukla, parantez kullanılarak ve birden çok satıra yayılarak yazılır.
+    // bu okunabilirliği artır
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Oldukça sıkışık syntax örnekkleri
 
     if(condition) doSomething();
 
@@ -198,137 +197,138 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Okunabilirliği artırmak için boşluk kullanın
 
     if ( condition ) {
-      // statements
+      // ifadeler
     }
 
     while ( condition ) {
-      // statements
+      // ifadeler
     }
 
     for ( var i = 0; i < 100; i++ ) {
-      // statements
+      // ifadeler
     }
 
-    // Even better:
+    // Hatta daha iyisi:
 
     var i,
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
-      // statements
+      // ifadeler
     }
 
-    // Or...
+    // Veya...
 
     var i = 0,
       length = 100;
 
     for ( ; i < length; i++ ) {
-      // statements
+      // ifadeler
     }
 
     var prop;
 
     for ( prop in object ) {
-      // statements
+      // ifadeler
     }
 
 
     if ( true ) {
-      // statements
+      // ifadeler
     } else {
-      // statements
+      // ifadeler
     }
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+    B. Atamalar, Deklerasyonlar, Fonksiyonlar ( İsimli, İfade, Constructor )
 
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Değişkenler
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Değişmez gösterimler:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) or one `var` for each variable,
-    // promotes readability and keeps your declaration list free of clutter.
-    // Using one `var` per variable you can take more control of your versions
-    // and makes it easier to reorder the lines.
-    // One `var` per scope makes it easier to detect undeclared variables
-    // that may become implied globals.
-    // Choose better for your project and never mix them.
+    // Tüm değişken grubu için tek bir `var` veya her bir değişken için bir `var` kullanmak
+    // okunabilirliği artırır ve tanımlamalarınızı dağınıklıktan korur.
+    // Her bir değişken için bir `var` kullanarak versiyonlarınız üzerinde daha fazla kontrol // //
+    // sahibi olabilirsiniz ve satırları düzenlemeniz daha kolay olur.
+    // Tüm değişken grubu için tek bir `var` kullanmak tanımlanmamış değişkenlerin tespit 
+    // edilmesini kolaylaştırır.
+    // Projeniz için daha iyi olanı seçin ve asla birlikte kullanmayın.
 
-    // Bad
+    // Kötü
     var foo = "",
       bar = "";
     var qux;
 
-    // Good
+    // İyi
     var foo = "";
     var bar = "";
     var qux;
 
-    // or..
+    // veya..
     var foo = "",
       bar = "",
       qux;
 
-    // or..
-    var // Comment on these
+    // veya..
+    var // İlgili yorumlar
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
+    // var ifadeleri her zaman bulundukları alanın (fonksiyon) en başında olmalıdır.
 
 
-    // Bad
+    // Kötü
     function foo() {
 
-      // some statements here
+      // bazı ifadeler
 
       var bar = "",
         qux;
     }
 
-    // Good
+    // İyi
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // tüm ifadeler değişkenlerin tanımlanmasından sonra
     }
 
     // 2.B.1.4
-    // const and let, from ECMAScript 6, should likewise be at the top of their scope (block).
+    // ECMAScript 6'daki const ve let aynı şekilde her zaman bulundukları alanın (fonksiyon) en 
+    // başında olmalıdır.
 
-    // Bad
+    // Kötü
     function foo() {
       let foo,
         bar;
       if ( condition ) {
         bar = "";
-        // statements
+        // ifadeler
       }
     }
-    // Good
+    // İyi
     function foo() {
       let foo;
       if ( condition ) {
         let bar = "";
-        // statements
+        // ifadeler
       }
     }
     ```
@@ -336,44 +336,44 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // İsimlendirilmiş Fonksiyonların Tanımlanması
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Kullanım
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // İsimlendirilmiş Fonksiyonların Tanımlanması
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Kullanım
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Aynı stilin iç içe devam ettirilmesi
     function square( number, callback ) {
       callback( number * number );
     }
 
     square( 10, function( square ) {
-      // callback statements
+      // callback ifadeleri
     });
 
 
     // 2.B.2.3
-    // Function Expression
+    // Fonksiyon Tanımlanması
     var square = function( number ) {
-      // Return something valuable and relevant
+      // Değerli ve alakalı bir şeyin döndürülmesi
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Identifier ile Fonksiyon Tanımlanması
+    // Burada tercih edilen form, kendisini çağırabilmek ve bir değişken ismine sahip
+    // olma gibi ek değerlere sahiptir.
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -384,13 +384,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Constructor Tanımlanması
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Kullanım
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -399,77 +399,77 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Exceptions, Slight Deviations
+    C. İstisnalar, Küçük Farklılıklar
 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Callback içeren fonksiyonlar 
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Çağırılan 'foo' fonksiyonunun ilk parantezi ile tanımlanan isimsiz fonksiyonun 
+      //'function' ifadesi arasında bir boşluk olmadığına dikkat edin.
     });
 
-    // Function accepting an array, no space
+    // Bir array girdi alan fonskiyon, boşluk yok
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Bir obje girdi alan fonskiyon, boşluk yok
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Tek argüman string, boşluk yok
     foo("bar");
 
-    // Expression parens, no space
+    // İfade parantezleri, boşluk yok
     if ( !("foo" in obj) ) {
       obj = (obj.bar || defaults).baz;
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Tutarlılık Her Zaman Kazanır
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    2.A-2.C bölümlerinde, boşluk kuralları, daha basit, daha yüksek bir amaca yönelik bir öneri olarak ortaya konmuştur: tutarlılık.
+    "İç boşluk" gibi biçimlendirme tercihlerinin isteğe bağlı olarak değerlendirilmesi gerektiğini, ancak projenizin tüm kaynağında yalnızca bir stil bulunması gerektiğini unutmamak önemlidir.
 
     ```javascript
 
     // 2.D.1.1
 
     if (condition) {
-      // statements
+      // ifadeler
     }
 
     while (condition) {
-      // statements
+      // ifadeler
     }
 
     for (var i = 0; i < 100; i++) {
-      // statements
+      // ifadeler
     }
 
     if (true) {
-      // statements
+      // ifadeler
     } else {
-      // statements
+      // ifadeler
     }
 
     ```
 
-    E. Quotes
+    E. Tırnak İşaretleri
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Tek ya da çift tırnağı tercih etmeniz önemli değil, Javascript için bunların hiçbir farkı yoktur. **KESİNLİKLE** uygulanması gereken şey tutarlılıktır. **Aynı projede asla tek ve çift tırnağı birlikte kullanmayın. Bir stil seçin ve ona bağlı kalın.**
 
-    F. End of Lines and Empty Lines
+    F. Satır Sonlar ve Boş Satırlar
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Boşluk, farkları mahvedebilir ve değişiklik setlerinin okunmasını imkansız hale getirebilir. Satır sonu boşluklarını ve boş satırlardaki boşlukları otomatik olarak kaldıran bir pre-commit hook eklemeyi düşünün.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Yazım Kontrolü (İncelikli jQuery Temel Stil Rehberleri)</a>
 
-    A. Actual Types
+    A. Asıl Türler
 
     String:
 
@@ -500,31 +500,31 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
         variable === null
 
-    null or undefined:
+    null veya undefined:
 
         variable == null
 
     undefined:
 
-      Global Variables:
+      Global Değişkenler:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Yerel Değişkenler:
 
         variable === undefined
 
-      Properties:
+      Özellikler:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+    B. Zorlama Türler
 
-    Consider the implications of the following...
+    Aşağıdakilerin etkilerini düşünün...
 
-    Given this HTML:
+    Bu HTML verildiğinde:
 
     ```html
 
@@ -537,20 +537,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` `0` değeri ile tanımlanmış ve türü `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Daha sonra kodunuzda bir yerde, `foo` değerini bir input elementinden
+    // gelen yeni bir değer ile güncellemeniz gerekti.
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Eğer şimdi `typeof foo` ifadesini test edecek olursanız, sonuç `string` olurdu
+    // Bu demek oluyor ki eğer `foo` test edilseydi:
 
     if ( foo === 1 ) {
 
@@ -558,15 +558,15 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // `foo`, "1" (string) değerine sahip olsaydı bile `importantTask()` satırı asla çalışmazdı.
 
 
     // 3.B.1.2
 
-    // You can preempt issues by using smart coercion with unary + or - operators:
+    // Tekli + veya - operatörleriyle akıllı zorlama kullanarak sorunları önleyebilirsiniz:
 
     foo = +document.getElementById("foo-input").value;
-    //    ^ unary + operator will convert its right side operand to a number
+    //    ^ tekli + operatorü sağ taraftaki işleneni bir sayıya çevirecektir
 
     // typeof foo;
     // "number"
@@ -577,10 +577,10 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` will be called
+    // `importantTask()` çağırılır
     ```
 
-    Here are some common cases along with coercions:
+    İşte zorlamalarla birlikte bazı yaygın durumlar:
 
 
     ```javascript
@@ -666,9 +666,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     !!~array.indexOf("d");
     // false
 
-    // Note that the above should be considered "unnecessarily clever"
-    // Prefer the obvious approach of comparing the returned value of
-    // indexOf, like:
+    // Yukarıdakilerin "gereksiz yere akıllıca" olarak kabul edilmesi gerektiğini unutmayın.
+    // indexOf'un döndürülen değerini karşılaştırmanın bariz yaklaşımını tercih edin
+    // örneğin:
 
     if ( array.indexOf( "a" ) >= 0 ) {
       // ...
@@ -683,7 +683,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     parseInt( num, 10 );
 
-    // is the same as...
+    // aynı şekilde...
 
     ~~num;
 
@@ -691,27 +691,27 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     num >>> 0;
 
-    // All result in 2
+    // Hepsi 2 ile sonuçlanıyor
 
 
-    // Keep in mind however, that negative numbers will be treated differently...
+    // Ancak, negatif sayıların farklı şekilde ele alınacağını unutmayın....
 
     var neg = -2.5;
 
     parseInt( neg, 10 );
 
-    // is the same as...
+    // aynı şekilde...
 
     ~~neg;
 
     neg >> 0;
 
-    // All result in -2
-    // However...
+    // Hepsi -2 ile sonuçlanıyor
+    // Ancak...
 
     neg >>> 0;
 
-    // Will result in 4294967294
+    // Bu 4294967294 ile sonuçlanacaktır
 
 
 
@@ -720,122 +720,122 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-4. <a name="cond">Conditional Evaluation</a>
+4. <a name="cond">Koşullu Değerlendirme</a>
 
     ```javascript
 
     // 4.1.1
-    // When only evaluating that an array has length,
-    // instead of this:
+    // Yalnızca bir dizinin uzunluğu olduğunu değerlendirirken,
+    // bunun yerine:
     if ( array.length > 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...doğruluğunu değerlendir, böyle:
     if ( array.length ) ...
 
 
     // 4.1.2
-    // When only evaluating that an array is empty,
-    // instead of this:
+    // Yalnızca bir dizinin boş olduğunu değerlendirirken,
+    // bunun yerine:
     if ( array.length === 0 ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...doğruluğunu değerlendir, böyle:
     if ( !array.length ) ...
 
 
     // 4.1.3
-    // When only evaluating that a string is not empty,
-    // instead of this:
+    // Yalnızca bir stringin boş olmadığını değerlendirirken,
+    // bunun yerine:
     if ( string !== "" ) ...
 
-    // ...evaluate truthiness, like this:
+    // ...doğruluğunu değerlendir, böyle:
     if ( string ) ...
 
 
     // 4.1.4
-    // When only evaluating that a string _is_ empty,
-    // instead of this:
+    // Yalnızca bir stringin boş _olduğunu_ değerlendirirken,
+    // bunun yerine:
     if ( string === "" ) ...
 
-    // ...evaluate falsy-ness, like this:
+    // ...doğruluğu değerlendir, böyle:
     if ( !string ) ...
 
 
     // 4.1.5
-    // When only evaluating that a reference is true,
-    // instead of this:
+    // Yalnızca bir referansın doğru olduğunu değerlendirirken,
+    // bunun yerine:
     if ( foo === true ) ...
 
-    // ...evaluate like you mean it, take advantage of built in capabilities:
+    // ...sorgulamak istediğiniz şekilde değerlendirin, build in'lerden yararlanın:
     if ( foo ) ...
 
 
     // 4.1.6
-    // When evaluating that a reference is false,
-    // instead of this:
+    // Bir referansın yanlış olduğunu değerlendirirken,
+    // bunun yerine:
     if ( foo === false ) ...
 
-    // ...use negation to coerce a true evaluation
+    // ...gerçek bir değerlendirmeyi zorlamak için olumsuzlamayı '!' kullanın
     if ( !foo ) ...
 
-    // ...Be careful, this will also match: 0, "", null, undefined, NaN
-    // If you _MUST_ test for a boolean false, then use
+    // ...Dikkatli olun, bu aynı zamanda 0, "", null, undefined, NaN ile de eşleşecektir.
+    // Bir boolean'ı false için test etmeniz _ZORUNLU_ysa, bunu kullanın:
     if ( foo === false ) ...
 
 
     // 4.1.7
-    // When only evaluating a ref that might be null or undefined, but NOT false, "" or 0,
-    // instead of this:
+    // Yalnızca bir referansın false, "" veya 0 DEĞİL, null veya undefined olduğunu değerlendirirken,
+    // bunun yerine:
     if ( foo === null || foo === undefined ) ...
 
-    // ...take advantage of == type coercion, like this:
+    // ..."==" operatöründen yararlanın, bunun gibi:
     if ( foo == null ) ...
 
-    // Remember, using == will match a `null` to BOTH `null` and `undefined`
-    // but not `false`, "" or 0
+    // Unutmayın, "==" kullanmak `null`'u HEM `null` ile HEM DE `undefined` ile eşleştirecektir
+    // ama `false`, "" veya 0 ile değil
     null == undefined
 
     ```
-    ALWAYS evaluate for the best, most accurate result - the above is a guideline, not a dogma.
+    HER ZAMAN en iyi, en doğru sonuç için değerlendirin - yukarıdakiler bir dogma değil, bir kılavuzdur.
 
     ```javascript
 
     // 4.2.1
-    // Type coercion and evaluation notes
+    // Yazım koşullama ve değerlendirme notları
 
-    // Prefer `===` over `==` (unless the case requires loose type evaluation)
+    // `==` yerine `===` tercih edin (durum gevşek tip değerlendirmesi gerektirmedikçe)
 
-    // === does not coerce type, which means that:
+    // === değişken tiplerini kontrol eder, yani:
 
     "1" === 1;
     // false
 
-    // == does coerce type, which means that:
+    // == değişken tiplerini kontrol etmez, yani
 
     "1" == 1;
     // true
 
 
     // 4.2.2
-    // Booleans, Truthies & Falsies
+    // Booleanlar, True & False
 
-    // Booleans:
+    // Booleanlar:
     true, false
 
-    // Truthy:
+    // True:
     "foo", 1
 
-    // Falsy:
+    // False:
     "", 0, null, undefined, NaN, void 0
 
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Pratik Stil</a>
 
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Pratik Bir Modül
 
     (function( global ) {
       var Module = (function() {
@@ -843,30 +843,30 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Bu bir boolean değeri
           bool: true,
-          // Some string value
+          // Bir string değeri
           string: "a string",
-          // An array property
+          // Bir array değeri
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Bir obje değeri
           object: {
-            lang: "en-Us"
+            lang: "tr-TR"
           },
           getData: function() {
-            // get the current value of `data`
+            // `data`'nın güncel değerini elde et
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // `data` değerini tanımla ve döndür
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Burada başka şeyler olabilir
 
-      // expose our module to the global object
+      // modülümüzü global değişkene tanımlayalım
       global.Module = Module;
 
     })( this );
@@ -876,7 +876,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Pratik Bir Constructor
 
     (function( global ) {
 
@@ -896,13 +896,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // Constructor'ı `new` olmadan çağırmak için, bunu yapabilirsiniz:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // constructor'ımızı global değişkene tanımlayalım
       global.ctor = ctor;
 
     })( this );
@@ -911,18 +911,18 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">İsimlendirme</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Siz bir insan kod derleyicisi/kompresörü değilsiniz, bu yüzden olmaya çalışmayın.
 
-    The following code is an example of egregious naming:
+    Aşağıdaki kod, korkunç bir isimlendirme örneğidir:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Kötü isimlere sahip kod örneği
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -931,14 +931,14 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+    Şüphesiz, böyle bir kod yazdınız - umarım bugün son bulur.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    İşte aynı mantık parçası, ancak daha nazik, daha düşünceli bir isimlendirme (ve okunabilir bir yapıya sahip):
 
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Geliştirilmiş isimlere sahip kod örneği
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -955,55 +955,55 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    A few additional naming pointers:
+    Birkaç ek isimlendirme işaretçisi:
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Stringleri isimlendirme
 
-    `dog` is a string
+    `dog` bir string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Arrayleri isimlendirme
 
-    `dogs` is an array of `dog` strings
+    `dogs` bir `dog` stringleri dizisi
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Fonksiyon, obje, örnek vs isimlendirme
 
-    camelCase; function and var declarations
+    camelCase; function ve değişken tanımlamaları
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+    // Constructor, prototip vs isimlendirme
 
     PascalCase; constructor function
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Normal ifadeleri isimlendirme
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // Google Closure Library Style Guide'dan
 
-    functionNamesLikeThis;
-    variableNamesLikeThis;
-    ConstructorNamesLikeThis;
-    EnumNamesLikeThis;
-    methodNamesLikeThis;
-    SYMBOLIC_CONSTANTS_LIKE_THIS;
+    fonksiyonIsimleriBoyle;
+    degiskenIsimleriBoyle;
+    ConstructorIsimleriBoyle;
+    EnumIsimleriBoyle;
+    metodIsimleriBoyle;
+    SYMBOLIC_CONSTANTS_BOYLE;
 
     ```
 
-    B. Faces of `this`
+    B. `this` yüzleri
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+    Genel olarak iyi bilinen `call` ve `apply` kullanım durumlarının ötesinde, daha sonraki çağrılar için `BoundFunction` tanımları oluşturmak için her zaman `.bind( this )` veya işlevsel bir eşdeğerini tercih edin. Takma isim kullanmaya yalnızca tercih edilen bir seçenek olmadığında başvurun.
 
     ```javascript
 
@@ -1012,38 +1012,35 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // bir async stream açın,
+      // bu devamlı olarak çağırılacaktır
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // Bu örneğin mevcut değerini veri akışındaki en son değerle güncelleyin
         this.value = data;
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
+      // Bu Device örneğinden çağırılan olayların sıklığını azaltın
       setInterval(function() {
 
-        // Emit a throttled event
+        // Kısıtlanmış bir olay emit edin
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // EventEmitter'ı inherit ettiğimizi varsayın ;)
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Kullanılamadığında, birçok modern JavaScript kitaplığında `.bind` işlevinin işlevsel eşdeğerleri bulunur.
 
 
     ```javascript
     // 6.B.2
 
-    // eg. lodash/underscore, _.bind()
+    // lodash/alt çizgi, _.bind() örnekleri
     function Device( opts ) {
 
       this.value = null;
@@ -1061,7 +1058,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }, this), opts.freq || 100 );
     }
 
-    // eg. jQuery.proxy
+    // jQuery.proxy örnekleri
     function Device( opts ) {
 
       this.value = null;
@@ -1079,7 +1076,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       }, this), opts.freq || 100 );
     }
 
-    // eg. dojo.hitch
+    // dojo.hitch örnekleri
     function Device( opts ) {
 
       this.value = null;
@@ -1099,7 +1096,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    Son çare olarak, Tanımlayıcı olarak `self`i kullanarak `this` için bir takma isim oluşturun. Bu son derece hata eğilimlidir ve mümkün olduğunca kaçınılmalıdır.
 
     ```javascript
 
@@ -1126,9 +1123,9 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Use `thisArg`
+    C. `thisArg` kullanın
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    ES 5.1 builtin'lerinin birkaç prototip yöntemi, mümkün olduğunda kullanılması gereken özel bir `thisArg` işaretiyle birlikte gelir.
 
     ```javascript
 
@@ -1140,13 +1137,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| şimdi `obj`'i referans gösterir
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- son argüman `thisArg`
 
-    // Prints...
+    // Yazdırır...
 
     // "foo"
     // "bar"
@@ -1154,24 +1151,24 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` ifadesi `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter` ile kullanılabilir
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Çeşitli</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Bu bölüm, dogma olarak kabul edilmemesi gereken fikirleri ve kavramları göstermeye hizmet edecek, bunun yerine ortak JavaScript programlama görevlerini yapmanın daha iyi yollarını bulmaya yönelik sorgulama uygulamalarını teşvik etmek için var olacaktır.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. `switch` kullanılmaktan kaçınılmalı, modern method takibi switch ifadesi içeren fonksiyonları kara listeye alacaktır
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    Firefox ve Chrome'un son sürümlerinde `switch` ifadelerinin yürütülmesinde önemli gelişmeler var gibi görünüyor.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnessed here as well:
+    Burada da kayda değer gelişmeler görülebilir:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Bir switch ifadesi öreği
 
     switch( foo ) {
       case "alpha":
@@ -1181,31 +1178,31 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
         beta();
         break;
       default:
-        // something to default to
+        // varsayılan olarak
         break;
     }
 
     // 7.A.1.2
-    // A alternate approach that supports composability and reusability is to
-    // use an object to store "cases" and a function to delegate:
+    // Birleştirilebilirliği ve yeniden kullanılabilirliği destekleyen alternatif bir yaklaşım, 
+    // "cases" depolamak için bir nesne ve temsilci tanımlamak için bir fonksiyon kullanmaktır:
 
     var cases, delegator;
 
     // Example returns for illustration only.
     cases = {
       alpha: function() {
-        // statements
-        // a return
+        // ifadeler
+        // bir return
         return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // statements
-        // a return
+        // ifadeler
+        // bir return
         return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // statements
-        // a return
+        // ifadeler
+        // bir return
         return [ "Default", arguments.length ];
       }
     };
@@ -1213,37 +1210,37 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     delegator = function() {
       var args, key, delegate;
 
-      // Transform arguments list into an array
+      // Argüman list'ini bir arraye çevirir
       args = [].slice.call( arguments );
 
-      // shift the case key from the arguments
+      // case anahtarını argümanlardan karıştırır
       key = args.shift();
 
-      // Assign the default case handler
+      // Varsayılan case handler'ı tanımlayın
       delegate = cases._default;
 
-      // Derive the method to delegate operation to
+      // İşlemi devretme yöntemini oluştur
       if ( cases.hasOwnProperty( key ) ) {
         delegate = cases[ key ];
       }
 
-      // The scope arg could be set to something specific,
-      // in this case, |null| will suffice
+      // arg kapsamı belirli bir şeye ayarlanabilir,
+      // bu durumda |null| yeterli olur
       return delegate.apply( null, args );
     };
 
     // 7.A.1.3
-    // Put the API in 7.A.1.2 to work:
+    // API'yi 7.A.1.2'de çalıştırın:
 
     delegator( "alpha", 1, 2, 3, 4, 5 );
     // [ "Alpha", 5 ]
 
-    // Of course, the `case` key argument could easily be based
-    // on some other arbitrary condition.
+    // Elbette, `case` anahtar argümanı 
+    // kolaylıkla başka bir keyfi koşula dayandırılabilir.
 
     var caseKey, someUserInput;
 
-    // Possibly some kind of form input?
+    // Muhtemelen bir tür form girdisi?
     someUserInput = 9;
 
     if ( someUserInput > 10 ) {
@@ -1252,16 +1249,16 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       caseKey = "beta";
     }
 
-    // or...
+    // veya...
 
     caseKey = someUserInput > 10 ? "alpha" : "beta";
 
-    // And then...
+    // Ve daha sonra...
 
     delegator( caseKey, someUserInput );
     // [ "Beta", 1 ]
 
-    // And of course...
+    // Ve tabi ki...
 
     delegator();
     // [ "Default", 0 ]
@@ -1269,12 +1266,12 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. Erken döndürmeler, ihmal edilebilir performans farkıyla kod okunabilirliğini artırır
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Kötü:
     function returnLate( foo ) {
       var ret;
 
@@ -1286,7 +1283,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
       return ret;
     }
 
-    // Good:
+    // İyi:
 
     function returnEarly( foo ) {
 
@@ -1299,34 +1296,34 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Yerel ve Ana Nesneler</a>
 
-    The basic principle here is:
+    Buradaki temel ilke şudur:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Aptalca şeyler yapmazsan her şey yolunda olur.
 
-    To reinforce this concept, please watch the following presentation:
+    Bu konsepti güçlendirmek için lütfen aşağıdaki sunumu izleyin:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Her Şey Serbest: Built-in'leri Genişletmek” -Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    https://www.youtube.com/watch?v=xL3xCO7CLNM
-
-
-9. <a name="comments">Comments</a>
-
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+    [Andrew Dupont: Everything is Permitted: Extending Built-ins](https://www.youtube.com/watch?v=xL3xCO7CLNM)
 
 
-10. <a name="language">One Language Code</a>
+9. <a name="comments">Yorumlar</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    #### Konu olan kodun üstündeki tek satır
+    #### Çoklu satır iyidir
+    #### Satır sonu yorumları yasaktır!
+    #### JSDoc stili iyidir, ancak önemli bir zaman yatırımı gerektirir
 
-## Appendix
 
-### Comma First.
+10. <a name="language">Tek Dil Kod</a>
+
+    Programlar, bu dil ne olursa olsun, yazan veya yazanlar tarafından belirtildiği gibi tek bir dilde yazılmalıdır.
+
+## Ek Bölüm
+
+### Önce Virgül.
 
 Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
 

@@ -28,7 +28,8 @@
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)  
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
+* Coşkun Atak [@dimaetor](http://twitter.com/dimaetor), [github](https://github.com/Coskntkk) 
 
 ## 不論有多少人在撰寫同一個程式庫，所有在此程式庫的程式看起來都是由一個人寫的。
 
@@ -64,7 +65,8 @@
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [繁體中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_TW)
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
-* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)   
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)
+* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR)
 
 ## 重要的、通用的資源：
 > 建議搭配英文版一同閱讀，有些程式專有名詞翻譯成中文或許無法很好地表達出原意。

@@ -37,7 +37,8 @@
 * Fesuy [github](https://github.com/fesuydev)  
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)  
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
+* Coşkun Atak [@dimaetor](http://twitter.com/dimaetor), [github](https://github.com/Coskntkk) 
 
 
 ## Semua kode dalam kode-base akan terlihat seperti satu orang mengetik itu, tidak peduli berapa banyak orang memberikan kontribusi.
@@ -75,7 +76,8 @@
 * [繁體中文](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_TW)  
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
-* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI) 
+* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR)  
 
 ## Penting, Non-idiomatic Stuff:
 

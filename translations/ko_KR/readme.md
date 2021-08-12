@@ -27,7 +27,8 @@
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)  
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
+* Coşkun Atak [@dimaetor](http://twitter.com/dimaetor), [github](https://github.com/Coskntkk)  
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
@@ -63,6 +64,7 @@
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
 * [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
+* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR) 
 
 ## 관련은 없지만, 중요한 자료:
 
