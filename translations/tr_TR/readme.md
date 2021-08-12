@@ -1,7 +1,7 @@
-# Principles of Writing Consistent, Idiomatic JavaScript
+# Tutarlı, Deyimsel JavaScript Yazma İlkeleri
 
 
-## This is a living document and new ideas for improving the code around us are always welcome. Contribute: fork, clone, branch, commit, push, pull request.
+## Bu yaşayan bir belgedir ve çevremizdeki kodları geliştirmek için yeni fikirler her zaman memnuniyetle karşılanır. Katkıda bulunun: fork, clone, branch, commit, push, pull request.
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
@@ -37,27 +37,26 @@
 * Fesuy [github](https://github.com/fesuydev)  
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
 * Coşkun Atak [@dimaetor](http://twitter.com/dimaetor), [github](https://github.com/Coskntkk) 
 
+## Herhangi bir kod tabanındaki tüm kodlar, kaç kişi katkıda bulunursa bulunsun, tek bir kişinin yazdığı gibi görünmelidir.
 
-## All code in any code-base should look like a single person typed it, no matter how many people contributed.
+### Aşağıdaki liste, orijinal yazarı olduğum tüm kodlarda kullandığım uygulamaları özetlemektedir; yarattığım projelere katkılar bu yönergeleri takip etmelidir.
 
-### The following list outlines the practices that I use in all code that I am the original author of; contributions to projects that I have created should follow these guidelines.
-
-### I do not intend to impose my style preferences on other people's code or projects; if an existing common style exists, it should be respected.
+### Stil tercihlerimi başkalarının kodlarına veya projelerine dayatmak niyetinde değilim; eğer mevcut bir ortak tarz varsa, buna saygı gösterilmelidir.
 
 
-> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"
+> ### "Tarz üzerindeki tartışmalar anlamsızdır. Bir stil rehberi olmalı ve onu takip etmelisin."
 >_Rebecca_ _Murphey_
 
 &nbsp;
 
-> ### "Part of being a good steward to a successful project is realizing that writing code for yourself is a Bad Idea™. If thousands of people are using your code, then write your code for maximum clarity, not your personal preference of how to get clever within the spec."
+> ### "Başarılı bir projenin iyi bir temsilcisi olmanın bir parçası da kendiniz için kod yazmanın Kötü Bir Fikir™ olduğunu anlamaktır. Binlerce kişi kodunuzu kullanıyorsa, kodunuzu spesifikasyon içinde nasıl akıllı olacağına dair kişisel tercihiniz değil, maksimum netlik için yazın."
 >_Idan_ _Gazit_
 
 
-## Translations
+## Çeviriler
 
 * [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
@@ -76,11 +75,11 @@
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
 * [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)
-* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR)
+* [Turkish](https://github.com/rwaldron/idiomatic.js/tree/master/translations/tr_TR) 
 
-## Important, Non-Idiomatic Stuff:
+## Önemli, Deyimsel Olmayan Şeyler:
 
-### Code Quality Tools, Resources & References
+### Kaliteli Kod İçim Araçlar, Kaynaklar & Referanslar
 
  * [SonarQube](https://www.sonarqube.org/)
  * [Plato](https://github.com/es-analysis/plato)
@@ -97,12 +96,12 @@
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
-## Get Smart
+## Akıllı Ol
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
-The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
+Aşağıdaki liste şu şekilde dikkate alınmalıdır: 1) tamamlanmamış, and 2) *OKUNMASI GEREKLİ*. Aşağıdaki yazarların üslubuna her zaman katılmıyorum, ancak kesin olan bir şey var: Tutarlılar. Ayrıca dil üzerinde otoriteler.
 
  * [Baseline For Front End Developers: 2015](https://rmurphey.com/posts/a-baseline-for-front-end-developers-2015/)
  * [Eloquent JavaScript](http://eloquentjavascript.net/)
@@ -115,16 +114,16 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
 
 
 
-### Build & Deployment Process
+### Hazırlanma ve Yayımlanma Süreci
 
-Projects should always attempt to include some generic means by which source can be linted, tested and compressed in preparation for production use. For this task, [grunt](https://github.com/gruntjs/grunt) by Ben Alman is second to none and has officially replaced the "kits/" directory of this repo.
-
-
+Projeler, üretim kullanımına hazırlanırken her zaman kaynağın astarlanabileceği, test edilebileceği ve sıkıştırılabileceği bazı genel araçları dahil etmeye çalışmalıdır. Bu görev için Ben Alman tarafından yazılan [grunt](https://github.com/gruntjs/grunt) rakipsizdir ve resmi olarak bu deponun "kits/" dizininin yerini almıştır.
 
 
-### Test Facility
 
-Projects _must_ include some form of unit, reference, implementation or functional testing. Use case demos DO NOT QUALIFY as "tests". The following is a list of test frameworks, none of which are endorsed more than the other.
+
+### Test Bölümü
+
+Projeler bir tür birim, referans, uygulama veya işlevsel test _içermelidir_. Use case demos DO NOT QUALIFY as "tests". Aşağıda, hiçbiri diğerinden daha fazla desteklenmeyen frameworklerin bir listesi bulunmaktadır.
 
  * [QUnit](http://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
@@ -137,58 +136,58 @@ Projects _must_ include some form of unit, reference, implementation or function
  * [Tape](https://github.com/substack/tape)
  * [Jest](https://facebook.github.io/jest/)
 
-## Table of Contents
+## İçindekiler
 
- * [Whitespace](#whitespace)
- * [Beautiful Syntax](#spacing)
- * [Type Checking (Courtesy jQuery Core Style Guidelines)](#type)
- * [Conditional Evaluation](#cond)
- * [Practical Style](#practical)
- * [Naming](#naming)
- * [Misc](#misc)
- * [Native & Host Objects](#native)
- * [Comments](#comments)
- * [One Language Code](#language)
+ * [Boşluk](#whitespace)
+ * [Güzel Syntax](#spacing)
+ * [Yazım Kontrolü (İncelikli jQuery Temel Stil Rehberleri)](#type)
+ * [Koşullu Değerlendirme](#cond)
+ * [Pratik Stil](#practical)
+ * [İsimlendirme](#naming)
+ * [Çeşitli](#misc)
+ * [Yerel ve Ana Nesneler](#native)
+ * [Yorumlar](#comments)
+ * [Tek Dil Kod](#language)
 
 
 
 ------------------------------------------------
 
 
-## Preface
+## Önsöz
 
-The following sections outline a _reasonable_ style guide for modern JavaScript development and are not meant to be prescriptive. The most important take-away is the **law of code style consistency**. Whatever you choose as the style for your project should be considered law. Link to this document as a statement of your project's commitment to code style consistency, readability and maintainability.
-
-
+Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil kılavuzunun ana hatlarını vermektedir ve kuralcı olması amaçlanmamıştır. En önemli çıkarım, **kod stili tutarlılığı yasasıdır**. Projeniz için stil olarak ne seçerseniz seçin yasa olarak kabul edilmelidir. Projenizin kod stili tutarlılığı, okunabilirliği ve sürdürülebilirliği konusundaki kararlılığının bir ifadesi olarak bu belgeye bağlantı verin.
 
 
 
-## Idiomatic Style Manifesto
 
 
-1. <a name="whitespace">Whitespace</a>
-  - Never mix spaces and tabs.
-  - When beginning a project, before you write any code, choose between soft indents (spaces) or real tabs, consider this **law**.
-      - For readability, I always recommend setting your editor's indent size to two characters &mdash; this means two spaces or two spaces representing a real tab.
-  - If your editor supports it, always work with the "show invisibles" setting turned on. The benefits of this practice are:
-      - Enforced consistency
-      - Eliminating end of line whitespace
-      - Eliminating blank line whitespace
-      - Commits and diffs that are easier to read
-  - Use [Editorconfig](http://editorconfig.org/) when possible.  It supports most IDEs and handles most whitespace settings.
+## Deyimsel Stil Manifestosu
 
 
-2. <a name="spacing">Beautiful Syntax</a>
+1. <a name="whitespace">Boşluk</a>
+  - Asla boşluk ve tabları birlikte kullanmayın.
+  - Bir projeye başlarken, hiçbir kod yazmadan önce, yumuşak satırbaşları (boşluklar) veya gerçek tablar arasından bir seçim yapın, bunu **kanun** olarak kabul edin.
+      - Okunabilirlik için, Editörünüzün girinti boyutunu her zaman iki karakter &mdash; olarak ayarlamanızı öneririm. Bu, gerçek bir tabı temsil eden iki boşluk veya iki boşluk anlamına gelir.
+  - Eğer editörünüz destekliyorsa, her zaman "show invisibles / görünmezleri göster" ayarını açık tutun. Bu uygulamanın faydaları şunlardır:
+      - Zorunlu tutarlılık
+      - Satır sonu boşluklarını ortadan kaldırma
+      - Boş satır boşluklarını ortadan kaldırma
+      - Okuması daha kolay olan eklemeler ve farklılıklar
+  - Mümkün olduğunda [Düzenleyici yapılandırması](http://editorconfig.org/) kullanın.  It supports most IDEs and handles most whitespace settings.
 
-    A. Parens, Braces, Linebreaks
+
+2. <a name="spacing">Güzel Syntax</a>
+
+    A. Parantezler, Süslü Parantezler, Satır sonları
 
     ```javascript
 
-    // if/else/for/while/try always have spaces, braces and span multiple lines
-    // this encourages readability
+    // if/else/for/while/try her zaman boşlukla, parantez kullanılarak ve birden çok satıra yayılarak yazılır.
+    // bu okunabilirliği artır
 
     // 2.A.1.1
-    // Examples of really cramped syntax
+    // Oldukça sıkışık syntax örnekkleri
 
     if(condition) doSomething();
 
@@ -198,137 +197,138 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.A.1.1
-    // Use whitespace to promote readability
+    // Okunabilirliği artırmak için boşluk kullanın
 
     if ( condition ) {
-      // statements
+      // ifadeler
     }
 
     while ( condition ) {
-      // statements
+      // ifadeler
     }
 
     for ( var i = 0; i < 100; i++ ) {
-      // statements
+      // ifadeler
     }
 
-    // Even better:
+    // Hatta daha iyisi:
 
     var i,
       length = 100;
 
     for ( i = 0; i < length; i++ ) {
-      // statements
+      // ifadeler
     }
 
-    // Or...
+    // Veya...
 
     var i = 0,
       length = 100;
 
     for ( ; i < length; i++ ) {
-      // statements
+      // ifadeler
     }
 
     var prop;
 
     for ( prop in object ) {
-      // statements
+      // ifadeler
     }
 
 
     if ( true ) {
-      // statements
+      // ifadeler
     } else {
-      // statements
+      // ifadeler
     }
     ```
 
 
-    B. Assignments, Declarations, Functions ( Named, Expression, Constructor )
+    B. Atamalar, Deklerasyonlar, Fonksiyonlar ( İsimli, İfade, Constructor )
 
     ```javascript
 
     // 2.B.1.1
-    // Variables
+    // Değişkenler
     var foo = "bar",
       num = 1,
       undef;
 
-    // Literal notations:
+    // Değişmez gösterimler:
     var array = [],
       object = {};
 
 
     // 2.B.1.2
-    // Using only one `var` per scope (function) or one `var` for each variable,
-    // promotes readability and keeps your declaration list free of clutter.
-    // Using one `var` per variable you can take more control of your versions
-    // and makes it easier to reorder the lines.
-    // One `var` per scope makes it easier to detect undeclared variables
-    // that may become implied globals.
-    // Choose better for your project and never mix them.
+    // Tüm değişken grubu için tek bir `var` veya her bir değişken için bir `var` kullanmak
+    // okunabilirliği artırır ve tanımlamalarınızı dağınıklıktan korur.
+    // Her bir değişken için bir `var` kullanarak versiyonlarınız üzerinde daha fazla kontrol // //
+    // sahibi olabilirsiniz ve satırları düzenlemeniz daha kolay olur.
+    // Tüm değişken grubu için tek bir `var` kullanmak tanımlanmamış değişkenlerin tespit 
+    // edilmesini kolaylaştırır.
+    // Projeniz için daha iyi olanı seçin ve asla birlikte kullanmayın.
 
-    // Bad
+    // Kötü
     var foo = "",
       bar = "";
     var qux;
 
-    // Good
+    // İyi
     var foo = "";
     var bar = "";
     var qux;
 
-    // or..
+    // veya..
     var foo = "",
       bar = "",
       qux;
 
-    // or..
-    var // Comment on these
+    // veya..
+    var // İlgili yorumlar
     foo = "",
     bar = "",
     quux;
 
     // 2.B.1.3
-    // var statements should always be in the beginning of their respective scope (function).
+    // var ifadeleri her zaman bulundukları alanın (fonksiyon) en başında olmalıdır.
 
 
-    // Bad
+    // Kötü
     function foo() {
 
-      // some statements here
+      // bazı ifadeler
 
       var bar = "",
         qux;
     }
 
-    // Good
+    // İyi
     function foo() {
       var bar = "",
         qux;
 
-      // all statements after the variables declarations.
+      // tüm ifadeler değişkenlerin tanımlanmasından sonra
     }
 
     // 2.B.1.4
-    // const and let, from ECMAScript 6, should likewise be at the top of their scope (block).
+    // ECMAScript 6'daki const ve let aynı şekilde her zaman bulundukları alanın (fonksiyon) en 
+    // başında olmalıdır.
 
-    // Bad
+    // Kötü
     function foo() {
       let foo,
         bar;
       if ( condition ) {
         bar = "";
-        // statements
+        // ifadeler
       }
     }
-    // Good
+    // İyi
     function foo() {
       let foo;
       if ( condition ) {
         let bar = "";
-        // statements
+        // ifadeler
       }
     }
     ```
@@ -336,44 +336,44 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```javascript
 
     // 2.B.2.1
-    // Named Function Declaration
+    // İsimlendirilmiş Fonksiyonların Tanımlanması
     function foo( arg1, argN ) {
 
     }
 
-    // Usage
+    // Kullanım
     foo( arg1, argN );
 
 
     // 2.B.2.2
-    // Named Function Declaration
+    // İsimlendirilmiş Fonksiyonların Tanımlanması
     function square( number ) {
       return number * number;
     }
 
-    // Usage
+    // Kullanım
     square( 10 );
 
-    // Really contrived continuation passing style
+    // Aynı stilin iç içe devam ettirilmesi
     function square( number, callback ) {
       callback( number * number );
     }
 
     square( 10, function( square ) {
-      // callback statements
+      // callback ifadeleri
     });
 
 
     // 2.B.2.3
-    // Function Expression
+    // Fonksiyon Tanımlanması
     var square = function( number ) {
-      // Return something valuable and relevant
+      // Değerli ve alakalı bir şeyin döndürülmesi
       return number * number;
     };
 
-    // Function Expression with Identifier
-    // This preferred form has the added value of being
-    // able to call itself and have an identity in stack traces:
+    // Identifier ile Fonksiyon Tanımlanması
+    // Burada tercih edilen form, kendisini çağırabilmek ve bir değişken ismine sahip
+    // olma gibi ek değerlere sahiptir.
     var factorial = function factorial( number ) {
       if ( number < 2 ) {
         return 1;
@@ -384,13 +384,13 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
 
     // 2.B.2.4
-    // Constructor Declaration
+    // Constructor Tanımlanması
     function FooBar( options ) {
 
       this.options = options;
     }
 
-    // Usage
+    // Kullanım
     var fooBar = new FooBar({ a: "alpha" });
 
     fooBar.options;
@@ -399,77 +399,77 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     ```
 
 
-    C. Exceptions, Slight Deviations
+    C. İstisnalar, Küçük Farklılıklar
 
     ```javascript
 
     // 2.C.1.1
-    // Functions with callbacks
+    // Callback içeren fonksiyonlar 
     foo(function() {
-      // Note there is no extra space between the first paren
-      // of the executing function call and the word "function"
+      // Çağırılan 'foo' fonksiyonunun ilk parantezi ile tanımlanan isimsiz fonksiyonun 
+      //'function' ifadesi arasında bir boşluk olmadığına dikkat edin.
     });
 
-    // Function accepting an array, no space
+    // Bir array girdi alan fonskiyon, boşluk yok
     foo([ "alpha", "beta" ]);
 
     // 2.C.1.2
-    // Function accepting an object, no space
+    // Bir obje girdi alan fonskiyon, boşluk yok
     foo({
       a: "alpha",
       b: "beta"
     });
 
-    // Single argument string literal, no space
+    // Tek argüman string, boşluk yok
     foo("bar");
 
-    // Expression parens, no space
+    // İfade parantezleri, boşluk yok
     if ( !("foo" in obj) ) {
       obj = (obj.bar || defaults).baz;
     }
 
     ```
 
-    D. Consistency Always Wins
+    D. Tutarlılık Her Zaman Kazanır
 
-    In sections 2.A-2.C, the whitespace rules are set forth as a recommendation with a simpler, higher purpose: consistency.
-    It's important to note that formatting preferences, such as "inner whitespace" should be considered optional, but only one style should exist across the entire source of your project.
+    2.A-2.C bölümlerinde, boşluk kuralları, daha basit, daha yüksek bir amaca yönelik bir öneri olarak ortaya konmuştur: tutarlılık.
+    "İç boşluk" gibi biçimlendirme tercihlerinin isteğe bağlı olarak değerlendirilmesi gerektiğini, ancak projenizin tüm kaynağında yalnızca bir stil bulunması gerektiğini unutmamak önemlidir.
 
     ```javascript
 
     // 2.D.1.1
 
     if (condition) {
-      // statements
+      // ifadeler
     }
 
     while (condition) {
-      // statements
+      // ifadeler
     }
 
     for (var i = 0; i < 100; i++) {
-      // statements
+      // ifadeler
     }
 
     if (true) {
-      // statements
+      // ifadeler
     } else {
-      // statements
+      // ifadeler
     }
 
     ```
 
-    E. Quotes
+    E. Tırnak İşaretleri
 
-    Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY MUST** be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+    Tek ya da çift tırnağı tercih etmeniz önemli değil, Javascript için bunların hiçbir farkı yoktur. **KESİNLİKLE** uygulanması gereken şey tutarlılıktır. **Aynı projede asla tek ve çift tırnağı birlikte kullanmayın. Bir stil seçin ve ona bağlı kalın.**
 
-    F. End of Lines and Empty Lines
+    F. Satır Sonlar ve Boş Satırlar
 
-    Whitespace can ruin diffs and make changesets impossible to read. Consider incorporating a pre-commit hook that removes end-of-line whitespace and blanks spaces on empty lines automatically.
+    Boşluk, farkları mahvedebilir ve değişiklik setlerinin okunmasını imkansız hale getirebilir. Satır sonu boşluklarını ve boş satırlardaki boşlukları otomatik olarak kaldıran bir pre-commit hook eklemeyi düşünün.
 
-3. <a name="type">Type Checking (Courtesy jQuery Core Style Guidelines)</a>
+3. <a name="type">Yazım Kontrolü (İncelikli jQuery Temel Stil Rehberleri)</a>
 
-    A. Actual Types
+    A. Asıl Türler
 
     String:
 
@@ -500,31 +500,31 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
         variable === null
 
-    null or undefined:
+    null veya undefined:
 
         variable == null
 
     undefined:
 
-      Global Variables:
+      Global Değişkenler:
 
         typeof variable === "undefined"
 
-      Local Variables:
+      Yerel Değişkenler:
 
         variable === undefined
 
-      Properties:
+      Özellikler:
 
         object.prop === undefined
         object.hasOwnProperty( prop )
         "prop" in object
 
-    B. Coerced Types
+    B. Zorlama Türler
 
-    Consider the implications of the following...
+    Aşağıdakilerin etkilerini düşünün...
 
-    Given this HTML:
+    Bu HTML verildiğinde:
 
     ```html
 
@@ -537,20 +537,20 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     // 3.B.1.1
 
-    // `foo` has been declared with the value `0` and its type is `number`
+    // `foo` `0` değeri ile tanımlanmış ve türü `number`
     var foo = 0;
 
     // typeof foo;
     // "number"
     ...
 
-    // Somewhere later in your code, you need to update `foo`
-    // with a new value derived from an input element
+    // Daha sonra kodunuzda bir yerde, `foo` değerini bir input elementinden
+    // gelen yeni bir değer ile güncellemeniz gerekti.
 
     foo = document.getElementById("foo-input").value;
 
-    // If you were to test `typeof foo` now, the result would be `string`
-    // This means that if you had logic that tested `foo` like:
+    // Eğer şimdi `typeof foo` ifadesini test edecek olursanız, sonuç `string` olurdu
+    // Bu demek oluyor ki eğer `foo` test edilseydi:
 
     if ( foo === 1 ) {
 
@@ -558,7 +558,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     }
 
-    // `importantTask()` would never be evaluated, even though `foo` has a value of "1"
+    // `foo`, "1" değerine sahip olsaydı bile `importantTask()` satırı asla çalışmazdı.
 
 
     // 3.B.1.2
