@@ -830,12 +830,12 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     ```
 
 
-5. <a name="practical">Practical Style</a>
+5. <a name="practical">Pratik Stil</a>
 
     ```javascript
 
     // 5.1.1
-    // A Practical Module
+    // Pratik Bir Modül
 
     (function( global ) {
       var Module = (function() {
@@ -843,30 +843,30 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
         var data = "secret";
 
         return {
-          // This is some boolean property
+          // Bu bir boolean değeri
           bool: true,
-          // Some string value
+          // Bir string değeri
           string: "a string",
-          // An array property
+          // Bir array değeri
           array: [ 1, 2, 3, 4 ],
-          // An object property
+          // Bir obje değeri
           object: {
-            lang: "en-Us"
+            lang: "tr-TR"
           },
           getData: function() {
-            // get the current value of `data`
+            // `data`'nın güncel değerini elde et
             return data;
           },
           setData: function( value ) {
-            // set the value of `data` and return it
+            // `data` değerini tanımla ve döndür
             return ( data = value );
           }
         };
       })();
 
-      // Other things might happen here
+      // Burada başka şeyler olabilir
 
-      // expose our module to the global object
+      // modülümüzü global değişkene tanımlayalım
       global.Module = Module;
 
     })( this );
@@ -876,7 +876,7 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     ```javascript
 
     // 5.2.1
-    // A Practical Constructor
+    // Pratik Bir Constructor
 
     (function( global ) {
 
@@ -896,13 +896,13 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
       };
 
 
-      // To call constructor's without `new`, you might do this:
+      // Constructor'ı `new` olmadan çağırmak için, bunu yapabilirsiniz:
       var ctor = function( foo ) {
         return new Ctor( foo );
       };
 
 
-      // expose our constructor to the global object
+      // constructor'ımızı global değişkene tanımlayalım
       global.ctor = ctor;
 
     })( this );
@@ -911,18 +911,18 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
 
 
-6. <a name="naming">Naming</a>
+6. <a name="naming">İsimlendirme</a>
 
 
 
-    A. You are not a human code compiler/compressor, so don't try to be one.
+    A. Siz bir insan kod derleyicisi/kompresörü değilsiniz, bu yüzden olmaya çalışmayın.
 
-    The following code is an example of egregious naming:
+    Aşağıdaki kod, korkunç bir isimlendirme örneğidir:
 
     ```javascript
 
     // 6.A.1.1
-    // Example of code with poor names
+    // Kötü isimlere sahip kod örneği
 
     function q(s) {
       return document.querySelectorAll(s);
@@ -931,14 +931,14 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
-    Without a doubt, you've written code like this - hopefully that ends today.
+    Şüphesiz, böyle bir kod yazdınız - umarım bugün son bulur.
 
-    Here's the same piece of logic, but with kinder, more thoughtful naming (and a readable structure):
+    İşte aynı mantık parçası, ancak daha nazik, daha düşünceli bir isimlendirme (ve okunabilir bir yapıya sahip):
 
     ```javascript
 
     // 6.A.2.1
-    // Example of code with improved names
+    // Geliştirilmiş isimlere sahip kod örneği
 
     function query( selector ) {
       return document.querySelectorAll( selector );
@@ -955,55 +955,55 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     ```
 
-    A few additional naming pointers:
+    Birkaç ek isimlendirme işaretçisi:
 
     ```javascript
 
     // 6.A.3.1
-    // Naming strings
+    // Stringleri isimlendirme
 
-    `dog` is a string
+    `dog` bir string
 
 
     // 6.A.3.2
-    // Naming arrays
+    // Arrayleri isimlendirme
 
-    `dogs` is an array of `dog` strings
+    `dogs` bir `dog` stringleri dizisi
 
 
     // 6.A.3.3
-    // Naming functions, objects, instances, etc
+    // Fonksiyon, obje, örnek vs isimlendirme
 
-    camelCase; function and var declarations
+    camelCase; function ve değişken tanımlamaları
 
 
     // 6.A.3.4
-    // Naming constructors, prototypes, etc.
+    // Constructor, prototip vs isimlendirme
 
     PascalCase; constructor function
 
 
     // 6.A.3.5
-    // Naming regular expressions
+    // Normal ifadeleri isimlendirme
 
     rDesc = //;
 
 
     // 6.A.3.6
-    // From the Google Closure Library Style Guide
+    // Google Closure Library Style Guide'dan
 
-    functionNamesLikeThis;
-    variableNamesLikeThis;
-    ConstructorNamesLikeThis;
-    EnumNamesLikeThis;
-    methodNamesLikeThis;
-    SYMBOLIC_CONSTANTS_LIKE_THIS;
+    fonksiyonIsimleriBoyle;
+    degiskenIsimleriBoyle;
+    ConstructorIsimleriBoyle;
+    EnumIsimleriBoyle;
+    metodIsimleriBoyle;
+    SYMBOLIC_CONSTANTS_BOYLE;
 
     ```
 
-    B. Faces of `this`
+    B. `this` yüzleri
 
-    Beyond the generally well known use cases of `call` and `apply`, always prefer `.bind( this )` or a functional equivalent, for creating `BoundFunction` definitions for later invocation. Only resort to aliasing when no preferable option is available.
+    Genel olarak iyi bilinen `call` ve `apply` kullanım durumlarının ötesinde, daha sonraki çağrılar için `BoundFunction` tanımları oluşturmak için her zaman `.bind( this )` veya işlevsel bir eşdeğerini tercih edin. Takma isim kullanmaya yalnızca tercih edilen bir seçenek olmadığında başvurun.
 
     ```javascript
 
@@ -1012,38 +1012,35 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
       this.value = null;
 
-      // open an async stream,
-      // this will be called continuously
+      // bir async stream açın,
+      // bu devamlı olarak çağırılacaktır
       stream.read( opts.path, function( data ) {
 
-        // Update this instance's current value
-        // with the most recent value from the
-        // data stream
+        // Bu örneğin mevcut değerini veri akışındaki en son değerle güncelleyin
         this.value = data;
 
       }.bind(this) );
 
-      // Throttle the frequency of events emitted from
-      // this Device instance
+      // Bu Device örneğinden çağırılan olayların sıklığını azaltın
       setInterval(function() {
 
-        // Emit a throttled event
+        // Kısıtlanmış bir olay emit edin
         this.emit("event");
 
       }.bind(this), opts.freq || 100 );
     }
 
-    // Just pretend we've inherited EventEmitter ;)
+    // EventEmitter'ı inherit ettiğimizi varsayın ;)
 
     ```
 
-    When unavailable, functional equivalents to `.bind` exist in many modern JavaScript libraries.
+    Kullanılamadığında, birçok modern JavaScript kitaplığında `.bind` işlevinin işlevsel eşdeğerleri bulunur.
 
 
     ```javascript
     // 6.B.2
 
-    // eg. lodash/underscore, _.bind()
+    // lodash/alt çizgi, _.bind() örnekleri
     function Device( opts ) {
 
       this.value = null;
@@ -1061,7 +1058,7 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
       }, this), opts.freq || 100 );
     }
 
-    // eg. jQuery.proxy
+    // jQuery.proxy örnekleri
     function Device( opts ) {
 
       this.value = null;
@@ -1079,7 +1076,7 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
       }, this), opts.freq || 100 );
     }
 
-    // eg. dojo.hitch
+    // dojo.hitch örnekleri
     function Device( opts ) {
 
       this.value = null;
@@ -1099,7 +1096,7 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     ```
 
-    As a last resort, create an alias to `this` using `self` as an Identifier. This is extremely bug prone and should be avoided whenever possible.
+    Son çare olarak, Tanımlayıcı olarak `self`i kullanarak `this` için bir takma isim oluşturun. Bu son derece hata eğilimlidir ve mümkün olduğunca kaçınılmalıdır.
 
     ```javascript
 
@@ -1126,9 +1123,9 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     ```
 
 
-    C. Use `thisArg`
+    C. `thisArg` kullanın
 
-    Several prototype methods of ES 5.1 built-ins come with a special `thisArg` signature, which should be used whenever possible
+    ES 5.1 builtin'lerinin birkaç prototip yöntemi, mümkün olduğunda kullanılması gereken özel bir `thisArg` işaretiyle birlikte gelir.
 
     ```javascript
 
@@ -1140,13 +1137,13 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     Object.keys( obj ).forEach(function( key ) {
 
-      // |this| now refers to `obj`
+      // |this| şimdi `obj`'i referans gösterir
 
       console.log( this[ key ] );
 
-    }, obj ); // <-- the last arg is `thisArg`
+    }, obj ); // <-- son argüman `thisArg`
 
-    // Prints...
+    // Yazdırır...
 
     // "foo"
     // "bar"
@@ -1154,24 +1151,24 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     ```
 
-    `thisArg` can be used with `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
+    `thisArg` ifadesi `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter` ile kullanılabilir
 
-7. <a name="misc">Misc</a>
+7. <a name="misc">Çeşitli</a>
 
-    This section will serve to illustrate ideas and concepts that should not be considered dogma, but instead exists to encourage questioning practices in an attempt to find better ways to do common JavaScript programming tasks.
+    Bu bölüm, dogma olarak kabul edilmemesi gereken fikirleri ve kavramları göstermeye hizmet edecek, bunun yerine ortak JavaScript programlama görevlerini yapmanın daha iyi yollarını bulmaya yönelik sorgulama uygulamalarını teşvik etmek için var olacaktır.
 
-    A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
+    A. `switch` kullanılmaktan kaçınılmalı, modern method takibi switch ifadesi içeren fonksiyonları kara listeye alacaktır
 
-    There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
+    Firefox ve Chrome'un son sürümlerinde `switch` ifadelerinin yürütülmesinde önemli gelişmeler var gibi görünüyor.
     http://jsperf.com/switch-vs-object-literal-vs-module
 
-    Notable improvements can be witnessed here as well:
+    Burada da kayda değer gelişmeler görülebilir:
     https://github.com/rwldrn/idiomatic.js/issues/13
 
     ```javascript
 
     // 7.A.1.1
-    // An example switch statement
+    // Bir switch ifadesi öreği
 
     switch( foo ) {
       case "alpha":
@@ -1181,31 +1178,31 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
         beta();
         break;
       default:
-        // something to default to
+        // varsayılan olarak
         break;
     }
 
     // 7.A.1.2
-    // A alternate approach that supports composability and reusability is to
-    // use an object to store "cases" and a function to delegate:
+    // Birleştirilebilirliği ve yeniden kullanılabilirliği destekleyen alternatif bir yaklaşım, 
+    // "cases" depolamak için bir nesne ve temsilci tanımlamak için bir fonksiyon kullanmaktır:
 
     var cases, delegator;
 
     // Example returns for illustration only.
     cases = {
       alpha: function() {
-        // statements
-        // a return
+        // ifadeler
+        // bir return
         return [ "Alpha", arguments.length ];
       },
       beta: function() {
-        // statements
-        // a return
+        // ifadeler
+        // bir return
         return [ "Beta", arguments.length ];
       },
       _default: function() {
-        // statements
-        // a return
+        // ifadeler
+        // bir return
         return [ "Default", arguments.length ];
       }
     };
@@ -1213,37 +1210,37 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     delegator = function() {
       var args, key, delegate;
 
-      // Transform arguments list into an array
+      // Argüman list'ini bir arraye çevirir
       args = [].slice.call( arguments );
 
-      // shift the case key from the arguments
+      // case anahtarını argümanlardan karıştırır
       key = args.shift();
 
-      // Assign the default case handler
+      // Varsayılan case handler'ı tanımlayın
       delegate = cases._default;
 
-      // Derive the method to delegate operation to
+      // İşlemi devretme yöntemini oluştur
       if ( cases.hasOwnProperty( key ) ) {
         delegate = cases[ key ];
       }
 
-      // The scope arg could be set to something specific,
-      // in this case, |null| will suffice
+      // arg kapsamı belirli bir şeye ayarlanabilir,
+      // bu durumda |null| yeterli olur
       return delegate.apply( null, args );
     };
 
     // 7.A.1.3
-    // Put the API in 7.A.1.2 to work:
+    // API'yi 7.A.1.2'de çalıştırın:
 
     delegator( "alpha", 1, 2, 3, 4, 5 );
     // [ "Alpha", 5 ]
 
-    // Of course, the `case` key argument could easily be based
-    // on some other arbitrary condition.
+    // Elbette, `case` anahtar argümanı 
+    // kolaylıkla başka bir keyfi koşula dayandırılabilir.
 
     var caseKey, someUserInput;
 
-    // Possibly some kind of form input?
+    // Muhtemelen bir tür form girdisi?
     someUserInput = 9;
 
     if ( someUserInput > 10 ) {
@@ -1252,16 +1249,16 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
       caseKey = "beta";
     }
 
-    // or...
+    // veya...
 
     caseKey = someUserInput > 10 ? "alpha" : "beta";
 
-    // And then...
+    // Ve daha sonra...
 
     delegator( caseKey, someUserInput );
     // [ "Beta", 1 ]
 
-    // And of course...
+    // Ve tabi ki...
 
     delegator();
     // [ "Default", 0 ]
@@ -1269,12 +1266,12 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
 
     ```
 
-    B. Early returns promote code readability with negligible performance difference
+    B. Erken döndürmeler, ihmal edilebilir performans farkıyla kod okunabilirliğini artırır
 
     ```javascript
 
     // 7.B.1.1
-    // Bad:
+    // Kötü:
     function returnLate( foo ) {
       var ret;
 
@@ -1286,7 +1283,7 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
       return ret;
     }
 
-    // Good:
+    // İyi:
 
     function returnEarly( foo ) {
 
@@ -1299,34 +1296,34 @@ Aşağıdaki bölümler, modern JavaScript geliştirme için bir _makul_ stil k�
     ```
 
 
-8. <a name="native">Native & Host Objects</a>
+8. <a name="native">Yerel ve Ana Nesneler</a>
 
-    The basic principle here is:
+    Buradaki temel ilke şudur:
 
-    ### Don't do stupid shit and everything will be ok.
+    ### Aptalca şeyler yapmazsan her şey yolunda olur.
 
-    To reinforce this concept, please watch the following presentation:
+    Bu konsepti güçlendirmek için lütfen aşağıdaki sunumu izleyin:
 
-    #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
+    #### “Her Şey Serbest: Built-in'leri Genişletmek” -Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    https://www.youtube.com/watch?v=xL3xCO7CLNM
-
-
-9. <a name="comments">Comments</a>
-
-    #### Single line above the code that is subject
-    #### Multiline is good
-    #### End of line comments are prohibited!
-    #### JSDoc style is good, but requires a significant time investment
+    [Andrew Dupont: Everything is Permitted: Extending Built-ins](https://www.youtube.com/watch?v=xL3xCO7CLNM)
 
 
-10. <a name="language">One Language Code</a>
+9. <a name="comments">Yorumlar</a>
 
-    Programs should be written in one language, whatever that language may be, as dictated by the maintainer or maintainers.
+    #### Konu olan kodun üstündeki tek satır
+    #### Çoklu satır iyidir
+    #### Satır sonu yorumları yasaktır!
+    #### JSDoc stili iyidir, ancak önemli bir zaman yatırımı gerektirir
 
-## Appendix
 
-### Comma First.
+10. <a name="language">Tek Dil Kod</a>
+
+    Programlar, bu dil ne olursa olsun, yazan veya yazanlar tarafından belirtildiği gibi tek bir dilde yazılmalıdır.
+
+## Ek Bölüm
+
+### Önce Virgül.
 
 Any project that cites this document as its base style guide will not accept comma first code formatting, unless explicitly specified otherwise by that project's author.
 
