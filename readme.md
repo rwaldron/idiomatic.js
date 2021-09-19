@@ -97,7 +97,7 @@
 
 ## Get Smart
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [Annotated ECMAScript 5.1](http://es5.github.io/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
 
 The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
