@@ -94,6 +94,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Los siguientes artículos son 1) incompletos y 2) *OBLIGATORIOS*. No siempre estoy de acuerdo con el estilo escrito por sus autores, pero una cosa es cierta: son consistentes. Además, son autoridades en el lenguaje.
 
