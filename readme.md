@@ -88,7 +88,7 @@
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
- * [jslint](http://jslint.org/)
+ * [jslint](https://www.jslint.com/)
  * [eslint](http://eslint.org/)
  * [jscs](https://www.npmjs.org/package/jscs)
  * [jscodesniffer](https://www.npmjs.org/package/jscodesniffer)
