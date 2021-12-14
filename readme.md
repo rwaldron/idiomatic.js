@@ -95,7 +95,7 @@
 
 ## Get Smart
 
-### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/12.0/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
 
