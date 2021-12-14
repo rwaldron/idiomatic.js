@@ -93,8 +93,9 @@
 
 ### Impara
 
-### [ECMAScript 5.1 con Annotazioni](http://es5.github.com/)
-### [Specifiche Linguaggio EcmaScript, edizione 5.1](http://ecma-international.org/ecma-262/5.1/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 I seguenti dovrebbero essere considerati come 1) incompleti e 2) *LETTURE NECESSARIE*. Non sempre sono d'accordo con lo stile scritto dagli autori qui sotto, ma una cosa è certa: sono consistenti. Quindi, sono da considerare delle autorità per questo linguaggio.
 
