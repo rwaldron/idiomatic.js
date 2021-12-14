@@ -97,6 +97,7 @@
 
 ### [Chú giải ECMAScript 5.1](http://es5.github.com/)
 ### [Đặc tả kỹ thuật của Ngôn Ngữ EcmaScript, Phiên bản 5.1](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Những thứ dưới đây nên coi là 1) không đầy đủ, and 2) *YÊU CẦU ĐỌC*. Tôi không phải lúc nào cũng đồng ý với phong cách của những tác giả dưới đây, nhưng có một điều là chắc chắc: Tất cả đều nhất quán. Thêm nữa, đây là những người có ảnh hưởng đến ngôn ngữ.
 
