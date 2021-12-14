@@ -96,6 +96,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Poniższe materiały są: 1) niekompletne, lub 2) mimo tego, że kod jest spójny nie zgadzam się ze stylem autorów. Są oni jednak odpowiedzialni za bieżący standard języka JavaScript.
 
