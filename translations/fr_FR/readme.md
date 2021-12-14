@@ -83,7 +83,9 @@
 
 ### Soyez cohérent
 
-[http://es5.github.com/](http://es5.github.com/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Ce qui suit doit être considéré comme 1) __incomplet__, et comme une 2) __LECTURE OBLIGATOIRE__. Je ne suis pas toujours d'accord avec le style écrit par les auteurs ci-dessous, mais une chose est certaine : ils sont conformes. En outre, ce sont des autorités sur le langage.
 
