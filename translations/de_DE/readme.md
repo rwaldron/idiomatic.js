@@ -85,7 +85,9 @@
 
 ### Schlau werden
 
-[http://es5.github.com/](http://es5.github.com/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Bei den folgenden Ressourcen sollte berücksichtigt werden, dass sie 1) unvollständig und 2) *PFLICHTLEKTÜREN* sind. Ich stimme dem beschriebenen Style der unten stehenden Autoren nicht immer zu, aber eins ist sicher: Sie sind konsequent. Außerdem sind dies echte Autoritäten in dieser Sprache.
 
