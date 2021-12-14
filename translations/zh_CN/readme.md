@@ -89,6 +89,7 @@
 
 ### [ECMAScript 5.1 注解版](http://es5.github.com/)
 ### [EcmaScript 语言规范, 5.1 版](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 下列文档的现实是：1）不完全版，2）*必读*。我并不全（不总是，always agree）赞同下列所有作者所写的风格，但有一点可以确定的是：他们具备一致性。除此之外，他们还都是这门语言的权威人士。
 
