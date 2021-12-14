@@ -99,6 +99,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 निम्नलिखित को 1) अपूर्ण, और 2) *आवश्यक पठन*  मानना चाहिए | मैं निम्नोक्त लेखकों की शैली से सदैव सहमत नहीं होता हूँ, किन्तु एक चीज निश्चित है: उनमें स्थिरता / निरन्तरता (consistent) हैं | इसके अतिरिक्त, इनका भाषा पर अधिकार है |
 
