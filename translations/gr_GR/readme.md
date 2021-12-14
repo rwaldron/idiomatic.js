@@ -101,6 +101,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Τα επόμενα θα πρέπει να θεωρρηθούν 1) μη τελειωμένα και 2) *ΑΠΑΡΑΙΤΗΤΟ ΔΙΑΒΑΣΜΑ*. Δεν συμφωνώ πάντα με το στυλ που χρησιμοποιείται από τους παρακάτω συγγραφείς, αλλά ένα είναι σίγουρο: είναι συνεπής. Επιπλέον, πρόκειται για αρχές σχετικά με τη γλώσσα.
 
