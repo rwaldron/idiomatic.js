@@ -82,7 +82,6 @@
 
  * [SonarQube](https://www.sonarqube.org/)
  * [Plato](https://github.com/es-analysis/plato)
- * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [Codepen](http://codepen.io/)
  * [jsbin](http://jsbin.com/)
@@ -1159,7 +1158,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
     There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
-    http://jsperf.com/switch-vs-object-literal-vs-module
 
     Notable improvements can be witnessed here as well:
     https://github.com/rwldrn/idiomatic.js/issues/13
