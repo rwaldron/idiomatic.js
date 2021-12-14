@@ -93,8 +93,9 @@
 
 ### Становись умнее
 
-### [ECMAScript 5.1 с комментариями](http://es5.github.com/)
-### [Спецификация языка ECMAScript, издание 5.1](http://ecma-international.org/ecma-262/5.1/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Следующее должно считаться 1) незавершенным, и 2) *ТРЕБУЮЩИМ ЧТЕНИЯ*. Я не всегда согласен со стилями этих авторов, но одно точно: они консистентны. Более того, это каноны для языка.
 
