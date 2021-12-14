@@ -93,6 +93,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Следеће треба сматрати за 1) непотпуну, и 2) *ОБАВЕЗНА ЛЕКТИРА*. Ја се не слажем увек са стилом писаног од стране аутора у наставку, али једна ствар је сигурна: Они су доследни. Осим тога, то су ауторитети у овом језику.
 
