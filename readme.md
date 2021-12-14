@@ -105,7 +105,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [Douglas Crockford's Wrrrld Wide Web](https://www.crockford.com/javascript/)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
 
