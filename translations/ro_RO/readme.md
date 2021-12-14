@@ -91,8 +91,9 @@
 
 ## Învață
 
-### [ECMAScript 5.1 Adnotat](http://es5.github.com/)
-### [Specificațiile EcmaScript, Ediția 5.1](http://ecma-international.org/ecma-262/5.1/)
+### [Annotated ECMAScript 5.1](http://es5.github.com/)
+### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Următoarele ar trebui să fie considerate 1) incomplete, și 2) *LECTURĂ OBLIGATORIE*. Nu sunt întotdeauna de acord cu stilul promovat de următorii autori, dar un lucru este clar: Sunt consecvenți. Mai mult decât atât, ei reprezintă autorități ale limbajului.
 
