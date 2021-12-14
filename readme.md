@@ -5,8 +5,8 @@
 
 * Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
-* Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
-* Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
+* Schalk Neethling [github](https://github.com/ossreleasefeed/)
+* Kit Cambridge [github](https://github.com/kitcambridge)
 * Raynos  [github](https://github.com/Raynos)
 * Matias Arriola [@MatiasArriola](https://twitter.com/MatiasArriola), [github](https://github.com/MatiasArriola/)
 * John Fischer [@jfroffice](https://twitter.com/jfroffice), [github](https://github.com/jfroffice/)
@@ -18,12 +18,12 @@
 * Pascal Precht [@PascalPrecht](http://twitter.com/PascalPrecht), [github](https://github.com/pascalprecht)
 * EngForDev [engfordev](https://opentutorials.org/course/245/1788) - Hwan Min Hong / MinTaek Kwon [@leoinsight](http://twitter.com/leoinsight) / Tw Shim [@marocchino](http://twitter.com/marocchino), [github](https://github.com/marocchino) / Nassol Kim [@nassol99](http://twitter.com/nassol99), [github](https://github.com/nassol) / Juntai Park [@rkJun](http://twitter.com/rkJun), [github](https://github.com/rkJun) / Minkyu Shim / Gangmin Won / Justin Yoo [@justinchronicle](http://twitter.com/justinchronicle) / Daeyup Lee
 * Marco Trulla [@marcotrulla](http://twitter.com/marcotrulla), [github](https://github.com/Ragnarokkr)
-* Alex Navasardyan [@alexnavasardyan](http://twitter.com/alexnavasardyan), [github](https://github.com/2k00l)
+* Alex Navasardyan
 * Mihai Paun [@mihaipaun](http://twitter.com/mihaipaun), [github](https://github.com/mihaipaun)
 * Evgeny Mandrikov [@\_godin\_](http://twitter.com/_godin_), [github](https://github.com/Godin)
 * Sofish Lin [@sofish](http://twitter.com/sofish), [github](https://github.com/sofish)
 * Дејан Димић [@dejan_dimic](http://twitter.com/dejan_dimic), [github](https://github.com/rubystream)
-* Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
+* Miloš Gavrilović [github](https://github.com/gavrisimo)
 * Firede [@firede](https://twitter.com/firede) [github](https://github.com/firede)
 * monkadd [github](https://github.com/monkadd)
 * Stephan Lindauer [@stephanlindauer](http://twitter.com/stephanlindauer), [github](https://github.com/stephanlindauer)
@@ -34,10 +34,10 @@
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
 * Hao-Wei Jeng [@l0ckys](http://twitter.com/l0ckys), [github](https://github.com/lockys)  
 * Richard Gibson [@gibson042](http://twitter.com/gibson042), [github](https://github.com/gibson042)  
-* Fesuy [github](https://github.com/fesuydev)  
+* Fesuy
 * Stephane Moreau [github](https://github.com/stmoreau)  
 * Boris Nekezov [github](https://github.com/boris-nekezov)
-* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii) 
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://github.com/akshatjoshii) 
 
 
 ## All code in any code-base should look like a single person typed it, no matter how many people contributed.
@@ -82,23 +82,20 @@
 
  * [SonarQube](https://www.sonarqube.org/)
  * [Plato](https://github.com/es-analysis/plato)
- * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
  * [Codepen](http://codepen.io/)
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
- * [jslint](http://jslint.org/)
+ * [jslint](https://www.jslint.com/)
  * [eslint](http://eslint.org/)
- * [jscs](https://www.npmjs.org/package/jscs)
  * [jscodesniffer](https://www.npmjs.org/package/jscodesniffer)
  * [Editorconfig](http://editorconfig.org/)
  * [Hound](https://houndci.com/)
 
 ## Get Smart
 
-### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I don't always agree with the style written by the authors below, but one thing is certain: They are consistent. Furthermore, these are authorities on the language.
 
@@ -107,7 +104,7 @@ The following should be considered 1) incomplete, and 2) *REQUIRED READING*. I d
  * [JavaScript, JavaScript](http://javascriptweblog.wordpress.com/)
  * [Adventures in JavaScript Development](http://rmurphey.com/)
  * [Perfection Kills](http://perfectionkills.com/)
- * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
+ * [Douglas Crockford's Wrrrld Wide Web](https://www.crockford.com/javascript/)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
 
 
@@ -1161,7 +1158,6 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     A. Using `switch` should be avoided, modern method tracing will blacklist functions with switch statements
 
     There seems to be drastic improvements to the execution of `switch` statements in latest releases of Firefox and Chrome.
-    http://jsperf.com/switch-vs-object-literal-vs-module
 
     Notable improvements can be witnessed here as well:
     https://github.com/rwldrn/idiomatic.js/issues/13
