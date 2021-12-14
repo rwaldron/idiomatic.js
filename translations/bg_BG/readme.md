@@ -96,7 +96,7 @@
 ## Станете Умни
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
-### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [Спецификация на Езика EcmaScript, Издание 5.1](http://ecma-international.org/ecma-262/5.1/)
 ### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 Последващото трябва да се вземе под внимание 1) недовършено, и 2) *ИЗИСКВА СЕ ЧЕТЕНЕ*. Не винаги съм съгласен със стила написан от авторите по-долу, но едно нещо е сигурно: Те са консистентни. Нещо повече, това са авторитети на езика.
