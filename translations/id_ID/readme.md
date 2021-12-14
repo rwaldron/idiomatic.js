@@ -100,6 +100,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 berikut harus dipertimbangkan 1) tidak lengkap, dan 2) * DIBUTUHKAN MEMBACA *. Saya tidak selalu setuju dengan gaya yang ditulis oleh penulis di bawah ini, tapi satu hal yang pasti: Mereka konsisten. Selanjutnya, ini adalah otoritas pada bahasa.
 
