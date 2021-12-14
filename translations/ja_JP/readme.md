@@ -94,6 +94,7 @@
 
 ### [Annotated ECMAScript 5.1](http://es5.github.com/)
 ### [EcmaScript Language Specification, 5.1 Edition](http://ecma-international.org/ecma-262/5.1/)
+### [ECMAScript 2021 Language Specificationn](https://262.ecma-international.org/)
 
 下記の事項は 1) 不完全、2) *必読*ということを熟考しなければなりません。私はこれらの作者によるスタイルに常に同意はしていませんが、彼らは一貫性があるため信頼できるのも確かです。その上、これらは言語の世界では権威があるものです。
 
