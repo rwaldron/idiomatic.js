@@ -53,28 +53,36 @@
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
 * [Portuguese - Brazil](https://github.com/rwldrn/idiomatic.js/tree/master/translations/pt_BR)
 * [Korean](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ko_KR)
-* [Japanese](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
+* [日本語](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ja_JP)
 * [Italian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/it_IT)
 * [Russian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ru_RU)
 * [Romanian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ro_RO)
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
-* [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Serbian - latin alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [繁體中文](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_TW)  
+* [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
-* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)   
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
 
 ## 重要，非常通用资源：
 
 ### 代码质量工具、资源和文献
 
- * [JavaScript Plugin](http://docs.codehaus.org/display/SONAR/JavaScript+Plugin) for [Sonar](http://www.sonarsource.org/)
+ * [SonarQube](https://www.sonarqube.org/)
+ * [Plato](https://github.com/es-analysis/plato)
  * [jsPerf](http://jsperf.com/)
  * [jsFiddle](http://jsfiddle.net/)
+ * [Codepen](http://codepen.io/)
  * [jsbin](http://jsbin.com/)
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [eslint](http://eslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
+ * [jscodesniffer](https://www.npmjs.org/package/jscodesniffer)
  * [Editorconfig](http://editorconfig.org/)
+ * [Hound](https://houndci.com/)
 
 ## 变聪明点
 
