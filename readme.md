@@ -74,7 +74,7 @@
 * [繁體中文](https://github.com/rwaldron/idiomatic.js/tree/master/translations/zh_TW)  
 * [Indonesian](https://github.com/rwaldron/idiomatic.js/tree/master/translations/id_ID)  
 * [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
-* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
+* [हिन्दी](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
 
 ## Important, Non-Idiomatic Stuff:
 
