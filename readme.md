@@ -925,7 +925,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
     function q(s) {
       return document.querySelectorAll(s);
     }
-    var i,a=[],els=q("#foo");
+    var i,a=[],els=q(".foo");
     for(i=0;i<els.length;i++){a.push(els[i]);}
     ```
 
@@ -944,7 +944,7 @@ The following sections outline a _reasonable_ style guide for modern JavaScript 
 
     var idx = 0,
       elements = [],
-      matches = query("#foo"),
+      matches = query(".foo"),
       length = matches.length;
 
     for ( ; idx < length; idx++ ) {
